@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head tag -->
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Arvin0'blog">
+    <meta name="keyword" content="Arvin0">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="stylesheet" href="res/animate.css">
+    <!--<link rel="stylesheet" href="res/font-awesome.css">-->
+    <title>
+
+        Arvin0's Projects
+
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="res/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="res/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="res/syntax.css">
+    <style>
+        header.intro-header {
+            /*background-image: url('//oco8bvfr8.qnssl.com/lion-blur-bg.jpg')*/
+        }
+        
+        .col-md-offset-2 {
+            margin-left: 0;
+        }
+        
+        .col-md-offset-1 {
+            margin-left: 0;
+        }
+        
+        .col-sm-10 {
+            width: 83.33333333%
+        }
+        
+        .col-md-8 {
+            width: 66.66666667%
+        }
+    </style>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="animated fadeIn">
+    <script>
+    </script>
+
+    <!-- Main Content -->
+    <style>
+        * {
+            /*border: thin red solid;*/
+        }
+        
+        header .bg-header {
+            height: 150px;
+            background-color: #fffff8;
+        }
+        /*头像*/
+        
+        .bg-header .avatar img {
+            border-radius: 50%;
+            margin-top: 100px;
+            max-width: 170px;
+        }
+        
+        .bg-header h1,
+        .bg-header h2 {
+            color: black;
+        }
+        /*姓名*/
+        
+        .bg-header h1 {
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(15, 15, 15, .3);
+        }
+        /*描述*/
+        
+        .bg-header h2 {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        /*整个作品展示区*/
+        
+        section .works-area {
+            margin-top: -150px;
+        }
+        
+        .works-area .works-item {
+            border-radius: 2px;
+            border: 1px solid #eee8d5;
+            margin-bottom: 50px;
+            box-shadow: 8px 5px 10px rgba(0, 0, 0, .2);
+        }
+        
+        .works-item-img {
+            margin: auto -26px;
+        }
+        
+        .works-item-img img {
+            width: 100%;
+        }
+        
+        .works-area .works-item {
+            background: white;
+            /* background-color: rgba(255, 255, 255, .1); */
+            padding: 5px 25px;
+        }
+        
+        .works-area .footer {
+            padding-top: 10px;
+            border-top: thin #eee solid;
+        }
+        
+        .works-area .footer .btn {
+            padding: 7px 9px;
+            border-radius: 2px;
+            float: right;
+            margin: 8px 0;
+            text-transform: none;
+            font-size: 12px;
+            font-style: italic;
+            background: #0085a1;
+            border: none;
+            color: #fff;
+        }
+        
+        .works-item .works-content {
+            padding-top: 15px;
+        }
+        
+        .works-item .title {
+            padding-top: 6px;
+            overflow: hidden;
+            /*box-shadow: none;*/
+            /*border: hidden;*/
+        }
+        
+        .works-item .title h3 {
+            /*display: inline-block;*/
+            /*margin: 0 15px;*/
+            /*height: 33px;*/
+            /*font-size: 18px;*/
+            /*font-weight: 400;*/
+            height: 33px;
+            font-size: 18px;
+            font-weight: 400;
+            float: left;
+            line-height: 33px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .works-item .title .title-date {
+            float: right;
+            font-size: 18px;
+        }
+        
+        .works-item .use span {
+            display: inline-block;
+            font-size: 12px;
+            border-radius: 3px;
+            padding: 0 4px;
+            border: thin solid #795548;
+        }
+        
+        .works-item .subtitle {
+            margin: 0;
+            font-size: 17px;
+        }
+        
+        @media screen and (max-width: 400px) {
+            .works-item .footer .use {
+                font-size: 14px;
+            }
+            .works-item .works-item-img {
+                /*height: 200px;*/
+            }
+            .bg-header .avatar img {
+                max-width: 150px;
+            }
+            .bg-header h1 {
+                font-size: 24px;
+            }
+            section .works-area {
+                margin-top: -210px;
+            }
+        }
+        
+        .footer {
+            background: #ffffff;
+        }
+    </style>
+    <div class="works-container" style="background-color: #fafafa">
+        <header>
+            <div class="bg-header text-center">
+                <!-- <h2>作品展示</h2> -->
+            </div>
+        </header>
+        <div class="container">
+            <section class="row">
+                <div class="col-sm-10 col-sm-offset-1
+                        col-md-8 col-md-offset-2
+                      works-area" style=" right: 25px;">
+
+                    <div class="works-item">
+                        <div class="title">
+                            <h3>
+                                H5PracticeEditor
+                            </h3>
+                            <span class="title-date text-muted">
+                            2016.11-2017.3
+                        </span>
+                        </div>
+                        <div class="works-item-img">
+                            <img src="res/item-H5PracticeEditor.jpg">
+                        </div>
+                        <div class="works-content">
+                            <div class="use text-warning">
+
+                                <span>
+                                    ActionScript 3.0
+                                </span>
+                                <span>
+                                    Adobe Flex
+                                </span>
+                                <span>
+                                    JavaScript
+                                </span>
+                                <span>
+                                    EgretTS
+                                </span>
+
+                            </div>
+
+                            <p class="subtitle"> 一款H5动画编辑器 </p>
+
+                            <p class="text-muted"> 一款编辑H5动画页面的软件。 主要用于编辑模拟汽车零部件拆装的H5动画。此工具，编辑器软件部分：编程语言是ActionScript 3.0，使用Adobe Flex框架； 内部模板网页：编程语言是JavaScript，使用EgretTS框架；目前编辑器版本是初版，基本功能完成，但是还需要迭代更新完善。
+                            </p>
+                        </div>
+                        <div class="footer clearfix">
+                            <a class=" btn btn-default" href="https://github.com/arvin0/H5PracticeEditor" target="_blank"> Open
+                            it</a>
+                        </div>
+                    </div>
+
+                    <div class="works-item">
+                        <div class="title">
+                            <h3>
+                                H5PracticeEditor site
+                            </h3>
+                            <span class="title-date text-muted">
+                            2017.3
+                        </span>
+                        </div>
+                        <div class="works-item-img">
+                            <img src="res/item-H5PracticeEditor-site.jpg">
+                        </div>
+                        <div class="works-content">
+                            <div class="use text-warning">
+                                <span>
+                                    JavaScript
+                                </span>
+                                <span>
+                                    jQuery
+                                </span>
+
+                                <span>
+                                    Bootstrap
+                                </span>
+
+                            </div>
+
+                            <p class="subtitle"> H5PracticeEditor的网站 </p>
+
+                            <p class="text-muted"> 一个简单的展示H5PracticeEditor的网站。 此网站，编程语言是JavaScript，使用jQuery，Bootstrap框架，下载，版本信息等功能连接GitHub的相关接口,从而显示展示。 </p>
+                        </div>
+                        <div class="footer clearfix">
+                            <a class=" btn btn-default" href="http://139.196.58.114:8036/index.html" target="_blank"> Open
+                            it</a>
+                        </div>
+                    </div>
+
+                    <div class="works-item">
+                        <div class="title">
+                            <h3>
+                                3D汽车博物馆
+                            </h3>
+                            <span class="title-date text-muted">
+                            2017.4-至今
+                        </span>
+                        </div>
+                        <div class="works-item-img">
+                            <img src="res/item-CarMuseumSite.jpg">
+                        </div>
+                        <div class="works-content">
+                            <div class="use text-warning">
+                                <span>
+                                    JavaScript
+                                </span>
+                                <span>
+                                    jQuery
+                                </span>
+                                <span>
+                                    three.js
+                                </span>
+
+                            </div>
+
+                            <p class="subtitle"> web3d网站 </p>
+
+                            <p class="text-muted"> 一个支持canvas，webgl双重渲染的3d网站。此网站具有：全景展示，切换场景，播放模型动画，触发详 细页面等等功能；网站技术：编程语言是JavaScript，主要使用three.js框架，涉及jQuery，Bootstrap 等框架；内嵌的资源类型有：1.storyline page（Articulate Storyline 2工具制作） 2.anmiate page （Adobe Animate CC + CreateJS 制作）3.Unity
+                                web版本 4. 3dmax渲染的全景图和模型 5.blender输出的模型，等等。 </p>
+                        </div>
+                        <div class="footer clearfix">
+                            <a class=" btn btn-default" href="" target="_blank"> Open
+                            it</a>
+                        </div>
+                    </div>
+
+                    <div class="works-item">
+                        <div class="title">
+                            <h3>
+                                网站会员管理系统
+                            </h3>
+                            <span class="title-date text-muted">
+                            2017.7
+                        </span>
+                        </div>
+                        <div class="works-item-img">
+                            <img src="res/item-memberSite.jpg">
+                        </div>
+                        <div class="works-content">
+                            <div class="use text-warning">
+                                <span>
+                                    JavaScript
+                                </span>
+                                <span>
+                                    jQuery
+                                </span>
+                                <span>
+                                    Node.JS
+                                </span>
+
+                                <span>
+                                    Express
+                                </span>
+
+                                <span>
+                                    SQL Server
+                                </span>
+
+                            </div>
+
+                            <p class="subtitle"> 网站会员管理系统前端+后端 demo </p>
+
+                            <p class="text-muted"> 一个网站会员管理系统，包括前端登录，后台管理功能；后端技术：使用nodejs </p>
+                        </div>
+                        <div class="footer clearfix">
+                            <a class=" btn btn-default" href="" target="_blank"> Open
+                            it</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Footer -->
+    <!-- Footer -->
+    <!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                    <br> -->
+
+    <!--</ul>-->
+    <!-- <p class="copyright text-muted"> -->
+    <!-- Copyright © Arvin0 2017 -->
+    <!-- <br>
+                        <br> -->
+    <!-- </p> -->
+
+    <!-- </div>
+    </div>
+    </div>
+    </footer> -->
+
+    <!-- jQuery -->
+    <!--<script src="res/jquery.js"></script>-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <!--<script src="res/bootstrap.js"></script>-->
+
+    <!-- Custom Theme JavaScript -->
+    <!--<script src="res/blog.js"></script>-->
+
+    <!-- async load function -->
+    <script>
+        function async(u, c) {
+            var d = document,
+                t = 'script',
+                o = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            o.src = u;
+            if (c) {
+                o.addEventListener('load', function(e) {
+                    c(null, e);
+                }, false);
+            }
+            s.parentNode.insertBefore(o, s);
+        }
+    </script>
+
+
+    <!--<script async="" src="res/busuanzi.js"></script>-->
+
+</body>
+
+</html>

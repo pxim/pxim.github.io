@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Arvin Site
+title: Arvin的个人博客
 subtitle: Peng Xiang
 description: 假程序一个。
 keywords: as js
 author: Arvin
 email: arvin0@qq.com
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -65,8 +65,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#landscape new-vno yelee spfk indigo
-theme: indigo
+#landscape new-vno yelee spfk indigo BlueLake
+theme: BlueLake
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -79,6 +79,10 @@ feed:
   type: atom
   path: atom.xml
   limit: 0
+
+# stylus:
+#   compress: true
+
 
 jsonContent:
   meta: false
@@ -98,3 +102,5 @@ jsonContent:
     excerpt: false
     categories: false
     tags: true
+
+local_search: true
