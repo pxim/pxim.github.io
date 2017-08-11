@@ -8,9 +8,12 @@ version: 2.0.1
 # Header
 menu:
   - page: home
-    directory: .
+    directory: home/
     icon: fa-home
-  - page: archive
+  - page: 文章列表
+    directory: .
+    icon: fa-fei
+  - page: 文章归档
     directory: archives/
     icon: fa-archive
   - page: 作品展示
