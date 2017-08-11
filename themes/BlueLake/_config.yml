@@ -28,12 +28,13 @@ menu:
 
 
 # Sidebar
+# 微博秀地址设置 http://app.weibo.com/tool/weiboshow
 widgets:
   - recent_posts
   - category
+  - weibo
   - tag
   - archive
-  #- weibo
   - links
 
 # Toc
