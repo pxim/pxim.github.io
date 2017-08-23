@@ -112,20 +112,20 @@ about:
   photo_url: /img/avatar.jpg ## Your photo e.g. http://obzf7z93c.bkt.clouddn.com/themeauthor.jpg
   items:
   - label: email
-    url: mailto:arvin0@qq.com ## Your email with mailto: e.g.  mailto:zhenggchaoo@gmail.com
-    title: arvin0@qq.com ## Your email e.g.  zhenggchaoo@gmail.com
+    url: mailto:245803627@qq.com ## Your email with mailto: e.g.  mailto:zhenggchaoo@gmail.com
+    title: 245803627@qq.com ## Your email e.g.  zhenggchaoo@gmail.com
   - label: github
-    url: https://github.com/arvin0 ## Your github'url e.g.  https://github.com/chaooo
-    title: arvin0 ## Your github'name e.g.  chaooo
+    url: https://github.com/seanpx ## Your github'url e.g.  https://github.com/chaooo
+    title: sean's github  ## Your github'name e.g.  chaooo
   - label: weibo
     url: http://weibo.com/317177730  ## Your weibo's url e.g.  http://weibo.com/zhengchaooo
     title:  闻言知意 ## Your weibo's name e.g.  秋过冬漫长
   - label: csdn
     url: http://blog.csdn.net/arvin0
-    title: arvin0
+    title: sean's csdn blog
   - label: cnblog
     url: http://www.cnblogs.com/arvin0
-    title: arvin0
+    title:  sean's cnblog
 # - label: twitter
 #   url: 
 #   title:

@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Arvin's Blog
+title: Sean's Blog
 subtitle: Peng Xiang
 description: 假程序一个。
 keywords: as js
-author: Arvin
-email: arvin0@qq.com
+author: Seanhexo
+email: 245803627@qq.com
 language: zh-CN
 timezone:
 
@@ -72,7 +72,7 @@ theme: BlueLake
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/arvin0/arvin0.github.io.git
+  repository: https://github.com/seanpx/px.github.io.git
   branch: master
 
 feed:
