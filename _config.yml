@@ -65,14 +65,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#landscape new-vno yelee spfk indigo BlueLake
-theme: BlueLake
+#landscape new-vno yelee spfk indigo BlueLake miho
+theme: miho
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/seanpx/px.github.io.git
+  repository: https://github.com/seanin/seanin.github.io.git
   branch: master
 
 feed:
