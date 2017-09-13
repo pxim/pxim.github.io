@@ -99,26 +99,26 @@
 
     //设定除了文章列表模块，其他模块都不显示sidebar部件；
     $(document).ready(function () {
-        // console.log("刷新",window.location.href);
         //http://localhost:4000/           https://seanin.github.io/
+        //http://localhost:4000/project/   https://seanin.github.io/project/
+
         if(window.location.href === "https://seanin.github.io/"){
             $(".sidebar").css("display","inline");
         }else{
             $(".sidebar").css("display","none");
         }
-        //http://localhost:4000/project/   https://seanin.github.io/project/
-        if(window.location.href === "http://https://seanin.github.io/project/"){
+        if(window.location.href === "https://seanin.github.io/project/"){
             $(".body-wrap","#container").load("../project/main.html");
         }
 
-        if(window.location.href === "http://localhost:4000/"){
-            $(".sidebar").css("display","inline");
-        }else{
-            $(".sidebar").css("display","none");
-        }
-        if(window.location.href === "http://localhost:4000/project/"){
-            $(".body-wrap","#container").load("../project/main.html");
-        }
+        // if(window.location.href === "http://localhost:4000/"){
+        //     $(".sidebar").css("display","inline");
+        // }else{
+        //     $(".sidebar").css("display","none");
+        // }
+        // if(window.location.href === "http://localhost:4000/project/"){
+        //     $(".body-wrap","#container").load("../project/main.html");
+        // }
 
     });
 
