@@ -30,13 +30,13 @@ menu:
     title: 文章列表
     url: /
     target: false
-  archive:
-    title: 文章归档
-    url: archives/
-    target: false
+#  archive:
+#    title: 文章归档
+#    url: archives/
+#    target: false
   paper-plane-o:
     title: 作品展示
-    url: project/main.html
+    url: project/
     target: false
   user:
     title: 关于
