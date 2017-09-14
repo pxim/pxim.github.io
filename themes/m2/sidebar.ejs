@@ -1,0 +1,47 @@
+<div class="sidebar" style="display: none;">
+    <div id="sidebar-search" title="搜索">
+        <i class="fa fa-search" title="搜索"></i>
+    </div>
+    <div id="sidebar-archive" title="文章归档">
+        <i class="fa fa-archive" title="文章归档"></i>
+    </div>
+    <div id="sidebar-category" title="文章分类">
+        <i class="fa fa-book" title="文章分类"></i>
+    </div>
+    <div id="sidebar-tag" title="标签">
+        <i class="fa fa-tags" title="标签"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <%- list_categories({
+                show_count: false,
+                style: 'none',
+                separator: ''
+            }) %>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <%- tagcloud() %>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div id="mobile-header-menu-container">
+        <span class="title">Menu</span>
+        <ul class="mobile-header-menu-navbar">
+            <% for (var i in theme.menu) { %>
+            <li>
+                <a <% if(theme.menu[i].target){ %>target="_blank"<% } %> <% if(theme.menu[i].url){ %>href="<%- url_for(theme.menu[i].url) %><% } %>">
+                    <i class="fa fa-<%= i %>"></i><span><% if(theme.menu[i].title){ %><%= theme.menu[i].title %><% } %></span>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>
+<%- partial('_partial/search') %>

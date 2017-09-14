@@ -7,11 +7,11 @@ favicon: /favicon.ico
 # Header
 
 # Keywords of your site | 网站关键字
-keywords: PengXiang,Sean's Blog,Sean's site,seanin,px,site
+keywords: PengXiang,Sean's Blog
 # Head headline | 头部标题
-header_title: Sean's Site
+header_title: Sean's Blog
 # Head description | 头部描述
-header_description: 一个立志 JavaScript全栈 开发的技术博客
+header_description: 专业打杂
 # Link to your logo | logo地址
 logo: images/logo.png
 # Link to your banner_img | 首页banner图地址
@@ -100,8 +100,6 @@ open_animation: true
 
 # Open toc | 是否开启toc
 toc: true
-# Open share | 是否开启分享
-share: true
 
 # Style customization | 样式定制
 style:
@@ -113,8 +111,6 @@ style:
 # 畅言，输入appid和appkey
 changyan_appid: false
 changyan_appkey: false
-# 友言，输入id
-youyan_id: 2130339
 # disqus
 disqus: false
 

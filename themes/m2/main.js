@@ -74,40 +74,6 @@
             } else {
                 mobileHeaderMenu.removeClass("mobile-header-menu-nav-in")
             }
-        },
-        hideMask: function (target) {
-            var mask = $('.mask');
-            mask.removeClass('in');
-            if (target) {
-                target.removeClass('in')
-            }
-        },
-        share: function () {
-            var shareSub = $('#share-sub');
-            if (shareSub) {
-                var shareList = $('#share-list'),
-                    wxFab = $('#wxFab'),
-                    close = $('#wxShare-close'),
-                    mask = $('.mask');
-                shareSub.click(function () {
-                    if (shareList.hasClass('in')) {
-                        shareList.removeClass('in');
-                    } else {
-                        shareList.addClass('in');
-                    }
-                });
-                wxFab.click(function () {
-                    var wxShare = $('#wxShare');
-                    wxShare.addClass('in ready');
-                    mask.addClass('in');
-                });
-                close.click(function () {
-                    Blog.hideMask($('#wxShare'));
-                });
-                mask.click(function () {
-                    Blog.hideMask($('#wxShare'));
-                });
-            }
         }
     };
 
@@ -155,6 +121,7 @@
         // }
 
     });
+
 
     //tags | 标签
     Blog.setTags();
@@ -213,8 +180,7 @@
         Blog.showBackTop(scrollTop);
         Blog.showToc(scrollTop);
     }, false);
-    
-    //Mobile Menu
+    //
     $(".mobile-header-menu-button").click(function () {
         if (_mobileHeaderMenuLocked) {
             return false;
@@ -226,12 +192,7 @@
         window.setTimeout(function() {
             _mobileHeaderMenuLocked = false;
         }, 350);
-    });
-    
-    //Share
-    if (w.mihoConfig.share) {
-        Blog.share();
-    }
+    })
     //body
     body.click(function () {
         Blog.showSidebarBox(false);
