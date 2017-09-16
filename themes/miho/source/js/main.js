@@ -136,7 +136,7 @@
         //http://localhost:4000/           https://seanin.github.io/
         //http://localhost:4000/project/   https://seanin.github.io/project/
 
-        if(window.location.href === "https://seanin.github.io/"){
+        if(window.location.href === "https://seanin.github.io/" || window.location.href === "https://seanin.github.io/archives/"){
             $(".sidebar").css("display","inline");
         }else{
             $(".sidebar").css("display","none");
