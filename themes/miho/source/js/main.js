@@ -128,7 +128,7 @@
     //文章归档显示
     $("#sidebar-archive").click(function (e) {
         document.location.href = "https://seanin.github.io/archives/";
-        // document.location.href = "archives/";
+        // document.location.href = "http://localhost:4000/archives/";
     });
 
     //设定除了文章列表模块，其他模块都不显示sidebar部件；
@@ -145,14 +145,14 @@
             $(".body-wrap","#container").load("../project/main.html");
         }
 
-        // if(window.location.href === "http://localhost:4000/"){
-        //     $(".sidebar").css("display","inline");
-        // }else{
-        //     $(".sidebar").css("display","none");
-        // }
-        // if(window.location.href === "http://localhost:4000/project/"){
-        //     $(".body-wrap","#container").load("../project/main.html");
-        // }
+         //if(window.location.href === "http://localhost:4000/" || window.location.href === "http://localhost:4000/archives/"){
+         //    $(".sidebar").css("display","inline");
+         //}else{
+         //    $(".sidebar").css("display","none");
+         //}
+         //if(window.location.href === "http://localhost:4000/project/"){
+         //    $(".body-wrap","#container").load("../project/main.html");
+         //}
 
     });
 
