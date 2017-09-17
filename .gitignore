@@ -3,12 +3,10 @@ Thumbs.db
 db.json
 *.log
 node_modules/
-public/
 .deploy*/
 .idea/workspace.xml
 .idea/workspace.xml
 .idea/workspace.xml
-package.json
 .idea/arvin0-blog-backup.iml
 .idea/inspectionProfiles/Project_Default.xml
 .idea/modules.xml
