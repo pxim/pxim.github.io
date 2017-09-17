@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="a_data/ujian.js" charset="utf-8" id="uyan_script"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="a_data/style.css" rel="stylesheet" type="text/css">
+    <title>友言评论</title>
+</head>
+<body>
+<div style="width: 100%;"><span id="counter-box"><div class="global-nav">
+    <div class="pull-right">
+        <div id="like-div" class="thread-liked"><a id="like-action" title="你已经喜欢过了" href="javascript:;"
+                                                   onclick="UYAN_RENDER.like(1);"><span class="icon-star"><img
+                src="a_data/star.png"></span><span class="icon-star_bgl"></span><span class="counter"><span
+                id="like-count">1</span></span><span class="icon-star_bgr"></span></a></div>
+    </div>
+    <ul>
+        <li><h4>1 条评论，1 人参与。</h4></li>
+    </ul>
+</div></span><span id="post-box"><div class="uyanpost">
+    <div class="resetbox sectionbox">
+        <div id="errormsg" class="rompt"><span><p id="errorinfo"></p><a href="javascript:;"
+                                                                        onclick="UYAN_RENDER.postTip(0,0);"></a><div
+                class="claer"></div></span></div>
+        <div class="blockbox">
+            <div class="blockhead">
+                <div class="headimg"><img onerror="this.src=http://v2.uyan.cc/images/uface.jpg" src="a_data/uface.jpg">
+                </div>
+            </div>
+            <div class="postarea">
+                <div class="postwrap postborder">
+                    <div class="wraparea">
+                        <div class="textareawrap" id="textareawrap"><textarea id="uyanmessage"
+                                                                              class="textareastyle inputdefaultcolor"
+                                                                              onfocus="UYAN_RENDER.checkText(this,'postbox','focus');"
+                                                                              onblur="UYAN_RENDER.checkText(this,'postbox','blur');"
+                                                                              style="color: rgb(170, 178, 184);">我有话说...</textarea>
+                        </div>
+                    </div>
+                    <div id="postaction" class="postaction paborder">
+                        <div class="actionfunction afborder">
+                            <ul>
+                                <li class="functionface"><a class="effect" href="javascript:;"
+                                                            onclick="UYAN_RENDER.openMoodBox('expressionmenu','uyanface');"><i
+                                        id="uyanface" class="face" onmouseover="UYAN_RENDER.moodMouseover(this);"
+                                        onmouseout="UYAN_RENDER.moodMouseout(this, 'expressionmenu');"></i></a>
+
+                                    <div class="Expression" id="expressionmenu" style="display: none;"
+                                         onmousedown="javascript:event.cancelBubble=true;">
+                                        <div class="Expression_top"><span class="sp1"></span><span
+                                                class="sp2"></span><span class="sp3"></span><span
+                                                class="sp4"></span><span class="sp5"></span><span
+                                                class="sp6"></span><span class="sp7"></span><span class="sp8"></span>
+                                        </div>
+                                        <div class="Expression_Content">
+                                            <div class="Close"><a href="javascript:;"
+                                                                  onclick="UYAN_RENDER.closeMoodBox('expressionmenu','uyanface');"></a>
+                                            </div>
+                                            <ul>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('纠结','uyanmessage');"><img
+                                                        title="纠结" src="a_data/1.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('心动','uyanmessage');"><img
+                                                        title="心动" src="a_data/2.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('生气','uyanmessage');"><img
+                                                        title="生气" src="a_data/3.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('开心','uyanmessage');"><img
+                                                        title="开心" src="a_data/4.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('调皮','uyanmessage');"><img
+                                                        title="调皮" src="a_data/5.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('眨眼','uyanmessage');"><img
+                                                        title="眨眼" src="a_data/6.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('害羞','uyanmessage');"><img
+                                                        title="害羞" src="a_data/7.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('失落','uyanmessage');"><img
+                                                        title="失落" src="a_data/8.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('酷','uyanmessage');"><img title="酷"
+                                                                                                               src="a_data/9.png"></a>
+                                                </li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('愤怒','uyanmessage');"><img
+                                                        title="愤怒" src="a_data/10.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('惊讶','uyanmessage');"><img
+                                                        title="惊讶" src="a_data/11.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('无语','uyanmessage');"><img
+                                                        title="无语" src="a_data/12.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('哭泣','uyanmessage');"><img
+                                                        title="哭泣" src="a_data/13.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('笑','uyanmessage');"><img title="笑"
+                                                                                                               src="a_data/14.png"></a>
+                                                </li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('大哭','uyanmessage');"><img
+                                                        title="大哭" src="a_data/15.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('调皮','uyanmessage');"><img
+                                                        title="调皮" src="a_data/16.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('惊讶','uyanmessage');"><img
+                                                        title="惊讶" src="a_data/17.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('呆','uyanmessage');"><img title="呆"
+                                                                                                               src="a_data/18.png"></a>
+                                                </li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('口哨','uyanmessage');"><img
+                                                        title="口哨" src="a_data/19.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('天使','uyanmessage');"><img
+                                                        title="天使" src="a_data/20.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('恶魔','uyanmessage');"><img
+                                                        title="恶魔" src="a_data/21.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('恶魔笑','uyanmessage');"><img
+                                                        title="恶魔笑" src="a_data/22.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('闭嘴','uyanmessage');"><img
+                                                        title="闭嘴" src="a_data/23.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('满意','uyanmessage');"><img
+                                                        title="满意" src="a_data/24.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('睡觉','uyanmessage');"><img
+                                                        title="睡觉" src="a_data/25.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('得意','uyanmessage');"><img
+                                                        title="得意" src="a_data/26.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('生病','uyanmessage');"><img
+                                                        title="生病" src="a_data/27.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('怀疑','uyanmessage');"><img
+                                                        title="怀疑" src="a_data/28.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('专注','uyanmessage');"><img
+                                                        title="专注" src="a_data/29.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('外星人','uyanmessage');"><img
+                                                        title="外星人" src="a_data/30.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('史莱克','uyanmessage');"><img
+                                                        title="史莱克" src="a_data/31.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('游戏','uyanmessage');"><img
+                                                        title="游戏" src="a_data/32.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('爱心','uyanmessage');"><img
+                                                        title="爱心" src="a_data/33.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('家','uyanmessage');"><img title="家"
+                                                                                                               src="a_data/34.png"></a>
+                                                </li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('地球','uyanmessage');"><img
+                                                        title="地球" src="a_data/35.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('邮件','uyanmessage');"><img
+                                                        title="邮件" src="a_data/36.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('音乐','uyanmessage');"><img
+                                                        title="音乐" src="a_data/37.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('编辑','uyanmessage');"><img
+                                                        title="编辑" src="a_data/38.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('电话','uyanmessage');"><img
+                                                        title="电话" src="a_data/39.png"></a></li>
+                                                <li><a href="javascript:void(0);"
+                                                       onclick="UYAN_RENDER.addSmile('照相','uyanmessage');"><img
+                                                        title="照相" src="a_data/40.png"></a></li>
+                                                <div class="claer"></div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="sociallogin" class="Social-Login">
+                    <div class="Social"><h6>使用社交帐号登录</h6><span><a id="loginqq" href="javascript:;"
+                                                                  onclick="UYAN_RENDER.socialLogin('qq')" class="qq"
+                                                                  title="使用QQ帐号登录"></a><a id="logintsina"
+                                                                                          href="javascript:;"
+                                                                                          onclick="UYAN_RENDER.socialLogin('tsina')"
+                                                                                          class="sina"
+                                                                                          title="使用新浪微博帐号登录"></a><a
+                            id="loginrenren" href="javascript:;" onclick="UYAN_RENDER.socialLogin('renren')"
+                            class="renren" title="使用人人网帐号登录"></a><a id="loginkaixin001" href="javascript:;"
+                                                                    onclick="UYAN_RENDER.socialLogin('kaixin001')"
+                                                                    class="kaixin" title="使用开心网帐号登录"></a></span></div>
+                    <div class="Login"><h6 id="nicknamemsg" style="float:right;">发布前先点击左边的按钮登录</h6><span
+                            style="float:right;" class="Login-border"><input id="nickname" name="nickname"
+                                                                             style="display:none;"
+                                                                             onfocus="UYAN_RENDER.checkText(this,'nickname','focus');"
+                                                                             onblur="UYAN_RENDER.checkText(this,'nickname','blur');"
+                                                                             maxlength="20"
+                                                                             class="txt inputdefaultcolor" value="昵称"
+                                                                             type="text"><a id="postsubmit"
+                                                                                            href="javascript:;"
+                                                                                            class="btn"
+                                                                                            onclick="UYAN_RENDER.post(0);"></a></span>
+                    </div>
+                    <div class="claer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></span><span id="nav-box"><div class="nav">
+    <div class="nav-left" onmouseover="UYAN_RENDER.listMenu();" onmouseout="UYAN_RENDER.listMenu();"><span><b>最新评论</b><i
+            class="downicon" id="arrowstatus"></i></span>
+        <ul class="nav-menu nav-menu-left" id="commentmenu" style="display:none;">
+            <li class="on"><a href="javascript:;" onclick="UYAN_RENDER.getSort(1);">最新评论&nbsp;&nbsp;&nbsp;&nbsp;√</a>
+            </li>
+            <li><a href="javascript:;" onclick="UYAN_RENDER.getSort(2);">最早评论</a></li>
+            <li><a href="javascript:;" onclick="UYAN_RENDER.getSort(3);">最热评论</a></li>
+        </ul>
+    </div>
+    <div class="claer"></div>
+</div></span><span id="posts"><ul id="post-list" class="post-list">
+    <li class="post" id="post-55766084">
+        <div class="post-content" onmouseover="UYAN_RENDER.listMouseover(55766084);"
+             onmouseout="UYAN_RENDER.listMouseout(55766084);">
+            <div class="avatar hovercard"><a target="_blank" class="user" href="http://qzone.qq.com/"><img
+                    onerror="this.src=https://seanin.github.io/plugin/v2.uyan.cc/images/uface.jpg" src="a_data/50.jpg"></a></div>
+            <div class="post-body">
+                <div class="u-header"><span class="author publisher-anchor-color"><a target="_blank"
+                                                                                     href="http://qzone.qq.com/">悠悠白云</a></span><span
+                        class="connector" onmouseover="this.getElementsByTagName('div')[0].style.display='block';"
+                        onmouseout="this.getElementsByTagName('div')[0].style.display='none';"><a class="replyname"
+                                                                                                  href="javascript:;"></a><div
+                        class="connector-box">
+                    <div class="avatar"><img src="a_data/uface.jpg"></div>
+                    <div class="content"><h3></h3>
+
+                        <p></p></div>
+                </div></span>
+
+                    <div class="post-meta"><span aria-hidden="true" class="bullet time-ago-bullet">•</span><a
+                            class="time-ago" href="#">12分钟前</a></div>
+                    <div class="post-menu" id="postmenu-55766084" style="display: none;"><a title="收起" href="#"
+                                                                                            id="packup-55766084"
+                                                                                            class="packup"
+                                                                                            onclick="UYAN_RENDER.postMenuFun(this);"></a><a
+                            title="展开" href="#" id="unwind-55766084" class="unwind"
+                            onclick="UYAN_RENDER.postMenuFun(this);" style="display:none;"></a></div>
+                </div>
+                <div class="post-body-inner">
+                    <div data-role="message-container" class="post-message-container">
+                        <div data-role="message-content">
+                            <div class="post-message publisher-anchor-color"><p>111</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-footer">
+                    <ul>
+                        <li><a id="vote-action-55766084" onclick="UYAN_RENDER.vote(55766084,1);" title="你已经顶过了"
+                               href="javascript:void(0);" class="thread-voted"><span
+                                id="vote-55766084">1</span>顶</a><em>•</em></li>
+                        <li class="reply"><a data-action="reply" class="action" href="javascript:void(0);"
+                                             onclick="UYAN_RENDER.reply(55766084);">回复</a><em>•</em></li>
+                        <li class="share" onmouseover="this.getElementsByTagName('div')[0].style.display='block';"
+                            onmouseout="this.getElementsByTagName('div')[0].style.display='none';"><a class="action"
+                                                                                                      href="#">分享»</a>
+
+                            <div class="shareto" style="display: none;"><a href="javascript:void(0);"
+                                                                           onclick="UYAN_RENDER.shareTo('tsina','111');"
+                                                                           class="tsina"></a><a
+                                    href="javascript:void(0);" onclick="UYAN_RENDER.shareTo('tqq','111');"
+                                    class="tqq"></a></div>
+                        </li>
+                        <div class="claer"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="uyan-reply-55766084" class="uyan-reply-postbox"></div>
+        <ul id="uyan-child-55766084" class="children"></ul>
+    </li>
+</ul></span><span id="loadmore" style="display: none;"></span>
+
+    <div class="ujian-uyan"></div>
+    <span id="uyan-copyright"><div class="Copyright"><a target="_blank" href="http://www.uyan.cc/">友言？</a></div></span>
+</div>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://seanin.github.io/plugin/v2.uyan.cc/code/respond.js"></script> <![endif]-->
+<script type="text/javascript" src="a_data/render.js"></script>
+<script type="text/javascript">
+    UYAN_RENDER.actionUrl = 'http://api.v2.uyan.cc/v4/action/';
+    UYAN_RENDER.submitUrl = 'http://api.v2.uyan.cc/v4/submit/';
+    UYAN_RENDER.voteUrl = 'http://api.v2.uyan.cc/v4/vote/';
+    UYAN_RENDER.likeUrl = 'http://api.v2.uyan.cc/v4/like/';
+    UYAN_RENDER.loginUrl = 'http://api.uyan.cc/v4/login/';
+    UYAN_RENDER.page({
+        "sid": 12450601,
+        "peoplecount": 1,
+        "postcount": 1,
+        "likecount": 0,
+        "initcontent": "",
+        "initnickname": "",
+        "defaultface": "",
+        "sort": 1,
+        "opensso": 0,
+        "ssoiconurl": "",
+        "ssologinurl": "",
+        "ssologouturl": "",
+        "ssoboxwidth": 0,
+        "ssoboxheight": 0,
+        "visitormsg": 0,
+        "commenttitle": ""
+    });
+    UYAN_RENDER.userFun({"uname": "", "uface": "", "profileurl": "", "logintype": 0, "ufrom": ""});
+    UYAN_RENDER.comment({
+        "data": [{
+            "cid": 55766084,
+            "rid": 0,
+            "pid": 0,
+            "rn": 0,
+            "prnum": 0,
+            "uname": "悠悠白云",
+            "uface": "http://qzapp.qlogo.cn/qzapp/216508/0EA755F6D67767D3B762DA15586287AA/50",
+            "profileurl": "http://qzone.qq.com/",
+            "cnt": "111",
+            "time": "12分钟前",
+            "status": 0,
+            "reply": {"uname": "", "uface": "", "profileurl": "", "cnt": "", "status": 0}
+        }], "more": 0, "way": 1
+    });
+    UYAN_RENDER.recommended(1);
+    UYAN_RENDER.getCopyright();
+    UYAN_RENDER.urlhash = "";
+</script>
+
+</body>
+</html>

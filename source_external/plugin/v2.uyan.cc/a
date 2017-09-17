@@ -1,0 +1,1 @@
+try{UYAN.commentUrl='https://seanin.github.io/plugin/v2.uyan.cc/a.htm';UYAN.creElm({src:'https://seanin.github.io/plugin/v2.uyan.cc/v4.js', charset:'utf-8', id:'UYScript'}, 'script', document.getElementsByTagName('head')[0] || document.body);}catch(e){}
