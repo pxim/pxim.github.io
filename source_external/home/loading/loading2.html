@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>preloading</title>
+    <script src="js/jquery.js"></script>
+    <style>
+        body{
+            background:#333333;
+            margin:0;padding:0; overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!--<div >-->
+        <img id="loading" src="loading/preloading.gif" style="position:absolute;text-align: center; margin:auto; top: 0; bottom: 0; left: 0; right: 0; width:20%; "/>
+        <!--<img src="preload/preloading3.gif" />-->
+        <!--<div>-->
+            <!--<label style="font-size: 25px; font-weight: bold; color: #ffffff;">loading.....</label>-->
+        <!--</div>-->
+
+    <!--</div>-->
+</body>
+    <script>
+        $(document).ready(function () {
+            if (navigator.userAgent.match(/mobile/i)) {
+                $("#loading").css("width", "50%");
+            } else {
+                $("#loading").css("width", "10%");
+            }
+         });
+    </script>
+</html>
