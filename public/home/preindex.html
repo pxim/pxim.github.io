@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body{margin:0;padding:0; overflow: hidden;}
+        .head{position: absolute; text-align: center; top: 0; left: 0;width: 100%; height: 100%; overflow: hidden;}
+    </style>
+</head>
+<body>
+    <div id="preload" class="head" style="z-index:100;">
+        <!--<iframe id="preload_page" src="preload.html" style="width:100%;height:100%;"  frameborder="0" onload="onPreloadPageLoad();"></iframe>-->
+        <iframe id="preload_page" src="loading2/index.html" style="width:100%;height:100%;"  frameborder="0" onload="onPreloadPageLoad();"></iframe>
+    </div>
+    <div id="main_content" class="head"style="display:none;">
+        <!--<iframe id="main_page" src="main.html" style="width:100%;height:100%;"  frameborder="0" onload="onMainPageLoad();"></iframe>-->
+    </div>
+
+</body>
+
+<script src="js/jquery.js"></script>
+<!--<script src="loading/resLoader.js"></script>-->
+<script>
+    $(document).ready(function () {
+
+    });
+
+    function onMainPageLoad(){
+//        $("#preload").remove();
+    }
+
+    function onPreloadPageLoad(){
+//        preloadres();
+
+        $("#main_content").load("main.html",function(responseTxt, statusTxt, xhr){
+            if (statusTxt == "success") {
+//                $("#preload").remove();
+                $("#preload").css("display","none");
+                $("#main_content").css("display","inline");
+            }
+            if (statusTxt == "error") {
+                console.log("Error:" + xhr.status + ":" + xhr.statusText)
+            }
+        });
+    }
+
+    function preloadres(){
+        var loader = new resLoader({
+            resources : [
+                "img/1431799247.jpg",
+                "img/blog-mobile.jpg",
+                "music/Asher Book - Try.jpg",
+
+                "img/index_contact.jpg",
+                "img/smohan_logo_mask.png",
+                "img/index_dot_bg.png",
+                "img/index_p1_h1.png",
+                "img/index_p1_p.png",
+                "img/device-main.png",
+                "img/smohan_icons.png",
+                "img/index_p2_main.png",
+//                "img/img/times.png",
+                "img/index_air.png",
+                "img/index_air_shadow.png",
+                "img/mobile_qr_code.png",
+
+                "img/favicon.ico"
+            ],
+            onStart : function(total){
+                console.log('start:'+total);
+            },
+            onProgress : function(current, total){
+                var percent = parseInt(current/total*100) + "%";
+                console.log(current+'/'+total,percent);
+            },
+            onComplete : function(total){
+                console.log('加载完毕:'+total+'个资源');
+//                 $("#preload").remove();
+//                 $("#main_content").load("main.html");
+
+                $("#main_content").load("main.html",function(responseTxt, statusTxt, xhr){
+                    if (statusTxt == "success") {
+//                        $("#preload").remove();
+//                        $("#main_content")[0].addBgm();
+                    }
+                    if (statusTxt == "error") {
+                     //   console.log("Error:" + xhr.status + ":" + xhr.statusText)
+                    }
+                });
+            }
+        });
+        loader.start();
+    }
+</script>
+</html>
