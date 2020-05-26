@@ -37,6 +37,537 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Flash模板</title>
+    <url>/2020/05/26/DResDevKit/02-course-An-Flash/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>版本</th>
+<th>动画类型</th>
+<th>功能说明</th>
+<th>动画编号</th>
+<th>HTML发布模板</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Flash</td>
+<td>片头动画</td>
+<td></td>
+<td>enter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Flash</td>
+<td>普通动画</td>
+<td>播完就自动跳下一个动画；</td>
+<td>template_001</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Flash</td>
+<td>普通动画</td>
+<td>播完会跳黄，不会自动跳下一个动画；</td>
+<td>template_002</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Flash</td>
+<td>视频动画（单个）</td>
+<td>类似播放视频的方式，播放序列动画；有控制栏；可设置是否自动播放；播完会跳黄；</td>
+<td>template_003</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Flash</td>
+<td>视频动画（单个）</td>
+<td>开始时，页面中间多一个大的开始按钮；</td>
+<td>template_012</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Flash</td>
+<td>视频动画（带二级动画）</td>
+<td>包含2个模板（主文件，二级视频页面模板）； 基础功能同上；添加 视频动画切换；第一遍强制播完；</td>
+<td>template_004</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题单选题；</td>
+<td>template_006</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题多选题；判断结果有文字提示；</td>
+<td>template_007</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题多选题；判断结果有提示框，带关闭按钮；</td>
+<td>template_011</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题全选题；</td>
+<td>template_008</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题拖动题；判断结果有文字提示；</td>
+<td>template_009</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题拖动题；判断结果有提示框，带关闭按钮；</td>
+<td>template_010</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Flash</td>
+<td>切换页面动画</td>
+<td>有切换按钮，切换MC；</td>
+<td>template_014</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>普通子动画；第一遍强制播放；不带返回；</td>
+<td>template_015</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>普通子动画；带返回；</td>
+<td>template_016</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>强制学习；带返回；带上一页，下一页功能；</td>
+<td>template_017</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>普通子动画；切换页面；不带返回；</td>
+<td>template_018</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>切换页面；不带返回；保留按钮点击记录；</td>
+<td>template_019</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>切换页面；带返回；允许控制播放；</td>
+<td>template_020</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>切换页面；不允许控制播放；</td>
+<td>template_021</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>Flash</td>
+<td>交互动画</td>
+<td>点击切换按钮，切换MC；可重复切换；</td>
+<td>template_005</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>Flash</td>
+<td>其他交互动画</td>
+<td>单击按钮，显示MC；按钮只能点一次；MC显示后一直存在；</td>
+<td>template_013</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td>Flash</td>
+<td>整体测试（带二级动画）</td>
+<td>包含6个模板（整体测试主文件，Start，End，  整体测试单选题模板,整体测试多选题模板，整体测试拖动题模板）</td>
+<td>template_ZTCeshi</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td>Flash</td>
+<td>整体测试（二级）- 随机抽题</td>
+<td>同上；添加随机抽题功能；（SKD版本Flash代码未修改）；</td>
+<td>template_ZTCeshi_Suiji</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>Flash</td>
+<td>拆装动画</td>
+<td>拆装动画-大石头那边的SKD和YQ；</td>
+<td>template_CZ</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>Flash</td>
+<td>MouseOver动画</td>
+<td>鼠标移上按钮，播放mc动画；移出按钮，关闭mc动画；</td>
+<td>template_022</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>H5模板</title>
+    <url>/2020/05/26/DResDevKit/03-course-An-H5/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>版本</th>
+<th>动画类型</th>
+<th>功能说明</th>
+<th>动画编号</th>
+<th>HTML发布模板</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>H5(PC)</td>
+<td>片头动画</td>
+<td>序列帧动画；如发布PC端，则设 移动端功能 下图层 为引导层； 如发布Mobile端，则去掉引导层；</td>
+<td>enter1</td>
+<td>h5RT_Enter1.html</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>H5(PC)</td>
+<td>片头动画</td>
+<td>带视频的动画；如发布PC端，则设 移动端功能 下图层 为引导层； 如发布Mobile端，则去掉引导层；</td>
+<td>h5T_Enter2</td>
+<td>h5RT_Enter2.html                     a</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>H5(PC)</td>
+<td>菜单目录</td>
+<td>类型：1级联动菜单；常用于广本项目；</td>
+<td>menu1</td>
+<td>h5RT_Menu1.html</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>H5(PC)</td>
+<td>菜单目录</td>
+<td>类型：2级联动菜单，并且有两种模式：①自由触发；②限制触发；常用于斯柯达项目；</td>
+<td>menu2</td>
+<td>h5RT_Menu2.html</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>H5(PC)</td>
+<td>菜单目录</td>
+<td>类型：3级联动菜单；常用于领克项目；</td>
+<td>menu3</td>
+<td>h5RT_Menu3.html</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>H5(PC)</td>
+<td>普通动画</td>
+<td>播完就自动跳下一个动画；</td>
+<td>h5T_001</td>
+<td>h5RT_001.html</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>H5(PC)</td>
+<td>普通动画</td>
+<td>带返回菜单按钮的普通动画；</td>
+<td>h5T_001_2</td>
+<td>h5RT_001.html</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>H5(PC)</td>
+<td>切换MC动画</td>
+<td>点击切换按钮，切换MC；可重复切换；双击当前按钮，对应动画会重置；</td>
+<td>h5T_003</td>
+<td>h5RT_003.html</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>H5(PC)</td>
+<td>切换MC动画</td>
+<td>点击切换按钮，切换MC；每个切换按钮只能点击一次；</td>
+<td>h5T_005</td>
+<td>h5RT_003.html</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>H5(PC)</td>
+<td>切换MC动画</td>
+<td>点击切换按钮，切换MC；每个切换按钮只能点击一次；MC显示后一直存在；</td>
+<td>h5T_005_2</td>
+<td>h5RT_003.html</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>轮播小图动画</td>
+<td>点击小图，播放大图；</td>
+<td>h5T_006</td>
+<td>h5RT_006.html</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>H5(PC)</td>
+<td>MouseOver动画</td>
+<td>鼠标移上按钮，播放mc动画；移出按钮，关闭mc动画；</td>
+<td>h5T_015</td>
+<td>h5RT_015.html</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>H5(PC)</td>
+<td>视频动画（单页）</td>
+<td>单个视频；自定义播放控件；</td>
+<td>h5T_008</td>
+<td>h5RT_008.html</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>H5(PC)</td>
+<td>切换页面动画（二级）</td>
+<td>一级页面： h5T_009   点击切换按钮，切换html；可重复切换；可设置按钮显示当前选中状态；可设置默认子动画播放，默认不设置；  二级页面： h5T_009_1 带自定义播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_2 不带播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_3 普通序列帧动画；带返回按钮；可去掉返回按钮；</td>
+<td>h5T_009</td>
+<td>一级页面： h5RT_009.html  二级页面： h5RT_009_1.html h5RT_009_1.html h5RT_009_3.html</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>H5(PC)</td>
+<td>顺序播放视频动画（二级）</td>
+<td>一级页面： h5T_011   第一遍强制按照列表顺序播放子页面动画；播完可以自由切换播放；集成页面控制栏按钮可以控制视频的播放暂停；此模板中去掉子页面里的关闭按钮；  二级页面： h5T_009_1 带自定义播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_2 不带播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_3 普通序列帧动画；带返回按钮；可去掉返回按钮；</td>
+<td>h5T_011</td>
+<td>一级页面： h5RT_011.html     二级页面：  h5RT_009_1.html   h5RT_009_1.html   h5RT_009_3.html</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>H5(PC)</td>
+<td>切换页面动画（二级）</td>
+<td>一级页面： h5T_020        切换页面；  二级页面： XXYLG_020201a  点击切换MC；点击toggleBtn通知主页切换子页面；</td>
+<td>h5T_020</td>
+<td>一级页面： h5RT_020.html    二级页面： h5RT_020_1.html</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>H5(PC)</td>
+<td>练习题动画</td>
+<td>单选题；无限次答题机会；</td>
+<td>eTest_Select1</td>
+<td>h5RT_ETest_Select.html</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>H5(PC)</td>
+<td>练习题动画</td>
+<td>多选题；无限次答题机会；</td>
+<td>eTest_Select2</td>
+<td>h5RT_ETest_Select.html</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>H5(PC)</td>
+<td>练习题动画</td>
+<td>拖动题；无限次答题机会；</td>
+<td>eTest_Drag</td>
+<td>h5RT_ETest_Drag.html</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>H5(PC)</td>
+<td>整体测试</td>
+<td>一级页面： h5T_ZTCeshi              整体测试主页；可以全部的题目，也可以随机抽题，也可以显示题目进度条，都通过testConfig.xml进行配置；       二级页面： OTest_Start        开始页 OTest_Select1      单选题 OTest_Select2      多选题  OTest_Drag         拖动题 OTest_End          结束页</td>
+<td>ZTCeshi</td>
+<td>一级页面： h5T_ZTCeshi.html  二级页面： h5RT_ZTCeshi_Start.html h5RT_ZTCeshi_Select.html h5RT_ZTCeshi_Select.html h5RT_ZTCeshi_Drag.html h5RT_ZTCeshi_End.html</td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>H5(PC)</td>
+<td>检查步骤动画</td>
+<td>点击下一步按钮，跳到下一帧动画；一直点击一直跳，直到最后；</td>
+<td>stepNext</td>
+<td>h5RT_StepNext.html</td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>H5(PC)</td>
+<td>滚动条动画</td>
+<td>带滚动条的动画；</td>
+<td>scrollBar</td>
+<td>h5RT_ScrollBar.html</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
     <title>DResDevKit/01-course-dev-kit</title>
     <url>/2020/05/25/DResDevKit/01-course-dev-kit/</url>
     <content><![CDATA[<hr>
@@ -903,590 +1434,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>H5模板</title>
-    <url>/2020/05/26/DResDevKit/03-course-An-H5/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>版本</th>
-<th>动画类型</th>
-<th>功能说明</th>
-<th>动画编号</th>
-<th>HTML发布模板</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>H5(PC)</td>
-<td>片头动画</td>
-<td>序列帧动画；如发布PC端，则设 移动端功能 下图层 为引导层； 如发布Mobile端，则去掉引导层；</td>
-<td>enter1</td>
-<td>h5RT_Enter1.html</td>
-<td></td>
-</tr>
-<tr>
-<td>2</td>
-<td>H5(PC)</td>
-<td>片头动画</td>
-<td>带视频的动画；如发布PC端，则设 移动端功能 下图层 为引导层； 如发布Mobile端，则去掉引导层；</td>
-<td>h5T_Enter2</td>
-<td>h5RT_Enter2.html                     a</td>
-<td></td>
-</tr>
-<tr>
-<td>3</td>
-<td>H5(PC)</td>
-<td>菜单目录</td>
-<td>类型：1级联动菜单；常用于广本项目；</td>
-<td>menu1</td>
-<td>h5RT_Menu1.html</td>
-<td></td>
-</tr>
-<tr>
-<td>4</td>
-<td>H5(PC)</td>
-<td>菜单目录</td>
-<td>类型：2级联动菜单，并且有两种模式：①自由触发；②限制触发；常用于斯柯达项目；</td>
-<td>menu2</td>
-<td>h5RT_Menu2.html</td>
-<td></td>
-</tr>
-<tr>
-<td>5</td>
-<td>H5(PC)</td>
-<td>菜单目录</td>
-<td>类型：3级联动菜单；常用于领克项目；</td>
-<td>menu3</td>
-<td>h5RT_Menu3.html</td>
-<td></td>
-</tr>
-<tr>
-<td>6</td>
-<td>H5(PC)</td>
-<td>普通动画</td>
-<td>播完就自动跳下一个动画；</td>
-<td>h5T_001</td>
-<td>h5RT_001.html</td>
-<td></td>
-</tr>
-<tr>
-<td>7</td>
-<td>H5(PC)</td>
-<td>普通动画</td>
-<td>带返回菜单按钮的普通动画；</td>
-<td>h5T_001_2</td>
-<td>h5RT_001.html</td>
-<td></td>
-</tr>
-<tr>
-<td>8</td>
-<td>H5(PC)</td>
-<td>切换MC动画</td>
-<td>点击切换按钮，切换MC；可重复切换；双击当前按钮，对应动画会重置；</td>
-<td>h5T_003</td>
-<td>h5RT_003.html</td>
-<td></td>
-</tr>
-<tr>
-<td>9</td>
-<td>H5(PC)</td>
-<td>切换MC动画</td>
-<td>点击切换按钮，切换MC；每个切换按钮只能点击一次；</td>
-<td>h5T_005</td>
-<td>h5RT_003.html</td>
-<td></td>
-</tr>
-<tr>
-<td>10</td>
-<td>H5(PC)</td>
-<td>切换MC动画</td>
-<td>点击切换按钮，切换MC；每个切换按钮只能点击一次；MC显示后一直存在；</td>
-<td>h5T_005_2</td>
-<td>h5RT_003.html</td>
-<td></td>
-</tr>
-<tr>
-<td>11</td>
-<td></td>
-<td>轮播小图动画</td>
-<td>点击小图，播放大图；</td>
-<td>h5T_006</td>
-<td>h5RT_006.html</td>
-<td></td>
-</tr>
-<tr>
-<td>12</td>
-<td>H5(PC)</td>
-<td>MouseOver动画</td>
-<td>鼠标移上按钮，播放mc动画；移出按钮，关闭mc动画；</td>
-<td>h5T_015</td>
-<td>h5RT_015.html</td>
-<td></td>
-</tr>
-<tr>
-<td>13</td>
-<td>H5(PC)</td>
-<td>视频动画（单页）</td>
-<td>单个视频；自定义播放控件；</td>
-<td>h5T_008</td>
-<td>h5RT_008.html</td>
-<td></td>
-</tr>
-<tr>
-<td>14</td>
-<td>H5(PC)</td>
-<td>切换页面动画（二级）</td>
-<td>一级页面： h5T_009   点击切换按钮，切换html；可重复切换；可设置按钮显示当前选中状态；可设置默认子动画播放，默认不设置；  二级页面： h5T_009_1 带自定义播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_2 不带播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_3 普通序列帧动画；带返回按钮；可去掉返回按钮；</td>
-<td>h5T_009</td>
-<td>一级页面： h5RT_009.html  二级页面： h5RT_009_1.html h5RT_009_1.html h5RT_009_3.html</td>
-<td></td>
-</tr>
-<tr>
-<td>15</td>
-<td>H5(PC)</td>
-<td>顺序播放视频动画（二级）</td>
-<td>一级页面： h5T_011   第一遍强制按照列表顺序播放子页面动画；播完可以自由切换播放；集成页面控制栏按钮可以控制视频的播放暂停；此模板中去掉子页面里的关闭按钮；  二级页面： h5T_009_1 带自定义播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_2 不带播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_3 普通序列帧动画；带返回按钮；可去掉返回按钮；</td>
-<td>h5T_011</td>
-<td>一级页面： h5RT_011.html     二级页面：  h5RT_009_1.html   h5RT_009_1.html   h5RT_009_3.html</td>
-<td></td>
-</tr>
-<tr>
-<td>16</td>
-<td>H5(PC)</td>
-<td>切换页面动画（二级）</td>
-<td>一级页面： h5T_020        切换页面；  二级页面： XXYLG_020201a  点击切换MC；点击toggleBtn通知主页切换子页面；</td>
-<td>h5T_020</td>
-<td>一级页面： h5RT_020.html    二级页面： h5RT_020_1.html</td>
-<td></td>
-</tr>
-<tr>
-<td>17</td>
-<td>H5(PC)</td>
-<td>练习题动画</td>
-<td>单选题；无限次答题机会；</td>
-<td>eTest_Select1</td>
-<td>h5RT_ETest_Select.html</td>
-<td></td>
-</tr>
-<tr>
-<td>18</td>
-<td>H5(PC)</td>
-<td>练习题动画</td>
-<td>多选题；无限次答题机会；</td>
-<td>eTest_Select2</td>
-<td>h5RT_ETest_Select.html</td>
-<td></td>
-</tr>
-<tr>
-<td>19</td>
-<td>H5(PC)</td>
-<td>练习题动画</td>
-<td>拖动题；无限次答题机会；</td>
-<td>eTest_Drag</td>
-<td>h5RT_ETest_Drag.html</td>
-<td></td>
-</tr>
-<tr>
-<td>20</td>
-<td>H5(PC)</td>
-<td>整体测试</td>
-<td>一级页面： h5T_ZTCeshi              整体测试主页；可以全部的题目，也可以随机抽题，也可以显示题目进度条，都通过testConfig.xml进行配置；       二级页面： OTest_Start        开始页 OTest_Select1      单选题 OTest_Select2      多选题  OTest_Drag         拖动题 OTest_End          结束页</td>
-<td>ZTCeshi</td>
-<td>一级页面： h5T_ZTCeshi.html  二级页面： h5RT_ZTCeshi_Start.html h5RT_ZTCeshi_Select.html h5RT_ZTCeshi_Select.html h5RT_ZTCeshi_Drag.html h5RT_ZTCeshi_End.html</td>
-<td></td>
-</tr>
-<tr>
-<td>21</td>
-<td>H5(PC)</td>
-<td>检查步骤动画</td>
-<td>点击下一步按钮，跳到下一帧动画；一直点击一直跳，直到最后；</td>
-<td>stepNext</td>
-<td>h5RT_StepNext.html</td>
-<td></td>
-</tr>
-<tr>
-<td>22</td>
-<td>H5(PC)</td>
-<td>滚动条动画</td>
-<td>带滚动条的动画；</td>
-<td>scrollBar</td>
-<td>h5RT_ScrollBar.html</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-]]></content>
-  </entry>
-  <entry>
-    <title>拆装动画模板</title>
-    <url>/2020/05/26/DResDevKit/04-course-CZ-H5/</url>
-    <content><![CDATA[<ol>
-<li><a href="#user-content-配置表说明">配置表说明</a> <ul>
-<li><a href="#user-content-menuinfoxml">menuInfo.xml</a></li>
-<li><a href="#user-content-partinfoxml">partInfo.xml</a></li>
-<li><a href="#user-content-toolinfoxml">toolInfo.xml</a></li>
-<li><a href="#user-content-actionstepxml">actionStep.xml</a></li>
-</ul>
-</li>
-<li><a href="#user-content-场景动画说明">场景动画说明</a><ul>
-<li><a href="#user-content-1-场景动画里--热点区域颜色">场景动画里–热点区域颜色</a></li>
-<li><a href="#user-content-2-场景动画里--代码">场景动画里–代码</a></li>
-</ul>
-</li>
-</ol>
-<h2 id="配置表说明"><a href="#配置表说明" class="headerlink" title="配置表说明"></a>配置表说明</h2><h3 id="menuInfo-xml"><a href="#menuInfo-xml" class="headerlink" title="menuInfo.xml"></a>menuInfo.xml</h3><blockquote>
-<p>菜单配置表<br>root → item 节点的属性</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">mId</td>
-<td align="left">菜单的序号</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="left">菜单的名字</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">partGroup</td>
-<td align="left">当前菜单页所需要显示的零件，所属群组</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">href</td>
-<td align="left">菜单按钮相对应的页面</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">poster</td>
-<td align="left">当前页相对应的海边图片（图片要求：1.是当前页面初始化显示时的状态图片；2.图片大小尽量压缩；)</td>
-<td align="left">目前暂时弃用</td>
-</tr>
-</tbody></table>
-<hr>
-<h3 id="partInfo-xml"><a href="#partInfo-xml" class="headerlink" title="partInfo.xml"></a>partInfo.xml</h3><blockquote>
-<p>零件信息配置表；用于零件箱里的图片和场景里零件的图片<br>root → item 节点的属性</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="right">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">id</td>
-<td align="left">零件的序号</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="left">零件的名字</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">group</td>
-<td align="left">零件群组（比如第一步出现的零件，那么group=1，以此类推）</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">isUse</td>
-<td align="left">零件是否在使用(false：没有；true：在使用)</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">href</td>
-<td align="left">零件箱里零件图片的路径</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">href2</td>
-<td align="left">场景里零件图片的路径</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">offsetX</td>
-<td align="left">场景里零件图片的鼠标X偏移量</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">offsetY</td>
-<td align="left">场景里零件图片的鼠标Y偏移量</td>
-<td align="right"></td>
-</tr>
-</tbody></table>
-<hr>
-<h3 id="toolInfo-xml"><a href="#toolInfo-xml" class="headerlink" title="toolInfo.xml"></a>toolInfo.xml</h3><blockquote>
-<p>工具信息配置表；用于工具箱里的图片和场景里工具的图片<br>root → tool → item 节点的属性</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="right">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">id</td>
-<td align="left">工具的序号</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="left">工具的名字</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">iscomTool</td>
-<td align="left">是否是组合工具部件（true：是；false：不是）</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">comBoxIndex</td>
-<td align="left">如果是组合工具部件，则填写本部件所在的组合框索引（1，2，3 是组合工具部件所在 工具箱组合框上 对应的框子索引）；如果不是，则空着；</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">isUse</td>
-<td align="left">工具是否在使用(false：没有；true：在使用)</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">href</td>
-<td align="left">工具箱里工具图片的路径</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">href2</td>
-<td align="left">场景里工具图片的路径</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">offsetX</td>
-<td align="left">场景里工具图片的鼠标X偏移量</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">offsetY</td>
-<td align="left">场景里工具图片的鼠标Y偏移量</td>
-<td align="right"></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>root → combineTool → item 节点的属性</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="right">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">id</td>
-<td align="left">组合工具的序号</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="left">组合工具的名字</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">combineUnit1</td>
-<td align="left">构成本组合工具的部件1（和工具箱组合框1对应），有，则填写对应的工具部件的id；没有，则空着；</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">combineUnit2</td>
-<td align="left">构成本组合工具的部件2（和工具箱组合框2对应），有，则填写对应的工具部件的id；没有，则空着；</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">combineUnit3</td>
-<td align="left">构成本组合工具的部件3（和工具箱组合框3对应），有，则填写对应的工具部件的id；没有，则空着；</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">isUse</td>
-<td align="left">工具是否在使用(false：没有；true：在使用)</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">href</td>
-<td align="left">工具箱里工具图片的路径</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">href2</td>
-<td align="left">场景里工具图片的路径</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">offsetX</td>
-<td align="left">场景里工具图片的鼠标X偏移量</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td align="left">offsetY</td>
-<td align="left">场景里工具图片的鼠标Y偏移量</td>
-<td align="right"></td>
-</tr>
-</tbody></table>
-<hr>
-<h3 id="actionStep-xml"><a href="#actionStep-xml" class="headerlink" title="actionStep.xml"></a>actionStep.xml</h3><blockquote>
-<p>操作步骤配置表<br>root → item 节点的属性</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">id</td>
-<td align="left">操作步骤的序号</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="left">操作步骤的内容</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">progress</td>
-<td align="left">本次操作给予的进度值</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">score</td>
-<td align="left">本次操作给予的分值</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="场景动画说明"><a href="#场景动画说明" class="headerlink" title="场景动画说明"></a>场景动画说明</h2><h4 id="1-场景动画里–热点区域颜色"><a href="#1-场景动画里–热点区域颜色" class="headerlink" title="1. 场景动画里–热点区域颜色"></a>1. 场景动画里–热点区域颜色</h4><p>   拆卸模块：（红色：使用工具；绿色：用鼠标点击；）<br>   安装模块：（蓝色：放置零件；绿色：使用工具；）  </p>
-<h4 id="2-场景动画里–代码"><a href="#2-场景动画里–代码" class="headerlink" title="2. 场景动画里–代码"></a>2. 场景动画里–代码</h4><p><img src="data:image/png;base64,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duCc6oM8/PKLMaZyZDt5anrsIUs+WTfV13zkDEn92KfyhH0kjvwjMjarpQ0om1hsJb8eXcmnNs+R+h1jAiZgAiZgAiZgApnA0DO4sXGLTUpto4INex601o+8vGs+e+in5jdaQ+SNF3xKefBRG/UQW/JR/7XabG7n5IuY2NTGO14jOeaMZ18TMAETMAETMAETyATeen49IT+eEEnYZMVmjTbJcx/9mSRzKM1vyTw0X7Sv+GJTWzq9veJ8PScTMAETMAETMIFjERg6wdWNWWwEtZ+n17Jl3637vbWo39T8SjXr5ljtkReb6nva1JHjIyfvnjxb+3ByG+NwmqtjwjbPQ33cNgETMAETMAETMIElBIafwdVB82aFTUz4ZFvosGOjj3/uaww+IfVFTCmn+rXsNRt6zZPHU1u0a3b06h/5s742ZtZrXLbpGK02m1I9ecU/60qb1vDNfjmePvW2au3xIZ+lCZiACZiACZiACWQCrx8fH1+jjynkZO7/JLDmRi1y1TaFa47zcwbr9nrr7PVbtzpnMwETMAETMAETuAqBoRPcq0z+DPNgsxe15g1uy3aGublGEzABEzABEzABE9iCwNAzuFsU4pxlArGp5Z090OeNb/Zz3wRMwARMwARMwATuRMAnuHdabc/VBEzABEzABEzABG5AwCe4N1hkT9EETMAETMAETMAE7kTAJ7h3Wm3P1QRMwARMwARMwARuQMAnuDdYZE/RBEzABEzABEzABO5EwCe4d1ptz9UETMAETMAETMAEbkDAJ7g3WGRP0QRMwARMwARMwATuROC/Ipy+hA7VaRsAAAAASUVORK5CYII=" alt="image"></p>
-<p><img src="data:image/png;base64,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" alt="image"></p>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">值</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">btn</td>
-<td align="left">热点区域按钮的实例名。</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">mc</td>
-<td align="left">动画里零件MC的实例名，如果无，则空着。</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">partId</td>
-<td align="left">点击当前热点后，需要在零件面板里出现或者拿出的零件的id；如果无，则空着。</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">toolId</td>
-<td align="left">触发当前热点，需要的工具的id；如果无，则空着。</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">toolAni</td>
-<td align="left">使用工具触发当前热点后，播放的动画MC的实例名；如果无，则空着。</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">stepId</td>
-<td align="left">当前操作步骤顺序序号。</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-]]></content>
-  </entry>
-  <entry>
     <title>故障诊断WebGL Page</title>
     <url>/2020/05/26/DResDevKit/06-course-ZD-WebGL/</url>
     <content><![CDATA[<ol>
@@ -2236,253 +2183,306 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Flash模板</title>
-    <url>/2020/05/26/DResDevKit/02-course-An-Flash/</url>
-    <content><![CDATA[<table>
+    <title>拆装动画模板</title>
+    <url>/2020/05/26/DResDevKit/04-course-CZ-H5/</url>
+    <content><![CDATA[<ol>
+<li><a href="#user-content-配置表说明">配置表说明</a> <ul>
+<li><a href="#user-content-menuinfoxml">menuInfo.xml</a></li>
+<li><a href="#user-content-partinfoxml">partInfo.xml</a></li>
+<li><a href="#user-content-toolinfoxml">toolInfo.xml</a></li>
+<li><a href="#user-content-actionstepxml">actionStep.xml</a></li>
+</ul>
+</li>
+<li><a href="#user-content-场景动画说明">场景动画说明</a><ul>
+<li><a href="#user-content-1-场景动画里--热点区域颜色">场景动画里–热点区域颜色</a></li>
+<li><a href="#user-content-2-场景动画里--代码">场景动画里–代码</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="配置表说明"><a href="#配置表说明" class="headerlink" title="配置表说明"></a>配置表说明</h2><h3 id="menuInfo-xml"><a href="#menuInfo-xml" class="headerlink" title="menuInfo.xml"></a>menuInfo.xml</h3><blockquote>
+<p>菜单配置表<br>root → item 节点的属性</p>
+</blockquote>
+<table>
 <thead>
 <tr>
-<th>序号</th>
-<th>版本</th>
-<th>动画类型</th>
-<th>功能说明</th>
-<th>动画编号</th>
-<th>HTML发布模板</th>
-<th>备注</th>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="left">备注</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>1</td>
-<td>Flash</td>
-<td>片头动画</td>
-<td></td>
-<td>enter</td>
-<td></td>
-<td></td>
+<td align="left">mId</td>
+<td align="left">菜单的序号</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>2</td>
-<td>Flash</td>
-<td>普通动画</td>
-<td>播完就自动跳下一个动画；</td>
-<td>template_001</td>
-<td></td>
-<td></td>
+<td align="left">name</td>
+<td align="left">菜单的名字</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>3</td>
-<td>Flash</td>
-<td>普通动画</td>
-<td>播完会跳黄，不会自动跳下一个动画；</td>
-<td>template_002</td>
-<td></td>
-<td></td>
+<td align="left">partGroup</td>
+<td align="left">当前菜单页所需要显示的零件，所属群组</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>4</td>
-<td>Flash</td>
-<td>视频动画（单个）</td>
-<td>类似播放视频的方式，播放序列动画；有控制栏；可设置是否自动播放；播完会跳黄；</td>
-<td>template_003</td>
-<td></td>
-<td></td>
+<td align="left">href</td>
+<td align="left">菜单按钮相对应的页面</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td>5</td>
-<td>Flash</td>
-<td>视频动画（单个）</td>
-<td>开始时，页面中间多一个大的开始按钮；</td>
-<td>template_012</td>
-<td></td>
-<td></td>
+<td align="left">poster</td>
+<td align="left">当前页相对应的海边图片（图片要求：1.是当前页面初始化显示时的状态图片；2.图片大小尽量压缩；)</td>
+<td align="left">目前暂时弃用</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="partInfo-xml"><a href="#partInfo-xml" class="headerlink" title="partInfo.xml"></a>partInfo.xml</h3><blockquote>
+<p>零件信息配置表；用于零件箱里的图片和场景里零件的图片<br>root → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="right">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">零件的序号</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>6</td>
-<td>Flash</td>
-<td>视频动画（带二级动画）</td>
-<td>包含2个模板（主文件，二级视频页面模板）； 基础功能同上；添加 视频动画切换；第一遍强制播完；</td>
-<td>template_004</td>
-<td></td>
-<td></td>
+<td align="left">name</td>
+<td align="left">零件的名字</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>7</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题单选题；</td>
-<td>template_006</td>
-<td></td>
-<td></td>
+<td align="left">group</td>
+<td align="left">零件群组（比如第一步出现的零件，那么group=1，以此类推）</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>8</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题多选题；判断结果有文字提示；</td>
-<td>template_007</td>
-<td></td>
-<td></td>
+<td align="left">isUse</td>
+<td align="left">零件是否在使用(false：没有；true：在使用)</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>9</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题多选题；判断结果有提示框，带关闭按钮；</td>
-<td>template_011</td>
-<td></td>
-<td></td>
+<td align="left">href</td>
+<td align="left">零件箱里零件图片的路径</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>10</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题全选题；</td>
-<td>template_008</td>
-<td></td>
-<td></td>
+<td align="left">href2</td>
+<td align="left">场景里零件图片的路径</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>11</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题拖动题；判断结果有文字提示；</td>
-<td>template_009</td>
-<td></td>
-<td></td>
+<td align="left">offsetX</td>
+<td align="left">场景里零件图片的鼠标X偏移量</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>12</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题拖动题；判断结果有提示框，带关闭按钮；</td>
-<td>template_010</td>
-<td></td>
-<td></td>
+<td align="left">offsetY</td>
+<td align="left">场景里零件图片的鼠标Y偏移量</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="toolInfo-xml"><a href="#toolInfo-xml" class="headerlink" title="toolInfo.xml"></a>toolInfo.xml</h3><blockquote>
+<p>工具信息配置表；用于工具箱里的图片和场景里工具的图片<br>root → tool → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="right">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">工具的序号</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>13</td>
-<td>Flash</td>
-<td>切换页面动画</td>
-<td>有切换按钮，切换MC；</td>
-<td>template_014</td>
-<td></td>
-<td></td>
+<td align="left">name</td>
+<td align="left">工具的名字</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>14</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>普通子动画；第一遍强制播放；不带返回；</td>
-<td>template_015</td>
-<td></td>
-<td></td>
+<td align="left">iscomTool</td>
+<td align="left">是否是组合工具部件（true：是；false：不是）</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>15</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>普通子动画；带返回；</td>
-<td>template_016</td>
-<td></td>
-<td></td>
+<td align="left">comBoxIndex</td>
+<td align="left">如果是组合工具部件，则填写本部件所在的组合框索引（1，2，3 是组合工具部件所在 工具箱组合框上 对应的框子索引）；如果不是，则空着；</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>16</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>强制学习；带返回；带上一页，下一页功能；</td>
-<td>template_017</td>
-<td></td>
-<td></td>
+<td align="left">isUse</td>
+<td align="left">工具是否在使用(false：没有；true：在使用)</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>17</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>普通子动画；切换页面；不带返回；</td>
-<td>template_018</td>
-<td></td>
-<td></td>
+<td align="left">href</td>
+<td align="left">工具箱里工具图片的路径</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>18</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>切换页面；不带返回；保留按钮点击记录；</td>
-<td>template_019</td>
-<td></td>
-<td></td>
+<td align="left">href2</td>
+<td align="left">场景里工具图片的路径</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>19</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>切换页面；带返回；允许控制播放；</td>
-<td>template_020</td>
-<td></td>
-<td></td>
+<td align="left">offsetX</td>
+<td align="left">场景里工具图片的鼠标X偏移量</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>20</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>切换页面；不允许控制播放；</td>
-<td>template_021</td>
-<td></td>
-<td></td>
+<td align="left">offsetY</td>
+<td align="left">场景里工具图片的鼠标Y偏移量</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>root → combineTool → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="right">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">组合工具的序号</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>21</td>
-<td>Flash</td>
-<td>交互动画</td>
-<td>点击切换按钮，切换MC；可重复切换；</td>
-<td>template_005</td>
-<td></td>
-<td></td>
+<td align="left">name</td>
+<td align="left">组合工具的名字</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>22</td>
-<td>Flash</td>
-<td>其他交互动画</td>
-<td>单击按钮，显示MC；按钮只能点一次；MC显示后一直存在；</td>
-<td>template_013</td>
-<td></td>
-<td></td>
+<td align="left">combineUnit1</td>
+<td align="left">构成本组合工具的部件1（和工具箱组合框1对应），有，则填写对应的工具部件的id；没有，则空着；</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>23</td>
-<td>Flash</td>
-<td>整体测试（带二级动画）</td>
-<td>包含6个模板（整体测试主文件，Start，End，  整体测试单选题模板,整体测试多选题模板，整体测试拖动题模板）</td>
-<td>template_ZTCeshi</td>
-<td></td>
-<td></td>
+<td align="left">combineUnit2</td>
+<td align="left">构成本组合工具的部件2（和工具箱组合框2对应），有，则填写对应的工具部件的id；没有，则空着；</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>24</td>
-<td>Flash</td>
-<td>整体测试（二级）- 随机抽题</td>
-<td>同上；添加随机抽题功能；（SKD版本Flash代码未修改）；</td>
-<td>template_ZTCeshi_Suiji</td>
-<td></td>
-<td></td>
+<td align="left">combineUnit3</td>
+<td align="left">构成本组合工具的部件3（和工具箱组合框3对应），有，则填写对应的工具部件的id；没有，则空着；</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>25</td>
-<td>Flash</td>
-<td>拆装动画</td>
-<td>拆装动画-大石头那边的SKD和YQ；</td>
-<td>template_CZ</td>
-<td></td>
-<td></td>
+<td align="left">isUse</td>
+<td align="left">工具是否在使用(false：没有；true：在使用)</td>
+<td align="right"></td>
 </tr>
 <tr>
-<td>26</td>
-<td>Flash</td>
-<td>MouseOver动画</td>
-<td>鼠标移上按钮，播放mc动画；移出按钮，关闭mc动画；</td>
-<td>template_022</td>
-<td></td>
-<td></td>
+<td align="left">href</td>
+<td align="left">工具箱里工具图片的路径</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">href2</td>
+<td align="left">场景里工具图片的路径</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">offsetX</td>
+<td align="left">场景里工具图片的鼠标X偏移量</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">offsetY</td>
+<td align="left">场景里工具图片的鼠标Y偏移量</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="actionStep-xml"><a href="#actionStep-xml" class="headerlink" title="actionStep.xml"></a>actionStep.xml</h3><blockquote>
+<p>操作步骤配置表<br>root → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">操作步骤的序号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">操作步骤的内容</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">progress</td>
+<td align="left">本次操作给予的进度值</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">score</td>
+<td align="left">本次操作给予的分值</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="场景动画说明"><a href="#场景动画说明" class="headerlink" title="场景动画说明"></a>场景动画说明</h2><h4 id="1-场景动画里–热点区域颜色"><a href="#1-场景动画里–热点区域颜色" class="headerlink" title="1. 场景动画里–热点区域颜色"></a>1. 场景动画里–热点区域颜色</h4><p>   拆卸模块：（红色：使用工具；绿色：用鼠标点击；）<br>   安装模块：（蓝色：放置零件；绿色：使用工具；）  </p>
+<h4 id="2-场景动画里–代码"><a href="#2-场景动画里–代码" class="headerlink" title="2. 场景动画里–代码"></a>2. 场景动画里–代码</h4><p><img src="data:image/png;base64,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duCc6oM8/PKLMaZyZDt5anrsIUs+WTfV13zkDEn92KfyhH0kjvwjMjarpQ0om1hsJb8eXcmnNs+R+h1jAiZgAiZgAiZgApnA0DO4sXGLTUpto4INex601o+8vGs+e+in5jdaQ+SNF3xKefBRG/UQW/JR/7XabG7n5IuY2NTGO14jOeaMZ18TMAETMAETMAETyATeen49IT+eEEnYZMVmjTbJcx/9mSRzKM1vyTw0X7Sv+GJTWzq9veJ8PScTMAETMAETMIFjERg6wdWNWWwEtZ+n17Jl3637vbWo39T8SjXr5ljtkReb6nva1JHjIyfvnjxb+3ByG+NwmqtjwjbPQ33cNgETMAETMAETMIElBIafwdVB82aFTUz4ZFvosGOjj3/uaww+IfVFTCmn+rXsNRt6zZPHU1u0a3b06h/5s742ZtZrXLbpGK02m1I9ecU/60qb1vDNfjmePvW2au3xIZ+lCZiACZiACZiACWQCrx8fH1+jjynkZO7/JLDmRi1y1TaFa47zcwbr9nrr7PVbtzpnMwETMAETMAETuAqBoRPcq0z+DPNgsxe15g1uy3aGublGEzABEzABEzABE9iCwNAzuFsU4pxlArGp5Z090OeNb/Zz3wRMwARMwARMwATuRMAnuHdabc/VBEzABEzABEzABG5AwCe4N1hkT9EETMAETMAETMAE7kTAJ7h3Wm3P1QRMwARMwARMwARuQMAnuDdYZE/RBEzABEzABEzABO5EwCe4d1ptz9UETMAETMAETMAEbkDAJ7g3WGRP0QRMwARMwARMwATuROC/Ipy+hA7VaRsAAAAASUVORK5CYII=" alt="image"></p>
+<p><img src="data:image/png;base64,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" alt="image"></p>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">值</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">btn</td>
+<td align="left">热点区域按钮的实例名。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">mc</td>
+<td align="left">动画里零件MC的实例名，如果无，则空着。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">partId</td>
+<td align="left">点击当前热点后，需要在零件面板里出现或者拿出的零件的id；如果无，则空着。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toolId</td>
+<td align="left">触发当前热点，需要的工具的id；如果无，则空着。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toolAni</td>
+<td align="left">使用工具触发当前热点后，播放的动画MC的实例名；如果无，则空着。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">stepId</td>
+<td align="left">当前操作步骤顺序序号。</td>
+<td align="left"></td>
 </tr>
 </tbody></table>
 ]]></content>
