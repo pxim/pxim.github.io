@@ -20,7 +20,7 @@
 <meta property="og:image" content="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403222242378-1660268671.jpg">
 <meta property="og:image" content="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403222833644-419187586.jpg">
 <meta property="og:image" content="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403184029019-930700600.jpg">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.470Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.326Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Hexo】Hexo+Github构建个人博客 （一）：环境配置">
 <meta name="twitter:description" content="一、安装 Node下载地址：Node.js二、安装 Git（win环境下） 下载地址：Git Git 绑定 GitHub账户：1.打开Git Bash，然后输入两句命令12git config --global user.name &quot;Your Name&quot;git config --global user.email &quot;email@example.com&quot;如图：2.配置SSHPS：可以先打开  C:">
@@ -163,7 +163,7 @@
 <div id="cnblogs_post_body" class="cnblogs-markdown"><br><br><br><strong>一、安装 Node</strong><br><br>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a><br><br><strong>二、安装 Git（win环境下）</strong><br><br> 下载地址：<a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br><br> Git 绑定 GitHub账户：<br><br>1.打开Git Bash，然后输入两句命令<br><br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --<span class="keyword">global</span> user.name <span class="string">"Your Name"</span></div><div class="line">git config --<span class="keyword">global</span> user.email <span class="string">"email@example.com"</span></div></pre></td></tr></table></figure><br><br>如图：<br><br><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403221154222-624768162.jpg" alt=""><br><br>2.配置SSH<br><br>PS：可以先打开  <span class="cnblogs_code">C:\Users\Administrator</span>  目录下，有没有  <span class="cnblogs_code">.<span style="color: #0000ff">ssh</span></span> 目录，如果有，再看看这个目录下有没有 <span class="cnblogs_code">id_rsa</span> 和 <span class="cnblogs_code">id_rsa.pub</span> 这两个文件，如果已经有了，可直接跳过这步。如果没有，则开始创建 SSH Key，<br><br>首先，输入命令  <span class="cnblogs_code"><span style="color: #0000ff">ssh-keygen</span> -t rsa -C <span style="color: #800000">“</span><span style="color: #800000">youremail@example.com</span><span style="color: #800000">“</span></span> ，你需要把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可，由于这个Key也不是用于军事目的，所以也无需设置密码。<br><br>如果一切顺利的话，可以在用户主目录里找到<code>.ssh</code>目录，里面有<code>id_rsa</code>和<code>id_rsa.pub</code>两个文件，这两个就是SSH Key的秘钥对，<code>id_rsa</code>是私钥，不能泄露出去，<code>id_rsa.pub</code>是公钥，可以放心地告诉任何人。<br><br>如图：<br><br><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403222242378-1660268671.jpg" alt=""><br><br>3.登陆GitHub，打开 Settings —— SSH and GPG keys 页面，然后点击  New SSH Key 按钮，结果如图：<br><br><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403222833644-419187586.jpg" alt=""><br><br>然后 title随便填，key填写  <span class="cnblogs_code">id_rsa.pub</span> 文件里的所以内容，然后保存，这步就OK了。<br><br><strong>三、正式安装hexo</strong><br><br>打开cmd，输入命令  <span class="cnblogs_code">npm install -g hexo-cli</span><br><br>安装完成之后，可以输入命令  <span class="cnblogs_code">hexo -v</span> ，来验证版本<br><br>如图：<br><br><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403184029019-930700600.jpg" alt=""><br><br><br><div style="display: block"><br><div style="display: block">PS：参考资料<br><div style="display: block">1.<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">Hexo官方文档</a><br><div style="display: block">2.<a href="http://www.open-open.com/lib/view/open1416647023164.html" target="_blank" rel="external">Git配置SSH,并Push到GitHub上的相关流程</a><br><div style="display: block">3.<a href="http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="external">HEXO搭建个人博客</a><br><div style="display: block"><br><div style="display: block"> </div></div></div></div></div></div></div></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2017/04/03/6662943/" title="【Hexo】Hexo+Github构建个人博客 （一）：环境配置">http://yoursite.com/2017/04/03/6662943/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -294,7 +294,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

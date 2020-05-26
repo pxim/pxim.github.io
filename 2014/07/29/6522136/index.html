@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="好多人也应该遇到和我一样的问题，当设计师给了我们一个多层嵌套的movieClip时，我们在写代码时无法将movieClip完全停止掉，主要是基于好多movieClip有深层嵌套，主时间轴不在最上层导致的，所以基于这个原因写了下面的类。看代码：（有很详细的注释）1.  package com.sina.utils     2.  {3.         import flash.display.M">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.468Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.325Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【转】一个工具类（可以控制多层嵌套的movieClip)">
 <meta name="twitter:description" content="好多人也应该遇到和我一样的问题，当设计师给了我们一个多层嵌套的movieClip时，我们在写代码时无法将movieClip完全停止掉，主要是基于好多movieClip有深层嵌套，主时间轴不在最上层导致的，所以基于这个原因写了下面的类。看代码：（有很详细的注释）1.  package com.sina.utils     2.  {3.         import flash.display.M">
@@ -158,7 +158,7 @@
 <div id="sina_keyword_ad_area2" class="articalContent   "><strong><span style="font-family: Tahoma; color: #333333">好多人也应该遇到和我一样的问题，当设计师给了我们一个多层嵌套的movieClip时，我们在写代码时无法将movieClip完全停止掉，主要是基于好多movieClip有深层嵌套，主时间轴不在最上层导致的，所以基于这个原因写了下面的类。<br><br><br>看代码：（有很详细的注释）</span></strong><br><div><br><div><br><br>1.  package com.sina.utils<span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>2.  {<br><br><br>3.         import flash.display.MovieClip;<br><br><br>4.        <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>5.<br><br><br>6.         public class MovieClipManage<span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>7.         {<br><br><br>8.                private var_target:MovieClip;<br><br><br>9.                private var_type:String;<br><br><br>10.               <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>11.<br><br><br>12.                public functionMovieClipManage(mc:MovieClip = null)<span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>13.                {<br><br><br>14.                       _target =mc;<br><br><br>15.                }<br><br><br>16.               <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>17.                private functiongoto(mc:MovieClip, frame:int = 0):void<br><br><br>18.                {<br><br><br>19.                       if(!(mc isMovieClip))<br><br><br>20.                      {<br><br><br>21.                             throw new Error(“MovieClipManage:::目标不是movieClip”);<br><br><br>22.                             return;<br><br><br>23.                      }<br><br><br>24.                       frame &gt;0 ?  mc<a href="frame">_type</a>:  mc<a href="">_type</a>;<br><br><br>25.                      <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>26.                       if(mc.numChildren &gt; 0)<br><br><br>27.                      {<br><br><br>28.                             for (var i:int = 0; i &lt; mc.numChildren; i++)<span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>29.                         {<br><br><br>30.                                    if (mc.getChildAt(i) asMovieClip)<br><br><br>31.                                    {<br><br><br>32.                                          goto(mc.getChildAt(i) as MovieClip, frame);<br><br><br>33.                                    }<br><br><br>34.                             }<br><br><br>35.                      }<span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>36.                      <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>37.                }<br><br><br>38.               <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>39.               //——————–API———————————<br><br><br>40.<br><br><br>41.                public functionpause(target:MovieClip = null):void<br><br><br>42.                {<br><br><br>43.                       _type =”stop”;<br><br><br>44.                       target =target || _target;<br><br><br>45.                      goto(target);<br><br><br>46.                }<br><br><br>47.               <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>48.<br><br><br>49.                public functionplay(target:MovieClip = null):void<br><br><br>50.                {<br><br><br>51.                       _type =”play”;<br><br><br>52.                       target =target || _target;<br><br><br>53.                      goto(target);<br><br><br>54.                }<br><br><br>55.               <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>56.<br><br><br>57.                public functionstop(target:MovieClip = null):void<br><br><br>58.                {<br><br><br>59.                       _type =”gotoAndStop”;<br><br><br>60.                       target =target || _target;<br><br><br>61.                      goto(target, 1);<br><br><br>62.                }<br><br><br>63.               <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>64.<br><br><br>65.                public functionreplay(target:MovieClip = null):void<br><br><br>66.                {<br><br><br>67.                       _type =”gotoAndPlay”;<br><br><br>68.                       target =target || _target;<br><br><br>69.                      goto(target, 1);<br><br><br>70.                }<br><br><br>71.         }<br><br><br>72.        <span style="font-family: Consolas"><span> </span><br><br><br>    </span><br>73.  }<br><br><br><em style="font-size: 12px; color: #336699 !important; font-style: normal; margin-left: 43px">复制代码<em><br><br><span>//———————————————————————</span><br><br><br><span>实现原理：主要用到了递归的原理来循环找到底层的movieClip原件，然后执行相应的操作来达到将所有嵌套的原件</span><em>*<span style="color: #ff0000">暂停</span></em></em><span>，重播等功能。</span><br><br><span>原文地址：</span><a href="http://www.99ria.com/blog/?p=230" target="_blank" rel="external">http://www.99ria.com/blog/?p=230</a><br><br><br></em></div></div></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2014/07/29/6522136/" title="【转】一个工具类（可以控制多层嵌套的movieClip)">http://yoursite.com/2014/07/29/6522136/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -242,12 +242,12 @@
 
 <nav id="article-nav">
   
-    <a href="/2014/07/29/6522134/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2014/07/29/6522140/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          【转】如何实现Flex页面跳转
+          【转】译—游戏开发者应该如何应用Git和GitHub
         
       </span>
     </a>
@@ -289,7 +289,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

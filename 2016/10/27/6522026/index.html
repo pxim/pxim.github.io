@@ -17,7 +17,7 @@
 <meta property="og:description" content="1.自定义electron框架外壳（shell）的菜单（Menu）electron的main.js里代码：const Menu = require(‘electron’).Menu;var template = [  {    label: ‘关闭’,    click: function () { win.close();console.log(“关闭”)},    // submenu: [">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://img.blog.csdn.net/20161027115145809">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.438Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.297Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Electron】Electron开发入门（八）：自定义electron框架外壳（shell）的菜单（Menu）">
 <meta name="twitter:description" content="1.自定义electron框架外壳（shell）的菜单（Menu）electron的main.js里代码：const Menu = require(‘electron’).Menu;var template = [  {    label: ‘关闭’,    click: function () { win.close();console.log(“关闭”)},    // submenu: [">
@@ -160,7 +160,7 @@
 <div class="markdown_views"><br><br><br>1.自定义electron框架外壳（shell）的菜单（Menu）<br><br>electron的main.js里代码：<br><br><code class=" hljs javascript"><span class="hljs-keyword">const</span> Menu = <span class="hljs-built_in">require</span>(<span class="hljs-string">‘electron’</span>).Menu;<br><span class="hljs-keyword">var</span> template = [<br>  {<br>    label: <span class="hljs-string">‘关闭’</span>,<br>    click: <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> {</span> win.close();console.log(<span class="hljs-string">“关闭”</span>)},<br>    <span class="hljs-comment">// submenu: [</span><br>    <span class="hljs-comment">//   {</span><br>    <span class="hljs-comment">//     label: ‘Undo’,</span><br>    <span class="hljs-comment">//     accelerator: ‘CmdOrCtrl+Z’,</span><br>    <span class="hljs-comment">//     role: ‘undo’</span><br>    <span class="hljs-comment">//   }</span><br>    <span class="hljs-comment">// ]</span><br>  }]<br><span class="hljs-keyword">var</span> menu = Menu.buildFromTemplate(template)<br>Menu.setApplicationMenu(menu);</code><br><br>效果如图：<br><br><img src="http://img.blog.csdn.net/20161027115145809" alt="这里写图片描述"><br><br>2.更多菜单样式，鼠标事件关联，请参考<a href="https://github.com/electron/electron/blob/master/docs-translations/zh-CN/api/menu.md" target="_blank" rel="external">Electron Menu API 简体中文版</a><br><br>3.<a href="http://blog.csdn.net/ch15196637370/article/details/51147980" target="_blank" rel="external">在webview的html添加electron shell 的菜单的教程</a><br><br></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/10/27/6522026/" title="【Electron】Electron开发入门（八）：自定义electron框架外壳（shell）的菜单（Menu）">http://yoursite.com/2016/10/27/6522026/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -293,7 +293,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

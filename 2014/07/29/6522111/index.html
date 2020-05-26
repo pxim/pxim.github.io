@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="原文链接：http://bbs.9ria.com/thread-284082-1-2.html之前做一个数据缓存，就顺便把写入缓存，清除缓存，获取缓存都整理了一下，其中也做了些参考，个人水平有限，有需要的就拿去改改用吧。上代码：package{       importflash.net.SharedObject;       importflash.system.Security;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.466Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.322Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【转】一个小工具类，利用shareObject把数据缓存">
 <meta name="twitter:description" content="原文链接：http://bbs.9ria.com/thread-284082-1-2.html之前做一个数据缓存，就顺便把写入缓存，清除缓存，获取缓存都整理了一下，其中也做了些参考，个人水平有限，有需要的就拿去改改用吧。上代码：package{       importflash.net.SharedObject;       importflash.system.Security;">
@@ -158,7 +158,7 @@
 <div id="sina_keyword_ad_area2" class="articalContent   "><br><br><br>原文链接：<a href="http://bbs.9ria.com/thread-284082-1-2.html" target="_blank" rel="external">http://bbs.9ria.com/thread-284082-1-2.html</a><br><br><table cellspacing="0" cellpadding="0"><br><tbody><br><tr><br><td style="font-size: 14px">之前做一个数据缓存，就顺便把写入缓存，清除缓存，获取缓存都整理了一下，其中也做了些参考，个人水平有限，有需要的就拿去改改用吧。<br><br>上代码：<br><br>package<br>{<br>       importflash.net.SharedObject;<br>       importflash.system.Security;<br>       importflash.system.SecurityPanel;<br>       public classcookie<br>       {<br>             private varso:SharedObject;<br>             private var_name:String<br>             publicfunction cookie(file_name:String)<br>             {<br>                  //constructor code<br>                  so =SharedObject.getLocal(file_name,”/“);<br>                 _name=file_name<br>             }<br>             publicfunction flushData(key:String,value:<em>):void<br>             {<br>                 //添加数据<br>                  if(so.data.cookie == null)<br>                  {<br>                       varobj:Object = {};<br>                       obj[key] =value;<br>                       so.data.cookie= obj;<br>                  }else<br>                  {<br>                       so.data.cookie[key]= value;<br><br>                  }<br>                 trace(key+”:”+so.data.cookie[key]);<br>                 flush();<br>             }<br>             publicfunction deleteData(key:String):void<br>             {<br>                 //删除数据值<br>                  if(judge(key))<br>                  {<br>                       deleteso.data.cookie[key];<br>                       flush();<br>                  }<br>             }<br>             publicfunction getName():String<br>             {<br>                 //获取数据名<br>                  return_name<br>             }<br>             publicfunction getData(key:String):</em><br>             {<br>                 //获取数据值<br>                  if(judge(key))<br>                  {<br>                       returnso.data.cookie[key];<br>                  }else<br>                  {<br>                       returnnull;<br>                  }<br>             }<br>             publicfunction clearData():void<br>             {<br>                 //清除缓存<br>                 so.clear();<br>             }<br>             publicfunction judge(key:String):Boolean<br>             {<br>                 //判断数据是否存在<br>                  returnso.data.cookie != undefined &amp;&amp; so.data.cookie[key] !=undefined<br><br>             }<br>             privatefunction flush():void<br>             {<br>                 //写入<br>                  if(so)<br>                  {<br>                       try<br>                       {<br>                            so.flush();<br>                       }<br>                       catch(e:Error)<br>                       {<br>                            Security.showSettings();<br>                            Security.showSettings( SecurityPanel.LOCAL_STORAGE );<br>                       }<br>                  }<br>             }<br><br>       }<br><br>}<br><br><br>标注的都比较清楚，直接实例化，调用方法可以了，附件为cookie.as文件</td><br><br><br></tr><br><br><br></tbody><br><br><br></table><br><br><br><br><br><br></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2014/07/29/6522111/" title="【转】一个小工具类，利用shareObject把数据缓存">http://yoursite.com/2014/07/29/6522111/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -246,19 +246,19 @@
 
 <nav id="article-nav">
   
-    <a href="/2014/07/29/6522110/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2014/07/29/6522103/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          【转】AS3画板工具类，可直接套用
+          【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器
         
       </span>
     </a>
   
   
-    <a href="/2014/07/29/6522127/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">【转】air调用windows自带的虚拟键盘</span>
+    <a href="/2014/07/29/6522110/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【转】AS3画板工具类，可直接套用</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
@@ -293,7 +293,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

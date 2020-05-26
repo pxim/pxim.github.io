@@ -18,7 +18,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://common.cnblogs.com/images/copycode.gif">
 <meta property="og:image" content="http://common.cnblogs.com/images/copycode.gif">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.473Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.329Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AS和C#通信，Flash和.net （winform）通信">
 <meta name="twitter:description" content="一、使用 ExternalInterface api1.as调用C#，as给C#发送参数数据as代码：12345// as向C#发出 方法名+参数 ExternalInterface.call（functionName:String, ...parameters：*） 方法名是字符串，参数可以是任何数据类型　　if(ExternalInterface.available) &amp;#123;">
@@ -161,7 +161,7 @@
 <div id="cnblogs_post_body"><br><br><br>一、使用 ExternalInterface api<br><br>1.as调用C#，as给C#发送参数数据<br><br>as代码：<br><br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// as向C#发出 方法名+参数 ExternalInterface.call（functionName:String, ...parameters：*） 方法名是字符串，参数可以是任何数据类型　　</span></div><div class="line"><span class="keyword">if</span>(ExternalInterface.available) </div><div class="line">&#123;   </div><div class="line">   ExternalInterface.call(<span class="string">"onSetDataToC"</span>, “<span class="keyword">as</span>通过ExternalInterface.call方法向C<span class="meta">#传递参数”);    </span></div><div class="line">&#125;</div></pre></td></tr></table></figure><br><br>C#代码：<br><div><br><br><br><br>无<br><br>2.C#调用as代码，C#给as发送参数数据<br><br>C#代码：<br><br>无<br><br>as代码：<br><br><br><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="&quot;复制代码&quot;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span><br><br><br><span style="color: #008000">//<span style="color: #008000"> as监听C#发来的 方法名，然后通过回调函数接收参数  ExternalInterface.addCallback（functionName:String, closure:Function） 方法名是字符串，回调一个函数<br><span style="color: #0000ff">if<span style="color: #000000">(ExternalInterface.available)<br>{<br>    ExternalInterface.addCallback(“onCToAs”<span style="color: #000000">,onCToAs);<br>}<br><span style="color: #0000ff">function onCToAs(str：*<span style="color: #000000">)<br>{<br>    trace(str);<br>}  </span></span></span></span></span></span></span><br><br><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="&quot;复制代码&quot;"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span><br><br><br><br>二、使用 fscommand api<br><br>1.as调用C#，as给C#发送参数数据<br><br>as代码：<br><br><span style="color: #008000">//<span style="color: #008000"> as向C#发出 方法名+参数 fscommand（command:String, args:String=””) 命令是字符串，参数也只能是字符串<br>fscommand(<span style="color: #ff0000">“onSetDataToC”, “as通过fscommand方法向C#传递参数”);  </span></span></span><br><br>C#代码：<br><br>无<br><br><br></div></div></div></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2017/04/13/6703636/" title="AS和C#通信，Flash和.net （winform）通信">http://yoursite.com/2017/04/13/6703636/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -294,7 +294,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="actionscript中读取本地文件操作有两种代码如下">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.464Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.319Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【转】flash air中读取本地文件的三种方法">
 <meta name="twitter:description" content="actionscript中读取本地文件操作有两种代码如下">
@@ -159,7 +159,7 @@
 <div class="cnblogs_Highlighter sh-gutter"><br><div id="highlighter_371142" class="syntaxhighlighter  as3 ie"><br><div class="toolbar"><br><br><br>var stream:FileStream = new FileStream();<br>var file:File = new File(‘E:/test.txt’);//绑定一个文件<br>stream.open(file,FileMode.READ);//读取文件<br>trace(stream.readMultiByte(stream.bytesAvailable,’utf-8’));<br>stream.close();<br><br><br>稍微需要注意的一点是我们的File()函数里传的路径字符串，里面全都使用的是正斜杠，如果使用了反斜杠，你就会收到来自程序的错误。<br><br><br><br><br><br><br>2.仅File类（异步操作）<br><br><div class="cnblogs_Highlighter sh-gutter"><br><br><br>private var file:File;<br>public function Tracer()<br>{<br>    file =new File(‘E:/daili.txt’);//绑定一个文件<br>    file.addEventListener(Event.COMPLETE,onComplete);<br>    file.load();//执行读取操作<br>}<br><br>private function onComplete(event:Event):void<br>{<br>    vardata:ByteArray = file.data;<br>    trace(data.readMultiByte(data.bytesAvailable,’utf-8’));<br>}<br><br><br>3.使用File和FileStream（异步操作）<br><div class="cnblogs_Highlighter sh-gutter"><br><div id="highlighter_408044" class="syntaxhighlighter  as3 ie"><br><div class="toolbar"><br><br><br>var sourceFile:File = File.documentsDirectory.resolvePath(“Apollo Test/test.txt”);<br>var stream:FileStream = new FileStream();<br>stream.addEventListener(Event.COMPLETE, readBytes);<br>stream.openAsync(sourceFile, FileMode.READ);<br><br>function readBytes(e:Event):void {<br>    varbytes:ByteArray = newByteArray();<br>    trace(“position 0:”, stream.position);// 0<br>    bytes[0] = stream.readByte();<br>    trace(“position 1:”, stream.position);// 1<br>    fileStream.readBytes(bytes, stream.position,4);<br>    trace(“position 2:”, stream.position);// 5<br>    stream.close();<br>}<br><br><br><br><div id="highlighter_408044" class="syntaxhighlighter  as3 ie"><br><br><br><div id="highlighter_408044" class="syntaxhighlighter  as3 ie">原文：<a href="http://www.cnblogs.com/crkay/archive/2011/10/25/2223726.html" target="_blank" rel="external">http://www.cnblogs.com/crkay/archive/2011/10/25/2223726.html</a><br><br><br><br><br></div></div></div></div></div></div></div></div></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/02/02/6522102/" title="【转】flash air中读取本地文件的三种方法">http://yoursite.com/2016/02/02/6522102/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -258,8 +258,8 @@
     </a>
   
   
-    <a href="/2014/07/29/6522103/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器</span>
+    <a href="/2014/07/29/6522104/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【转】AS3操作XML，增加、删除、修改</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
@@ -294,7 +294,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

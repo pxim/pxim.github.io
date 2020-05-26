@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="前段时间，领导说客户要一个平板版本的视频播放器，把我们做的一些视频资源放进去，要是本地的；我们部门又没有app开发程序员，正好又前段我在实验egret的app打包功能，就说用egret做(ps：本来想要air做的，后来想用新技术做)，接下来了，然后真正做的时候，发现egret的native版本video功能还没有开发完成，我又不能半啦啦放弃吧，那多丢人，后来晨哥，帮我联系了张宇大神，负责这块的，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.449Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.306Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Egret】Native版本 视频播放器（android）">
 <meta name="twitter:description" content="前段时间，领导说客户要一个平板版本的视频播放器，把我们做的一些视频资源放进去，要是本地的；我们部门又没有app开发程序员，正好又前段我在实验egret的app打包功能，就说用egret做(ps：本来想要air做的，后来想用新技术做)，接下来了，然后真正做的时候，发现egret的native版本video功能还没有开发完成，我又不能半啦啦放弃吧，那多丢人，后来晨哥，帮我联系了张宇大神，负责这块的，">
@@ -158,7 +158,7 @@
 <div style="top: 0px"><br><br><br>前段时间，领导说客户要一个平板版本的视频播放器，把我们做的一些视频资源放进去，要是本地的；我们部门又没有app开发程序员，正好又前段我在实验egret的app打包功能，就说用egret做(ps：本来想要air做的，后来想用新技术做)，接下来了，然后真正做的时候，发现egret的native版本video功能还没有开发完成，我又不能半啦啦放弃吧，那多丢人，后来晨哥，帮我联系了张宇大神，负责这块的，临时修了点BUG，最后加上设计上的一些规避，算是弄出来一个 native版本的视频播放器，不过是android端的，ios端的native，官方还没支持，还好客户指定三星平板；<br><br><br>注意点：①，H5的video标签，打包navite后是没有用的，我才开始写了一版用video标签实现的（因为自带现成的播放控件），后来只好改成用egret的video了；<br><br>              ②，目前native版本的egret的video是没有内置播放控件的，只好写一个；关键在于在移动端上，视频是置于最顶层的，控件没有办法在视频上层，做不了浮动控件的效果，只好设计上规避，最后还好交差了。<br><br>              ③，目前只支持canvas模式<br><br><br>现在我把项目中 关于native视频播放器的代码摘出来，以及apk，希望给那些像我一样，需要做native版本视频播放器，或者想做h5，native两个版本通用的，等等情况，给个参考；毕竟直接用官方目前edn提供的案例，坑比较多；<br><br><br>PS：希望egret的大神们，早点把video（H5，native两个版本能通用）搞定，并且能做浮动播放控件。<br><br><br><span style="font-size: 24px"><span style="color: red">Egret源码+android工程+apk：</span></span><br><br><span style="font-size: 12px"><span style="color: black">拿过去能直接运行的</span></span><br><br><span style="font-size: 12px"><br><br></span><br><br>Egret引擎版本：3.1.4<br><br>链接：<a href="http://pan.baidu.com/s/1jIwbrM2" target="_blank" rel="external">http://pan.baidu.com/s/1jIwbrM2</a> 密码：v7g1<br><br><br>附送wing3的打包APP功能注意点：<a href="http://bbs.egret.com/thread-19862-1-1.html" target="_blank" rel="external"><span style="color: #0066cc">http://bbs.egret.com/thread-19862-1-1.html</span></a><br><br></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/07/26/6522050/" title="【Egret】Native版本 视频播放器（android）">http://yoursite.com/2016/07/26/6522050/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -291,7 +291,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

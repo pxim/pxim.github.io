@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="感觉dom大神的解惑关于引用计数法，注意引用的方向性就行。  A.addEventListner(B.func), 那么是增加了A对B的引用。如果A是不可回收的对象，比如全局的Stage，或者单例。那不移除就一定会导致B无法回收。如果A是可以回收的对象，那无所谓，这个引用无效。A.addEventListner(B.func) ，对A本身没有影响。是A引用别人了，不是别人引用A。还是那句话，注意">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.448Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.305Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="web中关于垃圾回收的一些观点">
 <meta name="twitter:description" content="感觉dom大神的解惑关于引用计数法，注意引用的方向性就行。  A.addEventListner(B.func), 那么是增加了A对B的引用。如果A是不可回收的对象，比如全局的Stage，或者单例。那不移除就一定会导致B无法回收。如果A是可以回收的对象，那无所谓，这个引用无效。A.addEventListner(B.func) ，对A本身没有影响。是A引用别人了，不是别人引用A。还是那句话，注意">
@@ -158,7 +158,7 @@
 <div style="top: 0px"><br><div>感觉dom大神的解惑<br><div><br><br><br><div>关于引用计数法，注意引用的方向性就行。  A.addEventListner(B.func), 那么是增加了A对B的引用。如果A是不可回收的对象，比如全局的Stage，或者单例。那不移除就一定会导致B无法回收。如果A是可以回收的对象，那无所谓，这个引用无效。<br><br>A.addEventListner(B.func) ，对A本身没有影响。是A引用别人了，不是别人引用A。还是那句话，注意方向性。<br><div><br><br><br><div>A.addChild(B)也是同理。<br><br>倒霉的都是B<br><br><br><br><div>引用计数实际回收中其着重的情况很小，大部分是根节点遍历法起作用。主要就是看引用的方向性，一个对象反向追溯对它的所有引用，无法到达一个根节点就判定这个对象可以回收。根节点通常有stage，或者其他单例。也指一切确定无法回收的对象。<br><div><br><br><br><div><br><div>就是一个对象从任何方式你都再也无法访问到它，它就能被回收。<br><br>说的不是标记清除啊。v8的回收机制跟这个根节点遍历法是一个原理。拷贝整块内存到新的地方。<br><br>访问不到的全都扔掉了。<br><br><br><div><br><br><br><div>就是从几个根节点开始遍历。被根引用的全都无法回收，进入新内存区。旧区域整个删除。根本不考虑循环引用还是什么情况，只要从根无法到达就扔掉。<br><br><br><br><div>大部分语言的垃圾回收器都实现了这两种机制：引用计数和根节点遍历，实际项目里的对象循环引用非常多，所以引用计数这种设计实际上一直都没怎么派上用场。大部分是根节点遍历法。V8更激进点，按照它的官方文档描述的话，就只有根节点遍历法。<br><div><br><br><br><div>这篇文章也是介绍内存管理的：<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management" target="_blank" rel="external">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management</a><br><div><br><br><br><div style="top: 17px"><br><br><br></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/08/02/6522047/" title="web中关于垃圾回收的一些观点">http://yoursite.com/2016/08/02/6522047/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -291,7 +291,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

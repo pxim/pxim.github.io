@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20170221183815684?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170221183934166?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170221184114229?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.437Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.296Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Flex】去除外边框，底背景透明，改变exe的icon">
 <meta name="twitter:description" content="一、去除程序外边框1.在 xx-app.xml文件里，找到    这句话，然后删掉注释，改成 &amp;lt;systemChrome&amp;gt;none&amp;lt;/systemChrome&amp;gt;  就可以了。2..然后在主程序 xx.mxml里的 &amp;lt;s:WindowedApplication/&amp;gt; 标签里添加属性 showStatusBar=”false” 就行了。二、让程序底背景可以透明，并且">
@@ -162,7 +162,7 @@
 <div class="markdown_views"><br><br><br><strong>一、去除程序外边框</strong><br><br>1.在 xx-app.xml文件里，找到  <span class="cnblogs_code"><span style="color: #008000"><!--<span style="color: #008000"> <systemChrome></systemChrome> <span style="color: #008000">-->  这句话，然后删掉注释，改成 <span class="cnblogs_code"><span style="color: #0000ff">&lt;<span style="color: #800000">systemChrome<span style="color: #0000ff">&gt;none<span style="color: #0000ff">&lt;/<span style="color: #800000">systemChrome<span style="color: #0000ff">&gt;  就可以了。<br><br>2..然后在主程序 xx.mxml里的 <span class="cnblogs_code"><span style="color: #0000ff">&lt;<span style="color: #800000">s:WindowedApplication<span style="color: #0000ff">/&gt; 标签里添加属性 <span class="cnblogs_code">showStatusBar=”false” 就行了。</span></span></span></span></span></span></span></span></span></span></span></span></span></span><br><br><strong>二、让程序底背景可以透明，并且设置透明度</strong><br><br>1.在 xx-app.xml文件里，找到 <span class="cnblogs_code"> <span style="color: #008000"><!--<span style="color: #008000"> <transparent></transparent> <span style="color: #008000">-->  这句话，然后删掉注释，改成  <span class="cnblogs_code"><span style="color: #0000ff">&lt;<span style="color: #800000">transparent<span style="color: #0000ff">&gt;true<span style="color: #0000ff">&lt;/<span style="color: #800000">transparent<span style="color: #0000ff">&gt; </span></span></span></span></span></span></span></span></span><br><br>2.然后在主程序 xx.mxml里的 <span class="cnblogs_code"><span style="color: #0000ff">&lt;<span style="color: #800000">s:WindowedApplication<span style="color: #0000ff">/&gt; 标签里添加属性 <span class="cnblogs_code">backgroundAlpha=”0.6” ，改变alpha值就行了。</span></span></span></span></span><br><br><strong>三、flex导出发行版exe，改变exe的图标icon</strong><br><br>1.在 xx-app.xml文件里，找到<br><br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!-- &lt;icon&gt;</div><div class="line">        &lt;image16x16&gt;&lt;/image16x16&gt;</div><div class="line">        &lt;image32x32&gt;&lt;/image32x32&gt;</div><div class="line">        &lt;image36x36&gt;&lt;/image36x36&gt;</div><div class="line">        &lt;image48x48&gt;&lt;/image48x48&gt;</div><div class="line">        &lt;image57x57&gt;&lt;/image57x57&gt;</div><div class="line">        &lt;image72x72&gt;&lt;/image72x72&gt;</div><div class="line">        &lt;image114x114&gt;&lt;/image114x114&gt;</div><div class="line">        &lt;image128x128&gt;&lt;/image128x128&gt;</div><div class="line">    &lt;/icon&gt; --&gt;</div></pre></td></tr></table></figure><br><br>如图：<br><br><img src="http://img.blog.csdn.net/20170221183815684?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br>删掉注册，<br><br>2.填写icon图片路径，此路径是默认src下面的<br><br><img src="http://img.blog.csdn.net/20170221183934166?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br>PS：用后缀.con的格式，有时候会报错，用.png格式没问题<br><br>3.成功如图<br><br><img src="http://img.blog.csdn.net/20170221184114229?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/11/11/6522022/" title="【Flex】去除外边框，底背景透明，改变exe的icon">http://yoursite.com/2016/11/11/6522022/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -293,7 +293,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

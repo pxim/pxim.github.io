@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="一、Flash builder 报错 当导入3.0的项目时运行出现如下错误：进程已终止，没有建立到调试器的连接。error while loading initial content启动命令详细信息: “C:\Program Files\Adobe\Adobe Flash Builder4\sdks\flex_sdk_4.5.0.19786\bin\adl.exe” -runtime “C:\P">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.469Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.325Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="FB,Flash,as3 Bug集">
 <meta name="twitter:description" content="一、Flash builder 报错 当导入3.0的项目时运行出现如下错误：进程已终止，没有建立到调试器的连接。error while loading initial content启动命令详细信息: “C:\Program Files\Adobe\Adobe Flash Builder4\sdks\flex_sdk_4.5.0.19786\bin\adl.exe” -runtime “C:\P">
@@ -158,7 +158,7 @@
 <div id="sina_keyword_ad_area2" class="articalContent   "><br><br><br><strong>一、Flash builder 报错 <span>当导入3.0的项目时运行出现如下错误：</span></strong><br><br><span>进程已终止，没有建立到调试器的连接。<span>error while loading initial content</span></span><br><br><span><span>启动命令详细信息: “C:\Program Files\Adobe\Adobe Flash Builder4\sdks\flex_sdk_4.5.0.19786\bin\adl.exe” -runtime “C:\ProgramFiles\Adobe\Adobe Flash Builder4\sdks\flex_sdk_4.5.0.19786\runtimes\air\win” “D:\fb4workspace\sadf\bin-debug\sadf-app.xml” “D:\fb4workspace\sadf\bin-debug”<span><span style="font-family: Tahoma"> 解决方法：</span><span>版本不一样所致。</span></span></span></span><br><br><span><span><span><span>air-app.xml 配置文件</span></span></span></span><br><br><span><span><span><span>flex sdk 3.0.0的改成 1.0</span></span></span></span><br><br><span><span><span><span>flex sdk 3.2 的改成 1.5</span></span></span></span><br><br><span><span><span><span>以后的版本也是同样方法<br></span><span><span><span><span><span><span><a href="applicationxmlns=&quot;http://ns.adobe.com/air/application/1.5&quot;">applicationxmlns=&quot;http://ns.adobe.com/air/application/1.5&quot;</a></span></span></span></span></span></span></span></span></span><br><br><span><span><span><span><span><br><strong>二、<span><span><span><span><span>Flash Builder在Debug时出现的问题：Flash Builder 找不到所需的Adobe FlashPlayer调试器版本</span></span></span></span></span></strong></span></span></span></span></span><br><br>解决方法：<br><br>1. 进入Flash Builder的安装目录 C:\Program Files\Adobe\Adobe FlashBuilder 4.6\player\win\11.1<br><br>2. 安装flashplayer_11_plugin_debug.exe，下载地址：<a href="http://www.adobe.com/support/flashplayer/downloads.html" target="_blank" rel="external">http://www.adobe.com/support/flashplayer/downloads.html</a><br><br><strong><br>三、在FlashCS6里textfield里输入不了汉字</strong><br><br>flash player 11.2，textfiel里输入不了汉字；用微软雅黑，设备字体；并加一句代码：<br><br>flash.system.IME.enabled = true;<br><br><br><strong>四、textfield文字输入限制：</strong><br><br>    my_txt.restrict = “A-Z 0-9”; //仅允许在文本字段中输入大写字符、空格和数字<br>    my_txt.restrict = “^a-z”;//包含除小写字母之外的所有字符<br>    my_txt.restrict = “\-\^”;  //这段代码只包含短划线 (-) 和尖号 (^)<br>    my_txt.restrict = “A-Z^Q”; //这段代码只包含除大写字母 Q 之外的大写字母<br>    my_txt.restrict = “ -~”;//只包含从 ASCII 32（空格）到 ASCII 126（代字号）之间的字符<br>    my_txt.restrict = “a-zA-Z\u4e00-\u9fa5” //这样是代表只能够输入大小写的英文字母和中文<br><br><br><br>    my_txt.restrict =”^\/“;    //禁止”/“;<br>    my_txt.restrict =”^\\\“;    //禁止”\”,要6个”\”;<br><br></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2014/07/29/6522139/" title="FB,Flash,as3 Bug集">http://yoursite.com/2014/07/29/6522139/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -259,8 +259,8 @@
     </a>
   
   
-    <a href="/2014/07/29/6522140/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">【转】译—游戏开发者应该如何应用Git和GitHub</span>
+    <a href="/2014/07/29/6522134/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【转】如何实现Flex页面跳转</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
@@ -295,7 +295,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

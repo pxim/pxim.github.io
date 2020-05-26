@@ -17,7 +17,7 @@
 <meta property="og:description" content="原文链接：http://zengrong.net/post/1295.htm### ActionScriptActionScript通常简称为AS，它是Flash平台的语言。AS编写的程序，最终可以编译成SWF、SWC。SWF就是我们常说的Flash动画。但是现在SWF已经不仅仅是动画，而是RIA的载体。ActionScript有3个版本，分别是1.0版（AS1），2.0版（AS2）和3.0版（">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://zengrong.net/wp-content/uploads/2011/04/flash_history.png">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.460Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.316Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【转】ActionScript，Flash，Flash&#x2F;Flex Builder，FlashPlayer，AIR，swf，swc，swz之间的区别">
 <meta name="twitter:description" content="原文链接：http://zengrong.net/post/1295.htm### ActionScriptActionScript通常简称为AS，它是Flash平台的语言。AS编写的程序，最终可以编译成SWF、SWC。SWF就是我们常说的Flash动画。但是现在SWF已经不仅仅是动画，而是RIA的载体。ActionScript有3个版本，分别是1.0版（AS1），2.0版（AS2）和3.0版（">
@@ -160,7 +160,7 @@
 <div id="sina_keyword_ad_area2" class="articalContent   newfont_family"><br><br><br>原文链接：<a href="http://zengrong.net/post/1295.htm" target="_blank" rel="external">http://zengrong.net/post/1295.htm</a><br><br>### ActionScript<br><br>ActionScript通常简称为AS，它是Flash平台的语言。AS编写的程序，最终可以编译成SWF、SWC。SWF就是我们常说的Flash动画。但是现在SWF已经不仅仅是动画，而是<a href="http://zh.wikipedia.org/zh/%E4%B8%B0%E5%AF%8C%E4%BA%92%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F" title="什么是RIA" target="_blank" rel="external">RIA</a>的载体。<br><br>ActionScript有3个版本，分别是1.0版（AS1），2.0版（AS2）和3.0版（AS3）。只有Flash Player9及以上播放器才支持AS3编译的SWF。这三个版本的差别非常大，现在最流行的版本是AS3。<br><br>### Flex与MXML<br><br>因为在开发RIA的时候，需要很多常用的功能，例如控件（Button,ComboBox,List……）、布局（VGroup、VBox……）等等……Adobe就开发了一套官方的框架集来实现这些功能，这套框架集就叫做Flex。<br><br>为了方便程序员快速编写RIA程序界面，Adobe又实现了一种基于XML语法的语言<strong style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-weight: bold; vertical-align: baseline">MXML<strong>，这套语言很像HTML，可以与AS混用，MXML最终也是编译成SWF或SWC。Flex框架就是使用AS3与MXML两种语言写成的。但说白了，MXML 外加实现了MXML语法，如果你有兴趣，也可以自己实现这些。Flash和Flex，都是用AS编写，使用swf体现。<br><br>### Flash<br><br>现在Adobe已经将Flash其定义为一个平台（Flash Plantform），包括了Flash IDE、FlashBuilder、AIR、FlashPlayer以及更多。但我们一般讲Flash，有两个意思，一个是指Flash动画（也就是网页上扩展名为swf的动画），另一个就是FlashIDE。<br><br>Flash（IDE）从4.0开始进入中国，前期一直在网页动画方面告诉发展，多被用来做网页小广告（让你CPU100%的罪魁祸首之一）和MV（showgood三国系列、小小系列、大学自习室……曾经风靡一时啊）。那时的“闪客”，主要是做动画，即使涉及到编程，也大多是用当时的AS1.0（后来FlashMX2004升级为AS2.0）写一点stop、gotoAndPlay之类的东东了。Flash（IDE）发展到8.0版本以后，才开始大量用于编程，当时比较流行的就是“Flash留言本”等等。相关历史我做了一张图来表示，括号里的数字是年份。<br><br><img src="http://zengrong.net/wp-content/uploads/2011/04/flash_history.png" alt="FlashIDE发展史" title="FlashIDE发展史"><br><br>### Flash Builder/Flex Builder<br><br>AS发展到3.0之后，由于其语法和JAVA比较像，再加上增强的性能与强类型，可以完全脱离FLA文件，使用纯文本编码，受到了许多其他程序员（尤其是JAVA程序员）的青睐。由此得以高速发展，用AS开发程序的人也越来越多。AS在视频网站、游戏行业发展迅速。但是，FlashIDE虽然是一个很好的动画制作工具，却不是一个好的开发工具。于是，Adobe又发布了FlexBuilder，一个基于Eclipse的IDE，并发布了Flex SDK，后来又开源了。<br><br>有了免费的编译器，Flex得以快速发展。用FlexBuilder也可以开发纯AS项目（即所有的文件都是as文件，不包含MXML，也不包含FLA）。一个真正的程序猿，应该更愿意使用这种方式吧？FlexBuilder从4.0开始，被Adobe改名为Flash Builder。<br><br>Flash Builder和Flash IDE不应该放在一起比较，它们不是一类软件。如果一定要比较一下的话，那么就是FlashIDE比较偏重于设计一点，用它做动画比较方便，当然也可以用它编写AS3程序。用FlashIDE编写的程序，会有一个FLA源文件，可能还包含多个as文件。FlashBuilder偏重于程序，用它可以开发MXML（也就是Flex）项目。也可以用它编写纯AS项目。用FlashBuilder编写的项目，都是纯文本文件（.as或者.mxml）。 对于程序流，当然偏爱FlashBuilder，而设计流比较偏爱Flash<br> IDE。<br><br>当然，IDE并非只有Adobe官方的东西，<a href="http://www.flashdevelop.org/" target="_blank" rel="external">FlashDevelop</a>就是个免费的IDE。如果你愿意，用记事本做编辑器也没什么不好（比如说zrong就正在尝试<a href="http://www.vim.org/" target="_blank" rel="external">VIM</a>），因为SDK和编译器都是免费的。<br><br>### Flash Player<br><br>swf动画需要在网页上显示出来，就需要安装Flash Player。Flash Player的不同版本，其实与FlashIDE也有一定的对应关系（从上图也能看出来）。但到了AS3时代后，这个对应关系就不那么明显了。Flash Player9是能支持AS3 的最低版本（其实前面还有一个Flash Player 8.5，只是没普及就升级到9了），后面的FlashPlayer 都能支持AS3了。关于Flash Player，我写过一篇<a href="http://zengrong.net/post/1188.htm" target="_blank" rel="external">有史以来关于FlashPlayer的最详细说明</a>，看这个就很清楚了。<br><br>### AIR<br><br>Flash Player再强大，也是运行在浏览器中，受浏览器约束。为了摆脱浏览器，Adobe又出奇招，发布了AIR。AIR其实就是一个Runtime，你可以把它理解成<a href="http://en.wikipedia.org/wiki/Java_Virtual_Machine" target="_blank" rel="external">JVM</a>。有了AIR，就可以用AS3开发桌面软件，而且开发出的软件可跨平台运行（这和JAVA的<strong style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-weight: bold; vertical-align: baseline">一次编译，随处运行</strong>不是如出一辙么！)。目前国内的AIR应用主要集中在网站的客户端方面，例如<a href="http://sinatair.sinaapp.com/" target="_blank" rel="external">新浪微博AIR客户端</a>等。<br><br>### SWF SWC SWZ<br><br><strong style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-weight: bold; vertical-align: baseline">SWF<strong><br><br>swf是我们见到的最多的Flash平台文件了。是的，它就是Flash平台的最终表现形式。前面说到了，无论是Flex、Flash还是纯AS3，最终编译出来的文件都是swf格式，浏览器中的FlashPlayer插件和独立的FlashPlayer，也只能“打开”swf文件进行播放。前面说到的AIR，它的本质也就是运行时+swf而已。<br><br>其实并非所有的swf都能直接播放的。swf有3种：<br><br>1.  <strong style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-weight: bold; vertical-align: baseline">程序SWF(application swf)</strong>：可以直接在flash player中运行的swf；</strong><br>2.  <strong style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-weight: bold; vertical-align: baseline">库SWF（library swf）<strong>：swc文件中的library.swf；</strong><br>3.  <strong style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-weight: bold; vertical-align: baseline">模块SWF（module swf）</strong>：Flex Module产生的swf文件。</strong><br><br><br>最终用户碰到的绝大多数都是“程序SWF”，而程序猿们碰到后面两种SWF的可能性就比较大。<br><br><strong style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-weight: bold; vertical-align: baseline">SWC<strong><br><br>SWC是一种库文件，通常用来发布非开源的类。程序猿们将源码编译成SWC文件，并发布API文档，我们就可以使用这些SWC提供的类库进行自己的开发。SWC并不是运行时共享的，而是在编译的时候直接加入了程序SWF中。最终的程序SWF可以脱离SWC运行。<br><br>SWC本质就是一个zip文档，其中包含一个library.swf文件和一个用于描述的xml文件，你可以用zip管理器打开它查看。<br><br><strong style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-weight: bold; vertical-align: baseline">SWZ</strong><br><br>你可能会发现，从<a href="http://zengrong.net/post/tag/tlf" target="_blank" rel="external">TLF</a>出现以来，Flex SDK中多了一个<a href="http://help.adobe.com/zh_CN/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/package-detail.html" target="_blank" rel="external">flashx</a>包，这个包中的功能，就是用SWZ实现的。SWZ是在运行时共享的库，你可以将其看作一个<strong style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-weight: bold; vertical-align: baseline">可以放在外部的SWC<em>*。而且SWZ的共享是平台级别的（MoudleSWF的共享是浏览器级别），存在于操作系统缓存中（ModuleSWF的存在浏览器缓存），只要下载过一次SWZ，你的操作系统中所有用到这些SWZ中的地方（无论是IE、FF、Chrome还是AIR）都不用重新下载。<br><br>对于程序猿，这里的关于SWC和SWZ的信息肯定是不够的，所以建议看一下smithfox的<a href="http://www.smithfox.com/?e=135" target="_blank" rel="external">swf swc swzRSLs ant</a>，本文的这个部分也是参照它写成的。<br><br><em style="margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 16px; font-style: italic; vertical-align: baseline">全文完</em><br><br></em></strong></strong></strong></strong></strong></strong></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/03/14/6522079/" title="【转】ActionScript，Flash，Flash/Flex Builder，FlashPlayer，AIR，swf，swc，swz之间的区别">http://yoursite.com/2016/03/14/6522079/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -258,19 +258,19 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/03/14/6522075/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/14/6522072/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          【转】关于swf安全沙箱冲突：不能被本地访问
+          【转】Flash字体嵌入方法
         
       </span>
     </a>
   
   
-    <a href="/2016/03/14/6522088/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">swfobject.js加载swf，关于是否加加载完成；</span>
+    <a href="/2016/03/14/6522074/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【转】FLEX中SharedObject介绍及应用</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
@@ -305,7 +305,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="1.打开本地文件或者网页链接// 打开系统本地文件   const {shell} = require(‘electron’);   // Open a local file in the default app   var path1 = “d:\ProjectsSpace\ElectronProjects\ElectronTest2\app\html\config\record.txt”;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.439Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.297Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Electron】Electron开发入门（七）：打开本地文件或者网页链接 and webview里操纵electron api">
 <meta name="twitter:description" content="1.打开本地文件或者网页链接// 打开系统本地文件   const {shell} = require(‘electron’);   // Open a local file in the default app   var path1 = “d:\ProjectsSpace\ElectronProjects\ElectronTest2\app\html\config\record.txt”;">
@@ -158,7 +158,7 @@
 <div class="markdown_views"><br><br><br>1.打开本地文件或者网页链接<br><br>// 打开系统本地文件<br><br>   const {shell} = require(‘electron’);<br><br>   // Open a local file in the default app<br><br>   var path1 = “d:\ProjectsSpace\ElectronProjects\ElectronTest2\app\html\config\record.txt”;<br><br>   shell.openItem(path1);<br><br>//打开网页链接<br><br>  // Open a URL in the default way<br><br>  shell.openExternal(‘<a href="https://github.com/" target="_blank" rel="external">https://github.com</a>‘);<br><br>2.electron+web view（html+js）<br><br>   html，js里获取electron的api，使用webview上的div元素，监听点击事件等，操作electron api<br><br>   PS:下面示例的api可能与现在electron 新版本有区别，最好查一下api，不过方法是这样子的；<br><br><code class=" hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">“utf-8”</span> /&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span> &gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">“btn_fullScreen”</span>&gt;</span>全屏<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">“btn_exitFullScreen”</span>&gt;</span>退出全屏<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript"><br>        <span class="hljs-keyword">var</span> gui = <span class="hljs-built_in">require</span>(<span class="hljs-string">‘nw.gui’</span>);<br>        <span class="hljs-keyword">var</span> win = gui.Window.get();<br>        <span class="hljs-keyword">var</span> btn_fullScreen = document.querySelector(<span class="hljs-string">‘#btn_fullScreen’</span>);<br>        btn_fullScreen.addEventListener(<span class="hljs-string">“click”</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(evt)</span> {</span><br>            win.enterFullscreen();<br>        }, <span class="hljs-literal">false</span>);<br>        <span class="hljs-keyword">var</span> btn_exitFullScreen = document.querySelector(<span class="hljs-string">‘#btn_exitFullScreen’</span>);<br>        btn_exitFullScreen.addEventListener(<span class="hljs-string">“click”</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(evt)</span> {</span><br>            win.leaveFullscreen();<br>        }, <span class="hljs-literal">false</span>);<br>    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code><br><br></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/10/24/6522027/" title="【Electron】Electron开发入门（七）：打开本地文件或者网页链接 and webview里操纵electron api">http://yoursite.com/2016/10/24/6522027/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -291,7 +291,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

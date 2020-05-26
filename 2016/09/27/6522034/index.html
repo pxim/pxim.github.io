@@ -20,7 +20,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20160928132432459">
 <meta property="og:image" content="http://img.blog.csdn.net/20160928132641384">
 <meta property="og:image" content="http://img.blog.csdn.net/20160928133927837">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.442Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.300Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Electron】Electron开发入门（三）：main process和web page 通信">
 <meta name="twitter:description" content="一、main process 和 web page 通信electron框架主进程（Main Process）与嵌入的网页（web page，也就是renderer process）之间的通信Main.js里添加代码//通信模块，mian process与renderer process（web page）const {ipcMain} = require(‘electron’)//监听web">
@@ -163,7 +163,7 @@
 <div class="markdown_views"><br><br><br><strong>一、main process 和 web page 通信</strong><br><br>electron框架主进程（Main Process）与嵌入的网页（web page，也就是renderer process）之间的通信<br><br>Main.js里添加代码<br><br><code class=" hljs coffeescript"><span class="hljs-regexp">//</span>通信模块，mian process与renderer process（web page）<br><span class="hljs-reserved">const</span> {ipcMain} = <span class="hljs-built_in">require</span>(<span class="hljs-string">‘electron’</span>)<br><span class="hljs-regexp">//</span>监听web page里发出的message<br>ipcMain.<span class="hljs-literal">on</span><span class="hljs-function"><span class="hljs-params">(<span class="hljs-string">‘asynchronous-message’</span>, (event, arg) =&gt; {<br>  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">“mian1”</span> + arg)  <span class="hljs-regexp">//</span> prints <span class="hljs-string">“ping”</span><br>  event.sender.send(<span class="hljs-string">‘asynchronous-reply’</span>, <span class="hljs-string">‘pong’</span>)<span class="hljs-regexp">//</span>在main process里向web page发出message<br>})</span><br><br><span class="hljs-title">ipcMain</span>.<span class="hljs-title">on</span><span class="hljs-params">(<span class="hljs-string">‘synchronous-message’</span>, (event, arg) =&gt; {<br>  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">“mian2”</span> + arg)  <span class="hljs-regexp">//</span> prints <span class="hljs-string">“ping”</span><br>  event.returnValue = <span class="hljs-string">‘pong’</span></span></span></code><br><br>web page里添加代码<br><br><code class=" hljs coffeescript"><span class="hljs-reserved">const</span> {ipcRenderer} = <span class="hljs-built_in">require</span>(<span class="hljs-string">‘electron’</span>)<br><span class="hljs-regexp">//</span>监听mian process里发出的message<br>ipcRenderer.<span class="hljs-literal">on</span><span class="hljs-function"><span class="hljs-params">(<span class="hljs-string">‘asynchronous-reply’</span>, (event, arg) =&gt; {<br>    <span class="hljs-regexp">//</span> alert(<span class="hljs-string">“web2”</span> + arg);<span class="hljs-regexp">//</span> prints <span class="hljs-string">“pong”</span>  在electron中web page里的<span class="hljs-built_in">console</span>方法不起作用，因此使用alert作为测试方法<br>  })</span><br><br> //在<span class="hljs-title">web</span> <span class="hljs-title">page</span>里向<span class="hljs-title">main</span> <span class="hljs-title">process</span>发出<span class="hljs-title">message</span><br>  <span class="hljs-title">ipcRenderer</span>.<span class="hljs-title">send</span><span class="hljs-params">(<span class="hljs-string">‘asynchronous-message’</span>, <span class="hljs-string">‘ping’</span>)</span> // <span class="hljs-title">prints</span> “<span class="hljs-title">pong</span>“<br>  // <span class="hljs-title">ipcRenderer</span>.<span class="hljs-title">sendSync</span><span class="hljs-params">(<span class="hljs-string">‘synchronous-message’</span>, <span class="hljs-string">‘ping’</span>)</span> // <span class="hljs-title">prints</span> “<span class="hljs-title">pong</span>“<br>  // <span class="hljs-title">alert</span><span class="hljs-params">(<span class="hljs-string">“web1”</span> + <span class="hljs-string">‘ping’</span>)</span>;<br></span></code><br><br><strong>二、具体项目中代码，如下图：</strong><br><br>1、mian process 里 mian.js<br><br><img src="http://img.blog.csdn.net/20160928132340755" alt="这里写图片描述"><br><br>2、web page 里<br><br>①、 html文件<br><br><img src="http://img.blog.csdn.net/20160928132432459" alt="这里写图片描述"><br><br>②、js文件<br><br><img src="http://img.blog.csdn.net/20160928132641384" alt="这里写图片描述"><br><br>3、最后成功界面<br><br><img src="http://img.blog.csdn.net/20160928133927837" alt="这里写图片描述"><br><br></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/09/27/6522034/" title="【Electron】Electron开发入门（三）：main process和web page 通信">http://yoursite.com/2016/09/27/6522034/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -296,7 +296,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

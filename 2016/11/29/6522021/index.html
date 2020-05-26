@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="干了一年H5，最近被要求写编辑器，Electron等级还不够，写不了，只有重新拿起as3，用flex，最近写到数据表编辑模块，有这部分功能，基本完成 。package utils{    /      模块功能：把xml格式的数据 转换成 json格式的数据       创建时间：2016-11-26 下午3:33:20      @author pengxiang           */">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.437Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.295Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Flex】读取本地XML，然后XML数据转成JSON数据">
 <meta name="twitter:description" content="干了一年H5，最近被要求写编辑器，Electron等级还不够，写不了，只有重新拿起as3，用flex，最近写到数据表编辑模块，有这部分功能，基本完成 。package utils{    /      模块功能：把xml格式的数据 转换成 json格式的数据       创建时间：2016-11-26 下午3:33:20      @author pengxiang           */">
@@ -172,7 +172,7 @@
          </em>/</span><br>        <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findXMLNameSpace</span><span class="hljs-params">($str:String)</span><span class="hljs-type">:Array</span><br>        {</span><br>            <span class="hljs-keyword">var</span> arr:Array = <span class="hljs-keyword">new</span> Array();<br>            <span class="hljs-keyword">var</span> r:RegExp = /xmlns[^<span class="hljs-string">“]+”</span>[^<span class="hljs-string">“]+”</span>/g;<br>            <span class="hljs-keyword">var</span> a:Array = $str.match(r);<br>            r = /xmlns:[^=]+=/g;<br>            <span class="hljs-keyword">for</span> <span class="hljs-keyword">each</span> (<span class="hljs-keyword">var</span> s:String <span class="hljs-keyword">in</span> a){<br>                <span class="hljs-keyword">var</span> a1:Array = s.match(r);<br>                <span class="hljs-keyword">if</span>(a1 &amp;&amp; a1.length){<br>                    s = a1[<span class="hljs-number">0</span>];<br>                    s = s.replace(<span class="hljs-string">“xmlns:”</span> ,<span class="hljs-string">“”</span>)<br>                    s = s.replace(<span class="hljs-string">“=”</span>,<span class="hljs-string">“”</span>);<br>                    arr.push(s);<br>                }<br>            }<br>            <span class="hljs-keyword">return</span> arr;<br>        }<br>    }<br>}</code><br><br></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/11/29/6522021/" title="【Flex】读取本地XML，然后XML数据转成JSON数据">http://yoursite.com/2016/11/29/6522021/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -309,7 +309,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

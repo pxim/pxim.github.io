@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="1234567891011121314151617 1     txt_show.text = showStr; 2      3     var str:String = txt_show.text; 4     var strlen:int = str.length; 5     var len:int = 0; 6     for (var i:int = 0; i &amp;lt; strlen">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.458Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="as3中textField输入字符时，一次性过长后自动换行">
 <meta name="twitter:description" content="1234567891011121314151617 1     txt_show.text = showStr; 2      3     var str:String = txt_show.text; 4     var strlen:int = str.length; 5     var len:int = 0; 6     for (var i:int = 0; i &amp;lt; strlen">
@@ -158,7 +158,7 @@
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"> <span class="number">1</span>     txt_show.text = showStr;</div><div class="line"> <span class="number">2</span>     </div><div class="line"> <span class="number">3</span>     <span class="keyword">var</span> str:String = txt_show.text;</div><div class="line"> <span class="number">4</span>     <span class="keyword">var</span> strlen:<span class="keyword">int</span> = str.length;</div><div class="line"> <span class="number">5</span>     <span class="keyword">var</span> len:<span class="keyword">int</span> = <span class="number">0</span>;</div><div class="line"> <span class="number">6</span>     <span class="keyword">for</span> (<span class="keyword">var</span> i:<span class="keyword">int</span> = <span class="number">0</span>; i &lt; strlen; i++) </div><div class="line"> <span class="number">7</span>     &#123;</div><div class="line"> <span class="number">8</span>         len += txt_show.textField.getCharBoundaries(i).width;</div><div class="line"> <span class="number">9</span>         <span class="keyword">if</span>(len &gt; txt_show.textField.width - <span class="number">5</span>)</div><div class="line"><span class="number">10</span>         &#123;</div><div class="line"><span class="number">11</span>             <span class="keyword">var</span> temp:String = str.charAt(i - <span class="number">1</span>) + <span class="string">"\n"</span>;</div><div class="line"><span class="number">12</span>             txt_show.textField.replaceText(i - <span class="number">1</span>, i, temp);</div><div class="line"><span class="number">13</span>             len = <span class="number">0</span>;</div><div class="line"><span class="number">14</span>         &#125;</div><div class="line"><span class="number">15</span>     &#125;</div><div class="line"><span class="number">16</span>     </div><div class="line"><span class="number">17</span>     txt_show.textField.width = <span class="number">210</span>;</div></pre></td></tr></table></figure>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2016/03/14/6522070/" title="as3中textField输入字符时，一次性过长后自动换行">http://yoursite.com/2016/03/14/6522070/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -242,12 +242,12 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/03/14/6522071/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/14/6522069/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          as3中去掉字符串两边的空格，换行符
+          as3中强制垃圾回收
         
       </span>
     </a>
@@ -289,7 +289,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>

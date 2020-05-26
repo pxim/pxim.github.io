@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sean&#39;s Blog">
 <meta property="og:description" content="# 原文：http://bbs.9ria.com/blog-73243-19560.html最近在做一个东西，需要用到虚拟键盘。刚开始准备用as3开发一套，结果突然想起来windows有个自带的虚拟键盘（osk.exe），而且air是支持调用本地程序的，所以就写了个程序来调用。刚开始直接调用C:/Windows/System32/osk.exe  发现是行不通的，调用的时候会报错。而后想了下，或">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-26T00:54:28.467Z">
+<meta property="og:updated_time" content="2017-09-16T03:04:03.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【转】air调用windows自带的虚拟键盘">
 <meta name="twitter:description" content="# 原文：http://bbs.9ria.com/blog-73243-19560.html最近在做一个东西，需要用到虚拟键盘。刚开始准备用as3开发一套，结果突然想起来windows有个自带的虚拟键盘（osk.exe），而且air是支持调用本地程序的，所以就写了个程序来调用。刚开始直接调用C:/Windows/System32/osk.exe  发现是行不通的，调用的时候会报错。而后想了下，或">
@@ -158,7 +158,7 @@
 <div id="sina_keyword_ad_area2" class="articalContent   "><br><br><br># <span style="font-size: 14px">原文：<a href="http://bbs.9ria.com/blog-73243-19560.html" target="_blank" rel="external">http://bbs.9ria.com/blog-73243-19560.html</a></span><br><br><span>最近在做一个东西，需要用到虚拟键盘。刚开始准备用as3开发一套，结果突然想起来windows有个自带的虚拟键盘（osk.exe），而且air是支持调用本地程序的，所以就写了个程序来调用。刚开始直接调用C:/Windows/System32/osk.exe  发现是行不通的，调用的时候会报错。而后想了下，或许osk.exe这个东西更应该是属于bat类型文件，而NativeProcess是不能直接调用bat文件的，要用的话需要先调用cmd，然后给cmd参数来调用osk。试了下，果然行了。</span><br><br><br><span>先上代码</span><br><br>package<br>{<br>       importflash.desktop.NativeApplication;<br>       importflash.desktop.NativeProcess;<br>       importflash.desktop.NativeProcessStartupInfo;<br>       import flash.display.Sprite;<br>       importflash.display.StageDisplayState;<br>       import flash.events.Event;<br>       import flash.events.MouseEvent;<br>       import flash.filesystem.File;<br>       import flash.text.TextField;<br>       importflash.text.TextFieldType;<br><br>       public class VirtualKeyBoard extendsSprite<br>       {<br>              private varfile:File;<br>              private varnativeProcessStartupInfo:NativeProcessStartupInfo;<br>              private varprocess:NativeProcess;<br><br>              private vartextField:TextField;<br><br>              public functionVirtualKeyBoard()<br>              {<br>                    this.stage.displayState =StageDisplayState.FULL_SCREEN_INTERACTIVE;<br>                    this.stage.nativeWindow.alwaysInFront = true;<br><br>                     process =new NativeProcess();<br><br>                     file = newFile();<br>                    NativeApplication.nativeApplication.autoExit=true;<br>                    file=file.resolvePath(“C:/Windows/System32/cmd.exe”);<br><br>                     varprocessArg:Vector. = new Vector.();<br>                    processArg[0] = “/c”;// 加上/c，表示是cmd的参数<br>                    processArg[1] =”C:/Windows/System32/osk.exe”;//bat的路径，建议用绝对路径，如果是相对的，可以用File转一下<br><br>                    nativeProcessStartupInfo = newNativeProcessStartupInfo();<br>                    nativeProcessStartupInfo.executable = file;<br><br>                    nativeProcessStartupInfo.arguments = processArg;<br><br>                     textField= new TextField();<br>                    textField.width = 300;<br>                    textField.y = 30;<br>                    textField.x = 30;<br>                    addChild(textField);<br>                    textField.border = true;<br>                    textField.type = TextFieldType.INPUT;<br><br>                    textField.addEventListener(MouseEvent.CLICK,onTextFieldActivateHandler);<br>              }<br><br>              private functiononTextFieldActivateHandler(evt:Event):void<br>              {<br>                    if(process.running)return;<br>                    process.start(nativeProcessStartupInfo);<br>              }<br>       }<br>}<br><br><br><span>注意下中间 </span><br><br><span>processArg[0] = “/c”;// 加上/c，表示是cmd的参数</span><br><br><span>processArg[1] =”C:/Windows/System32/osk.exe”;//bat的路径，建议用绝对路径，如果是相对的，可以用File转一下</span><br><br><span>这两行代码就行，是给调用的程序添加参数。</span><br><br><span>另外，可以把osk.exe拷贝到任何地方使用。</span><br><br></div>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>最后更新： 2017年09月16日 11:04</p>
         <p>原始链接： <a class="post-url" href="/2014/07/29/6522127/" title="【转】air调用windows自带的虚拟键盘">http://yoursite.com/2014/07/29/6522127/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -244,19 +244,19 @@
 
 <nav id="article-nav">
   
-    <a href="/2014/07/29/6522111/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2014/07/29/6522116/" id="article-nav-newer" class="article-nav-link-wrap">
 
       <span class="article-nav-title">
         <i class="fa fa-hand-o-left" aria-hidden="true"></i>
         
-          【转】一个小工具类，利用shareObject把数据缓存
+          【转】Android常用工具类
         
       </span>
     </a>
   
   
-    <a href="/2014/07/29/6522134/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">【转】如何实现Flex页面跳转</span>
+    <a href="/2014/07/29/6522140/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【转】译—游戏开发者应该如何应用Git和GitHub</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
@@ -291,7 +291,7 @@
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
         Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
-      &copy; 2020 Sean<br>
+      &copy; 2017 Sean<br>
       </p>
     </div>
   </div>
