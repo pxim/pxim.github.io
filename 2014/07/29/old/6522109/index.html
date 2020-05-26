@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    【转】PV3D的小练习~太阳系八大行星 |  PxSite
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="PxSite" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  
+  <div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article id="post-old/6522109" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  【转】PV3D的小练习~太阳系八大行星
+</h1>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2014/07/29/old/6522109/" class="article-date">
+  <time datetime="2014-07-29T02:37:00.000Z" itemprop="datePublished">2014-07-29</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Flash-Flex/">Flash&Flex</a>
+  </div>
+
+      
+      
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">3.5k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">14 min</span>
+        </span>
+    </span>
+</div>
+
+      
+    </div>
+    
+
+    
+    
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <a id="more"></a>
+<div id="sina_keyword_ad_area2" class="articalContent   newfont_family">
+
+
+<p>转自：<a href="http://hi.baidu.com/boycy/item/70d1ba53bc8c3a958c12eddf" target="_blank" rel="noopener">http://hi.baidu.com/boycy/item/70d1ba53bc8c3a958c12eddf</a></p>
+<p><a href="http://www.cnblogs.com/flash3d/archive/2012/01/30/2331902.html" target="_blank" rel="noopener">http://www.cnblogs.com/flash3d/archive/2012/01/30/2331902.html</a></p>
+<div>
+
+
+<h2 id="PV3D的小练习-太阳系八大行星"><a href="#PV3D的小练习-太阳系八大行星" class="headerlink" title="PV3D的小练习~太阳系八大行星"></a>PV3D的小练习~太阳系八大行星</h2><div>
+
+
+<p>动画地址：<a href="http://hong-ming.cn/flash/8star.swf" target="_blank" rel="noopener">http://hong-ming.cn/flash/8star.swf</a></p>
+<p>有2M多，下载可能有点慢<del>多等等吧O(∩_∩)O</del></p>
+<p>不知道为什么，在这里拖动舞台好像有点问题，直接点击下面的链接可以查看完整的功能</p>
+<p>点击右边的几个按钮 可以跟踪查看所选的物体 然后点击左边的自由查看按钮后可以鼠标拖动屏幕同时按方向键和CS感觉类似~其他就不多说了，玩玩就知道！</p>
+<p>以下是这个动画的源代码 以后还会对注释进行加精，有问题欢迎留言！（今天实在是太困了=_=）</p>
+<p>stop();//进入有代码的帧一般习惯停止下，以防止动画循环导致代码重复运行  </p>
+<p>stage.scaleMode=StageScaleMode.SHOW_ALL;//舞台的显示模式设置为全部显示不扭曲  </p>
+<p>import org.papervision3d.lights.PointLight3D;  </p>
+<p>importorg.papervision3d.materials.shadematerials.FlatShadeMaterial;  </p>
+<p>import org.papervision3d.objects.DisplayObject3D;  </p>
+<p>import org.papervision3d.objects.primitives.Sphere;  </p>
+<p>import org.papervision3d.view.Viewport3D;  </p>
+<p>import org.papervision3d.render.BasicRenderEngine;  </p>
+<p>import org.papervision3d.scenes.Scene3D;  </p>
+<p>import org.papervision3d.materials.utils.MaterialsList;  </p>
+<p>import org.papervision3d.cameras.Camera3D;  </p>
+<p>importorg.papervision3d.materials.BitmapMaterial;//以上是导入PV3D的相关类</p>
+<p>var sunM:sunP=new sunP(100,100);  </p>
+<p>var MercuryM:MercuryP=new MercuryP(100,100);  </p>
+<p>var VenusM:VenusP=new VenusP(100,100);  </p>
+<p>var earthM:earthP=new earthP(100,100);  </p>
+<p>var MarsM:MarsP=new MarsP(100,100);  </p>
+<p>var JupiterM:JupiterP=new JupiterP(100,100);  </p>
+<p>var SaturnM:SaturnP=new SaturnP(100,100);  </p>
+<p>var UranusM:UranusP=new UranusP(100,100);  </p>
+<p>var NeptuneM:NeptuneP=newNeptuneP(100,100);//以上的sunM等等都是事先导入到库里面的位图，然后现在我们把它链接出来后进行实例化，以便我们在代码中能够使用这些位图，这里的位图数据做模型的贴图用</p>
+<p>var size:Number=0.01;//这个是全局的大小参数，和实际数据是乘除关系，控制星球的半径（太阳除外）  </p>
+<p>var speed:Number=365;//这个是速度参数，也是乘除关系  </p>
+<p>var distance:Number=1000;//这个是星球间的距离参数，乘除关系，同时也控制着太阳的半径  </p>
+<p>var look:int=-1;//应该是个索引参数，0代表第一个行星的索引，1代表第二个……  </p>
+<p>var ifplay:Boolean=true;//播放的时候值设为true，暂停的时候反之  </p>
+<p>var iffree:Boolean=false;//自由查看状态的时候值为true，否则反之</p>
+<p>var star:Array=new Array();  </p>
+<p>var sun:Array=new Array();  </p>
+<p>sun.push({R:0.05,T:365,map:sunM});//把太阳的参数保存在数组里，R是半径，T是自转周期，map是贴图  </p>
+<p>star.push({R:0.38,T:87.70,a:7.0,r:2440,t:58.65,map:MercuryM,con:null,ball:null});  </p>
+<p>star.push({R:0.72,T:224.701,a:3.4,r:6051.8,t:-243.02,map:VenusM,con:null,ball:null});  </p>
+<p>star.push({R:1.00,T:365.2422,a:7.25,r:6378.15,t:1,map:earthM,con:null,ball:null});  </p>
+<p>star.push({R:1.52,T:686.98,a:1.8,r:3398,t:1.026,map:MarsM,con:null,ball:null});  </p>
+<p>star.push({R:5.20,T:4332.589,a:0,r:71492,t:0.41,map:JupiterM,con:null,ball:null});  </p>
+<p>star.push({R:9.54,T:10759.5,a:2.5,r:60268,t:0.426,map:SaturnM,con:null,ball:null});  </p>
+<p>star.push({R:19.23,T:30799,a:0.772,r:25559,t:0.646,map:UranusM,con:null,ball:null});  </p>
+<p>star.push({R:30.06,T:60152,a:1.769,r:24766,t:0.917,map:NeptuneM,con:null,ball:null});//以上是各星球的参数，R轨道半径，T公转周期，a轨道倾角，r星球半径，t自转周期，map贴图，con星球的容器对象，ball星球对象，另外关于AS3中数组的用法请参考帮助文档</p>
+<p>var viewport:Viewport3D;//定义视窗  </p>
+<p>var scene:Scene3D;//定义3D场景  </p>
+<p>var camera:Camera3D;//定义摄像机  </p>
+<p>var renderer:BasicRenderEngine;//定义渲染引起，以上四个是建立一个基本的3D场景的四要素  </p>
+<p>viewport=new Viewport3D(1024,768);//用Viewport3D的构造函数建立一个1024*768大小的视窗  </p>
+<p>scene=new Scene3D();//构造一个3D场景  </p>
+<p>camera=newCamera3D();//构造一个摄像机，这里说明一下，为什么四要素要定义还要构造呢，定义可以理解为是开辟一块适合的空间用于构造，构造才是往这个空间里填充实质性的东西  </p>
+<p>renderer= new BasicRenderEngine();//构造一个渲染引擎  </p>
+<p>camera.z=-150;//将摄像机位置的Z坐标设为-150，在PV3D里面默认视角下，水平右方向是X正方向，竖直向上是Y正方向，垂直向里是Z正方向  </p>
+<p>stage.addChild(viewport);//这个工作是必须的，PV3D的内容全部在视窗里显示，所以要想看到PV3D的内容前提是必须可以看到视窗，所以必须把视窗添加到舞台的显示列表，显示列表的概念可以参考帮助文档</p>
+<p>var sunS:Sphere;//定义一个球形物体，这个物体是用来当做太阳的  </p>
+<p>var sunMaterial:BitmapMaterial;//定义一个贴图，用来做太阳的贴图  </p>
+<p>sunMaterial=newBitmapMaterial(sun[0].map);//构造太阳的贴图，贴图的构造函数的参数是个BitmapData类型，这里的sun[0].map就是从我们库里面链接出来并创建的位图  </p>
+<p>sunS=newSphere(sunMaterial,sun[0].R*distance,15,15);//在这里解释下球体的构造函数参数，第一个是贴图数据类型，也就是上面刚刚构建的那个，第二个参数是半径，第三第四个分别是水平和竖直方向的段数，段数越高球体越圆越精细，当然对CPU的要求也就越高  </p>
+<p>scene.addChild(sunS);//把太阳球体添加到3D场景里面  </p>
+<p>for (var n:int=0; n&lt;8; n++) {//这里用一个八次的循环一次性创建八个行星  </p>
+<p>star[n].con=newDisplayObject3D();//这里创建一个当做容器用的DisplayObject3D类，这个类，我们可以把它理解成是物质，球体摄像机包括还有正方体等等都是物质，所以DisplayObject3D类就是他们的父类，他们有共同的旋转，移动等等方法，这里为什么会要当做容器，主要是后面的公转方便  </p>
+<p>star[n].ball=new Sphere(newBitmapMaterial(star[n].map),star[0].r*size,15,15);//这里创建球体的方法和创建太阳一样，根据数组的索引我们可以访问每组星球的参数，从而可以用循环创建不同的球体  </p>
+<p>star[n].con.addChild(star[n].ball);//这里把球体加入到容器里面  </p>
+<p>star[n].ball.z=-star[n].R*distance;//然后球体相对于容器的Z坐标设置成公转轨道的半径  </p>
+<p>star[n].con.rotationX+=star[n].a;//对容器绕着X旋转一个倾角（轨道倾角）  </p>
+<p>star[n].con.rotationY+=Math.random()*360;//对容器绕着Y旋转一个随机角度，因为查了很多资料都不知道现在星球的初始状态，索性给它随机初始化^_^  </p>
+<p>scene.addChild(star[n].con);//把容易添加到场景（这个时候球体在容易里面，就好比是影片剪辑的嵌套原理一样，应该可以理解吧）  </p>
+<p>}</p>
+<p>addEventListener(Event.ENTER_FRAME,process);//当进入帧的事件下发生函数process，实际上只要影片播放，Event.ENTER_FRAME这个事件就会被不断触发，于是process函数就会被不断反复执行，这个也是为什么画面可以动起来的原因了  </p>
+<p>function process(evt:Event):void {  </p>
+<p>if (ifplay) {//在播放情况下执行下面代码  </p>
+<p>  sunS.rotationY-=speed/sun[0].T;//太阳自转  </p>
+<p>   for (n=0; n&lt;8; n++){//用循环对八个行星进行批量操作  </p>
+<p>   star[n].con.localRotationY+=speed/star[n].T;//容易自转，其实就是行星的公转  </p>
+<p>   star[n].ball.localRotationY+=speed/star[n].t;//行星自转  </p>
+<p>   }  </p>
+<p>   if (!iffree){//在非自由查看的情况下执行下面的代码（跟踪查看）  </p>
+<pre><code>if(look&gt;=0) {  
+
+camera.lookAt(star[look].ball);//根据索引选择跟踪查看的对象  
+
+} else{  
+
+camera.lookAt(sunS);//跟踪查看太阳  
+
+}  </code></pre><p>   }  </p>
+<p>}  </p>
+<p>renderer.renderScene(scene,camera,viewport);//不断进行渲染，要是不渲染画面就停住了（类似于刷新）</p>
+<p>}</p>
+<p>bs.addEventListener(MouseEvent.CLICK,bsg);//点击太阳按钮，进行相应的设置  </p>
+<p>function bsg(event:MouseEvent):void {  </p>
+<p>camera.z=-150;  </p>
+<p>camera.x=0;  </p>
+<p>camera.y=0;//以上是摄像机坐标设置，把相机挪到一个合适的视角  </p>
+<p>speed=365;//对全局速度进行设置  </p>
+<p>look=-1;//跟踪视角的索引，表示跟踪太阳  </p>
+<p>iffree=false;//设置为非自由视角  </p>
+<p>txt.text=”太陽是距離地球最近的恆星，是太陽系的中心天體。太陽系質量的99.87%都集中在太陽。太陽系中的八大行星、小行星、流星、彗星、外海王星天體以及星際塵埃等，都圍繞著太陽運行（公轉）。”;//下面显示的文字内容  </p>
+<p>}  </p>
+<p>b0.addEventListener(MouseEvent.CLICK,b0g);//下面的设置和太阳差不多，目的就是调节相机的位置和运行速度之类的  </p>
+<p>function b0g(event:MouseEvent):void {  </p>
+<p>camera.z=-500;  </p>
+<p>camera.x=0;  </p>
+<p>camera.y=0;  </p>
+<p>speed=365;  </p>
+<p>look=0;  </p>
+<p>iffree=false;  </p>
+<p>txt.text=”水星最接近太陽，是太陽系中最小最輕的行星。水星在直徑上小於木衛三和土衛六。”;  </p>
+<p>}  </p>
+<p>b1.addEventListener(MouseEvent.CLICK,b1g);  </p>
+<p>function b1g(event:MouseEvent):void {  </p>
+<p>camera.z=-800;  </p>
+<p>camera.x=0;  </p>
+<p>camera.y=0;  </p>
+<p>speed=365;  </p>
+<p>look=1;  </p>
+<p>iffree=false;  </p>
+<p>txt.text=”八大行星之一，中國古代稱之為太白或太白金星。它有時是晨星，黎明前出現在東方天空，被稱為“啟明”；有時是昏星，黃昏後出現在西方天空，被稱為“長庚”。金星是全天中除太陽和月亮外最亮的星，猶如一顆耀眼的鑽石，於是古希臘人稱它為阿佛洛狄忒–愛與美的女神，而羅馬人則稱它為維納斯–美神。”;  </p>
+<p>}  </p>
+<p>b2.addEventListener(MouseEvent.CLICK,b2g);  </p>
+<p>function b2g(event:MouseEvent):void {  </p>
+<p>camera.z=-1050;  </p>
+<p>camera.x=0;  </p>
+<p>camera.y=0;  </p>
+<p>speed=365;  </p>
+<p>look=2;  </p>
+<p>iffree=false;  </p>
+<p>txt.text=”地球是距太陽第三顆，也是第五大行星”;  </p>
+<p>}  </p>
+<p>b3.addEventListener(MouseEvent.CLICK,b3g);  </p>
+<p>function b3g(event:MouseEvent):void {  </p>
+<p>camera.z=-1600;  </p>
+<p>camera.x=0;  </p>
+<p>camera.y=0;  </p>
+<p>speed=365;  </p>
+<p>look=3;  </p>
+<p>iffree=false;  </p>
+<p>txt.text=”火星為距太陽第四遠，也是太陽系中第七大行星”;  </p>
+<p>}  </p>
+<p>b4.addEventListener(MouseEvent.CLICK,b4g);  </p>
+<p>function b4g(event:MouseEvent):void {  </p>
+<p>camera.z=-5300;  </p>
+<p>camera.x=0;  </p>
+<p>camera.y=0;  </p>
+<p>speed=3650;  </p>
+<p>look=4;  </p>
+<p>iffree=false;  </p>
+<p>txt.text=”木星是離太陽第五顆行星，而且是最大的一顆，比所有其他的行星的合質量大2倍（地球的318倍）。被稱為“行星之王”。”;  </p>
+<p>}  </p>
+<p>b5.addEventListener(MouseEvent.CLICK,b5g);  </p>
+<p>function b5g(event:MouseEvent):void {  </p>
+<p>camera.z=-9700;  </p>
+<p>camera.x=0;  </p>
+<p>camera.y=0;  </p>
+<p>speed=14600;  </p>
+<p>look=5;  </p>
+<p>iffree=false;  </p>
+<p>txt.text=”土星是離太陽第六遠的行星，也是八大行星中第二大的行星”;  </p>
+<p>}  </p>
+<p>b6.addEventListener(MouseEvent.CLICK,b6g);  </p>
+<p>function b6g(event:MouseEvent):void {  </p>
+<p>camera.z=-19280;  </p>
+<p>camera.x=0;  </p>
+<p>camera.y=0;  </p>
+<p>speed=29200;  </p>
+<p>look=6;  </p>
+<p>iffree=false;  </p>
+<p>txt.text=”天王星是太陽系中離太陽第七遠行星，從直徑來看，是太陽系中第三大行星。天王星的體積比海王星大，質量卻比其小。”;  </p>
+<p>}  </p>
+<p>b7.addEventListener(MouseEvent.CLICK,b7g);  </p>
+<p>function b7g(event:MouseEvent):void {  </p>
+<p>camera.z=-30100;  </p>
+<p>camera.x=0;  </p>
+<p>camera.y=0;  </p>
+<p>speed=58400;  </p>
+<p>look=7;  </p>
+<p>iffree=false;  </p>
+<p>txt.text=”海王星是環繞太陽運行的第八顆行星，也是太陽系中第四大天體（直徑上）。海王星在直徑上小於天王星，但質量比它大。”;  </p>
+<p>}  </p>
+<p>st.addEventListener(MouseEvent.CLICK,stg);//点击播放按钮  </p>
+<p>function stg(event:MouseEvent):void {//播放参数为真  </p>
+<p>ifplay=true;  </p>
+<p>}  </p>
+<p>pu.addEventListener(MouseEvent.CLICK,pug);//暂停  </p>
+<p>function pug(event:MouseEvent):void {  </p>
+<p>ifplay=false;  </p>
+<p>}  </p>
+<p>editor.addEventListener(MouseEvent.CLICK,editorg);//显示作者按钮  </p>
+<p>function editorg(event:MouseEvent):void {  </p>
+<p>txt.text=”陳鋆”;  </p>
+<p>}</p>
+<p>seefree.addEventListener(MouseEvent.CLICK,seefreeg);//点击自由视角按钮，进入自由查看模式  </p>
+<p>function seefreeg(event:MouseEvent):void {  </p>
+<p>iffree=true;//自由查看设为真  </p>
+<p>txt.text=”自由視角操作提示：按方向上下鍵可以前進後退，鼠標按住再移動可以改變視角”;  </p>
+<p>}  </p>
+<p>stage.addEventListener(MouseEvent.MOUSE_DOWN,MouseDown);//在舞台上按下鼠标的时候发生MouseDown函数  </p>
+<p>stage.addEventListener(MouseEvent.MOUSE_MOVE,MouseMove);//鼠标在舞台上移动发生MouseMove函数  </p>
+<p>stage.addEventListener(MouseEvent.MOUSE_UP,MouseUp);//鼠标在舞台上放开发生函数MouseUp  </p>
+<p>var roll:Boolean=false;//是否处于拖动状态的参数  </p>
+<p>var previousMouseX:Number=0;  </p>
+<p>var previousMouseY:Number=0;//临时储存鼠标的上一个位置  </p>
+<p>function MouseDown(event:MouseEvent):void {//按下鼠标的时候  </p>
+<p>if (iffree) {//当然要在自由查看的状态下  </p>
+<p>   roll = true;//拖动被允许  </p>
+<p>   previousMouseX =event.stageX;  </p>
+<p>   previousMouseY =event.stageY;//获取按下鼠标的位置  </p>
+<p>}  </p>
+<p>}  </p>
+<p>function MouseUp(event:MouseEvent):void {//当鼠标放开的时候  </p>
+<p>if (iffree) {  </p>
+<p>   roll = false;//拖动被禁止  </p>
+<p>}  </p>
+<p>}  </p>
+<p>function MouseMove(event:MouseEvent):void {//当移动鼠标的时候  </p>
+<p>if (iffree) {//在自由查看的状态下  </p>
+<p>   var differenceX:Number =event.stageX - previousMouseX;  </p>
+<p>   var differenceY:Number =event.stageY - previousMouseY;//鼠标新位置和上一时刻的位置的差值，其实就是鼠标坐标的增量  </p>
+<p>   if (roll) {//在可拖动的状态下  </p>
+<p>   camera.rotationY+=differenceX;  </p>
+<p>   camera.rotationX+=differenceY;//镜头往鼠标移动的方向移动  </p>
+<p>   previousMouseX = event.stageX;  </p>
+<p>   previousMouseY = event.stageY;//临时储存新的鼠标位置  </p>
+<p>   }  </p>
+<p>}  </p>
+<p>}</p>
+<p>stage.addEventListener(KeyboardEvent.KEY_DOWN,keydown);//键盘有按键按下的情况发生keydown  </p>
+<p>stage.addEventListener(KeyboardEvent.KEY_UP,keyup);//键盘有按键放开的情况下发生keyup  </p>
+<p>stage.addEventListener(Event.ENTER_FRAME,go);//这个事件是上面讲过的连续发生事件，这里再连续发生go  </p>
+<p>var movt:Boolean=false;//向前移动参数  </p>
+<p>var movb:Boolean=false;//向后移动参数  </p>
+<p>var s:Number=0;  </p>
+<p>function keydown(event:KeyboardEvent):void {//有键盘按键按下  </p>
+<p>if (iffree) {//在自由查看的情况下  </p>
+<p>   if (event.keyCode==38){//如果按下去的键的键控代码值为38，也即是按下方向键的向上  </p>
+<p>   movt=true;//那么向前移动被允许  </p>
+<p>   movb=false;//向后移动被禁止  </p>
+<p>   } else if (event.keyCode==40){//如果按下方向键向后  </p>
+<p>   movt=false;//向前移动被禁止  </p>
+<p>   movb=true;//向后移动被允许  </p>
+<p>   }  </p>
+<p>}  </p>
+<p>}  </p>
+<p>function keyup(event:KeyboardEvent):void {//按键被松开  </p>
+<p>if (iffree) {//在自由查看的前提下  </p>
+<p>   movt=false;  </p>
+<p>   movb=false;//先前向后均被禁止  </p>
+<p>   s=0;  </p>
+<p>}  </p>
+<p>}  </p>
+<p>function go(event:Event):void {//这个事件是被不断触发的  </p>
+<p>if (iffree) {//在自由查看的前提下  </p>
+<p>   if (movt) {//如果先前移动被允许  </p>
+<p>   camera.moveForward(s++);//那么相机就向前移动  </p>
+<p>   } else if (movb){//否则如果向后移动被允许  </p>
+<p>   camera.moveBackward(s++);//那么相机向后移动  </p>
+<p>   }  </p>
+<p>}  </p>
+<p>}</p>
+</div></div></div>
+      
+      <!-- reward -->
+      
+      <div id="reward-btn">
+        Donate
+      </div>
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+        <div class="declare">
+          <ul class="post-copyright">
+            <li>
+              <i class="ri-copyright-line"></i>
+              <strong>Copyright： </strong>
+              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+            </li>
+          </ul>
+        </div>
+        
+    <footer class="article-footer">
+      
+          
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2014/07/29/old/6522109/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ActionScript-3-0/" rel="tag">ActionScript 3.0</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PV3D/" rel="tag">PV3D</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2014/07/29/old/6522104/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            【转】AS3操作XML，增加、删除、修改
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2014/07/29/old/6522110/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">【转】AS3画板工具类，可直接套用</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+  
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        app_id: '',
+        app_key: '',
+        path: window.location.pathname,
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        placeholder: '给我的文章加点评论吧~',
+        recordIP: true
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+<style>
+    #vcomments-box {
+        padding: 5px 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 0px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #fff;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+
+  
+
+  
+  
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2020
+        <i class="ri-heart-fill heart_icon"></i> Peng Xiang
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="PxSite"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Subtitle -->
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 100,
+      showCursor: true
+    });
+  } catch (err) {
+    console.log(err)
+  }
+</script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+
+    
+  </div>
+</body>
+
+</html>
