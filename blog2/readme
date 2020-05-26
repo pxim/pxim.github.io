@@ -1,0 +1,35 @@
+每次发布的操作
+clean
+generate
+deploy
+
+https://pxi.gitee.io
+
+
+---
+
+每次deploy到github出错的话
+
+修改_yml
+然后找到deploy节点
+接下来是
+假如git用户名是qssq
+假如git密码是love
+假如git地址是https://github.com/qssq/qssq.github.io.git
+那么这样修改就ok
+
+deploy:
+  type: git
+  repo: https://qssq:love@github.com/crazies/qssq.github.io.git
+  branch: master
+  message:  now('YYYY-MM-DD HH:mm:ss')
+也就是说格式模板是如下
+
+
+deploy:
+  type: git
+  repo: https://账号:密码@github.com/账号/qssq.github.io.git
+  branch: master
+  message:  now('YYYY-MM-DD HH:mm:ss')
+
+---
