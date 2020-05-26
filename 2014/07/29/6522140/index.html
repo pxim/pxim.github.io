@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>【转】译—游戏开发者应该如何应用Git和GitHub | Sean&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="PengXiang,Sean's Blog,Sean's site,seanin,px,site" />
+  
+  <meta name="description" content="原文地址：http://bbs.9ria.com/thread-259587-1-2.html”我确信Git是强大的，但是它看起来很复杂——我依然会坚持我当前的工作流“就像说“我也敢肯定像FlashDevelop 和SublimeText也是非常强大的，但是他们看起来也是很复杂——所以我仍然坚持用Notepad”。当然，学习这个确实要走些弯路，但是你的生活中确实有不可以缺少它，这看起来很愚蠢。在">
+<meta name="keywords" content="github,git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【转】译—游戏开发者应该如何应用Git和GitHub">
+<meta property="og:url" content="http://yoursite.com/2014/07/29/6522140/index.html">
+<meta property="og:site_name" content="Sean&#39;s Blog">
+<meta property="og:description" content="原文地址：http://bbs.9ria.com/thread-259587-1-2.html”我确信Git是强大的，但是它看起来很复杂——我依然会坚持我当前的工作流“就像说“我也敢肯定像FlashDevelop 和SublimeText也是非常强大的，但是他们看起来也是很复杂——所以我仍然坚持用Notepad”。当然，学习这个确实要走些弯路，但是你的生活中确实有不可以缺少它，这看起来很愚蠢。在">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://yoursite.com/2014/07/29/6522140/%22译——游戏开发者应该如何应用Git和GitHub%22">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:updated_time" content="2020-05-26T00:54:28.469Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【转】译—游戏开发者应该如何应用Git和GitHub">
+<meta name="twitter:description" content="原文地址：http://bbs.9ria.com/thread-259587-1-2.html”我确信Git是强大的，但是它看起来很复杂——我依然会坚持我当前的工作流“就像说“我也敢肯定像FlashDevelop 和SublimeText也是非常强大的，但是他们看起来也是很复杂——所以我仍然坚持用Notepad”。当然，学习这个确实要走些弯路，但是你的生活中确实有不可以缺少它，这看起来很愚蠢。在">
+<meta name="twitter:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">Sean&#39;s Site</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/home/">
+                        <i class="fa fa-home"></i>
+                        <span>主页</span>
+                    </a>
+                    
+                    <a  href="/">
+                        <i class="fa fa-list-ul"></i>
+                        <span>文章列表</span>
+                    </a>
+                    
+                    <a  href="/project/">
+                        <i class="fa fa-paper-plane-o"></i>
+                        <span>作品展示</span>
+                    </a>
+                    
+                    <a  href="/about/">
+                        <i class="fa fa-user"></i>
+                        <span>关于</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        Sean&#39;s Site
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个立志 JavaScript全栈 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="Home"  href="/">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="https://github.com/seanin">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="CSDN Blog" target="_blank" href="http://blog.csdn.net/arvin0?viewmode=list">
+                            <i class="fa fa-copyright fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="http://weibo.com/1751482640/profile?topnav=1&wvr=6&is_all=1">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="email" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=245803627@qq.com">
+                            <i class="fa fa-envelope-o fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-6522140" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      【转】译—游戏开发者应该如何应用Git和GitHub
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/news/">news</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2014-07-29
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <a id="more"></a>
+<div id="sina_keyword_ad_area2" class="articalContent   "><br><table cellspacing="0" cellpadding="0"><br><tbody><br><tr><br><td style="font-size: 14px"><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">原文地址：<a href="http://bbs.9ria.com/thread-259587-1-2.html" target="_blank" rel="external"><span style="font-family: 宋体">http://bbs.9ria.com/thread-259587-1-2.html</span></a></span></span></span><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">”我确信Git是强大的，但是它看起来很复杂——我依然会坚持我当前的工作流“就像说“我也敢肯定像FlashDevelop 和SublimeText也是非常强大的，但是他们看起来也是很复杂——所以我仍然坚持用Notepad”。当然，学习这个确实要走些弯路，但是你的生活中确实有不可以缺少它，这看起来很愚蠢。在这篇文章中，我会解释为什么Git（还有GitHub）会这么伟大，还有会为你演示如何让你快速入门。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">笔记：我在这里说得最多的是关于苹果系统上的版本控制，像Subversion，当然还有很受欢迎的Git，如果你有这样的选着自由的话，我推荐你选择它！</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 21px"><strong style="font-weight: bold">到底Git能为你做些什么<strong></strong></strong></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">Git对于所有的游戏开发者来说都是有好处的，无论是独立开发还是团队开发。现在先让我们看一看最大的好处：</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 21px"><strong style="font-weight: bold">Git能够让回撤销所有你做过的改变</strong></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">最重要的一点是，当你请求这个游戏的工作目录时，Git能让你获取到这样的一个”快照“，你还可以随时都可以恢复到任何的快照中。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">这和那些当你为你的游戏生成一个新的版本时就为你弄一个整个文件的副本不一样，它相对来说更好。或者以电子邮件的形式给你发送一段带有描述的代码，这样的话你就不会丢失他！</span></span></span><br><br><br><span style="font-family: Tahoma"><span style="font-size: 14px"><span style="color: #000000">另外，你还不被局限在同一条线上进行撤销和重做;你可以将你的整个项目分成一个树状结构的快照，你可以随意根据自己的意愿去将会不同分支的快照。意思就是你可以在你的1.1版本中添加一个新的特性，然后将它恢复到1.0版本，这样就能完成一个Bug的修复;或者你也可以用来试验你的特性，如果它让你不满意，你可以将它报废掉;</span><span style="color: #000000">或者让你的手机和平板项目虽然在一起，但是却相对对立开来</span><span style="color: #ad0000"><span style="color: #000000">！</span></span></span></span><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px"><span style="color: #ad0000"><br><br></span></span></span></span><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 21px"><strong style="font-weight: bold">Git不仅仅能够让你注释你的代码，它还能够让你注释你的作品！<strong></strong></strong></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">事实上，Git并不是让你能够为你的代码添加注释——它是鼓励你去做这样的事情，甚至是要求你这样做！基本上，无论什么时候你保存一个快照，你就已经为你的上一个快照的改变写了一个注释。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">下面是有关<a href="http://www.mapeditor.org/" target="_blank" rel="external">Tiled</a>的几个示例注释，这是一个<a href="http://gamedev.tutsplus.com/tutorials/level-design/introduction-to-tiled-map-editor/" target="_blank" rel="external">我们之前提到</a>的关卡编辑器：</span></span></span><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="TiledCommits.png" title="TiledCommits.png"><span> </span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">除了让你能够更加容易地在你的项目中找到一个特定的点(这个通常能够帮助你追踪到Bug产生的原因)，还能让你养成一个良好的开发习惯：你会发现你会将自己的工作分厂很多小任务，这样做能够让你为每个部分都做个通过一个简短的注释就能完整地描述到它，比同时在8个不同的事情之间工作好多了！</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 21px"><strong style="font-weight: bold">Git能够让你更好地访问到其它的项目</strong></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">到目前位置，我一直在谈论的是Git，它只是一个想ZIP或者email或FTP的软件。对比一下<a href="https://github.com/" target="_blank" rel="external">GitHub</a>，它是一个能够让你保存你的快照的网站(或者是你整个的项目)。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">其实还有其它保存Git的网址，当然还有一种可能就是你用你自己的服务器去保存你的Git项目的快照，但是到目前为止，GitHub是最好的。你可以认为他像Gmail：它可能并不是唯一基于Web的</span></span></span><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">电子邮件应用程序，但是对于很多人来说它是。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">有很多游戏或者是游戏工具都在GitHub在开源的，例如想<a href="https://github.com/bjorn/tiled" target="_blank" rel="external">Tiled</a>（这个我之前提到过）还有<a href="https://github.com/PrimaryFeather/Starling-Framework" target="_blank" rel="external">Starling的框架</a>（<a href="http://gamedev.tutsplus.com/articles/how-to-learn/how-to-learn-starling-framework/" target="_blank" rel="external">这个我们之前也提到过</a>）。这意味着你不仅可以下载到最新版本的Starling框架的一个zip的文件和可以将它提取到你的项目中，你也可以将它导入到你的项目中，这样它就会在它有变化的时候自动更新。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">你也可以在<a href="https://github.com/PrimaryFeather/Starling-Framework/issues" target="_blank" rel="external">问题建议中</a>提出某些建议或者反映一些bug:</span></span></span><span style="font-family: Tahoma"><span style="font-size: 14px"><span style="color: #000000"><br><br></span></span></span><span style="font-family: Tahoma"><span style="font-size: 14px"><span style="color: #000000"><br><br></span></span></span><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="StarlingIssues.png" title="StarlingIssues.png"><span> </span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">或者你也可以对这个项目弄一个本地的副本（通过”fork”）,你可以在这个项目中添加你自己的功能或者修正某些bug，你可以提交这个自己项目给项目原本的持有者，并建议他合并成为主要版本。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">(你会发现很多我们放到GitHub上的源文件都是从Tuts上读取到的-这样做的主要原因是为什么呢？)</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 21px"><strong style="font-weight: bold">Git能够让你更好地与其他的开发者进行协作<strong></strong></strong></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">以上的所有理由使得Git对所有的独立开发者来说都是非常宝贵的！但是这些好处对团队开发来说本来也是非常方便的：</span></span></span><br><br><em>   <span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">相对于通过邮件附件共享所有东西或者Dropbox，在团队里面利用Git(无lung是通过GitHub的高端私人计划或者是其它托管方法)会使交流更加的简单。</span></span></span>
+</em>   由于每个被添加到项目中的快照都带有一个附上注释和作者的标记，所以这样很容易追踪到是谁做了些什么。<br>*   每个在团队中的人都能修改他们自己的代码，当你觉得你的代码可以的时候你可以将它提交到你的主项目中（从而能够避免破坏项目）。<br><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">Git也有一个功能让你能够合并不同的代码在一起，它能够让你很好地去处理冲突而不是盲目地覆盖项目的某些部分。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 21px"><strong style="font-weight: bold">Git的搭建</strong></span></span></span><br><br><br><span style="color: #000"><span><span style="font-size: 14px"><span style="font-family: Tahoma">过去安装Git和搭建它是一件很复杂的事情，因为涉及到要使用一些列的命令行去生成“SSH键”或者“ugh”。但是现在确实非常简单：你所要做的是就只用想在</span><a href="http://windows.github.com/" target="_blank" rel="external"><span style="font-family: Tahoma">GitHub<br> forWindows</span></a><span style="font-family: Tahoma"><span> </span>或者<span> </span></span><a href="http://mac.github.com/" target="_blank" rel="external"><span style="font-family: Tahoma">GitHub forMac</span></a><span style="font-family: Tahoma">。当让，我知道我曾经告诉过你GitHub是一个在网络托管Git的快照的网站，但是这里我只是告诉你通过安装GitHub去使用Git。这就会让人疑惑：GitHub应用是一个让你安装到Git并为你提供一个良好的接口的软件，它同时也提供另外一个选择让你能够在网页上托管你的快照。</span></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">其实不用太过担心这个问题。你只需要更具你的系统去下载并且安装它就可以了！除非你是使用Linux，这样的话我恐怕你要走<a href="https://help.github.com/articles/set-up-git#platform-linux" target="_blank" rel="external">一个相当复杂的过程</a></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 21px"><strong style="font-weight: bold">开始使用Git<strong></strong></strong></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">我将会教你如何为你最近的游戏或者项目搭建Git，这样你就能真正地用到它，并不是随便的一些假的练习。我现在正在使用的GitHub的Windows版本，但是这些步骤和Mac上的版本有很多的相似之处。我现在假设bfxr就是我现在在用的工作项目，当然其实这并不是真的。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">打开GitHub，然后点击<strong style="font-weight: bold">创建</strong>开始创建一个新的”repo“(是”repository的简写“，这个是为你的游戏或者项目存储快照的地方)。你要为你的项目输入一个名字和描述，然后使用默认的路径就可以了（你不需要把它放到特定的目录中），最后要注意的是不要勾选<strong style="font-weight: bold">Pushto<br> github<strong>。</strong></strong></span></span></span><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="Git_and_GitHub_for_Game_Developers_CreateNewRepo.jpg" title="Git_and_GitHub_for_Game_Developers_CreateNewRepo.jpg"><br><span style="font-family: Tahoma"><span> </span><br><br><br><span style="color: #000000"><span><span style="font-size: 14px">双击你新创建的知识库就可以在应用程序中打开它：</span></span></span></span><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="Git_and_GitHub_for_Game_Developers_SelectNewRepo.jpg" title="Git_and_GitHub_for_Game_Developers_SelectNewRepo.jpg"><br><span style="font-family: Tahoma"><span> </span><br><br><br><span style="color: #000"><span><span style="font-size: 14px">你会看到它会提示你有两个文件需要”提交“(这个将会以一个快照的形象添加到知识库中);这里还有Git的配置文件，所以要为它在CommitMessage 框中键入一个简单的注释并点击<span> </span><strong style="font-weight: bold">Commit：</strong></span></span></span></span><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="Git_and_GitHub_for_Game_Developers_FirstCommit_Cropped.jpg" title="Git_and_GitHub_for_Game_Developers_FirstCommit_Cropped.jpg"><br><span style="font-family: Tahoma"><span> </span><br><br><br><span style="color: #000000"><span><span style="font-size: 14px">现在点击 tools(工具)&gt;<strong style="font-weight: bold">open inexplorer<strong>(从资源管理器中打开)，然后就能打开这个项目的Git工作目录。那里除了两个配置文件之外什么都没有(还会隐藏一个后缀为<strong style="font-weight: bold">.git</strong>的文件，这个文件或许你会看不到)：</strong></strong></span></span></span></span><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="Git_and_GitHub_for_Game_Developers_EmptyDir.jpg" title="Git_and_GitHub_for_Game_Developers_EmptyDir.jpg"><br><span style="font-family: Tahoma"><span> </span><br><br><br><span style="color: #000000"><span><span style="font-size: 14px">然后将你的项目全部都复制进这个文件夹里面（虽然看起来很乱，起码这样可以让你放心，因为如果你某些东西出错的时候你还存有一个备份）。</span></span></span></span><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="Git_and_GitHub_for_Game_Developers_FullDir (1).jpg" title="Git_and_GitHub_for_Game_Developers_FullDir (1).jpg"><br><span style="font-family: Tahoma"><span> </span><br><br><br><span style="color: #000000"><span><span style="font-size: 14px">现在我们回到Windows的GitHub——它会通知你有新的文件出现了：</span></span></span></span><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="Git_and_GitHub_for_Game_Developers_FirstProperCommit.jpg" title="Git_and_GitHub_for_Game_Developers_FirstProperCommit.jpg"><br><span style="font-family: Tahoma"><span> </span><br><br><br><span style="color: #000000"><span><span style="font-size: 14px">将这些代码都提交，这样你就搭建了你的第一个基础知识库了！现在在你的项目中改变某个文件，你可以添加一个新的文件或者修改已经存在的文件：</span></span></span></span><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="Git_and_GitHub_for_Game_Developers_NewFile.jpg" title="Git_and_GitHub_for_Game_Developers_NewFile.jpg"><br><span style="font-family: Tahoma"><span> </span><br><br><br><span style="color: #000000"><span><span style="font-size: 14px"><img src="&quot;译——游戏开发者应该如何应用Git和GitHub&quot;" alt=""></span></span></span><br><br><br><span style="color: #000000"><span><span style="font-size: 14px">现在又回到Windows版本的GitHub，然后它就会检测到这些文件。提交这些改变，从<strong style="font-weight: bold">unsyncedcommits<strong>(为同步提交)列表中点击<strong style="font-weight: bold">revertcommit</strong>(恢复提交)。你现在会有一个新的注释，这个注释是从之前的注释中恢复的——这些开起来可能有点让人迷惑，但是这以为这你现在能跟踪到每一个你所做出的改变！</strong></strong></span></span></span></span><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="Git_and_GitHub_for_Game_Developers_History.jpg" title="Git_and_GitHub_for_Game_Developers_History.jpg"><br><span style="font-family: Tahoma"><span> </span><br><br><span style="color: #000000"><span><span style="font-size: 14px">检查一下你这是项目中的文件夹：</span></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 14px">你的新文件(或者是你其他文件的改动)已经没有了。如果你喜欢的话，你可以恢复这个恢复，仍然会在你的注释列表中添加一条注释，或者会滚到之前你在列表中它被移除的位置。</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 21px"><strong style="font-weight: bold">总结<em>*</em></strong></span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 13px">就这些？虽然是，但是事实上也不是。我将<a href="https://github.com/tutsplus/Git-and-GitHub-for-Game-Developers" target="_blank" rel="external">这篇文章的素材</a>都放到GitHub上了,所以你可以在这个网址上做一些“增强”练习(建议你添加一下你想添加的东西),记录一些“bugs”(例如似乎这篇文章的问题).</span></span></span><br><br><br><span style="color: #000000"><span style="font-family: Tahoma"><span style="font-size: 13px">如果你确实很喜欢冒险，你可以尝试一下将这篇文章“保存”到你的电脑上，然后添加你自己的东西，然后提交一个添加的请求让它添加到这个网站上…如果这些对你来说不感兴趣，不用担心，下一个版本将会包含更多的细节。</span></span></span><br><br><br>原文链接：<a href="http://gamedev.tutsplus.com/tutorials/business/git-and-github-for-game-developers/" target="_blank" rel="external">http://gamedev.tutsplus.com/tutorials/business/git-and-github-for-game-developers/</a><br><br><br>翻译词数：1409<br><br><br></td><br><br></tr><br><br></tbody><br><br></table><br><div><dl style="overflow: visible; height: auto; width: 580px; float: none; padding-bottom: 10px; padding-top: 10px; padding-left: 0px; margin: 0px; padding-right: 10px"><dd style="color: #666666; margin: 0px; padding: 0px"><br><br><br><br><a href="http://bbs.9ria.com/forum.php?mod=attachment&amp;aid=MTg4NzAwfGI4NjQ3OTA4fDEzODEyMTc4NTF8MTk0NjA4fDI1OTU4Nw==&amp;nothumb=yes" target="_blank" rel="external">Git_and_GitHub_for_Game_Developers_FullDir.jpg</a><span style="font-family: Tahoma"><span> </span><em style="color: #666666; font-style: normal">(24.03KB,<br> 下载次数: 2)</em></span><br><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="Git_and_GitHub_for_Game_Developers_FullDir.jpg" title="Git_and_GitHub_for_Game_Developers_FullDir.jpg"><br><br><br></dd></dl><br><br><br><br><br><br></div></div>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>原始链接： <a class="post-url" href="/2014/07/29/6522140/" title="【转】译—游戏开发者应该如何应用Git和GitHub">http://yoursite.com/2014/07/29/6522140/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="Sean">
+                Sean
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2014/07/29/6522140/&title=《【转】译—游戏开发者应该如何应用Git和GitHub》 — Sean's Blog&pic=http://yoursite.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2014/07/29/6522140/&title=《【转】译—游戏开发者应该如何应用Git和GitHub》 — Sean's Blog&source=假程序一个。" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2014/07/29/6522140/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【转】译—游戏开发者应该如何应用Git和GitHub》 — Sean's Blog&url=http://yoursite.com/2014/07/29/6522140/&via=http://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2014/07/29/6522140/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByElEQVR42u3aQY7jMAwEwPz/07PAXLM2usVI8QClU4A4cikHgiL5esXr53e1n9/X+7evHQsXF3fM/bld75SrV1799v753ICLi3uemwSv+wPkT7a74eLiPpm7hmtTJVxc3L/FzROUCR0XF/c53Ekho02GkovTB+5quLi4A+6+gulaWvO1+i4uLm4QPvIC6P0zSTiL3o6Li3uEe79RchXJX5McJgpzuLi4R7hroLVWa14uiS4/uLi4m7ktIjlAfpg85OHi4p7nTkYu5i2TvESLi4t7npuXQuocqmzK1v0fXFzcMTcJHGvBq22WFN1gXFzcL3HzgYl8tzwNKjq9uLi4G7h5ISM/3qTVGv01uLi4m7ltoTNJhtoCBy4u7jO5OW4ygNU2bP6zAy4u7hHu5GLTDlfVzZKrZ3BxcTdz2xGKvBQyKcdc7omLi3uQu3ZFWWugFoVRXFzcr3LztVYiWWveFE0UXFzcj3LbgNK2V/MBjrbUgouLu5vbBq8WutamxcXFfQK3pbSN0rUIelnfxcXFfQx3ksS0U5eXfxAuLu4f5K6NdOSjHri4uCe5o+ByW9pIRjfyIQ9cXNwz3EnB9LNtlTaFwsXF3cD9B8///DM5mtU5AAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/github/" class="color2">github</a>
+      
+    <a href="/tags/git/" class="color4">git</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2014/07/29/6522139/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          FB,Flash,as3 Bug集
+        
+      </span>
+    </a>
+  
+  
+</nav>
+
+
+
+    
+          <div id="uyan_frame"></div>
+  <!--<script src="https://seanin.github.io/plugin/youyan/uyan.js?uid=2130339"></script>-->
+  <script src="http://v2.uyan.cc/code/uyan.js?uid=2130339"></script>
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2020 Sean<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true
+  }
+</script>
+<div class="sidebar" style="display: none;">
+    <div id="sidebar-search" title="搜索">
+        <i class="fa fa-search" title="搜索"></i>
+    </div>
+    <div id="sidebar-archive" title="文章归档">
+        <i class="fa fa-archive" title="文章归档"></i>
+    </div>
+    <div id="sidebar-category" title="文章分类">
+        <i class="fa fa-book" title="文章分类"></i>
+    </div>
+    <div id="sidebar-tag" title="标签">
+        <i class="fa fa-tags" title="标签"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/Flash-Flex/">Flash&Flex</a><a class="category-link" href="/categories/HTML5/">HTML5</a><a class="category-link" href="/categories/Others/">Others</a><a class="category-link" href="/categories/Software/">Software</a><a class="category-link" href="/categories/Web前端/">Web前端</a><a class="category-link" href="/categories/news/">news</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/net/" style="font-size: 10px;">.net</a> <a href="/tags/AIR/" style="font-size: 10px;">AIR</a> <a href="/tags/ActionScript/" style="font-size: 13px;">ActionScript</a> <a href="/tags/ActionScript-3-0/" style="font-size: 19px;">ActionScript 3.0</a> <a href="/tags/ActiveXObject/" style="font-size: 10px;">ActiveXObject</a> <a href="/tags/Adobe-Animate-CC/" style="font-size: 12px;">Adobe Animate CC</a> <a href="/tags/Adobe-Animate-Edge/" style="font-size: 10px;">Adobe Animate Edge</a> <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Android-SDK/" style="font-size: 10px;">Android SDK</a> <a href="/tags/BUG/" style="font-size: 10px;">BUG</a> <a href="/tags/C/" style="font-size: 13px;">C#</a> <a href="/tags/Chrome-Debug/" style="font-size: 10px;">Chrome Debug</a> <a href="/tags/CreateJS/" style="font-size: 10px;">CreateJS</a> <a href="/tags/Eclipse/" style="font-size: 10px;">Eclipse</a> <a href="/tags/Egret/" style="font-size: 20px;">Egret</a> <a href="/tags/Flash/" style="font-size: 15px;">Flash</a> <a href="/tags/Flash-Builder/" style="font-size: 10px;">Flash Builder</a> <a href="/tags/Flash-Flex-Builder/" style="font-size: 10px;">Flash/Flex Builder</a> <a href="/tags/FlashPlayer/" style="font-size: 10px;">FlashPlayer</a> <a href="/tags/Flex/" style="font-size: 17px;">Flex</a> <a href="/tags/HTML5/" style="font-size: 13px;">HTML5</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/JSON/" style="font-size: 12px;">JSON</a> <a href="/tags/JSONP/" style="font-size: 10px;">JSONP</a> <a href="/tags/JavaScript/" style="font-size: 14px;">JavaScript</a> <a href="/tags/Native-App/" style="font-size: 10px;">Native App</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/P2/" style="font-size: 10px;">P2</a> <a href="/tags/PV3D/" style="font-size: 10px;">PV3D</a> <a href="/tags/ShareObject/" style="font-size: 10px;">ShareObject</a> <a href="/tags/Socke/" style="font-size: 10px;">Socke</a> <a href="/tags/TCP-IP/" style="font-size: 10px;">TCP/IP</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/VSCode/" style="font-size: 13px;">VSCode</a> <a href="/tags/Video/" style="font-size: 10px;">Video</a> <a href="/tags/Visual-Studio/" style="font-size: 11px;">Visual Studio</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/Web-App/" style="font-size: 10px;">Web App</a> <a href="/tags/WebSocket/" style="font-size: 12px;">WebSocket</a> <a href="/tags/XML/" style="font-size: 12px;">XML</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/electron/" style="font-size: 18px;">electron</a> <a href="/tags/exe安装程序/" style="font-size: 10px;">exe安装程序</a> <a href="/tags/exe通信/" style="font-size: 10px;">exe通信</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 11px;">github</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/ini/" style="font-size: 10px;">ini</a> <a href="/tags/nisi教程/" style="font-size: 10px;">nisi教程</a> <a href="/tags/swc/" style="font-size: 10px;">swc</a> <a href="/tags/swf/" style="font-size: 12px;">swf</a> <a href="/tags/swfobject-js/" style="font-size: 10px;">swfobject.js</a> <a href="/tags/swz/" style="font-size: 10px;">swz</a> <a href="/tags/tree/" style="font-size: 10px;">tree</a> <a href="/tags/webbrowser/" style="font-size: 10px;">webbrowser</a> <a href="/tags/webstorm/" style="font-size: 14px;">webstorm</a> <a href="/tags/win7/" style="font-size: 10px;">win7</a> <a href="/tags/window虚拟键盘/" style="font-size: 10px;">window虚拟键盘</a> <a href="/tags/垃圾回收/" style="font-size: 11px;">垃圾回收</a> <a href="/tags/垃圾回收机制/" style="font-size: 10px;">垃圾回收机制</a> <a href="/tags/天气预报/" style="font-size: 10px;">天气预报</a> <a href="/tags/安全沙箱/" style="font-size: 10px;">安全沙箱</a> <a href="/tags/安装程序/" style="font-size: 10px;">安装程序</a> <a href="/tags/定位/" style="font-size: 10px;">定位</a> <a href="/tags/工具类/" style="font-size: 10px;">工具类</a> <a href="/tags/工具类库/" style="font-size: 10px;">工具类库</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/打包/" style="font-size: 10px;">打包</a> <a href="/tags/插件/" style="font-size: 10px;">插件</a> <a href="/tags/教程/" style="font-size: 16px;">教程</a> <a href="/tags/数据互转/" style="font-size: 11px;">数据互转</a> <a href="/tags/断点调试/" style="font-size: 10px;">断点调试</a> <a href="/tags/断点调试js项目/" style="font-size: 10px;">断点调试js项目</a> <a href="/tags/是否是IE/" style="font-size: 10px;">是否是IE</a> <a href="/tags/本地存储/" style="font-size: 11px;">本地存储</a> <a href="/tags/游戏/" style="font-size: 10px;">游戏</a> <a href="/tags/物理引擎/" style="font-size: 10px;">物理引擎</a> <a href="/tags/画板/" style="font-size: 10px;">画板</a> <a href="/tags/破解/" style="font-size: 11px;">破解</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a> <a href="/tags/缩放/" style="font-size: 10px;">缩放</a> <a href="/tags/视频播放器/" style="font-size: 10px;">视频播放器</a> <a href="/tags/读取本地文件/" style="font-size: 10px;">读取本地文件</a> <a href="/tags/轻应用/" style="font-size: 10px;">轻应用</a> <a href="/tags/通信/" style="font-size: 10px;">通信</a> <a href="/tags/页面跳转/" style="font-size: 10px;">页面跳转</a> <a href="/tags/预览/" style="font-size: 10px;">预览</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div id="mobile-header-menu-container">
+        <span class="title">Menu</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/home/">
+                    <i class="fa fa-home"></i><span>主页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-list-ul"></i><span>文章列表</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/project/">
+                    <i class="fa fa-paper-plane-o"></i><span>作品展示</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about/">
+                    <i class="fa fa-user"></i><span>关于</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+  </div>
+</body>
+</html>

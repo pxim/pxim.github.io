@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>使用VSCode  断点调试 js项目，html页面 | Sean&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="PengXiang,Sean's Blog,Sean's site,seanin,px,site" />
+  
+  <meta name="description" content="一、效果目的1.在VSCode里，直接F5打开html页面，并且可以在编辑器里，进行断点调试js代码；二、工具准备1.VSCode 软件2.一个js项目3.VSCode 上装一个插件：Debugger for Chrome如图三、配置文件更改1.用VSCode装载项目2.然后按F5，出现这个框选择 Chrome3.然后出现个配置的提示，和打开了launch.json这个文件在 这个文件里添加一段">
+<meta name="keywords" content="VSCode,断点调试js项目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用VSCode  断点调试 js项目，html页面">
+<meta property="og:url" content="http://yoursite.com/2016/12/15/6522017/index.html">
+<meta property="og:site_name" content="Sean&#39;s Blog">
+<meta property="og:description" content="一、效果目的1.在VSCode里，直接F5打开html页面，并且可以在编辑器里，进行断点调试js代码；二、工具准备1.VSCode 软件2.一个js项目3.VSCode 上装一个插件：Debugger for Chrome如图三、配置文件更改1.用VSCode装载项目2.然后按F5，出现这个框选择 Chrome3.然后出现个配置的提示，和打开了launch.json这个文件在 这个文件里添加一段">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://img.blog.csdn.net/20161215171306706?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20161215171804431?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20161215171911066?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20161215172027488?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20161215172334286?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20161215172536162?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20161215173007665?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2020-05-26T00:54:28.435Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用VSCode  断点调试 js项目，html页面">
+<meta name="twitter:description" content="一、效果目的1.在VSCode里，直接F5打开html页面，并且可以在编辑器里，进行断点调试js代码；二、工具准备1.VSCode 软件2.一个js项目3.VSCode 上装一个插件：Debugger for Chrome如图三、配置文件更改1.用VSCode装载项目2.然后按F5，出现这个框选择 Chrome3.然后出现个配置的提示，和打开了launch.json这个文件在 这个文件里添加一段">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20161215171306706?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">Sean&#39;s Site</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/home/">
+                        <i class="fa fa-home"></i>
+                        <span>主页</span>
+                    </a>
+                    
+                    <a  href="/">
+                        <i class="fa fa-list-ul"></i>
+                        <span>文章列表</span>
+                    </a>
+                    
+                    <a  href="/project/">
+                        <i class="fa fa-paper-plane-o"></i>
+                        <span>作品展示</span>
+                    </a>
+                    
+                    <a  href="/about/">
+                        <i class="fa fa-user"></i>
+                        <span>关于</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        Sean&#39;s Site
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个立志 JavaScript全栈 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="Home"  href="/">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="https://github.com/seanin">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="CSDN Blog" target="_blank" href="http://blog.csdn.net/arvin0?viewmode=list">
+                            <i class="fa fa-copyright fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="http://weibo.com/1751482640/profile?topnav=1&wvr=6&is_all=1">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="email" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=245803627@qq.com">
+                            <i class="fa fa-envelope-o fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-6522017" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      使用VSCode  断点调试 js项目，html页面
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/Software/">Software</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2016-12-15
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <a id="more"></a>
+<div class="markdown_views"><br><br><br>一、效果目的<br><br>1.在VSCode里，直接F5打开html页面，并且可以在编辑器里，进行断点调试js代码；<br><br>二、工具准备<br><br>1.VSCode 软件<br><br>2.一个js项目<br><br>3.VSCode 上装一个插件：Debugger for Chrome<br><br>如图<br><br><img src="http://img.blog.csdn.net/20161215171306706?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br>三、配置文件更改<br><br>1.用VSCode装载项目<br><br><img src="http://img.blog.csdn.net/20161215171804431?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br>2.然后按F5，出现这个框<br><br><img src="http://img.blog.csdn.net/20161215171911066?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br>选择 Chrome<br><br>3.然后出现个配置的提示，和打开了launch.json这个文件<br><br><img src="http://img.blog.csdn.net/20161215172027488?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br>在 这个文件里添加一段配置信息<br><br><code class=" hljs bash">,<br>        {<br>            <span class="hljs-string">“name”</span>: <span class="hljs-string">“使用本机 Chrome 调试”</span>,<br>            <span class="hljs-string">“type”</span>: <span class="hljs-string">“chrome”</span>,<br>            <span class="hljs-string">“request”</span>: <span class="hljs-string">“launch”</span>,<br>             <span class="hljs-string">“file”</span>: <span class="hljs-string">“<span class="hljs-variable">${workspaceRoot}</span>/index.html”</span>,<br>        //  <span class="hljs-string">“url”</span>: <span class="hljs-string">“<a href="http://mysite.com/index.html" target="_blank" rel="external">http://mysite.com/index.html</a>“</span>, //使用外部服务器时,请注释掉 file, 改用 url, 并将 useBuildInServer 设置为 <span class="hljs-literal">false</span> <span class="hljs-string">“<a href="http://mysite.com/index.html" target="_blank" rel="external">http://mysite.com/index.html</a><br>            “</span>runtimeExecutable<span class="hljs-string">“: “</span>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe<span class="hljs-string">“, // 改成您的 Chrome 安装路径<br>            “</span><span class="hljs-built_in">source</span>Maps<span class="hljs-string">“: true,<br>            “</span>webRoot<span class="hljs-string">“: “</span><span class="hljs-variable">${workspaceRoot}</span><span class="hljs-string">“,<br>        //  “</span>preLaunchTask<span class="hljs-string">“:”</span>build<span class="hljs-string">“,<br>            “</span>userDataDir<span class="hljs-string">“:”</span><span class="hljs-variable">${tmpdir}</span><span class="hljs-string">“,<br>            “</span>port<span class="hljs-string">“:5433<br>        }</span></code><br><br>结果如图<br><br><img src="http://img.blog.csdn.net/20161215172334286?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br>4.然后，更改调试方式<br><br><img src="http://img.blog.csdn.net/20161215172536162?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br>如图，选择左边的圆形按钮，然后出来这个调试配置管理界面，选择“使用本机 Chrome 调试”。<br><br>5.然后在项目的 js 处设置好断点，按 F5，就可以进行断点调试了。<br><br><img src="http://img.blog.csdn.net/20161215173007665?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><br>6.接着就 Enjoy!<br><br>PS：这种方法只适合普通页面，要是你的js项目里，包含json等游览器不支持本地游览的资源，那么就需要开启服务器，配合这个插件，才能进行断点调试。<br><br></div>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>原始链接： <a class="post-url" href="/2016/12/15/6522017/" title="使用VSCode  断点调试 js项目，html页面">http://yoursite.com/2016/12/15/6522017/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="Sean">
+                Sean
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2016/12/15/6522017/&title=《使用VSCode  断点调试 js项目，html页面》 — Sean's Blog&pic=http://yoursite.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2016/12/15/6522017/&title=《使用VSCode  断点调试 js项目，html页面》 — Sean's Blog&source=假程序一个。" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/12/15/6522017/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《使用VSCode  断点调试 js项目，html页面》 — Sean's Blog&url=http://yoursite.com/2016/12/15/6522017/&via=http://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2016/12/15/6522017/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwElEQVR42u3ay47CMAwFUP7/pxlpdiNEubaT0JFOVqhQetKF5Ucej3g9f9frlddV/faxY+Hi4o65z8t1zX33+PxKbsDFxT3PvQ5eyQau7333gnIDLi7uPbl5SKpuAxcX9/9y8zRlHuxwcXHvwK22OXqBKSmNltVquLi4A261Ybrj88b+Li4ubpH7LK48GFWbI9HTcXFxj3CTMck1cfcwpjDvxcXFXcqtDlGqeUjU7Cj+Ay4u7j5u73hEr0LptVf+XMHFxT3InSQua0cmH14QLi7uEW6e6OQlUy/Yzf8TFxd3BzcJMdUh6KRk+nAvLi7uNm7vOEVezCzeGC4u7hFunnZUR615C7U6rMXFxd3NzYeaq4JaryGCi4t7H261kZofs6g2SXFxcU9yCz8Kwtb8MFYS5nBxcXdz80fO2x95YvR2S7i4uAe51UFpNcA1j1Pg4uJ+lZuvyUGrfGPlSSwuLu5SbjWgjNqdcdKTvxRcXNx93F6DY07PkyFcXNxvcZNAs3goUi1+cHFxb8mtFjBJYlQ9CoaLi3tn7toBTGEwg4uLe5BbGHa2wlnvcMaoVsPFxR1wew3TSQs1D5S4uLjHuT/3zWzDAQ8pPAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/VSCode/" class="color2">VSCode</a>
+      
+    <a href="/tags/断点调试js项目/" class="color4">断点调试js项目</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/01/04/6522016/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          VSCode里的一些有用的插件
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2016/12/15/6522018/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【Egret】使用VSCode 编译，断点调试Egret项目</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+          <div id="uyan_frame"></div>
+  <!--<script src="https://seanin.github.io/plugin/youyan/uyan.js?uid=2130339"></script>-->
+  <script src="http://v2.uyan.cc/code/uyan.js?uid=2130339"></script>
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2020 Sean<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true
+  }
+</script>
+<div class="sidebar" style="display: none;">
+    <div id="sidebar-search" title="搜索">
+        <i class="fa fa-search" title="搜索"></i>
+    </div>
+    <div id="sidebar-archive" title="文章归档">
+        <i class="fa fa-archive" title="文章归档"></i>
+    </div>
+    <div id="sidebar-category" title="文章分类">
+        <i class="fa fa-book" title="文章分类"></i>
+    </div>
+    <div id="sidebar-tag" title="标签">
+        <i class="fa fa-tags" title="标签"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/Flash-Flex/">Flash&Flex</a><a class="category-link" href="/categories/HTML5/">HTML5</a><a class="category-link" href="/categories/Others/">Others</a><a class="category-link" href="/categories/Software/">Software</a><a class="category-link" href="/categories/Web前端/">Web前端</a><a class="category-link" href="/categories/news/">news</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/net/" style="font-size: 10px;">.net</a> <a href="/tags/AIR/" style="font-size: 10px;">AIR</a> <a href="/tags/ActionScript/" style="font-size: 13px;">ActionScript</a> <a href="/tags/ActionScript-3-0/" style="font-size: 19px;">ActionScript 3.0</a> <a href="/tags/ActiveXObject/" style="font-size: 10px;">ActiveXObject</a> <a href="/tags/Adobe-Animate-CC/" style="font-size: 12px;">Adobe Animate CC</a> <a href="/tags/Adobe-Animate-Edge/" style="font-size: 10px;">Adobe Animate Edge</a> <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Android-SDK/" style="font-size: 10px;">Android SDK</a> <a href="/tags/BUG/" style="font-size: 10px;">BUG</a> <a href="/tags/C/" style="font-size: 13px;">C#</a> <a href="/tags/Chrome-Debug/" style="font-size: 10px;">Chrome Debug</a> <a href="/tags/CreateJS/" style="font-size: 10px;">CreateJS</a> <a href="/tags/Eclipse/" style="font-size: 10px;">Eclipse</a> <a href="/tags/Egret/" style="font-size: 20px;">Egret</a> <a href="/tags/Flash/" style="font-size: 15px;">Flash</a> <a href="/tags/Flash-Builder/" style="font-size: 10px;">Flash Builder</a> <a href="/tags/Flash-Flex-Builder/" style="font-size: 10px;">Flash/Flex Builder</a> <a href="/tags/FlashPlayer/" style="font-size: 10px;">FlashPlayer</a> <a href="/tags/Flex/" style="font-size: 17px;">Flex</a> <a href="/tags/HTML5/" style="font-size: 13px;">HTML5</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/JSON/" style="font-size: 12px;">JSON</a> <a href="/tags/JSONP/" style="font-size: 10px;">JSONP</a> <a href="/tags/JavaScript/" style="font-size: 14px;">JavaScript</a> <a href="/tags/Native-App/" style="font-size: 10px;">Native App</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/P2/" style="font-size: 10px;">P2</a> <a href="/tags/PV3D/" style="font-size: 10px;">PV3D</a> <a href="/tags/ShareObject/" style="font-size: 10px;">ShareObject</a> <a href="/tags/Socke/" style="font-size: 10px;">Socke</a> <a href="/tags/TCP-IP/" style="font-size: 10px;">TCP/IP</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/VSCode/" style="font-size: 13px;">VSCode</a> <a href="/tags/Video/" style="font-size: 10px;">Video</a> <a href="/tags/Visual-Studio/" style="font-size: 11px;">Visual Studio</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/Web-App/" style="font-size: 10px;">Web App</a> <a href="/tags/WebSocket/" style="font-size: 12px;">WebSocket</a> <a href="/tags/XML/" style="font-size: 12px;">XML</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/electron/" style="font-size: 18px;">electron</a> <a href="/tags/exe安装程序/" style="font-size: 10px;">exe安装程序</a> <a href="/tags/exe通信/" style="font-size: 10px;">exe通信</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 11px;">github</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/ini/" style="font-size: 10px;">ini</a> <a href="/tags/nisi教程/" style="font-size: 10px;">nisi教程</a> <a href="/tags/swc/" style="font-size: 10px;">swc</a> <a href="/tags/swf/" style="font-size: 12px;">swf</a> <a href="/tags/swfobject-js/" style="font-size: 10px;">swfobject.js</a> <a href="/tags/swz/" style="font-size: 10px;">swz</a> <a href="/tags/tree/" style="font-size: 10px;">tree</a> <a href="/tags/webbrowser/" style="font-size: 10px;">webbrowser</a> <a href="/tags/webstorm/" style="font-size: 14px;">webstorm</a> <a href="/tags/win7/" style="font-size: 10px;">win7</a> <a href="/tags/window虚拟键盘/" style="font-size: 10px;">window虚拟键盘</a> <a href="/tags/垃圾回收/" style="font-size: 11px;">垃圾回收</a> <a href="/tags/垃圾回收机制/" style="font-size: 10px;">垃圾回收机制</a> <a href="/tags/天气预报/" style="font-size: 10px;">天气预报</a> <a href="/tags/安全沙箱/" style="font-size: 10px;">安全沙箱</a> <a href="/tags/安装程序/" style="font-size: 10px;">安装程序</a> <a href="/tags/定位/" style="font-size: 10px;">定位</a> <a href="/tags/工具类/" style="font-size: 10px;">工具类</a> <a href="/tags/工具类库/" style="font-size: 10px;">工具类库</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/打包/" style="font-size: 10px;">打包</a> <a href="/tags/插件/" style="font-size: 10px;">插件</a> <a href="/tags/教程/" style="font-size: 16px;">教程</a> <a href="/tags/数据互转/" style="font-size: 11px;">数据互转</a> <a href="/tags/断点调试/" style="font-size: 10px;">断点调试</a> <a href="/tags/断点调试js项目/" style="font-size: 10px;">断点调试js项目</a> <a href="/tags/是否是IE/" style="font-size: 10px;">是否是IE</a> <a href="/tags/本地存储/" style="font-size: 11px;">本地存储</a> <a href="/tags/游戏/" style="font-size: 10px;">游戏</a> <a href="/tags/物理引擎/" style="font-size: 10px;">物理引擎</a> <a href="/tags/画板/" style="font-size: 10px;">画板</a> <a href="/tags/破解/" style="font-size: 11px;">破解</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a> <a href="/tags/缩放/" style="font-size: 10px;">缩放</a> <a href="/tags/视频播放器/" style="font-size: 10px;">视频播放器</a> <a href="/tags/读取本地文件/" style="font-size: 10px;">读取本地文件</a> <a href="/tags/轻应用/" style="font-size: 10px;">轻应用</a> <a href="/tags/通信/" style="font-size: 10px;">通信</a> <a href="/tags/页面跳转/" style="font-size: 10px;">页面跳转</a> <a href="/tags/预览/" style="font-size: 10px;">预览</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div id="mobile-header-menu-container">
+        <span class="title">Menu</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/home/">
+                    <i class="fa fa-home"></i><span>主页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-list-ul"></i><span>文章列表</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/project/">
+                    <i class="fa fa-paper-plane-o"></i><span>作品展示</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about/">
+                    <i class="fa fa-user"></i><span>关于</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+  </div>
+</body>
+</html>

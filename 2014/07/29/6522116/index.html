@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>【转】Android常用工具类 | Sean&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="PengXiang,Sean's Blog,Sean's site,seanin,px,site" />
+  
+  <meta name="description" content="主要介绍总结的Android开发中常用的工具类，大部分同样适用于Java。目前包括HttpUtils、DownloadManagerPro、ShellUtils、PackageUtils、PreferencesUtils、JSONUtils、FileUtils、ResourceUtils、StringUtils、ParcelUtils、RandomUtils、ArrayUtils、ImageUt">
+<meta name="keywords" content="Android,工具类">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【转】Android常用工具类">
+<meta property="og:url" content="http://yoursite.com/2014/07/29/6522116/index.html">
+<meta property="og:site_name" content="Sean&#39;s Blog">
+<meta property="og:description" content="主要介绍总结的Android开发中常用的工具类，大部分同样适用于Java。目前包括HttpUtils、DownloadManagerPro、ShellUtils、PackageUtils、PreferencesUtils、JSONUtils、FileUtils、ResourceUtils、StringUtils、ParcelUtils、RandomUtils、ArrayUtils、ImageUt">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-05-26T00:54:28.467Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【转】Android常用工具类">
+<meta name="twitter:description" content="主要介绍总结的Android开发中常用的工具类，大部分同样适用于Java。目前包括HttpUtils、DownloadManagerPro、ShellUtils、PackageUtils、PreferencesUtils、JSONUtils、FileUtils、ResourceUtils、StringUtils、ParcelUtils、RandomUtils、ArrayUtils、ImageUt">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">Sean&#39;s Site</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/home/">
+                        <i class="fa fa-home"></i>
+                        <span>主页</span>
+                    </a>
+                    
+                    <a  href="/">
+                        <i class="fa fa-list-ul"></i>
+                        <span>文章列表</span>
+                    </a>
+                    
+                    <a  href="/project/">
+                        <i class="fa fa-paper-plane-o"></i>
+                        <span>作品展示</span>
+                    </a>
+                    
+                    <a  href="/about/">
+                        <i class="fa fa-user"></i>
+                        <span>关于</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        Sean&#39;s Site
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个立志 JavaScript全栈 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="Home"  href="/">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="https://github.com/seanin">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="CSDN Blog" target="_blank" href="http://blog.csdn.net/arvin0?viewmode=list">
+                            <i class="fa fa-copyright fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="http://weibo.com/1751482640/profile?topnav=1&wvr=6&is_all=1">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="email" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=245803627@qq.com">
+                            <i class="fa fa-envelope-o fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-6522116" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      【转】Android常用工具类
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/Others/">Others</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2014-07-29
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <a id="more"></a>
+<div id="sina_keyword_ad_area2" class="articalContent   "><br><div><br><br><br>主要介绍总结的<a href="http://www.eoeandroid.com/" target="_blank" rel="external">Android开发</a>中常用的工具类，大部分同样适用于Java。<br><br>目前包括HttpUtils、DownloadManagerPro、ShellUtils、PackageUtils、PreferencesUtils、JSONUtils、FileUtils、ResourceUtils、StringUtils、ParcelUtils、RandomUtils、ArrayUtils、ImageUtils、ListUtils、MapUtils、ObjectUtils、SerializeUtils、SystemUtils、TimeUtils。<br><br>The English version of this article see：<a href="http://www.trinea.cn/android/android-common-utils-en" target="_blank" rel="external">Android Common Utils</a><br><br>所有代码都在<a href="https://github.com/Trinea/AndroidCommon" target="_blank" rel="external">TrineaAndroidCommon@Github</a>中，欢迎Star或Fork^_<em>，除这些工具类外此项目还包括<a href="http://www.trinea.cn/android/android-common-lib/" target="_blank" rel="external">缓存、下拉ListView</a>等。详细接口介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/index.html" target="_blank" rel="external">TrineaAndroidCommon<br> API Guide</a>。<br><br>具体使用：可直接引入<a href="https://github.com/Trinea/AndroidCommon" target="_blank" rel="external">TrineaAndroidCommon</a>作为你项目的library<a href="http://www.trinea.cn/android/%E6%B7%BB%E5%8A%A0android-common-lib%E6%B7%BB%E5%8A%A0%E5%8F%8Agoogle-code%E5%92%8Cgithub%E5%A6%82%E4%BD%95%E6%8B%89%E5%8F%96%E4%BB%A3%E7%A0%81/" target="_blank" rel="external">(如何拉取代码及添加公共库)</a>，或是自己抽取其中的部分使用。<br><br><strong style="font-weight: bold">1、HttpUtils<strong><br><br>Http网络工具类，主要包括httpGet、httpPost以及http参数相关方法，以httpGet为例：<br><br>static HttpResponse httpGet(HttpRequest request)<br><br>static HttpResponse httpGet(java.lang.String httpUrl)<br><br>static String httpGetString(String httpUrl)<br><br>包含以上三个方法，默认使用gzip压缩，使用bufferedReader提高读取速度。<br><br>HttpRequest中可以设置url、timeout、userAgent等其他http参数<br><br>HttpResponse中可以获取返回内容、http响应码、http过期时间(Cache-Control的max-age和expires)等<br><br>前两个方法可以进行高级参数设置及丰富内容返回，第三个方法可以简单的传入url获取返回内容，httpPost类似。更详细的设置可以直接使用HttpURLConnection或apache的HttpClient。<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/HttpUtils.java" target="_blank" rel="external">HttpUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/HttpUtils.html" target="_blank" rel="external">HttpUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">2、DownloadManagerPro</strong><br><br>Android系统下载管理DownloadManager增强方法，可用于包括获取下载相关信息，如：<br><br>getStatusById(long) 得到下载状态<br><br>getDownloadBytes(long) 得到下载进度信息<br><br>getBytesAndStatus(long) 得到下载进度信息和状态<br><br>getFileName(long) 得到下载文件路径<br><br>getUri(long) 得到下载uri<br><br>getReason(long) 得到下载失败或暂停原因<br><br>getPausedReason(long) 得到下载暂停原因<br><br>getErrorCode(long) 得到下载错误码<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/DownloadManagerPro.java" target="_blank" rel="external">DownloadManagerPro.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/DownloadManagerPro.html" target="_blank" rel="external">DownloadManagerPro<br> Api Guide</a>。关于AndroidDownManager使用可见<a href="http://www.trinea.cn/android/android%E7%B3%BB%E7%BB%9F%E4%B8%8B%E8%BD%BD%E7%AE%A1%E7%90%86downloadmanager%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8%E7%A4%BA%E4%BE%8B/" target="_blank" rel="external">DownManager<br> Demo</a>。<br><br><strong style="font-weight: bold">3、ShellUtils<strong><br><br>Android Shell工具类，可用于检查系统root权限，并在shell或root用户下执行shell命令。如：<br><br>checkRootPermission() 检查root权限<br><br>execCommand(String[] commands, boolean isRoot, booleanisNeedResultMsg) shell环境执行命令，第二个参数表示是否root权限执行<br><br>execCommand(String command, boolean isRoot) shell环境执行命令<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/ShellUtils.java" target="_blank" rel="external">ShellUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/ShellUtils.html" target="_blank" rel="external">ShellUtils<br> Api Guide</a>。关于静默安装可见<a href="http://www.trinea.cn/android/android%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E4%B9%8Bapk-root%E6%9D%83%E9%99%90%E9%9D%99%E9%BB%98%E5%AE%89%E8%A3%85/" target="_blank" rel="external">apk-root权限静默安装</a>。<br><br><strong style="font-weight: bold">4、PackageUtils</strong><br><br>Android包相关工具类，可用于(root)安装应用、(root)卸载应用、判断是否系统应用等，如：<br><br>install(Context, String) 安装应用，如果是系统应用或已经root，则静默安装，否则一般安装<br><br>uninstall(Context, String) 卸载应用，如果是系统应用或已经root，则静默卸载，否则一般卸载<br><br>isSystemApplication(Context, String) 判断应用是否为系统应用<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/PackageUtils.java" target="_blank" rel="external">PackageUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/PackageUtils.html" target="_blank" rel="external">ShellUtils<br> Api Guide</a>。关于静默安装可见<a href="http://www.trinea.cn/android/android%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E4%B9%8Bapk-root%E6%9D%83%E9%99%90%E9%9D%99%E9%BB%98%E5%AE%89%E8%A3%85/" target="_blank" rel="external">apk-root权限静默安装</a>。<br><br><strong style="font-weight: bold">5、PreferencesUtils<strong><br><br>AndroidSharedPreferences相关工具类，可用于方便的向SharedPreferences中读取和写入相关类型数据，如：<br><br>putString(Context, String, String) 保存string类型数据<br><br>putInt(Context, String, int) 保存int类型数据<br><br>getString(Context, String) 获取string类型数据<br><br>getInt(Context, String) 获取int类型数据<br><br>可通过修改PREFERENCE_NAME变量修改preference name<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/PreferencesUtils.java" target="_blank" rel="external">PreferencesUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/PreferencesUtils.html" target="_blank" rel="external">PreferencesUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">6、JSONUtils</strong><br><br>JSONUtils工具类，可用于方便的向Json中读取和写入相关类型数据，如：<br><br>String getString(JSONObject jsonObject, String key, StringdefaultValue) 得到string类型value<br><br>String getString(String jsonData, String key, String defaultValue)得到string类型value<br><br>表示从json中读取某个String类型key的值<br><br>getMap(JSONObject jsonObject, String key) 得到map<br><br>getMap(String jsonData, String key) 得到map<br><br>表示从json中读取某个Map类型key的值<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/JSONUtils.java" target="_blank" rel="external">JSONUtils.java</a>，更多方法及更详细参数介绍可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/JSONUtils.java" target="_blank" rel="external">JSONUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">7、FileUtils<strong><br><br>文件工具类，可用于读写文件及对文件进行操作。如：<br><br>readFile(String filePath) 读文件<br><br>writeFile(String filePath, String content, boolean append)写文件<br><br>getFileSize(String path) 得到文件大小<br><br>deleteFile(String path) 删除文件<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/FileUtils.java" target="_blank" rel="external">FileUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/FileUtils.html" target="_blank" rel="external">FileUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">8、ResourceUtils</strong><br><br>Android Resource工具类，可用于从android资源目录的raw和assets目录读取内容，如：<br><br>geFileFromAssets(Context context, String fileName)得到assets目录下某个文件内容<br><br>geFileFromRaw(Context context, int resId) 得到raw目录下某个文件内容<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/ResourceUtils.java" target="_blank" rel="external">ResourceUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/ResourceUtils.html" target="_blank" rel="external">ResourceUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">9、StringUtils<strong><br><br>String工具类，可用于常见字符串操作，如：<br><br>isEmpty(String str) 判断字符串是否为空或长度为0<br><br>isBlank(String str) 判断字符串是否为空或长度为0 或由空格组成<br><br>utf8Encode(String str) 以utf-8格式编码<br><br>capitalizeFirstLetter(String str) 首字母大写<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/StringUtils.java" target="_blank" rel="external">StringUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/StringUtils.html" target="_blank" rel="external">StringUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">10、ParcelUtils</strong><br><br>Android Parcel工具类，可用于从parcel读取或写入特殊类型数据，如：<br><br>readBoolean(Parcel in) 从pacel中读取boolean类型数据<br><br>readHashMap(Parcel in, ClassLoader loader) 从pacel中读取map类型数据<br><br>writeBoolean(boolean b, Parcel out) 向parcel中写入boolean类型数据<br><br>writeHashMap(Map map, Parcel out, int flags)向parcel中写入map类型数据<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/ParcelUtils.java" target="_blank" rel="external">ParcelUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/ParcelUtils.html" target="_blank" rel="external">ParcelUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">11、RandomUtils<strong><br><br>随机数工具类，可用于获取固定大小固定字符内的随机数，如：<br><br>getRandom(char[] sourceChar, int length) 生成随机字符串，所有字符均在某个字符串内<br><br>getRandomNumbers(int length) 生成随机数字<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/RandomUtils.java" target="_blank" rel="external">RandomUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/RandomUtils.html" target="_blank" rel="external">RandomUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">12、ArrayUtils</strong><br><br>数组工具类，可用于数组常用操作，如：<br><br>isEmpty(V[] sourceArray) 判断数组是否为空或长度为0<br><br>getLast(V[] sourceArray, V value, V defaultValue, boolean isCircle)得到数组中某个元素前一个元素，isCircle表示是否循环<br><br>getNext(V[] sourceArray, V value, V defaultValue, boolean isCircle)得到数组中某个元素下一个元素，isCircle表示是否循环<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/ArrayUtils.java" target="_blank" rel="external">ArrayUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/ArrayUtils.html" target="_blank" rel="external">ArrayUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">13、ImageUtils<strong><br><br>图片工具类，可用于Bitmap, byte array,Drawable之间进行转换以及图片缩放，目前功能薄弱，后面会进行增强。如：<br><br>bitmapToDrawable(Bitmap b) bimap转换为drawable<br><br>drawableToBitmap(Drawable d) drawable转换为bitmap<br><br>drawableToByte(Drawable d) drawable转换为byte<br><br>scaleImage(Bitmap org, float scaleWidth, float scaleHeight)缩放图片<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/ImageUtils.java" target="_blank" rel="external">ImageUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/ImageUtils.html" target="_blank" rel="external">ImageUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">14、ListUtils</strong><br><br>List工具类，可用于List常用操作，如：<br><br>isEmpty(List sourceList) 判断List是否为空或长度为0<br><br>join(List list, String separator) List转换为字符串，并以固定分隔符分割<br><br>addDistinctEntry(List sourceList, V entry) 向list中添加不重复元素<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/ListUtils.java" target="_blank" rel="external">ListUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/ListUtils.html" target="_blank" rel="external">ListUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">15、MapUtils<strong><br><br>Map工具类，可用于Map常用操作，如：<br><br>isEmpty(Map sourceMap) 判断map是否为空或长度为0<br><br>parseKeyAndValueToMap(String source, String keyAndValueSeparator,String keyAndValuePairSeparator, boolean ignoreSpace)字符串解析为map<br><br>toJson(Map map) map转换为json格式<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/MapUtils.java" target="_blank" rel="external">MapUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/MapUtils.html" target="_blank" rel="external">MapUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">16、ObjectUtils</strong><br><br>Object工具类，可用于Object常用操作，如：<br><br>isEquals(Object actual, Object expected) 比较两个对象是否相等<br><br>compare(V v1, V v2) 比较两个对象大小<br><br>transformIntArray(int[]source)  Integer 数组转换为int数组<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/ObjectUtils.java" target="_blank" rel="external">ObjectUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/ObjectUtils.html" target="_blank" rel="external">ObjectUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">17、SerializeUtils<strong><br><br>序列化工具类，可用于序列化对象到文件或从文件反序列化对象，如：<br><br>deserialization(String filePath) 从文件反序列化对象<br><br>serialization(String filePath, Object obj) 序列化对象到文件<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/SerializeUtils.java" target="_blank" rel="external">SerializeUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/SerializeUtils.html" target="_blank" rel="external">SerializeUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">18、SystemUtils</strong><br><br>系统信息工具类，可用于得到线程池合适的大小，目前功能薄弱，后面会进行增强。如：<br><br>getDefaultThreadPoolSize() 得到跟系统配置相符的线程池大小<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/SystemUtils.java" target="_blank" rel="external">SystemUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/SystemUtils.html" target="_blank" rel="external">SystemUtils<br> Api Guide</a>。<br><br><strong style="font-weight: bold">19、TimeUtils*</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></em><br><br>时间工具类，可用于时间相关操作，如：<br><br>getCurrentTimeInLong() 得到当前时间<br><br>getTime(long timeInMillis, SimpleDateFormat dateFormat)将long转换为固定格式时间字符串<br><br>源码可见<a href="https://github.com/Trinea/AndroidCommon/blob/master/src/cn/trinea/android/common/util/TimeUtils.java" target="_blank" rel="external">TimeUtils.java</a>，更多方法及更详细参数介绍可见<a href="http://trinea.github.io/doc/trinea_android_common/cn/trinea/android/common/util/TimeUtils.html" target="_blank" rel="external">TimeUtils<br> Api Guide</a>。<br><br><br><br><br><div><span style="font-size: 14px; float: left">来自：EOE</span><br><br><br><br><br></div></div></div>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>原始链接： <a class="post-url" href="/2014/07/29/6522116/" title="【转】Android常用工具类">http://yoursite.com/2014/07/29/6522116/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="Sean">
+                Sean
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2014/07/29/6522116/&title=《【转】Android常用工具类》 — Sean's Blog&pic=http://yoursite.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2014/07/29/6522116/&title=《【转】Android常用工具类》 — Sean's Blog&source=假程序一个。" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2014/07/29/6522116/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【转】Android常用工具类》 — Sean's Blog&url=http://yoursite.com/2014/07/29/6522116/&via=http://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2014/07/29/6522116/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxElEQVR42u3aQW7CQAwFUO5/aSp11UUTvm1igvRmhVJCnzfWzPc8HvF6/q6jz3/X0fOjvz6uWLi4uGPu83SdE5OSjt5KyvunJFxc3EVu0rySYub0FzZcXNybcfNNT2+rhIuL+43c82/m7QkXF/dbuHmQkT+vbnHefFbDxcUdcOeB6fzzar6Li4s7mEqcN5T8O0k7i/47Li7uCjeJPHqj1l6oGrU5XFzci7nJC9XLE8nRJYlLXrQwXFzcy7jVuDOhT+KVqLHi4uJezM1/Om9Sk5HJi3aJi4u7wk1e66WX1Xfz1omLi7vDrYYXvQFMr/hyX8TFxR1ze4OT6gYlaXBRYbi4uOvc6ig0H8O8K2rBxcXd4eYDjPl4dRKI4OLibnLzrUm+QemVel4YLi7uJje/hpUPQua4QmCKi4t7AXcye2mOReNNEi4u7me5vTFJ9YpG9dIGLi7uZ7n5qsYoyUGoUAYuLu4Kd36RopnOXnztAxcXd87NxyHVTcx7fwcXF3efm4cXvTFJr4M2811cXNxF7qSY6mWvw0MRLi7uLbm9xlfd3ODi4t6BWxh2jp9Uo5DmWQ0XF3fArQam1XHI/OCEi4u7yP0BMlRsw2btAxwAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/Android/" class="color3">Android</a>
+      
+    <a href="/tags/工具类/" class="color4">工具类</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2014/07/29/6522109/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          【转】PV3D的小练习~太阳系八大行星
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2014/07/29/6522110/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【转】AS3画板工具类，可直接套用</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+          <div id="uyan_frame"></div>
+  <!--<script src="https://seanin.github.io/plugin/youyan/uyan.js?uid=2130339"></script>-->
+  <script src="http://v2.uyan.cc/code/uyan.js?uid=2130339"></script>
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2020 Sean<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true
+  }
+</script>
+<div class="sidebar" style="display: none;">
+    <div id="sidebar-search" title="搜索">
+        <i class="fa fa-search" title="搜索"></i>
+    </div>
+    <div id="sidebar-archive" title="文章归档">
+        <i class="fa fa-archive" title="文章归档"></i>
+    </div>
+    <div id="sidebar-category" title="文章分类">
+        <i class="fa fa-book" title="文章分类"></i>
+    </div>
+    <div id="sidebar-tag" title="标签">
+        <i class="fa fa-tags" title="标签"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/Flash-Flex/">Flash&Flex</a><a class="category-link" href="/categories/HTML5/">HTML5</a><a class="category-link" href="/categories/Others/">Others</a><a class="category-link" href="/categories/Software/">Software</a><a class="category-link" href="/categories/Web前端/">Web前端</a><a class="category-link" href="/categories/news/">news</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/net/" style="font-size: 10px;">.net</a> <a href="/tags/AIR/" style="font-size: 10px;">AIR</a> <a href="/tags/ActionScript/" style="font-size: 13px;">ActionScript</a> <a href="/tags/ActionScript-3-0/" style="font-size: 19px;">ActionScript 3.0</a> <a href="/tags/ActiveXObject/" style="font-size: 10px;">ActiveXObject</a> <a href="/tags/Adobe-Animate-CC/" style="font-size: 12px;">Adobe Animate CC</a> <a href="/tags/Adobe-Animate-Edge/" style="font-size: 10px;">Adobe Animate Edge</a> <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Android-SDK/" style="font-size: 10px;">Android SDK</a> <a href="/tags/BUG/" style="font-size: 10px;">BUG</a> <a href="/tags/C/" style="font-size: 13px;">C#</a> <a href="/tags/Chrome-Debug/" style="font-size: 10px;">Chrome Debug</a> <a href="/tags/CreateJS/" style="font-size: 10px;">CreateJS</a> <a href="/tags/Eclipse/" style="font-size: 10px;">Eclipse</a> <a href="/tags/Egret/" style="font-size: 20px;">Egret</a> <a href="/tags/Flash/" style="font-size: 15px;">Flash</a> <a href="/tags/Flash-Builder/" style="font-size: 10px;">Flash Builder</a> <a href="/tags/Flash-Flex-Builder/" style="font-size: 10px;">Flash/Flex Builder</a> <a href="/tags/FlashPlayer/" style="font-size: 10px;">FlashPlayer</a> <a href="/tags/Flex/" style="font-size: 17px;">Flex</a> <a href="/tags/HTML5/" style="font-size: 13px;">HTML5</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/JSON/" style="font-size: 12px;">JSON</a> <a href="/tags/JSONP/" style="font-size: 10px;">JSONP</a> <a href="/tags/JavaScript/" style="font-size: 14px;">JavaScript</a> <a href="/tags/Native-App/" style="font-size: 10px;">Native App</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/P2/" style="font-size: 10px;">P2</a> <a href="/tags/PV3D/" style="font-size: 10px;">PV3D</a> <a href="/tags/ShareObject/" style="font-size: 10px;">ShareObject</a> <a href="/tags/Socke/" style="font-size: 10px;">Socke</a> <a href="/tags/TCP-IP/" style="font-size: 10px;">TCP/IP</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/VSCode/" style="font-size: 13px;">VSCode</a> <a href="/tags/Video/" style="font-size: 10px;">Video</a> <a href="/tags/Visual-Studio/" style="font-size: 11px;">Visual Studio</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/Web-App/" style="font-size: 10px;">Web App</a> <a href="/tags/WebSocket/" style="font-size: 12px;">WebSocket</a> <a href="/tags/XML/" style="font-size: 12px;">XML</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/electron/" style="font-size: 18px;">electron</a> <a href="/tags/exe安装程序/" style="font-size: 10px;">exe安装程序</a> <a href="/tags/exe通信/" style="font-size: 10px;">exe通信</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 11px;">github</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/ini/" style="font-size: 10px;">ini</a> <a href="/tags/nisi教程/" style="font-size: 10px;">nisi教程</a> <a href="/tags/swc/" style="font-size: 10px;">swc</a> <a href="/tags/swf/" style="font-size: 12px;">swf</a> <a href="/tags/swfobject-js/" style="font-size: 10px;">swfobject.js</a> <a href="/tags/swz/" style="font-size: 10px;">swz</a> <a href="/tags/tree/" style="font-size: 10px;">tree</a> <a href="/tags/webbrowser/" style="font-size: 10px;">webbrowser</a> <a href="/tags/webstorm/" style="font-size: 14px;">webstorm</a> <a href="/tags/win7/" style="font-size: 10px;">win7</a> <a href="/tags/window虚拟键盘/" style="font-size: 10px;">window虚拟键盘</a> <a href="/tags/垃圾回收/" style="font-size: 11px;">垃圾回收</a> <a href="/tags/垃圾回收机制/" style="font-size: 10px;">垃圾回收机制</a> <a href="/tags/天气预报/" style="font-size: 10px;">天气预报</a> <a href="/tags/安全沙箱/" style="font-size: 10px;">安全沙箱</a> <a href="/tags/安装程序/" style="font-size: 10px;">安装程序</a> <a href="/tags/定位/" style="font-size: 10px;">定位</a> <a href="/tags/工具类/" style="font-size: 10px;">工具类</a> <a href="/tags/工具类库/" style="font-size: 10px;">工具类库</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/打包/" style="font-size: 10px;">打包</a> <a href="/tags/插件/" style="font-size: 10px;">插件</a> <a href="/tags/教程/" style="font-size: 16px;">教程</a> <a href="/tags/数据互转/" style="font-size: 11px;">数据互转</a> <a href="/tags/断点调试/" style="font-size: 10px;">断点调试</a> <a href="/tags/断点调试js项目/" style="font-size: 10px;">断点调试js项目</a> <a href="/tags/是否是IE/" style="font-size: 10px;">是否是IE</a> <a href="/tags/本地存储/" style="font-size: 11px;">本地存储</a> <a href="/tags/游戏/" style="font-size: 10px;">游戏</a> <a href="/tags/物理引擎/" style="font-size: 10px;">物理引擎</a> <a href="/tags/画板/" style="font-size: 10px;">画板</a> <a href="/tags/破解/" style="font-size: 11px;">破解</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a> <a href="/tags/缩放/" style="font-size: 10px;">缩放</a> <a href="/tags/视频播放器/" style="font-size: 10px;">视频播放器</a> <a href="/tags/读取本地文件/" style="font-size: 10px;">读取本地文件</a> <a href="/tags/轻应用/" style="font-size: 10px;">轻应用</a> <a href="/tags/通信/" style="font-size: 10px;">通信</a> <a href="/tags/页面跳转/" style="font-size: 10px;">页面跳转</a> <a href="/tags/预览/" style="font-size: 10px;">预览</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div id="mobile-header-menu-container">
+        <span class="title">Menu</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/home/">
+                    <i class="fa fa-home"></i><span>主页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-list-ul"></i><span>文章列表</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/project/">
+                    <i class="fa fa-paper-plane-o"></i><span>作品展示</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about/">
+                    <i class="fa fa-user"></i><span>关于</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+  </div>
+</body>
+</html>

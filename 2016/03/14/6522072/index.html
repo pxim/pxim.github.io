@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>【转】Flash字体嵌入方法 | Sean&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="PengXiang,Sean's Blog,Sean's site,seanin,px,site" />
+  
+  <meta name="description" content="原文链接：http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html一、如果使用flash cs5.51.先新建一个字体fla文件，然后是文本-字体嵌入，如图然后发布swf2.导入swf，并使用字体var fontClass:Class = _loader.contentLoaderInfo.applicationDomain.g">
+<meta name="keywords" content="ActionScript 3.0,Flash">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【转】Flash字体嵌入方法">
+<meta property="og:url" content="http://yoursite.com/2016/03/14/6522072/index.html">
+<meta property="og:site_name" content="Sean&#39;s Blog">
+<meta property="og:description" content="原文链接：http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html一、如果使用flash cs5.51.先新建一个字体fla文件，然后是文本-字体嵌入，如图然后发布swf2.导入swf，并使用字体var fontClass:Class = _loader.contentLoaderInfo.applicationDomain.g">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://images.cnblogs.com/cnblogs_com/ddw1997/img/name.PNG">
+<meta property="og:image" content="http://images.cnblogs.com/cnblogs_com/ddw1997/img/as.PNG">
+<meta property="og:image" content="http://images.cnblogs.com/cnblogs_com/ddw1997/img/lib.PNG">
+<meta property="og:updated_time" content="2020-05-26T00:54:28.459Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【转】Flash字体嵌入方法">
+<meta name="twitter:description" content="原文链接：http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html一、如果使用flash cs5.51.先新建一个字体fla文件，然后是文本-字体嵌入，如图然后发布swf2.导入swf，并使用字体var fontClass:Class = _loader.contentLoaderInfo.applicationDomain.g">
+<meta name="twitter:image" content="http://images.cnblogs.com/cnblogs_com/ddw1997/img/name.PNG">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">Sean&#39;s Site</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/home/">
+                        <i class="fa fa-home"></i>
+                        <span>主页</span>
+                    </a>
+                    
+                    <a  href="/">
+                        <i class="fa fa-list-ul"></i>
+                        <span>文章列表</span>
+                    </a>
+                    
+                    <a  href="/project/">
+                        <i class="fa fa-paper-plane-o"></i>
+                        <span>作品展示</span>
+                    </a>
+                    
+                    <a  href="/about/">
+                        <i class="fa fa-user"></i>
+                        <span>关于</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        Sean&#39;s Site
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个立志 JavaScript全栈 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="Home"  href="/">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="https://github.com/seanin">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="CSDN Blog" target="_blank" href="http://blog.csdn.net/arvin0?viewmode=list">
+                            <i class="fa fa-copyright fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="http://weibo.com/1751482640/profile?topnav=1&wvr=6&is_all=1">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="email" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=245803627@qq.com">
+                            <i class="fa fa-envelope-o fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-6522072" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      【转】Flash字体嵌入方法
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/Flash&amp;Flex/">Flash&Flex</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2016-03-14
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <a id="more"></a>
+<div id="sina_keyword_ad_area2" class="articalContent   newfont_family"><br><br><br>原文链接：<a href="http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html" target="_blank" rel="external">http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html</a><br><br>一、如果使用flash cs5.5<br><br><br>1.先新建一个字体fla文件，然后是文本-字体嵌入，如图<br><br><img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/name.PNG" alt=""><br><br><br><img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/as.PNG" alt=""><br><br><br><img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/lib.PNG" alt=""><br><br><br>然后发布swf<br><br>2.导入swf，并使用字体<br><br>var <strong>fontClass:Class = _loader.contentLoaderInfo.applicationDomain.getDefinition(“FontX”) as Class;<br>Font.registerFont(</strong>fontClass);<br>var <strong>format:TextFormat = new TextFormat();<br>var </strong>tf:TextField = new TextField();<br>//var <strong>fontArr:Array= Font.enumerateFonts(false);<br>var myFont:Font = new MyFont() as Font;
+</strong>format.font = myFont.fontName;<br><strong>tf.defaultTextFormat = </strong>format;<br><strong>tf.embedFonts = true;
+</strong>tf.text = ‘ABCDefg123456,.’;<br><br><br>二、如果使用as项目<br><br><br>1.首先还是建立font.swf<br><br>package<br>{<br>import flash.display.Sprite;<br>import flash.text.Font;<br>import flash.text.TextField;<br>import flash.text.TextFormat;<br>public class fonts extends Sprite<br>{<br>    [Embed(source=”font1.ttf”,fontName=”name1”,embedAsCFF=”false”,unicodeRange=”U+0020,U+0041-005A,U+0020,U+0061-007A,U+0030-0039,U+002E,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E,U+0020-002F,U+0030-0039,U+003A-0040,U+0041-005A,U+005B-0060,U+0061-007A,U+007B-007E”)]<br>    public var FontClass1:Class;<br>    [Embed(source=”font2.ttf”,fontFamily=”Franklin Gothic Book”,embedAsCFF=”false”,unicodeRange=”U+0020,U+0041-005A,U+0020,U+0061-007A,U+0030-0039,U+002E,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E,U+0020-002F,U+0030-0039,U+003A-0040,U+0041-005A,U+005B-0060,U+0061-007A,U+007B-007E”)]<br>    public var FontClass2:Class;<br><br>    public function fonts()<br>    {<br>        var <strong>fontArr:Array= Font.enumerateFonts(false);<br>        //Font.registerFont(myFont);<br>        for each(var </strong>font:Font in <strong>fontArr)<br>            trace(</strong>font.fontName, <strong>font.fontType);<br>    }<br>}<br>}<br><br><br>    source        指定要嵌入的字体文件路径。还可以用 systemFont指定一个系统中安装的字体。这样的话就可以不需要 source参数了。<br><br>    fontName      这个实际上就是 fontFamily 的别名。<br><br>    embedAsCFF    如果不提供这个参数，默认就是true。所以，如果系统你嵌入的字体用于TextField，一定要将其设置为false。<br><br>    unicodeRange  要嵌入的文本的范围。见下表：<br><br><br>嵌入字体范围：<br><br><br>    大写字符      U+0020,U+0041-U+005A<br><br>    小写字符      U+0020,U+0061-U+007A<br><br>    数字            U+0030-U+0039,U+002E<br><br>    标点符号      U+0020-U+002F,U+003A-U+0040,U+005B-U+0060,U+007B-U+007E<br><br>    基本拉丁字符    U+0020-U+002F, U+0030-U+0039, U+003A-U+0040, U+0041-U+005A, U+005B-U+0060, U+0061-U+007A, U+007B-U+007E<br><br><br>当然，还有中文范围等等，详细的可以找到你本机的 FlexSDK/frameworks/flash-unicode-table.xml<br><br><br>2.导入swf，使用字体<br><br>package<br>{<br>import flash.display.Sprite;<br>import flash.display.Loader;<br>import flash.events.Event;<br>import flash.events.IOErrorEvent;<br>import flash.events.SecurityErrorEvent;<br>import flash.system.LoaderContext;<br>import flash.system.ApplicationDomain;<br>import flash.system.SecurityDomain;<br>import flash.net.URLRequest;<br>import flash.text.Font;<br>import flash.text.TextFormat;<br>import flash.text.TextField;<br>import flash.utils.setTimeout;<br><br>public class LoadEmbedFont extends Sprite<br>{<br>    public function LoadEmbedFont()<br>    {<br>        _loader = new Loader();<br>        _loader.contentLoaderInfo.addEventListener(Event.COMPLETE, handler_comp);<br>        _loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, handler_error);<br>        _loader.contentLoaderInfo.addEventListener(SecurityErrorEvent.SECURITY_ERROR, handler_error);<br><br>        var </strong>loaderContext:LoaderContext = new LoaderContext(true ,new ApplicationDomain(null));<br>        //如果自己又被父SWF载入了一次，那么应用程序域就必须设置成当前域或者是子域才行<br>        //var <strong>loaderContext:LoaderContext = new LoaderContext(true, ApplicationDomain.currentDomain);<br>        //如果载入的字体swf与发起载入的swf不在一个网域，就需要将安全域设定为当前安全域<br>        //var </strong>loaderContext:LoaderContext = new LoaderContext(true, ApplicationDomain.currentDomain, SecurityDomain.currentDomain);<br>        _loader.load(new URLRequest(‘myfont.swf’),  <strong>loaderContext);<br>        //_loader.load(new URLRequest(‘<a href="http://10.0.0.5:5300/swf/assets/ui/fonts_local.swf" target="_blank" rel="external">http://10.0.0.5:5300/swf/assets/ui/fonts_local.swf</a>‘),  </strong>loaderContext);<br>    }<br><br>    private var _loader:Loader;<br>    private var <strong>fontObj:Font<br>    private function handler_comp($evt:Event):void<br>    {<br>        trace(‘载入字体成功’);<br>        var </strong>font:<em> = <em>loader.content;<br><br>        Font.registerFont(<strong>font.FontClass1);<br>        Font.registerFont(</strong>font.FontClass2);<br><br>        //也可以使用这种方式获取嵌入的字体类，类的名称是“源文件类名</em>嵌入目标变量名称”<br>        //var <strong>fontClass:Class = _loader.contentLoaderInfo.applicationDomain.getDefinition(“fonts_FontClass1”) as Class;<br>//        trace(‘class:’,</strong>fontClass);<br>//        <strong>fontObj = new </strong>fontClass();<br>//        Font.registerFont(<strong>_fontClass);<br>        showTF();<br><br>    }<br><br>    private function handler_error($evt:Event):void<br>    {<br>        trace($evt.toString());<br>    }<br><br>    private function showTF():void<br>    {<br>        var </strong>fontArr:Array= Font.enumerateFonts(false);<br>        trace(‘AppDomain font list:’, <strong>fontArr.length);<br>        for each(var </strong>font:Font in <strong>fontArr)<br>        {<br>            trace(</strong>font.fontName, <strong>font.fontType, </strong>font.fontStyle);<br>            var <strong>tf:TextField = new TextField();
+            </strong>tf.name = ‘tf_’+<strong>font.fontName;
+
+            </strong>tf.width = 200;<br>            var <strong>format:TextFormat = new TextFormat();<br>            //</strong>format.font = <strong>fontObj.fontName
+            </strong>format.font = <strong>font.fontName;
+            </strong>tf.defaultTextFormat = <strong>format;
+            </strong>tf.embedFonts = true;<br>            <strong>tf.text = ‘ABCDefg123456,.’;
+            </strong>tf.x = Math.random()</em>this.stage.stageWidth;<br>            <strong>tf.y = Math.random()*this.stage.stageHeight;<br>            addChild(</strong>tf);<br>            trace(‘<strong>tf:’, </strong>tf.name, <strong>tf.text, </strong>tf.x, __tf.y);<br>        }<br>    }<br>}<br>}<br><br><br> 3.查看字体<br><br>import flash.text.Font;<br>var allFonts:Array = Font.enumerateFonts(true);<br>allFonts.sortOn(“fontName”, Array.CASEINSENSITIVE);<br><br>for(var i:uint=0;i<allfonts.length;i++){ trace("字体名称:"+allfonts[i].fontname+"字体样式:"+allfonts[i].fontstyle+"字体类型:"+allfonts[i].fonttype)="" }="" <="" div=""></allfonts.length;i++){></div>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>原始链接： <a class="post-url" href="/2016/03/14/6522072/" title="【转】Flash字体嵌入方法">http://yoursite.com/2016/03/14/6522072/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="Sean">
+                Sean
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2016/03/14/6522072/&title=《【转】Flash字体嵌入方法》 — Sean's Blog&pic=http://yoursite.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2016/03/14/6522072/&title=《【转】Flash字体嵌入方法》 — Sean's Blog&source=假程序一个。" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/03/14/6522072/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【转】Flash字体嵌入方法》 — Sean's Blog&url=http://yoursite.com/2016/03/14/6522072/&via=http://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2016/03/14/6522072/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByUlEQVR42u3aQWrEMAwF0Ln/pafQ1cA0yZcVixReVqGk9tMshCX59Yqf9+/z+f75l/Nvvr8/WuG2BxcXt819nz5HlO/3o9WOiEl4f4SEi4s7yK0mr/M0lIeUG3BxcZ/JrR6G8jVxcXH/Lzc5vtyV7HBxcZ/A7TcyLoqW4Ihzc62Gi4vb4K41TO99397fxcXFvWkq0T/QVFurF7vj4uKOcJNtquVQJ5gozeHi4m7mriWXJKTz0mWxiMLFxR3hnrcqOsmuczyK9sLFxd3G7Vy9ylsb1fR3+PPh4uIOcteSVJK2qoeYiytcuLi4I9y1xmW1EOpMSW4YqODi4ha5SVukM0CtXsgoTHpxcXG3casNkQTRGbVGYxVcXNwR7lobtFrSdBoiuLi4k9zqQvlmSSLLA8PFxZ3kVlPJDnp1TVxc3N3czlWJ5Mt87BrthYuLO8gttyzjYKppK0pkuLi4I9zOSLVaOHXSHy4u7gy3mlCSlLd2OaM6gMHFxd3N7Vy9WiuTOv+Fi4s7yc2bF7cNRdZuYeHi4j6M2xmcJEVXVBTh4uI+mJvT15qquLi4T+AWhp2NYDpXuHBxcSe5aw3TPIB8rFJtueLi4m7g/gAfNk3UR8eFygAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/ActionScript3.0/" class="color2">ActionScript 3.0</a>
+      
+    <a href="/tags/Flash/" class="color1">Flash</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2016/03/14/6522070/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          as3中textField输入字符时，一次性过长后自动换行
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2016/03/14/6522074/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【转】FLEX中SharedObject介绍及应用</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+          <div id="uyan_frame"></div>
+  <!--<script src="https://seanin.github.io/plugin/youyan/uyan.js?uid=2130339"></script>-->
+  <script src="http://v2.uyan.cc/code/uyan.js?uid=2130339"></script>
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2020 Sean<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true
+  }
+</script>
+<div class="sidebar" style="display: none;">
+    <div id="sidebar-search" title="搜索">
+        <i class="fa fa-search" title="搜索"></i>
+    </div>
+    <div id="sidebar-archive" title="文章归档">
+        <i class="fa fa-archive" title="文章归档"></i>
+    </div>
+    <div id="sidebar-category" title="文章分类">
+        <i class="fa fa-book" title="文章分类"></i>
+    </div>
+    <div id="sidebar-tag" title="标签">
+        <i class="fa fa-tags" title="标签"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/Flash-Flex/">Flash&Flex</a><a class="category-link" href="/categories/HTML5/">HTML5</a><a class="category-link" href="/categories/Others/">Others</a><a class="category-link" href="/categories/Software/">Software</a><a class="category-link" href="/categories/Web前端/">Web前端</a><a class="category-link" href="/categories/news/">news</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/net/" style="font-size: 10px;">.net</a> <a href="/tags/AIR/" style="font-size: 10px;">AIR</a> <a href="/tags/ActionScript/" style="font-size: 13px;">ActionScript</a> <a href="/tags/ActionScript-3-0/" style="font-size: 19px;">ActionScript 3.0</a> <a href="/tags/ActiveXObject/" style="font-size: 10px;">ActiveXObject</a> <a href="/tags/Adobe-Animate-CC/" style="font-size: 12px;">Adobe Animate CC</a> <a href="/tags/Adobe-Animate-Edge/" style="font-size: 10px;">Adobe Animate Edge</a> <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Android-SDK/" style="font-size: 10px;">Android SDK</a> <a href="/tags/BUG/" style="font-size: 10px;">BUG</a> <a href="/tags/C/" style="font-size: 13px;">C#</a> <a href="/tags/Chrome-Debug/" style="font-size: 10px;">Chrome Debug</a> <a href="/tags/CreateJS/" style="font-size: 10px;">CreateJS</a> <a href="/tags/Eclipse/" style="font-size: 10px;">Eclipse</a> <a href="/tags/Egret/" style="font-size: 20px;">Egret</a> <a href="/tags/Flash/" style="font-size: 15px;">Flash</a> <a href="/tags/Flash-Builder/" style="font-size: 10px;">Flash Builder</a> <a href="/tags/Flash-Flex-Builder/" style="font-size: 10px;">Flash/Flex Builder</a> <a href="/tags/FlashPlayer/" style="font-size: 10px;">FlashPlayer</a> <a href="/tags/Flex/" style="font-size: 17px;">Flex</a> <a href="/tags/HTML5/" style="font-size: 13px;">HTML5</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/JSON/" style="font-size: 12px;">JSON</a> <a href="/tags/JSONP/" style="font-size: 10px;">JSONP</a> <a href="/tags/JavaScript/" style="font-size: 14px;">JavaScript</a> <a href="/tags/Native-App/" style="font-size: 10px;">Native App</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/P2/" style="font-size: 10px;">P2</a> <a href="/tags/PV3D/" style="font-size: 10px;">PV3D</a> <a href="/tags/ShareObject/" style="font-size: 10px;">ShareObject</a> <a href="/tags/Socke/" style="font-size: 10px;">Socke</a> <a href="/tags/TCP-IP/" style="font-size: 10px;">TCP/IP</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/VSCode/" style="font-size: 13px;">VSCode</a> <a href="/tags/Video/" style="font-size: 10px;">Video</a> <a href="/tags/Visual-Studio/" style="font-size: 11px;">Visual Studio</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/Web-App/" style="font-size: 10px;">Web App</a> <a href="/tags/WebSocket/" style="font-size: 12px;">WebSocket</a> <a href="/tags/XML/" style="font-size: 12px;">XML</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/electron/" style="font-size: 18px;">electron</a> <a href="/tags/exe安装程序/" style="font-size: 10px;">exe安装程序</a> <a href="/tags/exe通信/" style="font-size: 10px;">exe通信</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 11px;">github</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/ini/" style="font-size: 10px;">ini</a> <a href="/tags/nisi教程/" style="font-size: 10px;">nisi教程</a> <a href="/tags/swc/" style="font-size: 10px;">swc</a> <a href="/tags/swf/" style="font-size: 12px;">swf</a> <a href="/tags/swfobject-js/" style="font-size: 10px;">swfobject.js</a> <a href="/tags/swz/" style="font-size: 10px;">swz</a> <a href="/tags/tree/" style="font-size: 10px;">tree</a> <a href="/tags/webbrowser/" style="font-size: 10px;">webbrowser</a> <a href="/tags/webstorm/" style="font-size: 14px;">webstorm</a> <a href="/tags/win7/" style="font-size: 10px;">win7</a> <a href="/tags/window虚拟键盘/" style="font-size: 10px;">window虚拟键盘</a> <a href="/tags/垃圾回收/" style="font-size: 11px;">垃圾回收</a> <a href="/tags/垃圾回收机制/" style="font-size: 10px;">垃圾回收机制</a> <a href="/tags/天气预报/" style="font-size: 10px;">天气预报</a> <a href="/tags/安全沙箱/" style="font-size: 10px;">安全沙箱</a> <a href="/tags/安装程序/" style="font-size: 10px;">安装程序</a> <a href="/tags/定位/" style="font-size: 10px;">定位</a> <a href="/tags/工具类/" style="font-size: 10px;">工具类</a> <a href="/tags/工具类库/" style="font-size: 10px;">工具类库</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/打包/" style="font-size: 10px;">打包</a> <a href="/tags/插件/" style="font-size: 10px;">插件</a> <a href="/tags/教程/" style="font-size: 16px;">教程</a> <a href="/tags/数据互转/" style="font-size: 11px;">数据互转</a> <a href="/tags/断点调试/" style="font-size: 10px;">断点调试</a> <a href="/tags/断点调试js项目/" style="font-size: 10px;">断点调试js项目</a> <a href="/tags/是否是IE/" style="font-size: 10px;">是否是IE</a> <a href="/tags/本地存储/" style="font-size: 11px;">本地存储</a> <a href="/tags/游戏/" style="font-size: 10px;">游戏</a> <a href="/tags/物理引擎/" style="font-size: 10px;">物理引擎</a> <a href="/tags/画板/" style="font-size: 10px;">画板</a> <a href="/tags/破解/" style="font-size: 11px;">破解</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a> <a href="/tags/缩放/" style="font-size: 10px;">缩放</a> <a href="/tags/视频播放器/" style="font-size: 10px;">视频播放器</a> <a href="/tags/读取本地文件/" style="font-size: 10px;">读取本地文件</a> <a href="/tags/轻应用/" style="font-size: 10px;">轻应用</a> <a href="/tags/通信/" style="font-size: 10px;">通信</a> <a href="/tags/页面跳转/" style="font-size: 10px;">页面跳转</a> <a href="/tags/预览/" style="font-size: 10px;">预览</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div id="mobile-header-menu-container">
+        <span class="title">Menu</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/home/">
+                    <i class="fa fa-home"></i><span>主页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-list-ul"></i><span>文章列表</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/project/">
+                    <i class="fa fa-paper-plane-o"></i><span>作品展示</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about/">
+                    <i class="fa fa-user"></i><span>关于</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+  </div>
+</body>
+</html>

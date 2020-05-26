@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器 | Sean&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="PengXiang,Sean's Blog,Sean's site,seanin,px,site" />
+  
+  <meta name="description" content="## JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器这里主要说下监听SWF的加载。网上流传已久的监听方法，只能在IE（Activex插件下）下实现。在使用plugin的浏览器下无法监听。首先贴张 chrome下载图这里提供一个可以监听所有浏览器的方式:原作者在这里：http://blog.sebastian-martens.de/2010/05/preload-a">
+<meta name="keywords" content="ActionScript 3.0,JavaScript,Flash">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器">
+<meta property="og:url" content="http://yoursite.com/2014/07/29/6522103/index.html">
+<meta property="og:site_name" content="Sean&#39;s Blog">
+<meta property="og:description" content="## JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器这里主要说下监听SWF的加载。网上流传已久的监听方法，只能在IE（Activex插件下）下实现。在使用plugin的浏览器下无法监听。首先贴张 chrome下载图这里提供一个可以监听所有浏览器的方式:原作者在这里：http://blog.sebastian-martens.de/2010/05/preload-a">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+<meta property="og:updated_time" content="2020-05-26T00:54:28.465Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器">
+<meta name="twitter:description" content="## JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器这里主要说下监听SWF的加载。网上流传已久的监听方法，只能在IE（Activex插件下）下实现。在使用plugin的浏览器下无法监听。首先贴张 chrome下载图这里提供一个可以监听所有浏览器的方式:原作者在这里：http://blog.sebastian-martens.de/2010/05/preload-a">
+<meta name="twitter:image" content="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">Sean&#39;s Site</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/home/">
+                        <i class="fa fa-home"></i>
+                        <span>主页</span>
+                    </a>
+                    
+                    <a  href="/">
+                        <i class="fa fa-list-ul"></i>
+                        <span>文章列表</span>
+                    </a>
+                    
+                    <a  href="/project/">
+                        <i class="fa fa-paper-plane-o"></i>
+                        <span>作品展示</span>
+                    </a>
+                    
+                    <a  href="/about/">
+                        <i class="fa fa-user"></i>
+                        <span>关于</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        Sean&#39;s Site
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个立志 JavaScript全栈 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="Home"  href="/">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="https://github.com/seanin">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="CSDN Blog" target="_blank" href="http://blog.csdn.net/arvin0?viewmode=list">
+                            <i class="fa fa-copyright fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="http://weibo.com/1751482640/profile?topnav=1&wvr=6&is_all=1">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="email" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=245803627@qq.com">
+                            <i class="fa fa-envelope-o fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-6522103" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/Flash&amp;Flex/">Flash&Flex</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2014-07-29
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <a id="more"></a>
+<div id="sina_keyword_ad_area2" class="articalContent   newfont_family"><br><div><br><br><br>## JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器<br><br>这里主要说下监听SWF的加载。<br><br><br><br><div><br><br><br><br>网上流传已久的监听方法，只能在IE（Activex插件下）下实现。在使用plugin的浏览器下无法监听。<br><br><br>首先贴张 chrome下载图<br><br><br><img src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" alt="【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器"><br><br><br>这里提供一个可以监听所有浏览器的方式:<br><br><br>原作者在这里：<a href="http://blog.sebastian-martens.de/2010/05/preload-assets-with-load-complete-callback-for-single-assets-include-swfflash/" target="_blank" rel="external">http://blog.sebastian-martens.de/2010/05/preload-assets-with-javascript-load-complete-callback-for-single-assets-include-swfflash/</a><br><br><br>我修改后方便阅读使用的使用的版本：（20140718更新了以下失效链接）<br><br><br><a href="http://pan.baidu.com/s/1sjLhJIH" target="_blank" rel="external">http://pan.baidu.com/s/1sjLhJIH</a><br><br><br><span style="color: #00b050"><span style="font-family: Tahoma">注意我加载的SWF在我的空间，跨域以及本地都无法调用。请自行修改HTML中加载SWF的路径，并不要使用 file://来访问。</span></span><br><br><br>你可以在我的网站查看效果<br><br><br><a href="http://luoee.com/lab/jsloadswf/" target="_blank" rel="external">http://luoee.com/lab/jsloadswf/</a>  本人小站暂时关闭<br><br><br>原理说明：<br><br><br>看了下作者的文件简单来说：还是使用了JS与一个loader的swf来完成监听的。<br><br><br>通过JS将要加载的文件地址传输给这个事先制作好的loader,通过这个swf来加载文件，同时监听加载完成时，调用JS来抛出事件。<br><br><br>这个demo不会显示出swf，只是用来监听使用。如果你的网站有很多swf(小游戏网站)，那么你可以这样来实现：<br><br><br>1 制作一个loading等待的图片（可以是广告图等）<br><br><br>2 等到监听到加载完毕时，关闭loading ,再重新使用你自己的代码来加载SWF并显示。（这时将会从缓存读取，注意safari最大缓存的单个文件是5M 至少目前是这么大）<br><br><br>也许你要问为什么不直接用它的方式来显示呢？<br><br><br>当让你需要修改它的代码，这个对很多人来说有一点难度吧，另外如果你加载SWF与页面有数据交互的话使用它的方式可能会失效！<br><br><br>如果你对FLASH和js都有一定了解，那么你也可以自己写一个loader,来实现这些功能。当然你在制作这个loader的时候可以跟具你自己的需求来自定义，这样就不需要再有上面的第2步了。<br><br><br>我在这里就不在新制作一个了。如果公司后期有需求，我再制作一下！并共享出来！<br><br></div></div></div>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2020年05月26日 08:54</p>
+        <p>原始链接： <a class="post-url" href="/2014/07/29/6522103/" title="【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器">http://yoursite.com/2014/07/29/6522103/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="Sean">
+                Sean
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2014/07/29/6522103/&title=《【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器》 — Sean's Blog&pic=http://yoursite.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2014/07/29/6522103/&title=《【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器》 — Sean's Blog&source=假程序一个。" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2014/07/29/6522103/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器》 — Sean's Blog&url=http://yoursite.com/2014/07/29/6522103/&via=http://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2014/07/29/6522103/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxklEQVR42u3ay4oCMRAFUP//p3tgVgNDx1tVJiqcrKSN8egi1OvxiNf1u+6eXH/W/yfrdx87Fi4u7ph7LVeCu9tz9y3rM+8MuLi457nryyu/jNasfM/tc1xc3A/j9oKh5ExcXNzv5SbJTP4jcXFxP59bBU3QvfNxcXFPcquBy47XG+u7uLi4Re5VXMmFlePK346Li3uEmzRQq+lQNdCpllBxcXF3c9es6lDF+rPVomp0heHi4m7gTmai5iNZ1WAIFxf3DLea0vSumLxl8mS8AxcX9zi3WtBMGiTVIObJmbi4uEe41YLFZMCi1yUpV3FwcXE3c9fJSW9cY/7DcHFx38XtXWq9DKXarMXFxd3NfVKGCIoX1QbMpAiLi4t7kttLfnp9m7wNc9tKwcXF3czNe7D5oXPcqGCKi4s75ubDVb3gZp5Q4eLivos7H6jq7SyPguHi4h7k5mtSBs1HwcqdWFxc3JdyqxfKpDWSn1kdEcPFxd3BrZZEJ02USdiEi4t7nlstXuT7mwNYeX0XFxf3rdxeuJMnXdFfg4uL+1XcJHDJgxtcXNxP4BaanXGw8toRLlxc3JPcScF0vbPaVpn8Nbi4uC/i/gC63yUL84B5iwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/ActionScript3.0/" class="color2">ActionScript 3.0</a>
+      
+    <a href="/tags/JavaScript/" class="color1">JavaScript</a>
+      
+    <a href="/tags/Flash/" class="color1">Flash</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2016/02/02/6522102/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          【转】flash air中读取本地文件的三种方法
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2014/07/29/6522104/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">【转】AS3操作XML，增加、删除、修改</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+          <div id="uyan_frame"></div>
+  <!--<script src="https://seanin.github.io/plugin/youyan/uyan.js?uid=2130339"></script>-->
+  <script src="http://v2.uyan.cc/code/uyan.js?uid=2130339"></script>
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2020 Sean<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true
+  }
+</script>
+<div class="sidebar" style="display: none;">
+    <div id="sidebar-search" title="搜索">
+        <i class="fa fa-search" title="搜索"></i>
+    </div>
+    <div id="sidebar-archive" title="文章归档">
+        <i class="fa fa-archive" title="文章归档"></i>
+    </div>
+    <div id="sidebar-category" title="文章分类">
+        <i class="fa fa-book" title="文章分类"></i>
+    </div>
+    <div id="sidebar-tag" title="标签">
+        <i class="fa fa-tags" title="标签"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/Flash-Flex/">Flash&Flex</a><a class="category-link" href="/categories/HTML5/">HTML5</a><a class="category-link" href="/categories/Others/">Others</a><a class="category-link" href="/categories/Software/">Software</a><a class="category-link" href="/categories/Web前端/">Web前端</a><a class="category-link" href="/categories/news/">news</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/net/" style="font-size: 10px;">.net</a> <a href="/tags/AIR/" style="font-size: 10px;">AIR</a> <a href="/tags/ActionScript/" style="font-size: 13px;">ActionScript</a> <a href="/tags/ActionScript-3-0/" style="font-size: 19px;">ActionScript 3.0</a> <a href="/tags/ActiveXObject/" style="font-size: 10px;">ActiveXObject</a> <a href="/tags/Adobe-Animate-CC/" style="font-size: 12px;">Adobe Animate CC</a> <a href="/tags/Adobe-Animate-Edge/" style="font-size: 10px;">Adobe Animate Edge</a> <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Android-SDK/" style="font-size: 10px;">Android SDK</a> <a href="/tags/BUG/" style="font-size: 10px;">BUG</a> <a href="/tags/C/" style="font-size: 13px;">C#</a> <a href="/tags/Chrome-Debug/" style="font-size: 10px;">Chrome Debug</a> <a href="/tags/CreateJS/" style="font-size: 10px;">CreateJS</a> <a href="/tags/Eclipse/" style="font-size: 10px;">Eclipse</a> <a href="/tags/Egret/" style="font-size: 20px;">Egret</a> <a href="/tags/Flash/" style="font-size: 15px;">Flash</a> <a href="/tags/Flash-Builder/" style="font-size: 10px;">Flash Builder</a> <a href="/tags/Flash-Flex-Builder/" style="font-size: 10px;">Flash/Flex Builder</a> <a href="/tags/FlashPlayer/" style="font-size: 10px;">FlashPlayer</a> <a href="/tags/Flex/" style="font-size: 17px;">Flex</a> <a href="/tags/HTML5/" style="font-size: 13px;">HTML5</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/JSON/" style="font-size: 12px;">JSON</a> <a href="/tags/JSONP/" style="font-size: 10px;">JSONP</a> <a href="/tags/JavaScript/" style="font-size: 14px;">JavaScript</a> <a href="/tags/Native-App/" style="font-size: 10px;">Native App</a> <a href="/tags/Node-js/" style="font-size: 10px;">Node.js</a> <a href="/tags/P2/" style="font-size: 10px;">P2</a> <a href="/tags/PV3D/" style="font-size: 10px;">PV3D</a> <a href="/tags/ShareObject/" style="font-size: 10px;">ShareObject</a> <a href="/tags/Socke/" style="font-size: 10px;">Socke</a> <a href="/tags/TCP-IP/" style="font-size: 10px;">TCP/IP</a> <a href="/tags/UDP/" style="font-size: 10px;">UDP</a> <a href="/tags/VSCode/" style="font-size: 13px;">VSCode</a> <a href="/tags/Video/" style="font-size: 10px;">Video</a> <a href="/tags/Visual-Studio/" style="font-size: 11px;">Visual Studio</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/Web-App/" style="font-size: 10px;">Web App</a> <a href="/tags/WebSocket/" style="font-size: 12px;">WebSocket</a> <a href="/tags/XML/" style="font-size: 12px;">XML</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/electron/" style="font-size: 18px;">electron</a> <a href="/tags/exe安装程序/" style="font-size: 10px;">exe安装程序</a> <a href="/tags/exe通信/" style="font-size: 10px;">exe通信</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 11px;">github</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/ini/" style="font-size: 10px;">ini</a> <a href="/tags/nisi教程/" style="font-size: 10px;">nisi教程</a> <a href="/tags/swc/" style="font-size: 10px;">swc</a> <a href="/tags/swf/" style="font-size: 12px;">swf</a> <a href="/tags/swfobject-js/" style="font-size: 10px;">swfobject.js</a> <a href="/tags/swz/" style="font-size: 10px;">swz</a> <a href="/tags/tree/" style="font-size: 10px;">tree</a> <a href="/tags/webbrowser/" style="font-size: 10px;">webbrowser</a> <a href="/tags/webstorm/" style="font-size: 14px;">webstorm</a> <a href="/tags/win7/" style="font-size: 10px;">win7</a> <a href="/tags/window虚拟键盘/" style="font-size: 10px;">window虚拟键盘</a> <a href="/tags/垃圾回收/" style="font-size: 11px;">垃圾回收</a> <a href="/tags/垃圾回收机制/" style="font-size: 10px;">垃圾回收机制</a> <a href="/tags/天气预报/" style="font-size: 10px;">天气预报</a> <a href="/tags/安全沙箱/" style="font-size: 10px;">安全沙箱</a> <a href="/tags/安装程序/" style="font-size: 10px;">安装程序</a> <a href="/tags/定位/" style="font-size: 10px;">定位</a> <a href="/tags/工具类/" style="font-size: 10px;">工具类</a> <a href="/tags/工具类库/" style="font-size: 10px;">工具类库</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/打包/" style="font-size: 10px;">打包</a> <a href="/tags/插件/" style="font-size: 10px;">插件</a> <a href="/tags/教程/" style="font-size: 16px;">教程</a> <a href="/tags/数据互转/" style="font-size: 11px;">数据互转</a> <a href="/tags/断点调试/" style="font-size: 10px;">断点调试</a> <a href="/tags/断点调试js项目/" style="font-size: 10px;">断点调试js项目</a> <a href="/tags/是否是IE/" style="font-size: 10px;">是否是IE</a> <a href="/tags/本地存储/" style="font-size: 11px;">本地存储</a> <a href="/tags/游戏/" style="font-size: 10px;">游戏</a> <a href="/tags/物理引擎/" style="font-size: 10px;">物理引擎</a> <a href="/tags/画板/" style="font-size: 10px;">画板</a> <a href="/tags/破解/" style="font-size: 11px;">破解</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a> <a href="/tags/缩放/" style="font-size: 10px;">缩放</a> <a href="/tags/视频播放器/" style="font-size: 10px;">视频播放器</a> <a href="/tags/读取本地文件/" style="font-size: 10px;">读取本地文件</a> <a href="/tags/轻应用/" style="font-size: 10px;">轻应用</a> <a href="/tags/通信/" style="font-size: 10px;">通信</a> <a href="/tags/页面跳转/" style="font-size: 10px;">页面跳转</a> <a href="/tags/预览/" style="font-size: 10px;">预览</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div id="mobile-header-menu-container">
+        <span class="title">Menu</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/home/">
+                    <i class="fa fa-home"></i><span>主页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-list-ul"></i><span>文章列表</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/project/">
+                    <i class="fa fa-paper-plane-o"></i><span>作品展示</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about/">
+                    <i class="fa fa-user"></i><span>关于</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+  </div>
+</body>
+</html>
