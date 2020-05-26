@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    【DResDevKit】04 部件拆装H5模板 |  PxSite
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="PxSite" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  
+  <div id="app">
+    <main class="content on">
+      <section class="outer">
+  <article id="post-DResDevKit/04-course-CZ-H5" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  【DResDevKit】04 部件拆装H5模板
+</h1>
+ 
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2020/05/25/DResDevKit/04-course-CZ-H5/" class="article-date">
+  <time datetime="2020-05-25T09:50:58.000Z" itemprop="datePublished">2020-05-25</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/DResDevKit/">DResDevKit</a>
+  </div>
+
+      
+      
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">948</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">3 min</span>
+        </span>
+    </span>
+</div>
+
+      
+    </div>
+    
+
+    
+    
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+
+      
+      <ol>
+<li><a href="#user-content-配置表说明">配置表说明</a> <ul>
+<li><a href="#user-content-menuinfoxml">menuInfo.xml</a></li>
+<li><a href="#user-content-partinfoxml">partInfo.xml</a></li>
+<li><a href="#user-content-toolinfoxml">toolInfo.xml</a></li>
+<li><a href="#user-content-actionstepxml">actionStep.xml</a></li>
+</ul>
+</li>
+<li><a href="#user-content-场景动画说明">场景动画说明</a><ul>
+<li><a href="#user-content-1-场景动画里--热点区域颜色">场景动画里–热点区域颜色</a></li>
+<li><a href="#user-content-2-场景动画里--代码">场景动画里–代码</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="配置表说明"><a href="#配置表说明" class="headerlink" title="配置表说明"></a>配置表说明</h2><h3 id="menuInfo-xml"><a href="#menuInfo-xml" class="headerlink" title="menuInfo.xml"></a>menuInfo.xml</h3><blockquote>
+<p>菜单配置表<br>root → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">mId</td>
+<td align="left">菜单的序号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">菜单的名字</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">partGroup</td>
+<td align="left">当前菜单页所需要显示的零件，所属群组</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">href</td>
+<td align="left">菜单按钮相对应的页面</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">poster</td>
+<td align="left">当前页相对应的海边图片（图片要求：1.是当前页面初始化显示时的状态图片；2.图片大小尽量压缩；)</td>
+<td align="left">目前暂时弃用</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="partInfo-xml"><a href="#partInfo-xml" class="headerlink" title="partInfo.xml"></a>partInfo.xml</h3><blockquote>
+<p>零件信息配置表；用于零件箱里的图片和场景里零件的图片<br>root → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="right">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">零件的序号</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">零件的名字</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">group</td>
+<td align="left">零件群组（比如第一步出现的零件，那么group=1，以此类推）</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">isUse</td>
+<td align="left">零件是否在使用(false：没有；true：在使用)</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">href</td>
+<td align="left">零件箱里零件图片的路径</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">href2</td>
+<td align="left">场景里零件图片的路径</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">offsetX</td>
+<td align="left">场景里零件图片的鼠标X偏移量</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">offsetY</td>
+<td align="left">场景里零件图片的鼠标Y偏移量</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="toolInfo-xml"><a href="#toolInfo-xml" class="headerlink" title="toolInfo.xml"></a>toolInfo.xml</h3><blockquote>
+<p>工具信息配置表；用于工具箱里的图片和场景里工具的图片<br>root → tool → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="right">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">工具的序号</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">工具的名字</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">iscomTool</td>
+<td align="left">是否是组合工具部件（true：是；false：不是）</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">comBoxIndex</td>
+<td align="left">如果是组合工具部件，则填写本部件所在的组合框索引（1，2，3 是组合工具部件所在 工具箱组合框上 对应的框子索引）；如果不是，则空着；</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">isUse</td>
+<td align="left">工具是否在使用(false：没有；true：在使用)</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">href</td>
+<td align="left">工具箱里工具图片的路径</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">href2</td>
+<td align="left">场景里工具图片的路径</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">offsetX</td>
+<td align="left">场景里工具图片的鼠标X偏移量</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">offsetY</td>
+<td align="left">场景里工具图片的鼠标Y偏移量</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>root → combineTool → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="right">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">组合工具的序号</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">组合工具的名字</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">combineUnit1</td>
+<td align="left">构成本组合工具的部件1（和工具箱组合框1对应），有，则填写对应的工具部件的id；没有，则空着；</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">combineUnit2</td>
+<td align="left">构成本组合工具的部件2（和工具箱组合框2对应），有，则填写对应的工具部件的id；没有，则空着；</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">combineUnit3</td>
+<td align="left">构成本组合工具的部件3（和工具箱组合框3对应），有，则填写对应的工具部件的id；没有，则空着；</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">isUse</td>
+<td align="left">工具是否在使用(false：没有；true：在使用)</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">href</td>
+<td align="left">工具箱里工具图片的路径</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">href2</td>
+<td align="left">场景里工具图片的路径</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">offsetX</td>
+<td align="left">场景里工具图片的鼠标X偏移量</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">offsetY</td>
+<td align="left">场景里工具图片的鼠标Y偏移量</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="actionStep-xml"><a href="#actionStep-xml" class="headerlink" title="actionStep.xml"></a>actionStep.xml</h3><blockquote>
+<p>操作步骤配置表<br>root → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">操作步骤的序号</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">操作步骤的内容</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">progress</td>
+<td align="left">本次操作给予的进度值</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">score</td>
+<td align="left">本次操作给予的分值</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="场景动画说明"><a href="#场景动画说明" class="headerlink" title="场景动画说明"></a>场景动画说明</h2><h4 id="1-场景动画里–热点区域颜色"><a href="#1-场景动画里–热点区域颜色" class="headerlink" title="1. 场景动画里–热点区域颜色"></a>1. 场景动画里–热点区域颜色</h4><p>   拆卸模块：（红色：使用工具；绿色：用鼠标点击；）<br>   安装模块：（蓝色：放置零件；绿色：使用工具；）  </p>
+<h4 id="2-场景动画里–代码"><a href="#2-场景动画里–代码" class="headerlink" title="2. 场景动画里–代码"></a>2. 场景动画里–代码</h4><p><img src="data:image/png;base64,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duCc6oM8/PKLMaZyZDt5anrsIUs+WTfV13zkDEn92KfyhH0kjvwjMjarpQ0om1hsJb8eXcmnNs+R+h1jAiZgAiZgAiZgApnA0DO4sXGLTUpto4INex601o+8vGs+e+in5jdaQ+SNF3xKefBRG/UQW/JR/7XabG7n5IuY2NTGO14jOeaMZ18TMAETMAETMAETyATeen49IT+eEEnYZMVmjTbJcx/9mSRzKM1vyTw0X7Sv+GJTWzq9veJ8PScTMAETMAETMIFjERg6wdWNWWwEtZ+n17Jl3637vbWo39T8SjXr5ljtkReb6nva1JHjIyfvnjxb+3ByG+NwmqtjwjbPQ33cNgETMAETMAETMIElBIafwdVB82aFTUz4ZFvosGOjj3/uaww+IfVFTCmn+rXsNRt6zZPHU1u0a3b06h/5s742ZtZrXLbpGK02m1I9ecU/60qb1vDNfjmePvW2au3xIZ+lCZiACZiACZiACWQCrx8fH1+jjynkZO7/JLDmRi1y1TaFa47zcwbr9nrr7PVbtzpnMwETMAETMAETuAqBoRPcq0z+DPNgsxe15g1uy3aGublGEzABEzABEzABE9iCwNAzuFsU4pxlArGp5Z090OeNb/Zz3wRMwARMwARMwATuRMAnuHdabc/VBEzABEzABEzABG5AwCe4N1hkT9EETMAETMAETMAE7kTAJ7h3Wm3P1QRMwARMwARMwARuQMAnuDdYZE/RBEzABEzABEzABO5EwCe4d1ptz9UETMAETMAETMAEbkDAJ7g3WGRP0QRMwARMwARMwATuROC/Ipy+hA7VaRsAAAAASUVORK5CYII=" alt="image"></p>
+<p><img src="data:image/png;base64,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" alt="image"></p>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">值</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">btn</td>
+<td align="left">热点区域按钮的实例名。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">mc</td>
+<td align="left">动画里零件MC的实例名，如果无，则空着。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">partId</td>
+<td align="left">点击当前热点后，需要在零件面板里出现或者拿出的零件的id；如果无，则空着。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toolId</td>
+<td align="left">触发当前热点，需要的工具的id；如果无，则空着。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">toolAni</td>
+<td align="left">使用工具触发当前热点后，播放的动画MC的实例名；如果无，则空着。</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">stepId</td>
+<td align="left">当前操作步骤顺序序号。</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+
+      
+      <!-- reward -->
+      
+      <div id="reward-btn">
+        Donate
+      </div>
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+        <div class="declare">
+          <ul class="post-copyright">
+            <li>
+              <i class="ri-copyright-line"></i>
+              <strong>Copyright： </strong>
+              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+            </li>
+          </ul>
+        </div>
+        
+    <footer class="article-footer">
+      
+          
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/05/25/DResDevKit/04-course-CZ-H5/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DResDevKit/" rel="tag">DResDevKit</a></li></ul>
+
+
+    </footer>
+
+  </div>
+
+  
+  
+  <nav class="article-nav">
+    
+      <a href="/2020/05/25/DResDevKit/03-course-An-H5/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            【DResDevKit】03 H5模板
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2020/05/25/DResDevKit/02-course-An-Flash/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">【DResDevKit】02 Flash模板</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+  
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        app_id: '',
+        app_key: '',
+        path: window.location.pathname,
+        notify: 'false',
+        verify: 'false',
+        avatar: 'monsterid',
+        placeholder: '给我的文章加点评论吧~',
+        recordIP: true
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+<style>
+    #vcomments-box {
+        padding: 5px 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 0px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #fff;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+
+  
+
+  
+  
+  
+  
+  
+
+</article>
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2020
+        <i class="ri-heart-fill heart_icon"></i> Peng Xiang
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="PxSite"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Subtitle -->
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 100,
+      showCursor: true
+    });
+  } catch (err) {
+    console.log(err)
+  }
+</script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+
+    
+  </div>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-26T04:08:13.541Z</updated>
+  <updated>2020-05-26T06:26:52.062Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>webpack/【webpack】怎么断点调试webpack配置文件</title>
-    <link href="http://yoursite.com/2020/05/26/webpack/%E3%80%90webpack%E3%80%91%E6%80%8E%E4%B9%88%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
-    <id>http://yoursite.com/2020/05/26/webpack/%E3%80%90webpack%E3%80%91%E6%80%8E%E4%B9%88%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</id>
-    <published>2020-05-26T03:59:46.897Z</published>
-    <updated>2020-05-26T04:08:13.541Z</updated>
+    <title>【markdown】markdown写作帮助</title>
+    <link href="http://yoursite.com/2020/05/25/markdown/markdown%E5%86%99%E4%BD%9C%E5%B8%AE%E5%8A%A9/"/>
+    <id>http://yoursite.com/2020/05/25/markdown/markdown%E5%86%99%E4%BD%9C%E5%B8%AE%E5%8A%A9/</id>
+    <published>2020-05-25T11:12:57.000Z</published>
+    <updated>2020-05-26T06:26:52.062Z</updated>
     
     <summary type="html">
     
@@ -29,23 +29,27 @@
       
         
         
-          &lt;hr&gt;
-&lt;h2 id=&quot;title-【webpack】怎么断点调试webpack配置文件&quot;&gt;&lt;a href=&quot;#title-【webpack】怎么断点调试webpack配置文件&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;图片转base64 &lt;a href=&quot;https://tool.lu/base64image&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://tool.lu/base64image&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在github里添加base64图片
         
       
     
     </summary>
     
     
+      <category term="markdown" scheme="http://yoursite.com/categories/markdown/"/>
+    
+    
+      <category term="markdown" scheme="http://yoursite.com/tags/markdown/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/05/25/hello-world%202/"/>
-    <id>http://yoursite.com/2020/05/25/hello-world%202/</id>
-    <published>2020-05-25T09:03:55.735Z</published>
-    <updated>2020-05-25T08:14:42.474Z</updated>
+    <title>【software】开发辅助工具</title>
+    <link href="http://yoursite.com/2020/05/25/software/%E3%80%90software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/"/>
+    <id>http://yoursite.com/2020/05/25/software/%E3%80%90software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/</id>
+    <published>2020-05-25T11:12:57.000Z</published>
+    <updated>2020-05-26T06:28:59.789Z</updated>
     
     <summary type="html">
     
@@ -53,13 +57,474 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;h4 id=&quot;内网穿外网工具&quot;&gt;&lt;a href=&quot;#内网穿外网工具&quot; class=&quot;headerlink&quot; title=&quot;内网穿外网工具&quot;&gt;&lt;/a&gt;内网穿外网工具&lt;/h4&gt;&lt;p&gt;下载地址：百度网盘&lt;/p&gt;
+&lt;p&gt;链接：&lt;a
         
       
     
     </summary>
     
     
+      <category term="software" scheme="http://yoursite.com/categories/software/"/>
+    
+    
+      <category term="software" scheme="http://yoursite.com/tags/software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【software】webStorm使用帮助</title>
+    <link href="http://yoursite.com/2020/05/25/software/webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/"/>
+    <id>http://yoursite.com/2020/05/25/software/webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/</id>
+    <published>2020-05-25T11:12:57.000Z</published>
+    <updated>2020-05-26T06:28:23.071Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;h5 id=&quot;创建js等文件时，自动添加备注（创建时间，作者信息等等）&quot;&gt;&lt;a href=&quot;#创建js等文件时，自动添加备注（创建时间，作者信息等等）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="software" scheme="http://yoursite.com/categories/software/"/>
+    
+    
+      <category term="software" scheme="http://yoursite.com/tags/software/"/>
+    
+      <category term="webStorm" scheme="http://yoursite.com/tags/webStorm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【webpack】怎么断点调试webpack配置文件</title>
+    <link href="http://yoursite.com/2020/05/25/webpack/%E3%80%90webpack%E3%80%91%E6%80%8E%E4%B9%88%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    <id>http://yoursite.com/2020/05/25/webpack/%E3%80%90webpack%E3%80%91%E6%80%8E%E4%B9%88%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</id>
+    <published>2020-05-25T11:12:57.000Z</published>
+    <updated>2020-05-26T06:44:10.174Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;参考文章：&lt;a href=&quot;https://www.colabug.com/2018/1022/4989135/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="webpack" scheme="http://yoursite.com/categories/webpack/"/>
+    
+    
+      <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
+    
+      <category term="配置文件" scheme="http://yoursite.com/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+      <category term="调试" scheme="http://yoursite.com/tags/%E8%B0%83%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】03 H5模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/03-course-An-H5/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/03-course-An-H5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:15:39.230Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】04 部件拆装H5模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:15:33.896Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】02 Flash模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/02-course-An-Flash/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/02-course-An-Flash/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:15:43.501Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】01 课件开发集成包</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/01-course-dev-kit/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/01-course-dev-kit/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:15:47.406Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】06 故障诊断WebGL模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:15:25.477Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】10 课件测试地址</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/10-course-test-address/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/10-course-test-address/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:15:09.901Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;广本&lt;br&gt;&lt;a href=&quot;http://bmw.jingge.com/guangqi-honda/course-test&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】05 故障诊断H5模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/05-course-ZD-H5/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/05-course-ZD-H5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:15:29.978Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】09 svn</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/09-course-svn/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/09-course-svn/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:15:14.517Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;斯柯达0.3.0版本课件集成包&lt;br&gt;&lt;a href=&quot;https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】08 网络课件包</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/08-course-projects/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/08-course-projects/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:15:19.500Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】13 准备删除的模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:14:43.917Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;动画：&lt;br&gt;h5T_Menu2&lt;br&gt;h5T_016&lt;br&gt;h5T_017&lt;br&gt;h5T_018&lt;br&gt;h5T_008&lt;br&gt;h5T_008_2 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】12 config配置表v3.x版本说明</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:14:54.341Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】全景展厅WebGL</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/pano/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/pano/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:14:27.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
+&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】11 开发中注意点和常见问题</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/11-course-Notes-And-FAQ/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/11-course-Notes-And-FAQ/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T06:14:58.957Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;注意点&quot;&gt;&lt;a href=&quot;#注意点&quot; class=&quot;headerlink&quot; title=&quot;注意点&quot;&gt;&lt;/a&gt;注意点&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;An HTML5 Canvas项目里，不要使用 滤镜，发光效果；如需这种效果，则在外部做好导成图片，导进An里；
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
     
   </entry>
   
