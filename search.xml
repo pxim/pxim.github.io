@@ -2,24 +2,6 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2020/05/25/hello-world%202/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
     <url>/2020/05/25/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
@@ -37,534 +19,21 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Flash模板</title>
-    <url>/2020/05/26/DResDevKit/02-course-An-Flash/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>版本</th>
-<th>动画类型</th>
-<th>功能说明</th>
-<th>动画编号</th>
-<th>HTML发布模板</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>Flash</td>
-<td>片头动画</td>
-<td></td>
-<td>enter</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2</td>
-<td>Flash</td>
-<td>普通动画</td>
-<td>播完就自动跳下一个动画；</td>
-<td>template_001</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>3</td>
-<td>Flash</td>
-<td>普通动画</td>
-<td>播完会跳黄，不会自动跳下一个动画；</td>
-<td>template_002</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>4</td>
-<td>Flash</td>
-<td>视频动画（单个）</td>
-<td>类似播放视频的方式，播放序列动画；有控制栏；可设置是否自动播放；播完会跳黄；</td>
-<td>template_003</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5</td>
-<td>Flash</td>
-<td>视频动画（单个）</td>
-<td>开始时，页面中间多一个大的开始按钮；</td>
-<td>template_012</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>6</td>
-<td>Flash</td>
-<td>视频动画（带二级动画）</td>
-<td>包含2个模板（主文件，二级视频页面模板）； 基础功能同上；添加 视频动画切换；第一遍强制播完；</td>
-<td>template_004</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>7</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题单选题；</td>
-<td>template_006</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>8</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题多选题；判断结果有文字提示；</td>
-<td>template_007</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>9</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题多选题；判断结果有提示框，带关闭按钮；</td>
-<td>template_011</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>10</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题全选题；</td>
-<td>template_008</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>11</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题拖动题；判断结果有文字提示；</td>
-<td>template_009</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>12</td>
-<td>Flash</td>
-<td>练习题动画</td>
-<td>练习题拖动题；判断结果有提示框，带关闭按钮；</td>
-<td>template_010</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13</td>
-<td>Flash</td>
-<td>切换页面动画</td>
-<td>有切换按钮，切换MC；</td>
-<td>template_014</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>14</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>普通子动画；第一遍强制播放；不带返回；</td>
-<td>template_015</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>15</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>普通子动画；带返回；</td>
-<td>template_016</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>16</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>强制学习；带返回；带上一页，下一页功能；</td>
-<td>template_017</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>17</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>普通子动画；切换页面；不带返回；</td>
-<td>template_018</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>18</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>切换页面；不带返回；保留按钮点击记录；</td>
-<td>template_019</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>19</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>切换页面；带返回；允许控制播放；</td>
-<td>template_020</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>20</td>
-<td>Flash</td>
-<td>切换页面动画（带二级动画）</td>
-<td>切换页面；不允许控制播放；</td>
-<td>template_021</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>21</td>
-<td>Flash</td>
-<td>交互动画</td>
-<td>点击切换按钮，切换MC；可重复切换；</td>
-<td>template_005</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>22</td>
-<td>Flash</td>
-<td>其他交互动画</td>
-<td>单击按钮，显示MC；按钮只能点一次；MC显示后一直存在；</td>
-<td>template_013</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>23</td>
-<td>Flash</td>
-<td>整体测试（带二级动画）</td>
-<td>包含6个模板（整体测试主文件，Start，End，  整体测试单选题模板,整体测试多选题模板，整体测试拖动题模板）</td>
-<td>template_ZTCeshi</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>24</td>
-<td>Flash</td>
-<td>整体测试（二级）- 随机抽题</td>
-<td>同上；添加随机抽题功能；（SKD版本Flash代码未修改）；</td>
-<td>template_ZTCeshi_Suiji</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>25</td>
-<td>Flash</td>
-<td>拆装动画</td>
-<td>拆装动画-大石头那边的SKD和YQ；</td>
-<td>template_CZ</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>26</td>
-<td>Flash</td>
-<td>MouseOver动画</td>
-<td>鼠标移上按钮，播放mc动画；移出按钮，关闭mc动画；</td>
-<td>template_022</td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-]]></content>
-  </entry>
-  <entry>
-    <title>H5模板</title>
-    <url>/2020/05/26/DResDevKit/03-course-An-H5/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>版本</th>
-<th>动画类型</th>
-<th>功能说明</th>
-<th>动画编号</th>
-<th>HTML发布模板</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>H5(PC)</td>
-<td>片头动画</td>
-<td>序列帧动画；如发布PC端，则设 移动端功能 下图层 为引导层； 如发布Mobile端，则去掉引导层；</td>
-<td>enter1</td>
-<td>h5RT_Enter1.html</td>
-<td></td>
-</tr>
-<tr>
-<td>2</td>
-<td>H5(PC)</td>
-<td>片头动画</td>
-<td>带视频的动画；如发布PC端，则设 移动端功能 下图层 为引导层； 如发布Mobile端，则去掉引导层；</td>
-<td>h5T_Enter2</td>
-<td>h5RT_Enter2.html                     a</td>
-<td></td>
-</tr>
-<tr>
-<td>3</td>
-<td>H5(PC)</td>
-<td>菜单目录</td>
-<td>类型：1级联动菜单；常用于广本项目；</td>
-<td>menu1</td>
-<td>h5RT_Menu1.html</td>
-<td></td>
-</tr>
-<tr>
-<td>4</td>
-<td>H5(PC)</td>
-<td>菜单目录</td>
-<td>类型：2级联动菜单，并且有两种模式：①自由触发；②限制触发；常用于斯柯达项目；</td>
-<td>menu2</td>
-<td>h5RT_Menu2.html</td>
-<td></td>
-</tr>
-<tr>
-<td>5</td>
-<td>H5(PC)</td>
-<td>菜单目录</td>
-<td>类型：3级联动菜单；常用于领克项目；</td>
-<td>menu3</td>
-<td>h5RT_Menu3.html</td>
-<td></td>
-</tr>
-<tr>
-<td>6</td>
-<td>H5(PC)</td>
-<td>普通动画</td>
-<td>播完就自动跳下一个动画；</td>
-<td>h5T_001</td>
-<td>h5RT_001.html</td>
-<td></td>
-</tr>
-<tr>
-<td>7</td>
-<td>H5(PC)</td>
-<td>普通动画</td>
-<td>带返回菜单按钮的普通动画；</td>
-<td>h5T_001_2</td>
-<td>h5RT_001.html</td>
-<td></td>
-</tr>
-<tr>
-<td>8</td>
-<td>H5(PC)</td>
-<td>切换MC动画</td>
-<td>点击切换按钮，切换MC；可重复切换；双击当前按钮，对应动画会重置；</td>
-<td>h5T_003</td>
-<td>h5RT_003.html</td>
-<td></td>
-</tr>
-<tr>
-<td>9</td>
-<td>H5(PC)</td>
-<td>切换MC动画</td>
-<td>点击切换按钮，切换MC；每个切换按钮只能点击一次；</td>
-<td>h5T_005</td>
-<td>h5RT_003.html</td>
-<td></td>
-</tr>
-<tr>
-<td>10</td>
-<td>H5(PC)</td>
-<td>切换MC动画</td>
-<td>点击切换按钮，切换MC；每个切换按钮只能点击一次；MC显示后一直存在；</td>
-<td>h5T_005_2</td>
-<td>h5RT_003.html</td>
-<td></td>
-</tr>
-<tr>
-<td>11</td>
-<td></td>
-<td>轮播小图动画</td>
-<td>点击小图，播放大图；</td>
-<td>h5T_006</td>
-<td>h5RT_006.html</td>
-<td></td>
-</tr>
-<tr>
-<td>12</td>
-<td>H5(PC)</td>
-<td>MouseOver动画</td>
-<td>鼠标移上按钮，播放mc动画；移出按钮，关闭mc动画；</td>
-<td>h5T_015</td>
-<td>h5RT_015.html</td>
-<td></td>
-</tr>
-<tr>
-<td>13</td>
-<td>H5(PC)</td>
-<td>视频动画（单页）</td>
-<td>单个视频；自定义播放控件；</td>
-<td>h5T_008</td>
-<td>h5RT_008.html</td>
-<td></td>
-</tr>
-<tr>
-<td>14</td>
-<td>H5(PC)</td>
-<td>切换页面动画（二级）</td>
-<td>一级页面： h5T_009   点击切换按钮，切换html；可重复切换；可设置按钮显示当前选中状态；可设置默认子动画播放，默认不设置；  二级页面： h5T_009_1 带自定义播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_2 不带播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_3 普通序列帧动画；带返回按钮；可去掉返回按钮；</td>
-<td>h5T_009</td>
-<td>一级页面： h5RT_009.html  二级页面： h5RT_009_1.html h5RT_009_1.html h5RT_009_3.html</td>
-<td></td>
-</tr>
-<tr>
-<td>15</td>
-<td>H5(PC)</td>
-<td>顺序播放视频动画（二级）</td>
-<td>一级页面： h5T_011   第一遍强制按照列表顺序播放子页面动画；播完可以自由切换播放；集成页面控制栏按钮可以控制视频的播放暂停；此模板中去掉子页面里的关闭按钮；  二级页面： h5T_009_1 带自定义播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_2 不带播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_3 普通序列帧动画；带返回按钮；可去掉返回按钮；</td>
-<td>h5T_011</td>
-<td>一级页面： h5RT_011.html     二级页面：  h5RT_009_1.html   h5RT_009_1.html   h5RT_009_3.html</td>
-<td></td>
-</tr>
-<tr>
-<td>16</td>
-<td>H5(PC)</td>
-<td>切换页面动画（二级）</td>
-<td>一级页面： h5T_020        切换页面；  二级页面： XXYLG_020201a  点击切换MC；点击toggleBtn通知主页切换子页面；</td>
-<td>h5T_020</td>
-<td>一级页面： h5RT_020.html    二级页面： h5RT_020_1.html</td>
-<td></td>
-</tr>
-<tr>
-<td>17</td>
-<td>H5(PC)</td>
-<td>练习题动画</td>
-<td>单选题；无限次答题机会；</td>
-<td>eTest_Select1</td>
-<td>h5RT_ETest_Select.html</td>
-<td></td>
-</tr>
-<tr>
-<td>18</td>
-<td>H5(PC)</td>
-<td>练习题动画</td>
-<td>多选题；无限次答题机会；</td>
-<td>eTest_Select2</td>
-<td>h5RT_ETest_Select.html</td>
-<td></td>
-</tr>
-<tr>
-<td>19</td>
-<td>H5(PC)</td>
-<td>练习题动画</td>
-<td>拖动题；无限次答题机会；</td>
-<td>eTest_Drag</td>
-<td>h5RT_ETest_Drag.html</td>
-<td></td>
-</tr>
-<tr>
-<td>20</td>
-<td>H5(PC)</td>
-<td>整体测试</td>
-<td>一级页面： h5T_ZTCeshi              整体测试主页；可以全部的题目，也可以随机抽题，也可以显示题目进度条，都通过testConfig.xml进行配置；       二级页面： OTest_Start        开始页 OTest_Select1      单选题 OTest_Select2      多选题  OTest_Drag         拖动题 OTest_End          结束页</td>
-<td>ZTCeshi</td>
-<td>一级页面： h5T_ZTCeshi.html  二级页面： h5RT_ZTCeshi_Start.html h5RT_ZTCeshi_Select.html h5RT_ZTCeshi_Select.html h5RT_ZTCeshi_Drag.html h5RT_ZTCeshi_End.html</td>
-<td></td>
-</tr>
-<tr>
-<td>21</td>
-<td>H5(PC)</td>
-<td>检查步骤动画</td>
-<td>点击下一步按钮，跳到下一帧动画；一直点击一直跳，直到最后；</td>
-<td>stepNext</td>
-<td>h5RT_StepNext.html</td>
-<td></td>
-</tr>
-<tr>
-<td>22</td>
-<td>H5(PC)</td>
-<td>滚动条动画</td>
-<td>带滚动条的动画；</td>
-<td>scrollBar</td>
-<td>h5RT_ScrollBar.html</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
+    <title>Hello World</title>
+    <url>/2020/05/25/hello-world%202/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -874,6 +343,285 @@
 <h5 id="版本号：2-0-0"><a href="#版本号：2-0-0" class="headerlink" title="版本号：2.0.0"></a>版本号：2.0.0</h5><p>更新时间：<br>更新内容：<br>1.调整资源结构；<br>2.添加一些接口功能；<br>3.添加Flash交互模板（20种）；  </p>
 <hr>
 <h5 id="版本号：1-0-0"><a href="#版本号：1-0-0" class="headerlink" title="版本号：1.0.0"></a>版本号：1.0.0</h5><p>更新时间：<br>更新内容：<br>1.设计集成框架结构；<br>2.写集成页面H5版基本功能；  </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>H5模板</title>
+    <url>/2020/05/26/DResDevKit/03-course-An-H5/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>版本</th>
+<th>动画类型</th>
+<th>功能说明</th>
+<th>动画编号</th>
+<th>HTML发布模板</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>H5(PC)</td>
+<td>片头动画</td>
+<td>序列帧动画；如发布PC端，则设 移动端功能 下图层 为引导层； 如发布Mobile端，则去掉引导层；</td>
+<td>enter1</td>
+<td>h5RT_Enter1.html</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>H5(PC)</td>
+<td>片头动画</td>
+<td>带视频的动画；如发布PC端，则设 移动端功能 下图层 为引导层； 如发布Mobile端，则去掉引导层；</td>
+<td>h5T_Enter2</td>
+<td>h5RT_Enter2.html                     a</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>H5(PC)</td>
+<td>菜单目录</td>
+<td>类型：1级联动菜单；常用于广本项目；</td>
+<td>menu1</td>
+<td>h5RT_Menu1.html</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>H5(PC)</td>
+<td>菜单目录</td>
+<td>类型：2级联动菜单，并且有两种模式：①自由触发；②限制触发；常用于斯柯达项目；</td>
+<td>menu2</td>
+<td>h5RT_Menu2.html</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>H5(PC)</td>
+<td>菜单目录</td>
+<td>类型：3级联动菜单；常用于领克项目；</td>
+<td>menu3</td>
+<td>h5RT_Menu3.html</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>H5(PC)</td>
+<td>普通动画</td>
+<td>播完就自动跳下一个动画；</td>
+<td>h5T_001</td>
+<td>h5RT_001.html</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>H5(PC)</td>
+<td>普通动画</td>
+<td>带返回菜单按钮的普通动画；</td>
+<td>h5T_001_2</td>
+<td>h5RT_001.html</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>H5(PC)</td>
+<td>切换MC动画</td>
+<td>点击切换按钮，切换MC；可重复切换；双击当前按钮，对应动画会重置；</td>
+<td>h5T_003</td>
+<td>h5RT_003.html</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>H5(PC)</td>
+<td>切换MC动画</td>
+<td>点击切换按钮，切换MC；每个切换按钮只能点击一次；</td>
+<td>h5T_005</td>
+<td>h5RT_003.html</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>H5(PC)</td>
+<td>切换MC动画</td>
+<td>点击切换按钮，切换MC；每个切换按钮只能点击一次；MC显示后一直存在；</td>
+<td>h5T_005_2</td>
+<td>h5RT_003.html</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td>轮播小图动画</td>
+<td>点击小图，播放大图；</td>
+<td>h5T_006</td>
+<td>h5RT_006.html</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>H5(PC)</td>
+<td>MouseOver动画</td>
+<td>鼠标移上按钮，播放mc动画；移出按钮，关闭mc动画；</td>
+<td>h5T_015</td>
+<td>h5RT_015.html</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>H5(PC)</td>
+<td>视频动画（单页）</td>
+<td>单个视频；自定义播放控件；</td>
+<td>h5T_008</td>
+<td>h5RT_008.html</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>H5(PC)</td>
+<td>切换页面动画（二级）</td>
+<td>一级页面： h5T_009   点击切换按钮，切换html；可重复切换；可设置按钮显示当前选中状态；可设置默认子动画播放，默认不设置；  二级页面： h5T_009_1 带自定义播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_2 不带播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_3 普通序列帧动画；带返回按钮；可去掉返回按钮；</td>
+<td>h5T_009</td>
+<td>一级页面： h5RT_009.html  二级页面： h5RT_009_1.html h5RT_009_1.html h5RT_009_3.html</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>H5(PC)</td>
+<td>顺序播放视频动画（二级）</td>
+<td>一级页面： h5T_011   第一遍强制按照列表顺序播放子页面动画；播完可以自由切换播放；集成页面控制栏按钮可以控制视频的播放暂停；此模板中去掉子页面里的关闭按钮；  二级页面： h5T_009_1 带自定义播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_2 不带播放控件视频动画；带返回按钮；可去掉返回按钮； h5T_009_3 普通序列帧动画；带返回按钮；可去掉返回按钮；</td>
+<td>h5T_011</td>
+<td>一级页面： h5RT_011.html     二级页面：  h5RT_009_1.html   h5RT_009_1.html   h5RT_009_3.html</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>H5(PC)</td>
+<td>切换页面动画（二级）</td>
+<td>一级页面： h5T_020        切换页面；  二级页面： XXYLG_020201a  点击切换MC；点击toggleBtn通知主页切换子页面；</td>
+<td>h5T_020</td>
+<td>一级页面： h5RT_020.html    二级页面： h5RT_020_1.html</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>H5(PC)</td>
+<td>练习题动画</td>
+<td>单选题；无限次答题机会；</td>
+<td>eTest_Select1</td>
+<td>h5RT_ETest_Select.html</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>H5(PC)</td>
+<td>练习题动画</td>
+<td>多选题；无限次答题机会；</td>
+<td>eTest_Select2</td>
+<td>h5RT_ETest_Select.html</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>H5(PC)</td>
+<td>练习题动画</td>
+<td>拖动题；无限次答题机会；</td>
+<td>eTest_Drag</td>
+<td>h5RT_ETest_Drag.html</td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>H5(PC)</td>
+<td>整体测试</td>
+<td>一级页面： h5T_ZTCeshi              整体测试主页；可以全部的题目，也可以随机抽题，也可以显示题目进度条，都通过testConfig.xml进行配置；       二级页面： OTest_Start        开始页 OTest_Select1      单选题 OTest_Select2      多选题  OTest_Drag         拖动题 OTest_End          结束页</td>
+<td>ZTCeshi</td>
+<td>一级页面： h5T_ZTCeshi.html  二级页面： h5RT_ZTCeshi_Start.html h5RT_ZTCeshi_Select.html h5RT_ZTCeshi_Select.html h5RT_ZTCeshi_Drag.html h5RT_ZTCeshi_End.html</td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>H5(PC)</td>
+<td>检查步骤动画</td>
+<td>点击下一步按钮，跳到下一帧动画；一直点击一直跳，直到最后；</td>
+<td>stepNext</td>
+<td>h5RT_StepNext.html</td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>H5(PC)</td>
+<td>滚动条动画</td>
+<td>带滚动条的动画；</td>
+<td>scrollBar</td>
+<td>h5RT_ScrollBar.html</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 ]]></content>
   </entry>
   <entry>
@@ -1894,295 +1642,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>网络课件包</title>
-    <url>/2020/05/26/DResDevKit/08-course-projects/</url>
-    <content><![CDATA[<h4 id="一汽千分尺-H5-Mobile-Page"><a href="#一汽千分尺-H5-Mobile-Page" class="headerlink" title="一汽千分尺 H5 - Mobile Page"></a>一汽千分尺 H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/faw/micrometer/" target="_blank" rel="noopener">http://bmw.jingge.com/faw/micrometer/</a></p>
-<h4 id="广汽千分尺-H5-Mobile-Page"><a href="#广汽千分尺-H5-Mobile-Page" class="headerlink" title="广汽千分尺 H5 - Mobile Page"></a>广汽千分尺 H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/gac/trumpchi/micrometer/" target="_blank" rel="noopener">http://bmw.jingge.com/gac/trumpchi/micrometer/</a></p>
-<h4 id="斯柯达千分尺-H5-Mobile-Page"><a href="#斯柯达千分尺-H5-Mobile-Page" class="headerlink" title="斯柯达千分尺 H5 - Mobile Page"></a>斯柯达千分尺 H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/skoda/micrometer/" target="_blank" rel="noopener">http://bmw.jingge.com/skoda/micrometer/</a></p>
-<h4 id="领克03-H5-PC-Page"><a href="#领克03-H5-PC-Page" class="headerlink" title="领克03 H5 - PC Page"></a>领克03 H5 - PC Page</h4><p><a href="http://bmw.jingge.com/lynkco/course03/" target="_blank" rel="noopener">http://bmw.jingge.com/lynkco/course03/</a></p>
-<h4 id="红岩整车电路-H5-PC-Page"><a href="#红岩整车电路-H5-PC-Page" class="headerlink" title="红岩整车电路 H5 - PC Page"></a>红岩整车电路 H5 - PC Page</h4><p><a href="http://bmw.jingge.com/hongyan/course001/" target="_blank" rel="noopener">http://bmw.jingge.com/hongyan/course001/</a></p>
-<h4 id="多肉-美好生活-H5-PC-Page"><a href="#多肉-美好生活-H5-PC-Page" class="headerlink" title="多肉-美好生活 H5 - PC Page"></a>多肉-美好生活 H5 - PC Page</h4><p><a href="http://bmw.jingge.com/zziyiban/duorou/" target="_blank" rel="noopener">http://bmw.jingge.com/zziyiban/duorou/</a></p>
-<hr>
-<h2 id="Web软件应用"><a href="#Web软件应用" class="headerlink" title="Web软件应用"></a>Web软件应用</h2><h4 id="SKODA汽车故障诊断-WebGL"><a href="#SKODA汽车故障诊断-WebGL" class="headerlink" title="SKODA汽车故障诊断 WebGL"></a>SKODA汽车故障诊断 WebGL</h4><p><a href="http://bmw.jingge.com/skoda/zd3dwebgl/" target="_blank" rel="noopener">http://bmw.jingge.com/skoda/zd3dwebgl/</a></p>
-<h4 id="SKODA汽车故障诊断-H5"><a href="#SKODA汽车故障诊断-H5" class="headerlink" title="SKODA汽车故障诊断 H5"></a>SKODA汽车故障诊断 H5</h4><p><a href="http://bmw.jingge.com/skoda/zdh52d/" target="_blank" rel="noopener">http://bmw.jingge.com/skoda/zdh52d/</a></p>
-<h4 id="SKODA汽车零部件拆装-H5"><a href="#SKODA汽车零部件拆装-H5" class="headerlink" title="SKODA汽车零部件拆装 H5"></a>SKODA汽车零部件拆装 H5</h4><p><a href="http://bmw.jingge.com/skoda/czh5/h5T_CZ.html" target="_blank" rel="noopener">http://bmw.jingge.com/skoda/czh5/h5T_CZ.html</a></p>
-<h4 id="BMW全新BMW7系（G12）功能操作视频APP-Mobile-Page-Mobile-App（Android4-0-App）"><a href="#BMW全新BMW7系（G12）功能操作视频APP-Mobile-Page-Mobile-App（Android4-0-App）" class="headerlink" title="BMW全新BMW7系（G12）功能操作视频APP - Mobile Page , Mobile App（Android4.0 App）"></a>BMW全新BMW7系（G12）功能操作视频APP - Mobile Page , Mobile App（Android4.0 App）</h4><p><a href="http://bmw.jingge.com/bmw/BMW7G12ActionVideoAPP/" target="_blank" rel="noopener">http://bmw.jingge.com/bmw/BMW7G12ActionVideoAPP/</a></p>
-<hr>
-<h2 id="全景展馆"><a href="#全景展馆" class="headerlink" title="全景展馆"></a>全景展馆</h2><h4 id="湖南汽车博物馆-全景-web3d-PC-Page（这个只能在微信环境下打开，防止素材被查看）"><a href="#湖南汽车博物馆-全景-web3d-PC-Page（这个只能在微信环境下打开，防止素材被查看）" class="headerlink" title="湖南汽车博物馆 全景 web3d  - PC Page（这个只能在微信环境下打开，防止素材被查看）"></a>湖南汽车博物馆 全景 web3d  - PC Page（这个只能在微信环境下打开，防止素材被查看）</h4><p><a href="http://bmw.jingge.com/hunan/automuseum/" target="_blank" rel="noopener">http://bmw.jingge.com/hunan/automuseum/</a></p>
-<h4 id="湖南汽车博物馆-全景-web3d-PC-Page"><a href="#湖南汽车博物馆-全景-web3d-PC-Page" class="headerlink" title="湖南汽车博物馆 全景 web3d - PC Page"></a>湖南汽车博物馆 全景 web3d - PC Page</h4><p><a href="http://bmw.jingge.com/hunan/automuseum/index-nwx.html" target="_blank" rel="noopener">http://bmw.jingge.com/hunan/automuseum/index-nwx.html</a></p>
-<h4 id="湖南汽车工程职业学院展馆-全景-web3d-PC-Page"><a href="#湖南汽车工程职业学院展馆-全景-web3d-PC-Page" class="headerlink" title="湖南汽车工程职业学院展馆 全景 web3d - PC Page"></a>湖南汽车工程职业学院展馆 全景 web3d - PC Page</h4><p><a href="http://bmw.jingge.com/hunan/automuseum-2/" target="_blank" rel="noopener">http://bmw.jingge.com/hunan/automuseum-2/</a></p>
-<hr>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h4 id="Benz奔驰答题小游戏Mobile-Demo-H5-Mobile-Page"><a href="#Benz奔驰答题小游戏Mobile-Demo-H5-Mobile-Page" class="headerlink" title="Benz奔驰答题小游戏Mobile Demo H5 - Mobile Page"></a>Benz奔驰答题小游戏Mobile Demo H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/benz/mobile-demo/" target="_blank" rel="noopener">http://bmw.jingge.com/benz/mobile-demo/</a></p>
-<h4 id="BMW保养套餐-H5-Mobile-Page"><a href="#BMW保养套餐-H5-Mobile-Page" class="headerlink" title="BMW保养套餐 H5 - Mobile Page"></a>BMW保养套餐 H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/bmw/MaintainPlan/" target="_blank" rel="noopener">http://bmw.jingge.com/bmw/MaintainPlan/</a></p>
-<h4 id="H5PracticeEditor-软件网站-PC-Page-Mobile-Page"><a href="#H5PracticeEditor-软件网站-PC-Page-Mobile-Page" class="headerlink" title="H5PracticeEditor 软件网站 - PC Page , Mobile Page"></a>H5PracticeEditor 软件网站 - PC Page , Mobile Page</h4><p><a href="https://pxim.github.io/H5PracticeEditor/website/" target="_blank" rel="noopener">https://pxim.github.io/H5PracticeEditor/website/</a></p>
-<h4 id="可视化编辑器"><a href="#可视化编辑器" class="headerlink" title="可视化编辑器"></a>可视化编辑器</h4><p><a href="https://github.com/pxim/H5PracticeEditor" target="_blank" rel="noopener">https://github.com/pxim/H5PracticeEditor</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>课件svn</title>
-    <url>/2020/05/26/DResDevKit/09-course-svn/</url>
-    <content><![CDATA[<p>斯柯达0.3.0版本课件集成包<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02</a> 课件集成包/斯柯达/v0.3.0  </p>
-<p>斯柯达0.3.0 版本H5动画模板<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/01" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/01</a> 动画模板/H5动画页面 v0.3.0  </p>
-<p>领克03 ， 需要兼容PC和Mobile端的课件集成包<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02</a> 课件集成包/领克/LYNKCO 03  </p>
-<p>领克03 ， 需要兼容PC和Mobile端的H5动画模板<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/01" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/01</a> 动画模板/H5动画页面    </p>
-<p>网页本地预览工具<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/03" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/03</a> 辅助工具/网页本地预览工具  </p>
-<p>编辑XML的工具<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/03" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/03</a> 辅助工具/编辑XML的工具  </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>课件测试地址</title>
-    <url>/2020/05/26/DResDevKit/10-course-test-address/</url>
-    <content><![CDATA[<blockquote>
-<p>广本<br><a href="http://bmw.jingge.com/guangqi-honda/course-test" target="_blank" rel="noopener">http://bmw.jingge.com/guangqi-honda/course-test</a>  </p>
-</blockquote>
-<hr>
-<blockquote>
-<p>领克<br><a href="http://bmw.jingge.com/lynkco/course03/" target="_blank" rel="noopener">http://bmw.jingge.com/lynkco/course03/</a><br><a href="http://bmw.jingge.com/lynkco/course03/content/h5T_ZTCeshi/h5T_ZTCeshi.html" target="_blank" rel="noopener">http://bmw.jingge.com/lynkco/course03/content/h5T_ZTCeshi/h5T_ZTCeshi.html</a><br><a href="http://bmw.jingge.com/lynkco/course03/content/LC-010101a/LC-010101a.html" target="_blank" rel="noopener">http://bmw.jingge.com/lynkco/course03/content/LC-010101a/LC-010101a.html</a>  </p>
-</blockquote>
-]]></content>
-  </entry>
-  <entry>
-    <title>DResDevKit/12-course-config.xml-v3.0.0</title>
-    <url>/2020/05/26/DResDevKit/12-course-config.xml-v3.0.0/</url>
-    <content><![CDATA[<hr>
-<h2 id="title-课件包-——-配置表说明"><a href="#title-课件包-——-配置表说明" class="headerlink" title=" title: 课件包 —— 配置表说明"></a> title: 课件包 —— 配置表说明</h2><h3 id="config-xml"><a href="#config-xml" class="headerlink" title="config.xml"></a>config.xml</h3><blockquote>
-<p>课件信息配置表<br>root → lesson 节点的属性</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">id</td>
-<td align="left">课程id，每个课程的id都不能相同；命名规则 YJ_完整课程名称拼音首字母_年月日时分秒 例如：一汽-大众 EA211发动机 正时齿形皮带拆装 应该为：YJ_DZEA211FDJZSCXPDCZ_20180420152501</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="left">课程的完整名字</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">platformType</td>
-<td align="left">数据储存对接平台 0： 普通网页无缓存；1: 普通网页游览器缓存； 2： 广本SCORM1.2标准的课件，和LMS平台对接；3：表示和斯柯达PC客户端对接 4:表示和领克平台对接</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isOrder</td>
-<td align="left">是否强制按照线性顺序学习 true：强制学习， false：不强制学习</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isPlayIntro</td>
-<td align="left">是否播放片头；值：true false</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isLocation</td>
-<td align="left">打开课件初始化的时候，是否定位上次学习的课件节点</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">locType</td>
-<td align="left">定位的类型；1 播放完片头才开始定位课件（PC，Mobile都适用）；2 进入课件就立即定位课件，无需播放片头（只适用PC端部分游览器）；</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isMenuState</td>
-<td align="left">是否开启目录上显示课件学习状态功能；值：true false</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isControlBar</td>
-<td align="left">课件初始化的时候，是否显示 播放器控制栏；值：true false</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">totalPageNum</td>
-<td align="left">课件总页数，总的item节点数量，默认值 0</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">nowPageNum</td>
-<td align="left">当前课件页码, 默认 -1</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">lessonProgress</td>
-<td align="left">课件总体进度，填表的时候保存默认值 0</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">passScore</td>
-<td align="left">课件通过分数</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">testScore</td>
-<td align="left">课件测试分数，默认 0</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<hr>
-<blockquote>
-<p>root → item 节点的属性</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">menuItemId</td>
-<td align="left">菜单按钮的实例名</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">menuStatus</td>
-<td align="left">课程章节学习状态</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">slideId</td>
-<td align="left">课件id</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="left">菜单名称</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">type</td>
-<td align="left">课件类型：0 mp4视频-显示控制栏（功能齐全）； 1普通序列帧动画-显示控制栏（功能齐全） ； 2 交互动画-显示控制栏（禁用播放，暂停，声音功能）； 3 交互动画-显示控制栏（禁用播放，暂停，声音功能；下一页按钮 变成 开始整体测试按钮）； 4 交互动画-显示控制栏（禁用播放，暂停，声音功能；下一页按钮 变成 返回菜单按钮）； 5 交互动画-隐藏控制栏； PS：播放类交互动画 可以 算作 类型2；</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">slideStatus</td>
-<td align="left">课程状态：notAttempted 未学习 inProgress 正在学习 completed 已经学完</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isYellow</td>
-<td align="left">当前页面完成后，是否跳黄：false 不跳黄； true 跳黄；</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">slideProgress</td>
-<td align="left">当前课件的进度</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">score</td>
-<td align="left">当前课件所占分数</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">skdProgress</td>
-<td align="left">斯柯达类型课件的课件进度</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">displayText</td>
-<td align="left">配音文本</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">bTitle</td>
-<td align="left">课件章节的大标题</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">lTitle</td>
-<td align="left">课件章节的小标题</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">x</td>
-<td align="left">当前资源在集成页面中的x坐标</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">y</td>
-<td align="left">当前资源在集成页面中的y坐标</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">width</td>
-<td align="left">当前资源在集成页面中的width值</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">height</td>
-<td align="left">当前资源在集成页面中的height值</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<hr>
-<h3 id="注：如果要单独配置整体测试模块；则："><a href="#注：如果要单独配置整体测试模块；则：" class="headerlink" title="注：如果要单独配置整体测试模块；则："></a>注：如果要单独配置整体测试模块；则：</h3><ol>
-<li>删除enter，menu节点  </li>
-<li>lesson节点中 isPlayIntro值设为false；isLocation值设为false；isMenuStatus值设为false；isControlBar值设为false；  </li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>准备删除的模板</title>
-    <url>/2020/05/26/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/</url>
-    <content><![CDATA[<p>动画：<br>h5T_Menu2<br>h5T_016<br>h5T_017<br>h5T_018<br>h5T_008<br>h5T_008_2  </p>
-<p>RT：<br>h5RT_Menu2.html<br>h5RT_ZTCeshi_MultiSelect.html<br>h5RT_ZTCeshi_SingleSelect.html</p>
-<p>代码：<br>menu_global.js<br>overallTestSingleSelect.js<br>overallTestMultiSelect.js<br>overallTestDrag2.js<br>overallTestTip2.js<br>overallTestMain2.js<br>overallTestSelect.js<br>exercisesSingleSelect.js<br>exercisesMultiSelect.js<br>exercisesDrag.js<br>comAni2.js<br>comSubAni.js<br>switchMC2.js<br>showMC.js<br>videoAni.js<br>h5code/component/CustomVideoPlayer.js<br>videoAni2.js<br>subPage2.js<br>menuDir.js </p>
-<p>已修改的模板代码：<br>comAni.js<br>switchMC.js<br>loopPlayMC.js  </p>
-<p>还需修改的模板：<br>h5T_012  </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>全景展厅WebGL</title>
-    <url>/2020/05/26/DResDevKit/pano/</url>
-    <content><![CDATA[<h2 id="配置表说明"><a href="#配置表说明" class="headerlink" title="配置表说明"></a>配置表说明</h2><hr>
-<h2 id="版本更新日志"><a href="#版本更新日志" class="headerlink" title="版本更新日志"></a>版本更新日志</h2><h5 id="外链：http-bmw-jingge-com-szd-automuseum-web"><a href="#外链：http-bmw-jingge-com-szd-automuseum-web" class="headerlink" title="外链：http://bmw.jingge.com/szd/automuseum/web/"></a>外链：<a href="http://bmw.jingge.com/szd/automuseum/web/" target="_blank" rel="noopener">http://bmw.jingge.com/szd/automuseum/web/</a></h5><h5 id="版本号：1-5-2"><a href="#版本号：1-5-2" class="headerlink" title="版本号：1.5.2"></a>版本号：1.5.2</h5><p>更新时间：2020-05-06<br>更新内容：    </p>
-<ol>
-<li><p>修改  各种热点，导航小地图提示文字；</p>
-</li>
-<li><p>修改  全屏造成的一些功能异常（logo，游览量文字，热点hover文字）；</p>
-</li>
-<li><p>添加  播放资源页时，背景音乐音量 调为0.5；关闭资源页，恢复为1；</p>
-</li>
-<li><p>禁用  播放资源页时，Chrome上默认视频控件自带的下载，画中画按钮；</p>
-</li>
-<li><p>添加  知识问答 热点；</p>
-</li>
-</ol>
-<h5 id="版本号：1-5-0"><a href="#版本号：1-5-0" class="headerlink" title="版本号：1.5.0"></a>版本号：1.5.0</h5><p>更新时间：2020-04-30<br>更新内容：    </p>
-<ol>
-<li><p>更新 首页，资源页，讲解员小精灵动画，声音等资源；</p>
-</li>
-<li><p>更新 各种热点坐标，缩放；全景图初始化角度；等数据；</p>
-</li>
-<li><p>更新 讲解员小精灵功能；预加载页，加载页css样式；</p>
-</li>
-<li><p>添加 Tc模板（tab按钮切换视频功能）；</p>
-</li>
-<li><p>更新 其他功能；</p>
-</li>
-</ol>
-<h5 id="版本号：1-3-0"><a href="#版本号：1-3-0" class="headerlink" title="版本号：1.3.0"></a>版本号：1.3.0</h5><p>更新时间：2020-04-10<br>更新内容：    </p>
-<ol>
-<li>添加 全景展厅web端的浏览统计相关功能（总PV，昨日IP，昨日PV，今日IP，今日PV）；</li>
-<li>添加 全景展厅web端里后台管理页面，浏览统计概况页面链接相关功能；</li>
-<li>修改 全景展厅web端里资源热点，转场热点的文字提示效果；</li>
-<li>修改 后台管理系统server端相关代码；</li>
-</ol>
-<hr>
-]]></content>
-  </entry>
-  <entry>
     <title>拆装动画模板</title>
     <url>/2020/05/26/DResDevKit/04-course-CZ-H5/</url>
     <content><![CDATA[<ol>
@@ -2485,6 +1944,547 @@
 <td align="left"></td>
 </tr>
 </tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>网络课件包</title>
+    <url>/2020/05/26/DResDevKit/08-course-projects/</url>
+    <content><![CDATA[<h4 id="一汽千分尺-H5-Mobile-Page"><a href="#一汽千分尺-H5-Mobile-Page" class="headerlink" title="一汽千分尺 H5 - Mobile Page"></a>一汽千分尺 H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/faw/micrometer/" target="_blank" rel="noopener">http://bmw.jingge.com/faw/micrometer/</a></p>
+<h4 id="广汽千分尺-H5-Mobile-Page"><a href="#广汽千分尺-H5-Mobile-Page" class="headerlink" title="广汽千分尺 H5 - Mobile Page"></a>广汽千分尺 H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/gac/trumpchi/micrometer/" target="_blank" rel="noopener">http://bmw.jingge.com/gac/trumpchi/micrometer/</a></p>
+<h4 id="斯柯达千分尺-H5-Mobile-Page"><a href="#斯柯达千分尺-H5-Mobile-Page" class="headerlink" title="斯柯达千分尺 H5 - Mobile Page"></a>斯柯达千分尺 H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/skoda/micrometer/" target="_blank" rel="noopener">http://bmw.jingge.com/skoda/micrometer/</a></p>
+<h4 id="领克03-H5-PC-Page"><a href="#领克03-H5-PC-Page" class="headerlink" title="领克03 H5 - PC Page"></a>领克03 H5 - PC Page</h4><p><a href="http://bmw.jingge.com/lynkco/course03/" target="_blank" rel="noopener">http://bmw.jingge.com/lynkco/course03/</a></p>
+<h4 id="红岩整车电路-H5-PC-Page"><a href="#红岩整车电路-H5-PC-Page" class="headerlink" title="红岩整车电路 H5 - PC Page"></a>红岩整车电路 H5 - PC Page</h4><p><a href="http://bmw.jingge.com/hongyan/course001/" target="_blank" rel="noopener">http://bmw.jingge.com/hongyan/course001/</a></p>
+<h4 id="多肉-美好生活-H5-PC-Page"><a href="#多肉-美好生活-H5-PC-Page" class="headerlink" title="多肉-美好生活 H5 - PC Page"></a>多肉-美好生活 H5 - PC Page</h4><p><a href="http://bmw.jingge.com/zziyiban/duorou/" target="_blank" rel="noopener">http://bmw.jingge.com/zziyiban/duorou/</a></p>
+<hr>
+<h2 id="Web软件应用"><a href="#Web软件应用" class="headerlink" title="Web软件应用"></a>Web软件应用</h2><h4 id="SKODA汽车故障诊断-WebGL"><a href="#SKODA汽车故障诊断-WebGL" class="headerlink" title="SKODA汽车故障诊断 WebGL"></a>SKODA汽车故障诊断 WebGL</h4><p><a href="http://bmw.jingge.com/skoda/zd3dwebgl/" target="_blank" rel="noopener">http://bmw.jingge.com/skoda/zd3dwebgl/</a></p>
+<h4 id="SKODA汽车故障诊断-H5"><a href="#SKODA汽车故障诊断-H5" class="headerlink" title="SKODA汽车故障诊断 H5"></a>SKODA汽车故障诊断 H5</h4><p><a href="http://bmw.jingge.com/skoda/zdh52d/" target="_blank" rel="noopener">http://bmw.jingge.com/skoda/zdh52d/</a></p>
+<h4 id="SKODA汽车零部件拆装-H5"><a href="#SKODA汽车零部件拆装-H5" class="headerlink" title="SKODA汽车零部件拆装 H5"></a>SKODA汽车零部件拆装 H5</h4><p><a href="http://bmw.jingge.com/skoda/czh5/h5T_CZ.html" target="_blank" rel="noopener">http://bmw.jingge.com/skoda/czh5/h5T_CZ.html</a></p>
+<h4 id="BMW全新BMW7系（G12）功能操作视频APP-Mobile-Page-Mobile-App（Android4-0-App）"><a href="#BMW全新BMW7系（G12）功能操作视频APP-Mobile-Page-Mobile-App（Android4-0-App）" class="headerlink" title="BMW全新BMW7系（G12）功能操作视频APP - Mobile Page , Mobile App（Android4.0 App）"></a>BMW全新BMW7系（G12）功能操作视频APP - Mobile Page , Mobile App（Android4.0 App）</h4><p><a href="http://bmw.jingge.com/bmw/BMW7G12ActionVideoAPP/" target="_blank" rel="noopener">http://bmw.jingge.com/bmw/BMW7G12ActionVideoAPP/</a></p>
+<hr>
+<h2 id="全景展馆"><a href="#全景展馆" class="headerlink" title="全景展馆"></a>全景展馆</h2><h4 id="湖南汽车博物馆-全景-web3d-PC-Page（这个只能在微信环境下打开，防止素材被查看）"><a href="#湖南汽车博物馆-全景-web3d-PC-Page（这个只能在微信环境下打开，防止素材被查看）" class="headerlink" title="湖南汽车博物馆 全景 web3d  - PC Page（这个只能在微信环境下打开，防止素材被查看）"></a>湖南汽车博物馆 全景 web3d  - PC Page（这个只能在微信环境下打开，防止素材被查看）</h4><p><a href="http://bmw.jingge.com/hunan/automuseum/" target="_blank" rel="noopener">http://bmw.jingge.com/hunan/automuseum/</a></p>
+<h4 id="湖南汽车博物馆-全景-web3d-PC-Page"><a href="#湖南汽车博物馆-全景-web3d-PC-Page" class="headerlink" title="湖南汽车博物馆 全景 web3d - PC Page"></a>湖南汽车博物馆 全景 web3d - PC Page</h4><p><a href="http://bmw.jingge.com/hunan/automuseum/index-nwx.html" target="_blank" rel="noopener">http://bmw.jingge.com/hunan/automuseum/index-nwx.html</a></p>
+<h4 id="湖南汽车工程职业学院展馆-全景-web3d-PC-Page"><a href="#湖南汽车工程职业学院展馆-全景-web3d-PC-Page" class="headerlink" title="湖南汽车工程职业学院展馆 全景 web3d - PC Page"></a>湖南汽车工程职业学院展馆 全景 web3d - PC Page</h4><p><a href="http://bmw.jingge.com/hunan/automuseum-2/" target="_blank" rel="noopener">http://bmw.jingge.com/hunan/automuseum-2/</a></p>
+<hr>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h4 id="Benz奔驰答题小游戏Mobile-Demo-H5-Mobile-Page"><a href="#Benz奔驰答题小游戏Mobile-Demo-H5-Mobile-Page" class="headerlink" title="Benz奔驰答题小游戏Mobile Demo H5 - Mobile Page"></a>Benz奔驰答题小游戏Mobile Demo H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/benz/mobile-demo/" target="_blank" rel="noopener">http://bmw.jingge.com/benz/mobile-demo/</a></p>
+<h4 id="BMW保养套餐-H5-Mobile-Page"><a href="#BMW保养套餐-H5-Mobile-Page" class="headerlink" title="BMW保养套餐 H5 - Mobile Page"></a>BMW保养套餐 H5 - Mobile Page</h4><p><a href="http://bmw.jingge.com/bmw/MaintainPlan/" target="_blank" rel="noopener">http://bmw.jingge.com/bmw/MaintainPlan/</a></p>
+<h4 id="H5PracticeEditor-软件网站-PC-Page-Mobile-Page"><a href="#H5PracticeEditor-软件网站-PC-Page-Mobile-Page" class="headerlink" title="H5PracticeEditor 软件网站 - PC Page , Mobile Page"></a>H5PracticeEditor 软件网站 - PC Page , Mobile Page</h4><p><a href="https://pxim.github.io/H5PracticeEditor/website/" target="_blank" rel="noopener">https://pxim.github.io/H5PracticeEditor/website/</a></p>
+<h4 id="可视化编辑器"><a href="#可视化编辑器" class="headerlink" title="可视化编辑器"></a>可视化编辑器</h4><p><a href="https://github.com/pxim/H5PracticeEditor" target="_blank" rel="noopener">https://github.com/pxim/H5PracticeEditor</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>课件svn</title>
+    <url>/2020/05/26/DResDevKit/09-course-svn/</url>
+    <content><![CDATA[<p>斯柯达0.3.0版本课件集成包<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02</a> 课件集成包/斯柯达/v0.3.0  </p>
+<p>斯柯达0.3.0 版本H5动画模板<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/01" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/01</a> 动画模板/H5动画页面 v0.3.0  </p>
+<p>领克03 ， 需要兼容PC和Mobile端的课件集成包<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02</a> 课件集成包/领克/LYNKCO 03  </p>
+<p>领克03 ， 需要兼容PC和Mobile端的H5动画模板<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/01" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/01</a> 动画模板/H5动画页面    </p>
+<p>网页本地预览工具<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/03" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/03</a> 辅助工具/网页本地预览工具  </p>
+<p>编辑XML的工具<br><a href="https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/03" target="_blank" rel="noopener">https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/03</a> 辅助工具/编辑XML的工具  </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Flash模板</title>
+    <url>/2020/05/26/DResDevKit/02-course-An-Flash/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>版本</th>
+<th>动画类型</th>
+<th>功能说明</th>
+<th>动画编号</th>
+<th>HTML发布模板</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Flash</td>
+<td>片头动画</td>
+<td></td>
+<td>enter</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Flash</td>
+<td>普通动画</td>
+<td>播完就自动跳下一个动画；</td>
+<td>template_001</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Flash</td>
+<td>普通动画</td>
+<td>播完会跳黄，不会自动跳下一个动画；</td>
+<td>template_002</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Flash</td>
+<td>视频动画（单个）</td>
+<td>类似播放视频的方式，播放序列动画；有控制栏；可设置是否自动播放；播完会跳黄；</td>
+<td>template_003</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Flash</td>
+<td>视频动画（单个）</td>
+<td>开始时，页面中间多一个大的开始按钮；</td>
+<td>template_012</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Flash</td>
+<td>视频动画（带二级动画）</td>
+<td>包含2个模板（主文件，二级视频页面模板）； 基础功能同上；添加 视频动画切换；第一遍强制播完；</td>
+<td>template_004</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题单选题；</td>
+<td>template_006</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题多选题；判断结果有文字提示；</td>
+<td>template_007</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题多选题；判断结果有提示框，带关闭按钮；</td>
+<td>template_011</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题全选题；</td>
+<td>template_008</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题拖动题；判断结果有文字提示；</td>
+<td>template_009</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Flash</td>
+<td>练习题动画</td>
+<td>练习题拖动题；判断结果有提示框，带关闭按钮；</td>
+<td>template_010</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Flash</td>
+<td>切换页面动画</td>
+<td>有切换按钮，切换MC；</td>
+<td>template_014</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>普通子动画；第一遍强制播放；不带返回；</td>
+<td>template_015</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>普通子动画；带返回；</td>
+<td>template_016</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>强制学习；带返回；带上一页，下一页功能；</td>
+<td>template_017</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>普通子动画；切换页面；不带返回；</td>
+<td>template_018</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>切换页面；不带返回；保留按钮点击记录；</td>
+<td>template_019</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>切换页面；带返回；允许控制播放；</td>
+<td>template_020</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20</td>
+<td>Flash</td>
+<td>切换页面动画（带二级动画）</td>
+<td>切换页面；不允许控制播放；</td>
+<td>template_021</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>Flash</td>
+<td>交互动画</td>
+<td>点击切换按钮，切换MC；可重复切换；</td>
+<td>template_005</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>Flash</td>
+<td>其他交互动画</td>
+<td>单击按钮，显示MC；按钮只能点一次；MC显示后一直存在；</td>
+<td>template_013</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td>Flash</td>
+<td>整体测试（带二级动画）</td>
+<td>包含6个模板（整体测试主文件，Start，End，  整体测试单选题模板,整体测试多选题模板，整体测试拖动题模板）</td>
+<td>template_ZTCeshi</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td>Flash</td>
+<td>整体测试（二级）- 随机抽题</td>
+<td>同上；添加随机抽题功能；（SKD版本Flash代码未修改）；</td>
+<td>template_ZTCeshi_Suiji</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>Flash</td>
+<td>拆装动画</td>
+<td>拆装动画-大石头那边的SKD和YQ；</td>
+<td>template_CZ</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>Flash</td>
+<td>MouseOver动画</td>
+<td>鼠标移上按钮，播放mc动画；移出按钮，关闭mc动画；</td>
+<td>template_022</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>DResDevKit/12-course-config.xml-v3.0.0</title>
+    <url>/2020/05/26/DResDevKit/12-course-config.xml-v3.0.0/</url>
+    <content><![CDATA[<hr>
+<h2 id="title-课件包-——-配置表说明"><a href="#title-课件包-——-配置表说明" class="headerlink" title=" title: 课件包 —— 配置表说明"></a> title: 课件包 —— 配置表说明</h2><h3 id="config-xml"><a href="#config-xml" class="headerlink" title="config.xml"></a>config.xml</h3><blockquote>
+<p>课件信息配置表<br>root → lesson 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">id</td>
+<td align="left">课程id，每个课程的id都不能相同；命名规则 YJ_完整课程名称拼音首字母_年月日时分秒 例如：一汽-大众 EA211发动机 正时齿形皮带拆装 应该为：YJ_DZEA211FDJZSCXPDCZ_20180420152501</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">课程的完整名字</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">platformType</td>
+<td align="left">数据储存对接平台 0： 普通网页无缓存；1: 普通网页游览器缓存； 2： 广本SCORM1.2标准的课件，和LMS平台对接；3：表示和斯柯达PC客户端对接 4:表示和领克平台对接</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">isOrder</td>
+<td align="left">是否强制按照线性顺序学习 true：强制学习， false：不强制学习</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">isPlayIntro</td>
+<td align="left">是否播放片头；值：true false</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">isLocation</td>
+<td align="left">打开课件初始化的时候，是否定位上次学习的课件节点</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">locType</td>
+<td align="left">定位的类型；1 播放完片头才开始定位课件（PC，Mobile都适用）；2 进入课件就立即定位课件，无需播放片头（只适用PC端部分游览器）；</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">isMenuState</td>
+<td align="left">是否开启目录上显示课件学习状态功能；值：true false</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">isControlBar</td>
+<td align="left">课件初始化的时候，是否显示 播放器控制栏；值：true false</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">totalPageNum</td>
+<td align="left">课件总页数，总的item节点数量，默认值 0</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">nowPageNum</td>
+<td align="left">当前课件页码, 默认 -1</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">lessonProgress</td>
+<td align="left">课件总体进度，填表的时候保存默认值 0</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">passScore</td>
+<td align="left">课件通过分数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">testScore</td>
+<td align="left">课件测试分数，默认 0</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<hr>
+<blockquote>
+<p>root → item 节点的属性</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">menuItemId</td>
+<td align="left">菜单按钮的实例名</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">menuStatus</td>
+<td align="left">课程章节学习状态</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">slideId</td>
+<td align="left">课件id</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">菜单名称</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">type</td>
+<td align="left">课件类型：0 mp4视频-显示控制栏（功能齐全）； 1普通序列帧动画-显示控制栏（功能齐全） ； 2 交互动画-显示控制栏（禁用播放，暂停，声音功能）； 3 交互动画-显示控制栏（禁用播放，暂停，声音功能；下一页按钮 变成 开始整体测试按钮）； 4 交互动画-显示控制栏（禁用播放，暂停，声音功能；下一页按钮 变成 返回菜单按钮）； 5 交互动画-隐藏控制栏； PS：播放类交互动画 可以 算作 类型2；</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">slideStatus</td>
+<td align="left">课程状态：notAttempted 未学习 inProgress 正在学习 completed 已经学完</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">isYellow</td>
+<td align="left">当前页面完成后，是否跳黄：false 不跳黄； true 跳黄；</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">slideProgress</td>
+<td align="left">当前课件的进度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">score</td>
+<td align="left">当前课件所占分数</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">skdProgress</td>
+<td align="left">斯柯达类型课件的课件进度</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">displayText</td>
+<td align="left">配音文本</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">bTitle</td>
+<td align="left">课件章节的大标题</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">lTitle</td>
+<td align="left">课件章节的小标题</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">x</td>
+<td align="left">当前资源在集成页面中的x坐标</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">y</td>
+<td align="left">当前资源在集成页面中的y坐标</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">width</td>
+<td align="left">当前资源在集成页面中的width值</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">height</td>
+<td align="left">当前资源在集成页面中的height值</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="注：如果要单独配置整体测试模块；则："><a href="#注：如果要单独配置整体测试模块；则：" class="headerlink" title="注：如果要单独配置整体测试模块；则："></a>注：如果要单独配置整体测试模块；则：</h3><ol>
+<li>删除enter，menu节点  </li>
+<li>lesson节点中 isPlayIntro值设为false；isLocation值设为false；isMenuStatus值设为false；isControlBar值设为false；  </li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>课件测试地址</title>
+    <url>/2020/05/26/DResDevKit/10-course-test-address/</url>
+    <content><![CDATA[<blockquote>
+<p>广本<br><a href="http://bmw.jingge.com/guangqi-honda/course-test" target="_blank" rel="noopener">http://bmw.jingge.com/guangqi-honda/course-test</a>  </p>
+</blockquote>
+<hr>
+<blockquote>
+<p>领克<br><a href="http://bmw.jingge.com/lynkco/course03/" target="_blank" rel="noopener">http://bmw.jingge.com/lynkco/course03/</a><br><a href="http://bmw.jingge.com/lynkco/course03/content/h5T_ZTCeshi/h5T_ZTCeshi.html" target="_blank" rel="noopener">http://bmw.jingge.com/lynkco/course03/content/h5T_ZTCeshi/h5T_ZTCeshi.html</a><br><a href="http://bmw.jingge.com/lynkco/course03/content/LC-010101a/LC-010101a.html" target="_blank" rel="noopener">http://bmw.jingge.com/lynkco/course03/content/LC-010101a/LC-010101a.html</a>  </p>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
+    <title>准备删除的模板</title>
+    <url>/2020/05/26/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<p>动画：<br>h5T_Menu2<br>h5T_016<br>h5T_017<br>h5T_018<br>h5T_008<br>h5T_008_2  </p>
+<p>RT：<br>h5RT_Menu2.html<br>h5RT_ZTCeshi_MultiSelect.html<br>h5RT_ZTCeshi_SingleSelect.html</p>
+<p>代码：<br>menu_global.js<br>overallTestSingleSelect.js<br>overallTestMultiSelect.js<br>overallTestDrag2.js<br>overallTestTip2.js<br>overallTestMain2.js<br>overallTestSelect.js<br>exercisesSingleSelect.js<br>exercisesMultiSelect.js<br>exercisesDrag.js<br>comAni2.js<br>comSubAni.js<br>switchMC2.js<br>showMC.js<br>videoAni.js<br>h5code/component/CustomVideoPlayer.js<br>videoAni2.js<br>subPage2.js<br>menuDir.js </p>
+<p>已修改的模板代码：<br>comAni.js<br>switchMC.js<br>loopPlayMC.js  </p>
+<p>还需修改的模板：<br>h5T_012  </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>全景展厅WebGL</title>
+    <url>/2020/05/26/DResDevKit/pano/</url>
+    <content><![CDATA[<h2 id="配置表说明"><a href="#配置表说明" class="headerlink" title="配置表说明"></a>配置表说明</h2><hr>
+<h2 id="版本更新日志"><a href="#版本更新日志" class="headerlink" title="版本更新日志"></a>版本更新日志</h2><h5 id="外链：http-bmw-jingge-com-szd-automuseum-web"><a href="#外链：http-bmw-jingge-com-szd-automuseum-web" class="headerlink" title="外链：http://bmw.jingge.com/szd/automuseum/web/"></a>外链：<a href="http://bmw.jingge.com/szd/automuseum/web/" target="_blank" rel="noopener">http://bmw.jingge.com/szd/automuseum/web/</a></h5><h5 id="版本号：1-5-2"><a href="#版本号：1-5-2" class="headerlink" title="版本号：1.5.2"></a>版本号：1.5.2</h5><p>更新时间：2020-05-06<br>更新内容：    </p>
+<ol>
+<li><p>修改  各种热点，导航小地图提示文字；</p>
+</li>
+<li><p>修改  全屏造成的一些功能异常（logo，游览量文字，热点hover文字）；</p>
+</li>
+<li><p>添加  播放资源页时，背景音乐音量 调为0.5；关闭资源页，恢复为1；</p>
+</li>
+<li><p>禁用  播放资源页时，Chrome上默认视频控件自带的下载，画中画按钮；</p>
+</li>
+<li><p>添加  知识问答 热点；</p>
+</li>
+</ol>
+<h5 id="版本号：1-5-0"><a href="#版本号：1-5-0" class="headerlink" title="版本号：1.5.0"></a>版本号：1.5.0</h5><p>更新时间：2020-04-30<br>更新内容：    </p>
+<ol>
+<li><p>更新 首页，资源页，讲解员小精灵动画，声音等资源；</p>
+</li>
+<li><p>更新 各种热点坐标，缩放；全景图初始化角度；等数据；</p>
+</li>
+<li><p>更新 讲解员小精灵功能；预加载页，加载页css样式；</p>
+</li>
+<li><p>添加 Tc模板（tab按钮切换视频功能）；</p>
+</li>
+<li><p>更新 其他功能；</p>
+</li>
+</ol>
+<h5 id="版本号：1-3-0"><a href="#版本号：1-3-0" class="headerlink" title="版本号：1.3.0"></a>版本号：1.3.0</h5><p>更新时间：2020-04-10<br>更新内容：    </p>
+<ol>
+<li>添加 全景展厅web端的浏览统计相关功能（总PV，昨日IP，昨日PV，今日IP，今日PV）；</li>
+<li>添加 全景展厅web端里后台管理页面，浏览统计概况页面链接相关功能；</li>
+<li>修改 全景展厅web端里资源热点，转场热点的文字提示效果；</li>
+<li>修改 后台管理系统server端相关代码；</li>
+</ol>
+<hr>
 ]]></content>
   </entry>
   <entry>
