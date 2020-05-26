@@ -33,3 +33,8 @@ deploy:
   message:  now('YYYY-MM-DD HH:mm:ss')
 
 ---
+
+
+gitee 密匙添加方法（github的同理）
+
+https://www.jianshu.com/p/416ac815b2b1

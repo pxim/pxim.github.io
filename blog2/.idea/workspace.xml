@@ -2,280 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dbb6c68-0934-47a4-b356-b46ebfdee88c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../blog1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522103/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522103/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522104/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522104/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522109/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522109/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522110/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522110/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522111/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522111/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522116/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522116/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522127/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522127/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522134/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522134/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522136/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522136/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522139/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522139/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522140/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2014/07/29/6522140/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/02/02/6522102/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/02/02/6522102/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/02/17/6522101/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/02/17/6522101/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/08/6522099/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/08/6522099/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/10/6522098/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/10/6522098/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/11/6522094/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/11/6522094/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522069/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522069/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522070/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522070/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522071/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522071/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522072/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522072/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522074/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522074/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522075/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522075/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522079/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522079/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522087/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522087/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522088/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522088/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522089/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522089/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522090/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522090/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522093/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/14/6522093/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/23/6522067/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/23/6522067/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/23/6522068/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/23/6522068/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/03/30/6522066/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/03/30/6522066/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/04/15/6522064/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/04/15/6522064/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/04/15/6522065/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/04/15/6522065/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/05/09/6522063/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/05/09/6522063/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/05/12/6522062/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/05/12/6522062/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/05/17/6522061/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/05/17/6522061/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/05/25/6522060/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/05/25/6522060/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/06/15/6522058/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/06/15/6522058/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/06/15/6522059/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/06/15/6522059/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/06/16/6522057/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/06/16/6522057/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/06/17/6522056/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/06/17/6522056/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/06/20/6522054/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/06/20/6522054/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/06/20/6522055/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/06/20/6522055/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/07/13/6522052/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/07/13/6522052/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/07/13/6522053/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/07/13/6522053/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/07/26/6522049/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/07/26/6522049/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/07/26/6522050/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/07/26/6522050/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/07/26/6522051/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/07/26/6522051/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/07/28/6522048/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/07/28/6522048/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/08/02/6522047/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/08/02/6522047/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/08/14/6522046/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/08/14/6522046/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/08/19/6522045/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/08/19/6522045/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/02/6522043/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/02/6522043/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/06/6522041/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/06/6522041/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/06/6522042/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/06/6522042/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/08/6522039/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/08/6522039/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/08/6522040/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/08/6522040/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/14/6522037/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/14/6522037/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/14/6522038/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/14/6522038/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/18/6522036/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/18/6522036/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/27/6522034/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/27/6522034/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/27/6522035/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/27/6522035/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/28/6522032/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/28/6522032/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/28/6522033/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/28/6522033/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/09/30/6522031/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/09/30/6522031/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/10/11/6522029/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/10/11/6522029/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/10/11/6522030/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/10/11/6522030/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/10/24/6522027/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/10/24/6522027/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/10/24/6522028/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/10/24/6522028/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/10/27/6522026/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/10/27/6522026/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/10/28/6522025/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/10/28/6522025/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/10/31/6522023/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/10/31/6522023/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/10/31/6522024/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/10/31/6522024/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/11/11/6522022/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/11/11/6522022/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/11/29/6522019/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/11/29/6522019/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/11/29/6522020/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/11/29/6522020/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/11/29/6522021/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/11/29/6522021/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/12/15/6522017/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/12/15/6522017/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2016/12/15/6522018/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2016/12/15/6522018/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/01/04/6522016/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/01/04/6522016/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/02/20/6522015/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/02/20/6522015/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/02/23/6522012/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/02/23/6522012/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/02/23/6522013/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/02/23/6522013/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/02/23/6522014/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/02/23/6522014/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/02/24/6522011/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/02/24/6522011/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/04/03/6662943/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/04/03/6662943/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/04/04/6664178/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/04/04/6664178/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/04/04/6664239/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/04/04/6664239/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/04/04/6665584/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/04/04/6665584/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/04/04/6665610/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/04/04/6665610/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/04/04/6665630/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/04/04/6665630/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/04/13/6703576/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/04/13/6703576/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/04/13/6703636/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/04/13/6703636/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/04/13/6703718/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/04/13/6703718/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/06/05/6944815/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/06/05/6944815/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/06/08/6963820/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/06/08/6963820/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/2017/07/13/7155399/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/2017/07/13/7155399/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2014/07/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2014/07/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2014/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2014/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/02/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/02/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/03/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/03/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/04/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/04/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/05/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/05/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/06/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/06/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/07/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/07/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/08/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/08/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/09/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/09/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/10/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/10/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/11/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/11/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/12/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/12/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/page/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/page/3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/page/3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2016/page/4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2016/page/4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2017/01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2017/01/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2017/02/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2017/02/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2017/04/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2017/04/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2017/06/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2017/06/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2017/07/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2017/07/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/2017/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/2017/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/page/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/page/3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/page/3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/page/4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/page/4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/archives/page/5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/archives/page/5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/atom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/atom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/baidusitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/baidusitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/categories/Flash-Flex/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/categories/Flash-Flex/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/categories/Flash-Flex/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/categories/Flash-Flex/page/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/categories/HTML5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/categories/HTML5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/categories/Others/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/categories/Others/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/categories/Software/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/categories/Software/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/categories/Web前端/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/categories/Web前端/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/categories/Web前端/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/categories/Web前端/page/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/categories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/categories/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/categories/news/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/css/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/css/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/css/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/css/font/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/css/font/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/css/font/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/c.scrollPage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/c.scrollPage.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/canvas/ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/canvas/ban.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/canvas/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/canvas/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/index.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/index.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/particle/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/particle/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/particle/particleConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/particle/particleConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/particle/particles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/particle/particles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/smohan.scrollPage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/smohan.scrollPage.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/js/z_stat.php" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/js/z_stat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/loading2/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/loading2/config.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/loading2/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/loading2/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/loading2/index.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/loading2/index.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/loading2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/loading2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/loading2/js/prefixfree.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/loading2/js/prefixfree.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/loading2/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/loading2/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/home/preindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/home/preindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/js/animate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/js/animate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/js/pace.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/js/pace.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/js/particles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/js/particles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/js/uyan.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/js/uyan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/page/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/page/3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/page/3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/page/4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/page/4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/page/5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/page/5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/res/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/res/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/res/blog-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/res/blog-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/res/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/res/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/res/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/res/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/res/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/res/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/res/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/res/fontawesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/res/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/res/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/project/res/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/project/res/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/AIR/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/AIR/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/ActionScript-3-0/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/ActionScript-3-0/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/ActionScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/ActionScript/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/ActiveXObject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/ActiveXObject/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Adobe-Animate-CC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Adobe-Animate-CC/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Adobe-Animate-Edge/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Adobe-Animate-Edge/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Android-SDK/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Android-SDK/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Android/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Android/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/BUG/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/BUG/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/C/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/C/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Chrome-Debug/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Chrome-Debug/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/CreateJS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/CreateJS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Eclipse/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Eclipse/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Egret/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Egret/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Flash-Builder/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Flash-Builder/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Flash-Flex-Builder/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Flash-Flex-Builder/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Flash/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Flash/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/FlashPlayer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/FlashPlayer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Flex/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Flex/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/HTML5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/HTML5/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/HTTP/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/HTTP/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Hexo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Hexo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/JSON/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/JSON/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/JSONP/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/JSONP/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/JavaScript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/JavaScript/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Native-App/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Native-App/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Node-js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Node-js/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/P2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/P2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/PV3D/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/PV3D/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/ShareObject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/ShareObject/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Socke/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Socke/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/TCP-IP/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/TCP-IP/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/UDP/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/UDP/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/VSCode/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/VSCode/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Video/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Video/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Visual-Studio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Visual-Studio/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Web-App/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Web-App/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/Web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/Web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/WebSocket/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/WebSocket/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/XML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/XML/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/ajax/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/ajax/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/electron/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/electron/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/exe安装程序/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/exe安装程序/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/exe通信/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/exe通信/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/git/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/git/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/github/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/github/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/ini/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/ini/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/net/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/net/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/nisi教程/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/nisi教程/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/swc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/swc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/swf/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/swf/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/swfobject-js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/swfobject-js/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/swz/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/swz/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/tree/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/tree/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/webbrowser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/webbrowser/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/webstorm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/webstorm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/win7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/win7/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/window虚拟键盘/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/window虚拟键盘/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/垃圾回收/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/垃圾回收/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/垃圾回收机制/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/垃圾回收机制/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/天气预报/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/天气预报/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/安全沙箱/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/安全沙箱/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/安装程序/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/安装程序/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/定位/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/定位/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/工具类/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/工具类/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/工具类库/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/工具类库/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/微信/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/微信/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/打包/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/打包/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/插件/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/插件/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/教程/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/教程/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/数据互转/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/数据互转/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/断点调试/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/断点调试/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/断点调试js项目/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/断点调试js项目/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/是否是IE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/是否是IE/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/本地存储/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/本地存储/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/游戏/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/游戏/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/物理引擎/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/物理引擎/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/画板/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/画板/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/破解/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/破解/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/编辑器/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/编辑器/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/缩放/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/缩放/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/视频播放器/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/视频播放器/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/读取本地文件/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/读取本地文件/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/轻应用/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/轻应用/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/通信/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/通信/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/页面跳转/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/页面跳转/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../blog1/public/tags/预览/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog1/public/tags/预览/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme" beforeDir="false" afterPath="$PROJECT_DIR$/readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/01-course-dev-kit.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/01-course-dev-kit.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/02-course-An-Flash.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/02-course-An-Flash.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/03-course-An-H5.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/03-course-An-H5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/04-course-CZ-H5.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/04-course-CZ-H5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/05-course-ZD-H5.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/05-course-ZD-H5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/06-course-ZD-WebGL.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/06-course-ZD-WebGL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/08-course-projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/08-course-projects.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/09-course-svn.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/09-course-svn.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/10-course-test-address.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/10-course-test-address.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/11-course-Notes-And-FAQ.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/11-course-Notes-And-FAQ.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/12-course-config.xml-v3.0.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/12-course-config.xml-v3.0.0.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/13-准备删除的动画模板.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/13-准备删除的动画模板.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/pano.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/pano.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/动画模板说明.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/hello-world 2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/webpack/【webpack】怎么断点调试webpack配置文件.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/webpack/【webpack】怎么断点调试webpack配置文件.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/ayer/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/ayer/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/ayer/source/images/alipay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/ayer/source/images/alipay.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/ayer/source/images/wechat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/ayer/source/images/wechat.jpg" afterDir="false" />
@@ -291,20 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="431">
+              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
             </state>
           </provider>
         </entry>
@@ -312,17 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/ayer/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3553">
-              <caret line="187" column="11" selection-start-line="187" selection-start-column="11" selection-end-line="187" selection-end-column="11" />
+            <state relative-caret-position="476">
+              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -332,7 +59,29 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>deploy</find>
+      <find>categories: Create.js HTML5实用技巧</find>
+      <find>categories: # Hexo</find>
+      <find>software</find>
+      <find>Egret HTML5实用技巧</find>
+      <find>HTML CSS JavaScript HTML5实用技巧</find>
+      <find>categories: news</find>
+      <find>markdown</find>
+      <find>webpack</find>
     </findStrings>
+    <replaceStrings>
+      <replace>categories: CreateJS</replace>
+      <replace>categories: Hexo</replace>
+      <replace>Software</replace>
+      <replace>Egret</replace>
+      <replace>HTML CSS JavaScript</replace>
+      <replace>categories: News</replace>
+      <replace>Markdown</replace>
+      <replace>Webpack</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\px\works\GitHub\px-blog-backup\blog2\source\_posts\old</dir>
+      <dir>D:\px\works\GitHub\px-blog-backup\blog2\source\_posts</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -342,25 +91,36 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/_config-orig.yml" />
-        <option value="$PROJECT_DIR$/source/categories/index.md" />
         <option value="$PROJECT_DIR$/source/_posts/webpack.md" />
         <option value="$PROJECT_DIR$/source/_posts/01-course-dev-kit.md" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/themes/ayer/_config.yml" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/02-course-An-Flash.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/03-course-An-H5.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/04-course-CZ-H5.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/05-course-ZD-H5.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/06-course-ZD-WebGL.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/08-course-projects.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/09-course-svn.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/10-course-test-address.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/11-course-Notes-And-FAQ.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/12-course-config.xml-v3.0.0.md" />
-        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/13-准备删除的动画模板.md" />
+        <option value="$PROJECT_DIR$/source/categories/index.md" />
+        <option value="$PROJECT_DIR$/source/_posts/markdown/md写法帮助.md" />
+        <option value="$PROJECT_DIR$/source/_posts/software/WebStorm 使用帮助.md" />
+        <option value="$PROJECT_DIR$/source/_posts/software/【Software】开发辅助工具.md" />
         <option value="$PROJECT_DIR$/source/_posts/DResDevKit/pano.md" />
-        <option value="$PROJECT_DIR$/source/_posts/webpack/【webpack】怎么断点调试webpack配置文件.md" />
+        <option value="$PROJECT_DIR$/source/_posts/software/【software】开发辅助工具.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/13-准备删除的动画模板.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/12-course-config.xml-v3.0.0.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/11-course-Notes-And-FAQ.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/10-course-test-address.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/09-course-svn.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/08-course-projects.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/06-course-ZD-WebGL.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/05-course-ZD-H5.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/04-course-CZ-H5.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/03-course-An-H5.md" />
+        <option value="$PROJECT_DIR$/source/_posts/DResDevKit/02-course-An-Flash.md" />
         <option value="$PROJECT_DIR$/source/_posts/DResDevKit/01-course-dev-kit.md" />
+        <option value="$PROJECT_DIR$/source/_posts/old/【CreateJS】WebStorm+Adobe Animate CC 搭配开发HTML5，入门教程.md" />
+        <option value="$PROJECT_DIR$/source/_posts/old/【Hexo】Hexo+Github构建个人博客 （一）：环境配置.md" />
+        <option value="$PROJECT_DIR$/source/_posts/software/webStorm使用帮助.md" />
+        <option value="$PROJECT_DIR$/source/_posts/old/【Egret】Wing3发布移动APP功能，打包APK流程以及会遇到的问题.md" />
+        <option value="$PROJECT_DIR$/source/_posts/old/html中引入调用另一个html的方法.md" />
+        <option value="$PROJECT_DIR$/source/_posts/old/39岁程序员的困惑：知道越多编程越….md" />
+        <option value="$PROJECT_DIR$/source/_posts/markdown/markdown写作帮助.md" />
+        <option value="$PROJECT_DIR$/source/_posts/webpack/【webpack】怎么断点调试webpack配置文件.md" />
         <option value="$PROJECT_DIR$/readme" />
         <option value="$PROJECT_DIR$/_config.yml" />
       </list>
@@ -378,6 +138,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -385,11 +146,15 @@
               <item name="blog2" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blog2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog2" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -492,12 +257,13 @@
       <updated>1590394923525</updated>
       <workItem from="1590394926331" duration="4875000" />
       <workItem from="1590460481873" duration="7813000" />
-      <workItem from="1590471515585" duration="716000" />
+      <workItem from="1590471515585" duration="5225000" />
+      <workItem from="1590476767212" duration="6973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13404000" />
+    <option name="totallyTimeSpent" value="24886000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,16 +275,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6213275" visible="true" weight="0.24986821" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74183977" visible="true" weight="0.18977332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.37867248" side_tool="true" visible="true" weight="0.24986821" />
+      <window_info id="npm" order="2" sideWeight="0.25816023" side_tool="true" visible="true" weight="0.18977332" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27529925" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2665941" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,44 +302,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scaffolds/page.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config-orig.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/categories/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/tags/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/webpack.md" />
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -587,64 +315,403 @@
     <entry file="file://$PROJECT_DIR$/themes/ayer/source/images/alipay.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/02-course-An-Flash.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/03-course-An-H5.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/04-course-CZ-H5.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/05-course-ZD-H5.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/06-course-ZD-WebGL.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/tags/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="2" selection-end-column="3" />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/08-course-projects.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/09-course-svn.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/10-course-test-address.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/11-course-Notes-And-FAQ.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/pano.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/13-准备删除的动画模板.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/12-course-config.xml-v3.0.0.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/01-course-dev-kit.md" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/webpack/【webpack】怎么断点调试webpack配置文件.md">
+    <entry file="file://$PROJECT_DIR$/source/categories/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="57">
-            <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <first_editor relative-caret-position="114">
+            <caret line="6" selection-start-line="6" selection-end-line="6" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/ayer/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3553">
-          <caret line="187" column="11" selection-start-line="187" selection-start-column="11" selection-end-line="187" selection-end-column="11" />
+        <state relative-caret-position="76">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/source/_posts/markdown/md写法帮助.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/software/WebStorm 使用帮助.md" />
+    <entry file="file://$USER_HOME$/Downloads/csdn-blog-export-master/csdn-blog-export-master/main.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/6522011.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/pano.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/software/【software】开发辅助工具.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/13-准备删除的动画模板.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/12-course-config.xml-v3.0.0.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/11-course-Notes-And-FAQ.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/10-course-test-address.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/09-course-svn.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/08-course-projects.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/06-course-ZD-WebGL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/05-course-ZD-H5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/04-course-CZ-H5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/03-course-An-H5.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/02-course-An-Flash.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/DResDevKit/01-course-dev-kit.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/.net做的exe和electron做的exe之间的通信问题.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/ActionScript3 加载外部XML文件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/ActionScript3 使用post方法通信nodejs后端.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【CreateJS】WebStorm+Adobe Animate CC 搭配开发HTML5，入门教程.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="114">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Hexo】Hexo+Github构建个人博客 （二）：创建Hello World.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Flex】去除外边框，底背景透明，改变exe的icon.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Electron】Electron开发入门（六）：项目生成setup安装程序.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Hexo】Hexo+Github构建个人博客 （一）：环境配置.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/微信视频播放器隐藏播放控件，视频全屏做法分享.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/software/webStorm使用帮助.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <folding>
+              <element signature="n#!!doc" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Egret】Lakeshore 使用中的一些疑难解决技巧！.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Egret】里使用iframe标签达到内嵌多个web界面.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Egret】实现web页面操作PC端本地文件操作.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Egret】在WebStorm里使用Egret Engine 的注意点.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Egret】使用VSCode 编译，断点调试Egret项目.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Egret】中tree组件使用案例.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/【Egret】Wing3发布移动APP功能，打包APK流程以及会遇到的问题.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/html中引入调用另一个html的方法.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/39岁程序员的困惑：知道越多编程越….md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/markdown/markdown写作帮助.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/webpack/【webpack】怎么断点调试webpack配置文件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="476">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>

@@ -1,12 +1,16 @@
 ---
-title:【webpack】怎么断点调试webpack配置文件
+title: 【Webpack】怎么断点调试webpack配置文件
+date: 2020-05-25 19:12:57
+categories: 
+- Webpack
+tags:
+- Webpack
 ---
 
+参考文章：https://www.colabug.com/2018/1022/4989135/   
+不管是用react cli，还是vue cli，还是原生webpack，只要想调试其webpack配置文件，本文都适用  
 
-   参考文章：https://www.colabug.com/2018/1022/4989135/
-
-
-1. ##### 在当前项目的目录下，命令行 输入命令
+##### 1. 在当前项目的目录下，命令行 输入命令
 
    ```javascript
     node --inspect-brk ./config-multi/start.js --inline --progress
@@ -28,9 +32,12 @@ title:【webpack】怎么断点调试webpack配置文件
 ​       package.json里
 ​       node --inspect-brk=5858 ./config-multi/start.js
 
-2. ##### 打开chrome，输入 [chrome://inspect/#devices](chrome://inspect/#devices)
+##### 2. 打开chrome，输入 [chrome://inspect/#devices](chrome://inspect/#devices)
 
-![image][imageid2] 3. 然后点击 **Open Dedicated DevTools for Node** 或者 **inspect**，就会出现调试窗口
+![image][imageid2] 
+
+##### 3. 然后点击
+ **Open Dedicated DevTools for Node** 或者 **inspect**，就会出现调试窗口
 
 ![image][imageid3] 
 

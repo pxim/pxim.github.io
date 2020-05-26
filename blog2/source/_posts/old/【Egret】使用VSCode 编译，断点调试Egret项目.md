@@ -1,0 +1,109 @@
+---
+title: 【Egret】使用VSCode 编译，断点调试Egret项目
+date: 2016-12-15 15:22:58
+tags: chrome vscode egret
+categories: Egret
+---
+
+<!--more-->
+
+经过我日积月累的摸索，还是一直模模糊糊的，搞不懂，今天经晨哥点拨两下，一下子就恍然大悟，搞定了怎么弄这个东西，现将经验分享如下。
+
+一、效果目的
+1.在VSCode里，直接F5打开Egret页面，并且可以在编辑器里，进行断点调试Egret代码，和在Wing里进行代码调试相似；
+
+二、工具准备
+1.VSCode 软件
+2.一个Egret 项目
+3.VSCode 上装两个插件：Debugger for Chrome，EgretCode
+如图：
+![这里写图片描述](http://img.blog.csdn.net/20161215145523577?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+三、配置文件更改
+1.用VSCode装载Egret项目
+![这里写图片描述](http://img.blog.csdn.net/20161215145826188?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+2.然后按F5，出现这个框
+![这里写图片描述](http://img.blog.csdn.net/20161215150314456?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+选择 Chrome
+
+3.然后出现个配置的提示，和打开了launch.json这个文件
+![这里写图片描述](http://img.blog.csdn.net/20161215150549847?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+在 这个文件里添加一段配置信息
+
+```
+,
+		{
+			"name": "使用本机 Chrome 调试",
+			"type": "chrome",
+			"request": "launch",
+			// "file": "index.html",
+			"url": "http://10.10.20.120:3000/index.html", //使用外部服务器时,请注释掉 file, 改用 url, 并将 useBuildInServer 设置为 false "http://mysite.com/index.html
+			"runtimeExecutable": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", // 改成您的 Chrome 安装路径
+			"sourceMaps": true,
+			"webRoot": "${workspaceRoot}",
+			"preLaunchTask":"build",
+			"userDataDir":"${tmpdir}",
+			"port":5433
+		}
+```
+如图
+![这里写图片描述](http://img.blog.csdn.net/20161215150803894?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+4.然后更改tasks.json文件里的配置
+tasks.json初始化，如图
+![这里写图片描述](http://img.blog.csdn.net/20161215150944178?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+把下面的代码复制替换
+
+```
+{
+    "version": "0.1.0",
+    "command": "egret",
+    "isShellCommand": true,
+    "tasks": [
+        {
+            "taskName": "build",
+            "showOutput": "always",
+            "args": [
+                "build",
+                "-sourcemap"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "clean",
+            "showOutput": "always",
+            "args": [
+                "build",
+                "-e"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "publish",
+            "showOutput": "always",
+            "args": [
+                "publish"
+            ],
+            "problemMatcher": "$tsc"
+        }
+    ]
+}
+```
+结果如图：
+![这里写图片描述](http://img.blog.csdn.net/20161215151044226?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+5.接着按快捷键： ctrl shift p ，会出现一个搜索框，在里面输入 `Egret StartServer`
+![这里写图片描述](http://img.blog.csdn.net/20161215151413089?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+然后 按 Enter 键，结果如图
+![这里写图片描述](http://img.blog.csdn.net/20161215151606561?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+PS：每次启动 Egret Server的时候，都会同时启动项目页面，但是这个页面不支持在VSCode的断点调试功能，所以把这个页面关闭掉。
+
+6.然后在Egret项目里设置好断点，按 F5，就可以进行断点调试了，并且每次F5的时候支持自动编译。
+![这里写图片描述](http://img.blog.csdn.net/20161215151931050?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+7.如果想在写代码的过程中，清理，编译项目，那么使用 EgretCode 插件里提供的命令
+![这里写图片描述](http://img.blog.csdn.net/20161215152126699?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+使用方法，参考第5步。
+
+8.接着就 Enjoy!

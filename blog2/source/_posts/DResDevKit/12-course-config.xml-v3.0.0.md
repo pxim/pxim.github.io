@@ -1,6 +1,11 @@
- ---
- title: 课件包 —— 配置表说明
- ---
+---
+title: 【DResDevKit】12 config配置表v3.x版本说明
+date: 2020-05-25 17:50:58
+categories: 
+- DResDevKit
+tags:
+- DResDevKit
+---
  
  
 ### config.xml

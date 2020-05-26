@@ -1,0 +1,44 @@
+{
+  "name": "csdnsynchexo",
+  "version": "2.2.2",
+  "description": "csdn博客自动生成hexo源文件的命令行工具",
+  "main": "dist/start.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "commander": "^2.19.0",
+    "filenamify": "^4.1.0",
+    "node-fetch": "^2.1.2",
+    "sitdown": "^1.1.6"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "local_test": "npm run build && node ./dist/start.js --config ./m_config.json",
+    "local_test2": "npm run build && node ./dist/start.js --config ./m_config2.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "hsync": "./dist/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flytam/CsdnSyncHexo.git"
+  },
+  "author": "flytam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flytam/CsdnSyncHexo/issues"
+  },
+  "homepage": "https://github.com/flytam/CsdnSyncHexo#readme",
+  "devDependencies": {
+    "@types/cheerio": "^0.22.10",
+    "@types/jest": "^23.3.12",
+    "@types/node": "^10.14.17",
+    "@types/node-fetch": "^2.1.4",
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.2"
+  }
+}

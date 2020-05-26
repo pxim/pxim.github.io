@@ -1,0 +1,29 @@
+---
+title: 关于swf安全沙箱冲突：不能被本地访问
+date: 2016-03-14 16:11:38
+tags: 
+categories: Flash Flex ActionScript
+---
+
+<!--more-->
+
+
+<div class="articalContent   newfont_family" id="sina_keyword_ad_area2">
+<p style=""><span style="font-family:Verdana"><span style="font-size:15px"><strong>错误提示</strong>：SWF 文件不能被本地访问 不能访问本地只有仅限于文件系统的 SWF 文件和可信的本地 SWF 文件可以访问本地资源</span><br>
+<span style="font-size:15px"><strong>错误信息</strong>：SecurityError:Error #2148: SWF 文件 D:\demo\demo.swf 不能访问本地资源D:\demo\demo\bin-debug\textLayout_4.0.0.10485.swf。只有仅限于文件系统的 SWF文件和可信的本地 SWF 文件可以访问本地资源。</span><br>
+<br>
+<span style="font-size:15px"><strong>解决方法 ：</strong></span><br>
+<span style="font-size:15px"><strong>第一种办法：</strong></span><br>
+<span style="font-size:15px">在Flash插件上右键-&gt;全局设置-&gt;高级-&gt;开发人员工具-&gt;受信任的位置设置-&gt;添加，然后添加你的文件或者文件夹即可。</span></span></p>
+<p style=""><span style="font-size:15px"><span style="font-family:Verdana">说明：在本地测试期间，FlashPlayer 可以显示阻止应用程序正常运行的安全警告。您可以使用“受信任位置设置”面板将您自己的 SWF 或 FLV内容指定为可信内容，从而解决这一问题。您可以将个别文件的路径指定为可信路径，或者指定文件夹为可信文件夹。可信文件夹中的所有文件及其任何子文件夹也会受信任。使用此选项卡可指定您计算机上包含您信任的SWF 或 FLV 内容的位置。可信内容不遵循阻止内容访问
+ Internet和本地计算机文件系统的安全规则。</span></span></p>
+<p style=""><span style="font-family:Verdana"><span style="font-size:15px"><strong>第二种方法:</strong></span><br>
+<span style="font-size:15px">在C:\WINDOWS\system32\Macromed\Flash\FlashPlayerTrust目录下添加一个文件，比如：1.txt（文件名可任意起），文件内容为项目的路径，当然也可以设置为“D:\”</span><br>
+<span style="font-size:15px">说明：</span><br>
+<span style="font-size:15px">为了让你的Flash在用户硬盘中拥有同时访问网络和本地的能力，你必须在用户计算机的FlashPlayerTrust目录中为你的Flash添加权限.</span><br>
+<span style="font-size:15px">FlashPlayerTrust 配置文件。这些是列出受信任路径的简单文本文件。这些文件由可执行的安装程序创建。当安装程序将 SWF 安装到用户的计算机时,它能够安装信任的配置文件并指定 SWF 是受信任的。</span></span></p>
+<p style=""><span style="font-family:Verdana"><span style="font-size:15px"><strong>第三种方法：</strong></span><br>
+<span style="font-size:15px">flex项目上点右键–&gt;属性–&gt;Flex编译器–&gt;附加的编译器参数</span><br>
+<span style="font-size:15px">加上 “ -use-network=false ”<span>&nbsp;<wbr></span></span><br>
+<span style="font-size:15px">说明：这样虽然也能解决问题。但是swf就无法访问网络资源了。所以不建议使用。</span></span></p>
+</div>

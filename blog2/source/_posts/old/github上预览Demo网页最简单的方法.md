@@ -1,0 +1,25 @@
+---
+title: github上预览Demo网页最简单的方法
+date: 2016-10-31 11:06:28
+tags: github demo
+categories: Software
+---
+
+<!--more-->
+
+github上预览Demo网页最简单的方法：
+1.打开你github上demo网页index.html，效果如图
+![这里写图片描述](http://img.blog.csdn.net/20161031110217059)
+
+
+----------
+
+
+2.复制上面的页面地址，然后在该地址前加上 htmlpreview.github.com/? 然后就可以访问预览了，效果如图：
+![这里写图片描述](http://img.blog.csdn.net/20161031110456326)
+
+
+----------
+
+
+PS：参考教程：[如何在github上做一个demo演示](https://segmentfault.com/a/1190000005153433)

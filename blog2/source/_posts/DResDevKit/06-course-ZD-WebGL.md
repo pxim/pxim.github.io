@@ -1,5 +1,10 @@
 ---
-title: 故障诊断WebGL Page
+title: 【DResDevKit】06 故障诊断WebGL模板
+date: 2020-05-25 17:50:58
+categories: 
+- DResDevKit
+tags:
+- DResDevKit
 ---
 
 1. [配置表说明](#user-content-配置表说明) 

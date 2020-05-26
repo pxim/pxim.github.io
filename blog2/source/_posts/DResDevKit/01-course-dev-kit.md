@@ -1,5 +1,10 @@
 ---
-title:课件开发集成包
+title: 【DResDevKit】01 课件开发集成包
+date: 2020-05-25 17:50:58
+categories: 
+- DResDevKit
+tags:
+- DResDevKit
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->

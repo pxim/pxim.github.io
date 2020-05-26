@@ -1,0 +1,17 @@
+---
+title: WebStorm里使用注意点
+date: 2017-02-23 09:55:25
+tags: webstorm 出现的问题
+categories: Software
+---
+
+<!--more-->
+
+归纳一些我在使用webstorm里遇到的问题；
+1.问题：文件出现红线，如图
+![这里写图片描述](http://img.blog.csdn.net/20170223095338407?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+解决方案：可能是由于语言版本的问题，改一下版本试试
+![这里写图片描述](http://img.blog.csdn.net/20170223095637073?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+2.快捷键：http://www.cnblogs.com/yeminglong/p/5995421.html

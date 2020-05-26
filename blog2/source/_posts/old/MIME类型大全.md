@@ -1,0 +1,4793 @@
+---
+title: MIME类型大全
+date: 2017-09-14 14:50:27
+tags: 
+categories: Other Code
+---
+
+<!--more-->
+
+
+<table class="bordered-table zebra-striped table-sort  mceItemTable ">
+<thead>
+<tr>
+<th class="header headerSortDown" nowrap="nowrap">Name</th>
+<th class="header" nowrap="nowrap">MIME Type / Internet Media Type</th>
+<th class="header" nowrap="nowrap">File Extension</th>
+<th class="header" nowrap="nowrap">More Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3D Crossword Plugin</td>
+<td>application/vnd.hzn-3d-crossword</td>
+<td>.x3d</td>
+<td><a target="_blank" title="What is a '.x3d' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hzn-3d-crossword">IANA: 3D Crossword Plugin</a><br>
+</td>
+</tr>
+<tr>
+<td>3GP</td>
+<td>video/3gpp</td>
+<td>.3gp</td>
+<td><a target="_blank" title="What is a '.3gp' file?" href="http://en.wikipedia.org/wiki/3GP_and_3G2">Wikipedia: 3GP</a><br>
+</td>
+</tr>
+<tr>
+<td>3GP2</td>
+<td>video/3gpp2</td>
+<td>.3g2</td>
+<td><a target="_blank" title="What is a '.3g2' file?" href="http://en.wikipedia.org/wiki/3GP_and_3G2">Wikipedia: 3G2</a><br>
+</td>
+</tr>
+<tr>
+<td>3GPP MSEQ File</td>
+<td>application/vnd.mseq</td>
+<td>.mseq</td>
+<td><a target="_blank" title="What is a '.mseq' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mseq">IANA: 3GPP MSEQ File</a><br>
+</td>
+</tr>
+<tr>
+<td>3M Post It Notes</td>
+<td>application/vnd.3m.post-it-notes</td>
+<td>.pwn</td>
+<td><a target="_blank" title="What is a '.pwn' file?" href="http://www.iana.org/assignments/media-types/application/vnd.3M.Post-it-Notes">IANA: 3M Post It Notes</a><br>
+</td>
+</tr>
+<tr>
+<td>3rd Generation Partnership Project - Pic Large</td>
+<td>application/vnd.3gpp.pic-bw-large</td>
+<td>.plb</td>
+<td><a target="_blank" title="What is a '.plb' file?" href="http://www.3gpp.org/specifications">3GPP</a><br>
+</td>
+</tr>
+<tr>
+<td>3rd Generation Partnership Project - Pic Small</td>
+<td>application/vnd.3gpp.pic-bw-small</td>
+<td>.psb</td>
+<td><a target="_blank" title="What is a '.psb' file?" href="http://www.3gpp.org/specifications">3GPP</a><br>
+</td>
+</tr>
+<tr>
+<td>3rd Generation Partnership Project - Pic Var</td>
+<td>application/vnd.3gpp.pic-bw-var</td>
+<td>.pvb</td>
+<td><a target="_blank" title="What is a '.pvb' file?" href="http://www.3gpp.org/specifications">3GPP</a><br>
+</td>
+</tr>
+<tr>
+<td>3rd Generation Partnership Project - Transaction Capabilities Application Part</td>
+<td>application/vnd.3gpp2.tcap</td>
+<td>.tcap</td>
+<td><a target="_blank" title="What is a '.tcap' file?" href="http://www.3gpp.org/specifications">3GPP</a><br>
+</td>
+</tr>
+<tr>
+<td>7-Zip</td>
+<td>application/x-7z-compressed</td>
+<td>.7z</td>
+<td><a target="_blank" title="What is a '.7z' file?" href="http://en.wikipedia.org/wiki/7-Zip">Wikipedia: 7-Zip</a><br>
+</td>
+</tr>
+<tr>
+<td>AbiWord</td>
+<td>application/x-abiword</td>
+<td>.abw</td>
+<td><a target="_blank" title="What is a '.abw' file?" href="http://en.wikipedia.org/wiki/AbiWord">Wikipedia: AbiWord</a><br>
+</td>
+</tr>
+<tr>
+<td>Ace Archive</td>
+<td>application/x-ace-compressed</td>
+<td>.ace</td>
+<td><a target="_blank" title="What is a '.ace' file?" href="http://en.wikipedia.org/wiki/ACE_%28file_format%29">Wikipedia: ACE</a><br>
+</td>
+</tr>
+<tr>
+<td>Active Content Compression</td>
+<td>application/vnd.americandynamics.acc</td>
+<td>.acc</td>
+<td><a target="_blank" title="What is a '.acc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.americandynamics.acc">IANA: Active Content Compression</a><br>
+</td>
+</tr>
+<tr>
+<td>ACU Cobol</td>
+<td>application/vnd.acucobol</td>
+<td>.acu</td>
+<td><a target="_blank" title="What is a '.acu' file?" href="http://www.iana.org/assignments/media-types/application/vnd-acucobol">IANA: ACU Cobol</a><br>
+</td>
+</tr>
+<tr>
+<td>ACU Cobol</td>
+<td>application/vnd.acucorp</td>
+<td>.atc</td>
+<td><a target="_blank" title="What is a '.atc' file?" href="http://www.iana.org/assignments/media-types/application/vnd-acucobol">IANA: ACU Cobol</a><br>
+</td>
+</tr>
+<tr>
+<td>Adaptive differential pulse-code modulation</td>
+<td>audio/adpcm</td>
+<td>.adp</td>
+<td><a target="_blank" title="What is a '.adp' file?" href="http://en.wikipedia.org/wiki/ADPCM">Wikipedia: ADPCM</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe (Macropedia) Authorware - Binary File</td>
+<td>application/x-authorware-bin</td>
+<td>.aab</td>
+<td><a target="_blank" title="What is a '.aab' file?" href="http://en.wikipedia.org/wiki/Macromedia_Authorware">Wikipedia: Authorware</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe (Macropedia) Authorware - Map</td>
+<td>application/x-authorware-map</td>
+<td>.aam</td>
+<td><a target="_blank" title="What is a '.aam' file?" href="http://en.wikipedia.org/wiki/Macromedia_Authorware">Wikipedia: Authorware</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe (Macropedia) Authorware - Segment File</td>
+<td>application/x-authorware-seg</td>
+<td>.aas</td>
+<td><a target="_blank" title="What is a '.aas' file?" href="http://en.wikipedia.org/wiki/Macromedia_Authorware">Wikipedia: Authorware</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe AIR Application</td>
+<td>application/vnd.adobe.air-application-installer-package&#43;zip</td>
+<td>.air</td>
+<td><a target="_blank" title="What is a '.air' file?" href="http://help.adobe.com/en_US/air/build/air_buildingapps.pdf">Building AIR Applications</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe Flash</td>
+<td>application/x-shockwave-flash</td>
+<td>.swf</td>
+<td><a target="_blank" title="What is a '.swf' file?" href="http://en.wikipedia.org/wiki/Swf">Wikipedia: Adobe Flash</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe Flex Project</td>
+<td>application/vnd.adobe.fxp</td>
+<td>.fxp</td>
+<td><a target="_blank" title="What is a '.fxp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.adobe.fxp">IANA: Adobe Flex Project</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe Portable Document Format</td>
+<td>application/pdf</td>
+<td>.pdf</td>
+<td><a target="_blank" title="What is a '.pdf' file?" href="http://www.adobe.com/products/acrobat/adobepdf.html">Adobe PDF</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe PostScript Printer Description File Format</td>
+<td>application/vnd.cups-ppd</td>
+<td>.ppd</td>
+<td><a target="_blank" title="What is a '.ppd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.cups-ppd">IANA: Cups</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe Shockwave Player</td>
+<td>application/x-director</td>
+<td>.dir</td>
+<td><a target="_blank" title="What is a '.dir' file?" href="http://en.wikipedia.org/wiki/Adobe_Shockwave_Player">Wikipedia: Adobe Shockwave Player</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe XML Data Package</td>
+<td>application/vnd.adobe.xdp&#43;xml</td>
+<td>.xdp</td>
+<td><a target="_blank" title="What is a '.xdp' file?" href="http://en.wikipedia.org/wiki/XML_Data_Package">Wikipedia: XML Data Package</a><br>
+</td>
+</tr>
+<tr>
+<td>Adobe XML Forms Data Format</td>
+<td>application/vnd.adobe.xfdf</td>
+<td>.xfdf</td>
+<td><a target="_blank" title="What is a '.xfdf' file?" href="http://en.wikipedia.org/wiki/XFDF#Interactive_elements">Wikipedia: XML Portable Document Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Advanced Audio Coding (AAC)</td>
+<td>audio/x-aac</td>
+<td>.aac</td>
+<td><a target="_blank" title="What is a '.aac' file?" href="http://en.wikipedia.org/wiki/Advanced_Audio_Coding">Wikipedia: AAC</a><br>
+</td>
+</tr>
+<tr>
+<td>Ahead AIR Application</td>
+<td>application/vnd.ahead.space</td>
+<td>.ahead</td>
+<td><a target="_blank" title="What is a '.ahead' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ahead.space">IANA: Ahead AIR Application</a><br>
+</td>
+</tr>
+<tr>
+<td>AirZip FileSECURE</td>
+<td>application/vnd.airzip.filesecure.azf</td>
+<td>.azf</td>
+<td><a target="_blank" title="What is a '.azf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.airzip.filesecure.azf">IANA: AirZip</a><br>
+</td>
+</tr>
+<tr>
+<td>AirZip FileSECURE</td>
+<td>application/vnd.airzip.filesecure.azs</td>
+<td>.azs</td>
+<td><a target="_blank" title="What is a '.azs' file?" href="http://www.iana.org/assignments/media-types/application/vnd.airzip.filesecure.azs">IANA: AirZip</a><br>
+</td>
+</tr>
+<tr>
+<td>Amazon Kindle eBook format</td>
+<td>application/vnd.amazon.ebook</td>
+<td>.azw</td>
+<td><a target="_blank" title="What is a '.azw' file?" href="https://kdp.amazon.com/self-publishing/help?topicId=A328FYMFAE7VNY">Kindle Direct Publishing</a><br>
+</td>
+</tr>
+<tr>
+<td>AmigaDE</td>
+<td>application/vnd.amiga.ami</td>
+<td>.ami</td>
+<td><a target="_blank" title="What is a '.ami' file?" href="http://www.iana.org/assignments/media-types/application/vnd.amiga.ami">IANA: Amiga</a><br>
+</td>
+</tr>
+<tr>
+<td>Andrew Toolkit</td>
+<td>application/andrew-inset</td>
+<td>N/A</td>
+<td><a target="_blank" title="What is a 'N/A' file?" href="http://www.iana.org/assignments/media-types/application/andrew-inset">IANA - Andrew Inset</a><br>
+</td>
+</tr>
+<tr>
+<td>Android Package Archive</td>
+<td>application/vnd.android.package-archive</td>
+<td>.apk</td>
+<td><a target="_blank" title="What is a '.apk' file?" href="http://en.wikipedia.org/wiki/APK_%28file_format%29">Wikipedia: APK File Format</a><br>
+</td>
+</tr>
+<tr>
+<td>ANSER-WEB Terminal Client - Certificate Issue</td>
+<td>application/vnd.anser-web-certificate-issue-initiation</td>
+<td>.cii</td>
+<td><a target="_blank" title="What is a '.cii' file?" href="http://www.iana.org/assignments/media-types/application/vnd.anser-web-certificate-issue-initiation">IANA: ANSWER-WEB</a><br>
+</td>
+</tr>
+<tr>
+<td>ANSER-WEB Terminal Client - Web Funds Transfer</td>
+<td>application/vnd.anser-web-funds-transfer-initiation</td>
+<td>.fti</td>
+<td><a target="_blank" title="What is a '.fti' file?" href="http://www.iana.org/assignments/media-types/application/vnd.anser-web-funds-transfer-initiation">IANA: ANSWER-WEB</a><br>
+</td>
+</tr>
+<tr>
+<td>Antix Game Player</td>
+<td>application/vnd.antix.game-component</td>
+<td>.atx</td>
+<td><a target="_blank" title="What is a '.atx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.antix.game-component">IANA: Antix Game Component</a><br>
+</td>
+</tr>
+<tr>
+<td>Apple Installer Package</td>
+<td>application/vnd.apple.installer&#43;xml</td>
+<td>.mpkg</td>
+<td><a target="_blank" title="What is a '.mpkg' file?" href="http://www.iana.org/assignments/media-types/application/vnd.apple.installer&#43;xml">IANA: Apple Installer</a><br>
+</td>
+</tr>
+<tr>
+<td>Applixware</td>
+<td>application/applixware</td>
+<td>.aw</td>
+<td><a target="_blank" title="What is a '.aw' file?" href="http://www.vistasource.com/en/apl.php">Vistasource</a><br>
+</td>
+</tr>
+<tr>
+<td>Archipelago Lesson Player</td>
+<td>application/vnd.hhe.lesson-player</td>
+<td>.les</td>
+<td><a target="_blank" title="What is a '.les' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hhe.lesson-player">IANA: Archipelago Lesson Player</a><br>
+</td>
+</tr>
+<tr>
+<td>Arista Networks Software Image</td>
+<td>application/vnd.aristanetworks.swi</td>
+<td>.swi</td>
+<td><a target="_blank" title="What is a '.swi' file?" href="http://www.iana.org/assignments/media-types/application/vnd.aristanetworks.swi">IANA: Arista Networks Software Image</a><br>
+</td>
+</tr>
+<tr>
+<td>Assembler Source File</td>
+<td>text/x-asm</td>
+<td>.s</td>
+<td><a target="_blank" title="What is a '.s' file?" href="http://en.wikipedia.org/wiki/Assembly_language">Wikipedia: Assembly</a><br>
+</td>
+</tr>
+<tr>
+<td>Atom Publishing Protocol</td>
+<td>application/atomcat&#43;xml</td>
+<td>.atomcat</td>
+<td><a target="_blank" title="What is a '.atomcat' file?" href="http://www.rfc-editor.org/rfc/rfc5023.txt">RFC 5023</a><br>
+</td>
+</tr>
+<tr>
+<td>Atom Publishing Protocol Service Document</td>
+<td>application/atomsvc&#43;xml</td>
+<td>.atomsvc</td>
+<td><a target="_blank" title="What is a '.atomsvc' file?" href="http://www.rfc-editor.org/rfc/rfc5023.txt">RFC 5023</a><br>
+</td>
+</tr>
+<tr>
+<td>Atom Syndication Format</td>
+<td>application/atom&#43;xml</td>
+<td>.atom, .xml</td>
+<td><a target="_blank" title="What is a '.atom, .xml' file?" href="http://tools.ietf.org/html/rfc4287">RFC 4287</a><br>
+</td>
+</tr>
+<tr>
+<td>Attribute Certificate</td>
+<td>application/pkix-attr-cert</td>
+<td>.ac</td>
+<td><a target="_blank" title="What is a '.ac' file?" href="http://tools.ietf.org/html/rfc5877">RFC 5877</a><br>
+</td>
+</tr>
+<tr>
+<td>Audio Interchange File Format</td>
+<td>audio/x-aiff</td>
+<td>.aif</td>
+<td><a target="_blank" title="What is a '.aif' file?" href="http://en.wikipedia.org/wiki/Audio_Interchange_File_Format">Wikipedia: Audio Interchange File Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Audio Video Interleave (AVI)</td>
+<td>video/x-msvideo</td>
+<td>.avi</td>
+<td><a target="_blank" title="What is a '.avi' file?" href="http://en.wikipedia.org/wiki/Audio_Video_Interleave">Wikipedia: AVI</a><br>
+</td>
+</tr>
+<tr>
+<td>Audiograph</td>
+<td>application/vnd.audiograph</td>
+<td>.aep</td>
+<td><a target="_blank" title="What is a '.aep' file?" href="http://www.iana.org/assignments/media-types/application/vnd.audiograph">IANA: Audiograph</a><br>
+</td>
+</tr>
+<tr>
+<td>AutoCAD DXF</td>
+<td>image/vnd.dxf</td>
+<td>.dxf</td>
+<td><a target="_blank" title="What is a '.dxf' file?" href="http://en.wikipedia.org/wiki/Dxf">Wikipedia: AutoCAD DXF</a><br>
+</td>
+</tr>
+<tr>
+<td>Autodesk Design Web Format (DWF)</td>
+<td>model/vnd.dwf</td>
+<td>.dwf</td>
+<td><a target="_blank" title="What is a '.dwf' file?" href="http://en.wikipedia.org/wiki/Design_Web_Format">Wikipedia: Design Web Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Binary CPIO Archive</td>
+<td>application/x-bcpio</td>
+<td>.bcpio</td>
+<td><a target="_blank" title="What is a '.bcpio' file?" href="http://en.wikipedia.org/wiki/Cpio">Wikipedia: cpio</a><br>
+</td>
+</tr>
+<tr>
+<td>Binary Data</td>
+<td>application/octet-stream</td>
+<td>.bin</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Bitmap Image File</td>
+<td>image/bmp</td>
+<td>.bmp</td>
+<td><a target="_blank" title="What is a '.bmp' file?" href="http://en.wikipedia.org/wiki/BMP_file_format">Wikipedia: BMP File Format</a><br>
+</td>
+</tr>
+<tr>
+<td>BitTorrent</td>
+<td>application/x-bittorrent</td>
+<td>.torrent</td>
+<td><a target="_blank" title="What is a '.torrent' file?" href="http://en.wikipedia.org/wiki/BitTorrent_%28protocol%29">Wikipedia: BitTorrent</a><br>
+</td>
+</tr>
+<tr>
+<td>Blackberry COD File</td>
+<td>application/vnd.rim.cod</td>
+<td>.cod</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Blueice Research Multipass</td>
+<td>application/vnd.blueice.multipass</td>
+<td>.mpm</td>
+<td><a target="_blank" title="What is a '.mpm' file?" href="http://www.cisionwire.com/blueice-research/r/the-multipass-gives-pda-users-better-security,e37928">IANA: Multipass</a><br>
+</td>
+</tr>
+<tr>
+<td>BMI Drawing Data Interchange</td>
+<td>application/vnd.bmi</td>
+<td>.bmi</td>
+<td><a target="_blank" title="What is a '.bmi' file?" href="http://www.iana.org/assignments/media-types/application/vnd.bmi">IANA: BMI</a><br>
+</td>
+</tr>
+<tr>
+<td>Bourne Shell Script</td>
+<td>application/x-sh</td>
+<td>.sh</td>
+<td><a target="_blank" title="What is a '.sh' file?" href="http://en.wikipedia.org/wiki/Bourne_shell">Wikipedia: Bourne Shell</a><br>
+</td>
+</tr>
+<tr>
+<td>BTIF</td>
+<td>image/prs.btif</td>
+<td>.btif</td>
+<td><a target="_blank" title="What is a '.btif' file?" href="http://www.iana.org/assignments/media-types/image/prs.btif">IANA: BTIF</a><br>
+</td>
+</tr>
+<tr>
+<td>BusinessObjects</td>
+<td>application/vnd.businessobjects</td>
+<td>.rep</td>
+<td><a target="_blank" title="What is a '.rep' file?" href="http://www.iana.org/assignments/media-types/application/vnd.businessobjects">IANA: BusinessObjects</a><br>
+</td>
+</tr>
+<tr>
+<td>Bzip Archive</td>
+<td>application/x-bzip</td>
+<td>.bz</td>
+<td><a target="_blank" title="What is a '.bz' file?" href="http://en.wikipedia.org/wiki/Bzip">Wikipedia: Bzip</a><br>
+</td>
+</tr>
+<tr>
+<td>Bzip2 Archive</td>
+<td>application/x-bzip2</td>
+<td>.bz2</td>
+<td><a target="_blank" title="What is a '.bz2' file?" href="http://en.wikipedia.org/wiki/Bzip">Wikipedia: Bzip</a><br>
+</td>
+</tr>
+<tr>
+<td>C Shell Script</td>
+<td>application/x-csh</td>
+<td>.csh</td>
+<td><a target="_blank" title="What is a '.csh' file?" href="http://en.wikipedia.org/wiki/C_shell">Wikipedia: C Shell</a><br>
+</td>
+</tr>
+<tr>
+<td>C Source File</td>
+<td>text/x-c</td>
+<td>.c</td>
+<td><a target="_blank" title="What is a '.c' file?" href="http://en.wikipedia.org/wiki/C_%28programming_language%29">Wikipedia: C Programming Language</a><br>
+</td>
+</tr>
+<tr>
+<td>CambridgeSoft Chem Draw</td>
+<td>application/vnd.chemdraw&#43;xml</td>
+<td>.cdxml</td>
+<td><a target="_blank" title="What is a '.cdxml' file?" href="http://www.iana.org/assignments/media-types/application/vnd.chemdraw&#43;xml">IANA: Chem Draw</a><br>
+</td>
+</tr>
+<tr>
+<td>Cascading Style Sheets (CSS)</td>
+<td>text/css</td>
+<td>.css</td>
+<td><a target="_blank" title="What is a '.css' file?" href="http://en.wikipedia.org/wiki/Css">Wikipedia: CSS</a><br>
+</td>
+</tr>
+<tr>
+<td>ChemDraw eXchange file</td>
+<td>chemical/x-cdx</td>
+<td>.cdx</td>
+<td><a target="_blank" title="What is a '.cdx' file?" href="http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/">ChemDraw eXchange file</a><br>
+</td>
+</tr>
+<tr>
+<td>Chemical Markup Language</td>
+<td>chemical/x-cml</td>
+<td>.cml</td>
+<td><a target="_blank" title="What is a '.cml' file?" href="http://en.wikipedia.org/wiki/Chemical_Markup_Language">Wikipedia: Chemical Markup Language</a><br>
+</td>
+</tr>
+<tr>
+<td>Chemical Style Markup Language</td>
+<td>chemical/x-csml</td>
+<td>.csml</td>
+<td><a target="_blank" title="What is a '.csml' file?" href="http://en.wikipedia.org/wiki/Chemical_file_format">Wikipedia: Chemical Style Markup Language</a><br>
+</td>
+</tr>
+<tr>
+<td>CIM Database</td>
+<td>application/vnd.contact.cmsg</td>
+<td>.cdbcmsg</td>
+<td><a target="_blank" title="What is a '.cdbcmsg' file?" href="http://www.iana.org/assignments/media-types/application/vnd.contact.cmsg">IANA: CIM Database</a><br>
+</td>
+</tr>
+<tr>
+<td>Claymore Data Files</td>
+<td>application/vnd.claymore</td>
+<td>.cla</td>
+<td><a target="_blank" title="What is a '.cla' file?" href="http://www.iana.org/assignments/media-types/application/vnd.claymore">IANA: Claymore</a><br>
+</td>
+</tr>
+<tr>
+<td>Clonk Game</td>
+<td>application/vnd.clonk.c4group</td>
+<td>.c4g</td>
+<td><a target="_blank" title="What is a '.c4g' file?" href="http://www.iana.org/assignments/media-types/application/vnd.clonk.c4group">IANA: Clonk</a><br>
+</td>
+</tr>
+<tr>
+<td>Close Captioning - Subtitle</td>
+<td>image/vnd.dvb.subtitle</td>
+<td>.sub</td>
+<td><a target="_blank" title="What is a '.sub' file?" href="http://en.wikipedia.org/wiki/Closed_captioning">Wikipedia: Closed Captioning</a><br>
+</td>
+</tr>
+<tr>
+<td>Cloud Data Management Interface (CDMI) - Capability</td>
+<td>application/cdmi-capability</td>
+<td>.cdmia</td>
+<td><a target="_blank" title="What is a '.cdmia' file?" href="http://www.rfc-editor.org/info/rfc6208">RFC 6208</a><br>
+</td>
+</tr>
+<tr>
+<td>Cloud Data Management Interface (CDMI) - Contaimer</td>
+<td>application/cdmi-container</td>
+<td>.cdmic</td>
+<td><a target="_blank" title="What is a '.cdmic' file?" href="http://www.rfc-editor.org/info/rfc6209">RFC 6209</a><br>
+</td>
+</tr>
+<tr>
+<td>Cloud Data Management Interface (CDMI) - Domain</td>
+<td>application/cdmi-domain</td>
+<td>.cdmid</td>
+<td><a target="_blank" title="What is a '.cdmid' file?" href="http://www.rfc-editor.org/info/rfc6210">RFC 6210</a><br>
+</td>
+</tr>
+<tr>
+<td>Cloud Data Management Interface (CDMI) - Object</td>
+<td>application/cdmi-object</td>
+<td>.cdmio</td>
+<td><a target="_blank" title="What is a '.cdmio' file?" href="http://www.rfc-editor.org/info/rfc6211">RFC 6211</a><br>
+</td>
+</tr>
+<tr>
+<td>Cloud Data Management Interface (CDMI) - Queue</td>
+<td>application/cdmi-queue</td>
+<td>.cdmiq</td>
+<td><a target="_blank" title="What is a '.cdmiq' file?" href="http://www.rfc-editor.org/info/rfc6212">RFC 6212</a><br>
+</td>
+</tr>
+<tr>
+<td>ClueTrust CartoMobile - Config</td>
+<td>application/vnd.cluetrust.cartomobile-config</td>
+<td>.c11amc</td>
+<td><a target="_blank" title="What is a '.c11amc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.cluetrust.cartomobile-config">IANA: CartoMobile</a><br>
+</td>
+</tr>
+<tr>
+<td>ClueTrust CartoMobile - Config Package</td>
+<td>application/vnd.cluetrust.cartomobile-config-pkg</td>
+<td>.c11amz</td>
+<td><a target="_blank" title="What is a '.c11amz' file?" href="http://www.iana.org/assignments/media-types/application/vnd.cluetrust.cartomobile-config">IANA: CartoMobile</a><br>
+</td>
+</tr>
+<tr>
+<td>CMU Image</td>
+<td>image/x-cmu-raster</td>
+<td>.ras</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>COLLADA</td>
+<td>model/vnd.collada&#43;xml</td>
+<td>.dae</td>
+<td><a target="_blank" title="What is a '.dae' file?" href="http://www.iana.net/assignments/media-types/model/vnd.collada&#43;xml">IANA: COLLADA</a><br>
+</td>
+</tr>
+<tr>
+<td>Comma-Seperated Values</td>
+<td>text/csv</td>
+<td>.csv</td>
+<td><a target="_blank" title="What is a '.csv' file?" href="http://en.wikipedia.org/wiki/Comma-separated_values">Wikipedia: CSV</a><br>
+</td>
+</tr>
+<tr>
+<td>Compact Pro</td>
+<td>application/mac-compactpro</td>
+<td>.cpt</td>
+<td><a target="_blank" title="What is a '.cpt' file?" href="http://www.cyclos.com/compactpro.htm">Compact Pro</a><br>
+</td>
+</tr>
+<tr>
+<td>Compiled Wireless Markup Language (WMLC)</td>
+<td>application/vnd.wap.wmlc</td>
+<td>.wmlc</td>
+<td><a target="_blank" title="What is a '.wmlc' file?" href="http://www.iana.org/assignments/media-types/application/vnd-wap-wmlc">IANA: WMLC</a><br>
+</td>
+</tr>
+<tr>
+<td>Computer Graphics Metafile</td>
+<td>image/cgm</td>
+<td>.cgm</td>
+<td><a target="_blank" title="What is a '.cgm' file?" href="http://en.wikipedia.org/wiki/Computer_Graphics_Metafile">Wikipedia: Computer Graphics Metafile</a><br>
+</td>
+</tr>
+<tr>
+<td>CoolTalk</td>
+<td>x-conference/x-cooltalk</td>
+<td>.ice</td>
+<td><a target="_blank" title="What is a '.ice' file?" href="http://en.wikipedia.org/wiki/CoolTalk">Wikipedia: CoolTalk</a><br>
+</td>
+</tr>
+<tr>
+<td>Corel Metafile Exchange (CMX)</td>
+<td>image/x-cmx</td>
+<td>.cmx</td>
+<td><a target="_blank" title="What is a '.cmx' file?" href="http://en.wikipedia.org/wiki/CorelDRAW">Wikipedia: CorelDRAW</a><br>
+</td>
+</tr>
+<tr>
+<td>CorelXARA</td>
+<td>application/vnd.xara</td>
+<td>.xar</td>
+<td><a target="_blank" title="What is a '.xar' file?" href="http://www.iana.org/assignments/media-types/application/vnd.xara">IANA: CorelXARA</a><br>
+</td>
+</tr>
+<tr>
+<td>CosmoCaller</td>
+<td>application/vnd.cosmocaller</td>
+<td>.cmc</td>
+<td><a target="_blank" title="What is a '.cmc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.cosmocaller">IANA: CosmoCaller</a><br>
+</td>
+</tr>
+<tr>
+<td>CPIO Archive</td>
+<td>application/x-cpio</td>
+<td>.cpio</td>
+<td><a target="_blank" title="What is a '.cpio' file?" href="http://en.wikipedia.org/wiki/Cpio">Wikipedia: cpio</a><br>
+</td>
+</tr>
+<tr>
+<td>CrickSoftware - Clicker</td>
+<td>application/vnd.crick.clicker</td>
+<td>.clkx</td>
+<td><a target="_blank" title="What is a '.clkx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.crick.clicker">IANA: Clicker</a><br>
+</td>
+</tr>
+<tr>
+<td>CrickSoftware - Clicker - Keyboard</td>
+<td>application/vnd.crick.clicker.keyboard</td>
+<td>.clkk</td>
+<td><a target="_blank" title="What is a '.clkk' file?" href="http://www.iana.org/assignments/media-types/application/vnd.crick.clicker">IANA: Clicker</a><br>
+</td>
+</tr>
+<tr>
+<td>CrickSoftware - Clicker - Palette</td>
+<td>application/vnd.crick.clicker.palette</td>
+<td>.clkp</td>
+<td><a target="_blank" title="What is a '.clkp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.crick.clicker">IANA: Clicker</a><br>
+</td>
+</tr>
+<tr>
+<td>CrickSoftware - Clicker - Template</td>
+<td>application/vnd.crick.clicker.template</td>
+<td>.clkt</td>
+<td><a target="_blank" title="What is a '.clkt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.crick.clicker">IANA: Clicker</a><br>
+</td>
+</tr>
+<tr>
+<td>CrickSoftware - Clicker - Wordbank</td>
+<td>application/vnd.crick.clicker.wordbank</td>
+<td>.clkw</td>
+<td><a target="_blank" title="What is a '.clkw' file?" href="http://www.iana.org/assignments/media-types/application/vnd.crick.clicker">IANA: Clicker</a><br>
+</td>
+</tr>
+<tr>
+<td>Critical Tools - PERT Chart EXPERT</td>
+<td>application/vnd.criticaltools.wbs&#43;xml</td>
+<td>.wbs</td>
+<td><a target="_blank" title="What is a '.wbs' file?" href="http://www.iana.org/assignments/media-types/application/vnd.criticaltools.wbs&#43;xml">IANA: Critical Tools</a><br>
+</td>
+</tr>
+<tr>
+<td>CryptoNote</td>
+<td>application/vnd.rig.cryptonote</td>
+<td>.cryptonote</td>
+<td><a target="_blank" title="What is a '.cryptonote' file?" href="http://www.iana.org/assignments/media-types/application/vnd.rig.cryptonote">IANA: CryptoNote</a><br>
+</td>
+</tr>
+<tr>
+<td>Crystallographic Interchange Format</td>
+<td>chemical/x-cif</td>
+<td>.cif</td>
+<td><a target="_blank" title="What is a '.cif' file?" href="http://www.iucr.org/resources/cif">Crystallographic Interchange Format</a><br>
+</td>
+</tr>
+<tr>
+<td>CrystalMaker Data Format</td>
+<td>chemical/x-cmdf</td>
+<td>.cmdf</td>
+<td><a target="_blank" title="What is a '.cmdf' file?" href="http://www.crystalmaker.com/crystalmaker/whatis.html">CrystalMaker Data Format</a><br>
+</td>
+</tr>
+<tr>
+<td>CU-SeeMe</td>
+<td>application/cu-seeme</td>
+<td>.cu</td>
+<td><a target="_blank" title="What is a '.cu' file?" href="http://www.wpine.com/">White Pine</a><br>
+</td>
+</tr>
+<tr>
+<td>CU-Writer</td>
+<td>application/prs.cww</td>
+<td>.cww</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Curl - Applet</td>
+<td>text/vnd.curl</td>
+<td>.curl</td>
+<td><a target="_blank" title="What is a '.curl' file?" href="http://developers.curlap.com/curl/docs/caede/en/docs/en/dguide/serving-curl-applets.html">Curl Applet</a><br>
+</td>
+</tr>
+<tr>
+<td>Curl - Detached Applet</td>
+<td>text/vnd.curl.dcurl</td>
+<td>.dcurl</td>
+<td><a target="_blank" title="What is a '.dcurl' file?" href="http://developers.curlap.com/curl/docs/caede/en/docs/en/dguide/serving-curl-applets.html">Curl Detached Applet</a><br>
+</td>
+</tr>
+<tr>
+<td>Curl - Manifest File</td>
+<td>text/vnd.curl.mcurl</td>
+<td>.mcurl</td>
+<td><a target="_blank" title="What is a '.mcurl' file?" href="http://developers.curlap.com/curl/docs/caede/en/docs/en/dguide/serving-curl-applets.html">Curl Manifest File</a><br>
+</td>
+</tr>
+<tr>
+<td>Curl - Source Code</td>
+<td>text/vnd.curl.scurl</td>
+<td>.scurl</td>
+<td><a target="_blank" title="What is a '.scurl' file?" href="http://developers.curlap.com/curl/docs/caede/en/docs/en/dguide/serving-curl-applets.html">Curl Source Code</a><br>
+</td>
+</tr>
+<tr>
+<td>CURL Applet</td>
+<td>application/vnd.curl.car</td>
+<td>.car</td>
+<td><a target="_blank" title="What is a '.car' file?" href="http://www.iana.org/assignments/media-types/application/vnd.curl.car">IANA: CURL Applet</a><br>
+</td>
+</tr>
+<tr>
+<td>CURL Applet</td>
+<td>application/vnd.curl.pcurl</td>
+<td>.pcurl</td>
+<td><a target="_blank" title="What is a '.pcurl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.curl.pcurl">IANA: CURL Applet</a><br>
+</td>
+</tr>
+<tr>
+<td>CustomMenu</td>
+<td>application/vnd.yellowriver-custom-menu</td>
+<td>.cmp</td>
+<td><a target="_blank" title="What is a '.cmp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.yellowriver-custom-menu">IANA: CustomMenu</a><br>
+</td>
+</tr>
+<tr>
+<td>Data Structure for the Security Suitability of Cryptographic Algorithms</td>
+<td>application/dssc&#43;der</td>
+<td>.dssc</td>
+<td><a target="_blank" title="What is a '.dssc' file?" href="http://www.rfc-editor.org/rfc/rfc5698.txt">RFC 5698</a><br>
+</td>
+</tr>
+<tr>
+<td>Data Structure for the Security Suitability of Cryptographic Algorithms</td>
+<td>application/dssc&#43;xml</td>
+<td>.xdssc</td>
+<td><a target="_blank" title="What is a '.xdssc' file?" href="http://www.rfc-editor.org/rfc/rfc5698.txt">RFC 5698</a><br>
+</td>
+</tr>
+<tr>
+<td>Debian Package</td>
+<td>application/x-debian-package</td>
+<td>.deb</td>
+<td><a target="_blank" title="What is a '.deb' file?" href="http://en.wikipedia.org/wiki/Debian_package">Wikipedia: Debian Package</a><br>
+</td>
+</tr>
+<tr>
+<td>DECE Audio</td>
+<td>audio/vnd.dece.audio</td>
+<td>.uva</td>
+<td><a target="_blank" title="What is a '.uva' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.dece.audio">IANA: Dece Audio</a><br>
+</td>
+</tr>
+<tr>
+<td>DECE Graphic</td>
+<td>image/vnd.dece.graphic</td>
+<td>.uvi</td>
+<td><a target="_blank" title="What is a '.uvi' file?" href="http://www.iana.org/assignments/media-types/image/vnd.dece.graphic">IANA: DECE Graphic</a><br>
+</td>
+</tr>
+<tr>
+<td>DECE High Definition Video</td>
+<td>video/vnd.dece.hd</td>
+<td>.uvh</td>
+<td><a target="_blank" title="What is a '.uvh' file?" href="http://www.iana.org/assignments/media-types/video/vnd.dece.hd">IANA: DECE HD Video</a><br>
+</td>
+</tr>
+<tr>
+<td>DECE Mobile Video</td>
+<td>video/vnd.dece.mobile</td>
+<td>.uvm</td>
+<td><a target="_blank" title="What is a '.uvm' file?" href="http://www.iana.org/assignments/media-types/video/vnd.dece.mobile">IANA: DECE Mobile Video</a><br>
+</td>
+</tr>
+<tr>
+<td>DECE MP4</td>
+<td>video/vnd.uvvu.mp4</td>
+<td>.uvu</td>
+<td><a target="_blank" title="What is a '.uvu' file?" href="http://www.iana.org/assignments/media-types/video/vnd.uvvu-mp4">IANA: DECE MP4</a><br>
+</td>
+</tr>
+<tr>
+<td>DECE PD Video</td>
+<td>video/vnd.dece.pd</td>
+<td>.uvp</td>
+<td><a target="_blank" title="What is a '.uvp' file?" href="http://www.iana.org/assignments/media-types/video/vnd.dece.pd">IANA: DECE PD Video</a><br>
+</td>
+</tr>
+<tr>
+<td>DECE SD Video</td>
+<td>video/vnd.dece.sd</td>
+<td>.uvs</td>
+<td><a target="_blank" title="What is a '.uvs' file?" href="http://www.iana.org/assignments/media-types/video/vnd.dece.sd">IANA: DECE SD Video</a><br>
+</td>
+</tr>
+<tr>
+<td>DECE Video</td>
+<td>video/vnd.dece.video</td>
+<td>.uvv</td>
+<td><a target="_blank" title="What is a '.uvv' file?" href="http://www.iana.org/assignments/media-types/video/vnd.dece.video">IANA: DECE Video</a><br>
+</td>
+</tr>
+<tr>
+<td>Device Independent File Format (DVI)</td>
+<td>application/x-dvi</td>
+<td>.dvi</td>
+<td><a target="_blank" title="What is a '.dvi' file?" href="http://en.wikipedia.org/wiki/Device_independent_file_format">Wikipedia: DVI</a><br>
+</td>
+</tr>
+<tr>
+<td>Digital Siesmograph Networks - SEED Datafiles</td>
+<td>application/vnd.fdsn.seed</td>
+<td>.seed</td>
+<td><a target="_blank" title="What is a '.seed' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fdsn.seed">IANA: SEED</a><br>
+</td>
+</tr>
+<tr>
+<td>Digital Talking Book</td>
+<td>application/x-dtbook&#43;xml</td>
+<td>.dtb</td>
+<td><a target="_blank" title="What is a '.dtb' file?" href="http://en.wikipedia.org/wiki/EPUB">Wikipedia: EPUB</a><br>
+</td>
+</tr>
+<tr>
+<td>Digital Talking Book - Resource File</td>
+<td>application/x-dtbresource&#43;xml</td>
+<td>.res</td>
+<td><a target="_blank" title="What is a '.res' file?" href="http://www.daisy.org/z3986/2005/Z3986-2005.html">Digital Talking Book</a><br>
+</td>
+</tr>
+<tr>
+<td>Digital Video Broadcasting</td>
+<td>application/vnd.dvb.ait</td>
+<td>.ait</td>
+<td><a target="_blank" title="What is a '.ait' file?" href="http://www.iana.org/assignments/media-types/application/vnd.dvb.ait">IANA: Digital Video Broadcasting</a><br>
+</td>
+</tr>
+<tr>
+<td>Digital Video Broadcasting</td>
+<td>application/vnd.dvb.service</td>
+<td>.svc</td>
+<td><a target="_blank" title="What is a '.svc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.dvb.svc">IANA: Digital Video Broadcasting</a><br>
+</td>
+</tr>
+<tr>
+<td>Digital Winds Music</td>
+<td>audio/vnd.digital-winds</td>
+<td>.eol</td>
+<td><a target="_blank" title="What is a '.eol' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.digital-winds">IANA: Digital Winds</a><br>
+</td>
+</tr>
+<tr>
+<td>DjVu</td>
+<td>image/vnd.djvu</td>
+<td>.djvu</td>
+<td><a target="_blank" title="What is a '.djvu' file?" href="http://en.wikipedia.org/wiki/DjVu">Wikipedia: DjVu</a><br>
+</td>
+</tr>
+<tr>
+<td>Document Type Definition</td>
+<td>application/xml-dtd</td>
+<td>.dtd</td>
+<td><a target="_blank" title="What is a '.dtd' file?" href="http://www.w3.org/TR/html4/sgml/dtd.html">W3C DTD</a><br>
+</td>
+</tr>
+<tr>
+<td>Dolby Meridian Lossless Packing</td>
+<td>application/vnd.dolby.mlp</td>
+<td>.mlp</td>
+<td><a target="_blank" title="What is a '.mlp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.dolby.mlp">IANA: Dolby Meridian Lossless Packing</a><br>
+</td>
+</tr>
+<tr>
+<td>Doom Video Game</td>
+<td>application/x-doom</td>
+<td>.wad</td>
+<td><a target="_blank" title="What is a '.wad' file?" href="http://en.wikipedia.org/wiki/Doom_wad">Wikipedia: Doom WAD</a><br>
+</td>
+</tr>
+<tr>
+<td>DPGraph</td>
+<td>application/vnd.dpgraph</td>
+<td>.dpg</td>
+<td><a target="_blank" title="What is a '.dpg' file?" href="http://www.iana.org/assignments/media-types/application/vnd.dpgraph">IANA: DPGraph</a><br>
+</td>
+</tr>
+<tr>
+<td>DRA Audio</td>
+<td>audio/vnd.dra</td>
+<td>.dra</td>
+<td><a target="_blank" title="What is a '.dra' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.dra">IANA: DRA</a><br>
+</td>
+</tr>
+<tr>
+<td>DreamFactory</td>
+<td>application/vnd.dreamfactory</td>
+<td>.dfac</td>
+<td><a target="_blank" title="What is a '.dfac' file?" href="http://www.iana.org/assignments/media-types/application/vnd.dreamfactory">IANA: DreamFactory</a><br>
+</td>
+</tr>
+<tr>
+<td>DTS Audio</td>
+<td>audio/vnd.dts</td>
+<td>.dts</td>
+<td><a target="_blank" title="What is a '.dts' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.dts">IANA: DTS</a><br>
+</td>
+</tr>
+<tr>
+<td>DTS High Definition Audio</td>
+<td>audio/vnd.dts.hd</td>
+<td>.dtshd</td>
+<td><a target="_blank" title="What is a '.dtshd' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.dts.hd">IANA: DTS HD</a><br>
+</td>
+</tr>
+<tr>
+<td>DWG Drawing</td>
+<td>image/vnd.dwg</td>
+<td>.dwg</td>
+<td><a target="_blank" title="What is a '.dwg' file?" href="http://en.wikipedia.org/wiki/Dwg">Wikipedia: DWG</a><br>
+</td>
+</tr>
+<tr>
+<td>DynaGeo</td>
+<td>application/vnd.dynageo</td>
+<td>.geo</td>
+<td><a target="_blank" title="What is a '.geo' file?" href="http://www.iana.org/assignments/media-types/application/vnd.dynageo">IANA: DynaGeo</a><br>
+</td>
+</tr>
+<tr>
+<td>ECMAScript</td>
+<td>application/ecmascript</td>
+<td>.es</td>
+<td><a target="_blank" title="What is a '.es' file?" href="http://www.ecma-international.org/publications/standards/Ecma-357.htm">ECMA-357</a><br>
+</td>
+</tr>
+<tr>
+<td>EcoWin Chart</td>
+<td>application/vnd.ecowin.chart</td>
+<td>.mag</td>
+<td><a target="_blank" title="What is a '.mag' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ecowin.chart">IANA: EcoWin Chart</a><br>
+</td>
+</tr>
+<tr>
+<td>EDMICS 2000</td>
+<td>image/vnd.fujixerox.edmics-mmr</td>
+<td>.mmr</td>
+<td><a target="_blank" title="What is a '.mmr' file?" href="http://www.ietf.org/assignments/media-types/image/vnd.fujixerox.edmics-mmr">IANA: EDMICS 2000</a><br>
+</td>
+</tr>
+<tr>
+<td>EDMICS 2000</td>
+<td>image/vnd.fujixerox.edmics-rlc</td>
+<td>.rlc</td>
+<td><a target="_blank" title="What is a '.rlc' file?" href="http://www.ietf.org/assignments/media-types/image/vnd.fujixerox.edmics-rlc">IANA: EDMICS 2000</a><br>
+</td>
+</tr>
+<tr>
+<td>Efficient XML Interchange</td>
+<td>application/exi</td>
+<td>.exi</td>
+<td><a target="_blank" title="What is a '.exi' file?" href="http://www.w3.org/TR/exi-best-practices/">Efficient XML Interchange (EXI) Best Practices</a><br>
+</td>
+</tr>
+<tr>
+<td>EFI Proteus</td>
+<td>application/vnd.proteus.magazine</td>
+<td>.mgz</td>
+<td><a target="_blank" title="What is a '.mgz' file?" href="http://www.iana.org/assignments/media-types/application/vnd.proteus.magazine">IANA: EFI Proteus</a><br>
+</td>
+</tr>
+<tr>
+<td>Electronic Publication</td>
+<td>application/epub&#43;zip</td>
+<td>.epub</td>
+<td><a target="_blank" title="What is a '.epub' file?" href="http://en.wikipedia.org/wiki/EPUB">Wikipedia: EPUB</a><br>
+</td>
+</tr>
+<tr>
+<td>Email Message</td>
+<td>message/rfc822</td>
+<td>.eml</td>
+<td><a target="_blank" title="What is a '.eml' file?" href="http://www.rfc-editor.org/info/rfc2822">RFC 2822</a><br>
+</td>
+</tr>
+<tr>
+<td>Enliven Viewer</td>
+<td>application/vnd.enliven</td>
+<td>.nml</td>
+<td><a target="_blank" title="What is a '.nml' file?" href="http://www.iana.org/assignments/media-types/application/vnd.enliven">IANA: Enliven Viewer</a><br>
+</td>
+</tr>
+<tr>
+<td>Express by Infoseek</td>
+<td>application/vnd.is-xpr</td>
+<td>.xpr</td>
+<td><a target="_blank" title="What is a '.xpr' file?" href="http://www.iana.org/assignments/media-types/application/vnd.is-xpr">IANA: Express by Infoseek</a><br>
+</td>
+</tr>
+<tr>
+<td>eXtended Image File Format (XIFF)</td>
+<td>image/vnd.xiff</td>
+<td>.xif</td>
+<td><a target="_blank" title="What is a '.xif' file?" href="http://www.iana.org/assignments/media-types/image/vnd.xiff">IANA: XIFF</a><br>
+</td>
+</tr>
+<tr>
+<td>Extensible Forms Description Language</td>
+<td>application/vnd.xfdl</td>
+<td>.xfdl</td>
+<td><a target="_blank" title="What is a '.xfdl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.xfdl">IANA: Extensible Forms Description Language</a><br>
+</td>
+</tr>
+<tr>
+<td>Extensible MultiModal Annotation</td>
+<td>application/emma&#43;xml</td>
+<td>.emma</td>
+<td><a target="_blank" title="What is a '.emma' file?" href="http://www.w3.org/TR/2007/CR-emma-20071211/">EMMA: Extensible MultiModal Annotation markup language</a><br>
+</td>
+</tr>
+<tr>
+<td>EZPix Secure Photo Album</td>
+<td>application/vnd.ezpix-album</td>
+<td>.ez2</td>
+<td><a target="_blank" title="What is a '.ez2' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ezpix-album">IANA: EZPix Secure Photo Album</a><br>
+</td>
+</tr>
+<tr>
+<td>EZPix Secure Photo Album</td>
+<td>application/vnd.ezpix-package</td>
+<td>.ez3</td>
+<td><a target="_blank" title="What is a '.ez3' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ezpix-package">IANA: EZPix Secure Photo Album</a><br>
+</td>
+</tr>
+<tr>
+<td>FAST Search &amp; Transfer ASA</td>
+<td>image/vnd.fst</td>
+<td>.fst</td>
+<td><a target="_blank" title="What is a '.fst' file?" href="http://www.ietf.org/assignments/media-types/image/vnd.fst">IANA: FAST Search &amp; Transfer ASA</a><br>
+</td>
+</tr>
+<tr>
+<td>FAST Search &amp; Transfer ASA</td>
+<td>video/vnd.fvt</td>
+<td>.fvt</td>
+<td><a target="_blank" title="What is a '.fvt' file?" href="http://www.iana.org/assignments/media-types/video/vnd.fvt">IANA: FVT</a><br>
+</td>
+</tr>
+<tr>
+<td>FastBid Sheet</td>
+<td>image/vnd.fastbidsheet</td>
+<td>.fbs</td>
+<td><a target="_blank" title="What is a '.fbs' file?" href="http://www.ietf.org/assignments/media-types/image/vnd.fastbidsheet">IANA: FastBid Sheet</a><br>
+</td>
+</tr>
+<tr>
+<td>FCS Express Layout Link</td>
+<td>application/vnd.denovo.fcselayout-link</td>
+<td>.fe_launch</td>
+<td><a target="_blank" title="What is a '.fe_launch' file?" href="http://www.iana.org/assignments/media-types/application/vnd.denovo.fcselayout-link">IANA: FCS Express Layout Link</a><br>
+</td>
+</tr>
+<tr>
+<td>Flash Video</td>
+<td>video/x-f4v</td>
+<td>.f4v</td>
+<td><a target="_blank" title="What is a '.f4v' file?" href="http://en.wikipedia.org/wiki/Flash_Video">Wikipedia: Flash Video</a><br>
+</td>
+</tr>
+<tr>
+<td>Flash Video</td>
+<td>video/x-flv</td>
+<td>.flv</td>
+<td><a target="_blank" title="What is a '.flv' file?" href="http://en.wikipedia.org/wiki/Flash_Video">Wikipedia: Flash Video</a><br>
+</td>
+</tr>
+<tr>
+<td>FlashPix</td>
+<td>image/vnd.fpx</td>
+<td>.fpx</td>
+<td><a target="_blank" title="What is a '.fpx' file?" href="http://www.ietf.org/assignments/media-types/image/vnd.fpx">IANA: FPX</a><br>
+</td>
+</tr>
+<tr>
+<td>FlashPix</td>
+<td>image/vnd.net-fpx</td>
+<td>.npx</td>
+<td><a target="_blank" title="What is a '.npx' file?" href="http://www.ietf.org/assignments/media-types/image/vnd.net-fpx">IANA: FPX</a><br>
+</td>
+</tr>
+<tr>
+<td>FLEXSTOR</td>
+<td>text/vnd.fmi.flexstor</td>
+<td>.flx</td>
+<td><a target="_blank" title="What is a '.flx' file?" href="http://www.iana.org/assignments/media-types/text/vnd.fmi.flexstor">IANA: FLEXSTOR</a><br>
+</td>
+</tr>
+<tr>
+<td>FLI/FLC Animation Format</td>
+<td>video/x-fli</td>
+<td>.fli</td>
+<td><a target="_blank" title="What is a '.fli' file?" href="http://www.aos.wisc.edu/fli.html">FLI/FLC Animation Format</a><br>
+</td>
+</tr>
+<tr>
+<td>FluxTime Clip</td>
+<td>application/vnd.fluxtime.clip</td>
+<td>.ftc</td>
+<td><a target="_blank" title="What is a '.ftc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fluxtime.clip">IANA: FluxTime Clip</a><br>
+</td>
+</tr>
+<tr>
+<td>Forms Data Format</td>
+<td>application/vnd.fdf</td>
+<td>.fdf</td>
+<td><a target="_blank" title="What is a '.fdf' file?" href="http://www.iana.org/assignments/media-types/application/vnd-fdf">IANA: Forms Data Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Fortran Source File</td>
+<td>text/x-fortran</td>
+<td>.f</td>
+<td><a target="_blank" title="What is a '.f' file?" href="http://en.wikipedia.org/wiki/Fortran">Wikipedia: Fortran</a><br>
+</td>
+</tr>
+<tr>
+<td>FrameMaker Interchange Format</td>
+<td>application/vnd.mif</td>
+<td>.mif</td>
+<td><a target="_blank" title="What is a '.mif' file?" href="http://www.iana.org/assignments/media-types/application/vnd-mif">IANA: FrameMaker Interchange Format</a><br>
+</td>
+</tr>
+<tr>
+<td>FrameMaker Normal Format</td>
+<td>application/vnd.framemaker</td>
+<td>.fm</td>
+<td><a target="_blank" title="What is a '.fm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.framemaker">IANA: FrameMaker</a><br>
+</td>
+</tr>
+<tr>
+<td>FreeHand MX</td>
+<td>image/x-freehand</td>
+<td>.fh</td>
+<td><a target="_blank" title="What is a '.fh' file?" href="http://en.wikipedia.org/wiki/Macromedia_FreeHand">Wikipedia: Macromedia Freehand</a><br>
+</td>
+</tr>
+<tr>
+<td>Friendly Software Corporation</td>
+<td>application/vnd.fsc.weblaunch</td>
+<td>.fsc</td>
+<td><a target="_blank" title="What is a '.fsc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fsc.weblaunch">IANA: Friendly Software Corporation</a><br>
+</td>
+</tr>
+<tr>
+<td>Frogans Player</td>
+<td>application/vnd.frogans.fnc</td>
+<td>.fnc</td>
+<td><a target="_blank" title="What is a '.fnc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.frogans.fnc">IANA: Frogans Player</a><br>
+</td>
+</tr>
+<tr>
+<td>Frogans Player</td>
+<td>application/vnd.frogans.ltf</td>
+<td>.ltf</td>
+<td><a target="_blank" title="What is a '.ltf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.frogans.ltf">IANA: Frogans Player</a><br>
+</td>
+</tr>
+<tr>
+<td>Fujitsu - Xerox 2D CAD Data</td>
+<td>application/vnd.fujixerox.ddd</td>
+<td>.ddd</td>
+<td><a target="_blank" title="What is a '.ddd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fujixerox.ddd">IANA: Fujitsu DDD</a><br>
+</td>
+</tr>
+<tr>
+<td>Fujitsu - Xerox DocuWorks</td>
+<td>application/vnd.fujixerox.docuworks</td>
+<td>.xdw</td>
+<td><a target="_blank" title="What is a '.xdw' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fujixerox.docuworks">IANA: Docuworks</a><br>
+</td>
+</tr>
+<tr>
+<td>Fujitsu - Xerox DocuWorks Binder</td>
+<td>application/vnd.fujixerox.docuworks.binder</td>
+<td>.xbd</td>
+<td><a target="_blank" title="What is a '.xbd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fujixerox.docuworks.binder">IANA: Docuworks Binder</a><br>
+</td>
+</tr>
+<tr>
+<td>Fujitsu Oasys</td>
+<td>application/vnd.fujitsu.oasys</td>
+<td>.oas</td>
+<td><a target="_blank" title="What is a '.oas' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fujitsu.oasys">IANA: Fujitsu Oasys</a><br>
+</td>
+</tr>
+<tr>
+<td>Fujitsu Oasys</td>
+<td>application/vnd.fujitsu.oasys2</td>
+<td>.oa2</td>
+<td><a target="_blank" title="What is a '.oa2' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fujitsu.oasys2">IANA: Fujitsu Oasys</a><br>
+</td>
+</tr>
+<tr>
+<td>Fujitsu Oasys</td>
+<td>application/vnd.fujitsu.oasys3</td>
+<td>.oa3</td>
+<td><a target="_blank" title="What is a '.oa3' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fujitsu.oasys3">IANA: Fujitsu Oasys</a><br>
+</td>
+</tr>
+<tr>
+<td>Fujitsu Oasys</td>
+<td>application/vnd.fujitsu.oasysgp</td>
+<td>.fg5</td>
+<td><a target="_blank" title="What is a '.fg5' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fujitsu.oasysgp">IANA: Fujitsu Oasys</a><br>
+</td>
+</tr>
+<tr>
+<td>Fujitsu Oasys</td>
+<td>application/vnd.fujitsu.oasysprs</td>
+<td>.bh2</td>
+<td><a target="_blank" title="What is a '.bh2' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fujitsu.oasysprs">IANA: Fujitsu Oasys</a><br>
+</td>
+</tr>
+<tr>
+<td>FutureSplash Animator</td>
+<td>application/x-futuresplash</td>
+<td>.spl</td>
+<td><a target="_blank" title="What is a '.spl' file?" href="http://en.wikipedia.org/wiki/FutureSplash_Animator">Wikipedia: FutureSplash Animator</a><br>
+</td>
+</tr>
+<tr>
+<td>FuzzySheet</td>
+<td>application/vnd.fuzzysheet</td>
+<td>.fzs</td>
+<td><a target="_blank" title="What is a '.fzs' file?" href="http://www.iana.org/assignments/media-types/application/vnd.fuzzysheet">IANA: FuzySheet</a><br>
+</td>
+</tr>
+<tr>
+<td>G3 Fax Image</td>
+<td>image/g3fax</td>
+<td>.g3</td>
+<td><a target="_blank" title="What is a '.g3' file?" href="http://en.wikipedia.org/wiki/T.38">Wikipedia: G3 Fax Image</a><br>
+</td>
+</tr>
+<tr>
+<td>GameMaker ActiveX</td>
+<td>application/vnd.gmx</td>
+<td>.gmx</td>
+<td><a target="_blank" title="What is a '.gmx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.gmx">IANA: GameMaker ActiveX</a><br>
+</td>
+</tr>
+<tr>
+<td>Gen-Trix Studio</td>
+<td>model/vnd.gtw</td>
+<td>.gtw</td>
+<td><a target="_blank" title="What is a '.gtw' file?" href="http://www.iana.org/assignments/media-types/model/vnd.gtw">IANA: GTW</a><br>
+</td>
+</tr>
+<tr>
+<td>Genomatix Tuxedo Framework</td>
+<td>application/vnd.genomatix.tuxedo</td>
+<td>.txd</td>
+<td><a target="_blank" title="What is a '.txd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.genomatix.tuxedo">IANA: Genomatix Tuxedo Framework</a><br>
+</td>
+</tr>
+<tr>
+<td>GeoGebra</td>
+<td>application/vnd.geogebra.file</td>
+<td>.ggb</td>
+<td><a target="_blank" title="What is a '.ggb' file?" href="http://www.iana.org/assignments/media-types/application/vnd.geogebra.file">IANA: GeoGebra</a><br>
+</td>
+</tr>
+<tr>
+<td>GeoGebra</td>
+<td>application/vnd.geogebra.tool</td>
+<td>.ggt</td>
+<td><a target="_blank" title="What is a '.ggt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.geogebra.tool">IANA: GeoGebra</a><br>
+</td>
+</tr>
+<tr>
+<td>Geometric Description Language (GDL)</td>
+<td>model/vnd.gdl</td>
+<td>.gdl</td>
+<td><a target="_blank" title="What is a '.gdl' file?" href="http://www.iana.org/assignments/media-types/model/vnd.gs-gdl">IANA: GDL</a><br>
+</td>
+</tr>
+<tr>
+<td>GeoMetry Explorer</td>
+<td>application/vnd.geometry-explorer</td>
+<td>.gex</td>
+<td><a target="_blank" title="What is a '.gex' file?" href="http://www.iana.org/assignments/media-types/application/vnd.geometry-explorer">IANA: GeoMetry Explorer</a><br>
+</td>
+</tr>
+<tr>
+<td>GEONExT and JSXGraph</td>
+<td>application/vnd.geonext</td>
+<td>.gxt</td>
+<td><a target="_blank" title="What is a '.gxt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.geonext">IANA: GEONExT and JSXGraph</a><br>
+</td>
+</tr>
+<tr>
+<td>GeoplanW</td>
+<td>application/vnd.geoplan</td>
+<td>.g2w</td>
+<td><a target="_blank" title="What is a '.g2w' file?" href="http://www.iana.org/assignments/media-types/application/vnd.geoplan">IANA: GeoplanW</a><br>
+</td>
+</tr>
+<tr>
+<td>GeospacW</td>
+<td>application/vnd.geospace</td>
+<td>.g3w</td>
+<td><a target="_blank" title="What is a '.g3w' file?" href="http://www.iana.org/assignments/media-types/application/vnd.geospace">IANA: GeospacW</a><br>
+</td>
+</tr>
+<tr>
+<td>Ghostscript Font</td>
+<td>application/x-font-ghostscript</td>
+<td>.gsf</td>
+<td><a target="_blank" title="What is a '.gsf' file?" href="http://en.wikipedia.org/wiki/Ghostscript">Wikipedia: Ghostscript</a><br>
+</td>
+</tr>
+<tr>
+<td>Glyph Bitmap Distribution Format</td>
+<td>application/x-font-bdf</td>
+<td>.bdf</td>
+<td><a target="_blank" title="What is a '.bdf' file?" href="http://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format">Wikipedia: Glyph Bitmap Distribution Format</a><br>
+</td>
+</tr>
+<tr>
+<td>GNU Tar Files</td>
+<td>application/x-gtar</td>
+<td>.gtar</td>
+<td><a target="_blank" title="What is a '.gtar' file?" href="http://www.gnu.org/Software/tar/">GNU Tar</a><br>
+</td>
+</tr>
+<tr>
+<td>GNU Texinfo Document</td>
+<td>application/x-texinfo</td>
+<td>.texinfo</td>
+<td><a target="_blank" title="What is a '.texinfo' file?" href="http://en.wikipedia.org/wiki/Texinfo">Wikipedia: Texinfo</a><br>
+</td>
+</tr>
+<tr>
+<td>Gnumeric</td>
+<td>application/x-gnumeric</td>
+<td>.gnumeric</td>
+<td><a target="_blank" title="What is a '.gnumeric' file?" href="http://en.wikipedia.org/wiki/Gnumeric">Wikipedia: Gnumeric</a><br>
+</td>
+</tr>
+<tr>
+<td>Google Earth - KML</td>
+<td>application/vnd.google-earth.kml&#43;xml</td>
+<td>.kml</td>
+<td><a target="_blank" title="What is a '.kml' file?" href="http://www.iana.org/assignments/media-types/application/vnd.google-earth.kml&#43;xml">IANA: Google Earth</a><br>
+</td>
+</tr>
+<tr>
+<td>Google Earth - Zipped KML</td>
+<td>application/vnd.google-earth.kmz</td>
+<td>.kmz</td>
+<td><a target="_blank" title="What is a '.kmz' file?" href="http://www.iana.org/assignments/media-types/application/vnd.google-earth.kmz">IANA: Google Earth</a><br>
+</td>
+</tr>
+<tr>
+<td>GrafEq</td>
+<td>application/vnd.grafeq</td>
+<td>.gqf</td>
+<td><a target="_blank" title="What is a '.gqf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.grafeq">IANA: GrafEq</a><br>
+</td>
+</tr>
+<tr>
+<td>Graphics Interchange Format</td>
+<td>image/gif</td>
+<td>.gif</td>
+<td><a target="_blank" title="What is a '.gif' file?" href="http://en.wikipedia.org/wiki/Gif">Wikipedia: Graphics Interchange Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Graphviz</td>
+<td>text/vnd.graphviz</td>
+<td>.gv</td>
+<td><a target="_blank" title="What is a '.gv' file?" href="http://www.iana.org/assignments/media-types/text/vnd.graphviz">IANA: Graphviz</a><br>
+</td>
+</tr>
+<tr>
+<td>Groove - Account</td>
+<td>application/vnd.groove-account</td>
+<td>.gac</td>
+<td><a target="_blank" title="What is a '.gac' file?" href="http://www.iana.org/assignments/media-types/application/vnd.groove-account">IANA: Groove</a><br>
+</td>
+</tr>
+<tr>
+<td>Groove - Help</td>
+<td>application/vnd.groove-help</td>
+<td>.ghf</td>
+<td><a target="_blank" title="What is a '.ghf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.groove-help">IANA: Groove</a><br>
+</td>
+</tr>
+<tr>
+<td>Groove - Identity Message</td>
+<td>application/vnd.groove-identity-message</td>
+<td>.gim</td>
+<td><a target="_blank" title="What is a '.gim' file?" href="http://www.iana.org/assignments/media-types/application/vnd.groove-identity-message">IANA: Groove</a><br>
+</td>
+</tr>
+<tr>
+<td>Groove - Injector</td>
+<td>application/vnd.groove-injector</td>
+<td>.grv</td>
+<td><a target="_blank" title="What is a '.grv' file?" href="http://www.iana.org/assignments/media-types/application/vnd.groove-injector">IANA: Groove</a><br>
+</td>
+</tr>
+<tr>
+<td>Groove - Tool Message</td>
+<td>application/vnd.groove-tool-message</td>
+<td>.gtm</td>
+<td><a target="_blank" title="What is a '.gtm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.groove-tool-message">IANA: Groove</a><br>
+</td>
+</tr>
+<tr>
+<td>Groove - Tool Template</td>
+<td>application/vnd.groove-tool-template</td>
+<td>.tpl</td>
+<td><a target="_blank" title="What is a '.tpl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.groove-tool-template">IANA: Groove</a><br>
+</td>
+</tr>
+<tr>
+<td>Groove - Vcard</td>
+<td>application/vnd.groove-vcard</td>
+<td>.vcg</td>
+<td><a target="_blank" title="What is a '.vcg' file?" href="http://www.iana.org/assignments/media-types/application/vnd.groove-vcard">IANA: Groove</a><br>
+</td>
+</tr>
+<tr>
+<td>H.261</td>
+<td>video/h261</td>
+<td>.h261</td>
+<td><a target="_blank" title="What is a '.h261' file?" href="http://en.wikipedia.org/wiki/H261">Wikipedia: H.261</a><br>
+</td>
+</tr>
+<tr>
+<td>H.263</td>
+<td>video/h263</td>
+<td>.h263</td>
+<td><a target="_blank" title="What is a '.h263' file?" href="http://en.wikipedia.org/wiki/H263">Wikipedia: H.263</a><br>
+</td>
+</tr>
+<tr>
+<td>H.264</td>
+<td>video/h264</td>
+<td>.h264</td>
+<td><a target="_blank" title="What is a '.h264' file?" href="http://en.wikipedia.org/wiki/H264">Wikipedia: H.264</a><br>
+</td>
+</tr>
+<tr>
+<td>Hewlett Packard Instant Delivery</td>
+<td>application/vnd.hp-hpid</td>
+<td>.hpid</td>
+<td><a target="_blank" title="What is a '.hpid' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hp-hpid">IANA: Hewlett Packard Instant Delivery</a><br>
+</td>
+</tr>
+<tr>
+<td>Hewlett-Packard's WebPrintSmart</td>
+<td>application/vnd.hp-hps</td>
+<td>.hps</td>
+<td><a target="_blank" title="What is a '.hps' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hp-hps">IANA: Hewlett-Packard's WebPrintSmart</a><br>
+</td>
+</tr>
+<tr>
+<td>Hierarchical Data Format</td>
+<td>application/x-hdf</td>
+<td>.hdf</td>
+<td><a target="_blank" title="What is a '.hdf' file?" href="http://en.wikipedia.org/wiki/Hierarchical_Data_Format">Wikipedia: Hierarchical Data Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Hit'n'Mix</td>
+<td>audio/vnd.rip</td>
+<td>.rip</td>
+<td><a target="_blank" title="What is a '.rip' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.rip">IANA: Hit'n'Mix</a><br>
+</td>
+</tr>
+<tr>
+<td>Homebanking Computer Interface (HBCI)</td>
+<td>application/vnd.hbci</td>
+<td>.hbci</td>
+<td><a target="_blank" title="What is a '.hbci' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hbci">IANA: HBCI</a><br>
+</td>
+</tr>
+<tr>
+<td>HP Indigo Digital Press - Job Layout Languate</td>
+<td>application/vnd.hp-jlyt</td>
+<td>.jlt</td>
+<td><a target="_blank" title="What is a '.jlt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hp-jlyt">IANA: HP Job Layout Language</a><br>
+</td>
+</tr>
+<tr>
+<td>HP Printer Command Language</td>
+<td>application/vnd.hp-pcl</td>
+<td>.pcl</td>
+<td><a target="_blank" title="What is a '.pcl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hp-PCL">IANA: HP Printer Command Language</a><br>
+</td>
+</tr>
+<tr>
+<td>HP-GL/2 and HP RTL</td>
+<td>application/vnd.hp-hpgl</td>
+<td>.hpgl</td>
+<td><a target="_blank" title="What is a '.hpgl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hp-HPGL">IANA: HP-GL/2 and HP RTL</a><br>
+</td>
+</tr>
+<tr>
+<td>HV Script</td>
+<td>application/vnd.yamaha.hv-script</td>
+<td>.hvs</td>
+<td><a target="_blank" title="What is a '.hvs' file?" href="http://www.iana.org/assignments/media-types/application/vnd.yamaha.hv-script">IANA: HV Script</a><br>
+</td>
+</tr>
+<tr>
+<td>HV Voice Dictionary</td>
+<td>application/vnd.yamaha.hv-dic</td>
+<td>.hvd</td>
+<td><a target="_blank" title="What is a '.hvd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.yamaha.hv-dic">IANA: HV Voice Dictionary</a><br>
+</td>
+</tr>
+<tr>
+<td>HV Voice Parameter</td>
+<td>application/vnd.yamaha.hv-voice</td>
+<td>.hvp</td>
+<td><a target="_blank" title="What is a '.hvp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.yamaha.hv-voice">IANA: HV Voice Parameter</a><br>
+</td>
+</tr>
+<tr>
+<td>Hydrostatix Master Suite</td>
+<td>application/vnd.hydrostatix.sof-data</td>
+<td>.sfd-hdstx</td>
+<td><a target="_blank" title="What is a '.sfd-hdstx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hydrostatix.sof-data">IANA: Hydrostatix Master Suite</a><br>
+</td>
+</tr>
+<tr>
+<td>Hyperstudio</td>
+<td>application/hyperstudio</td>
+<td>.stk</td>
+<td><a target="_blank" title="What is a '.stk' file?" href="http://www.iana.org/assignments/media-types/application/hyperstudio">IANA - Hyperstudio</a><br>
+</td>
+</tr>
+<tr>
+<td>Hypertext Application Language</td>
+<td>application/vnd.hal&#43;xml</td>
+<td>.hal</td>
+<td><a target="_blank" title="What is a '.hal' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hal&#43;xml">IANA: HAL</a><br>
+</td>
+</tr>
+<tr>
+<td>HyperText Markup Language (HTML)</td>
+<td>text/html</td>
+<td>.html</td>
+<td><a target="_blank" title="What is a '.html' file?" href="http://en.wikipedia.org/wiki/Html">Wikipedia: HTML</a><br>
+</td>
+</tr>
+<tr>
+<td>IBM DB2 Rights Manager</td>
+<td>application/vnd.ibm.rights-management</td>
+<td>.irm</td>
+<td><a target="_blank" title="What is a '.irm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ibm.rights-management">IANA: IBM DB2 Rights Manager</a><br>
+</td>
+</tr>
+<tr>
+<td>IBM Electronic Media Management System - Secure Container</td>
+<td>application/vnd.ibm.secure-container</td>
+<td>.sc</td>
+<td><a target="_blank" title="What is a '.sc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ibm.secure-container">IANA: EMMS</a><br>
+</td>
+</tr>
+<tr>
+<td>iCalendar</td>
+<td>text/calendar</td>
+<td>.ics</td>
+<td><a target="_blank" title="What is a '.ics' file?" href="http://en.wikipedia.org/wiki/ICalendar">Wikipedia: iCalendar</a><br>
+</td>
+</tr>
+<tr>
+<td>ICC profile</td>
+<td>application/vnd.iccprofile</td>
+<td>.icc</td>
+<td><a target="_blank" title="What is a '.icc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.iccprofile">IANA: ICC profile</a><br>
+</td>
+</tr>
+<tr>
+<td>Icon Image</td>
+<td>image/x-icon</td>
+<td>.ico</td>
+<td><a target="_blank" title="What is a '.ico' file?" href="http://en.wikipedia.org/wiki/ICO_%28file_format%29">Wikipedia: ICO File Format</a><br>
+</td>
+</tr>
+<tr>
+<td>igLoader</td>
+<td>application/vnd.igloader</td>
+<td>.igl</td>
+<td><a target="_blank" title="What is a '.igl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.igloader">IANA: igLoader</a><br>
+</td>
+</tr>
+<tr>
+<td>Image Exchange Format</td>
+<td>image/ief</td>
+<td>.ief</td>
+<td><a target="_blank" title="What is a '.ief' file?" href="http://www.rfc-editor.org/rfc/rfc1314.txt">RFC 1314</a><br>
+</td>
+</tr>
+<tr>
+<td>ImmerVision PURE Players</td>
+<td>application/vnd.immervision-ivp</td>
+<td>.ivp</td>
+<td><a target="_blank" title="What is a '.ivp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.immervision-ivp">IANA: ImmerVision PURE Players</a><br>
+</td>
+</tr>
+<tr>
+<td>ImmerVision PURE Players</td>
+<td>application/vnd.immervision-ivu</td>
+<td>.ivu</td>
+<td><a target="_blank" title="What is a '.ivu' file?" href="http://www.iana.org/assignments/media-types/application/vnd.immervision-ivu">IANA: ImmerVision PURE Players</a><br>
+</td>
+</tr>
+<tr>
+<td>IMS Networks</td>
+<td>application/reginfo&#43;xml</td>
+<td>.rif</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>In3D - 3DML</td>
+<td>text/vnd.in3d.3dml</td>
+<td>.3dml</td>
+<td><a target="_blank" title="What is a '.3dml' file?" href="http://www.iana.org/assignments/media-types/text/vnd.in3d.3dml">IANA: In3D</a><br>
+</td>
+</tr>
+<tr>
+<td>In3D - 3DML</td>
+<td>text/vnd.in3d.spot</td>
+<td>.spot</td>
+<td><a target="_blank" title="What is a '.spot' file?" href="http://www.iana.org/assignments/media-types/text/vnd.in3d.spot">IANA: In3D</a><br>
+</td>
+</tr>
+<tr>
+<td>Initial Graphics Exchange Specification (IGES)</td>
+<td>model/iges</td>
+<td>.igs</td>
+<td><a target="_blank" title="What is a '.igs' file?" href="http://en.wikipedia.org/wiki/IGES">Wikipedia: IGES</a><br>
+</td>
+</tr>
+<tr>
+<td>Interactive Geometry Software</td>
+<td>application/vnd.intergeo</td>
+<td>.i2g</td>
+<td><a target="_blank" title="What is a '.i2g' file?" href="http://www.iana.org/assignments/media-types/application/vnd.intergeo">IANA: Interactive Geometry Software</a><br>
+</td>
+</tr>
+<tr>
+<td>Interactive Geometry Software Cinderella</td>
+<td>application/vnd.cinderella</td>
+<td>.cdy</td>
+<td><a target="_blank" title="What is a '.cdy' file?" href="http://www.iana.org/assignments/media-types/application/vnd.cinderella">IANA: Cinderella</a><br>
+</td>
+</tr>
+<tr>
+<td>Intercon FormNet</td>
+<td>application/vnd.intercon.formnet</td>
+<td>.xpw</td>
+<td><a target="_blank" title="What is a '.xpw' file?" href="http://www.iana.org/assignments/media-types/application/vnd.intercon.formnet">IANA: Intercon FormNet</a><br>
+</td>
+</tr>
+<tr>
+<td>International Society for Advancement of Cytometry</td>
+<td>application/vnd.isac.fcs</td>
+<td>.fcs</td>
+<td><a target="_blank" title="What is a '.fcs' file?" href="http://www.iana.org/assignments/media-types/application/vnd.isac.fcs">IANA: International Society for Advancement of Cytometry</a><br>
+</td>
+</tr>
+<tr>
+<td>Internet Protocol Flow Information Export</td>
+<td>application/ipfix</td>
+<td>.ipfix</td>
+<td><a target="_blank" title="What is a '.ipfix' file?" href="http://tools.ietf.org/html/rfc3917">RFC 3917</a><br>
+</td>
+</tr>
+<tr>
+<td>Internet Public Key Infrastructure - Certificate</td>
+<td>application/pkix-cert</td>
+<td>.cer</td>
+<td><a target="_blank" title="What is a '.cer' file?" href="http://www.ietf.org/rfc/rfc2585.txt">RFC 2585</a><br>
+</td>
+</tr>
+<tr>
+<td>Internet Public Key Infrastructure - Certificate Management Protocole</td>
+<td>application/pkixcmp</td>
+<td>.pki</td>
+<td><a target="_blank" title="What is a '.pki' file?" href="http://www.ietf.org/rfc/rfc2585.txt">RFC 2585</a><br>
+</td>
+</tr>
+<tr>
+<td>Internet Public Key Infrastructure - Certificate Revocation Lists</td>
+<td>application/pkix-crl</td>
+<td>.crl</td>
+<td><a target="_blank" title="What is a '.crl' file?" href="http://www.ietf.org/rfc/rfc2585.txt">RFC 2585</a><br>
+</td>
+</tr>
+<tr>
+<td>Internet Public Key Infrastructure - Certification Path</td>
+<td>application/pkix-pkipath</td>
+<td>.pkipath</td>
+<td><a target="_blank" title="What is a '.pkipath' file?" href="http://www.ietf.org/rfc/rfc2585.txt">RFC 2585</a><br>
+</td>
+</tr>
+<tr>
+<td>IOCOM Visimeet</td>
+<td>application/vnd.insors.igm</td>
+<td>.igm</td>
+<td><a target="_blank" title="What is a '.igm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.insors.igm">IANA: IOCOM Visimeet</a><br>
+</td>
+</tr>
+<tr>
+<td>IP Unplugged Roaming Client</td>
+<td>application/vnd.ipunplugged.rcprofile</td>
+<td>.rcprofile</td>
+<td><a target="_blank" title="What is a '.rcprofile' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ipunplugged.rcprofile">IANA: IP Unplugged Roaming Client</a><br>
+</td>
+</tr>
+<tr>
+<td>iRepository / Lucidoc Editor</td>
+<td>application/vnd.irepository.package&#43;xml</td>
+<td>.irp</td>
+<td><a target="_blank" title="What is a '.irp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.irepository.package&#43;xml">IANA: iRepository / Lucidoc Editor</a><br>
+</td>
+</tr>
+<tr>
+<td>J2ME App Descriptor</td>
+<td>text/vnd.sun.j2me.app-descriptor</td>
+<td>.jad</td>
+<td><a target="_blank" title="What is a '.jad' file?" href="http://www.iana.org/assignments/media-types/text/vnd.sun.j2me.app-descriptor">IANA: J2ME App Descriptor</a><br>
+</td>
+</tr>
+<tr>
+<td>Java Archive</td>
+<td>application/java-archive</td>
+<td>.jar</td>
+<td><a target="_blank" title="What is a '.jar' file?" href="http://en.wikipedia.org/wiki/JAR_%28file_format%29">Wikipedia: JAR file format</a><br>
+</td>
+</tr>
+<tr>
+<td>Java Bytecode File</td>
+<td>application/java-vm</td>
+<td>.class</td>
+<td><a target="_blank" title="What is a '.class' file?" href="http://en.wikipedia.org/wiki/Java_bytecode">Wikipedia: Java Bytecode</a><br>
+</td>
+</tr>
+<tr>
+<td>Java Network Launching Protocol</td>
+<td>application/x-java-jnlp-file</td>
+<td>.jnlp</td>
+<td><a target="_blank" title="What is a '.jnlp' file?" href="http://en.wikipedia.org/wiki/Java_Web_Start">Wikipedia: Java Web Start</a><br>
+</td>
+</tr>
+<tr>
+<td>Java Serialized Object</td>
+<td>application/java-serialized-object</td>
+<td>.ser</td>
+<td><a target="_blank" title="What is a '.ser' file?" href="http://java.sun.com/developer/technicalArticles/Programming/serialization/">Java Serialization API</a><br>
+</td>
+</tr>
+<tr>
+<td>Java Source File</td>
+<td>text/x-java-source,java</td>
+<td>.java</td>
+<td><a target="_blank" title="What is a '.java' file?" href="http://en.wikipedia.org/wiki/Java_%28programming_language%29">Wikipedia: Java</a><br>
+</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>application/javascript</td>
+<td>.js</td>
+<td><a target="_blank" title="What is a '.js' file?" href="http://en.wikipedia.org/wiki/Javascript">JavaScript</a><br>
+</td>
+</tr>
+<tr>
+<td>JavaScript Object Notation (JSON)</td>
+<td>application/json</td>
+<td>.json</td>
+<td><a target="_blank" title="What is a '.json' file?" href="http://en.wikipedia.org/wiki/Json">Wikipedia: JSON</a><br>
+</td>
+</tr>
+<tr>
+<td>Joda Archive</td>
+<td>application/vnd.joost.joda-archive</td>
+<td>.joda</td>
+<td><a target="_blank" title="What is a '.joda' file?" href="http://www.iana.org/assignments/media-types/application/vnd.joost.joda-archive">IANA: Joda Archive</a><br>
+</td>
+</tr>
+<tr>
+<td>JPEG 2000 Compound Image File Format</td>
+<td>video/jpm</td>
+<td>.jpm</td>
+<td><a target="_blank" title="What is a '.jpm' file?" href="http://www.iana.org/assignments/media-types/video/jpm">IANA: JPM</a><br>
+</td>
+</tr>
+<tr>
+<td>JPEG Image</td>
+<td>image/jpeg</td>
+<td>.jpeg, .jpg</td>
+<td><a target="_blank" title="What is a '.jpeg, .jpg' file?" href="http://www.rfc-editor.org/rfc/rfc1314.txt">RFC 1314</a><br>
+</td>
+</tr>
+<tr>
+<td>JPGVideo</td>
+<td>video/jpeg</td>
+<td>.jpgv</td>
+<td><a target="_blank" title="What is a '.jpgv' file?" href="http://www.rfc-editor.org/rfc/rfc3555.txt">RFC 3555</a><br>
+</td>
+</tr>
+<tr>
+<td>Kahootz</td>
+<td>application/vnd.kahootz</td>
+<td>.ktz</td>
+<td><a target="_blank" title="What is a '.ktz' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kahootz">IANA: Kahootz</a><br>
+</td>
+</tr>
+<tr>
+<td>Karaoke on Chipnuts Chipsets</td>
+<td>application/vnd.chipnuts.karaoke-mmd</td>
+<td>.mmd</td>
+<td><a target="_blank" title="What is a '.mmd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.chipnuts.karaoke-mmd">IANA: Chipnuts Karaoke</a><br>
+</td>
+</tr>
+<tr>
+<td>KDE KOffice Office Suite - Karbon</td>
+<td>application/vnd.kde.karbon</td>
+<td>.karbon</td>
+<td><a target="_blank" title="What is a '.karbon' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kde.karbon">IANA: KDE KOffice Office Suite</a><br>
+</td>
+</tr>
+<tr>
+<td>KDE KOffice Office Suite - KChart</td>
+<td>application/vnd.kde.kchart</td>
+<td>.chrt</td>
+<td><a target="_blank" title="What is a '.chrt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kde.kchart">IANA: KDE KOffice Office Suite</a><br>
+</td>
+</tr>
+<tr>
+<td>KDE KOffice Office Suite - Kformula</td>
+<td>application/vnd.kde.kformula</td>
+<td>.kfo</td>
+<td><a target="_blank" title="What is a '.kfo' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kde.kformula">IANA: KDE KOffice Office Suite</a><br>
+</td>
+</tr>
+<tr>
+<td>KDE KOffice Office Suite - Kivio</td>
+<td>application/vnd.kde.kivio</td>
+<td>.flw</td>
+<td><a target="_blank" title="What is a '.flw' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kde.kivio">IANA: KDE KOffice Office Suite</a><br>
+</td>
+</tr>
+<tr>
+<td>KDE KOffice Office Suite - Kontour</td>
+<td>application/vnd.kde.kontour</td>
+<td>.kon</td>
+<td><a target="_blank" title="What is a '.kon' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kde.kontour">IANA: KDE KOffice Office Suite</a><br>
+</td>
+</tr>
+<tr>
+<td>KDE KOffice Office Suite - Kpresenter</td>
+<td>application/vnd.kde.kpresenter</td>
+<td>.kpr</td>
+<td><a target="_blank" title="What is a '.kpr' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kde.kpresenter">IANA: KDE KOffice Office Suite</a><br>
+</td>
+</tr>
+<tr>
+<td>KDE KOffice Office Suite - Kspread</td>
+<td>application/vnd.kde.kspread</td>
+<td>.ksp</td>
+<td><a target="_blank" title="What is a '.ksp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kde.kspread">IANA: KDE KOffice Office Suite</a><br>
+</td>
+</tr>
+<tr>
+<td>KDE KOffice Office Suite - Kword</td>
+<td>application/vnd.kde.kword</td>
+<td>.kwd</td>
+<td><a target="_blank" title="What is a '.kwd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kde.kword">IANA: KDE KOffice Office Suite</a><br>
+</td>
+</tr>
+<tr>
+<td>Kenamea App</td>
+<td>application/vnd.kenameaapp</td>
+<td>.htke</td>
+<td><a target="_blank" title="What is a '.htke' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kenameaapp">IANA: Kenamea App</a><br>
+</td>
+</tr>
+<tr>
+<td>Kidspiration</td>
+<td>application/vnd.kidspiration</td>
+<td>.kia</td>
+<td><a target="_blank" title="What is a '.kia' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kidspiration">IANA: Kidspiration</a><br>
+</td>
+</tr>
+<tr>
+<td>Kinar Applications</td>
+<td>application/vnd.kinar</td>
+<td>.kne</td>
+<td><a target="_blank" title="What is a '.kne' file?" href="http://www.iana.org/assignments/media-types/application/vnd.Kinar">IANA: Kina Applications</a><br>
+</td>
+</tr>
+<tr>
+<td>Kodak Storyshare</td>
+<td>application/vnd.kodak-descriptor</td>
+<td>.sse</td>
+<td><a target="_blank" title="What is a '.sse' file?" href="http://www.iana.org/assignments/media-types/application/vnd.kodak-descriptor">IANA: Kodak Storyshare</a><br>
+</td>
+</tr>
+<tr>
+<td>Laser App Enterprise</td>
+<td>application/vnd.las.las&#43;xml</td>
+<td>.lasxml</td>
+<td><a target="_blank" title="What is a '.lasxml' file?" href="http://www.iana.org/assignments/media-types/application/vnd.las.las&#43;xml">IANA: Laser App Enterprise</a><br>
+</td>
+</tr>
+<tr>
+<td>LaTeX</td>
+<td>application/x-latex</td>
+<td>.latex</td>
+<td><a target="_blank" title="What is a '.latex' file?" href="http://en.wikipedia.org/wiki/LaTeX">Wikipedia: LaTeX</a><br>
+</td>
+</tr>
+<tr>
+<td>Life Balance - Desktop Edition</td>
+<td>application/vnd.llamagraphics.life-balance.desktop</td>
+<td>.lbd</td>
+<td><a target="_blank" title="What is a '.lbd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.llamagraphics.life-balance.desktop">IANA: Life Balance</a><br>
+</td>
+</tr>
+<tr>
+<td>Life Balance - Exchange Format</td>
+<td>application/vnd.llamagraphics.life-balance.exchange&#43;xml</td>
+<td>.lbe</td>
+<td><a target="_blank" title="What is a '.lbe' file?" href="http://www.iana.org/assignments/media-types/application/vnd.llamagraphics.life-balance.exchange&#43;xml">IANA: Life Balance</a><br>
+</td>
+</tr>
+<tr>
+<td>Lightspeed Audio Lab</td>
+<td>application/vnd.jam</td>
+<td>.jam</td>
+<td><a target="_blank" title="What is a '.jam' file?" href="http://www.iana.org/assignments/media-types/application/vnd.jam">IANA: Lightspeed Audio Lab</a><br>
+</td>
+</tr>
+<tr>
+<td>Lotus 1-2-3</td>
+<td>application/vnd.lotus-1-2-3</td>
+<td>.123</td>
+<td><a target="_blank" title="What is a '.123' file?" href="http://www.iana.org/assignments/media-types/application/vnd.lotus-1-2-3">IANA: Lotus 1-2-3</a><br>
+</td>
+</tr>
+<tr>
+<td>Lotus Approach</td>
+<td>application/vnd.lotus-approach</td>
+<td>.apr</td>
+<td><a target="_blank" title="What is a '.apr' file?" href="http://www.iana.org/assignments/media-types/application/vnd.lotus-approach">IANA: Lotus Approach</a><br>
+</td>
+</tr>
+<tr>
+<td>Lotus Freelance</td>
+<td>application/vnd.lotus-freelance</td>
+<td>.pre</td>
+<td><a target="_blank" title="What is a '.pre' file?" href="http://www.iana.org/assignments/media-types/application/vnd.lotus-freelance">IANA: Lotus Freelance</a><br>
+</td>
+</tr>
+<tr>
+<td>Lotus Notes</td>
+<td>application/vnd.lotus-notes</td>
+<td>.nsf</td>
+<td><a target="_blank" title="What is a '.nsf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.lotus-notes">IANA: Lotus Notes</a><br>
+</td>
+</tr>
+<tr>
+<td>Lotus Organizer</td>
+<td>application/vnd.lotus-organizer</td>
+<td>.org</td>
+<td><a target="_blank" title="What is a '.org' file?" href="http://www.iana.org/assignments/media-types/application/vnd.lotus-organizer">IANA: Lotus Organizer</a><br>
+</td>
+</tr>
+<tr>
+<td>Lotus Screencam</td>
+<td>application/vnd.lotus-screencam</td>
+<td>.scm</td>
+<td><a target="_blank" title="What is a '.scm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.lotus-screencam">IANA: Lotus Screencam</a><br>
+</td>
+</tr>
+<tr>
+<td>Lotus Wordpro</td>
+<td>application/vnd.lotus-wordpro</td>
+<td>.lwp</td>
+<td><a target="_blank" title="What is a '.lwp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.lotus-wordpro">IANA: Lotus Wordpro</a><br>
+</td>
+</tr>
+<tr>
+<td>Lucent Voice</td>
+<td>audio/vnd.lucent.voice</td>
+<td>.lvp</td>
+<td><a target="_blank" title="What is a '.lvp' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.lucent.voice">IANA: Lucent Voice</a><br>
+</td>
+</tr>
+<tr>
+<td>M3U (Multimedia Playlist)</td>
+<td>audio/x-mpegurl</td>
+<td>.m3u</td>
+<td><a target="_blank" title="What is a '.m3u' file?" href="http://en.wikipedia.org/wiki/M3u">Wikipedia: M3U</a><br>
+</td>
+</tr>
+<tr>
+<td>M4v</td>
+<td>video/x-m4v</td>
+<td>.m4v</td>
+<td><a target="_blank" title="What is a '.m4v' file?" href="http://en.wikipedia.org/wiki/M4v">Wikipedia: M4v</a><br>
+</td>
+</tr>
+<tr>
+<td>Macintosh BinHex 4.0</td>
+<td>application/mac-binhex40</td>
+<td>.hqx</td>
+<td><a target="_blank" title="What is a '.hqx' file?" href="http://www.iana.org/assignments/media-types/multipart/appledouble">MacMIME</a><br>
+</td>
+</tr>
+<tr>
+<td>MacPorts Port System</td>
+<td>application/vnd.macports.portpkg</td>
+<td>.portpkg</td>
+<td><a target="_blank" title="What is a '.portpkg' file?" href="http://www.iana.org/assignments/media-types/application/vnd.macports.portpkg">IANA: MacPorts Port System</a><br>
+</td>
+</tr>
+<tr>
+<td>MapGuide DBXML</td>
+<td>application/vnd.osgeo.mapguide.package</td>
+<td>.mgp</td>
+<td><a target="_blank" title="What is a '.mgp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.osgeo.mapguide.package">IANA: MapGuide DBXML</a><br>
+</td>
+</tr>
+<tr>
+<td>MARC Formats</td>
+<td>application/marc</td>
+<td>.mrc</td>
+<td><a target="_blank" title="What is a '.mrc' file?" href="http://www.faqs.org/rfcs/rfc2220.html">RFC 2220</a><br>
+</td>
+</tr>
+<tr>
+<td>MARC21 XML Schema</td>
+<td>application/marcxml&#43;xml</td>
+<td>.mrcx</td>
+<td><a target="_blank" title="What is a '.mrcx' file?" href="http://tools.ietf.org/html/rfc6207">RFC 6207</a><br>
+</td>
+</tr>
+<tr>
+<td>Material Exchange Format</td>
+<td>application/mxf</td>
+<td>.mxf</td>
+<td><a target="_blank" title="What is a '.mxf' file?" href="http://www.ietf.org/rfc/rfc4539.txt">RFC 4539</a><br>
+</td>
+</tr>
+<tr>
+<td>Mathematica Notebook Player</td>
+<td>application/vnd.wolfram.player</td>
+<td>.nbp</td>
+<td><a target="_blank" title="What is a '.nbp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.wolfram.player">IANA: Mathematica Notebook Player</a><br>
+</td>
+</tr>
+<tr>
+<td>Mathematica Notebooks</td>
+<td>application/mathematica</td>
+<td>.ma</td>
+<td><a target="_blank" title="What is a '.ma' file?" href="http://www.iana.org/assignments/media-types/application/mathematica">IANA - Mathematica</a><br>
+</td>
+</tr>
+<tr>
+<td>Mathematical Markup Language</td>
+<td>application/mathml&#43;xml</td>
+<td>.mathml</td>
+<td><a target="_blank" title="What is a '.mathml' file?" href="http://www.w3.org/Math/">W3C Math Home</a><br>
+</td>
+</tr>
+<tr>
+<td>Mbox database files</td>
+<td>application/mbox</td>
+<td>.mbox</td>
+<td><a target="_blank" title="What is a '.mbox' file?" href="http://tools.ietf.org/html/rfc4155">RFC 4155</a><br>
+</td>
+</tr>
+<tr>
+<td>MedCalc</td>
+<td>application/vnd.medcalcdata</td>
+<td>.mc1</td>
+<td><a target="_blank" title="What is a '.mc1' file?" href="http://www.iana.org/assignments/media-types/application/vnd.medcalcdata">IANA: MedCalc</a><br>
+</td>
+</tr>
+<tr>
+<td>Media Server Control Markup Language</td>
+<td>application/mediaservercontrol&#43;xml</td>
+<td>.mscml</td>
+<td><a target="_blank" title="What is a '.mscml' file?" href="http://tools.ietf.org/html/rfc5022">RFC 5022</a><br>
+</td>
+</tr>
+<tr>
+<td>MediaRemote</td>
+<td>application/vnd.mediastation.cdkey</td>
+<td>.cdkey</td>
+<td><a target="_blank" title="What is a '.cdkey' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mediastation.cdkey">IANA: MediaRemote</a><br>
+</td>
+</tr>
+<tr>
+<td>Medical Waveform Encoding Format</td>
+<td>application/vnd.mfer</td>
+<td>.mwf</td>
+<td><a target="_blank" title="What is a '.mwf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.MFER">IANA: Medical Waveform Encoding Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Melody Format for Mobile Platform</td>
+<td>application/vnd.mfmp</td>
+<td>.mfm</td>
+<td><a target="_blank" title="What is a '.mfm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mfmp">IANA: Melody Format for Mobile Platform</a><br>
+</td>
+</tr>
+<tr>
+<td>Mesh Data Type</td>
+<td>model/mesh</td>
+<td>.msh</td>
+<td><a target="_blank" title="What is a '.msh' file?" href="http://www.ietf.org/rfc/rfc2077.txt">RFC 2077</a><br>
+</td>
+</tr>
+<tr>
+<td>Metadata Authority Description Schema</td>
+<td>application/mads&#43;xml</td>
+<td>.mads</td>
+<td><a target="_blank" title="What is a '.mads' file?" href="http://tools.ietf.org/html/rfc6207">RFC 6207</a><br>
+</td>
+</tr>
+<tr>
+<td>Metadata Encoding and Transmission Standard</td>
+<td>application/mets&#43;xml</td>
+<td>.mets</td>
+<td><a target="_blank" title="What is a '.mets' file?" href="http://tools.ietf.org/html/rfc6207">RFC 6207</a><br>
+</td>
+</tr>
+<tr>
+<td>Metadata Object Description Schema</td>
+<td>application/mods&#43;xml</td>
+<td>.mods</td>
+<td><a target="_blank" title="What is a '.mods' file?" href="http://tools.ietf.org/html/rfc6207">RFC 6207</a><br>
+</td>
+</tr>
+<tr>
+<td>Metalink</td>
+<td>application/metalink4&#43;xml</td>
+<td>.meta4</td>
+<td><a target="_blank" title="What is a '.meta4' file?" href="http://en.wikipedia.org/wiki/Metalink">Wikipedia: Metalink</a><br>
+</td>
+</tr>
+<tr>
+<td>Micosoft PowerPoint - Macro-Enabled Template File</td>
+<td>application/vnd.ms-powerpoint.template.macroenabled.12</td>
+<td>.potm</td>
+<td><a target="_blank" title="What is a '.potm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-powerpoint.template.macroEnabled.12">IANA: MS PowerPoint</a><br>
+</td>
+</tr>
+<tr>
+<td>Micosoft Word - Macro-Enabled Document</td>
+<td>application/vnd.ms-word.document.macroenabled.12</td>
+<td>.docm</td>
+<td><a target="_blank" title="What is a '.docm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-word.document.macroEnabled.12">IANA: MS Word</a><br>
+</td>
+</tr>
+<tr>
+<td>Micosoft Word - Macro-Enabled Template</td>
+<td>application/vnd.ms-word.template.macroenabled.12</td>
+<td>.dotm</td>
+<td><a target="_blank" title="What is a '.dotm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-word.template.macroEnabled.12">IANA: MS Word</a><br>
+</td>
+</tr>
+<tr>
+<td>Micro CADAM Helix D&amp;D</td>
+<td>application/vnd.mcd</td>
+<td>.mcd</td>
+<td><a target="_blank" title="What is a '.mcd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mcd">IANA: Micro CADAM Helix D&amp;D</a><br>
+</td>
+</tr>
+<tr>
+<td>Micrografx</td>
+<td>application/vnd.micrografx.flo</td>
+<td>.flo</td>
+<td><a target="_blank" title="What is a '.flo' file?" href="http://www.iana.org/assignments/media-types/application/vnd.micrografx.flo">IANA: Micrografx</a><br>
+</td>
+</tr>
+<tr>
+<td>Micrografx iGrafx Professional</td>
+<td>application/vnd.micrografx.igx</td>
+<td>.igx</td>
+<td><a target="_blank" title="What is a '.igx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.micrografx.igx">IANA: Micrografx</a><br>
+</td>
+</tr>
+<tr>
+<td>MICROSEC e-Szign¢</td>
+<td>application/vnd.eszigno3&#43;xml</td>
+<td>.es3</td>
+<td><a target="_blank" title="What is a '.es3' file?" href="http://www.iana.org/assignments/media-types/application/vnd.eszigno3&#43;xml">IANA: MICROSEC e-Szign¢</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Access</td>
+<td>application/x-msaccess</td>
+<td>.mdb</td>
+<td><a target="_blank" title="What is a '.mdb' file?" href="http://en.wikipedia.org/wiki/Microsoft_Access">Wikipedia: Microsoft Access</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Advanced Systems Format (ASF)</td>
+<td>video/x-ms-asf</td>
+<td>.asf</td>
+<td><a target="_blank" title="What is a '.asf' file?" href="http://en.wikipedia.org/wiki/Advanced_Systems_Format">Wikipedia: Advanced Systems Format (ASF)</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Application</td>
+<td>application/x-msdownload</td>
+<td>.exe</td>
+<td><a target="_blank" title="What is a '.exe' file?" href="http://en.wikipedia.org/wiki/EXE">Wikipedia: EXE</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Artgalry</td>
+<td>application/vnd.ms-artgalry</td>
+<td>.cil</td>
+<td><a target="_blank" title="What is a '.cil' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-artgalry">IANA: MS Artgalry</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Cabinet File</td>
+<td>application/vnd.ms-cab-compressed</td>
+<td>.cab</td>
+<td><a target="_blank" title="What is a '.cab' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-cab-compressed">IANA: MS Cabinet File</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Class Server</td>
+<td>application/vnd.ms-ims</td>
+<td>.ims</td>
+<td><a target="_blank" title="What is a '.ims' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-ims">IANA: MS Class Server</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft ClickOnce</td>
+<td>application/x-ms-application</td>
+<td>.application</td>
+<td><a target="_blank" title="What is a '.application' file?" href="http://en.wikipedia.org/wiki/ClickOnce">Wikipedia: ClickOnce</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Clipboard Clip</td>
+<td>application/x-msclip</td>
+<td>.clp</td>
+<td><a target="_blank" title="What is a '.clp' file?" href="http://en.wikipedia.org/wiki/Clipboard_%28computing%29">Wikipedia: Clipboard</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Document Imaging Format</td>
+<td>image/vnd.ms-modi</td>
+<td>.mdi</td>
+<td><a target="_blank" title="What is a '.mdi' file?" href="http://en.wikipedia.org/wiki/Microsoft_Document_Imaging_Format">Wikipedia: Microsoft Document Image Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Embedded OpenType</td>
+<td>application/vnd.ms-fontobject</td>
+<td>.eot</td>
+<td><a target="_blank" title="What is a '.eot' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-fontobject">IANA: MS Embedded OpenType</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Excel</td>
+<td>application/vnd.ms-excel</td>
+<td>.xls</td>
+<td><a target="_blank" title="What is a '.xls' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-excel">IANA: MS Excel</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Excel - Add-In File</td>
+<td>application/vnd.ms-excel.addin.macroenabled.12</td>
+<td>.xlam</td>
+<td><a target="_blank" title="What is a '.xlam' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-excel.addin.macroEnabled.12">IANA: MS Excel</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Excel - Binary Workbook</td>
+<td>application/vnd.ms-excel.sheet.binary.macroenabled.12</td>
+<td>.xlsb</td>
+<td><a target="_blank" title="What is a '.xlsb' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-excel.sheet.binary.macroEnabled.12">IANA: MS Excel</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Excel - Macro-Enabled Template File</td>
+<td>application/vnd.ms-excel.template.macroenabled.12</td>
+<td>.xltm</td>
+<td><a target="_blank" title="What is a '.xltm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-excel.template.macroEnabled.12">IANA: MS Excel</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Excel - Macro-Enabled Workbook</td>
+<td>application/vnd.ms-excel.sheet.macroenabled.12</td>
+<td>.xlsm</td>
+<td><a target="_blank" title="What is a '.xlsm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-excel.sheet.macroEnabled.12">IANA: MS Excel</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Html Help File</td>
+<td>application/vnd.ms-htmlhelp</td>
+<td>.chm</td>
+<td><a target="_blank" title="What is a '.chm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-htmlhelp">IANA:MS Html Help File</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Information Card</td>
+<td>application/x-mscardfile</td>
+<td>.crd</td>
+<td><a target="_blank" title="What is a '.crd' file?" href="http://en.wikipedia.org/wiki/Information_Card">Wikipedia: Information Card</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Learning Resource Module</td>
+<td>application/vnd.ms-lrm</td>
+<td>.lrm</td>
+<td><a target="_blank" title="What is a '.lrm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-lrm">IANA: MS Learning Resource Module</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft MediaView</td>
+<td>application/x-msmediaview</td>
+<td>.mvb</td>
+<td><a target="_blank" title="What is a '.mvb' file?" href="http://www.herdsoft.com/ti/winhelpcgi/winhelpcgi.cgi/helpfiles/english/hlp2rtf.hlp/id/id_purpose.html">Windows Help</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Money</td>
+<td>application/x-msmoney</td>
+<td>.mny</td>
+<td><a target="_blank" title="What is a '.mny' file?" href="http://en.wikipedia.org/wiki/Microsoft_money">Wikipedia: Microsoft Money</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office - OOXML - Presentation</td>
+<td>application/vnd.openxmlformats-officedocument.presentationml.presentation</td>
+<td>.pptx</td>
+<td><a target="_blank" title="What is a '.pptx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.presentation">IANA: OOXML - Presentation</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office - OOXML - Presentation (Slide)</td>
+<td>application/vnd.openxmlformats-officedocument.presentationml.slide</td>
+<td>.sldx</td>
+<td><a target="_blank" title="What is a '.sldx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.slide">IANA: OOXML - Presentation</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office - OOXML - Presentation (Slideshow)</td>
+<td>application/vnd.openxmlformats-officedocument.presentationml.slideshow</td>
+<td>.ppsx</td>
+<td><a target="_blank" title="What is a '.ppsx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.slideshow">IANA: OOXML - Presentation</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office - OOXML - Presentation Template</td>
+<td>application/vnd.openxmlformats-officedocument.presentationml.template</td>
+<td>.potx</td>
+<td><a target="_blank" title="What is a '.potx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.template">IANA: OOXML - Presentation Template</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office - OOXML - Spreadsheet</td>
+<td>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</td>
+<td>.xlsx</td>
+<td><a target="_blank" title="What is a '.xlsx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">IANA: OOXML - Spreadsheet</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office - OOXML - Spreadsheet Teplate</td>
+<td>application/vnd.openxmlformats-officedocument.spreadsheetml.template</td>
+<td>.xltx</td>
+<td><a target="_blank" title="What is a '.xltx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.template">IANA: OOXML - Spreadsheet Template</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office - OOXML - Word Document</td>
+<td>application/vnd.openxmlformats-officedocument.wordprocessingml.document</td>
+<td>.docx</td>
+<td><a target="_blank" title="What is a '.docx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.wordprocessingml.document">IANA: OOXML - Word Document</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office - OOXML - Word Document Template</td>
+<td>application/vnd.openxmlformats-officedocument.wordprocessingml.template</td>
+<td>.dotx</td>
+<td><a target="_blank" title="What is a '.dotx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.wordprocessingml.template">IANA: OOXML - Word Document Template</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office Binder</td>
+<td>application/x-msbinder</td>
+<td>.obd</td>
+<td><a target="_blank" title="What is a '.obd' file?" href="http://en.wikipedia.org/wiki/Microsoft_Office_shared_tools">Wikipedia: Microsoft Shared Tools</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Office System Release Theme</td>
+<td>application/vnd.ms-officetheme</td>
+<td>.thmx</td>
+<td><a target="_blank" title="What is a '.thmx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-officetheme">IANA: MS Office System Release Theme</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft OneNote</td>
+<td>application/onenote</td>
+<td>.onetoc</td>
+<td><a target="_blank" title="What is a '.onetoc' file?" href="http://office.microsoft.com/en-ca/onenote/">MS OneNote 2010</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft PlayReady Ecosystem</td>
+<td>audio/vnd.ms-playready.media.pya</td>
+<td>.pya</td>
+<td><a target="_blank" title="What is a '.pya' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.ms-playready.media.pya">IANA: Microsoft PlayReady Ecosystem</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft PlayReady Ecosystem Video</td>
+<td>video/vnd.ms-playready.media.pyv</td>
+<td>.pyv</td>
+<td><a target="_blank" title="What is a '.pyv' file?" href="http://www.iana.org/assignments/media-types/video/vnd.ms-playready.media.pyv">IANA: Microsoft PlayReady Ecosystem</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft PowerPoint</td>
+<td>application/vnd.ms-powerpoint</td>
+<td>.ppt</td>
+<td><a target="_blank" title="What is a '.ppt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-powerpoint">IANA: MS PowerPoint</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft PowerPoint - Add-in file</td>
+<td>application/vnd.ms-powerpoint.addin.macroenabled.12</td>
+<td>.ppam</td>
+<td><a target="_blank" title="What is a '.ppam' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-powerpoint.addin.macroEnabled.12">IANA: MS PowerPoint</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft PowerPoint - Macro-Enabled Open XML Slide</td>
+<td>application/vnd.ms-powerpoint.slide.macroenabled.12</td>
+<td>.sldm</td>
+<td><a target="_blank" title="What is a '.sldm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-powerpoint.slide.macroEnabled.12">IANA: MS PowerPoint</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft PowerPoint - Macro-Enabled Presentation File</td>
+<td>application/vnd.ms-powerpoint.presentation.macroenabled.12</td>
+<td>.pptm</td>
+<td><a target="_blank" title="What is a '.pptm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-powerpoint.presentation.macroEnabled.12">IANA: MS PowerPoint</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft PowerPoint - Macro-Enabled Slide Show File</td>
+<td>application/vnd.ms-powerpoint.slideshow.macroenabled.12</td>
+<td>.ppsm</td>
+<td><a target="_blank" title="What is a '.ppsm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-powerpoint.slideshow.macroEnabled.12">IANA: MS PowerPoint</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Project</td>
+<td>application/vnd.ms-project</td>
+<td>.mpp</td>
+<td><a target="_blank" title="What is a '.mpp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-project">IANA: MS PowerPoint</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Publisher</td>
+<td>application/x-mspublisher</td>
+<td>.pub</td>
+<td><a target="_blank" title="What is a '.pub' file?" href="http://en.wikipedia.org/wiki/Microsoft_Publisher">Wikipedia: Microsoft Publisher</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Schedule&#43;</td>
+<td>application/x-msschedule</td>
+<td>.scd</td>
+<td><a target="_blank" title="What is a '.scd' file?" href="http://en.wikipedia.org/wiki/Microsoft_Schedule_Plus">Wikipedia: Microsoft Schedule Plus</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Silverlight</td>
+<td>application/x-silverlight-app</td>
+<td>.xap</td>
+<td><a target="_blank" title="What is a '.xap' file?" href="http://en.wikipedia.org/wiki/Silverlight">Wikipedia: Silverlight</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Trust UI Provider - Certificate Trust Link</td>
+<td>application/vnd.ms-pki.stl</td>
+<td>.stl</td>
+<td><a target="_blank" title="What is a '.stl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-pki.stl">IANA: MS Trust UI Provider</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Trust UI Provider - Security Catalog</td>
+<td>application/vnd.ms-pki.seccat</td>
+<td>.cat</td>
+<td><a target="_blank" title="What is a '.cat' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-pki.seccat">IANA: MS Trust UI Provider</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Visio</td>
+<td>application/vnd.visio</td>
+<td>.vsd</td>
+<td><a target="_blank" title="What is a '.vsd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.visio">IANA: Visio</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Media</td>
+<td>video/x-ms-wm</td>
+<td>.wm</td>
+<td><a target="_blank" title="What is a '.wm' file?" href="http://en.wikipedia.org/wiki/Advanced_Systems_Format">Wikipedia: Advanced Systems Format (ASF)</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Media Audio</td>
+<td>audio/x-ms-wma</td>
+<td>.wma</td>
+<td><a target="_blank" title="What is a '.wma' file?" href="http://en.wikipedia.org/wiki/Windows_Media_Audio">Wikipedia: Windows Media Audio</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Media Audio Redirector</td>
+<td>audio/x-ms-wax</td>
+<td>.wax</td>
+<td><a target="_blank" title="What is a '.wax' file?" href="http://www.microsoft.com/windows/windowsmedia/howto/articles/introwmmeta.aspx">Windows Media Metafiles</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Media Audio/Video Playlist</td>
+<td>video/x-ms-wmx</td>
+<td>.wmx</td>
+<td><a target="_blank" title="What is a '.wmx' file?" href="http://en.wikipedia.org/wiki/Advanced_Systems_Format">Wikipedia: Advanced Systems Format (ASF)</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Media Player Download Package</td>
+<td>application/x-ms-wmd</td>
+<td>.wmd</td>
+<td><a target="_blank" title="What is a '.wmd' file?" href="http://en.wikipedia.org/wiki/Windows_Media_Player">Wikipedia: Windows Media Player</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Media Player Playlist</td>
+<td>application/vnd.ms-wpl</td>
+<td>.wpl</td>
+<td><a target="_blank" title="What is a '.wpl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-wpl">IANA: MS Windows Media Player Playlist</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Media Player Skin Package</td>
+<td>application/x-ms-wmz</td>
+<td>.wmz</td>
+<td><a target="_blank" title="What is a '.wmz' file?" href="http://en.wikipedia.org/wiki/Windows_Media_Player">Wikipedia: Windows Media Player</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Media Video</td>
+<td>video/x-ms-wmv</td>
+<td>.wmv</td>
+<td><a target="_blank" title="What is a '.wmv' file?" href="http://en.wikipedia.org/wiki/Advanced_Systems_Format">Wikipedia: Advanced Systems Format (ASF)</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Media Video Playlist</td>
+<td>video/x-ms-wvx</td>
+<td>.wvx</td>
+<td><a target="_blank" title="What is a '.wvx' file?" href="http://en.wikipedia.org/wiki/Advanced_Systems_Format">Wikipedia: Advanced Systems Format (ASF)</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Metafile</td>
+<td>application/x-msmetafile</td>
+<td>.wmf</td>
+<td><a target="_blank" title="What is a '.wmf' file?" href="http://en.wikipedia.org/wiki/Windows_Metafile">Wikipedia: Windows Metafile</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Windows Terminal Services</td>
+<td>application/x-msterminal</td>
+<td>.trm</td>
+<td><a target="_blank" title="What is a '.trm' file?" href="http://en.wikipedia.org/wiki/Remote_Desktop_Services#Terminal_Server">Wikipedia: Terminal Server</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Word</td>
+<td>application/msword</td>
+<td>.doc</td>
+<td><a target="_blank" title="What is a '.doc' file?" href="http://en.wikipedia.org/wiki/Microsoft_Word">Wikipedia: Microsoft Word</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Wordpad</td>
+<td>application/x-mswrite</td>
+<td>.wri</td>
+<td><a target="_blank" title="What is a '.wri' file?" href="http://en.wikipedia.org/wiki/Wordpad">Wikipedia: Wordpad</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft Works</td>
+<td>application/vnd.ms-works</td>
+<td>.wps</td>
+<td><a target="_blank" title="What is a '.wps' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-works">IANA: MS Works</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft XAML Browser Application</td>
+<td>application/x-ms-xbap</td>
+<td>.xbap</td>
+<td><a target="_blank" title="What is a '.xbap' file?" href="http://en.wikipedia.org/wiki/XAML_Browser_Applications">Wikipedia: XAML Browser</a><br>
+</td>
+</tr>
+<tr>
+<td>Microsoft XML Paper Specification</td>
+<td>application/vnd.ms-xpsdocument</td>
+<td>.xps</td>
+<td><a target="_blank" title="What is a '.xps' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ms-xpsdocument">IANA: MS XML Paper Specification</a><br>
+</td>
+</tr>
+<tr>
+<td>MIDI - Musical Instrument Digital Interface</td>
+<td>audio/midi</td>
+<td>.mid</td>
+<td><a target="_blank" title="What is a '.mid' file?" href="http://en.wikipedia.org/wiki/Midi">Wikipedia: MIDI</a><br>
+</td>
+</tr>
+<tr>
+<td>MiniPay</td>
+<td>application/vnd.ibm.minipay</td>
+<td>.mpy</td>
+<td><a target="_blank" title="What is a '.mpy' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ibm.MiniPay">IANA: MiniPay</a><br>
+</td>
+</tr>
+<tr>
+<td>MO:DCA-P</td>
+<td>application/vnd.ibm.modcap</td>
+<td>.afp</td>
+<td><a target="_blank" title="What is a '.afp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ibm.modcap">IANA: MO:DCA-P</a><br>
+</td>
+</tr>
+<tr>
+<td>Mobile Information Device Profile</td>
+<td>application/vnd.jcp.javame.midlet-rms</td>
+<td>.rms</td>
+<td><a target="_blank" title="What is a '.rms' file?" href="http://www.iana.org/assignments/media-types/application/vnd.jcp.javame.midlet-rms">IANA: Mobile Information Device Profile</a><br>
+</td>
+</tr>
+<tr>
+<td>MobileTV</td>
+<td>application/vnd.tmobile-livetv</td>
+<td>.tmo</td>
+<td><a target="_blank" title="What is a '.tmo' file?" href="http://www.iana.org/assignments/media-types/application/vnd.tmobile-livetv">IANA: MobileTV</a><br>
+</td>
+</tr>
+<tr>
+<td>Mobipocket</td>
+<td>application/x-mobipocket-ebook</td>
+<td>.prc</td>
+<td><a target="_blank" title="What is a '.prc' file?" href="http://en.wikipedia.org/wiki/Mobipocket">Wikipedia: Mobipocket</a><br>
+</td>
+</tr>
+<tr>
+<td>Mobius Management Systems - Basket file</td>
+<td>application/vnd.mobius.mbk</td>
+<td>.mbk</td>
+<td><a target="_blank" title="What is a '.mbk' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mobius.mbk">IANA: Mobius Management Systems</a><br>
+</td>
+</tr>
+<tr>
+<td>Mobius Management Systems - Distribution Database</td>
+<td>application/vnd.mobius.dis</td>
+<td>.dis</td>
+<td><a target="_blank" title="What is a '.dis' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mobius.dis">IANA: Mobius Management Systems</a><br>
+</td>
+</tr>
+<tr>
+<td>Mobius Management Systems - Policy Definition Language File</td>
+<td>application/vnd.mobius.plc</td>
+<td>.plc</td>
+<td><a target="_blank" title="What is a '.plc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mobius.plc">IANA: Mobius Management Systems</a><br>
+</td>
+</tr>
+<tr>
+<td>Mobius Management Systems - Query File</td>
+<td>application/vnd.mobius.mqy</td>
+<td>.mqy</td>
+<td><a target="_blank" title="What is a '.mqy' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mobius.mqy">IANA: Mobius Management Systems</a><br>
+</td>
+</tr>
+<tr>
+<td>Mobius Management Systems - Script Language</td>
+<td>application/vnd.mobius.msl</td>
+<td>.msl</td>
+<td><a target="_blank" title="What is a '.msl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mobius.msl">IANA: Mobius Management Systems</a><br>
+</td>
+</tr>
+<tr>
+<td>Mobius Management Systems - Topic Index File</td>
+<td>application/vnd.mobius.txf</td>
+<td>.txf</td>
+<td><a target="_blank" title="What is a '.txf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mobius.txf">IANA: Mobius Management Systems</a><br>
+</td>
+</tr>
+<tr>
+<td>Mobius Management Systems - UniversalArchive</td>
+<td>application/vnd.mobius.daf</td>
+<td>.daf</td>
+<td><a target="_blank" title="What is a '.daf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.Mobius.DAF">IANA: Mobius Management Systems</a><br>
+</td>
+</tr>
+<tr>
+<td>mod_fly / fly.cgi</td>
+<td>text/vnd.fly</td>
+<td>.fly</td>
+<td><a target="_blank" title="What is a '.fly' file?" href="http://www.iana.org/assignments/media-types/text/vnd.fly">IANA: Fly</a><br>
+</td>
+</tr>
+<tr>
+<td>Mophun Certificate</td>
+<td>application/vnd.mophun.certificate</td>
+<td>.mpc</td>
+<td><a target="_blank" title="What is a '.mpc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mophun.certificate">IANA: Mophun Certificate</a><br>
+</td>
+</tr>
+<tr>
+<td>Mophun VM</td>
+<td>application/vnd.mophun.application</td>
+<td>.mpn</td>
+<td><a target="_blank" title="What is a '.mpn' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mophun.application">IANA: Mophun VM</a><br>
+</td>
+</tr>
+<tr>
+<td>Motion JPEG 2000</td>
+<td>video/mj2</td>
+<td>.mj2</td>
+<td><a target="_blank" title="What is a '.mj2' file?" href="http://www.iana.org/assignments/media-types/video/mj2">IANA: MJ2</a><br>
+</td>
+</tr>
+<tr>
+<td>MPEG Audio</td>
+<td>audio/mpeg</td>
+<td>.mpga</td>
+<td><a target="_blank" title="What is a '.mpga' file?" href="http://en.wikipedia.org/wiki/MPEG-1_Audio_Layer_II">Wikipedia: MPGA</a><br>
+</td>
+</tr>
+<tr>
+<td>MPEG Url</td>
+<td>video/vnd.mpegurl</td>
+<td>.mxu</td>
+<td><a target="_blank" title="What is a '.mxu' file?" href="http://www.iana.org/assignments/media-types/video/vnd-mpegurl">IANA: MPEG Url</a><br>
+</td>
+</tr>
+<tr>
+<td>MPEG Video</td>
+<td>video/mpeg</td>
+<td>.mpeg</td>
+<td><a target="_blank" title="What is a '.mpeg' file?" href="http://en.wikipedia.org/wiki/Mpeg">Wikipedia: MPEG</a><br>
+</td>
+</tr>
+<tr>
+<td>MPEG-21</td>
+<td>application/mp21</td>
+<td>.m21</td>
+<td><a target="_blank" title="What is a '.m21' file?" href="http://en.wikipedia.org/wiki/MPEG-21">Wikipedia: MPEG-21</a><br>
+</td>
+</tr>
+<tr>
+<td>MPEG-4 Audio</td>
+<td>audio/mp4</td>
+<td>.mp4a</td>
+<td><a target="_blank" title="What is a '.mp4a' file?" href="http://en.wikipedia.org/wiki/Mp4a">Wikipedia: MP4A</a><br>
+</td>
+</tr>
+<tr>
+<td>MPEG-4 Video</td>
+<td>video/mp4</td>
+<td>.mp4</td>
+<td><a target="_blank" title="What is a '.mp4' file?" href="http://en.wikipedia.org/wiki/MPEG-4_Part_14">Wikipedia: MP4</a><br>
+</td>
+</tr>
+<tr>
+<td>MPEG4</td>
+<td>application/mp4</td>
+<td>.mp4</td>
+<td><a target="_blank" title="What is a '.mp4' file?" href="http://www.rfc-editor.org/rfc/rfc4337.txt">RFC 4337</a><br>
+</td>
+</tr>
+<tr>
+<td>Multimedia Playlist Unicode</td>
+<td>application/vnd.apple.mpegurl</td>
+<td>.m3u8</td>
+<td><a target="_blank" title="What is a '.m3u8' file?" href="http://en.wikipedia.org/wiki/M3U">Wikipedia: M3U</a><br>
+</td>
+</tr>
+<tr>
+<td>MUsical Score Interpreted Code Invented for the ASCII designation of Notation</td>
+<td>application/vnd.musician</td>
+<td>.mus</td>
+<td><a target="_blank" title="What is a '.mus' file?" href="http://www.iana.org/assignments/media-types/application/vnd.musician">IANA: MUSICIAN</a><br>
+</td>
+</tr>
+<tr>
+<td>Muvee Automatic Video Editing</td>
+<td>application/vnd.muvee.style</td>
+<td>.msty</td>
+<td><a target="_blank" title="What is a '.msty' file?" href="http://www.iana.org/assignments/media-types/application/vnd.muvee.style">IANA: Muvee</a><br>
+</td>
+</tr>
+<tr>
+<td>MXML</td>
+<td>application/xv&#43;xml</td>
+<td>.mxml</td>
+<td><a target="_blank" title="What is a '.mxml' file?" href="http://en.wikipedia.org/wiki/MXML">Wikipedia: MXML</a><br>
+</td>
+</tr>
+<tr>
+<td>N-Gage Game Data</td>
+<td>application/vnd.nokia.n-gage.data</td>
+<td>.ngdat</td>
+<td><a target="_blank" title="What is a '.ngdat' file?" href="http://www.iana.org/assignments/media-types/application/vnd.nokia.n-gage.data">IANA: N-Gage Game Data</a><br>
+</td>
+</tr>
+<tr>
+<td>N-Gage Game Installer</td>
+<td>application/vnd.nokia.n-gage.symbian.install</td>
+<td>.n-gage</td>
+<td><a target="_blank" title="What is a '.n-gage' file?" href="http://www.iana.org/assignments/media-types/application/vnd.nokia.n-gage.symbian.install">IANA: N-Gage Game Installer</a><br>
+</td>
+</tr>
+<tr>
+<td>Navigation Control file for XML (for ePub)</td>
+<td>application/x-dtbncx&#43;xml</td>
+<td>.ncx</td>
+<td><a target="_blank" title="What is a '.ncx' file?" href="http://en.wikipedia.org/wiki/EPUB">Wikipedia: EPUB</a><br>
+</td>
+</tr>
+<tr>
+<td>Network Common Data Form (NetCDF)</td>
+<td>application/x-netcdf</td>
+<td>.nc</td>
+<td><a target="_blank" title="What is a '.nc' file?" href="http://en.wikipedia.org/wiki/NetCDF">Wikipedia: NetCDF</a><br>
+</td>
+</tr>
+<tr>
+<td>neuroLanguage</td>
+<td>application/vnd.neurolanguage.nlu</td>
+<td>.nlu</td>
+<td><a target="_blank" title="What is a '.nlu' file?" href="http://www.iana.org/assignments/media-types/application/vnd.neurolanguage.nlu">IANA: neuroLanguage</a><br>
+</td>
+</tr>
+<tr>
+<td>New Moon Liftoff/DNA</td>
+<td>application/vnd.dna</td>
+<td>.dna</td>
+<td><a target="_blank" title="What is a '.dna' file?" href="http://www.iana.org/assignments/media-types/application/vnd.dna">IANA: New Moon Liftoff/DNA</a><br>
+</td>
+</tr>
+<tr>
+<td>NobleNet Directory</td>
+<td>application/vnd.noblenet-directory</td>
+<td>.nnd</td>
+<td><a target="_blank" title="What is a '.nnd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.noblenet-directory">IANA: NobleNet Directory</a><br>
+</td>
+</tr>
+<tr>
+<td>NobleNet Sealer</td>
+<td>application/vnd.noblenet-sealer</td>
+<td>.nns</td>
+<td><a target="_blank" title="What is a '.nns' file?" href="http://www.iana.org/assignments/media-types/application/vnd.noblenet-sealer">IANA: NobleNet Sealer</a><br>
+</td>
+</tr>
+<tr>
+<td>NobleNet Web</td>
+<td>application/vnd.noblenet-web</td>
+<td>.nnw</td>
+<td><a target="_blank" title="What is a '.nnw' file?" href="http://www.iana.org/assignments/media-types/application/vnd.noblenet-web">IANA: NobleNet Web</a><br>
+</td>
+</tr>
+<tr>
+<td>Nokia Radio Application - Preset</td>
+<td>application/vnd.nokia.radio-preset</td>
+<td>.rpst</td>
+<td><a target="_blank" title="What is a '.rpst' file?" href="http://www.iana.org/assignments/media-types/application/vnd.nokia.radio-preset">IANA: Nokia Radio Application</a><br>
+</td>
+</tr>
+<tr>
+<td>Nokia Radio Application - Preset</td>
+<td>application/vnd.nokia.radio-presets</td>
+<td>.rpss</td>
+<td><a target="_blank" title="What is a '.rpss' file?" href="http://www.iana.org/assignments/media-types/application/vnd.nokia.radio-presets">IANA: Nokia Radio Application</a><br>
+</td>
+</tr>
+<tr>
+<td>Notation3</td>
+<td>text/n3</td>
+<td>.n3</td>
+<td><a target="_blank" title="What is a '.n3' file?" href="http://en.wikipedia.org/wiki/Notation3">Wikipedia: Notation3</a><br>
+</td>
+</tr>
+<tr>
+<td>Novadigm's RADIA and EDM products</td>
+<td>application/vnd.novadigm.edm</td>
+<td>.edm</td>
+<td><a target="_blank" title="What is a '.edm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.novadigm.EDM">IANA: Novadigm's RADIA and EDM products</a><br>
+</td>
+</tr>
+<tr>
+<td>Novadigm's RADIA and EDM products</td>
+<td>application/vnd.novadigm.edx</td>
+<td>.edx</td>
+<td><a target="_blank" title="What is a '.edx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.novadigm.EDX">IANA: Novadigm's RADIA and EDM products</a><br>
+</td>
+</tr>
+<tr>
+<td>Novadigm's RADIA and EDM products</td>
+<td>application/vnd.novadigm.ext</td>
+<td>.ext</td>
+<td><a target="_blank" title="What is a '.ext' file?" href="http://www.iana.org/assignments/media-types/application/vnd.novadigm.EXT">IANA: Novadigm's RADIA and EDM products</a><br>
+</td>
+</tr>
+<tr>
+<td>NpGraphIt</td>
+<td>application/vnd.flographit</td>
+<td>.gph</td>
+<td><a target="_blank" title="What is a '.gph' file?" href="http://www.iana.org/assignments/media-types/application/vnd.flographit">IANA: FloGraphIt</a><br>
+</td>
+</tr>
+<tr>
+<td>Nuera ECELP 4800</td>
+<td>audio/vnd.nuera.ecelp4800</td>
+<td>.ecelp4800</td>
+<td><a target="_blank" title="What is a '.ecelp4800' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.nuera.ecelp4800">IANA: ECELP 4800</a><br>
+</td>
+</tr>
+<tr>
+<td>Nuera ECELP 7470</td>
+<td>audio/vnd.nuera.ecelp7470</td>
+<td>.ecelp7470</td>
+<td><a target="_blank" title="What is a '.ecelp7470' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.nuera.ecelp7470">IANA: ECELP 7470</a><br>
+</td>
+</tr>
+<tr>
+<td>Nuera ECELP 9600</td>
+<td>audio/vnd.nuera.ecelp9600</td>
+<td>.ecelp9600</td>
+<td><a target="_blank" title="What is a '.ecelp9600' file?" href="http://www.iana.org/assignments/media-types/audio/vnd.nuera.ecelp9600">IANA: ECELP 9600</a><br>
+</td>
+</tr>
+<tr>
+<td>Office Document Architecture</td>
+<td>application/oda</td>
+<td>.oda</td>
+<td><a target="_blank" title="What is a '.oda' file?" href="http://tools.ietf.org/html/rfc2161">RFC 2161</a><br>
+</td>
+</tr>
+<tr>
+<td>Ogg</td>
+<td>application/ogg</td>
+<td>.ogx</td>
+<td><a target="_blank" title="What is a '.ogx' file?" href="http://en.wikipedia.org/wiki/Ogg">Wikipedia: Ogg</a><br>
+</td>
+</tr>
+<tr>
+<td>Ogg Audio</td>
+<td>audio/ogg</td>
+<td>.oga</td>
+<td><a target="_blank" title="What is a '.oga' file?" href="http://en.wikipedia.org/wiki/Ogg">Wikipedia: Ogg</a><br>
+</td>
+</tr>
+<tr>
+<td>Ogg Video</td>
+<td>video/ogg</td>
+<td>.ogv</td>
+<td><a target="_blank" title="What is a '.ogv' file?" href="http://en.wikipedia.org/wiki/Ogg">Wikipedia: Ogg</a><br>
+</td>
+</tr>
+<tr>
+<td>OMA Download Agents</td>
+<td>application/vnd.oma.dd2&#43;xml</td>
+<td>.dd2</td>
+<td><a target="_blank" title="What is a '.dd2' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oma.dd2&#43;xml">IANA: OMA Download Agents</a><br>
+</td>
+</tr>
+<tr>
+<td>Open Document Text Web</td>
+<td>application/vnd.oasis.opendocument.text-web</td>
+<td>.oth</td>
+<td><a target="_blank" title="What is a '.oth' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.text-web">IANA: OpenDocument Text Web</a><br>
+</td>
+</tr>
+<tr>
+<td>Open eBook Publication Structure</td>
+<td>application/oebps-package&#43;xml</td>
+<td>.opf</td>
+<td><a target="_blank" title="What is a '.opf' file?" href="http://en.wikipedia.org/wiki/Open_eBook">Wikipedia: Open eBook</a><br>
+</td>
+</tr>
+<tr>
+<td>Open Financial Exchange</td>
+<td>application/vnd.intu.qbo</td>
+<td>.qbo</td>
+<td><a target="_blank" title="What is a '.qbo' file?" href="http://www.iana.org/assignments/media-types/application/vnd.intu.qbo">IANA: Open Financial Exchange</a><br>
+</td>
+</tr>
+<tr>
+<td>Open Office Extension</td>
+<td>application/vnd.openofficeorg.extension</td>
+<td>.oxt</td>
+<td><a target="_blank" title="What is a '.oxt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.openofficeorg.extension">IANA: Open Office Extension</a><br>
+</td>
+</tr>
+<tr>
+<td>Open Score Format</td>
+<td>application/vnd.yamaha.openscoreformat</td>
+<td>.osf</td>
+<td><a target="_blank" title="What is a '.osf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.yamaha.openscoreformat">IANA: Open Score Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Open Web Media Project - Audio</td>
+<td>audio/webm</td>
+<td>.weba</td>
+<td><a target="_blank" title="What is a '.weba' file?" href="http://www.webmproject.org/about/faq/">WebM Project</a><br>
+</td>
+</tr>
+<tr>
+<td>Open Web Media Project - Video</td>
+<td>video/webm</td>
+<td>.webm</td>
+<td><a target="_blank" title="What is a '.webm' file?" href="http://www.webmproject.org/about/faq/">WebM Project</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Chart</td>
+<td>application/vnd.oasis.opendocument.chart</td>
+<td>.odc</td>
+<td><a target="_blank" title="What is a '.odc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.chart">IANA: OpenDocument Chart</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Chart Template</td>
+<td>application/vnd.oasis.opendocument.chart-template</td>
+<td>.otc</td>
+<td><a target="_blank" title="What is a '.otc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.chart-template">IANA: OpenDocument Chart Template</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Database</td>
+<td>application/vnd.oasis.opendocument.database</td>
+<td>.odb</td>
+<td><a target="_blank" title="What is a '.odb' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.database">IANA: OpenDocument Database</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Formula</td>
+<td>application/vnd.oasis.opendocument.formula</td>
+<td>.odf</td>
+<td><a target="_blank" title="What is a '.odf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.formula">IANA: OpenDocument Formula</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Formula Template</td>
+<td>application/vnd.oasis.opendocument.formula-template</td>
+<td>.odft</td>
+<td><a target="_blank" title="What is a '.odft' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.formula-template">IANA: OpenDocument Formula Template</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Graphics</td>
+<td>application/vnd.oasis.opendocument.graphics</td>
+<td>.odg</td>
+<td><a target="_blank" title="What is a '.odg' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.graphics">IANA: OpenDocument Graphics</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Graphics Template</td>
+<td>application/vnd.oasis.opendocument.graphics-template</td>
+<td>.otg</td>
+<td><a target="_blank" title="What is a '.otg' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.graphics-template">IANA: OpenDocument Graphics Template</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Image</td>
+<td>application/vnd.oasis.opendocument.image</td>
+<td>.odi</td>
+<td><a target="_blank" title="What is a '.odi' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.image">IANA: OpenDocument Image</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Image Template</td>
+<td>application/vnd.oasis.opendocument.image-template</td>
+<td>.oti</td>
+<td><a target="_blank" title="What is a '.oti' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.image-template">IANA: OpenDocument Image Template</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Presentation</td>
+<td>application/vnd.oasis.opendocument.presentation</td>
+<td>.odp</td>
+<td><a target="_blank" title="What is a '.odp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.presentation">IANA: OpenDocument Presentation</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Presentation Template</td>
+<td>application/vnd.oasis.opendocument.presentation-template</td>
+<td>.otp</td>
+<td><a target="_blank" title="What is a '.otp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.presentation-template">IANA: OpenDocument Presentation Template</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Spreadsheet</td>
+<td>application/vnd.oasis.opendocument.spreadsheet</td>
+<td>.ods</td>
+<td><a target="_blank" title="What is a '.ods' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.spreadsheet">IANA: OpenDocument Spreadsheet</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Spreadsheet Template</td>
+<td>application/vnd.oasis.opendocument.spreadsheet-template</td>
+<td>.ots</td>
+<td><a target="_blank" title="What is a '.ots' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.spreadsheet-template">IANA: OpenDocument Spreadsheet Template</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Text</td>
+<td>application/vnd.oasis.opendocument.text</td>
+<td>.odt</td>
+<td><a target="_blank" title="What is a '.odt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.text">IANA: OpenDocument Text</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Text Master</td>
+<td>application/vnd.oasis.opendocument.text-master</td>
+<td>.odm</td>
+<td><a target="_blank" title="What is a '.odm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.text-master">IANA: OpenDocument Text Master</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenDocument Text Template</td>
+<td>application/vnd.oasis.opendocument.text-template</td>
+<td>.ott</td>
+<td><a target="_blank" title="What is a '.ott' file?" href="http://www.iana.org/assignments/media-types/application/vnd.oasis.opendocument.text-template">IANA: OpenDocument Text Template</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenGL Textures (KTX)</td>
+<td>image/ktx</td>
+<td>.ktx</td>
+<td><a target="_blank" title="What is a '.ktx' file?" href="http://www.khronos.org/opengles/sdk/tools/KTX/file_format_spec/">KTX File Format</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Calc (Spreadsheet)</td>
+<td>application/vnd.sun.xml.calc</td>
+<td>.sxc</td>
+<td><a target="_blank" title="What is a '.sxc' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Calc Template (Spreadsheet)</td>
+<td>application/vnd.sun.xml.calc.template</td>
+<td>.stc</td>
+<td><a target="_blank" title="What is a '.stc' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Draw (Graphics)</td>
+<td>application/vnd.sun.xml.draw</td>
+<td>.sxd</td>
+<td><a target="_blank" title="What is a '.sxd' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Draw Template (Graphics)</td>
+<td>application/vnd.sun.xml.draw.template</td>
+<td>.std</td>
+<td><a target="_blank" title="What is a '.std' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Impress (Presentation)</td>
+<td>application/vnd.sun.xml.impress</td>
+<td>.sxi</td>
+<td><a target="_blank" title="What is a '.sxi' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Impress Template (Presentation)</td>
+<td>application/vnd.sun.xml.impress.template</td>
+<td>.sti</td>
+<td><a target="_blank" title="What is a '.sti' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Math (Formula)</td>
+<td>application/vnd.sun.xml.math</td>
+<td>.sxm</td>
+<td><a target="_blank" title="What is a '.sxm' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Writer (Text - HTML)</td>
+<td>application/vnd.sun.xml.writer</td>
+<td>.sxw</td>
+<td><a target="_blank" title="What is a '.sxw' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Writer (Text - HTML)</td>
+<td>application/vnd.sun.xml.writer.global</td>
+<td>.sxg</td>
+<td><a target="_blank" title="What is a '.sxg' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenOffice - Writer Template (Text - HTML)</td>
+<td>application/vnd.sun.xml.writer.template</td>
+<td>.stw</td>
+<td><a target="_blank" title="What is a '.stw' file?" href="http://en.wikipedia.org/wiki/OpenOffice.org_XML">Wikipedia: OpenOffice</a><br>
+</td>
+</tr>
+<tr>
+<td>OpenType Font File</td>
+<td>application/x-font-otf</td>
+<td>.otf</td>
+<td><a target="_blank" title="What is a '.otf' file?" href="http://www.microsoft.com/typography/otspec/otff.htm">OpenType Font File</a><br>
+</td>
+</tr>
+<tr>
+<td>OSFPVG</td>
+<td>application/vnd.yamaha.openscoreformat.osfpvg&#43;xml</td>
+<td>.osfpvg</td>
+<td><a target="_blank" title="What is a '.osfpvg' file?" href="http://www.iana.org/assignments/media-types/application/vnd.yamaha.openscoreformat.osfpvg&#43;xml">IANA: OSFPVG</a><br>
+</td>
+</tr>
+<tr>
+<td>OSGi Deployment Package</td>
+<td>application/vnd.osgi.dp</td>
+<td>.dp</td>
+<td><a target="_blank" title="What is a '.dp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.osgi.dp">IANA: OSGi Deployment Package</a><br>
+</td>
+</tr>
+<tr>
+<td>PalmOS Data</td>
+<td>application/vnd.palm</td>
+<td>.pdb</td>
+<td><a target="_blank" title="What is a '.pdb' file?" href="http://www.iana.org/assignments/media-types/application/vnd.palm">IANA: PalmOS Data</a><br>
+</td>
+</tr>
+<tr>
+<td>Pascal Source File</td>
+<td>text/x-pascal</td>
+<td>.p</td>
+<td><a target="_blank" title="What is a '.p' file?" href="http://en.wikipedia.org/wiki/Pascal_%28programming_language%29">Wikipedia: Pascal</a><br>
+</td>
+</tr>
+<tr>
+<td>PawaaFILE</td>
+<td>application/vnd.pawaafile</td>
+<td>.paw</td>
+<td><a target="_blank" title="What is a '.paw' file?" href="http://www.iana.org/assignments/media-types/application/vnd.pawaafile">IANA: PawaaFILE</a><br>
+</td>
+</tr>
+<tr>
+<td>PCL 6 Enhanced (Formely PCL XL)</td>
+<td>application/vnd.hp-pclxl</td>
+<td>.pclxl</td>
+<td><a target="_blank" title="What is a '.pclxl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.hp-PCLXL">IANA: HP PCL XL</a><br>
+</td>
+</tr>
+<tr>
+<td>Pcsel eFIF File</td>
+<td>application/vnd.picsel</td>
+<td>.efif</td>
+<td><a target="_blank" title="What is a '.efif' file?" href="http://www.iana.org/assignments/media-types/application/vnd.picsel">IANA: Picsel eFIF File</a><br>
+</td>
+</tr>
+<tr>
+<td>PCX Image</td>
+<td>image/x-pcx</td>
+<td>.pcx</td>
+<td><a target="_blank" title="What is a '.pcx' file?" href="http://en.wikipedia.org/wiki/PCX">Wikipedia: PCX</a><br>
+</td>
+</tr>
+<tr>
+<td>Photoshop Document</td>
+<td>image/vnd.adobe.photoshop</td>
+<td>.psd</td>
+<td><a target="_blank" title="What is a '.psd' file?" href="http://en.wikipedia.org/wiki/Adobe_Photoshop#Features">Wikipedia: Photoshop Document</a><br>
+</td>
+</tr>
+<tr>
+<td>PICSRules</td>
+<td>application/pics-rules</td>
+<td>.prf</td>
+<td><a target="_blank" title="What is a '.prf' file?" href="http://www.w3.org/TR/REC-PICSRules/">W3C PICSRules</a><br>
+</td>
+</tr>
+<tr>
+<td>PICT Image</td>
+<td>image/x-pict</td>
+<td>.pic</td>
+<td><a target="_blank" title="What is a '.pic' file?" href="http://en.wikipedia.org/wiki/PICT">Wikipedia: PICT</a><br>
+</td>
+</tr>
+<tr>
+<td>pIRCh</td>
+<td>application/x-chat</td>
+<td>.chat</td>
+<td><a target="_blank" title="What is a '.chat' file?" href="http://en.wikipedia.org/wiki/PIRCH">Wikipedia: pIRCh</a><br>
+</td>
+</tr>
+<tr>
+<td>PKCS #10 - Certification Request Standard</td>
+<td>application/pkcs10</td>
+<td>.p10</td>
+<td><a target="_blank" title="What is a '.p10' file?" href="http://tools.ietf.org/html/rfc2986">RFC 2986</a><br>
+</td>
+</tr>
+<tr>
+<td>PKCS #12 - Personal Information Exchange Syntax Standard</td>
+<td>application/x-pkcs12</td>
+<td>.p12</td>
+<td><a target="_blank" title="What is a '.p12' file?" href="http://tools.ietf.org/html/rfc2986">RFC 2986</a><br>
+</td>
+</tr>
+<tr>
+<td>PKCS #7 - Cryptographic Message Syntax Standard</td>
+<td>application/pkcs7-mime</td>
+<td>.p7m</td>
+<td><a target="_blank" title="What is a '.p7m' file?" href="http://tools.ietf.org/html/rfc2315">RFC 2315</a><br>
+</td>
+</tr>
+<tr>
+<td>PKCS #7 - Cryptographic Message Syntax Standard</td>
+<td>application/pkcs7-signature</td>
+<td>.p7s</td>
+<td><a target="_blank" title="What is a '.p7s' file?" href="http://tools.ietf.org/html/rfc2315">RFC 2315</a><br>
+</td>
+</tr>
+<tr>
+<td>PKCS #7 - Cryptographic Message Syntax Standard (Certificate Request Response)</td>
+<td>application/x-pkcs7-certreqresp</td>
+<td>.p7r</td>
+<td><a target="_blank" title="What is a '.p7r' file?" href="http://tools.ietf.org/html/rfc2986">RFC 2986</a><br>
+</td>
+</tr>
+<tr>
+<td>PKCS #7 - Cryptographic Message Syntax Standard (Certificates)</td>
+<td>application/x-pkcs7-certificates</td>
+<td>.p7b</td>
+<td><a target="_blank" title="What is a '.p7b' file?" href="http://tools.ietf.org/html/rfc2986">RFC 2986</a><br>
+</td>
+</tr>
+<tr>
+<td>PKCS #8 - Private-Key Information Syntax Standard</td>
+<td>application/pkcs8</td>
+<td>.p8</td>
+<td><a target="_blank" title="What is a '.p8' file?" href="http://tools.ietf.org/html/rfc5208">RFC 5208</a><br>
+</td>
+</tr>
+<tr>
+<td>PocketLearn Viewers</td>
+<td>application/vnd.pocketlearn</td>
+<td>.plf</td>
+<td><a target="_blank" title="What is a '.plf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.pocketlearn">IANA: PocketLearn Viewers</a><br>
+</td>
+</tr>
+<tr>
+<td>Portable Anymap Image</td>
+<td>image/x-portable-anymap</td>
+<td>.pnm</td>
+<td><a target="_blank" title="What is a '.pnm' file?" href="http://en.wikipedia.org/wiki/Netpbm_format">Wikipedia: Netpbm Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Portable Bitmap Format</td>
+<td>image/x-portable-bitmap</td>
+<td>.pbm</td>
+<td><a target="_blank" title="What is a '.pbm' file?" href="http://en.wikipedia.org/wiki/Netpbm_format">Wikipedia: Netpbm Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Portable Compiled Format</td>
+<td>application/x-font-pcf</td>
+<td>.pcf</td>
+<td><a target="_blank" title="What is a '.pcf' file?" href="http://en.wikipedia.org/wiki/Portable_Compiled_Format">Wikipedia: Portable Compiled Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Portable Font Resource</td>
+<td>application/font-tdpfr</td>
+<td>.pfr</td>
+<td><a target="_blank" title="What is a '.pfr' file?" href="http://tools.ietf.org/html/rfc3073">RFC 3073</a><br>
+</td>
+</tr>
+<tr>
+<td>Portable Game Notation (Chess Games)</td>
+<td>application/x-chess-pgn</td>
+<td>.pgn</td>
+<td><a target="_blank" title="What is a '.pgn' file?" href="http://en.wikipedia.org/wiki/Portable_Game_Notation">Wikipedia: Portable Game Notationb</a><br>
+</td>
+</tr>
+<tr>
+<td>Portable Graymap Format</td>
+<td>image/x-portable-graymap</td>
+<td>.pgm</td>
+<td><a target="_blank" title="What is a '.pgm' file?" href="http://en.wikipedia.org/wiki/Netpbm_format">Wikipedia: Netpbm Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Portable Network Graphics (PNG)</td>
+<td>image/png</td>
+<td>.png</td>
+<td><a target="_blank" title="What is a '.png' file?" href="http://tools.ietf.org/html/rfc2083">RFC 2083</a><br>
+</td>
+</tr>
+<tr>
+<td>Portable Pixmap Format</td>
+<td>image/x-portable-pixmap</td>
+<td>.ppm</td>
+<td><a target="_blank" title="What is a '.ppm' file?" href="http://en.wikipedia.org/wiki/Netpbm_format">Wikipedia: Netpbm Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Portable Symmetric Key Container</td>
+<td>application/pskc&#43;xml</td>
+<td>.pskcxml</td>
+<td><a target="_blank" title="What is a '.pskcxml' file?" href="http://tools.ietf.org/html/rfc6030">RFC 6030</a><br>
+</td>
+</tr>
+<tr>
+<td>PosML</td>
+<td>application/vnd.ctc-posml</td>
+<td>.pml</td>
+<td><a target="_blank" title="What is a '.pml' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ctc-posml">IANA: PosML</a><br>
+</td>
+</tr>
+<tr>
+<td>PostScript</td>
+<td>application/postscript</td>
+<td>.ai</td>
+<td><a target="_blank" title="What is a '.ai' file?" href="http://en.wikipedia.org/wiki/PostScript">Wikipedia: PostScript</a><br>
+</td>
+</tr>
+<tr>
+<td>PostScript Fonts</td>
+<td>application/x-font-type1</td>
+<td>.pfa</td>
+<td><a target="_blank" title="What is a '.pfa' file?" href="http://en.wikipedia.org/wiki/PostScript_fonts">Wikipedia: PostScript Fonts</a><br>
+</td>
+</tr>
+<tr>
+<td>PowerBuilder</td>
+<td>application/vnd.powerbuilder6</td>
+<td>.pbd</td>
+<td><a target="_blank" title="What is a '.pbd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.powerbuilder6">IANA: PowerBuilder</a><br>
+</td>
+</tr>
+<tr>
+<td>Pretty Good Privacy</td>
+<td>application/pgp-encrypted</td>
+<td>&nbsp;</td>
+<td><a target="_blank" title="What is a '' file?" href="http://en.wikipedia.org/wiki/Pretty_Good_Privacy">RFC 2015</a><br>
+</td>
+</tr>
+<tr>
+<td>Pretty Good Privacy - Signature</td>
+<td>application/pgp-signature</td>
+<td>.pgp</td>
+<td><a target="_blank" title="What is a '.pgp' file?" href="http://www.ietf.org/rfc/rfc2015.txt">RFC 2015</a><br>
+</td>
+</tr>
+<tr>
+<td>Preview Systems ZipLock/VBox</td>
+<td>application/vnd.previewsystems.box</td>
+<td>.box</td>
+<td><a target="_blank" title="What is a '.box' file?" href="http://www.iana.org/assignments/media-types/application/vnd.previewsystems.box">IANA: Preview Systems ZipLock/Vbox</a><br>
+</td>
+</tr>
+<tr>
+<td>Princeton Video Image</td>
+<td>application/vnd.pvi.ptid1</td>
+<td>.ptid</td>
+<td><a target="_blank" title="What is a '.ptid' file?" href="http://www.iana.org/assignments/media-types/application/vnd.pvi.ptid1">IANA: Princeton Video Image</a><br>
+</td>
+</tr>
+<tr>
+<td>Pronunciation Lexicon Specification</td>
+<td>application/pls&#43;xml</td>
+<td>.pls</td>
+<td><a target="_blank" title="What is a '.pls' file?" href="http://www.rfc-editor.org/rfc/rfc4267.txt">RFC 4267</a><br>
+</td>
+</tr>
+<tr>
+<td>Proprietary P&amp;G Standard Reporting System</td>
+<td>application/vnd.pg.format</td>
+<td>.str</td>
+<td><a target="_blank" title="What is a '.str' file?" href="http://www.iana.org/assignments/media-types/application/vnd.pg.format">IANA: Proprietary P&amp;G Standard Reporting System</a><br>
+</td>
+</tr>
+<tr>
+<td>Proprietary P&amp;G Standard Reporting System</td>
+<td>application/vnd.pg.osasli</td>
+<td>.ei6</td>
+<td><a target="_blank" title="What is a '.ei6' file?" href="http://www.iana.org/assignments/media-types/application/vnd.pg.osasli">IANA: Proprietary P&amp;G Standard Reporting System</a><br>
+</td>
+</tr>
+<tr>
+<td>PRS Lines Tag</td>
+<td>text/prs.lines.tag</td>
+<td>.dsc</td>
+<td><a target="_blank" title="What is a '.dsc' file?" href="http://www.iana.org/assignments/media-types/text/prs.lines.tag">IANA: PRS Lines Tag</a><br>
+</td>
+</tr>
+<tr>
+<td>PSF Fonts</td>
+<td>application/x-font-linux-psf</td>
+<td>.psf</td>
+<td><a target="_blank" title="What is a '.psf' file?" href="http://www.win.tue.nl/%7Eaeb/linux/kbd/font-formats-1.html">PSF Fonts</a><br>
+</td>
+</tr>
+<tr>
+<td>PubliShare Objects</td>
+<td>application/vnd.publishare-delta-tree</td>
+<td>.qps</td>
+<td><a target="_blank" title="What is a '.qps' file?" href="http://www.iana.org/assignments/media-types/application/vnd.publishare-delta-tree">IANA: PubliShare Objects</a><br>
+</td>
+</tr>
+<tr>
+<td>Qualcomm's Plaza Mobile Internet</td>
+<td>application/vnd.pmi.widget</td>
+<td>.wg</td>
+<td><a target="_blank" title="What is a '.wg' file?" href="http://www.iana.org/assignments/media-types/application/vnd.pmi.widget">IANA: Qualcomm's Plaza Mobile Internet</a><br>
+</td>
+</tr>
+<tr>
+<td>QuarkXpress</td>
+<td>application/vnd.quark.quarkxpress</td>
+<td>.qxd</td>
+<td><a target="_blank" title="What is a '.qxd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.Quark.QuarkXPress">IANA: QuarkXPress</a><br>
+</td>
+</tr>
+<tr>
+<td>QUASS Stream Player</td>
+<td>application/vnd.epson.esf</td>
+<td>.esf</td>
+<td><a target="_blank" title="What is a '.esf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.epson.esf">IANA: QUASS Stream Player</a><br>
+</td>
+</tr>
+<tr>
+<td>QUASS Stream Player</td>
+<td>application/vnd.epson.msf</td>
+<td>.msf</td>
+<td><a target="_blank" title="What is a '.msf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.epson.msf">IANA: QUASS Stream Player</a><br>
+</td>
+</tr>
+<tr>
+<td>QUASS Stream Player</td>
+<td>application/vnd.epson.ssf</td>
+<td>.ssf</td>
+<td><a target="_blank" title="What is a '.ssf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.epson.ssf">IANA: QUASS Stream Player</a><br>
+</td>
+</tr>
+<tr>
+<td>QuickAnime Player</td>
+<td>application/vnd.epson.quickanime</td>
+<td>.qam</td>
+<td><a target="_blank" title="What is a '.qam' file?" href="http://www.iana.org/assignments/media-types/application/vnd.epson.quickanime">IANA: QuickAnime Player</a><br>
+</td>
+</tr>
+<tr>
+<td>Quicken</td>
+<td>application/vnd.intu.qfx</td>
+<td>.qfx</td>
+<td><a target="_blank" title="What is a '.qfx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.intu.qfx">IANA: Quicken</a><br>
+</td>
+</tr>
+<tr>
+<td>Quicktime Video</td>
+<td>video/quicktime</td>
+<td>.qt</td>
+<td><a target="_blank" title="What is a '.qt' file?" href="http://en.wikipedia.org/wiki/Quicktime">Wikipedia: Quicktime</a><br>
+</td>
+</tr>
+<tr>
+<td>RAR Archive</td>
+<td>application/x-rar-compressed</td>
+<td>.rar</td>
+<td><a target="_blank" title="What is a '.rar' file?" href="http://en.wikipedia.org/wiki/Rar">Wikipedia: RAR</a><br>
+</td>
+</tr>
+<tr>
+<td>Real Audio Sound</td>
+<td>audio/x-pn-realaudio</td>
+<td>.ram</td>
+<td><a target="_blank" title="What is a '.ram' file?" href="http://en.wikipedia.org/wiki/RealPlayer">Wikipedia: RealPlayer</a><br>
+</td>
+</tr>
+<tr>
+<td>Real Audio Sound</td>
+<td>audio/x-pn-realaudio-plugin</td>
+<td>.rmp</td>
+<td><a target="_blank" title="What is a '.rmp' file?" href="http://en.wikipedia.org/wiki/RealPlayer">Wikipedia: RealPlayer</a><br>
+</td>
+</tr>
+<tr>
+<td>Really Simple Discovery</td>
+<td>application/rsd&#43;xml</td>
+<td>.rsd</td>
+<td><a target="_blank" title="What is a '.rsd' file?" href="http://en.wikipedia.org/wiki/Really_Simple_Discovery">Wikipedia: Really Simple Discovery</a><br>
+</td>
+</tr>
+<tr>
+<td>RealMedia</td>
+<td>application/vnd.rn-realmedia</td>
+<td>.rm</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>RealVNC</td>
+<td>application/vnd.realvnc.bed</td>
+<td>.bed</td>
+<td><a target="_blank" title="What is a '.bed' file?" href="http://www.iana.org/assignments/media-types/application/vnd.realvnc.bed">IANA: RealVNC</a><br>
+</td>
+</tr>
+<tr>
+<td>Recordare Applications</td>
+<td>application/vnd.recordare.musicxml</td>
+<td>.mxl</td>
+<td><a target="_blank" title="What is a '.mxl' file?" href="http://www.iana.org/assignments/media-types/application/vnd.recordare.musicxml">IANA: Recordare Apps</a><br>
+</td>
+</tr>
+<tr>
+<td>Recordare Applications</td>
+<td>application/vnd.recordare.musicxml&#43;xml</td>
+<td>.musicxml</td>
+<td><a target="_blank" title="What is a '.musicxml' file?" href="http://www.iana.org/assignments/media-types/application/vnd.recordare.musicxml&#43;xml">IANA: Recordare Apps</a><br>
+</td>
+</tr>
+<tr>
+<td>Relax NG Compact Syntax</td>
+<td>application/relax-ng-compact-syntax</td>
+<td>.rnc</td>
+<td><a target="_blank" title="What is a '.rnc' file?" href="http://relaxng.org/">Relax NG</a><br>
+</td>
+</tr>
+<tr>
+<td>RemoteDocs R-Viewer</td>
+<td>application/vnd.data-vision.rdz</td>
+<td>.rdz</td>
+<td><a target="_blank" title="What is a '.rdz' file?" href="http://www.iana.org/assignments/media-types/application/vnd.data-vision.rdz">IANA: Data-Vision</a><br>
+</td>
+</tr>
+<tr>
+<td>Resource Description Framework</td>
+<td>application/rdf&#43;xml</td>
+<td>.rdf</td>
+<td><a target="_blank" title="What is a '.rdf' file?" href="http://www.ietf.org/rfc/rfc3870.txt">RFC 3870</a><br>
+</td>
+</tr>
+<tr>
+<td>RetroPlatform Player</td>
+<td>application/vnd.cloanto.rp9</td>
+<td>.rp9</td>
+<td><a target="_blank" title="What is a '.rp9' file?" href="http://www.iana.org/assignments/media-types/application/vnd.cloanto.rp9">IANA: RetroPlatform Player</a><br>
+</td>
+</tr>
+<tr>
+<td>RhymBox</td>
+<td>application/vnd.jisp</td>
+<td>.jisp</td>
+<td><a target="_blank" title="What is a '.jisp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.jisp">IANA: RhymBox</a><br>
+</td>
+</tr>
+<tr>
+<td>Rich Text Format</td>
+<td>application/rtf</td>
+<td>.rtf</td>
+<td><a target="_blank" title="What is a '.rtf' file?" href="http://en.wikipedia.org/wiki/Rich_Text_Format">Wikipedia: Rich Text Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Rich Text Format (RTF)</td>
+<td>text/richtext</td>
+<td>.rtx</td>
+<td><a target="_blank" title="What is a '.rtx' file?" href="http://en.wikipedia.org/wiki/Rich_Text_Format">Wikipedia: Rich Text Format</a><br>
+</td>
+</tr>
+<tr>
+<td>ROUTE 66 Location Based Services</td>
+<td>application/vnd.route66.link66&#43;xml</td>
+<td>.link66</td>
+<td><a target="_blank" title="What is a '.link66' file?" href="http://www.iana.org/assignments/media-types/application/vnd.route66.link66&#43;xml">IANA: ROUTE 66</a><br>
+</td>
+</tr>
+<tr>
+<td>RSS - Really Simple Syndication</td>
+<td>application/rss&#43;xml</td>
+<td>.rss, .xml</td>
+<td><a target="_blank" title="What is a '.rss, .xml' file?" href="http://en.wikipedia.org/wiki/RSS">Wikipedia: RSS</a><br>
+</td>
+</tr>
+<tr>
+<td>S Hexdump Format</td>
+<td>application/shf&#43;xml</td>
+<td>.shf</td>
+<td><a target="_blank" title="What is a '.shf' file?" href="http://www.rfc-editor.org/rfc/rfc4194.txt">RFC 4194</a><br>
+</td>
+</tr>
+<tr>
+<td>SailingTracker</td>
+<td>application/vnd.sailingtracker.track</td>
+<td>.st</td>
+<td><a target="_blank" title="What is a '.st' file?" href="http://www.iana.org/assignments/media-types/application/vnd.sailingtracker.track">IANA: SailingTracker</a><br>
+</td>
+</tr>
+<tr>
+<td>Scalable Vector Graphics (SVG)</td>
+<td>image/svg&#43;xml</td>
+<td>.svg</td>
+<td><a target="_blank" title="What is a '.svg' file?" href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Wikipedia: SVG</a><br>
+</td>
+</tr>
+<tr>
+<td>ScheduleUs</td>
+<td>application/vnd.sus-calendar</td>
+<td>.sus</td>
+<td><a target="_blank" title="What is a '.sus' file?" href="http://www.iana.org/assignments/media-types/application/vnd.sus-calendar">IANA: ScheduleUs</a><br>
+</td>
+</tr>
+<tr>
+<td>Search/Retrieve via URL Response Format</td>
+<td>application/sru&#43;xml</td>
+<td>.sru</td>
+<td><a target="_blank" title="What is a '.sru' file?" href="http://tools.ietf.org/html/rfc6207">RFC 6207</a><br>
+</td>
+</tr>
+<tr>
+<td>Secure Electronic Transaction - Payment</td>
+<td>application/set-payment-initiation</td>
+<td>.setpay</td>
+<td><a target="_blank" title="What is a '.setpay' file?" href="http://www.iana.org/assignments/media-types/application/set-payment-initiation">IANA: SET Payment</a><br>
+</td>
+</tr>
+<tr>
+<td>Secure Electronic Transaction - Registration</td>
+<td>application/set-registration-initiation</td>
+<td>.setreg</td>
+<td><a target="_blank" title="What is a '.setreg' file?" href="http://www.iana.org/assignments/media-types/application/set-registration-initiation">IANA: SET Registration</a><br>
+</td>
+</tr>
+<tr>
+<td>Secured eMail</td>
+<td>application/vnd.sema</td>
+<td>.sema</td>
+<td><a target="_blank" title="What is a '.sema' file?" href="http://www.iana.org/assignments/media-types/application/vnd.sema">IANA: Secured eMail</a><br>
+</td>
+</tr>
+<tr>
+<td>Secured eMail</td>
+<td>application/vnd.semd</td>
+<td>.semd</td>
+<td><a target="_blank" title="What is a '.semd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.semd">IANA: Secured eMail</a><br>
+</td>
+</tr>
+<tr>
+<td>Secured eMail</td>
+<td>application/vnd.semf</td>
+<td>.semf</td>
+<td><a target="_blank" title="What is a '.semf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.semf">IANA: Secured eMail</a><br>
+</td>
+</tr>
+<tr>
+<td>SeeMail</td>
+<td>application/vnd.seemail</td>
+<td>.see</td>
+<td><a target="_blank" title="What is a '.see' file?" href="http://www.iana.org/assignments/media-types/application/vnd.seemail">IANA: SeeMail</a><br>
+</td>
+</tr>
+<tr>
+<td>Server Normal Format</td>
+<td>application/x-font-snf</td>
+<td>.snf</td>
+<td><a target="_blank" title="What is a '.snf' file?" href="http://en.wikipedia.org/wiki/Server_Normal_Format">Wikipedia: Server Normal Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Server-Based Certificate Validation Protocol - Validation Policies - Request</td>
+<td>application/scvp-vp-request</td>
+<td>.spq</td>
+<td><a target="_blank" title="What is a '.spq' file?" href="http://www.rfc-editor.org/rfc/rfc5055.txt">RFC 5055</a><br>
+</td>
+</tr>
+<tr>
+<td>Server-Based Certificate Validation Protocol - Validation Policies - Response</td>
+<td>application/scvp-vp-response</td>
+<td>.spp</td>
+<td><a target="_blank" title="What is a '.spp' file?" href="http://www.rfc-editor.org/rfc/rfc5055.txt">RFC 5055</a><br>
+</td>
+</tr>
+<tr>
+<td>Server-Based Certificate Validation Protocol - Validation Request</td>
+<td>application/scvp-cv-request</td>
+<td>.scq</td>
+<td><a target="_blank" title="What is a '.scq' file?" href="http://www.rfc-editor.org/rfc/rfc5055.txt">RFC 5055</a><br>
+</td>
+</tr>
+<tr>
+<td>Server-Based Certificate Validation Protocol - Validation Response</td>
+<td>application/scvp-cv-response</td>
+<td>.scs</td>
+<td><a target="_blank" title="What is a '.scs' file?" href="http://www.rfc-editor.org/rfc/rfc5055.txt">RFC 5055</a><br>
+</td>
+</tr>
+<tr>
+<td>Session Description Protocol</td>
+<td>application/sdp</td>
+<td>.sdp</td>
+<td><a target="_blank" title="What is a '.sdp' file?" href="http://www.ietf.org/rfc/rfc2327.txt">RFC 2327</a><br>
+</td>
+</tr>
+<tr>
+<td>Setext</td>
+<td>text/x-setext</td>
+<td>.etx</td>
+<td><a target="_blank" title="What is a '.etx' file?" href="http://en.wikipedia.org/wiki/Setext">Wikipedia: Setext</a><br>
+</td>
+</tr>
+<tr>
+<td>SGI Movie</td>
+<td>video/x-sgi-movie</td>
+<td>.movie</td>
+<td><a target="_blank" title="What is a '.movie' file?" href="http://www.pimpworks.org/sgi/faq/movie.shtml">SGI Facts</a><br>
+</td>
+</tr>
+<tr>
+<td>Shana Informed Filler</td>
+<td>application/vnd.shana.informed.formdata</td>
+<td>.ifm</td>
+<td><a target="_blank" title="What is a '.ifm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.shana.informed.formdata">IANA: Shana Informed Filler</a><br>
+</td>
+</tr>
+<tr>
+<td>Shana Informed Filler</td>
+<td>application/vnd.shana.informed.formtemplate</td>
+<td>.itp</td>
+<td><a target="_blank" title="What is a '.itp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.shana.informed.formtemplate">IANA: Shana Informed Filler</a><br>
+</td>
+</tr>
+<tr>
+<td>Shana Informed Filler</td>
+<td>application/vnd.shana.informed.interchange</td>
+<td>.iif</td>
+<td><a target="_blank" title="What is a '.iif' file?" href="http://www.iana.org/assignments/media-types/application/vnd.shana.informed.interchange">IANA: Shana Informed Filler</a><br>
+</td>
+</tr>
+<tr>
+<td>Shana Informed Filler</td>
+<td>application/vnd.shana.informed.package</td>
+<td>.ipk</td>
+<td><a target="_blank" title="What is a '.ipk' file?" href="http://www.iana.org/assignments/media-types/application/vnd.shana.informed.package">IANA: Shana Informed Filler</a><br>
+</td>
+</tr>
+<tr>
+<td>Sharing Transaction Fraud Data</td>
+<td>application/thraud&#43;xml</td>
+<td>.tfi</td>
+<td><a target="_blank" title="What is a '.tfi' file?" href="http://tools.ietf.org/html/rfc5941">RFC 5941</a><br>
+</td>
+</tr>
+<tr>
+<td>Shell Archive</td>
+<td>application/x-shar</td>
+<td>.shar</td>
+<td><a target="_blank" title="What is a '.shar' file?" href="http://en.wikipedia.org/wiki/Shar">Wikipedia: Shell Archie</a><br>
+</td>
+</tr>
+<tr>
+<td>Silicon Graphics RGB Bitmap</td>
+<td>image/x-rgb</td>
+<td>.rgb</td>
+<td><a target="_blank" title="What is a '.rgb' file?" href="http://www.fileformat.info/format/sgiimage/egff.htm">RGB Image Format</a><br>
+</td>
+</tr>
+<tr>
+<td>SimpleAnimeLite Player</td>
+<td>application/vnd.epson.salt</td>
+<td>.slt</td>
+<td><a target="_blank" title="What is a '.slt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.epson.salt">IANA: SimpleAnimeLite Player</a><br>
+</td>
+</tr>
+<tr>
+<td>Simply Accounting</td>
+<td>application/vnd.accpac.simply.aso</td>
+<td>.aso</td>
+<td><a target="_blank" title="What is a '.aso' file?" href="http://www.iana.org/assignments/media-types/application/vnd.accpac.simply.aso">IANA: Simply Accounting</a><br>
+</td>
+</tr>
+<tr>
+<td>Simply Accounting - Data Import</td>
+<td>application/vnd.accpac.simply.imp</td>
+<td>.imp</td>
+<td><a target="_blank" title="What is a '.imp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.accpac.simply.imp">IANA: Simply Accounting</a><br>
+</td>
+</tr>
+<tr>
+<td>SimTech MindMapper</td>
+<td>application/vnd.simtech-mindmapper</td>
+<td>.twd</td>
+<td><a target="_blank" title="What is a '.twd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.SimTech-MindMapper">IANA: SimTech MindMapper</a><br>
+</td>
+</tr>
+<tr>
+<td>Sixth Floor Media - CommonSpace</td>
+<td>application/vnd.commonspace</td>
+<td>.csp</td>
+<td><a target="_blank" title="What is a '.csp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.commonspace">IANA: CommonSpace</a><br>
+</td>
+</tr>
+<tr>
+<td>SMAF Audio</td>
+<td>application/vnd.yamaha.smaf-audio</td>
+<td>.saf</td>
+<td><a target="_blank" title="What is a '.saf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.yamaha.smaf-audio">IANA: SMAF Audio</a><br>
+</td>
+</tr>
+<tr>
+<td>SMAF File</td>
+<td>application/vnd.smaf</td>
+<td>.mmf</td>
+<td><a target="_blank" title="What is a '.mmf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.smaf">IANA: SMAF File</a><br>
+</td>
+</tr>
+<tr>
+<td>SMAF Phrase</td>
+<td>application/vnd.yamaha.smaf-phrase</td>
+<td>.spf</td>
+<td><a target="_blank" title="What is a '.spf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.yamaha.smaf-phrase">IANA: SMAF Phrase</a><br>
+</td>
+</tr>
+<tr>
+<td>SMART Technologies Apps</td>
+<td>application/vnd.smart.teacher</td>
+<td>.teacher</td>
+<td><a target="_blank" title="What is a '.teacher' file?" href="http://www.iana.org/assignments/media-types/application/vnd.smart.teacher">IANA: SMART Technologies Apps</a><br>
+</td>
+</tr>
+<tr>
+<td>SourceView Document</td>
+<td>application/vnd.svd</td>
+<td>.svd</td>
+<td><a target="_blank" title="What is a '.svd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.svd">IANA: SourceView Document</a><br>
+</td>
+</tr>
+<tr>
+<td>SPARQL - Query</td>
+<td>application/sparql-query</td>
+<td>.rq</td>
+<td><a target="_blank" title="What is a '.rq' file?" href="http://www.w3.org/TR/2006/CR-rdf-sparql-XMLres-20060406/">W3C SPARQL</a><br>
+</td>
+</tr>
+<tr>
+<td>SPARQL - Results</td>
+<td>application/sparql-results&#43;xml</td>
+<td>.srx</td>
+<td><a target="_blank" title="What is a '.srx' file?" href="http://www.w3.org/TR/2006/CR-rdf-sparql-XMLres-20060406/">W3C SPARQL</a><br>
+</td>
+</tr>
+<tr>
+<td>Speech Recognition Grammar Specification</td>
+<td>application/srgs</td>
+<td>.gram</td>
+<td><a target="_blank" title="What is a '.gram' file?" href="http://www.w3.org/TR/speech-grammar/">W3C Speech Grammar</a><br>
+</td>
+</tr>
+<tr>
+<td>Speech Recognition Grammar Specification - XML</td>
+<td>application/srgs&#43;xml</td>
+<td>.grxml</td>
+<td><a target="_blank" title="What is a '.grxml' file?" href="http://www.w3.org/TR/speech-grammar/">W3C Speech Grammar</a><br>
+</td>
+</tr>
+<tr>
+<td>Speech Synthesis Markup Language</td>
+<td>application/ssml&#43;xml</td>
+<td>.ssml</td>
+<td><a target="_blank" title="What is a '.ssml' file?" href="http://www.w3.org/TR/speech-synthesis/">W3C Speech Synthesis</a><br>
+</td>
+</tr>
+<tr>
+<td>SSEYO Koan Play File</td>
+<td>application/vnd.koan</td>
+<td>.skp</td>
+<td><a target="_blank" title="What is a '.skp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.koan">IANA: SSEYO Koan Play File</a><br>
+</td>
+</tr>
+<tr>
+<td>Standard Generalized Markup Language (SGML)</td>
+<td>text/sgml</td>
+<td>.sgml</td>
+<td><a target="_blank" title="What is a '.sgml' file?" href="http://en.wikipedia.org/wiki/Sgml">Wikipedia: SGML</a><br>
+</td>
+</tr>
+<tr>
+<td>StarOffice - Calc</td>
+<td>application/vnd.stardivision.calc</td>
+<td>.sdc</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>StarOffice - Draw</td>
+<td>application/vnd.stardivision.draw</td>
+<td>.sda</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>StarOffice - Impress</td>
+<td>application/vnd.stardivision.impress</td>
+<td>.sdd</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>StarOffice - Math</td>
+<td>application/vnd.stardivision.math</td>
+<td>.smf</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>StarOffice - Writer</td>
+<td>application/vnd.stardivision.writer</td>
+<td>.sdw</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>StarOffice - Writer (Global)</td>
+<td>application/vnd.stardivision.writer-global</td>
+<td>.sgl</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>StepMania</td>
+<td>application/vnd.stepmania.stepchart</td>
+<td>.sm</td>
+<td><a target="_blank" title="What is a '.sm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.stepmania.stepchart">IANA: StepMania</a><br>
+</td>
+</tr>
+<tr>
+<td>Stuffit Archive</td>
+<td>application/x-stuffit</td>
+<td>.sit</td>
+<td><a target="_blank" title="What is a '.sit' file?" href="http://en.wikipedia.org/wiki/Stuffit">Wikipedia: Stuffit</a><br>
+</td>
+</tr>
+<tr>
+<td>Stuffit Archive</td>
+<td>application/x-stuffitx</td>
+<td>.sitx</td>
+<td><a target="_blank" title="What is a '.sitx' file?" href="http://en.wikipedia.org/wiki/Stuffit">Wikipedia: Stuffit</a><br>
+</td>
+</tr>
+<tr>
+<td>SudokuMagic</td>
+<td>application/vnd.solent.sdkm&#43;xml</td>
+<td>.sdkm</td>
+<td><a target="_blank" title="What is a '.sdkm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.solent.sdkm&#43;xml">IANA: SudokuMagic</a><br>
+</td>
+</tr>
+<tr>
+<td>Sugar Linux Application Bundle</td>
+<td>application/vnd.olpc-sugar</td>
+<td>.xo</td>
+<td><a target="_blank" title="What is a '.xo' file?" href="http://www.iana.org/assignments/media-types/application/vnd.olpc-sugar">IANA: Sugar Linux App Bundle</a><br>
+</td>
+</tr>
+<tr>
+<td>Sun Audio - Au file format</td>
+<td>audio/basic</td>
+<td>.au</td>
+<td><a target="_blank" title="What is a '.au' file?" href="http://en.wikipedia.org/wiki/Sun_Audio">Wikipedia: Sun audio</a><br>
+</td>
+</tr>
+<tr>
+<td>SundaHus WQ</td>
+<td>application/vnd.wqd</td>
+<td>.wqd</td>
+<td><a target="_blank" title="What is a '.wqd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.wqd">IANA: SundaHus WQ</a><br>
+</td>
+</tr>
+<tr>
+<td>Symbian Install Package</td>
+<td>application/vnd.symbian.install</td>
+<td>.sis</td>
+<td><a target="_blank" title="What is a '.sis' file?" href="http://www.iana.org/assignments/media-types/application/vnd.nokia.n-gage.symbian.install">IANA: Symbian Install</a><br>
+</td>
+</tr>
+<tr>
+<td>Synchronized Multimedia Integration Language</td>
+<td>application/smil&#43;xml</td>
+<td>.smi</td>
+<td><a target="_blank" title="What is a '.smi' file?" href="http://tools.ietf.org/html/rfc4536">RFC 4536</a><br>
+</td>
+</tr>
+<tr>
+<td>SyncML</td>
+<td>application/vnd.syncml&#43;xml</td>
+<td>.xsm</td>
+<td><a target="_blank" title="What is a '.xsm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.syncml&#43;xml">IANA: SyncML</a><br>
+</td>
+</tr>
+<tr>
+<td>SyncML - Device Management</td>
+<td>application/vnd.syncml.dm&#43;wbxml</td>
+<td>.bdm</td>
+<td><a target="_blank" title="What is a '.bdm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.syncml.dm&#43;wbxml">IANA: SyncML</a><br>
+</td>
+</tr>
+<tr>
+<td>SyncML - Device Management</td>
+<td>application/vnd.syncml.dm&#43;xml</td>
+<td>.xdm</td>
+<td><a target="_blank" title="What is a '.xdm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.syncml.dm&#43;xml">IANA: SyncML</a><br>
+</td>
+</tr>
+<tr>
+<td>System V Release 4 CPIO Archive</td>
+<td>application/x-sv4cpio</td>
+<td>.sv4cpio</td>
+<td><a target="_blank" title="What is a '.sv4cpio' file?" href="http://en.wikipedia.org/wiki/Pax_%28Unix%29">Wikipedia: pax</a><br>
+</td>
+</tr>
+<tr>
+<td>System V Release 4 CPIO Checksum Data</td>
+<td>application/x-sv4crc</td>
+<td>.sv4crc</td>
+<td><a target="_blank" title="What is a '.sv4crc' file?" href="http://en.wikipedia.org/wiki/Pax_%28Unix%29">Wikipedia: pax</a><br>
+</td>
+</tr>
+<tr>
+<td>Systems Biology Markup Language</td>
+<td>application/sbml&#43;xml</td>
+<td>.sbml</td>
+<td><a target="_blank" title="What is a '.sbml' file?" href="http://www.rfc-editor.org/rfc/rfc3823.txt">RFC 3823</a><br>
+</td>
+</tr>
+<tr>
+<td>Tab Seperated Values</td>
+<td>text/tab-separated-values</td>
+<td>.tsv</td>
+<td><a target="_blank" title="What is a '.tsv' file?" href="http://en.wikipedia.org/wiki/Tab-separated_values">Wikipedia: TSV</a><br>
+</td>
+</tr>
+<tr>
+<td>Tagged Image File Format</td>
+<td>image/tiff</td>
+<td>.tiff</td>
+<td><a target="_blank" title="What is a '.tiff' file?" href="http://en.wikipedia.org/wiki/Tagged_Image_File_Format">Wikipedia: TIFF</a><br>
+</td>
+</tr>
+<tr>
+<td>Tao Intent</td>
+<td>application/vnd.tao.intent-module-archive</td>
+<td>.tao</td>
+<td><a target="_blank" title="What is a '.tao' file?" href="http://www.iana.org/assignments/media-types/application/vnd.tao.intent-module-archive">IANA: Tao Intent</a><br>
+</td>
+</tr>
+<tr>
+<td>Tar File (Tape Archive)</td>
+<td>application/x-tar</td>
+<td>.tar</td>
+<td><a target="_blank" title="What is a '.tar' file?" href="http://en.wikipedia.org/wiki/Tar_file">Wikipedia: Tar</a><br>
+</td>
+</tr>
+<tr>
+<td>Tcl Script</td>
+<td>application/x-tcl</td>
+<td>.tcl</td>
+<td><a target="_blank" title="What is a '.tcl' file?" href="http://en.wikipedia.org/wiki/Tcl">Wikipedia: Tcl</a><br>
+</td>
+</tr>
+<tr>
+<td>TeX</td>
+<td>application/x-tex</td>
+<td>.tex</td>
+<td><a target="_blank" title="What is a '.tex' file?" href="http://en.wikipedia.org/wiki/TeX">Wikipedia: TeX</a><br>
+</td>
+</tr>
+<tr>
+<td>TeX Font Metric</td>
+<td>application/x-tex-tfm</td>
+<td>.tfm</td>
+<td><a target="_blank" title="What is a '.tfm' file?" href="http://en.wikipedia.org/wiki/TeX_font_metric">Wikipedia: TeX Font Metric</a><br>
+</td>
+</tr>
+<tr>
+<td>Text Encoding and Interchange</td>
+<td>application/tei&#43;xml</td>
+<td>.tei</td>
+<td><a target="_blank" title="What is a '.tei' file?" href="http://tools.ietf.org/html/rfc6129">RFC 6129</a><br>
+</td>
+</tr>
+<tr>
+<td>Text File</td>
+<td>text/plain</td>
+<td>.txt</td>
+<td><a target="_blank" title="What is a '.txt' file?" href="http://en.wikipedia.org/wiki/Text_file">Wikipedia: Text File</a><br>
+</td>
+</tr>
+<tr>
+<td>TIBCO Spotfire</td>
+<td>application/vnd.spotfire.dxp</td>
+<td>.dxp</td>
+<td><a target="_blank" title="What is a '.dxp' file?" href="http://www.iana.org/assignments/media-types/application/vnd.spotfire.dxp">IANA: TIBCO Spotfire</a><br>
+</td>
+</tr>
+<tr>
+<td>TIBCO Spotfire</td>
+<td>application/vnd.spotfire.sfs</td>
+<td>.sfs</td>
+<td><a target="_blank" title="What is a '.sfs' file?" href="http://www.iana.org/assignments/media-types/application/vnd.spotfire.sfs">IANA: TIBCO Spotfire</a><br>
+</td>
+</tr>
+<tr>
+<td>Time Stamped Data Envelope</td>
+<td>application/timestamped-data</td>
+<td>.tsd</td>
+<td><a target="_blank" title="What is a '.tsd' file?" href="http://tools.ietf.org/html/rfc5955">RFC 5955</a><br>
+</td>
+</tr>
+<tr>
+<td>TRI Systems Config</td>
+<td>application/vnd.trid.tpt</td>
+<td>.tpt</td>
+<td><a target="_blank" title="What is a '.tpt' file?" href="http://www.iana.org/assignments/media-types/application/vnd.trid.tpt">IANA: TRI Systems</a><br>
+</td>
+</tr>
+<tr>
+<td>Triscape Map Explorer</td>
+<td>application/vnd.triscape.mxs</td>
+<td>.mxs</td>
+<td><a target="_blank" title="What is a '.mxs' file?" href="http://www.iana.org/assignments/media-types/application/vnd.triscape.mxs">IANA: Triscape Map Explorer</a><br>
+</td>
+</tr>
+<tr>
+<td>troff</td>
+<td>text/troff</td>
+<td>.t</td>
+<td><a target="_blank" title="What is a '.t' file?" href="http://en.wikipedia.org/wiki/Troff">Wikipedia: troff</a><br>
+</td>
+</tr>
+<tr>
+<td>True BASIC</td>
+<td>application/vnd.trueapp</td>
+<td>.tra</td>
+<td><a target="_blank" title="What is a '.tra' file?" href="http://www.iana.org/assignments/media-types/application/vnd.trueapp">IANA: True BASIC</a><br>
+</td>
+</tr>
+<tr>
+<td>TrueType Font</td>
+<td>application/x-font-ttf</td>
+<td>.ttf</td>
+<td><a target="_blank" title="What is a '.ttf' file?" href="http://en.wikipedia.org/wiki/TrueType">Wikipedia: TrueType</a><br>
+</td>
+</tr>
+<tr>
+<td>Turtle (Terse RDF Triple Language)</td>
+<td>text/turtle</td>
+<td>.ttl</td>
+<td><a target="_blank" title="What is a '.ttl' file?" href="http://en.wikipedia.org/wiki/Turtle_%28syntax%29">Wikipedia: Turtle</a><br>
+</td>
+</tr>
+<tr>
+<td>UMAJIN</td>
+<td>application/vnd.umajin</td>
+<td>.umj</td>
+<td><a target="_blank" title="What is a '.umj' file?" href="http://www.iana.org/assignments/media-types/application/vnd.umajin">IANA: UMAJIN</a><br>
+</td>
+</tr>
+<tr>
+<td>Unique Object Markup Language</td>
+<td>application/vnd.uoml&#43;xml</td>
+<td>.uoml</td>
+<td><a target="_blank" title="What is a '.uoml' file?" href="http://www.iana.org/assignments/media-types/application/vnd.uoml&#43;xml">IANA: UOML</a><br>
+</td>
+</tr>
+<tr>
+<td>Unity 3d</td>
+<td>application/vnd.unity</td>
+<td>.unityweb</td>
+<td><a target="_blank" title="What is a '.unityweb' file?" href="http://www.iana.org/assignments/media-types/application/vnd.unity">IANA: Unity 3d</a><br>
+</td>
+</tr>
+<tr>
+<td>Universal Forms Description Language</td>
+<td>application/vnd.ufdl</td>
+<td>.ufd</td>
+<td><a target="_blank" title="What is a '.ufd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.ufdl">IANA: Universal Forms Description Language</a><br>
+</td>
+</tr>
+<tr>
+<td>URI Resolution Services</td>
+<td>text/uri-list</td>
+<td>.uri</td>
+<td><a target="_blank" title="What is a '.uri' file?" href="http://tools.ietf.org/html/rfc2483">RFC 2483</a><br>
+</td>
+</tr>
+<tr>
+<td>User Interface Quartz - Theme (Symbian)</td>
+<td>application/vnd.uiq.theme</td>
+<td>.utz</td>
+<td><a target="_blank" title="What is a '.utz' file?" href="http://www.iana.org/assignments/media-types/application/vnd.uiq.theme">IANA: User Interface Quartz</a><br>
+</td>
+</tr>
+<tr>
+<td>Ustar (Uniform Standard Tape Archive)</td>
+<td>application/x-ustar</td>
+<td>.ustar</td>
+<td><a target="_blank" title="What is a '.ustar' file?" href="http://en.wikipedia.org/wiki/Ustar#UStar_format">Wikipedia: Ustar</a><br>
+</td>
+</tr>
+<tr>
+<td>UUEncode</td>
+<td>text/x-uuencode</td>
+<td>.uu</td>
+<td><a target="_blank" title="What is a '.uu' file?" href="http://en.wikipedia.org/wiki/Uuencode">Wikipedia: UUEncode</a><br>
+</td>
+</tr>
+<tr>
+<td>vCalendar</td>
+<td>text/x-vcalendar</td>
+<td>.vcs</td>
+<td><a target="_blank" title="What is a '.vcs' file?" href="http://en.wikipedia.org/wiki/VCalendar#vCalendar_1.0">Wikipedia: vCalendar</a><br>
+</td>
+</tr>
+<tr>
+<td>vCard</td>
+<td>text/x-vcard</td>
+<td>.vcf</td>
+<td><a target="_blank" title="What is a '.vcf' file?" href="http://en.wikipedia.org/wiki/Vcard">Wikipedia: vCard</a><br>
+</td>
+</tr>
+<tr>
+<td>Video CD</td>
+<td>application/x-cdlink</td>
+<td>.vcd</td>
+<td><a target="_blank" title="What is a '.vcd' file?" href="http://en.wikipedia.org/wiki/Video_CD">Wikipedia: Video CD</a><br>
+</td>
+</tr>
+<tr>
+<td>Viewport&#43;</td>
+<td>application/vnd.vsf</td>
+<td>.vsf</td>
+<td><a target="_blank" title="What is a '.vsf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.vsf">IANA: Viewport&#43;</a><br>
+</td>
+</tr>
+<tr>
+<td>Virtual Reality Modeling Language</td>
+<td>model/vrml</td>
+<td>.wrl</td>
+<td><a target="_blank" title="What is a '.wrl' file?" href="http://en.wikipedia.org/wiki/VRML">Wikipedia: VRML</a><br>
+</td>
+</tr>
+<tr>
+<td>VirtualCatalog</td>
+<td>application/vnd.vcx</td>
+<td>.vcx</td>
+<td><a target="_blank" title="What is a '.vcx' file?" href="http://www.iana.org/assignments/media-types/application/vnd.vcx">IANA: VirtualCatalog</a><br>
+</td>
+</tr>
+<tr>
+<td>Virtue MTS</td>
+<td>model/vnd.mts</td>
+<td>.mts</td>
+<td><a target="_blank" title="What is a '.mts' file?" href="http://www.iana.org/assignments/media-types/model/vnd.mts">IANA: MTS</a><br>
+</td>
+</tr>
+<tr>
+<td>Virtue VTU</td>
+<td>model/vnd.vtu</td>
+<td>.vtu</td>
+<td><a target="_blank" title="What is a '.vtu' file?" href="http://www.iana.org/assignments/media-types/model/vnd.vtu">IANA: VTU</a><br>
+</td>
+</tr>
+<tr>
+<td>Visionary</td>
+<td>application/vnd.visionary</td>
+<td>.vis</td>
+<td><a target="_blank" title="What is a '.vis' file?" href="http://www.iana.org/assignments/media-types/application/vnd.visionary">IANA: Visionary</a><br>
+</td>
+</tr>
+<tr>
+<td>Vivo</td>
+<td>video/vnd.vivo</td>
+<td>.viv</td>
+<td><a target="_blank" title="What is a '.viv' file?" href="http://www.iana.org/assignments/media-types/video/vnd-vivo">IANA: Vivo</a><br>
+</td>
+</tr>
+<tr>
+<td>Voice Browser Call Control</td>
+<td>application/ccxml&#43;xml,</td>
+<td>.ccxml</td>
+<td><a target="_blank" title="What is a '.ccxml' file?" href="http://www.w3.org/TR/ccxml/">Voice Browser Call Control: CCXML Version 1.0</a><br>
+</td>
+</tr>
+<tr>
+<td>VoiceXML</td>
+<td>application/voicexml&#43;xml</td>
+<td>.vxml</td>
+<td><a target="_blank" title="What is a '.vxml' file?" href="http://tools.ietf.org/html/rfc4267">RFC 4267</a><br>
+</td>
+</tr>
+<tr>
+<td>WAIS Source</td>
+<td>application/x-wais-source</td>
+<td>.src</td>
+<td><a target="_blank" title="What is a '.src' file?" href="http://www.yolinux.com/TUTORIALS/notes_wais.html">YoLinux</a><br>
+</td>
+</tr>
+<tr>
+<td>WAP Binary XML (WBXML)</td>
+<td>application/vnd.wap.wbxml</td>
+<td>.wbxml</td>
+<td><a target="_blank" title="What is a '.wbxml' file?" href="http://www.iana.org/assignments/media-types/application/vnd.wap-wbxml">IANA: WBXML</a><br>
+</td>
+</tr>
+<tr>
+<td>WAP Bitamp (WBMP)</td>
+<td>image/vnd.wap.wbmp</td>
+<td>.wbmp</td>
+<td><a target="_blank" title="What is a '.wbmp' file?" href="http://www.iana.org/assignments/media-types/image/vnd-wap-wbmp">IANA: WBMP</a><br>
+</td>
+</tr>
+<tr>
+<td>Waveform Audio File Format (WAV)</td>
+<td>audio/x-wav</td>
+<td>.wav</td>
+<td><a target="_blank" title="What is a '.wav' file?" href="http://en.wikipedia.org/wiki/Wav">Wikipedia: WAV</a><br>
+</td>
+</tr>
+<tr>
+<td>Web Distributed Authoring and Versioning</td>
+<td>application/davmount&#43;xml</td>
+<td>.davmount</td>
+<td><a target="_blank" title="What is a '.davmount' file?" href="http://tools.ietf.org/html/rfc4918">RFC 4918</a><br>
+</td>
+</tr>
+<tr>
+<td>Web Open Font Format</td>
+<td>application/x-font-woff</td>
+<td>.woff</td>
+<td><a target="_blank" title="What is a '.woff' file?" href="http://en.wikipedia.org/wiki/Woff">Wikipedia: Web Open Font Format</a><br>
+</td>
+</tr>
+<tr>
+<td>Web Services Policy</td>
+<td>application/wspolicy&#43;xml</td>
+<td>.wspolicy</td>
+<td><a target="_blank" title="What is a '.wspolicy' file?" href="http://www.w3.org/Submission/WS-Policy/">W3C Web Services Policy</a><br>
+</td>
+</tr>
+<tr>
+<td>WebP Image</td>
+<td>image/webp</td>
+<td>.webp</td>
+<td><a target="_blank" title="What is a '.webp' file?" href="http://en.wikipedia.org/wiki/WebP">Wikipedia: WebP</a><br>
+</td>
+</tr>
+<tr>
+<td>WebTurbo</td>
+<td>application/vnd.webturbo</td>
+<td>.wtb</td>
+<td><a target="_blank" title="What is a '.wtb' file?" href="http://www.iana.org/assignments/media-types/application/vnd.webturbo">IANA: WebTurbo</a><br>
+</td>
+</tr>
+<tr>
+<td>Widget Packaging and XML Configuration</td>
+<td>application/widget</td>
+<td>.wgt</td>
+<td><a target="_blank" title="What is a '.wgt' file?" href="http://www.w3.org/TR/widgets/#media-type-registration-for-applicationw">W3C Widget Packaging and XML Configuration</a><br>
+</td>
+</tr>
+<tr>
+<td>WinHelp</td>
+<td>application/winhlp</td>
+<td>.hlp</td>
+<td><a target="_blank" title="What is a '.hlp' file?" href="http://en.wikipedia.org/wiki/WinHelp">Wikipedia: WinHelp</a><br>
+</td>
+</tr>
+<tr>
+<td>Wireless Markup Language (WML)</td>
+<td>text/vnd.wap.wml</td>
+<td>.wml</td>
+<td><a target="_blank" title="What is a '.wml' file?" href="http://en.wikipedia.org/wiki/Wireless_Markup_Language">Wikipedia: WML</a><br>
+</td>
+</tr>
+<tr>
+<td>Wireless Markup Language Script (WMLScript)</td>
+<td>text/vnd.wap.wmlscript</td>
+<td>.wmls</td>
+<td><a target="_blank" title="What is a '.wmls' file?" href="http://en.wikipedia.org/wiki/WMLScript">Wikipedia: WMLScript</a><br>
+</td>
+</tr>
+<tr>
+<td>WMLScript</td>
+<td>application/vnd.wap.wmlscriptc</td>
+<td>.wmlsc</td>
+<td><a target="_blank" title="What is a '.wmlsc' file?" href="http://www.iana.org/assignments/media-types/application/vnd.wap.wmlscriptc">IANA: WMLScript</a><br>
+</td>
+</tr>
+<tr>
+<td>Wordperfect</td>
+<td>application/vnd.wordperfect</td>
+<td>.wpd</td>
+<td><a target="_blank" title="What is a '.wpd' file?" href="http://www.iana.org/assignments/media-types/application/vnd.wordperfect">IANA: Wordperfect</a><br>
+</td>
+</tr>
+<tr>
+<td>Worldtalk</td>
+<td>application/vnd.wt.stf</td>
+<td>.stf</td>
+<td><a target="_blank" title="What is a '.stf' file?" href="http://www.iana.org/assignments/media-types/application/vnd.wt.stf">IANA: Worldtalk</a><br>
+</td>
+</tr>
+<tr>
+<td>WSDL - Web Services Description Language</td>
+<td>application/wsdl&#43;xml</td>
+<td>.wsdl</td>
+<td><a target="_blank" title="What is a '.wsdl' file?" href="http://www.iana.org/assignments/media-types/application/wsdl&#43;xml">W3C Web Service Description Language</a><br>
+</td>
+</tr>
+<tr>
+<td>X BitMap</td>
+<td>image/x-xbitmap</td>
+<td>.xbm</td>
+<td><a target="_blank" title="What is a '.xbm' file?" href="http://en.wikipedia.org/wiki/X_BitMap">Wikipedia: X BitMap</a><br>
+</td>
+</tr>
+<tr>
+<td>X PixMap</td>
+<td>image/x-xpixmap</td>
+<td>.xpm</td>
+<td><a target="_blank" title="What is a '.xpm' file?" href="http://en.wikipedia.org/wiki/X_Pixmap">Wikipedia: X PixMap</a><br>
+</td>
+</tr>
+<tr>
+<td>X Window Dump</td>
+<td>image/x-xwindowdump</td>
+<td>.xwd</td>
+<td><a target="_blank" title="What is a '.xwd' file?" href="http://en.wikipedia.org/wiki/Screenshot">Wikipedia: X Window Dump</a><br>
+</td>
+</tr>
+<tr>
+<td>X.509 Certificate</td>
+<td>application/x-x509-ca-cert</td>
+<td>.der</td>
+<td><a target="_blank" title="What is a '.der' file?" href="http://en.wikipedia.org/wiki/X.509">Wikipedia: X.509</a><br>
+</td>
+</tr>
+<tr>
+<td>Xfig</td>
+<td>application/x-xfig</td>
+<td>.fig</td>
+<td><a target="_blank" title="What is a '.fig' file?" href="http://en.wikipedia.org/wiki/Xfig">Wikipedia: Xfig</a><br>
+</td>
+</tr>
+<tr>
+<td>XHTML - The Extensible HyperText Markup Language</td>
+<td>application/xhtml&#43;xml</td>
+<td>.xhtml</td>
+<td><a target="_blank" title="What is a '.xhtml' file?" href="http://www.w3.org/TR/xhtml1/">W3C XHTML</a><br>
+</td>
+</tr>
+<tr>
+<td>XML - Extensible Markup Language</td>
+<td>application/xml</td>
+<td>.xml</td>
+<td><a target="_blank" title="What is a '.xml' file?" href="http://www.w3.org/XML/">W3C XML</a><br>
+</td>
+</tr>
+<tr>
+<td>XML Configuration Access Protocol - XCAP Diff</td>
+<td>application/xcap-diff&#43;xml</td>
+<td>.xdf</td>
+<td><a target="_blank" title="What is a '.xdf' file?" href="http://en.wikipedia.org/wiki/XCAP">Wikipedia: XCAP</a><br>
+</td>
+</tr>
+<tr>
+<td>XML Encryption Syntax and Processing</td>
+<td>application/xenc&#43;xml</td>
+<td>.xenc</td>
+<td><a target="_blank" title="What is a '.xenc' file?" href="http://www.w3.org/TR/xmlenc-core/">W3C XML Encryption Syntax and Processing</a><br>
+</td>
+</tr>
+<tr>
+<td>XML Patch Framework</td>
+<td>application/patch-ops-error&#43;xml</td>
+<td>.xer</td>
+<td><a target="_blank" title="What is a '.xer' file?" href="http://www.rfc-editor.org/rfc/rfc5261.txt">RFC 5261</a><br>
+</td>
+</tr>
+<tr>
+<td>XML Resource Lists</td>
+<td>application/resource-lists&#43;xml</td>
+<td>.rl</td>
+<td><a target="_blank" title="What is a '.rl' file?" href="http://www.rfc-editor.org/rfc/rfc4826.txt">RFC 4826</a><br>
+</td>
+</tr>
+<tr>
+<td>XML Resource Lists</td>
+<td>application/rls-services&#43;xml</td>
+<td>.rs</td>
+<td><a target="_blank" title="What is a '.rs' file?" href="http://www.rfc-editor.org/rfc/rfc4826.txt">RFC 4826</a><br>
+</td>
+</tr>
+<tr>
+<td>XML Resource Lists Diff</td>
+<td>application/resource-lists-diff&#43;xml</td>
+<td>.rld</td>
+<td><a target="_blank" title="What is a '.rld' file?" href="http://www.rfc-editor.org/rfc/rfc4826.txt">RFC 4826</a><br>
+</td>
+</tr>
+<tr>
+<td>XML Transformations</td>
+<td>application/xslt&#43;xml</td>
+<td>.xslt</td>
+<td><a target="_blank" title="What is a '.xslt' file?" href="http://www.w3.org/TR/xslt">W3C XSLT</a><br>
+</td>
+</tr>
+<tr>
+<td>XML-Binary Optimized Packaging</td>
+<td>application/xop&#43;xml</td>
+<td>.xop</td>
+<td><a target="_blank" title="What is a '.xop' file?" href="http://www.w3.org/TR/xop10/">W3C XOP</a><br>
+</td>
+</tr>
+<tr>
+<td>XPInstall - Mozilla</td>
+<td>application/x-xpinstall</td>
+<td>.xpi</td>
+<td><a target="_blank" title="What is a '.xpi' file?" href="http://en.wikipedia.org/wiki/XPI">Wikipedia: XPI</a><br>
+</td>
+</tr>
+<tr>
+<td>XSPF - XML Shareable Playlist Format</td>
+<td>application/xspf&#43;xml</td>
+<td>.xspf</td>
+<td><a target="_blank" title="What is a '.xspf' file?" href="http://www.xspf.org/quickstart/">XML Shareable Playlist Format</a><br>
+</td>
+</tr>
+<tr>
+<td>XUL - XML User Interface Language</td>
+<td>application/vnd.mozilla.xul&#43;xml</td>
+<td>.xul</td>
+<td><a target="_blank" title="What is a '.xul' file?" href="http://www.iana.org/assignments/media-types/application/vnd.mozilla.xul&#43;xml">IANA: XUL</a><br>
+</td>
+</tr>
+<tr>
+<td>XYZ File Format</td>
+<td>chemical/x-xyz</td>
+<td>.xyz</td>
+<td><a target="_blank" title="What is a '.xyz' file?" href="http://en.wikipedia.org/wiki/XYZ_file_format">Wikipedia: XYZ File Format</a><br>
+</td>
+</tr>
+<tr>
+<td>YANG Data Modeling Language</td>
+<td>application/yang</td>
+<td>.yang</td>
+<td><a target="_blank" title="What is a '.yang' file?" href="http://en.wikipedia.org/wiki/YANG">Wikipedia: YANG</a><br>
+</td>
+</tr>
+<tr>
+<td>YIN (YANG - XML)</td>
+<td>application/yin&#43;xml</td>
+<td>.yin</td>
+<td><a target="_blank" title="What is a '.yin' file?" href="http://en.wikipedia.org/wiki/YANG">Wikipedia: YANG</a><br>
+</td>
+</tr>
+<tr>
+<td>Z.U.L. Geometry</td>
+<td>application/vnd.zul</td>
+<td>.zir</td>
+<td><a target="_blank" title="What is a '.zir' file?" href="http://www.iana.org/assignments/media-types/application/vnd.zul">IANA: Z.U.L.</a><br>
+</td>
+</tr>
+<tr>
+<td>Zip Archive</td>
+<td>application/zip</td>
+<td>.zip</td>
+<td><a target="_blank" title="What is a '.zip' file?" href="http://en.wikipedia.org/wiki/ZIP_%28file_format%29">Wikipedia: Zip</a><br>
+</td>
+</tr>
+<tr>
+<td>ZVUE Media Manager</td>
+<td>application/vnd.handheld-entertainment&#43;xml</td>
+<td>.zmm</td>
+<td><a target="_blank" title="What is a '.zmm' file?" href="http://www.iana.org/assignments/media-types/application/vnd.HandHeld-Entertainment&#43;xml">IANA: ZVUE Media Manager</a><br>
+</td>
+</tr>
+<tr>
+<td>Zzazz Deck</td>
+<td>application/vnd.zzazz.deck&#43;xml</td>
+<td>.zaz
+<div id="mime-types-list">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>

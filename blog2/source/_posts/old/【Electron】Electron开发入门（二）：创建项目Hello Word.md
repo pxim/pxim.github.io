@@ -1,0 +1,170 @@
+---
+title: 【Electron】Electron开发入门（二）：创建项目Hello Word
+date: 2016-09-27 11:59:25
+tags: javascript cmd electron
+categories: Electron
+---
+
+<!--more-->
+
+**创建简单的Electron程序**
+1、首先，切换到你的项目空间，我的在 D:\ProjectsSpace\ElectronProjects\ElectronTest，ElectronTest是案例项目文件夹
+①、打开cmd，切换到自己的项目文件目录
+![这里写图片描述](http://img.blog.csdn.net/20160918163454864)
+然后输入命令  `npm init`创建 package.json文件，
+![这里写图片描述](http://img.blog.csdn.net/20160918164210329)
+然后按照步骤一步一步来，一直到最后
+![这里写图片描述](http://img.blog.csdn.net/20160918164707364)
+最后成功的图：
+![这里写图片描述](http://img.blog.csdn.net/20160927160750854)
+内容为：
+
+```
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "hello word",
+  "main": "app/main.js",
+  "dependencies": {
+    "electron-prebuilt": "^1.4.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.0"
+  },
+  "scripts": {
+    "test": "start",
+    "start": "electron ."
+  },
+  "author": "pengxiang",
+  "license": "ISC"
+}
+```
+
+②、然后执行一次 `npm install --save-dev electron-prebuilt`
+
+③、在根目录下创建app文件夹，在app/下创建main.js,内容如下：
+
+```
+const electron = require('electron');
+// 控制应用生命周期的模块
+const {app} = electron;
+// 创建本地浏览器窗口的模块
+const {BrowserWindow} = electron;
+
+// 指向窗口对象的一个全局引用，如果没有这个引用，那么当该javascript对象被垃圾回收的
+// 时候该窗口将会自动关闭
+let win;
+
+function createWindow() {
+  // 创建一个新的浏览器窗口
+  win = new BrowserWindow({width: 1104, height: 620});//570+50
+
+  // 并且装载应用的index.html页面
+  win.loadURL(`file://${__dirname}/html/index.html`);
+
+  // 打开开发工具页面
+//   win.webContents.openDevTools();
+
+  // 当窗口关闭时调用的方法
+  win.on('closed', () => {
+    // 解除窗口对象的引用，通常而言如果应用支持多个窗口的话，你会在一个数组里
+    // 存放窗口对象，在窗口关闭的时候应当删除相应的元素。
+    win = null;
+  });
+}
+
+// 当Electron完成初始化并且已经创建了浏览器窗口，则该方法将会被调用。
+// 有些API只能在该事件发生后才能被使用。
+app.on('ready', createWindow);
+
+// 当所有的窗口被关闭后退出应用
+app.on('window-all-closed', () => {
+  // 对于OS X系统，应用和相应的菜单栏会一直激活直到用户通过Cmd + Q显式退出
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }
+});
+
+app.on('activate', () => {
+  // 对于OS X系统，当dock图标被点击后会重新创建一个app窗口，并且不会有其他
+  // 窗口打开
+  if (win === null) {
+    createWindow();
+  }
+});
+
+// 在这个文件后面你可以直接包含你应用特定的由主进程运行的代码。
+// 也可以把这些代码放在另一个文件中然后在这里导入。
+```
+④、然后在app/html下创建index.html文件，内容如下：
+
+```
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" /> 
+    <title>我的世界</title>
+</head>
+<body>
+    <p>Hello World</p>
+</body>
+</html>
+```
+⑤、配置VS Code启动环境
+先装全局： `glup：npm install gulp -g`
+![这里写图片描述](http://img.blog.csdn.net/20160927154611356)
+
+再装本地： `npm install --save-dev gulp`
+![这里写图片描述](http://img.blog.csdn.net/20160927154625075)
+
+然后根目录下创建gulpfile.js配置文件,内容如下：
+
+```
+// 获取依赖
+var gulp = require('gulp'),
+    childProcess = require('child_process'),
+    electron = require('electron-prebuilt');
+    
+// 创建 gulp 任务
+gulp.task('run', function () {
+    childProcess.spawn(electron, ['--debug=5858','.'], {stdio:'inherit'});
+});
+```
+
+⑥启动项目
+两种方法：
+1、使用cmd命令启动
+运行gulp任务：gulp run
+![这里写图片描述](http://img.blog.csdn.net/20160927155313031)
+
+2、使用VS Code编辑器启动项目
+首先，用VSC打开项目文件夹，
+![这里写图片描述](http://img.blog.csdn.net/20160927155457157)
+然后，按下快捷键ctrl+shift+b,第一次启动的时候会提示你配置生成任务，点击![这里写图片描述](http://img.blog.csdn.net/20160927155826330)
+接着，选择如图，
+![这里写图片描述](http://img.blog.csdn.net/20160927155913872)
+会自动配置task.json文件，修改此文件内容为；
+
+```
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+    "args": [
+        "--no-color"
+    ],
+    "tasks": [ { 
+      "taskName": "run", 
+      "args": [], 
+      "isBuildCommand": true 
+    }]
+}
+```
+保存，再使用ctrl+shift+b运行程序，基本就OK了，如图
+![这里写图片描述](http://img.blog.csdn.net/20160927161137305)
+
+
+
+

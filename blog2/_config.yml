@@ -112,11 +112,29 @@ theme: ayer
 #  repository: https://github.com/pxim/pxim.github.io.git
 #  branch: gh-pages
 
+#deploy:
+#  type: git
+#  repo: https://pxim:Px900210Aa@github.com/pxim/pxim.github.io.git
+#  branch: gh-pages
+##  message:  now('YYYY-MM-DD HH:mm:ss')
+
+#deploy:
+#  type: git
+#  repo:
+#    github: git@github.com:pxim/pxim.github.io.git
+##    coding: git@git.coding.net:AshinWang/AshinWang.coding.me.git
+#    gitee: git@gitee.com:pxi/pxi.git
+#  branch: gh-pages
+##  message:  now('YYYY-MM-DD HH:mm:ss')
+
 deploy:
-  type: git
-  repo: https://pxim:Px900210Aa@github.com/pxim/pxim.github.io.git
-  branch: gh-pages
-  message:  now('YYYY-MM-DD HH:mm:ss')
+  #这里记得替换掉链接中的用户名和仓库名
+  - type: git
+    repo: git@github.com:pxim/pxim.github.io.git
+    branch: gh-pages
+  - type: git
+    repo: git@gitee.com:pxi/pxi.git
+    branch: gh-pages
 
 
 # Hexo-generator-search

@@ -1,6 +1,12 @@
 ---
-title: 课件svn
+title: 【DResDevKit】09 svn
+date: 2020-05-25 17:50:58
+categories: 
+- DResDevKit
+tags:
+- DResDevKit
 ---
+
 
 斯柯达0.3.0版本课件集成包  
 https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02 课件集成包/斯柯达/v0.3.0  
