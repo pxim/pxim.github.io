@@ -130,6 +130,45 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】02 Flash模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/02-course-An-Flash/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/02-course-An-Flash/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:59.966Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】01 课件开发集成包</title>
     <link href="http://yoursite.com/2020/05/25/DResDevKit/01-course-dev-kit/"/>
     <id>http://yoursite.com/2020/05/25/DResDevKit/01-course-dev-kit/</id>
@@ -162,11 +201,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】02 Flash模板</title>
-    <link href="http://yoursite.com/2020/05/25/DResDevKit/02-course-An-Flash/"/>
-    <id>http://yoursite.com/2020/05/25/DResDevKit/02-course-An-Flash/</id>
+    <title>【DResDevKit】03 H5模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/03-course-An-H5/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/03-course-An-H5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.966Z</updated>
+    <updated>2020-05-26T07:09:59.964Z</updated>
     
     <summary type="html">
     
@@ -263,11 +302,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】10 课件测试地址</title>
-    <link href="http://yoursite.com/2020/05/25/DResDevKit/10-course-test-address/"/>
-    <id>http://yoursite.com/2020/05/25/DResDevKit/10-course-test-address/</id>
+    <title>【DResDevKit】06 故障诊断WebGL模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:41.631Z</updated>
+    <updated>2020-05-26T07:09:59.958Z</updated>
     
     <summary type="html">
     
@@ -275,47 +314,10 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;广本&lt;br&gt;&lt;a href=&quot;http://bmw.jingge.com/guangqi-honda/course-test&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】03 H5模板</title>
-    <link href="http://yoursite.com/2020/05/25/DResDevKit/03-course-An-H5/"/>
-    <id>http://yoursite.com/2020/05/25/DResDevKit/03-course-An-H5/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.964Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
         
       
     
@@ -357,11 +359,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】06 故障诊断WebGL模板</title>
-    <link href="http://yoursite.com/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
-    <id>http://yoursite.com/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
+    <title>【DResDevKit】10 课件测试地址</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/10-course-test-address/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/10-course-test-address/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.958Z</updated>
+    <updated>2020-05-26T07:09:41.631Z</updated>
     
     <summary type="html">
     
@@ -369,10 +371,8 @@
       
         
         
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
+          &lt;blockquote&gt;
+&lt;p&gt;广本&lt;br&gt;&lt;a href=&quot;http://bmw.jingge.com/guangqi-honda/course-test&quot; target=&quot;_blank&quot;
         
       
     
@@ -442,11 +442,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】全景展厅WebGL</title>
-    <link href="http://yoursite.com/2020/05/25/DResDevKit/pano/"/>
-    <id>http://yoursite.com/2020/05/25/DResDevKit/pano/</id>
+    <title>【DResDevKit】13 准备删除的模板</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:21.120Z</updated>
+    <updated>2020-05-26T07:09:35.208Z</updated>
     
     <summary type="html">
     
@@ -454,8 +454,7 @@
       
         
         
-          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
-&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;动画：&lt;br&gt;h5T_Menu2&lt;br&gt;h5T_016&lt;br&gt;h5T_017&lt;br&gt;h5T_018&lt;br&gt;h5T_008&lt;br&gt;h5T_008_2 
         
       
     
@@ -470,11 +469,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】13 准备删除的模板</title>
-    <link href="http://yoursite.com/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/"/>
-    <id>http://yoursite.com/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/</id>
+    <title>【DResDevKit】全景展厅WebGL</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/pano/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/pano/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:35.208Z</updated>
+    <updated>2020-05-26T07:09:21.120Z</updated>
     
     <summary type="html">
     
@@ -482,7 +481,8 @@
       
         
         
-          &lt;p&gt;动画：&lt;br&gt;h5T_Menu2&lt;br&gt;h5T_016&lt;br&gt;h5T_017&lt;br&gt;h5T_018&lt;br&gt;h5T_008&lt;br&gt;h5T_008_2 
+          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
+&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
         
       
     
