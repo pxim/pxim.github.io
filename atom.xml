@@ -130,38 +130,6 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】01 课件开发集成包</title>
-    <link href="http://yoursite.com/2020/05/25/DResDevKit/01-course-dev-kit/"/>
-    <id>http://yoursite.com/2020/05/25/DResDevKit/01-course-dev-kit/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:17.088Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【DResDevKit】02 Flash模板</title>
     <link href="http://yoursite.com/2020/05/25/DResDevKit/02-course-An-Flash/"/>
     <id>http://yoursite.com/2020/05/25/DResDevKit/02-course-An-Flash/</id>
@@ -216,6 +184,38 @@
           &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】01 课件开发集成包</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/01-course-dev-kit/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/01-course-dev-kit/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:17.088Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;a
         
       
@@ -302,6 +302,33 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】08 网络课件包</title>
+    <link href="http://yoursite.com/2020/05/25/DResDevKit/08-course-projects/"/>
+    <id>http://yoursite.com/2020/05/25/DResDevKit/08-course-projects/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:59.956Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】06 故障诊断WebGL模板</title>
     <link href="http://yoursite.com/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
     <id>http://yoursite.com/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
@@ -318,33 +345,6 @@
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="http://yoursite.com/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="http://yoursite.com/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】08 网络课件包</title>
-    <link href="http://yoursite.com/2020/05/25/DResDevKit/08-course-projects/"/>
-    <id>http://yoursite.com/2020/05/25/DResDevKit/08-course-projects/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.956Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
         
       
     
