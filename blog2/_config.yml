@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://pxi.gitee.io/ # http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -109,11 +109,6 @@ theme: ayer
 
 #deploy:
 #  type: git
-#  repository: https://github.com/pxim/pxim.github.io.git
-#  branch: gh-pages
-
-#deploy:
-#  type: git
 #  repo: https://pxim:Px900210Aa@github.com/pxim/pxim.github.io.git
 #  branch: gh-pages
 ##  message:  now('YYYY-MM-DD HH:mm:ss')
@@ -136,6 +131,7 @@ deploy:
     repo: git@gitee.com:pxi/pxi.git
     branch: gh-pages
 
+  - type: baidu_url_submitter
 
 # Hexo-generator-search
 search:
@@ -152,3 +148,11 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+baidu_url_submit:
+  count: 100 # 提交最新的一个链接
+  host: https://pxi.gitee.io/ # www.cherryblog.site  # 在百度站长平台中注册的域名
+  token: oAMZ2AFUMF3clmMx # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+
+

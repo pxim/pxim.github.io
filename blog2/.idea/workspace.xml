@@ -4,24 +4,11 @@
     <list default="true" id="3dbb6c68-0934-47a4-b356-b46ebfdee88c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme" beforeDir="false" afterPath="$PROJECT_DIR$/readme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/01-course-dev-kit.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/01-course-dev-kit.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/02-course-An-Flash.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/02-course-An-Flash.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/03-course-An-H5.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/03-course-An-H5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/04-course-CZ-H5.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/04-course-CZ-H5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/05-course-ZD-H5.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/05-course-ZD-H5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/06-course-ZD-WebGL.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/06-course-ZD-WebGL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/08-course-projects.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/08-course-projects.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/09-course-svn.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/09-course-svn.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/10-course-test-address.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/10-course-test-address.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/11-course-Notes-And-FAQ.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/11-course-Notes-And-FAQ.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/12-course-config.xml-v3.0.0.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/12-course-config.xml-v3.0.0.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/13-准备删除的动画模板.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/13-准备删除的动画模板.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/pano.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/DResDevKit/pano.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/DResDevKit/动画模板说明.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/hello-world 2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/webpack/【webpack】怎么断点调试webpack配置文件.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/webpack/【webpack】怎么断点调试webpack配置文件.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/ayer/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/ayer/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/ayer/layout/_partial/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/ayer/layout/_partial/head.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/ayer/source/images/alipay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/ayer/source/images/alipay.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/ayer/source/images/wechat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/themes/ayer/source/images/wechat.jpg" afterDir="false" />
     </list>
@@ -36,20 +23,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+            <state relative-caret-position="400">
+              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/ayer/layout/_partial/head.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/ayer/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            <state relative-caret-position="379">
+              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -58,7 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>deploy</find>
       <find>categories: Create.js HTML5实用技巧</find>
       <find>categories: # Hexo</find>
       <find>software</find>
@@ -67,6 +71,10 @@
       <find>categories: news</find>
       <find>markdown</find>
       <find>webpack</find>
+      <find>Anonymous</find>
+      <find>1278069914</find>
+      <find>layout</find>
+      <find>deploy</find>
     </findStrings>
     <replaceStrings>
       <replace>categories: CreateJS</replace>
@@ -94,7 +102,6 @@
         <option value="$PROJECT_DIR$/source/_posts/webpack.md" />
         <option value="$PROJECT_DIR$/source/_posts/01-course-dev-kit.md" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/themes/ayer/_config.yml" />
         <option value="$PROJECT_DIR$/source/categories/index.md" />
         <option value="$PROJECT_DIR$/source/_posts/markdown/md写法帮助.md" />
         <option value="$PROJECT_DIR$/source/_posts/software/WebStorm 使用帮助.md" />
@@ -121,8 +128,10 @@
         <option value="$PROJECT_DIR$/source/_posts/old/39岁程序员的困惑：知道越多编程越….md" />
         <option value="$PROJECT_DIR$/source/_posts/markdown/markdown写作帮助.md" />
         <option value="$PROJECT_DIR$/source/_posts/webpack/【webpack】怎么断点调试webpack配置文件.md" />
-        <option value="$PROJECT_DIR$/readme" />
+        <option value="$PROJECT_DIR$/themes/ayer/_config.yml" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/themes/ayer/layout/_partial/head.ejs" />
+        <option value="$PROJECT_DIR$/readme" />
       </list>
     </option>
   </component>
@@ -138,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,19 +157,25 @@
             <path>
               <item name="blog2" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog2" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog2" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/themes/ayer/_config.yml" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -238,10 +252,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.deploy" />
-        <item itemvalue="npm.generate" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.clean" />
         <item itemvalue="npm.server" />
-        <item itemvalue="npm.build" />
+        <item itemvalue="npm.generate" />
       </list>
     </recent_temporary>
   </component>
@@ -258,12 +272,13 @@
       <workItem from="1590394926331" duration="4875000" />
       <workItem from="1590460481873" duration="7813000" />
       <workItem from="1590471515585" duration="5225000" />
-      <workItem from="1590476767212" duration="6973000" />
+      <workItem from="1590476767212" duration="7127000" />
+      <workItem from="1590541013015" duration="11354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24886000" />
+    <option name="totallyTimeSpent" value="36394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -278,13 +293,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74183977" visible="true" weight="0.18977332" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7410228" visible="true" weight="0.18977332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.25816023" side_tool="true" visible="true" weight="0.18977332" />
+      <window_info id="npm" order="2" sideWeight="0.25897714" side_tool="true" visible="true" weight="0.18977332" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2665941" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.265506" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,66 +317,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_posts/webpack.md" />
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml" />
-    <entry file="file://$PROJECT_DIR$/source/_posts/01-course-dev-kit.md" />
-    <entry file="file://$PROJECT_DIR$/themes/ayer/source/images/alipay.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/tags/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/categories/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
-            <caret line="6" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/ayer/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/markdown/md写法帮助.md" />
     <entry file="file://$PROJECT_DIR$/source/_posts/software/WebStorm 使用帮助.md" />
-    <entry file="file://$USER_HOME$/Downloads/csdn-blog-export-master/csdn-blog-export-master/main.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/old/6522011.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/csdn-blog-export-master/csdn-blog-export-master/main.py" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/6522011.md" />
     <entry file="file://$PROJECT_DIR$/source/_posts/hello-world.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -512,14 +471,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/old/.net做的exe和electron做的exe之间的通信问题.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/old/.net做的exe和electron做的exe之间的通信问题.md" />
     <entry file="file://$PROJECT_DIR$/source/_posts/old/ActionScript3 加载外部XML文件.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -701,17 +653,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme">
+    <entry file="file://$PROJECT_DIR$/themes/ayer/layout/index.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ayer/layout/layout.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/baidusitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/baidu_verify_JoBaRVpvTb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+        <state relative-caret-position="400">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ayer/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/google5143d2836cd6a4b5.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/baidu_verify_JoBaRVpvTb.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ayer/layout/_partial/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
         </state>
       </provider>
     </entry>
