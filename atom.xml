@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxi.gitee.io/"/>
-  <updated>2020-05-26T08:56:04.028Z</updated>
+  <updated>2020-06-12T06:53:10.781Z</updated>
   <id>https://pxi.gitee.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【Project】项目经验</title>
+    <link href="https://pxi.gitee.io/2020/06/03/Project/%E3%80%90Project%E3%80%91%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/"/>
+    <id>https://pxi.gitee.io/2020/06/03/Project/%E3%80%90Project%E3%80%91%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/</id>
+    <published>2020-06-03T11:30:38.000Z</published>
+    <updated>2020-06-12T06:53:10.781Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;汽车构造数字化教学平台&quot;&gt;&lt;a href=&quot;#汽车构造数字化教学平台&quot; class=&quot;headerlink&quot; title=&quot;汽车构造数字化教学平台&quot;&gt;&lt;/a&gt;汽车构造数字化教学平台&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;时间：&lt;/strong&gt;2020.06.08 -
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Project" scheme="https://pxi.gitee.io/categories/Project/"/>
+    
+    
+      <category term="Project" scheme="https://pxi.gitee.io/tags/Project/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Threejs】开发经验集</title>
+    <link href="https://pxi.gitee.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/"/>
+    <id>https://pxi.gitee.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/</id>
+    <published>2020-06-03T11:30:38.000Z</published>
+    <updated>2020-06-03T02:37:27.283Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;一个物体b add()加载到 父物体a 里，如果这个 父物体a 带有旋转等属性，那么这个物体b就出现位置旋转错位等现象，这时候，就需要使用 attach()方法把 物体b 加载到 父物体a中；&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Threejs" scheme="https://pxi.gitee.io/categories/Threejs/"/>
+    
+    
+      <category term="Threejs" scheme="https://pxi.gitee.io/tags/Threejs/"/>
+    
+  </entry>
   
   <entry>
     <title>【Software】开发辅助工具</title>
@@ -130,11 +186,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】03 H5模板</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/</id>
+    <title>【DResDevKit】01 课件开发集成包</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.964Z</updated>
+    <updated>2020-05-26T07:09:17.088Z</updated>
     
     <summary type="html">
     
@@ -142,19 +198,12 @@
       
         
         
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
         
       
     
@@ -208,11 +257,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】01 课件开发集成包</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
+    <title>【DResDevKit】03 H5模板</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:17.088Z</updated>
+    <updated>2020-05-26T07:09:59.964Z</updated>
     
     <summary type="html">
     
@@ -220,11 +269,48 @@
       
         
         
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:59.953Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
         
       
@@ -272,11 +358,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
+    <title>【DResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.953Z</updated>
+    <updated>2020-05-26T07:09:59.958Z</updated>
     
     <summary type="html">
     
@@ -286,8 +372,62 @@
         
           &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】08 网络课件包</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:59.956Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】09 svn</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/09-course-svn/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/09-course-svn/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:46.207Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;斯柯达0.3.0版本课件集成包&lt;br&gt;&lt;a href=&quot;https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02&quot; target=&quot;_blank&quot;
         
       
     
@@ -330,11 +470,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
+    <title>【DResDevKit】12 config配置表v3.x版本说明</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.958Z</updated>
+    <updated>2020-05-26T07:09:37.168Z</updated>
     
     <summary type="html">
     
@@ -342,64 +482,8 @@
       
         
         
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】09 svn</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/09-course-svn/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/09-course-svn/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:46.207Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;斯柯达0.3.0版本课件集成包&lt;br&gt;&lt;a href=&quot;https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】08 网络课件包</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.956Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
+          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
         
       
     
@@ -427,34 +511,6 @@
         
         
           &lt;p&gt;动画：&lt;br&gt;h5T_Menu2&lt;br&gt;h5T_016&lt;br&gt;h5T_017&lt;br&gt;h5T_018&lt;br&gt;h5T_008&lt;br&gt;h5T_008_2 
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】12 config配置表v3.x版本说明</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:37.168Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
         
       
     
@@ -543,64 +599,6 @@
     
     </summary>
     
-    
-    
-  </entry>
-  
-  <entry>
-    <title>React 学习笔记</title>
-    <link href="https://pxi.gitee.io/2019/08/23/old/React%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>https://pxi.gitee.io/2019/08/23/old/React%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2019-08-23T04:07:08.000Z</published>
-    <updated>2020-05-26T08:49:27.717Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;p&gt;&lt;strong&gt;React v16&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr
-        
-      
-    
-    </summary>
-    
-    
-      <category term="React" scheme="https://pxi.gitee.io/categories/React/"/>
-    
-    
-      <category term="React" scheme="https://pxi.gitee.io/tags/React/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于dom树的重绘和回流</title>
-    <link href="https://pxi.gitee.io/2019/07/31/old/%E5%85%B3%E4%BA%8Edom%E6%A0%91%E7%9A%84%E9%87%8D%E7%BB%98%E5%92%8C%E5%9B%9E%E6%B5%81/"/>
-    <id>https://pxi.gitee.io/2019/07/31/old/%E5%85%B3%E4%BA%8Edom%E6%A0%91%E7%9A%84%E9%87%8D%E7%BB%98%E5%92%8C%E5%9B%9E%E6%B5%81/</id>
-    <published>2019-07-31T06:01:21.000Z</published>
-    <updated>2020-05-26T08:49:27.713Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-      <category term="HTML CSS JavaScript" scheme="https://pxi.gitee.io/categories/HTML-CSS-JavaScript/"/>
     
     
   </entry>
