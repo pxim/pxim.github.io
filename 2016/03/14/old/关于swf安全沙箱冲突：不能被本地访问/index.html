@@ -38,15 +38,19 @@
 
 </html>
 
-
 <body>
-  
   <div id="app">
+    
+      
     <main class="content on">
       <section class="outer">
-  <article id="post-Old/关于swf安全沙箱冲突：不能被本地访问" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
+  <article
+  id="post-Old/关于swf安全沙箱冲突：不能被本地访问"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
   <div class="article-inner">
     
     <header class="article-header">
@@ -57,20 +61,15 @@
  
 
     </header>
-    
-
-    
+     
     <div class="article-meta">
       <a href="/2016/03/14/Old/%E5%85%B3%E4%BA%8Eswf%E5%AE%89%E5%85%A8%E6%B2%99%E7%AE%B1%E5%86%B2%E7%AA%81%EF%BC%9A%E4%B8%8D%E8%83%BD%E8%A2%AB%E6%9C%AC%E5%9C%B0%E8%AE%BF%E9%97%AE/" class="article-date">
   <time datetime="2016-03-14T08:11:38.000Z" itemprop="datePublished">2016-03-14</time>
-</a>
-      
+</a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
   </div>
-
-      
-      
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -89,26 +88,16 @@
         </span>
     </span>
 </div>
-
-      
+ 
     </div>
-    
-
-    
-    
+      
 
 
 
-
-    
-
-    
+  
     <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <a id="more"></a>
+       
+  <a id="more"></a>
 
 
 <div class="articalContent   newfont_family" id="sina_keyword_ad_area2">
@@ -130,8 +119,7 @@
 <span style="font-size:15px">加上 “ -use-network=false ”<span>&nbsp;<wbr></span></span><br>
 <span style="font-size:15px">说明：这样虽然也能解决问题。但是swf就无法访问网络资源了。所以不建议使用。</span></span></p>
 </div>
-
-      
+ 
       <!-- reward -->
       
       <div id="reward-btn">
@@ -140,22 +128,21 @@
       
     </div>
     
+
+    <!-- copyright -->
     
-      <!-- copyright -->
-      
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong>Copyright： </strong>
-              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-            </li>
-          </ul>
-        </div>
-        
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+        </li>
+      </ul>
+    </div>
+    
     <footer class="article-footer">
-      
-          
+       
 <div class="share-btn">
       <span class="share-sns share-outer">
         <i class="ri-share-forward-line"></i>
@@ -202,16 +189,11 @@
     </div>
 </div>
 
-<div id="share-mask"></div>
-      
-      
-
+<div id="share-mask"></div>  
     </footer>
-
   </div>
 
-  
-  
+   
   <nav class="article-nav">
     
       <a href="/2016/03/14/Old/FLEX%E4%B8%ADSharedObject%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%BA%94%E7%94%A8/" class="article-nav-link">
@@ -231,70 +213,58 @@
     
   </nav>
 
-
-  
-
-  
-  
+   
 <!-- valine评论 -->
 <div id="vcomments-box">
-    <div id="vcomments">
-    </div>
+  <div id="vcomments"></div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz',
-        app_key: 'uylRd03zlzcKJi0j0RRhIwax',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'robohash',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
     });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
+  }
 </script>
 <style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
     #vcomments-box {
-        padding: 5px 30px;
+      padding: 5px 0px;
     }
+  }
 
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
 
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
 
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
 </style>
 
-  
-
-  
-  
-  
-  
-  
-
+ 
+     
 </article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -607,7 +577,9 @@
 
 <!-- ClickLove -->
 
-<!-- ClickBoom -->
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
 
@@ -669,6 +641,8 @@
   }(window, document);
 </script>
 
+
+<!-- CanvasBackground -->
 
 
     

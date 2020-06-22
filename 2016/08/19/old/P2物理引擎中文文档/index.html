@@ -38,15 +38,19 @@
 
 </html>
 
-
 <body>
-  
   <div id="app">
+    
+      
     <main class="content on">
       <section class="outer">
-  <article id="post-Old/P2物理引擎中文文档" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
+  <article
+  id="post-Old/P2物理引擎中文文档"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
   <div class="article-inner">
     
     <header class="article-header">
@@ -57,20 +61,15 @@
  
 
     </header>
-    
-
-    
+     
     <div class="article-meta">
       <a href="/2016/08/19/Old/P2%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/" class="article-date">
   <time datetime="2016-08-19T08:38:41.000Z" itemprop="datePublished">2016-08-19</time>
-</a>
-      
+</a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/HTML-CSS-JavaScript/">HTML CSS JavaScript</a>
   </div>
-
-      
-      
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -89,32 +88,21 @@
         </span>
     </span>
 </div>
-
-      
+ 
     </div>
-    
-
-    
-    
+      
 
 
 
-
-    
-
-    
+  
     <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <a id="more"></a>
+       
+  <a id="more"></a>
 
 
 <div style="top:0px">&#65279;&#65279;</div>
 P2物理引擎中文文档地址：<a target="_blank" href="https://github.com/schteppe/p2.js/wiki/Chinese-wiki-%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA">https://github.com/schteppe/p2.js/wiki/Chinese-wiki-%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA</a>
-
-      
+ 
       <!-- reward -->
       
       <div id="reward-btn">
@@ -123,22 +111,21 @@ P2物理引擎中文文档地址：<a target="_blank" href="https://github.com/s
       
     </div>
     
+
+    <!-- copyright -->
     
-      <!-- copyright -->
-      
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong>Copyright： </strong>
-              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-            </li>
-          </ul>
-        </div>
-        
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+        </li>
+      </ul>
+    </div>
+    
     <footer class="article-footer">
-      
-          
+       
 <div class="share-btn">
       <span class="share-sns share-outer">
         <i class="ri-share-forward-line"></i>
@@ -185,18 +172,13 @@ P2物理引擎中文文档地址：<a target="_blank" href="https://github.com/s
     </div>
 </div>
 
-<div id="share-mask"></div>
-      
-      
+<div id="share-mask"></div>  
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/P2%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/" rel="tag">P2物理引擎</a></li></ul>
 
-
     </footer>
-
   </div>
 
-  
-  
+   
   <nav class="article-nav">
     
       <a href="/2016/09/02/Old/%E3%80%90Egret%E3%80%91%20WebSocket%20%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" class="article-nav-link">
@@ -216,70 +198,58 @@ P2物理引擎中文文档地址：<a target="_blank" href="https://github.com/s
     
   </nav>
 
-
-  
-
-  
-  
+   
 <!-- valine评论 -->
 <div id="vcomments-box">
-    <div id="vcomments">
-    </div>
+  <div id="vcomments"></div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz',
-        app_key: 'uylRd03zlzcKJi0j0RRhIwax',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'robohash',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
     });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
+  }
 </script>
 <style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
     #vcomments-box {
-        padding: 5px 30px;
+      padding: 5px 0px;
     }
+  }
 
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
 
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
 
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
 </style>
 
-  
-
-  
-  
-  
-  
-  
-
+ 
+     
 </article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -592,7 +562,9 @@ P2物理引擎中文文档地址：<a target="_blank" href="https://github.com/s
 
 <!-- ClickLove -->
 
-<!-- ClickBoom -->
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
 
@@ -654,6 +626,8 @@ P2物理引擎中文文档地址：<a target="_blank" href="https://github.com/s
   }(window, document);
 </script>
 
+
+<!-- CanvasBackground -->
 
 
     

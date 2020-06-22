@@ -38,15 +38,19 @@
 
 </html>
 
-
 <body>
-  
   <div id="app">
+    
+      
     <main class="content on">
       <section class="outer">
-  <article id="post-Old/MIME类型大全" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
+  <article
+  id="post-Old/MIME类型大全"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
   <div class="article-inner">
     
     <header class="article-header">
@@ -57,20 +61,15 @@
  
 
     </header>
-    
-
-    
+     
     <div class="article-meta">
       <a href="/2017/09/14/Old/MIME%E7%B1%BB%E5%9E%8B%E5%A4%A7%E5%85%A8/" class="article-date">
   <time datetime="2017-09-14T06:50:27.000Z" itemprop="datePublished">2017-09-14</time>
-</a>
-      
+</a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/Other-Code/">Other Code</a>
   </div>
-
-      
-      
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -89,26 +88,16 @@
         </span>
     </span>
 </div>
-
-      
+ 
     </div>
-    
-
-    
-    
+      
 
 
 
-
-    
-
-    
+  
     <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <a id="more"></a>
+       
+  <a id="more"></a>
 
 
 <table class="bordered-table zebra-striped table-sort  mceItemTable ">
@@ -4894,8 +4883,7 @@
 </table>
 <p><br>
 </p>
-
-      
+ 
       <!-- reward -->
       
       <div id="reward-btn">
@@ -4904,22 +4892,21 @@
       
     </div>
     
+
+    <!-- copyright -->
     
-      <!-- copyright -->
-      
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong>Copyright： </strong>
-              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-            </li>
-          </ul>
-        </div>
-        
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+        </li>
+      </ul>
+    </div>
+    
     <footer class="article-footer">
-      
-          
+       
 <div class="share-btn">
       <span class="share-sns share-outer">
         <i class="ri-share-forward-line"></i>
@@ -4966,16 +4953,11 @@
     </div>
 </div>
 
-<div id="share-mask"></div>
-      
-      
-
+<div id="share-mask"></div>  
     </footer>
-
   </div>
 
-  
-  
+   
   <nav class="article-nav">
     
       <a href="/2017/09/14/Old/nodejs%20%E6%9E%84%E5%BB%BA%E6%9C%AC%E5%9C%B0web%E6%B5%8B%E8%AF%95%E6%9C%8D%E5%8A%A1%E5%99%A8%20%E4%BB%A5%E5%8F%8A%20%E8%A7%A3%E5%86%B3%E8%AE%BF%E9%97%AE%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%81%E6%9C%89%E5%AE%8C%E6%95%B4%E6%BA%90%E7%A0%81%EF%BC%81/" class="article-nav-link">
@@ -4995,70 +4977,58 @@
     
   </nav>
 
-
-  
-
-  
-  
+   
 <!-- valine评论 -->
 <div id="vcomments-box">
-    <div id="vcomments">
-    </div>
+  <div id="vcomments"></div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz',
-        app_key: 'uylRd03zlzcKJi0j0RRhIwax',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'robohash',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
     });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
+  }
 </script>
 <style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
     #vcomments-box {
-        padding: 5px 30px;
+      padding: 5px 0px;
     }
+  }
 
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
 
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
 
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
 </style>
 
-  
-
-  
-  
-  
-  
-  
-
+ 
+     
 </article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -5371,7 +5341,9 @@
 
 <!-- ClickLove -->
 
-<!-- ClickBoom -->
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
 
@@ -5433,6 +5405,8 @@
   }(window, document);
 </script>
 
+
+<!-- CanvasBackground -->
 
 
     

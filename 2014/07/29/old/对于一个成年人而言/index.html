@@ -38,15 +38,19 @@
 
 </html>
 
-
 <body>
-  
   <div id="app">
+    
+      
     <main class="content on">
       <section class="outer">
-  <article id="post-Old/对于一个成年人而言" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
+  <article
+  id="post-Old/对于一个成年人而言"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
   <div class="article-inner">
     
     <header class="article-header">
@@ -57,20 +61,15 @@
  
 
     </header>
-    
-
-    
+     
     <div class="article-meta">
       <a href="/2014/07/29/Old/%E5%AF%B9%E4%BA%8E%E4%B8%80%E4%B8%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E8%80%8C%E8%A8%80/" class="article-date">
   <time datetime="2014-07-29T02:35:59.000Z" itemprop="datePublished">2014-07-29</time>
-</a>
-      
+</a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E4%BA%BA%E7%94%9F%E5%92%8C%E6%84%9F%E6%82%9F/">人生和感悟</a>
   </div>
-
-      
-      
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -89,26 +88,16 @@
         </span>
     </span>
 </div>
-
-      
+ 
     </div>
-    
-
-    
-    
+      
 
 
 
-
-    
-
-    
+  
     <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <a id="more"></a>
+       
+  <a id="more"></a>
 
 
 <div class="articalContent   " id="sina_keyword_ad_area2">
@@ -218,8 +207,7 @@
 <span>承担该承担的，面对该面对的。<span><span style="font-family:Helvetica">&nbsp;<wbr></span></span></span><br>
 <span>世上没有什么不可以，大不了从头开始。</span></p>
 </div>
-
-      
+ 
       <!-- reward -->
       
       <div id="reward-btn">
@@ -228,22 +216,21 @@
       
     </div>
     
+
+    <!-- copyright -->
     
-      <!-- copyright -->
-      
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong>Copyright： </strong>
-              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-            </li>
-          </ul>
-        </div>
-        
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+        </li>
+      </ul>
+    </div>
+    
     <footer class="article-footer">
-      
-          
+       
 <div class="share-btn">
       <span class="share-sns share-outer">
         <i class="ri-share-forward-line"></i>
@@ -290,16 +277,11 @@
     </div>
 </div>
 
-<div id="share-mask"></div>
-      
-      
-
+<div id="share-mask"></div>  
     </footer>
-
   </div>
 
-  
-  
+   
   <nav class="article-nav">
     
       <a href="/2014/07/29/Old/%E7%B2%BE%E7%BE%8E%E8%AF%AD%E5%8F%A51/" class="article-nav-link">
@@ -319,70 +301,58 @@
     
   </nav>
 
-
-  
-
-  
-  
+   
 <!-- valine评论 -->
 <div id="vcomments-box">
-    <div id="vcomments">
-    </div>
+  <div id="vcomments"></div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz',
-        app_key: 'uylRd03zlzcKJi0j0RRhIwax',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'robohash',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
     });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
+  }
 </script>
 <style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
     #vcomments-box {
-        padding: 5px 30px;
+      padding: 5px 0px;
     }
+  }
 
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
 
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
 
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
 </style>
 
-  
-
-  
-  
-  
-  
-  
-
+ 
+     
 </article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -695,7 +665,9 @@
 
 <!-- ClickLove -->
 
-<!-- ClickBoom -->
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
 
@@ -757,6 +729,8 @@
   }(window, document);
 </script>
 
+
+<!-- CanvasBackground -->
 
 
     

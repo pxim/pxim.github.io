@@ -38,15 +38,19 @@
 
 </html>
 
-
 <body>
-  
   <div id="app">
+    
+      
     <main class="content on">
       <section class="outer">
-  <article id="post-Old/AS3 - 数组元素乱序方法以及效率比较" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
+  <article
+  id="post-Old/AS3 - 数组元素乱序方法以及效率比较"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
   <div class="article-inner">
     
     <header class="article-header">
@@ -57,20 +61,15 @@
  
 
     </header>
-    
-
-    
+     
     <div class="article-meta">
       <a href="/2018/01/19/Old/AS3%20-%20%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E4%B9%B1%E5%BA%8F%E6%96%B9%E6%B3%95%E4%BB%A5%E5%8F%8A%E6%95%88%E7%8E%87%E6%AF%94%E8%BE%83/" class="article-date">
   <time datetime="2018-01-19T03:54:51.000Z" itemprop="datePublished">2018-01-19</time>
-</a>
-      
+</a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
   </div>
-
-      
-      
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -89,26 +88,16 @@
         </span>
     </span>
 </div>
-
-      
+ 
     </div>
-    
-
-    
-    
+      
 
 
 
-
-    
-
-    
+  
     <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <a id="more"></a>
+       
+  <a id="more"></a>
 
 <p>flash,flex开发中，有时我们会用到随机排序，就是把一个数组随机打乱，即洗牌方法。<br>随机排序可以看做顺序排序的逆运算，顺序排序算法很多，随机排序也不少，下面列举个人觉得最好的三种：</p>
 <p>1.自身插入法</p>
@@ -125,8 +114,7 @@
 <p>选择排序法就是按照顺序从余下数中选出最小（大）的数，和顺序位置的数字交换，反复进行。此法最多可能会交换n-1次，比如[4,1,2,3]递增排序中的4就需要挪3次，当然最少一次也不用。但是随机算法循环次数无法浮动，必须是固定的，怎么办呢？没有关系，我们可以引入废操作，位置已经摆对的数自己和自己交换，这样就可以让所有顺序排序都成为n-1步走。<br>反过来想就明白了，从0开始每个位置和后面的随机位置交换，也可以和自己交换，直到n-2和n-1（或n-2自己交换），就可以得到一个随机数组。</p>
 <p>效率比较：<br>利用1-100的顺序数组进行测试，执行10000次所用的时间分别为。<br>自身插入法：1654<br>传统插入法（放进新数组）： 2574<br>选择法：594</p>
 <p>原文出自：<a href="http://www.hangge.com" target="_blank" rel="noopener">www.hangge.com</a>  转载请保留原文链接：<a href="http://www.hangge.com/blog/cache/detail_453.html" target="_blank" rel="noopener">http://www.hangge.com/blog/cache/detail_453.html</a></p>
-
-      
+ 
       <!-- reward -->
       
       <div id="reward-btn">
@@ -135,22 +123,21 @@
       
     </div>
     
+
+    <!-- copyright -->
     
-      <!-- copyright -->
-      
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong>Copyright： </strong>
-              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-            </li>
-          </ul>
-        </div>
-        
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+        </li>
+      </ul>
+    </div>
+    
     <footer class="article-footer">
-      
-          
+       
 <div class="share-btn">
       <span class="share-sns share-outer">
         <i class="ri-share-forward-line"></i>
@@ -197,18 +184,13 @@
     </div>
 </div>
 
-<div id="share-mask"></div>
-      
-      
+<div id="share-mask"></div>  
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Flash-ActionScript-as3/" rel="tag">Flash ActionScript as3</a></li></ul>
 
-
     </footer>
-
   </div>
 
-  
-  
+   
   <nav class="article-nav">
     
       <a href="/2018/01/19/Old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E4%B9%9D%EF%BC%89%EF%BC%9A%E6%B7%BB%E5%8A%A0Flash%E6%8F%92%E4%BB%B6/" class="article-nav-link">
@@ -228,70 +210,58 @@
     
   </nav>
 
-
-  
-
-  
-  
+   
 <!-- valine评论 -->
 <div id="vcomments-box">
-    <div id="vcomments">
-    </div>
+  <div id="vcomments"></div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz',
-        app_key: 'uylRd03zlzcKJi0j0RRhIwax',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'robohash',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
     });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
+  }
 </script>
 <style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
     #vcomments-box {
-        padding: 5px 30px;
+      padding: 5px 0px;
     }
+  }
 
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
 
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
 
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
 </style>
 
-  
-
-  
-  
-  
-  
-  
-
+ 
+     
 </article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -604,7 +574,9 @@
 
 <!-- ClickLove -->
 
-<!-- ClickBoom -->
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
 
@@ -666,6 +638,8 @@
   }(window, document);
 </script>
 
+
+<!-- CanvasBackground -->
 
 
     

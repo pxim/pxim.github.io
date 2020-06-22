@@ -38,15 +38,19 @@
 
 </html>
 
-
 <body>
-  
   <div id="app">
+    
+      
     <main class="content on">
       <section class="outer">
-  <article id="post-Old/【Electron】Electron开发入门（七）：打开本地文件或者网页链接 and webview里操纵electron api" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
+  <article
+  id="post-Old/【Electron】Electron开发入门（七）：打开本地文件或者网页链接 and webview里操纵electron api"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
   <div class="article-inner">
     
     <header class="article-header">
@@ -57,20 +61,15 @@
  
 
     </header>
-    
-
-    
+     
     <div class="article-meta">
       <a href="/2016/10/24/Old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%83%EF%BC%89%EF%BC%9A%E6%89%93%E5%BC%80%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%BD%91%E9%A1%B5%E9%93%BE%E6%8E%A5%20and%20webview%E9%87%8C%E6%93%8D%E7%BA%B5electron%20api/" class="article-date">
   <time datetime="2016-10-24T08:11:57.000Z" itemprop="datePublished">2016-10-24</time>
-</a>
-      
+</a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/Electron/">Electron</a>
   </div>
-
-      
-      
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -89,33 +88,22 @@
         </span>
     </span>
 </div>
-
-      
+ 
     </div>
-    
-
-    
-    
+      
 
 
 
-
-    
-
-    
+  
     <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <a id="more"></a>
+       
+  <a id="more"></a>
 
 <p>1.打开本地文件或者网页链接</p>
 <p>// 打开系统本地文件<br>   const {shell} = require(‘electron’);<br>   // Open a local file in the default app<br>   var path1 = “d:\ProjectsSpace\ElectronProjects\ElectronTest2\app\html\config\record.txt”;<br>   shell.openItem(path1);</p>
 <p>   //打开网页链接<br>  // Open a URL in the default way<br>  shell.openExternal(‘<a href="https://github.com&#39;" target="_blank" rel="noopener">https://github.com&#39;</a>);</p>
 <p>2.electron+web view（html+js）<br>   html，js里获取electron的api，使用webview上的div元素，监听点击事件等，操作electron api<br>   PS:下面示例的api可能与现在electron 新版本有区别，最好查一下api，不过方法是这样子的；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;test&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;utf-8&quot; &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body &gt;</span><br><span class="line">&lt;button id&#x3D;&quot;btn_fullScreen&quot;&gt;全屏&lt;&#x2F;button&gt;</span><br><span class="line">&lt;button id&#x3D;&quot;btn_exitFullScreen&quot;&gt;退出全屏&lt;&#x2F;button&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        var gui &#x3D; require(&#39;nw.gui&#39;);</span><br><span class="line">        var win &#x3D; gui.Window.get();</span><br><span class="line">        var btn_fullScreen &#x3D; document.querySelector(&#39;#btn_fullScreen&#39;);</span><br><span class="line">        btn_fullScreen.addEventListener(&quot;click&quot;, function (evt) &#123;</span><br><span class="line">            win.enterFullscreen();</span><br><span class="line">        &#125;, false);</span><br><span class="line">        var btn_exitFullScreen &#x3D; document.querySelector(&#39;#btn_exitFullScreen&#39;);</span><br><span class="line">        btn_exitFullScreen.addEventListener(&quot;click&quot;, function (evt) &#123;</span><br><span class="line">            win.leaveFullscreen();</span><br><span class="line">        &#125;, false);</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-      
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;test&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;utf-8&quot; &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body &gt;</span><br><span class="line">&lt;button id&#x3D;&quot;btn_fullScreen&quot;&gt;全屏&lt;&#x2F;button&gt;</span><br><span class="line">&lt;button id&#x3D;&quot;btn_exitFullScreen&quot;&gt;退出全屏&lt;&#x2F;button&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        var gui &#x3D; require(&#39;nw.gui&#39;);</span><br><span class="line">        var win &#x3D; gui.Window.get();</span><br><span class="line">        var btn_fullScreen &#x3D; document.querySelector(&#39;#btn_fullScreen&#39;);</span><br><span class="line">        btn_fullScreen.addEventListener(&quot;click&quot;, function (evt) &#123;</span><br><span class="line">            win.enterFullscreen();</span><br><span class="line">        &#125;, false);</span><br><span class="line">        var btn_exitFullScreen &#x3D; document.querySelector(&#39;#btn_exitFullScreen&#39;);</span><br><span class="line">        btn_exitFullScreen.addEventListener(&quot;click&quot;, function (evt) &#123;</span><br><span class="line">            win.leaveFullscreen();</span><br><span class="line">        &#125;, false);</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure> 
       <!-- reward -->
       
       <div id="reward-btn">
@@ -124,22 +112,21 @@
       
     </div>
     
+
+    <!-- copyright -->
     
-      <!-- copyright -->
-      
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong>Copyright： </strong>
-              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-            </li>
-          </ul>
-        </div>
-        
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+        </li>
+      </ul>
+    </div>
+    
     <footer class="article-footer">
-      
-          
+       
 <div class="share-btn">
       <span class="share-sns share-outer">
         <i class="ri-share-forward-line"></i>
@@ -186,18 +173,13 @@
     </div>
 </div>
 
-<div id="share-mask"></div>
-      
-      
+<div id="share-mask"></div>  
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/electron/" rel="tag">electron</a></li></ul>
 
-
     </footer>
-
   </div>
 
-  
-  
+   
   <nav class="article-nav">
     
       <a href="/2016/10/27/Old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E5%85%AB%EF%BC%89%EF%BC%9A%E8%87%AA%E5%AE%9A%E4%B9%89electron%E6%A1%86%E6%9E%B6%E5%A4%96%E5%A3%B3%EF%BC%88shell%EF%BC%89%E7%9A%84%E8%8F%9C%E5%8D%95%EF%BC%88Menu%EF%BC%89/" class="article-nav-link">
@@ -217,70 +199,58 @@
     
   </nav>
 
-
-  
-
-  
-  
+   
 <!-- valine评论 -->
 <div id="vcomments-box">
-    <div id="vcomments">
-    </div>
+  <div id="vcomments"></div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz',
-        app_key: 'uylRd03zlzcKJi0j0RRhIwax',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'robohash',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
     });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
+  }
 </script>
 <style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
     #vcomments-box {
-        padding: 5px 30px;
+      padding: 5px 0px;
     }
+  }
 
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
 
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
 
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
 </style>
 
-  
-
-  
-  
-  
-  
-  
-
+ 
+     
 </article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -593,7 +563,9 @@
 
 <!-- ClickLove -->
 
-<!-- ClickBoom -->
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
 
@@ -655,6 +627,8 @@
   }(window, document);
 </script>
 
+
+<!-- CanvasBackground -->
 
 
     

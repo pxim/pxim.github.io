@@ -38,15 +38,19 @@
 
 </html>
 
-
 <body>
-  
   <div id="app">
+    
+      
     <main class="content on">
       <section class="outer">
-  <article id="post-Old/【Flex】编辑器的缩放功能（绝对定位和相对定位）" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
+  <article
+  id="post-Old/【Flex】编辑器的缩放功能（绝对定位和相对定位）"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
   <div class="article-inner">
     
     <header class="article-header">
@@ -57,20 +61,15 @@
  
 
     </header>
-    
-
-    
+     
     <div class="article-meta">
       <a href="/2016/11/29/Old/%E3%80%90Flex%E3%80%91%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E7%BC%A9%E6%94%BE%E5%8A%9F%E8%83%BD%EF%BC%88%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D%E5%92%8C%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D%EF%BC%89/" class="article-date">
   <time datetime="2016-11-29T03:38:08.000Z" itemprop="datePublished">2016-11-29</time>
-</a>
-      
+</a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
   </div>
-
-      
-      
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -89,32 +88,21 @@
         </span>
     </span>
 </div>
-
-      
+ 
     </div>
-    
-
-    
-    
+      
 
 
 
-
-    
-
-    
+  
     <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <a id="more"></a>
+       
+  <a id="more"></a>
 
 <p>一、横向的ide拖动缩放效果</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;s:WindowedApplication xmlns:fx&#x3D;&quot;http:&#x2F;&#x2F;ns.adobe.com&#x2F;mxml&#x2F;2009&quot; </span><br><span class="line">					   xmlns:s&#x3D;&quot;library:&#x2F;&#x2F;ns.adobe.com&#x2F;flex&#x2F;spark&quot; </span><br><span class="line">					   xmlns:mx&#x3D;&quot;library:&#x2F;&#x2F;ns.adobe.com&#x2F;flex&#x2F;mx&quot;&gt;</span><br><span class="line">	&lt;fx:Declarations&gt;</span><br><span class="line">		&lt;!-- 将非可视元素（例如服务、值对象）放在此处 --&gt;</span><br><span class="line">	&lt;&#x2F;fx:Declarations&gt;</span><br><span class="line">	&lt;mx:HDividedBox width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot; visible&#x3D;&quot;true&quot;&gt;</span><br><span class="line">		&lt;s:Panel title&#x3D;&quot;左边&quot; height&#x3D;&quot;100%&quot; textAlign&#x3D;&quot;left&quot; cornerRadius&#x3D;&quot;0&quot;&gt;</span><br><span class="line">		&lt;&#x2F;s:Panel&gt;</span><br><span class="line">		&lt;s:TitleWindow title&#x3D;&quot;中间&quot; height&#x3D;&quot;100%&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;&#x2F;s:TitleWindow&gt;</span><br><span class="line">		&lt;s:Panel title&#x3D;&quot;右边&quot; height&#x3D;&quot;100%&quot; textAlign&#x3D;&quot;left&quot; cornerRadius&#x3D;&quot;0&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;&#x2F;s:Panel&gt;</span><br><span class="line">	&lt;&#x2F;mx:HDividedBox&gt;</span><br><span class="line">&lt;&#x2F;s:WindowedApplication&gt;</span><br></pre></td></tr></table></figure>
 <p>二、垂直的ide拖动缩放效果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;s:WindowedApplication xmlns:fx&#x3D;&quot;http:&#x2F;&#x2F;ns.adobe.com&#x2F;mxml&#x2F;2009&quot; </span><br><span class="line">					   xmlns:s&#x3D;&quot;library:&#x2F;&#x2F;ns.adobe.com&#x2F;flex&#x2F;spark&quot; </span><br><span class="line">					   xmlns:mx&#x3D;&quot;library:&#x2F;&#x2F;ns.adobe.com&#x2F;flex&#x2F;mx&quot;&gt;</span><br><span class="line">	&lt;fx:Declarations&gt;</span><br><span class="line">		&lt;!-- 将非可视元素（例如服务、值对象）放在此处 --&gt;</span><br><span class="line">	&lt;&#x2F;fx:Declarations&gt;</span><br><span class="line">	&lt;mx:VDividedBox width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot; visible&#x3D;&quot;true&quot;&gt;</span><br><span class="line">		&lt;s:Panel title&#x3D;&quot;左边&quot; width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot; textAlign&#x3D;&quot;left&quot; cornerRadius&#x3D;&quot;0&quot;&gt;</span><br><span class="line">		&lt;&#x2F;s:Panel&gt;</span><br><span class="line">		&lt;s:TitleWindow title&#x3D;&quot;中间&quot; width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;&#x2F;s:TitleWindow&gt;</span><br><span class="line">		&lt;s:Panel title&#x3D;&quot;右边&quot; width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot; textAlign&#x3D;&quot;left&quot; cornerRadius&#x3D;&quot;0&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;&#x2F;s:Panel&gt;</span><br><span class="line">	&lt;&#x2F;mx:VDividedBox&gt;</span><br><span class="line">&lt;&#x2F;s:WindowedApplication&gt;</span><br></pre></td></tr></table></figure>
-      
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;s:WindowedApplication xmlns:fx&#x3D;&quot;http:&#x2F;&#x2F;ns.adobe.com&#x2F;mxml&#x2F;2009&quot; </span><br><span class="line">					   xmlns:s&#x3D;&quot;library:&#x2F;&#x2F;ns.adobe.com&#x2F;flex&#x2F;spark&quot; </span><br><span class="line">					   xmlns:mx&#x3D;&quot;library:&#x2F;&#x2F;ns.adobe.com&#x2F;flex&#x2F;mx&quot;&gt;</span><br><span class="line">	&lt;fx:Declarations&gt;</span><br><span class="line">		&lt;!-- 将非可视元素（例如服务、值对象）放在此处 --&gt;</span><br><span class="line">	&lt;&#x2F;fx:Declarations&gt;</span><br><span class="line">	&lt;mx:VDividedBox width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot; visible&#x3D;&quot;true&quot;&gt;</span><br><span class="line">		&lt;s:Panel title&#x3D;&quot;左边&quot; width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot; textAlign&#x3D;&quot;left&quot; cornerRadius&#x3D;&quot;0&quot;&gt;</span><br><span class="line">		&lt;&#x2F;s:Panel&gt;</span><br><span class="line">		&lt;s:TitleWindow title&#x3D;&quot;中间&quot; width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;&#x2F;s:TitleWindow&gt;</span><br><span class="line">		&lt;s:Panel title&#x3D;&quot;右边&quot; width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot; textAlign&#x3D;&quot;left&quot; cornerRadius&#x3D;&quot;0&quot;&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;&#x2F;s:Panel&gt;</span><br><span class="line">	&lt;&#x2F;mx:VDividedBox&gt;</span><br><span class="line">&lt;&#x2F;s:WindowedApplication&gt;</span><br></pre></td></tr></table></figure> 
       <!-- reward -->
       
       <div id="reward-btn">
@@ -123,22 +111,21 @@
       
     </div>
     
+
+    <!-- copyright -->
     
-      <!-- copyright -->
-      
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong>Copyright： </strong>
-              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-            </li>
-          </ul>
-        </div>
-        
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+        </li>
+      </ul>
+    </div>
+    
     <footer class="article-footer">
-      
-          
+       
 <div class="share-btn">
       <span class="share-sns share-outer">
         <i class="ri-share-forward-line"></i>
@@ -185,18 +172,13 @@
     </div>
 </div>
 
-<div id="share-mask"></div>
-      
-      
+<div id="share-mask"></div>  
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flex-%E7%BC%96%E8%BE%91%E5%99%A8/" rel="tag">flex 编辑器</a></li></ul>
 
-
     </footer>
-
   </div>
 
-  
-  
+   
   <nav class="article-nav">
     
       <a href="/2016/12/15/Old/%E3%80%90Egret%E3%80%91%E4%BD%BF%E7%94%A8VSCode%20%E7%BC%96%E8%AF%91%EF%BC%8C%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95Egret%E9%A1%B9%E7%9B%AE/" class="article-nav-link">
@@ -216,70 +198,58 @@
     
   </nav>
 
-
-  
-
-  
-  
+   
 <!-- valine评论 -->
 <div id="vcomments-box">
-    <div id="vcomments">
-    </div>
+  <div id="vcomments"></div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz',
-        app_key: 'uylRd03zlzcKJi0j0RRhIwax',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'robohash',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
     });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
+  }
 </script>
 <style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
     #vcomments-box {
-        padding: 5px 30px;
+      padding: 5px 0px;
     }
+  }
 
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
 
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
 
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
 </style>
 
-  
-
-  
-  
-  
-  
-  
-
+ 
+     
 </article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -592,7 +562,9 @@
 
 <!-- ClickLove -->
 
-<!-- ClickBoom -->
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
 
@@ -654,6 +626,8 @@
   }(window, document);
 </script>
 
+
+<!-- CanvasBackground -->
 
 
     

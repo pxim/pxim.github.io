@@ -38,15 +38,19 @@
 
 </html>
 
-
 <body>
-  
   <div id="app">
+    
+      
     <main class="content on">
       <section class="outer">
-  <article id="post-Old/ActionScript3 加载外部XML文件" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
+  <article
+  id="post-Old/ActionScript3 加载外部XML文件"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
   <div class="article-inner">
     
     <header class="article-header">
@@ -57,20 +61,15 @@
  
 
     </header>
-    
-
-    
+     
     <div class="article-meta">
       <a href="/2017/11/09/Old/ActionScript3%20%E5%8A%A0%E8%BD%BD%E5%A4%96%E9%83%A8XML%E6%96%87%E4%BB%B6/" class="article-date">
   <time datetime="2017-11-09T02:25:53.000Z" itemprop="datePublished">2017-11-09</time>
-</a>
-      
+</a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
   </div>
-
-      
-      
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
@@ -89,30 +88,19 @@
         </span>
     </span>
 </div>
-
-      
+ 
     </div>
-    
-
-    
-    
+      
 
 
 
-
-    
-
-    
+  
     <div class="article-entry" itemprop="articleBody">
-      
-      
-
-      
-      <a id="more"></a>
+       
+  <a id="more"></a>
 
 <p>ActionScript3 代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">private var xmlLoader:URLLoader;</span><br><span class="line">private function loadXML():void&#123;</span><br><span class="line">    &#x2F;&#x2F;设置外部XML的路径</span><br><span class="line">	var request:URLRequest &#x3D; new URLRequest(&quot;TestInfo.xml&quot;);</span><br><span class="line">          xmlLoader &#x3D; new URLLoader();</span><br><span class="line">          try &#123;</span><br><span class="line">              xmlLoader.load(request);</span><br><span class="line">          &#125;</span><br><span class="line">          catch (error:SecurityError)</span><br><span class="line">          &#123;</span><br><span class="line">              trace(&quot;A SecurityError has occurred.&quot;);</span><br><span class="line">          &#125;</span><br><span class="line"></span><br><span class="line">	xmlLoader.addEventListener(IOErrorEvent.IO_ERROR, xmlloader_ioError);</span><br><span class="line">          xmlLoader.addEventListener(Event.COMPLETE, xmlloader_complete);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">      private function xmlloader_complete(event:Event):void &#123;</span><br><span class="line">	var externalXML:XML; </span><br><span class="line">	var _name:String;</span><br><span class="line">              try &#123;</span><br><span class="line">                  externalXML &#x3D; new XML(xmlLoader.data);</span><br><span class="line">                  &#x2F;&#x2F;此处为 获取XML里第一个节点里的属性Name的值；</span><br><span class="line">		    _name&#x3D; externalXML.elements()[0].attribute(&quot;Name&quot;);</span><br><span class="line">			&#x2F;&#x2F;sendData();</span><br><span class="line">			</span><br><span class="line">              &#125; catch (e:TypeError) &#123;</span><br><span class="line">                  trace(&quot;Could not parse the XML file.&quot;);</span><br><span class="line">              &#125;</span><br><span class="line">      &#125;</span><br><span class="line">private function xmlloader_ioError(e:IOErrorEvent):void &#123;</span><br><span class="line">          trace(&quot;Had problem loading the XML File.&quot;);</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
-      
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">private var xmlLoader:URLLoader;</span><br><span class="line">private function loadXML():void&#123;</span><br><span class="line">    &#x2F;&#x2F;设置外部XML的路径</span><br><span class="line">	var request:URLRequest &#x3D; new URLRequest(&quot;TestInfo.xml&quot;);</span><br><span class="line">          xmlLoader &#x3D; new URLLoader();</span><br><span class="line">          try &#123;</span><br><span class="line">              xmlLoader.load(request);</span><br><span class="line">          &#125;</span><br><span class="line">          catch (error:SecurityError)</span><br><span class="line">          &#123;</span><br><span class="line">              trace(&quot;A SecurityError has occurred.&quot;);</span><br><span class="line">          &#125;</span><br><span class="line"></span><br><span class="line">	xmlLoader.addEventListener(IOErrorEvent.IO_ERROR, xmlloader_ioError);</span><br><span class="line">          xmlLoader.addEventListener(Event.COMPLETE, xmlloader_complete);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">      private function xmlloader_complete(event:Event):void &#123;</span><br><span class="line">	var externalXML:XML; </span><br><span class="line">	var _name:String;</span><br><span class="line">              try &#123;</span><br><span class="line">                  externalXML &#x3D; new XML(xmlLoader.data);</span><br><span class="line">                  &#x2F;&#x2F;此处为 获取XML里第一个节点里的属性Name的值；</span><br><span class="line">		    _name&#x3D; externalXML.elements()[0].attribute(&quot;Name&quot;);</span><br><span class="line">			&#x2F;&#x2F;sendData();</span><br><span class="line">			</span><br><span class="line">              &#125; catch (e:TypeError) &#123;</span><br><span class="line">                  trace(&quot;Could not parse the XML file.&quot;);</span><br><span class="line">              &#125;</span><br><span class="line">      &#125;</span><br><span class="line">private function xmlloader_ioError(e:IOErrorEvent):void &#123;</span><br><span class="line">          trace(&quot;Had problem loading the XML File.&quot;);</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure> 
       <!-- reward -->
       
       <div id="reward-btn">
@@ -121,22 +109,21 @@
       
     </div>
     
+
+    <!-- copyright -->
     
-      <!-- copyright -->
-      
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong>Copyright： </strong>
-              Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
-            </li>
-          </ul>
-        </div>
-        
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+        </li>
+      </ul>
+    </div>
+    
     <footer class="article-footer">
-      
-          
+       
 <div class="share-btn">
       <span class="share-sns share-outer">
         <i class="ri-share-forward-line"></i>
@@ -183,18 +170,13 @@
     </div>
 </div>
 
-<div id="share-mask"></div>
-      
-      
+<div id="share-mask"></div>  
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/actionscript-xml-actionscript-3-0/" rel="tag">actionscript xml actionscript 3.0</a></li></ul>
 
-
     </footer>
-
   </div>
 
-  
-  
+   
   <nav class="article-nav">
     
       <a href="/2018/01/19/Old/AS3%20-%20%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E4%B9%B1%E5%BA%8F%E6%96%B9%E6%B3%95%E4%BB%A5%E5%8F%8A%E6%95%88%E7%8E%87%E6%AF%94%E8%BE%83/" class="article-nav-link">
@@ -214,70 +196,58 @@
     
   </nav>
 
-
-  
-
-  
-  
+   
 <!-- valine评论 -->
 <div id="vcomments-box">
-    <div id="vcomments">
-    </div>
+  <div id="vcomments"></div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz',
-        app_key: 'uylRd03zlzcKJi0j0RRhIwax',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'robohash',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
     });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
+  }
 </script>
 <style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
     #vcomments-box {
-        padding: 5px 30px;
+      padding: 5px 0px;
     }
+  }
 
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
 
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
 
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
 </style>
 
-  
-
-  
-  
-  
-  
-  
-
+ 
+     
 </article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -590,7 +560,9 @@
 
 <!-- ClickLove -->
 
-<!-- ClickBoom -->
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
 
@@ -652,6 +624,8 @@
   }(window, document);
 </script>
 
+
+<!-- CanvasBackground -->
 
 
     
