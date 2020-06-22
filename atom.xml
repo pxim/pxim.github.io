@@ -390,36 +390,6 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:10:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【DResDevKit】08 网络课件包</title>
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/</id>
@@ -571,6 +541,36 @@
         
           &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
 &lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
         
       
     
