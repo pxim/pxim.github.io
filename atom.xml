@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxi.gitee.io/"/>
-  <updated>2020-06-12T06:53:10.781Z</updated>
+  <updated>2020-06-16T08:01:00.000Z</updated>
   <id>https://pxi.gitee.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>【Project】项目经验</title>
-    <link href="https://pxi.gitee.io/2020/06/03/Project/%E3%80%90Project%E3%80%91%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/"/>
-    <id>https://pxi.gitee.io/2020/06/03/Project/%E3%80%90Project%E3%80%91%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/</id>
-    <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2020-06-12T06:53:10.781Z</updated>
+    <title>【Egg】webstorm里如何断点调试egg代码</title>
+    <link href="https://pxi.gitee.io/2020/06/16/egg/%E3%80%90Egg%E3%80%91webstorm%E9%87%8C%E5%A6%82%E4%BD%95%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95egg%E4%BB%A3%E7%A0%81/"/>
+    <id>https://pxi.gitee.io/2020/06/16/egg/%E3%80%90Egg%E3%80%91webstorm%E9%87%8C%E5%A6%82%E4%BD%95%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95egg%E4%BB%A3%E7%A0%81/</id>
+    <published>2020-06-16T11:12:00.000Z</published>
+    <updated>2020-06-16T08:01:00.000Z</updated>
     
     <summary type="html">
     
@@ -29,17 +29,20 @@
       
         
         
-          &lt;h3 id=&quot;汽车构造数字化教学平台&quot;&gt;&lt;a href=&quot;#汽车构造数字化教学平台&quot; class=&quot;headerlink&quot; title=&quot;汽车构造数字化教学平台&quot;&gt;&lt;/a&gt;汽车构造数字化教学平台&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;时间：&lt;/strong&gt;2020.06.08 -
+          &lt;ol&gt;
+&lt;li&gt;package.json里添加debug命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img width=&quot;1034&quot; height=&quot;561&quot; style=&quot;display:inline; float:left;&quot;
         
       
     
     </summary>
     
     
-      <category term="Project" scheme="https://pxi.gitee.io/categories/Project/"/>
+      <category term="Egg" scheme="https://pxi.gitee.io/categories/Egg/"/>
     
     
-      <category term="Project" scheme="https://pxi.gitee.io/tags/Project/"/>
+      <category term="Egg" scheme="https://pxi.gitee.io/tags/Egg/"/>
     
   </entry>
   
@@ -48,7 +51,7 @@
     <link href="https://pxi.gitee.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/"/>
     <id>https://pxi.gitee.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/</id>
     <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2020-06-03T02:37:27.283Z</updated>
+    <updated>2020-06-03T02:37:28.000Z</updated>
     
     <summary type="html">
     
@@ -73,11 +76,38 @@
   </entry>
   
   <entry>
+    <title>【Project】项目经验</title>
+    <link href="https://pxi.gitee.io/2020/06/03/Project/%E3%80%90Project%E3%80%91%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/"/>
+    <id>https://pxi.gitee.io/2020/06/03/Project/%E3%80%90Project%E3%80%91%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/</id>
+    <published>2020-06-03T11:30:38.000Z</published>
+    <updated>2020-06-19T09:49:36.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;汽车构造数字化教学平台&quot;&gt;&lt;a href=&quot;#汽车构造数字化教学平台&quot; class=&quot;headerlink&quot; title=&quot;汽车构造数字化教学平台&quot;&gt;&lt;/a&gt;汽车构造数字化教学平台&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;时间：&lt;/strong&gt;2020.06.08 -
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Project" scheme="https://pxi.gitee.io/categories/Project/"/>
+    
+    
+      <category term="Project" scheme="https://pxi.gitee.io/tags/Project/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【Software】开发辅助工具</title>
     <link href="https://pxi.gitee.io/2020/05/25/software/%E3%80%90software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/"/>
     <id>https://pxi.gitee.io/2020/05/25/software/%E3%80%90software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/</id>
     <published>2020-05-25T11:12:57.000Z</published>
-    <updated>2020-05-26T08:56:04.028Z</updated>
+    <updated>2020-05-26T08:56:06.000Z</updated>
     
     <summary type="html">
     
@@ -105,7 +135,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/software/webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/"/>
     <id>https://pxi.gitee.io/2020/05/25/software/webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/</id>
     <published>2020-05-25T11:12:57.000Z</published>
-    <updated>2020-05-26T08:56:04.015Z</updated>
+    <updated>2020-05-26T08:56:06.000Z</updated>
     
     <summary type="html">
     
@@ -135,7 +165,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/webpack/%E3%80%90webpack%E3%80%91%E6%80%8E%E4%B9%88%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     <id>https://pxi.gitee.io/2020/05/25/webpack/%E3%80%90webpack%E3%80%91%E6%80%8E%E4%B9%88%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</id>
     <published>2020-05-25T11:12:57.000Z</published>
-    <updated>2020-05-26T09:00:16.553Z</updated>
+    <updated>2020-05-26T09:00:18.000Z</updated>
     
     <summary type="html">
     
@@ -162,7 +192,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/markdown/markdown%E5%86%99%E4%BD%9C%E5%B8%AE%E5%8A%A9/"/>
     <id>https://pxi.gitee.io/2020/05/25/markdown/markdown%E5%86%99%E4%BD%9C%E5%B8%AE%E5%8A%A9/</id>
     <published>2020-05-25T11:12:00.000Z</published>
-    <updated>2020-05-26T08:59:10.693Z</updated>
+    <updated>2020-05-26T08:59:12.000Z</updated>
     
     <summary type="html">
     
@@ -190,7 +220,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:17.088Z</updated>
+    <updated>2020-05-26T07:09:18.000Z</updated>
     
     <summary type="html">
     
@@ -222,46 +252,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/02-course-An-Flash/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/02-course-An-Flash/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.966Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】03 H5模板</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.964Z</updated>
+    <updated>2020-05-26T07:10:00.000Z</updated>
     
     <summary type="html">
     
@@ -300,7 +291,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.953Z</updated>
+    <updated>2020-05-26T07:10:00.000Z</updated>
     
     <summary type="html">
     
@@ -330,7 +321,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/05-course-ZD-H5/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/05-course-ZD-H5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.961Z</updated>
+    <updated>2020-05-26T07:10:00.000Z</updated>
     
     <summary type="html">
     
@@ -362,7 +353,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.958Z</updated>
+    <updated>2020-05-26T07:10:00.000Z</updated>
     
     <summary type="html">
     
@@ -392,7 +383,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:59.956Z</updated>
+    <updated>2020-05-26T07:10:00.000Z</updated>
     
     <summary type="html">
     
@@ -415,11 +406,50 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】03 H5模板</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】09 svn</title>
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/09-course-svn/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/09-course-svn/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:46.207Z</updated>
+    <updated>2020-05-26T07:09:48.000Z</updated>
     
     <summary type="html">
     
@@ -446,7 +476,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/10-course-test-address/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/10-course-test-address/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:41.631Z</updated>
+    <updated>2020-05-26T07:09:42.000Z</updated>
     
     <summary type="html">
     
@@ -474,7 +504,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:37.168Z</updated>
+    <updated>2020-05-26T07:09:38.000Z</updated>
     
     <summary type="html">
     
@@ -502,7 +532,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:35.208Z</updated>
+    <updated>2020-05-26T07:09:36.000Z</updated>
     
     <summary type="html">
     
@@ -529,7 +559,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/pano/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/pano/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:21.120Z</updated>
+    <updated>2020-05-26T07:09:22.000Z</updated>
     
     <summary type="html">
     
@@ -557,7 +587,7 @@
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/11-course-Notes-And-FAQ/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/11-course-Notes-And-FAQ/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:39.576Z</updated>
+    <updated>2020-05-26T07:09:40.000Z</updated>
     
     <summary type="html">
     
@@ -577,29 +607,6 @@
     
     
       <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://pxi.gitee.io/2020/05/25/hello-world/"/>
-    <id>https://pxi.gitee.io/2020/05/25/hello-world/</id>
-    <published>2020-05-25T08:14:42.473Z</published>
-    <updated>2020-05-25T08:14:42.474Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
