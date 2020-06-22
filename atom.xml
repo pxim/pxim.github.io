@@ -218,38 +218,6 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】01 课件开发集成包</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:18.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【DResDevKit】03 H5模板</title>
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/03-course-An-H5/</id>
@@ -275,6 +243,38 @@
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】01 课件开发集成包</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:18.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
         
       
     
@@ -328,36 +328,6 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:10:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【DResDevKit】05 故障诊断H5模板</title>
     <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/05-course-ZD-H5/"/>
     <id>https://pxi.gitee.io/2020/05/25/DResDevKit/05-course-ZD-H5/</id>
@@ -390,9 +360,37 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】08 网络课件包</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/</id>
+    <title>【DResDevKit】10 课件测试地址</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/10-course-test-address/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/10-course-test-address/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;广本&lt;br&gt;&lt;a href=&quot;http://bmw.jingge.com/guangqi-honda/course-test&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxi.gitee.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:10:00.000Z</updated>
     
@@ -402,7 +400,10 @@
       
         
         
-          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
         
       
     
@@ -444,11 +445,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】10 课件测试地址</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/10-course-test-address/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/10-course-test-address/</id>
+    <title>【DResDevKit】08 网络课件包</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/08-course-projects/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:42.000Z</updated>
+    <updated>2020-05-26T07:10:00.000Z</updated>
     
     <summary type="html">
     
@@ -456,8 +457,7 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;广本&lt;br&gt;&lt;a href=&quot;http://bmw.jingge.com/guangqi-honda/course-test&quot; target=&quot;_blank&quot;
+          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
         
       
     
@@ -555,9 +555,9 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
-    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
+    <title>【DResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
+    <id>https://pxi.gitee.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:10:00.000Z</updated>
     
@@ -569,7 +569,7 @@
         
           &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
         
       
