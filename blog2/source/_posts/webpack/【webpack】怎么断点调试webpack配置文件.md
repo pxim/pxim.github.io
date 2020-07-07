@@ -27,7 +27,7 @@ tags:
 
 ​        node --inspect-brk ./config-multi/webpack.config.js --inline --progress
 
-​        node --inspect-brk ./config-multi/start.js --inline --progress
+​        node --inspect-brk ./config-multi/start.js --inline --progress 
 
 ​       package.json里
 ​       node --inspect-brk=5858 ./config-multi/start.js

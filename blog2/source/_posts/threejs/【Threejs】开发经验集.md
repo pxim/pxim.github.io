@@ -22,4 +22,18 @@ tags:
 
    此问题依据：https://github.com/mrdoob/three.js/issues/6426
 
-2. 
+2. 问题：有时候改变一个mesh的material.color的值，其他mesh的color也跟着改变了。
+
+   原因：这些mesh用着同一个material
+
+   ```
+   threejs中的网格物体对材质的是引用传递，不是值传递，如果material1 被 mesh1和mesh2用到了，改变 mesh1.material.color，则mesh2的材质颜色也改了
+   ```
+
+   解决方案：给这些mesh不同的material；或者在mesh赋值的时候clone一下，例如
+
+   ```
+     mesh.material = nMaterial.clone();
+   ```
+
+   
