@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxim.github.io/"/>
-  <updated>2020-07-08T05:59:20.000Z</updated>
+  <updated>2020-07-20T02:40:22.000Z</updated>
   <id>https://pxim.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://pxim.github.io/2020/06/21/npm/%E3%80%90NPM%E3%80%91%E5%88%9B%E5%BB%BAnpm%E5%92%8C%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/"/>
     <id>https://pxim.github.io/2020/06/21/npm/%E3%80%90NPM%E3%80%91%E5%88%9B%E5%BB%BAnpm%E5%92%8C%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/</id>
     <published>2020-06-21T05:12:57.000Z</published>
-    <updated>2020-07-08T05:59:20.000Z</updated>
+    <updated>2020-07-20T02:40:22.000Z</updated>
     
     <summary type="html">
     
@@ -137,7 +137,7 @@
     <link href="https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/"/>
     <id>https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/</id>
     <published>2020-05-25T11:12:57.000Z</published>
-    <updated>2020-05-26T08:56:06.000Z</updated>
+    <updated>2020-07-20T02:40:28.000Z</updated>
     
     <summary type="html">
     
@@ -289,6 +289,36 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】03 H5模板</title>
     <link href="https://pxim.github.io/2020/05/25/DResDevKit/03-course-An-H5/"/>
     <id>https://pxim.github.io/2020/05/25/DResDevKit/03-course-An-H5/</id>
@@ -314,36 +344,6 @@
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:10:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
         
       
     
@@ -474,34 +474,6 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】10 课件测试地址</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/10-course-test-address/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/10-course-test-address/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:42.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;广本&lt;br&gt;&lt;a href=&quot;http://bmw.jingge.com/guangqi-honda/course-test&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【DResDevKit】12 config配置表v3.x版本说明</title>
     <link href="https://pxim.github.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/"/>
     <id>https://pxim.github.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/</id>
@@ -516,6 +488,34 @@
         
           &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】10 课件测试地址</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/10-course-test-address/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/10-course-test-address/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;广本&lt;br&gt;&lt;a href=&quot;http://bmw.jingge.com/guangqi-honda/course-test&quot; target=&quot;_blank&quot;
         
       
     
