@@ -125,9 +125,9 @@ theme: ayer
 
 deploy:
   #这里记得替换掉链接中的用户名和仓库名
-  - type: git
-    repo: git@github.com:pxim/pxim.github.io.git
-    branch: master
+#  - type: git
+#    repo: git@github.com:pxim/pxim.github.io.git
+#    branch: master
   - type: git
     repo: git@gitee.com:pxi/pxi.git
     branch: gh-pages
