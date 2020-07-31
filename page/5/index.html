@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html lang="default">
 
 
 <head>
@@ -47,7 +47,7 @@
 <section class="cover">
     
       
-      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
+      <a class="forkMe" href="https://github.com/pxim"
         target="_blank"><img width="149" height="149" src="/images/forkme.png"
           class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
     
@@ -76,6 +76,24 @@
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 
+
+<!-- Subtitle -->
+
+  <script>
+    try {
+      var typed = new Typed("#subtitle", {
+        strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+        startDelay: 0,
+        typeSpeed: 200,
+        loop: true,
+        backSpeed: 100,
+        showCursor: true
+      });
+    } catch (err) {
+      console.log(err)
+    }
+  </script>
+  
 <div id="main">
   <section class="outer">
   <article class="articles">
@@ -111,61 +129,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p>一、js调用C#方法，js传参给C#</p>
-<p>html里js代码：</p>
-<div class="cnblogs_code">
-<pre>    commitDataToC(&quot;js传数据给C#&quot;<span style="color:#000000">);
-</span><span style="color:#008000">//</span><span style="color:#008000">把数据传给C#</span>
-    <span style="color:#0000ff">function</span><span style="color:#000000"> commitDataToC(str) {
-</span><span style="color:#008000">//</span><span style="color:#008000">        alert(str);</span>
-<span style="color:#000000">        window.external.SaveProgress(str);
-    }</span></pre>
-</div>
-<p>winform里C#代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color:#008000">//</span><span style="color:#008000">为了使网页能够与winform交互 将com的可访问性设置为真</span>
- [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = <span style="color:#800000">&quot;</span><span style="color:#800000">FullTrust</span><span style="color:#800000">&quot;</span><span style="color:#000000">)]
- [System.Runtime.InteropServices.ComVisibleAttribute(</span><span style="color:#0000ff">true</span>)]</pre>
-</div>
-<div class="cnblogs_code">
-<pre><span style="color:#0000ff">　public</span> <span style="color:#0000ff">void</span> SaveProgress(<span style="color:#0000ff">string</span><span style="color:#000000"> str)
- {
-  　　MessageBox.Show(</span><span style="color:#800000">&quot;</span><span style="color:#800000">html在调用C#中的方法。SaveProgressstr=</span><span style="color:#800000">&quot;</span> &#43;<span style="color:#000000"> str);
- }</span></pre>
-</div>
-<p>&nbsp;</p>
-<p>二、C#调用js方法，C#传参给js</p>
-<p>winform里C#代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color:#008000">//</span><span style="color:#008000">为了使网页能够与winform交互 将com的可访问性设置为真</span>
- [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = <span style="color:#800000">&quot;</span><span style="color:#800000">FullTrust</span><span style="color:#800000">&quot;</span><span style="color:#000000">)]
- [System.Runtime.InteropServices.ComVisibleAttribute(</span><span style="color:#0000ff">true</span>)]</pre>
-</div>
-<div class="cnblogs_code">
-<pre> <span style="color:#0000ff">if</span> (Wbr.Document != <span style="color:#0000ff">null</span>) Wbr.Document.InvokeScript(<span style="color:#800000">&quot;</span><span style="color:#800000">WfToHtml</span><span style="color:#800000">&quot;</span>, objArray);</pre>
-</div>
-<p>html里js代码：</p>
-<div class="cnblogs_code">
-<pre>  <span style="color:#008000">//</span><span style="color:#008000">C#传数据给js</span>
-    <span style="color:#0000ff">function</span><span style="color:#000000"> WfToHtml() {
-        alert(</span>&quot;wf调用html里面的js函数&quot;<span style="color:#000000">);
-    }</span></pre>
-</div>
-<p>&nbsp;</p>
-<p>注意：js里不能添加console代码，不然在winform里C#会接收不到js传过来的参数，js调用C#代码也会失效。</p>
-<p>参考：</p>
-<p><a target="_blank" href="http://www.cnblogs.com/zeroLove/p/3912460.html" target="_blank">http://www.cnblogs.com/zeroLove/p/3912460.html</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -208,66 +172,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p>一、使用 ExternalInterface api</p>
-<p>1.as调用C#，as给C#发送参数数据</p>
-<p>as代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color:#008000">//<span style="color:#008000"> as向C#发出 方法名&#43;参数 <span style="color:#000000"><span style="color:#000000">ExternalInterface.call（functionName:String, ...parameters：*）<span style="color:#008000"><span style="color:#008000"> 方法名是字符串，参数可以是任何数据类型　　
-<span style="color:#0000ff">if<span style="color:#000000">(ExternalInterface.available) 
-{ 
-   ExternalInterface.call(<span style="color:#ff0000">&quot;onSetDataToC&quot;<span style="color:#000000">, “as通过ExternalInterface.call方法向C#传递参数”);  
-}</span></span></span></span></span></span></span></span></span></span></pre>
-</div>
-C#代码：
-<div>
-<div class="cnblogs_code">
-<pre>无</pre>
-</div>
-<p>&nbsp;</p>
-<p>2.C#调用as代码，C#给as发送参数数据</p>
-<p>C#代码：</p>
-<div class="cnblogs_code">
-<pre>无</pre>
-</div>
-<p>as代码：</p>
-<div class="cnblogs_code">
-<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a target="_blank" title="复制代码"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
-<pre><span style="color:#008000">//<span style="color:#008000"> as监听C#发来的 方法名，然后通过回调函数接收参数  ExternalInterface.addCallback（functionName:String, closure:Function） 方法名是字符串，回调一个函数
-<span style="color:#0000ff">if<span style="color:#000000">(ExternalInterface.available)
-{
-    ExternalInterface.addCallback(&quot;onCToAs&quot;<span style="color:#000000">,onCToAs);
-}
-<span style="color:#0000ff">function onCToAs(str：*<span style="color:#000000">)
-{
-    trace(str);
-}  </span></span></span></span></span></span></span></pre>
-<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a target="_blank" title="复制代码"><img src="http://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
-</div>
-<p>&nbsp;</p>
-<p>二、使用 fscommand api</p>
-<p>1.as调用C#，as给C#发送参数数据</p>
-<p>as代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color:#008000">//<span style="color:#008000"> as向C#发出 方法名&#43;参数 fscommand（command:String, args:String=&quot;&quot;) 命令是字符串，参数也只能是字符串
-fscommand(<span style="color:#ff0000">&quot;onSetDataToC&quot;, “as通过fscommand方法向C#传递参数”);  </span></span></span></pre>
-</div>
-<p>C#代码：</p>
-<div class="cnblogs_code">
-<pre>无</pre>
-</div>
-<p>&nbsp;</p>
-</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -310,70 +215,7 @@ fscommand(<span style="color:#ff0000">&quot;onSetDataToC&quot;, “as通过fscom
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>一、使用 ExternalInterface api</p></p>
-<p>1.as调用js，as给js发送参数数据</p>
-<p>as代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color: #008000">//</span><span style="color: #008000"> as向js发出 方法名+参数 <span style="color: #000000"><span style="color: #000000">ExternalInterface.call（functionName:String, ...parameters：*）<span style="color: #008000"><span style="color: #008000"> 方法名是字符串，参数可以是任何数据类型　　</span></span></span></span></span>
-<span style="color: #0000ff">if</span><span style="color: #000000">(ExternalInterface.available) 
-{ <br>   ExternalInterface.call(</span><span style="color: #ff0000">"onSetDataToJs"</span><span style="color: #000000">, “as通过ExternalInterface.call方法向js传递参数”);  <br>}</span></pre>
-</div>
-<p>js代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color: #0000ff">function</span><span style="color: #000000"> <span style="color: #ff0000">onSetDataToJs</span>(value)
-{
-   console.log(</span>"此方法被as调用："+<span style="color: #000000">value</span><span style="color: #000000">)；
-}</span></pre>
-</div>
-<p>&nbsp;</p>
-<p>2.js调用as代码，js给as发送参数数据</p>
-<p>js代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color: #000000">setDataToAs();
-</span><span style="color: #0000ff">function</span><span style="color: #000000"> setDataToAs()
-{
-    </span><span style="color: #0000ff">var</span> flash =  getMovieName("sco_flash") <span style="color: #008000">//</span><span style="color: #008000"> sco_flash是嵌入在html里的flash的id</span>
-<span style="color: #000000">    flash.onJsToAs("js传参给as");
-}
-
-<p></span><span style="color: #008000">//</span><span style="color: #008000">获取此页面加载FLASH对象名称</span><br><span style="color: #0000ff">function</span><span style="color: #000000"> getMovieName(movieName)<br> {<br>   </span><span style="color: #0000ff">if</span><span style="color: #000000"> (window.document[movieName])<br>   {<br>     </span><span style="color: #0000ff">return</span><span style="color: #000000"> window.document[movieName];<br>   }</span><span style="color: #0000ff">else</span> <span style="color: #0000ff">if</span> (navigator.appName.indexOf(“Microsoft”)==-1<span style="color: #000000">)<br>     {<br>      </span><span style="color: #0000ff">if</span> (document.embeds &amp;&amp;<span style="color: #000000"> document.embeds[movieName])<br>          </span><span style="color: #0000ff">return</span><span style="color: #000000"> document.embeds[movieName];<br>      }</span><span style="color: #0000ff">else</span><span style="color: #000000">{<br>          </span><span style="color: #0000ff">return</span><span style="color: #000000"> document.getElementById(movieName);<br>   }<br> };</span></pre></p>
-</div>
-<p>as代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color: #008000">//</span><span style="color: #008000"> as监听js发来的 方法名，然后通过回调函数接收参数  ExternalInterface.addCallback（functionName:String, closure:Function） 方法名是字符串，回调一个函数</span>
-<span style="color: #0000ff">if</span><span style="color: #000000">(ExternalInterface.available)
-{
-    ExternalInterface.addCallback(</span>"onJsToAs"<span style="color: #000000">,onJsToAs);
-}
-</span><span style="color: #0000ff">function</span> onJsToAs(str：*<span style="color: #000000">)
-{
-    trace(str);
-}  </span></pre>
-</div>
-<p>&nbsp;</p>
-<p>二、使用 fscommand api</p>
-<p>1.as调用js，as给js发送参数数据</p>
-<p>as代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color: #008000">//</span><span style="color: #008000"> as向js发出 方法名+参数 fscommand（command:String, args:String="") 命令是字符串，参数也只能是字符串</span>
-fscommand(<span style="color: #ff0000">"onSetDataToJs"</span>, “as通过fscommand方法向js传递参数”);  </pre>
-</div>
-<p>js代码：</p>
-<div class="cnblogs_code">
-<pre><span style="color: #0000ff">function</span><span style="color: #000000"> onSetDataToJs(value)
-{
-   console.log(</span>"此方法被as调用："+<span style="color: #000000">value</span><span style="color: #000000">)；
-}</span></pre>
-</div> 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -416,28 +258,7 @@ fscommand(<span style="color: #ff0000">"onSetDataToJs"</span>, “as通过fscomm
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p><a target="_blank" target="_blank" href="http://blog.csdn.net/arvin0/article/details/71338638"><span class="postTitle2">1、【Hexo】Hexo&#43;Github构建个人博</span><span class="postTitle2">客 （一）：环境配置</span></a></p>
-<p><a target="_blank" target="_blank" id="cb_post_title_url" class="postTitle2" href="http://blog.csdn.net/arvin0/article/details/71338662">2、【Hexo】Hexo&#43;Github构建个人博客 （二）：创建Hello World</a></p>
-<p><a target="_blank" target="_blank" id="cb_post_title_url" class="postTitle2" href="http://blog.csdn.net/arvin0/article/details/71338651">3、【Hexo】Hexo&#43;Github构建个人博客 （三）：添加皮肤主题</a></p>
-<p><a target="_blank" target="_blank" id="cb_post_title_url" class="postTitle2" href="http://blog.csdn.net/arvin0/article/details/71338676">4、【Hexo】Hexo&#43;Github构建个人博客 （四）：添加讨论等功能</a></p>
-<p><a target="_blank" target="_blank" id="cb_post_title_url" class="postTitle2" href="http://blog.csdn.net/arvin0/article/details/71338667">5、【Hexo】Hexo&#43;Github构建个人博客 （五）：错误集</a></p>
-<p>&nbsp;</p>
-<div style="display:block">PS：参考资料</div>
-<div style="display:block">1.<a target="_blank" target="_blank" href="https://hexo.io/zh-cn/docs/index.html">Hexo官方文档</a></div>
-<div style="display:block">2.<a target="_blank" target="_blank" href="http://www.open-open.com/lib/view/open1416647023164.html">Git配置SSH,并Push到GitHub上的相关流程</a></div>
-<div style="display:block">3.<a target="_blank" target="_blank" href="http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">HEXO搭建个人博客</a></div>
-<p>&nbsp;</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -480,28 +301,7 @@ fscommand(<span style="color: #ff0000">"onSetDataToJs"</span>, “as通过fscomm
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>待续</p></p>
-<p>&nbsp;一、github page和域名绑定</p>
-<p>参考教程：</p>
-<p><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/olddoublemoon/p/6629398.html" target="_blank" rel="noopener">github pages+阿里云域名绑定搭建个人博客</a></p>
-<p><a href="https://www.zhihu.com/question/31377141?sort=created" target="_blank">github怎么绑定自己的域名？</a></p>
-<p>二、添加rss</p>
-<p>安装 RSS插件，在项目目录下输入命令&nbsp; &nbsp;<span class="cnblogs_code">npm <span style="color: #0000ff">install</span> hexo-generator-feed</span>&nbsp;</p>
-<p>参考：</p>
-<p>http://blog.fens.me/hexo-blog-github/</p>
-<p><span class="link_title"><a href="http://blog.csdn.net/u010053344/article/details/50701191" target="_blank" rel="noopener">Github 搭建 hexo （四）——更换主题，disqus，RSS </a></span></p>
-<p><span class="link_title">解決 Hexo Comment ! ：http://morris821028.github.io/2014/04/12/web/hexo-comment/</span></p>
-<h1 class="article-title"><span style="font-size: 15px">http://moxfive.xyz/2016/01/02/hexo-comments/?utm_source=tuicool&amp;utm_medium=referral</span></h1>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -544,44 +344,7 @@ fscommand(<span style="color: #ff0000">"onSetDataToJs"</span>, “as通过fscomm
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>一、报错： <span class="cnblogs_code">ERROR Plugin load failed: hexo-deployer-git</span>&nbsp;</p></p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404014310644-1532199890.jpg" alt=""></p>
-<p>解决方案：执行命令 &nbsp;<span class="cnblogs_code">npm install hexo-deployer-git --save</span>&nbsp;</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404014426394-1174417796.jpg" alt=""></p>
-<p>&nbsp;</p>
-<p>二、报错：&nbsp;<span class="cnblogs_code">ERROR Plugin load failed: hexo-generator-json-content</span>&nbsp;</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404014738300-1978032331.jpg" alt=""></p>
-<p>解决方案：</p>
-<p>1.把node升级到6.0版本及以上；</p>
-<p>2.然后执行命令 &nbsp;<span class="cnblogs_code">npm i hexo-generator-json-content --save</span>&nbsp;</p>
-<p>3.就OK了。</p>
-<p>三、报错：出现 OpenSSH 提示框</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404154822691-2080262195.jpg" alt=""></p>
-<p>解决方案：</p>
-<p>1.yes——ok，不可以的话，就删掉github里的源码，然后重新走一遍流程</p>
-<p>2.</p>
-<div class="cnblogs_Highlighter">
-<pre class="brush:html;gutter:false;">确保配置没错：
-deploy:
-  type: git
-  repository: https://github.com/leopardpan/leopardpan.github.io.git
-  branch: master
-
-<p>npm i hexo-generator-json-content –save</p>
-<p>npm install hexo-deployer-git –save</p>
-<p>hexo deploy<br></pre></p>
-</div>
-<p>&nbsp;</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -624,66 +387,7 @@ deploy:
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p><strong>一、生成项目，初始化</strong></div></p>
-<div style="display: block">在项目目录下创建好Blog目录，比如我的是 &nbsp;<span class="cnblogs_code">D:\projects\web\arvin0-blog ，然后执行命令&nbsp;<span class="cnblogs_code">hexo init</span></span></div>
-<div style="display: block">如图：</div>
-<div style="display: block"><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403182523769-68178955.jpg" alt=""></div>
-<div style="display: block">创建完成之后的结果，如图：</div>
-<div style="display: block"><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403182739675-225689466.jpg" alt=""></div>
-<div style="display: block">&nbsp;</div>
-<div style="display: block"><strong>二、生成静态页面</strong></div>
-<div style="display: block">执行命令&nbsp;<span class="cnblogs_code">hexo generate （hexo g 也可以）&nbsp;</span></div>
-<div style="display: block">如图：</div>
-<div style="display: block"><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403183022488-2122170010.jpg" alt=""></div>
-<div style="display: block">&nbsp;</div>
-<div style="display: block"><strong>三、启动本地服务</strong></div>
-<div style="display: block">启动本地服务，进行文章预览调试，执行命令 &nbsp;<span class="cnblogs_code">hexo server&nbsp;</span></div>
-<div style="display: block">如图：</div>
-<div style="display: block"><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403183623488-1902132676.jpg" alt=""></div>
-<div style="display: block">&nbsp;</div>
-<div style="display: block">打开浏览器，输入<a href="http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%9C%80%E5%8E%9F%E5%A7%8B%E7%9A%84%E6%95%88%E6%9E%9C%E4%BA%86" target="_blank" rel="noopener">http://localhost:4000</a></div>
-<div style="display: block">效果如图：</div>
-<div style="display: block"><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403183707222-349211279.jpg" alt=""></div>
-<div style="display: block">&nbsp;</div>
-<div style="display: block"><strong>四、把本地hexo文件部署到Github上</strong></div>
-<div style="display: block">1.建立Repository</div>
-<div style="display: block">建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法 然后建立关联。</div>
-<div style="display: block">2.然后打开上面建立的hexo项目，找到 _config.yml 文件，打开，翻到最下面，如图：</div>
-<div style="display: block"><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403225005488-175188240.jpg" alt=""></div>
-<div style="display: block">红框部分，改成这样</div>
-<div style="display: block">
-<div class="cnblogs_code">
-<pre><span style="color: #000000">deploy:
-  type: git
-  repository: https:<span style="color: #008000">//<span style="color: #008000">github.com/arvin0/<span style="color: #008000">arvin0.github.io.git
-  branch: master</span></span></span></span></pre>
-</div>
-<p>注意： &nbsp;<span class="cnblogs_code">repository: 后面要加空格，还有注意要修改名字，<span style="color: #008000">arvin0 改成你自己的，我建议你copy这段话，然后直接改名字；</span></span></p>
-<p>3.然后使用Git Bash，执行命令 &nbsp;<span class="cnblogs_code">npm <span style="color: #0000ff">install hexo-deployer-git --save ，执行这句命令才能使用git部署</span></span></p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403230604957-494688996.jpg" alt=""></p>
-<p>4.执行命令&nbsp;<span class="cnblogs_code">hexo deploy 或者&nbsp;<span class="cnblogs_code">hexo d&nbsp;</span></span></p>
-<p>如图：</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403230534003-936540000.jpg" alt=""></p>
-<p>5.然后再浏览器中输入<a href="https://arvin0.github.io/" target="_blank">https://arvin0.github.io/</a>就行了 ,记得把名字改成你 github 的账户名。</p>
-<p><strong>五、更新GitHub</strong></p>
-<p>每次修改过本地文件后，要更新到GitHub上，都要执行三句命令</p>
-<div class="cnblogs_code">
-<pre><span style="color: #000000">hexo clean
-hexo generate
-hexo deploy</span></pre>
-</div>
-<p>更多命令，请参考 <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank">Hexo官方文档</a></p>
-</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -726,73 +430,7 @@ hexo deploy</span></pre>
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p><strong>一、选择主题</strong></p></p>
-<p>选择你自己喜欢的主题</p>
-<p>参考：</p>
-<p>1.<a href="https://hexo.io/themes/" target="_blank">Hexo官网主题</a></p>
-<p>2.<a href="https://www.zhihu.com/question/24422335" target="_blank">知乎：有哪些好看的 Hexo 主题？</a></p>
-<p>&nbsp;</p>
-<p><strong>二、配置主题</strong></p>
-<p>1.我选择了hexo-theme-yilia这个主题，简洁大方，功能齐全；</p>
-<p>这是他的地址：<a href="https://github.com/litten/hexo-theme-yilia" target="_blank">https://github.com/litten/hexo-theme-yilia</a></p>
-<p>2.具体添加方法：</p>
-<div class="cnblogs_code">
-<pre><span style="color: #000000"><strong>安装</strong>
-git clone https:</span><span style="color: #008000">//</span><span style="color: #008000">github.com/litten/hexo-theme-yilia.git themes/yilia</span>
-<span style="color: #000000"><strong>
-配置</strong>
-修改hexo根目录下的 _config.yml ： theme: yilia<br>
-<strong>更新</strong>
-cd themes</span>/<span style="color: #000000">yilia
-git pull<br></span></pre>
-</div>
-<p><strong><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404170613457-1340903307.jpg" alt=""><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404170842722-887182821.jpg" alt=""><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404170712628-1746589845.jpg" alt=""></strong></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><strong>三、可能会出现的问题</strong></p>
-<p>1.如图：</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404165847832-695290325.jpg" alt=""></p>
-<p>解决方法：如图所示，在git里执行命令 <span class="cnblogs_code">npm i hexo-generator-json-content --save<br></span></p>
-<p>&nbsp;</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404170319503-287771447.jpg" alt=""></p>
-<p>并且添加jsonContent这段配置信息；</p>
-<p>2.执行命令 &nbsp;<span class="cnblogs_code">npm i hexo-generator-json-content --save</span> 后，还是上面的错误，或者如图这样子的</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404170452238-1870365263.jpg" alt=""></p>
-<p>解决方案：</p>
-<p>1.升级Node到6.X以及以上版本；</p>
-<p>2.再执行一遍 <span class="cnblogs_code">npm i hexo-generator-json-content --save</span></p>
-<p>就OK了。</p>
-<p>3.如果有更多问题请参考 <a href="https://github.com/litten/hexo-theme-yilia/issues" target="_blank">https://github.com/litten/hexo-theme-yilia/issues</a></p>
-<p>&nbsp;</p>
-<p><strong>四、换好主题后，创建新文章，进行预览</strong></p>
-<p>执行命令 &nbsp;<span class="cnblogs_code">hexo new <span style="color: #800000">"</span><span style="color: #800000">My New Post</span><span style="color: #800000">"</span></span> ，关于更多创建，写作的命令信息，请阅读 <a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank">https://hexo.io/zh-cn/docs/writing.html</a></p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404171911863-545075796.jpg" alt=""></p>
-<p>执行命令&nbsp;<span class="cnblogs_code">hexo server （或 hexo s）</span>&nbsp;</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404171919519-631652098.jpg" alt=""></p>
-<p>再点击网址 <a href="http://0.0.0.0:4000/" target="_blank" rel="noopener">http://0.0.0.0:4000</a></p>
-<p>&nbsp;</p>
-<p><strong>五、更新到GitHub上</strong></p>
-<p>执行三句命令</p>
-<div class="cnblogs_code">
-<pre><span style="color: #000000">hexo clean
-hexo generate
-hexo deploy</span></pre>
-</div>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404171550613-2000876845.jpg" alt=""></p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404171558613-21126272.jpg" alt=""></p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170404171607753-903131783.jpg" alt=""></p>
-<p>然后刷新一下GitHub 博客项目页面，看是否更新好了，等更新好之后，再打开 <a href="https://arvin0.github.io/" target="_blank">https://arvin0.github.io/</a>&nbsp; 链接，就可以了，记得把用户名换成你的。</p>
-<p>&nbsp;</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -835,50 +473,7 @@ hexo deploy</span></pre>
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p><strong>一、安装 Node</strong></p>
-<p>下载地址：<a href="https://nodejs.org/en/" target="_blank">Node.js</a></p>
-<p><strong>二、安装 Git（win环境下）</strong></p>
-<p>&nbsp;下载地址：<a href="https://git-scm.com/" target="_blank">Git</a></p>
-<p>&nbsp;Git 绑定 GitHub账户：</p>
-<p>1.打开Git Bash，然后输入两句命令</p>
-<div class="cnblogs_code">
-<pre><span style="color: #000000"> git config --global user.name "Your Name"
- git config --global user.email "email@example.com"</span></pre>
-</div>
-<p>如图：</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403221154222-624768162.jpg" alt=""></p>
-<p>2.配置SSH</p>
-<p>PS：可以先打开&nbsp;&nbsp;<span class="cnblogs_code">C:\Users\Administrator</span>&nbsp; 目录下，有没有 &nbsp;<span class="cnblogs_code">.<span style="color: #0000ff">ssh</span></span> 目录，如果有，再看看这个目录下有没有&nbsp;<span class="cnblogs_code">id_rsa</span>&nbsp;和&nbsp;<span class="cnblogs_code">id_rsa.pub</span>&nbsp;这两个文件，如果已经有了，可直接跳过这步。如果没有，则开始创建 SSH Key，</p>
-<p>首先，输入命令 &nbsp;<span class="cnblogs_code"><span style="color: #0000ff">ssh-keygen</span> -t rsa -C <span style="color: #800000">"</span><span style="color: #800000">youremail@example.com</span><span style="color: #800000">"</span></span> ，你需要把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可，由于这个Key也不是用于军事目的，所以也无需设置密码。</p>
-<p>如果一切顺利的话，可以在用户主目录里找到<code>.ssh</code>目录，里面有<code>id_rsa</code>和<code>id_rsa.pub</code>两个文件，这两个就是SSH Key的秘钥对，<code>id_rsa</code>是私钥，不能泄露出去，<code>id_rsa.pub</code>是公钥，可以放心地告诉任何人。</p>
-<p>如图：</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403222242378-1660268671.jpg" alt=""></p>
-<p>3.登陆GitHub，打开 Settings —— SSH and GPG keys 页面，然后点击&nbsp; New SSH Key 按钮，结果如图：</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403222833644-419187586.jpg" alt=""></p>
-<p>然后 title随便填，key填写 &nbsp;<span class="cnblogs_code">id_rsa.pub</span> 文件里的所以内容，然后保存，这步就OK了。</p>
-<p><strong>三、正式安装hexo</strong></p>
-<p>打开cmd，输入命令 &nbsp;<span class="cnblogs_code">npm install -g hexo-cli</span>&nbsp;</p>
-<p>安装完成之后，可以输入命令 &nbsp;<span class="cnblogs_code">hexo -v</span> ，来验证版本</p>
-<p>如图：</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201704/934812-20170403184029019-930700600.jpg" alt=""></p>
-</div>
-<div style="display: block">&nbsp;</div>
-<div style="display: block">PS：参考资料</div>
-<div style="display: block">1.<a href="https://hexo.io/zh-cn/docs/index.html" target="_blank">Hexo官方文档</a></div>
-<div style="display: block">2.<a href="http://www.open-open.com/lib/view/open1416647023164.html" target="_blank">Git配置SSH,并Push到GitHub上的相关流程</a></div>
-<div style="display: block">3.<a href="http://baixin.io/2015/08/HEXO%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_blank">HEXO搭建个人博客</a></div>
-<div style="display: block">&nbsp;</div>
-<div style="display: block">&nbsp;</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -921,27 +516,7 @@ hexo deploy</span></pre>
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>html中引入调用另一个html的方法，尝试了好几种，都列出来：<br>其中第一种是最好的，其他的方法，可以尝试看看，是不是适合你当前项目</p>
-<p>一、div+$(“#page1”).load(“b.html”)<br>参考代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;page1&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;page2&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">          $(&quot;#page1&quot;).load(&quot;page&#x2F;Page_1.html&quot;);</span><br><span class="line">          $(&quot;#page2&quot;).load(&quot;page&#x2F;Page_2.html&quot;);</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
-<p>二、iframe<br>参考代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">   &lt;div id&#x3D;&quot;page1&quot;&gt;</span><br><span class="line">        &lt;iframe align&#x3D;&quot;center&quot; width&#x3D;&quot;100%&quot; height&#x3D;&quot;170&quot; src&#x3D;&quot;page&#x2F;Page_1.html&quot;  frameborder&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; scrolling&#x3D;&quot;no&quot;&gt;&lt;&#x2F;iframe&gt;</span><br><span class="line">   &lt;&#x2F;div&gt;</span><br><span class="line">   &lt;div id&#x3D;&quot;page2&quot;&gt;</span><br><span class="line">        &lt;iframe align&#x3D;&quot;center&quot; width&#x3D;&quot;100%&quot; height&#x3D;&quot;170&quot; src&#x3D;&quot;page&#x2F;Page_2.html&quot;  frameborder&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; scrolling&#x3D;&quot;no&quot;&gt;&lt;&#x2F;iframe&gt;</span><br><span class="line">   &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
-<p>三、object引入<br>参考代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;object style&#x3D;&quot;border:0px&quot; type&#x3D;&quot;text&#x2F;x-scriptlet&quot; data&#x3D;&quot;page&#x2F;Page_1.html&quot; width&#x3D;100% height&#x3D;150&gt;</span><br><span class="line">    &lt;&#x2F;object&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure>
-<p>四、import引入<br>参考代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;link rel&#x3D;&quot;import&quot; href&#x3D;&quot;page&#x2F;Page_1.html&quot; id&#x3D;&quot;page1&quot;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">		console.log(page1.import.body.innerHTML);</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
-<p>参考文章：<a href="https://www.web-tinker.com/article/20637.html" target="_blank" rel="noopener">https://www.web-tinker.com/article/20637.html</a></p>
-<p>五、bootstrap的panel组件，或者easyui的window组件，有点类似这个效果；</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -995,9 +570,9 @@ hexo deploy</span></pre>
         
         
         <span>
-  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
   <span class="division">|</span>
-  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
 </span>
         
       </li>
@@ -1009,7 +584,7 @@ hexo deploy</span></pre>
       <li>
         <!-- cnzz统计 -->
         
-        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278938767&amp;web_id=1278938767'></script>
         
       </li>
     </ul>
@@ -1053,15 +628,15 @@ hexo deploy</span></pre>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+      <a class="nav-item-link" href="/links">友情链接</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
+      <a class="nav-item-link" href="/projects">项目</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" href="/about">关于我</a>
     </li>
     
   </ul>
@@ -1070,7 +645,7 @@ hexo deploy</span></pre>
   <ul class="nav">
     <li class="nav-item">
       
-      <a class="nav-item-link nav-item-search"  title="Search">
+      <a class="nav-item-link nav-item-search"  title="搜索">
         <i class="ri-search-line"></i>
       </a>
       
@@ -1104,13 +679,13 @@ hexo deploy</span></pre>
   <div class="reward-box">
     
     <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <img class="reward-img" src="/images/alipay.jpg">
       <span class="reward-type">支付宝</span>
     </div>
     
     
     <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <img class="reward-img" src="/images/wechat.jpg">
       <span class="reward-type">微信</span>
     </div>
     
@@ -1121,23 +696,6 @@ hexo deploy</span></pre>
 
 
 <script src="/js/lazyload.min.js"></script>
-
-<!-- Subtitle -->
-
-<script>
-  try {
-    var typed = new Typed("#subtitle", {
-      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
-      startDelay: 0,
-      typeSpeed: 200,
-      loop: true,
-      backSpeed: 100,
-      showCursor: true
-    });
-  } catch (err) {
-    console.log(err)
-  }
-</script>
 
 <!-- Tocbot -->
 

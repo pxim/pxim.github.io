@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html lang="default">
 
 
 <head>
@@ -47,7 +47,7 @@
 <section class="cover">
     
       
-      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
+      <a class="forkMe" href="https://github.com/pxim"
         target="_blank"><img width="149" height="149" src="/images/forkme.png"
           class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
     
@@ -76,6 +76,24 @@
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 
+
+<!-- Subtitle -->
+
+  <script>
+    try {
+      var typed = new Typed("#subtitle", {
+        strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+        startDelay: 0,
+        typeSpeed: 200,
+        loop: true,
+        backSpeed: 100,
+        showCursor: true
+      });
+    } catch (err) {
+      console.log(err)
+    }
+  </script>
+  
 <div id="main">
   <section class="outer">
   <article class="articles">
@@ -111,48 +129,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p><span style="">[摘要：[本文属本创，若有转载，请说明出处<a href="http://blog.csdn.net/yl02520/article/]" target="_blank" rel="noopener">http://blog.csdn.net/yl02520/article/]</a> visibilitychange事情是扫瞄器新增加的一个事情，当扫瞄器的某个标签页切换到背景，或从背景切换到前台时便会触收该]<span>&nbsp;</span></span><br style=""><br><br style=""></p>
-<p style="">[本文属原创，如有转载，请注明出处http://blog.csdn.net/yl02520/article/]<br>
-</p>
-<p style="">visibilitychange事件是浏览器新添加的一个事件，当浏览器的某个标签页切换到后台，或从后台切换到前台时就会触发该消息，现在主流的浏览器都支持该消息了，例如Chrome, Firefox, IE10等。虽然这只是一个简单的功能，但是能够广大的采用HTML5开发游戏的开发者提供方便，比如用户正在玩游戏时，突然切换到后台去发一条短信或打一个电话，再切换到游戏，那么开发者就需要捕捉对这些突发情形进行处理，当游戏切换到后台时就暂停游戏，从后台切换回来时，又能允许用户继续游戏。</p>
-<p style="">下面是一个简单的实例代码，当应用程序或浏览器标签页切换到后台时就停止播放音乐，从后台切换回来时又开始播放音乐。</p>
-<p style=""></p>
-<pre style="">&lt;html&gt;
-&lt;body onload=&quot;load()&quot;&gt;
-&lt;audio id=&quot;audio_id&quot;&gt;
-&lt;source src=&quot;demo-audio.mp3&quot;/&gt;
-&lt;source src=&quot;demo-audio.ogg&quot;/&gt;
-Browser can't support Audio tag.
-&lt;/audio&gt;
-&lt;script&gt;
-var audioElement = document.getElementById(&quot;audio_id&quot;);
-function onVisibilityChanged(event) {
-  var hidden = event.target.webkitHidden;
-  if (hidden)
-    audioElement.pause();
-  else
-    audioElement.play();
-}
-function load() {
-  audioElement.play();
-  audioElement.loop = true;
-  document.addEventListener(&quot;webkitvisibilitychange&quot;, onVisibilityChanged, false);
-}
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
-<span style="">注意：现在某些浏览器还保留了visibilitychange的前缀，例如Chrome浏览器还保留着webkit前缀，不过该事件已经趋于稳定，在Chrome 33及以后就去掉了前缀，直接使用visibilitychange，这里只是一个简单的实例程序，大家可以针对这个程序做简单修改，兼容更多的浏览器。</span>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -195,223 +172,7 @@ function load() {
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p><span style="font-size:12px"><span>提问的智慧 </span><br>
-<span>D.H.Grand[nOBODY/Ginux]　2001 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　在黑客世界里，当提出一个技术问题时，你能得到怎样的回答？这取决于挖出答案的难度，同样取决于你提问的方法。本指南旨在帮助你提高发问技巧，以获取你最想要的答案。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　首先你必须明白，黑客们只偏爱艰巨的任务，或者能激发他们思维的好问题。 如若不然，我们还来干吗？如果你有&#20540;得我们反复咀嚼玩味的好问题，我们自会对你感激不尽。好问题是激励，是厚&#31036;，可以提高我们的理解力，而且通常会暴露我们以前从没意识到或者思考过的问题。对黑客而言，“问得好！”是发自内心的大力称赞。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　尽管黑客们有蔑视简单问题和不友善的坏名声，有时看起来&#20284;乎我们对新手，对知识贫乏者怀有敌意，但其实不是那样的。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　我们不想掩饰对这样一些人的蔑视--他们不愿思考，或者在发问前不去完成他们应该做的事。这种人只会谋杀时间--他们只愿索取，从不付出，无端消耗我们的时间，而我们本可以把时间用在更有趣的问题或者更&#20540;得回答的人身上。 我们称这样的人为“失败者”（由于历史原因，我们有时把它拼作“lusers”）。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　我们在很大程度上属于志愿者，从繁忙的生活中抽出时间来解惑答疑，而且时常被提问淹没。所以我们无情的滤掉一些话题，特别是抛弃那些看起来象失败者的家伙，以便更高效的利用时间来回答胜利者的问题。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　如果你觉得我们过于傲慢的态度让你不爽，让你委屈，不妨设身处地想想。我们并没有要求你向我们屈服--事实上，我们中的大多数人最喜欢公平交易不过了，只要你付出小小努力来满足最起码的要求，我们就会欢迎你加入到我们的文化中来。但让我们帮助那些不愿意帮助自己的人是没有 意义的。如果你不能接受这种“歧视”，我们建议你花点钱找家商业公司签个技术支持协议得了，别向黑客乞求帮助。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　如果你决定向我们求助，当然不希望被视为失败者，更不愿成为失败者中的一员。立刻得到有效答案的最好方法，就是象胜利者那样提问 —— 聪明、自信、有解决问题的思路，只是偶尔在特定的问题上需要获得一点帮助。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　（欢迎对本指南提出改进意见。任何建议请E-mail至esr@thyrsus.com，然而 请注意，本文并非网络&#31036;节的通用指南，我通常会拒绝无助于在技术论坛得到有用答案的建议。） （当然，如果你写中文，最好还是寄DHGrand@hotmail.com;-）</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>= 提问之前 = </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　在通过电邮、新闻组或者聊天室提出技术问题前，检查你有没有做到： </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>1. 通读手册，试着自己找答案。 </span><br>
-<span>2. 在FAQ里找答案（一份维护得好的FAQ可以包罗万象:）。 </span><br>
-<span>3. 在网上搜索（个人推荐google~~~）。 </span><br>
-<span>4. 向你身边精于此道的朋友打听。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　当你提出问题的时候，首先要说明在此之前你干了些什么；这将有助于树立你的形象：你不是一个妄图不劳而获的乞讨者，不愿浪费别人的时间。如果提问者能从答案中学到东西，我们更乐于回答他的问题。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　周全的思考，准备好你的问题，草率的发问只能得到草率的回答，或者根本得不到任何答案。越表现出在寻求帮助前为解决问题付出的努力，你越能得到实质性的帮助。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　小心别问错了问题。如果你的问题基于错误的假设，普通黑客（J. Random Hacker）通常会用无意义的字面解释来答复你，心里想着“蠢问题...”，希望着你会从问题的回答（而非你想得到的答案）中汲取教训。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　决不要自以为够资&#26684;得到答案，你没这种资&#26684;。毕竟你没有为这种服务支付任何报酬。你要自己去“挣”回一个答案，靠提出一个有内涵的，有趣的，有思维激励作用的问题--一个对社区的经验有潜在贡献的问题，而不仅仅是被动的从他人处索要知识--去挣到这个答案。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　另一方面，表明你愿意在找答案的过程中做点什么，是一个非常好的开端。“谁能给点提示？”、“我这个例子里缺了什么？”以及“我应该检查什么地方？”比“请把确切的过程贴出来”更容易得到答复。因为你显得只要有人指点正确的方向，你就有完成它的能力和决心。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>= 怎样提问 = </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 谨慎选择论坛 </span><br>
-<span>　　小心选择提问的场合。如果象下面描述的那样，你很可能被忽略掉或者被看作失败者： </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>1. 在风马牛不相及的论坛贴出你的问题 </span><br>
-<span>2. 在探讨高级技巧的论坛张贴非常初级的问题；反之亦然 </span><br>
-<span>3. 在太多的不同新闻组交叉张贴 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 用辞贴切，语法正确，拼写无误 </span><br>
-<span>　　我们从经验中发现，粗心的写作者通常也是马虎的思考者（我敢打包票）。 回答粗心大意者的问题很不&#20540;得，我们宁愿把时间耗在别处。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　正确的拼写，标点符号和大小写很重要。 </span><br>
-<span>　　更一般的说，如果你的提问写得象个半文盲，你很有可能被忽视。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　如果你在使用非母语的论坛提问，你可以犯点拼写和语法上的小错--但决不能在思考上马虎（没错，我们能弄清两者的分别） </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 使用含义丰富，描述准确的标题 </span><br>
-<span>　　在邮件列表或者新闻组中，大约50字以内的主题标题是抓住资深专家注意力 的黄金时机。别用喋喋不休的“帮帮忙”（更别说“救命啊！！！！！”这 样让人反感的话）来浪费这个机会。不要妄想用你的痛苦程度来打动我们， 别用空&#26684;代替问题的描述，哪怕是极其简短的描述。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　蠢问题： 救命啊！我的膝上机不能正常显示了！ </span><br>
-<span>　　聪明问题： XFree86 4.1下鼠标光标变形，Fooware MV1005的显示芯片。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　如果你在回复中提出问题，记得要修改内容标题，表明里面有一个问题。一个看起来象“Re：测试”或者“Re：新bug”的问题很难引起足够重视。另外，引用并删减前文的内容，给新来的读者留下线索。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 精确描述，信息量大 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>1. 谨慎明确的描述症状。 </span><br>
-<span>2. 提供问题发生的环境（机器配置、操作系统、应用程序以及别的什么）。 </span><br>
-<span>3. 说明你在提问前是怎样去研究和理解这个问题的。 </span><br>
-<span>4. 说明你在提问前采取了什么步骤去解决它。 </span><br>
-<span>5. 罗列最近做过什么可能有影响的硬件、软件变更。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　尽量想象一个黑客会怎样反问你，在提问的时候预先给他答案。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　Simon Tatham写过一篇名为《如何有效的报告Bug》的出色短文。强力推荐你也读一读。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 话不在多 </span><br>
-<span>　　你需要提供精确有效的信息。这并不是要求你简单的把成吨的出错代码或者数据完全转储摘录到你的提问中。如果你有庞大而复杂的测试条件，尽量把它剪裁得越小越好。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　这样做的用处至少有三点。第一，表现出你为简化问题付出了努力，这可以使你得 到回答的机会增加；第二，简化问题使你得到有用答案的机会增加；第三，在提炼 你的bug报告的过程中，也许你自己就能找出问题所在或作出更正。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 只说症状，不说猜想 </span><br>
-<span>　　告诉黑客们你认为问题是怎样引起的没什么帮助。（如果你的推断如此有效，还用向别人求助吗？），因此要确信你原原本本告诉了他们问题的症状，不要加进你自己的理解和推论。让黑客们来诊断吧。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>蠢问题： 我在内核编译中一次又一次遇到SIG11错误，我怀疑某条飞线搭在主板的走线上了，这种情况应该怎样检查最好？ </span><br>
-<span>聪明问题： 我自制的一套K6/233系统，主板是FIC-PA2007 （VIA Apollo VP2芯片组），256MB Corsair PC133 SDRAM，在内核编译中频频产生SIG11错误，从开机20分钟以后就有这种情况，开机 前20分钟内从没发生过。重启也没有用，但是关机一晚上就又能工作20分钟。所有 内存都换过了，没有效果。相关部分的典型编译记录如下...。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 按时间顺序列出症状 </span><br>
-<span>　　对找出问题最有帮助的线索，往往就是问题发生前的一系列操作，因此，你的说明 应该包含操作步骤，以及电脑的反应，直到问题产生。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　如果你的说明很长（超过四个段落），在开头简述问题会有所帮助，接下来按时间顺序详述。这样黑客们就知道该在你的说明中找什么。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 明白你想问什么 </span><br>
-<span>　　漫无边际的提问近乎无休无止的时间黑洞。最能给你有用答案的人也正是最忙的人（他们忙是因为要亲自完成大部分工作）。这样的人对无节制的时间黑洞不太感冒，因此也可以说他们对漫无边际的提问不大感冒。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　如果你明确表述需要回答者做什么（提供建议，发送一段代码，检查你的补丁或是别的），就最有可能得到有用的答案。这会定出一个时间和精力的上限，便于回答者集中精力来帮你，这很凑效。要理解专家们生活的世界，要把专业技能想象为充裕的资源，而回复的时间则是贫乏的资源。解决你的问题需要的时间越少，越能从忙碌的专家口中掏出答案。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　因此，优化问题的结构，尽量减少专家们解决它所需要的时间，会有很大的帮助--这通常和简化问题有所区别。因此，问“我想更好的理解X，能给点提示吗？”通常比问“你能解释一下X吗？”更好。如果你的代码不能工作，问问它有什么地方不对，比要求别人替你修改要明智得多。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 别问应该自己解决的问题 </span><br>
-<span>　　黑客们总是善于分辨哪些问题应该由你自己解决；因为我们中的大多数都曾自己解决这类问题。同样，这些问题得由你来搞定，你会从中学到东西。你可以要求给点提示，但别要求得到完整的解决方案。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 去除无意义的疑问 </span><br>
-<span>　　别用无意义的话结束提问，例如“有人能帮我吗？”或者“有答案吗？”。 首先：如果你对问题的描述不很合适，这样问更是画蛇添足。其次：由于这 样问是画蛇添足，黑客们会很厌烦你--而且通常会用逻辑上正确的回答来表 示他们的蔑视，例如：“没错，有人能帮你”或者“不，没答案”。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 谦逊绝没有害处，而且常帮大忙 </span><br>
-<span>彬　　彬有&#31036;，多用“请”和“先道个谢了”。让大家都知道你对他们花费时间义务提供帮助心存感激。然而，如果你有很多问题无法解决，&#31036;貌将会增加你得到有用答案的机会。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　（我们注意到，自从本指南发布后，从资深黑客处得到的唯一严重缺陷反馈，就是对预先道谢这一条。一些黑客觉得“先谢了”的言外之意是过后就不会再感谢任何人了。我们的建议是：都道谢。）</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 问题解决后，加个简短说明 </span><br>
-<span>　　问题解决后，向所有帮助过你的人发个说明，让他们知道问题是怎样解决的，并再一次向他们表示感谢。如果问题在新闻组或者邮件列表中引起了广泛关注，应该在那里贴一个补充说明。补充说明不必很长或是很深入；简单的一句“你好，原来是网线出了问题！谢谢大家--Bill”比什么也不说要强。事实上，除非结论真的很有技术含量，否则简短可爱的小结比长篇学术论文更好。说明问题是怎样解决的，但大可不必将解决问题的过程复述一遍。除了表示&#31036;貌和反馈信息以外，这种补充有助于他人在邮件列表/新闻组/论坛中搜索对你有过帮助的完整解决方案，这可能对他们也很有用。最后（至少？），这种补充有助于所有提供过帮助的人从中得到满足感。如果你自己不是老手或者黑客，那就相信我们，这种感觉对于那些你向他们求助的导师或者专家而言，是非常重要的。问题久拖未决会让人灰心；黑客们渴望看到问题被解决。好人有好报，满足他们的渴望，你会在下次贴出新问题时尝到甜头。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>- 还是不懂 </span><br>
-<span>　　如果你不是很理解答案，别立刻要求对方解释。象你以前试着自己解决问题时那样（利用手册，FAQ，网络，身边的高手），去理解它。如果你真的需要对方解释，记得表现出你已经学到了点什么。比方说，如果我回答你：“看来&#20284;乎是zEntry被阻塞了；你应该先清除它。”，然后：一个很糟的后续问题：“zEntry是什么？” 聪明的问法应该是这样：“哦~~~我看过帮助了但是只有-z和-p两个参数中提到了zEntry而且还都没有清楚的解释:&amp;lt;你是指这两个中的哪一个吗？还是我看漏了什么？”</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>= 三思而后问 = </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>以下是几个经典蠢问题，以及黑客在拒绝回答时的心中所想： </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>问题：我能在哪找到X程序？ </span><br>
-<span>问题：我的程序/配置/SQL申明没有用 </span><br>
-<span>问题：我的Windows有问题，你能帮我吗？ </span><br>
-<span>问题：我在安装Linux（或者X）时有问题，你能帮我吗？ </span><br>
-<span>问题：我怎么才能破解root帐号/窃取OP特权/读别人的邮件呢？ </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>提问：我能在哪找到X程序？ </span><br>
-<span>回答：就在我找到它的地方啊蠢货--搜索引擎的那一头。天呐！还有人不会用Google吗？ </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>提问：我的程序（配置、SQL申明）没有用 </span><br>
-<span>回答：这不算是问题吧，我对找出你的真正问题没兴趣--如果要我问你二十个问题才找得出来的话--我有更有意思的事要做呢。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>在看到这类问题的时候，我的反应通常不外如下三种： </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>1. 你还有什么要补充的吗？ </span><br>
-<span>2. 真糟糕，希望你能搞定。 </span><br>
-<span>3. 这跟我有什么鸟相关？ </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>提问：我的Windows有问题，你能帮我吗？ </span><br>
-<span>回答：能啊，扔掉萎软的垃圾，换Linux吧。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>提问：我在安装Linux（或者X）时有问题，你能帮我吗？ </span><br>
-<span>回答：不能，我只有亲自在你的电脑上动手才能找到毛病。还是去找你当地的Linux用户组寻求手把手的指导吧（你能在这儿找到用户组的清单）。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>提问：我怎么才能破解root帐号/窃取OP特权/读别人的邮件呢？ </span><br>
-<span>回答：想要这样做，说明你是个卑鄙小人；想找个黑客帮你，说明你是个白痴！ </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>= 好问题，坏问题 = </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　最后，我举一些例子来说明，怎样聪明的提问；同一个问题的两种问法被放在一起，一种是愚蠢的，另一种才是明智的。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>蠢问题：我可以在哪儿找到关于Foonly Flurbamatic的资料？ </span><br>
-<span>// 这种问法无非想得到“STFW”这样的回答。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>聪明问题：我用Google搜索过“Foonly Flurbamatic 2600”，但是没找到有用的结果。谁知道上哪儿去找对这种设备编程的资料？</span><br>
-<span>// 这个问题已经STFW过了，看起来他真的遇到了麻烦。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>蠢问题：我从FOO项目找来的源码没法编译。它怎么这么烂？ </span><br>
-<span>// 他觉得都是别人的错，这个傲慢自大的家伙 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>聪明问题：FOO项目代码在Nulix 6.2版下无法编译通过。我读过了FAQ，但里面没有提到跟Nulix有关的问题。这是我编译过程的记录，我有什么做得不对的地方吗？</span><br>
-<span>// 他讲明了环境，也读过了FAQ，还指明了错误，并且他没有把问题的责任推到别人头上，这个家伙&#20540;得留意。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>蠢问题：我的主板有问题了，谁来帮我？ </span><br>
-<span>// 普通黑客对这类问题的回答通常是：“好的，还要帮你拍拍背和换尿布吗？” ，然后按下删除键。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>聪明问题：我在S2464主板上试过了X、Y和Z，但没什么作用，我又试了A、B和C。请注意当我尝试C时的奇怪现象。显然边带传输中出现了收缩，但结果出人意料。在多处理器主板上引起边带泄漏的通常原因是什么？谁有好主意接下来我该做些什么测试才能找出问题？</span><br>
-<span>// 这个家伙，从另一个角度来看，&#20540;得去回答他。他表现出了解决问题的能力，而不是坐等天上掉答案。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　在最后一个问题中，注意“告诉我答案”和“给我启示，指出我还应该做什么诊断工作”之间微妙而又重要的区别。事实上，后一个问题源自于2001年8月在Linux内核邮件列表上的一个真实的提问。我（Eric）就是那个提出问题的人。我在Tyan S2464主板上观察到了这种无法解释的锁定现象，列表成员们提供了解决那一问题的重要信息。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　通过我的提问方法，我给了大家&#20540;得玩味的东西；我让人们很容易参与并且被吸引进来。我显示了自己具备和他们同等的能力，邀请他们与我共同探讨。我告诉他们我所走过的弯路，以避免他们再浪费时间，这是一种对他人时间价&#20540;的尊重。后来，当我向每个人表示感谢，并且赞赏这套程序（指邮件列表中的讨论 --译者注）运作得非常出色的时候，一个Linux内核邮件列（lkml）成员表示，问题得到解决并非由于我是这个列表中的“名人”，而是因为我用了正确的方式来提问。我们黑客从某种角度来说是拥有丰富知识但缺乏人情味的家伙；我相信他是对的，如果我象个乞讨者那样提问，不论我是谁，一定会惹恼某些人或者被他们忽视。他建议我记下这件事，给编写这个指南的人一些指导。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>= 找不到答案怎么办 = </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　如果仍得不到答案，请不要以为我们觉得无法帮助你。有时只是看到你问题的人不知道答案罢了。没有回应不代表你被忽视，虽然不可否认这种差别很难区分。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　总的说来，简单的重复张贴问题是个很糟的想法。这将被视为无意义的喧闹。 </span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　你可以通过其它渠道获得帮助，这些渠道通常更适合初学者的需要。有许多网上的以及本地的用户组，由狂热的软件爱好者（即使他们可能从没亲自写过任何软件）组成。通常人们组建这样的团体来互相帮助并帮助新手。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　另外，你可以向很多商业公司寻求帮助，不论公司大还是小（Red Hat 和LinuxCare 就是两个最常见的例子）。别为要付费才能获得帮助而感到沮丧！毕竟，假使你的汽车发动机汽缸密封圈爆掉了--完全可能如此--你还得把它送到修车铺，并且为维修付费。就算软件没花费你一分钱，你也不能强求技术支持总是免费的。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>　　对大众化的软件，就象Linux之类而言，每个开发者至少会有上万名用户。根本不可能由一个人来处理来自上万名用户的求助电话。要知道，即使你要为帮助付费，同你必须购买同类软件相比，你所付出的也是微不足道的（通常封闭源代码软件的技术支持费用比开放源代码软件要高得多，且内容也不那么丰富）。</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>Copyright (C) 2001 by Eric S. Raymond </span><br>
-<span>中文版 Copyleft 2001 by D.H.Grand(nOBODY/Ginux) </span><br>
-<span>英文版：</span></span><a target="_blank" href="http://www.tuxedo.org/~esr/faqs/smart-questions.html" rel="nofollow" target="_blank"><span style="font-size:12px">http://www.tuxedo.org/~esr/faqs/smart-questions.html</span></a><span></span><br>
-<span style="font-size:12px"><span>感谢 Eric 的耐心指点和同意，本文才得以完成并发布， </span><br>
-<span>本指南 英文版版权为 Eric Steven Raymond 所有， </span><br>
-<span>中文版版权由 D.H.Grand[nOBODY/Ginux] 所有 </span><br>
-<span>--------------------------------------------------------------------------------</span><br>
-<span>&nbsp;&nbsp;</span><br>
-<span>“我们若能更妥善地搜寻资料，实在已经改变世界。”</span><br>
-<br>
-<span>小白不可怕，就怕小白乱比划。</span><br>
-<br>
-<span>看到这篇文章，想到我回答**知道时候的变化，以及观看维基百科和**百科的区别，很有感受，转发至此。</span><br>
-<br>
-<span>我是**知道的元老级会员，我认为通过问答，能用自己的知识来帮助别人，这是一种幸福。所以我总是在有空的时候上去看一看，回答问题，讨论问题，认真对待每一个问题。也曾经上过排行榜，采纳率也都是近50%，我很欣慰，认为我帮助到了别人。</span><br>
-<span>几年过去了，再此登陆**知道，发现人气大涨，问答的问题也多了好多倍。但仔细一看，回答了几个问题，失望至极，生气至极，从此极少再来回答。提问的人，问作业，问项目，问破解，问什么的都有了。回答得人，超答案，复制黏贴，无意义的灌水刷分。看着积分前几名那成千上万的无意义回答和低到个位数的采纳率。看提问者越来越多的选择无奈的关闭问题。虽然人气旺了，问答多了，搜索引擎的前几条结果也必定是它了。但我知道，是该离开了。</span><br>
-<br>
-<span>同样的是，明显看到最近越来越多的各种问答网站，互相搬抄，从问题，到每一个问答一模一样。只是为了增加其首页那个问题总数，有意义么？</span><br>
-<br>
-<span>另外对比维基和国内泛滥的百科类网站同样看到，一个是严&#26684;的写作规范，要求，包括版权，来源各个方面。另一些就仅仅是网上内容的照搬照抄，而且不加整理的堆在一起，像一个大垃圾堆。</span><br>
-<br>
-<span>这些的这些，又反映了一种什么样的社会心态？&#20540;得深思</span></span></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -454,24 +215,7 @@ function load() {
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p>[Egret] web发行版本报错：XMLHttpRequest cannot load <a target="_blank" href="http://bbs.egret.com/file:///C:/Users/PX/Documents/EgretProjects/Xt1/resource/default.res.json" target="_blank">
-file:///C:/Users/PX/Documents/EgretProjects/Xt1/resource/default.res.json</a></p>
-<p>不能加载图片等资源，原因是IIS服务器没有开启asp和.json类型；</p>
-<p>解决方法：<a target="_blank" href="http://bbs.egret.com/thread-1772-1-1.html" target="_blank">http://bbs.egret.com/thread-1772-1-1.html</a></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <a target="_blank" href="http://blog.eroad.info/iis-suport-json/" target="_blank">
-http://blog.eroad.info/iis-suport-json/</a></p>
-<p>&nbsp;</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -516,52 +260,7 @@ http://blog.eroad.info/iis-suport-json/</a></p>
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p>actionscript中读取本地文件操作有两种代码如下</p>
-<p>1.使用File和FileStream两个类，FileStream负责读取数据的所以操作：（同步操作）</p>
-<div class="cnblogs_Highlighter sh-gutter">
-<div class="syntaxhighlighter  as3 ie" id="highlighter_371142">
-<div class="toolbar"><pre code_snippet_id="1572830" snippet_file_name="blog_20160202_1_3449655"  code_snippet_id="1572830" snippet_file_name="blog_20160202_1_3449655" name="code" class="javascript">var stream:FileStream = new FileStream();
-var file:File = new File('E:/test.txt');//绑定一个文件
-stream.open(file,FileMode.READ);//读取文件
-trace(stream.readMultiByte(stream.bytesAvailable,'utf-8'));
-stream.close();</pre><br>
-稍微需要注意的一点是我们的File()函数里传的路径字符串，里面全都使用的是正斜杠，如果使用了反斜杠，你就会收到来自程序的错误。</div>
-</div>
-</div>
-<p>2.仅File类（异步操作）</p>
-<div class="cnblogs_Highlighter sh-gutter"><pre code_snippet_id="1572830" snippet_file_name="blog_20160202_2_5543989"  code_snippet_id="1572830" snippet_file_name="blog_20160202_2_5543989" name="code" class="javascript">private var file:File;
-public function Tracer()
-{
-    file =new File('E:/daili.txt');//绑定一个文件
-    file.addEventListener(Event.COMPLETE,onComplete);
-    file.load();//执行读取操作
-}
-
-<p>private function onComplete(event:Event):void<br>{<br>    vardata:ByteArray = file.data;<br>    trace(data.readMultiByte(data.bytesAvailable,’utf-8’));<br>}</pre><br><br>3.使用File和FileStream（异步操作）</div></p>
-<div class="cnblogs_Highlighter sh-gutter">
-<div class="syntaxhighlighter  as3 ie" id="highlighter_408044">
-<div class="toolbar"><pre code_snippet_id="1572830" snippet_file_name="blog_20160202_3_9273743"  code_snippet_id="1572830" snippet_file_name="blog_20160202_3_9273743" name="code" class="javascript">var sourceFile:File = File.documentsDirectory.resolvePath(&quot;Apollo Test/test.txt&quot;);
-var stream:FileStream = new FileStream();
-stream.addEventListener(Event.COMPLETE, readBytes);
-stream.openAsync(sourceFile, FileMode.READ);
-
-<p>function readBytes(e:Event):void {<br>    varbytes:ByteArray = newByteArray();<br>    trace(&quot;position 0:&quot;, stream.position);// 0<br>    bytes[0] = stream.readByte();<br>    trace(&quot;position 1:&quot;, stream.position);// 1<br>    fileStream.readBytes(bytes, stream.position,4);<br>    trace(&quot;position 2:&quot;, stream.position);// 5<br>    stream.close();<br>}</pre></div></p>
-</div>
-<div class="syntaxhighlighter  as3 ie" id="highlighter_408044"><br>
-</div>
-<div class="syntaxhighlighter  as3 ie" id="highlighter_408044">原文：<a target="_blank" target="_blank" href="http://www.cnblogs.com/crkay/archive/2011/10/25/2223726.html">http://www.cnblogs.com/crkay/archive/2011/10/25/2223726.html</a></div>
-</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -606,97 +305,7 @@ stream.openAsync(sourceFile, FileMode.READ);
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<div id="sina_keyword_ad_area2" class="articalContent   newfont_family">
-<div style="">
-<h2 style="font-size:20px; font-family:tahoma,helvetica,'microsoft yahei',arial; float:left; font-weight:normal; color:rgb(69,69,69); padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 10px; padding-right:0px">
-JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器</h2>
-</div>
-<div style="">
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-这里主要说下监听SWF的加载。<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-网上流传已久的监听方法，只能在IE（Activex插件下）下实现。在使用plugin的浏览器下无法监听。</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-首先贴张&nbsp;<wbr>chrome下载图</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<img title="" src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" name="image_operate_34031406250906205" alt="【转】JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器" style="margin-bottom:8px; max-width:758px; border-top:0px; border-right:0px; vertical-align:top; border-bottom:0px; clear:both; border-left:0px"></p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-这里提供一个可以监听所有浏览器的方式:</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-原作者在这里：<a target="_blank" href="http://blog.sebastian-martens.de/2010/05/preload-assets-with-load-complete-callback-for-single-assets-include-swfflash/" target="_blank">http://blog.sebastian-martens.de/2010/05/preload-assets-with-javascript-load-complete-callback-for-single-assets-include-swfflash/</a>&nbsp;<wbr></p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-我修改后方便阅读使用的使用的版本：（20140718更新了以下失效链接）</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<a target="_blank" href="http://115.com/file/an2apn9y#jsLoadSwf.rar" target="_blank"></a><a target="_blank" title="" href="http://pan.baidu.com/s/1sjLhJIH" target="_blank">http://pan.baidu.com/s/1sjLhJIH</a>&nbsp;<wbr>&nbsp;<wbr><br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:rgb(0,176,80)"><span style="font-family:Tahoma">注意我加载的SWF在我的空间，跨域以及本地都无法调用。请自行修改HTML中加载SWF的路径，并不要使用&nbsp;<wbr>file://来访问。</span></span></p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-你可以在我的网站查看效果</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<a target="_blank" href="http://luoee.com/lab/jsloadswf/" target="_blank">http://luoee.com/lab/jsloadswf/</a>&nbsp;<wbr>&nbsp;<wbr>本人小站暂时关闭<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-原理说明：</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-看了下作者的文件简单来说：还是使用了JS与一个loader的swf来完成监听的。</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-通过JS将要加载的文件地址传输给这个事先制作好的loader,通过这个swf来加载文件，同时监听加载完成时，调用JS来抛出事件。</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-这个demo不会显示出swf，只是用来监听使用。如果你的网站有很多swf(小游戏网站)，那么你可以这样来实现：</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-1&nbsp;<wbr>制作一个loading等待的图片（可以是广告图等）</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-2&nbsp;<wbr>等到监听到加载完毕时，关闭loading&nbsp;<wbr>,再重新使用你自己的代码来加载SWF并显示。（这时将会从缓存读取，注意safari最大缓存的单个文件是5M&nbsp;<wbr>至少目前是这么大）</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-也许你要问为什么不直接用它的方式来显示呢？</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-当让你需要修改它的代码，这个对很多人来说有一点难度吧，另外如果你加载SWF与页面有数据交互的话使用它的方式可能会失效！</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-如果你对FLASH和js都有一定了解，那么你也可以自己写一个loader,来实现这些功能。当然你在制作这个loader的时候可以跟具你自己的需求来自定义，这样就不需要再有上面的第2步了。</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-</p>
-<p style="padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-我在这里就不在新制作一个了。如果公司后期有需求，我再制作一下！并共享出来！</p>
-</div>
-</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -739,60 +348,7 @@ JS判断SWF,JPG加载完毕、兼容（Activex,plugIn）所有浏览器</h2>
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p><pre code_snippet_id="2234774" snippet_file_name="blog_20170301_1_5964035"  name="code" class="javascript">var i:Number=0;//用于下面循环
-
-
-<p>var webcontent:String=&quot;Sontin’s Blog &lt;b&gt;Welcome to 终吾一生&lt;/b&gt;&quot;;<br>var myXML:XML=&lt;websites&gt;<br>&lt;site name=&quot;Sontin’s Blog&quot; url=&quot;<a href="http://www.ldyy8.com" target="_blank" rel="noopener">http://www.ldyy8.com</a>&quot;&gt;<br>&lt;description&gt;{webcontent}&lt;/description&gt;<br>&lt;pagebyte&gt;1000&lt;/pagebyte&gt;<br>&lt;/site&gt;<br>&lt;site name=&quot;百度&quot; url=&quot;<a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a>&quot;&gt;<br>&lt;description&gt;百度一下，就知道&lt;/description&gt;<br>&lt;pagebyte&gt;500&lt;/pagebyte&gt;<br>&lt;/site&gt;<br>&lt;site name=&quot;谷歌&quot; url=&quot;<a href="http://www.google.com" target="_blank" rel="noopener">http://www.google.com</a>&quot;&gt;<br>&lt;pagebyte&gt;100&lt;/pagebyte&gt;<br>&lt;/site&gt;<br>&lt;/websites&gt;;</p>
-<p>trace(&quot;————————–初始XML————————————–&quot;);<br>trace(myXML);</p>
-<p>//先查找吧，下面操作都让XML变样了。<br>trace(&quot;————————–查找一————————————–&quot;);<br>//双点号(..)，又称为后裔访问符(the descendent accessor),访问当前元素的所有子元素<br>trace(&quot;找到[description]个数：&quot;+myXML..description.length());<br>trace(myXML..description);    //myXML.site[0]..description; 这样同样正常的</p>
-<p>trace(&quot;————————–查找二————————————–&quot;);<br>//通配符(<em>)<br>trace(&quot;通配符：&quot;+myXML.site[0].@</em>.toXMLString()); //查第一个节点的所有属性<br>trace(&quot;site节点的所有属性：&quot;);<br>trace(myXML.site.@*.toXMLString());    //查所有 site节点的所有属性</p>
-<p>trace(&quot;————————–查找三————————————–&quot;);<br>//大于 &gt;，小于&lt;，等于 == (双等哦，要不变修改了)<br>trace(myXML.site.(pagebyte==500));<br>trace(myXML.site.(pagebyte&gt;500));<br>//**必须每个site节点下都有pagebyte元素<br>//把中间的括号去了看看，会有新发现哦。</p>
-<p>trace(&quot;————————–查找四————————————–&quot;);<br>//查属性<br>trace(myXML.site.(@name==&quot;谷歌&quot;));<br>//**必须每个site节点下都有name属性</p>
-<p>trace(&quot;————————–查找五，正则————————————–&quot;);<br>trace(myXML.site.(pagebyte.match(/^1\d+/)));    //查找pagebyte第一个字符是 1的<br>trace(&quot;name中第一个字母是S的：&quot;+myXML.site.(@name.match(/^S\w+/)));<br>//**必须每个site节点下都有pagebyte元素，正则我也不太会用基础的表示一下好了。呵呵</p>
-<p>//添加<br>myXML.site[0].author=new XML();//添加一个空白节点(其实不用new也同样可以执行添加)<br>myXML.site[0].author.@name=&quot;子锡&quot;;//添加一个属性<br>myXML.site[0].author.@email=&quot;<a href="mailto:sontin@qq.com">sontin@qq.com</a>&quot;;//添加邮箱属性<br>myXML.site[0].author.school=&quot;社会大学&quot;;//添加一个子节点<br>//还有一些API 这就不提了，主要也就4项<br>/*<br>appendChild(child:Object):XML 在当前子元素列表之后添加<br>prependChild(child:Object):XML 在当前子元素列表之前添加<br>insertChildAfter(child1:Object,child2:Object):* 在子元素child1之后添加<br>insertChildBefore(child1:Object,child2:Object):* 在子元素child1之前添加</p>
-<p>*/</p>
-<p>//修改<br>myXML.site.description[0]=myXML.site.description[0]+&quot; 摆正心态，做好自己。&quot;;<br>myXML.site.@name[1]=myXML.site.@name[1]+&quot;一下&quot;;</p>
-<p>//删除(很简单，其实就是修改)<br>delete myXML.site[1].@url;    //删除节点属性<br>delete myXML.site[1].description;    //删除节点指定子元素<br>//myXML.site[1]=&quot;&quot;;//删除其下所有子节点(元素)<br>//delete myXML.site[1];//删除该节点，包括其下子节点(元素)</p>
-<p>//myXML=null; //删除整个XML呢？null就好了，但下面要判断哦;</p>
-<p>if (myXML!=null) {<br>    trace(&quot;———————-显示指定节点内容，没有输出空串————————–&quot;);<br>    trace(myXML.site.description[0]);<br>    trace(myXML.site[0].description);//建议</p>
-<pre><code>trace(&amp;quot;---------------------循环显示site-------------------------------------------&amp;quot;);
-//.length()为统计个数
-for (i=0; i&amp;lt;myXML.site.length(); i++) {
-    trace(&amp;quot;第&amp;quot; + i + &amp;quot;个：&amp;quot; + myXML.site[i]);
-}
-
-trace(&amp;quot;----------------------循环显示site.name------------------------------------------&amp;quot;);
-trace(myXML.site.@name);
-//.length()为统计个数
-for (i=0; i&amp;lt;myXML.site.@name.length(); i++) {
-    trace(&amp;quot;第&amp;quot; + i + &amp;quot;个name：&amp;quot; + myXML.site.@name[i]);
-}
-//这样也可以(建议使用，这样更能体现对象的意义)
-trace(&amp;quot;---这样也可以：&amp;quot;);
-for (i=0; i&amp;lt;myXML.site.length(); i++) {
-    trace(&amp;quot;第&amp;quot; + i + &amp;quot;个name：&amp;quot; + myXML.site[i].@name);
-}
-
-trace(&amp;quot;--------------------------最终的site--------------------------------------&amp;quot;);
-trace(myXML.site);
-
-trace(&amp;quot;--------------------------最终的XML--------------------------------------&amp;quot;);
-trace(myXML);</code></pre><p>}</pre><br><br><br></p>
-</p>
-<p>原文链接：http://bbs.9ria.com/blog-229904-21550.html</p>
-<p><br>
-</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -837,266 +393,7 @@ trace(myXML);</code></pre><p>}</pre><br><br><br></p>
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<div id="sina_keyword_ad_area2" class="articalContent   newfont_family">
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">&#20284;乎因为受这篇文章的影响<span><span style="font-family:Verdana">&nbsp;<wbr></span></span><a target="_blank" href="http://katemats.com/what-every-programmer-should-know-about-seo/" target="_blank"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">http://katemats.com/what-every-programmer-should-know-about-seo/</span></a><span><span style="font-family:Verdana">&nbsp;<wbr></span></span>于是我也觉得我应该写一个<a target="_blank" href="http://www.phodal.com/blog/every-programmer-should-know-how-seo/" target="_blank"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">每个程序员必知之SEO</span></a>，作为一个擅长前端兼SEO的设计师。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>搜索引擎是如何工作的</span>
-<blockquote>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">如果你有时间，可以读一下谷歌的框架：</span></p>
-</blockquote>
-<p align="left"><a target="_blank" href="http://infolab.stanford.edu/~backrub/google.html" target="_blank"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">http://infolab.stanford.edu/~backrub/google.html</span></span></a></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<blockquote>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">这是一个老的，有些过时纸，但非常平易近人，甚至在我们中间的非白皮书的读者图标微笑什么每个程序员都应该知道的关于搜索引擎优化和他们绝对概念的解释更详细，我只提一笔带过。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-</blockquote>
-<span>搜索时发生什么了</span>
-<ul>
-<li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-用户输入查询内容</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-查询处理以及分词技术</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-确定搜索意图及返回相关、新鲜的内容<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li></ul>
-<span><wbr></span><br>
-<br>
-<span>为什么需要SEO</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">这是一个有趣的问题，答案总会来源于为网站带来更多的流量。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>爬虫与索引</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">我们先看看来自谷歌的爬虫工作的一点内容</span></p>
-<blockquote>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">抓取是 Googlebot 发现新网页并更新这些网页以将网页添加到 Google索引中的过程。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">我们使用许多计算机来获取（或&quot;抓取&quot;）网站上的大量网页。执行获取任务的程序叫做Googlebot（也被称为漫游器或信息采集软件）。Googlebot使用算法来进行抓取：计算机程序会确定要抓取的网站、抓取频率以及从每个网站中获取的网页数量。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">Google的抓取过程是根据网页网址的列表进行的，该列表是在之前进行的抓取过程中形成的，且随着网站管理员所提供的站点地图数据不断进行扩充。Googlebot在访问每个网站时，会检测每个网页上的链接，并将这些链接添加到它要抓取的网页列表中。新建立的网站、对现有网站所进行的更改以及无效链接都会被记录下来，并用于更新
- Google 索引。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-</blockquote>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">也就是如原文所说:</span></p>
-<blockquote>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">谷歌的爬虫(又或者说蛛蛛)能够抓取你整个网站索引的所有页。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-</blockquote>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">为什么谷歌上可以搜索整个互联网的内容</span>？因为，他解析并存储了。而更有意思的是，他会为同样的内容建立一个索引或者说分类，按照一定的相关性，针对于某个关键词的内容。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">PageRank对于一个网站来说是相当重要的，只是这个相比也比较复杂。包括其他网站链接向你的网站，以及流量，当然还有域名等等。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>什么样的网站需要SEO？</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">下图是我的博客的流量来源</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<br>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">正常情况下除了像腾讯这类的QQ空间自我封闭的网站外都需要SEO，或者不希望泄露一些用户隐私如Facebook、人人等等</span></p>
-<ul>
-<li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-如果你和我的网站一样需要靠搜索带来流量</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-如果你只有很少的用户访问，却有很多的内容。</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-如果你是为一个公司、企业工作为以带来业务。</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-。。。<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li></ul>
-<br>
-<br>
-<span>SEO与编程的不同之处</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">SEO与编程的最大不同之处在于</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>编程的核心是技术，SEO的核心是内容。</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">内容才是SEO最重要的组成部分，这也就是腾讯复制不了的东西。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>SEO基础知识确保网站是可以被索引的</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">一些常见的页面不能被访问的原因</span></p>
-<br>
-<ul>
-<li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-隐藏在需要提交的表&#26684;中的链接</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-不能解析的JavaScript脚本中的链接</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-Flash、Java和其他插件中的链接</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-PowerPoint和PDF文件中的链接</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-指向被meta Robtots标签、rel=&quot;NoFollow&quot;和robots.txt屏蔽的页面的链接</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-页面上有上几百个链接</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-frame(框架结构)和iframe里的链接<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li></ul>
-<br>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">对于现在的网站来还有下面的原因，通过来说是因为内容是动态生成的，而不是静态的</span></p>
-<br>
-<ul>
-<li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-网站通过WebSocket的方法渲染内容</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-使用诸如Mustache之类的JS模板引擎<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li></ul>
-<br>
-<br>
-<span>什么样的网页可以被索引</span>
-<ul style="list-style-type:none; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 14px; padding-right:0px">
-<li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-<span>确保页面可以在没有JavaScript下能被渲染。对于现在JavaScript语言使用越来越多的情况，在使用JS模板引擎的时候也应该注意这样的问题。<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></li></ul>
-<ul style="list-style-type:none; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 14px; padding-right:0px">
-<li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-在用户禁用了JavaScript的情况下，保证所有的链接和页面是可以访问的。</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-确保爬虫可以看到所有的内容。那些用JS动态加载出来的对于爬虫来说是不友好的。</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-使用描述性的锚文本的网页。</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-限制的页面上的链接数量。除去一些分类网站、导航网站之类有固定流量，要不容易被认为垃圾网站。</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-确保页面能被索引。有一指向它的URL。</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-URL应该遵循最佳实践。如blog/how-to-driver有更好的可读性。<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li></ul>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">在正确的地方使用正确的关键词</span>
-<ul style="list-style-type:none; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 14px; padding-right:0px">
-<li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-把关键词放在URL中</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-关键词应该是页面的标签</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-带有H1标签</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-图片文件名、ALT属性带有关键词</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-页面文字</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-加粗文字</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-Descripiton标签<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li></ul>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br>
-<span>内容</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">对于技术博客而言，内容才是最需要考虑的因素。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">可以考虑一下这篇文章，虽然其主题是以SEO为主<span><span style="font-family:Verdana">&nbsp;<wbr></span></span><a target="_blank" href="http://www.phodal.com/blog/user-experience-writing-web-content/" target="_blank"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">用户体验与网站内容</span></a></span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">不可忽略的一些因素是内容才是最优质的部分，没有内容一切SEO都是无意义的。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>复制内容问题</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">一个以用户角度考虑的问题</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>用户需要看到多元化的搜索结果</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">所以对于搜索引擎来说，复制带来的结果：</span></p>
-<ul style="list-style-type:none; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 14px; padding-right:0px">
-<li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-<span>搜索引擎爬虫对每个网站都有设定的爬行预算，每一次爬行都只能爬行trpgr页面数。</span></li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-连向复制内容页面的链接也浪费了它们的链接权重。</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-没有一个搜索引擎详细解释它们的算法怎样选择显示页面的哪个版本。<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li></ul>
-<br>
-<br>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">于是上文说到的作者给了下面的这些建议:</span></p>
-<blockquote>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">避免从网上复制的内容（除非你有很多其他的内容汇总，以使它看起来不同 -我们做头条，对我们的产品页面的新闻片段的方式）。这当然强烈适用于在自己的网站页面以及。内容重复可以混淆搜索引擎哪些页面是权威（它也可能会导致罚款，如果你只是复制粘贴别人的内容也行），然后你可以有你自己的网页互相竞争排名！</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">如果你必须有重复的内容，利用相对=规范，让搜索引擎知道哪个URL是一个他们应该被视为权威。但是，如果你的页面是另一个在网络上找到一个副本？那么开始想出一些策略来增加更多的文字和信息来区分你的网页，因为这样重复的内容是决不可能得到好的排名。</span></p>
-</blockquote>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">——待续。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>保持更新</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">谷歌对于一个一直在更新的博客来说会有一个好的排名，当然只是相对的。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">对于一个技术博客作者来说，一直更新的好处不仅可以让我们不断地学习更多的内容。也可以保持一个良好的习惯，而对于企业来说更是如此。如果我们每天去更新我们的博客，那么搜索引擎对于我们网站的收录也会变得越来越加频繁。那么，对于我们的排名及点击量来说也算是一个好事，当我们可以获得足够的排名靠前时，我们的PR&#20540;也在不断地提高。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">更多内容可以参考:<a target="_blank" href="http://www.seomoz.org/blog/google-fresh-factor" target="_blank"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">Google
- Fresh Factor</span></a></span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>网站速度</span>
-<blockquote>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">谷歌曾表示在他们的算法页面加载速度问题，所以一定要确保你已经调整您的网站，都服从最佳做法，以使事情迅速</span></p>
-</blockquote>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">过去的一个月里，我试着提高自己的网站的速度，有一个相对好的速度，但是受限于域名解析速度以及VPS。</span></p>
-<p align="left"><a target="_blank" href="http://www.phodal.com/blog/use-traceroute-analyse-person-homepage-speed/" target="_blank"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">网站速度分析与traceroute</span></span></a></p>
-<p align="left"><a target="_blank" href="http://www.phodal.com/blog/ux-and-improve-website-load-speed/" target="_blank"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">UX与网站速度优化——博客速度优化小记</span></span></a></p>
-<p align="left"><a target="_blank" href="http://www.phodal.com/blog/nginx-with-ngx-pagespeed-module-improve-website-cache/" target="_blank"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">Nginx
- ngx_pagespeednginx前端优化模块编译</span></span></a></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>保持耐心</span>
-<blockquote>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">这是有道理的，如果你在需要的谷歌机器人抓取更新的页面，然后处理每一个页面，并更新与新内容对应的索引的时间因素。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">而这可能是相当长一段时间，当你正在处理的内容PB级。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-</blockquote>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">SEO是一个长期的过程，很少有网站可以在短期内有一个很好的位置，除非是一个热门的网站，然而在它被发现之前也会一个过程。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<span>链接</span>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">在某种意义上，这个是提高PR&#20540;，及网站流量的另外一个核心，除了内容以外的核心。<a target="_blank" href="http://www.phodal.com/blog/every-programmer-should-know-how-seo/" target="_blank"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">每个程序员必知之SEO</span></a></span></p>
-<br>
-<ul>
-<li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-链接建设是SEO的基础部分。除非你有一个异常强大的品牌，不需要干什么就能吸引到链接。</li><li style="list-style-type:disc; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px 0px 0px 2em; padding-right:0px">
-链接建设永不停止。这是不间断营销网站的过程。<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li></ul>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">关于链接的内容有太多，而且当前没有一个好的方法获取链接虽然在我的网站已经有了</span></p>
-<br>
-<br>
-<blockquote>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">同时寻求更多的链接是更有利更相关的链接可以帮助一样多。如果你有你的内容的分销合作伙伴，或者你建立一个小工具，或其他任何人都会把链接回你的网站在网络上-你可以通过确保各个环节都有最佳的关键字锚文本大大提高链路的相关性。您还应该确保所有链接到您的网站指向你的主域（<span><span style="font-family:Tahoma">&nbsp;<wbr></span></span><a target="_blank" href="http://www.yourdomain.com/" target="_blank">http://www.yourdomain.com</a><span><span style="font-family:Tahoma">&nbsp;<wbr></span></span>，像<a target="_blank" href="http://widget.yourdomain.com/" target="_blank">http://widget.yourdomain.com</a>不是一个子域）。另外，你要尽可能多的联系，以包含适当的替代文字。你的想法。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">另外，也许不太明显的方式，建立链接（或者至少流量）是使用社交媒体 - 所以设置你的Facebook，Twitter和谷歌，每当你有新的链接一定要分享。这些通道也可以作为一个有效的渠道，推动更多的流量到您的网站。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="font-family:inherit; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-</blockquote>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">由社交渠道带来的流量在现在已经越来越重要了，对于一些以内容为主导的网站，而且处于发展初期，可以迅速带来流量，可以参考一下这篇文章</span></p>
-<p align="left"><a target="_blank" href="http://www.phodal.com/blog/xunta-analytics-and-website-content/" target="_blank"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="color:#3d5998; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">寻ta分析与网站内容</span></span></a></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">一些更简单的办法就是交换链接，总之这个话题有些沉重，可能会带来一些负面的影响，如黑帽SEO。。。。</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">参考来源</span>:</span></p>
-<p align="left"><span style="font-family:Verdana,Arial,Tahoma,Helvetica,Georgia,sans-serif,STXihei,华文黑体,Hei; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">《SEO艺术》(The Art of SEO)</span></p>
-<br>
-<br>
-<br>
-<p>原文链接：<a target="_blank" href="http://blog.csdn.net/phodal/article/details/25891969" target="_blank">http://blog.csdn.net/phodal/article/details/25891969</a></p>
-</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -1139,57 +436,7 @@ Descripiton标签<br style="word-wrap:break-word; padding-bottom:0px; padding-to
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<div id="sina_keyword_ad_area2" class="articalContent   newfont_family">
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">话说，<a target="_blank" href="http://www.chenlinsheng.com/?tag=%E7%A8%8B%E5%BA%8F%E5%91%98" target="_blank">程序员</a>是一类特殊的品种，优秀的程序员更是如此——我们更愿意承认编程这种技能是一门艺术，而不是大家&#30524;中艰苦卓绝的工科课程。编程可能更像是数学、音乐，或者是在电视剧《Firefly》中Kaylee所用的魔法，它是那样让人沉醉。</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">优秀的程序员常常有这种感觉，天才是很难得的，更难以复制。</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">在数周以前，@zidarsk8跑过来告诉我“天哪，竟然会有这样的家伙，我才教会他怎样写代码，一转&#30524;他写得比我都要好了！可恶的是，这家伙在一个月之前甚至连变量是什么都不知道，这还是不是人啊！”</span></span></p>
-<p><a target="_blank" href="http://www.chenlinsheng.com/?cat=9" target="_blank"><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"></span></span></a>&nbsp;</p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">我答应他在<a target="_blank" href="http://www.chenlinsheng.com/" target="_blank">博客</a>中如实写出来。为什么有的人轻轻松松就能get编程这个技能？他们有什么特别之处？谁都能学会编程还是只有某些人才能成为一个合&#26684;的程序员，而想成为优秀的程序员是否更需要天生？</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">一年前我给一个高中学生做家教，他因为早先的编程课没有及&#26684;，然后他父母请了我来教他。在一个月的时间里我悉心传授，把我所知道的一切都教给了他，在我看来至少通过考试是没问题了的。</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">到月末的时候，他已经对循环、变量赋&#20540;等等了如指掌，连函数是代码包能做一定事情他都知道和理解了。临走，我不得不对他父亲这样说“我已经没什么好教的了，不过他还得需要练习来巩固这些。”</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">没错，内心里，我是很怀疑他是否能及&#26684;的。不过如果他的老师怜悯他的话，可能会过——不过，遗憾的是，我记得这个老师在我高中时代一点都不仁慈，特别喜欢看学生受苦受难。</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">还有一点要声明的是，我可不是个差老师——那个孩子还向别的学生推荐了我，并且所有孩子都给我发了感谢信——只是有些人天生就不是写代码的料，即便他们再努力，甚至还是连平庸二字都称不上。</span></span></p>
-<span>沉默的羔羊</span>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">Jeff
- Atwood在2006年出版的《SeparatingProgramming Sheep from Non-ProgrammingGoats》一书中提到一项研究，声称可以用之检测是否拥有<a target="_blank" href="http://www.chenlinsheng.com/?p=680" target="_blank">编程天赋</a>。</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">这个测试相当简单，例如：</span></span></p>
-<blockquote>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-a = 5<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-b = 20<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-a = b</p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-What are a and b now?</p>
-</blockquote>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">还有不少类&#20284;的测试例子。但是只有44％的学生形成了一个统一赋&#20540;的心智模型——即使是错误的。剩下的超过半数人失败了或者根本就回答不了。</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">更糟糕的是，在学了一个学期的编程之后，这个比例还是相同，还是只有44％的学生知道赋&#20540;如何作用。</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">很明显，有的人无论怎么学就是想不明白这些。</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">下面我介绍一个我认为更为简便的测试</span></span></p>
-<span>激情</span>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">有时候，当那些拥有年轻心态的家伙（人人都能学代码，年龄不是限制）拿到一个问题和两个工具，他们会利用这区区两个工具创造出四个工具，然后在网上搜索，找到更多的工具……这样一来，很快他们就有二十个工具，好家伙！哦，对了，我还没说这些家伙拿到的这个问题是什么？</span></span></p>
-<span>这个问题就是激情！</span>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">写代码就是需要这种完完全全不带丁点杂质的激情。当你为之深深陶醉，甚至兴奋不已的时候，还怕什么问题是解决不了的呢。即使你正在解决的这个问题，你也知道是毫无意义的……这就是拥有激情的伟大所在！</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">别担心你开始编程的年纪比别人大——要知道，很多研究已经表明，经验在这一行并不是重点——关键要看你对编程这玩意是否拥有百折不挠的激情。</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">因为一旦被点燃了激情，那么其他的问题就不再是问题了。你，就是天生的<a target="_blank" href="http://www.chenlinsheng.com/?p=920" target="_blank">程序员</a>！</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></span></p>
-<p><span style="color:#444444; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</span></span></p>
-<p><span style="word-wrap:break-word; color:rgb(68,68,68); padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-family:Helvetica,Arial,sans-serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">推荐阅读：<a target="_blank" href="http://www.chenlinsheng.com/?p=920" target="_blank"><span style="font-family:lusitana,serif; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="font-size:18px; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">你是程序员这块料吗？</span></span></a></span></span></p>
-<br>
-<p>原文链接：<a target="_blank" href="http://news.html5tricks.com/programmer-is-born.html" target="_blank">http://news.html5tricks.com/programmer-is-born.html</a></p>
-</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -1232,183 +479,7 @@ What are a and b now?</p>
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<div id="sina_keyword_ad_area2" class="articalContent   newfont_family">
-<table cellspacing="0" cellpadding="0">
-<tbody style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<tr style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<td style="word-wrap:break-word; font-size:14px; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">10.
- 注释 — 只解释了“how”却没有解释“why”</span></span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">入门级的编程课程通常会教育学生们写代码前先写注释、而且要尽量多注释。这种教育的出发点是“多注释肯定比少注释好、少注释肯定比没注释好”。可不幸的是，很多的程序员把这当成了一种任务，对每一行代码都注释一下。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<div style="overflow:hidden; word-wrap:break-word; border-top:rgb(204,204,204) 1px solid; border-right:rgb(204,204,204) 1px solid; border-bottom:rgb(204,204,204) 1px solid; zoom:1; color:rgb(102,102,102); padding-bottom:15px; padding-top:15px; padding-left:15px; margin:10px 0px; border-left:rgb(204,204,204) 1px solid; padding-right:15px; background-color:rgb(247,247,247)">
-<div style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<ol style="list-style-type:none; word-wrap:break-word; padding-bottom:0px!important; padding-top:0px!important; padding-left:0px!important; margin:0px 0px 0px 10px; padding-right:0px!important">
-<li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-r = n / 2; // 让 r 等于 n除以 2&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li><li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-// 当 r - (n/r) 大于 t时进行循环&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li><li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-while ( abs( r - (n/r)) &gt; t ) {&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li><li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-r = 0.5 * ( r &#43; (n/r)); // 设置 r 等于 r &#43; (n/r)的一半&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li><li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-}</li></ol>
-</div>
-<span style="font-size:12px; color:#336699; word-wrap:break-word; padding-bottom:0px; font-style:normal; padding-top:0px; padding-left:0px; margin:0px 0px 0px 43px; padding-right:0px">复制代码</span></div>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">经过这样的注释，你否明白了这段代码是干什么的？的确，我也没明白。问题就在于，虽然有大量的注释，可它们只是描述了代码是干什么了，却没有说明代码为什么要这样写。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">现在，请看一下我们采用另外一种方式对同一段代码进行的注释:</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<div style="overflow:hidden; word-wrap:break-word; border-top:rgb(204,204,204) 1px solid; border-right:rgb(204,204,204) 1px solid; border-bottom:rgb(204,204,204) 1px solid; zoom:1; color:rgb(102,102,102); padding-bottom:15px; padding-top:15px; padding-left:15px; margin:10px 0px; border-left:rgb(204,204,204) 1px solid; padding-right:15px; background-color:rgb(247,247,247)">
-<div style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<ol style="list-style-type:none; word-wrap:break-word; padding-bottom:0px!important; padding-top:0px!important; padding-left:0px!important; margin:0px 0px 0px 10px; padding-right:0px!important">
-<li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-//使用牛顿-Raphson算法求n的平方根近&#20284;&#20540;&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li><li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-r = n /2;&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li><li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-while ( abs( r - (n/r)) &gt; t ) {&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li><li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-r = 0.5 * ( r &#43; (n/r));&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-</li><li style="list-style-type:decimal-leading-zero; word-wrap:break-word; font-size:12px">
-}</li></ol>
-</div>
-<span style="font-size:12px; color:#336699; word-wrap:break-word; padding-bottom:0px; font-style:normal; padding-top:0px; padding-left:0px; margin:0px 0px 0px 43px; padding-right:0px">复制代码</span></div>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">这就好多了！也许我们还是不能完全明白这段代码的作用，但至少是有了一点方向了。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">注释是用来帮助读者理解代码的，不是用来解释语法的。我可以大胆的认为，读者对for循环的工作原理是了解的；所以没必要写这样的注释：“//对客户列表进行for循环操作”。读者不明白的是你的代码是做什么用的，你为什么要采用这种方式实现它。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">9.
- 干扰</span></span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">很少有程序员能在眨&#30524;之间从一种活动中转换到编程的状态中。通常情况下，我们更类&#20284;于需要慢慢启动的火车，而不是能突然加速的法拉利; 我们需要一定的时间才能进入工作状态，一旦我们进入稳定有效的工作状态，我们的工作效果和产出会很丰硕。不幸的是，当思路不断的被客户、经理、以及你的同事打断时，你的大脑很难进入编程的状态。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">当我们干一件事情时，有太多的琐事需要我们放在心里，我们需要先放下这个事情，处理那个人事情，回头又干这个事情，还不能有差错。这些干扰会中断我们的思路，而重新整理清楚思路又要你花费大量的时间，这是让人懊恼的、没有比这更让人泄气、让人有挫折感的过程了。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">8.
- 范围蠕变（Scope creep）</span></span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">范围蠕变（Scope creep） (也称作焦点蠕变（focus creep），需求蠕变（requirement creep）, 功能蠕变（featurecreep），以及其它一些乱七八糟的演变词语)，指在项目管理里项目的需求变更失控。当一个项目的范围没有明确的定义清楚、没有文档化、不受控时就会出现这种现象。这通常被认为是一种有负面影响的事情，应该尽力避免。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">范围蠕变通常会把一个简单的需求变成一个复杂惊人的需要大量时间的巨无霸。那些负责需求调研的家伙们只需要敲几下无辜的键盘就能把事情变成这样：</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">◆版本 1: 显示这个地区的地图</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">◆版本 2: 显示这个地区的地图，要三维立体的</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">◆版本 3: 显示这个地区的地图，要三维立体的，而且能够使用它作为飞行导航图</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">一个本来30分钟能完成的任务变成了一项要几百人/天才能完成的超级复杂的系统。更糟糕的是，大多数情况下，需求变更是发生在开发阶段的，这样一来你需要重写代码，重新回归，有时要把前几天才开发的代码删除。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">7.
- 管理者 — 完全不懂编程</span></span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">管理工作不是一种简单的工作。人是一种让人很讨厌的动物;我们善变、喜怒无常，我们都自以为天下第一。想让这样的一群人都感到满意和团结，你需要付出像山一样大的努力。然而，这并不意味着管理者就可以在对下属的工作毫不理解的情况下进行管理。当管理者对我们的工作没有一点知识概念时，后果只会是需求频繁变动，不现实的工期，普遍的挫折感（管理者和开发人员）。程序员们对此的抱怨相当普遍，这也是产生争执不合的根源。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">6.
- 写文档</span></span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">在说这个条目之前我先承认，我们确实有很多的文档生成工具，但据我的经验，这些工具都是只适合生成API文档，以供其他程序员参考。如果你开发的软件是平时人们每天都要用的，你必须要写一些外行人(例如你的实施，客服等)都能理解的文档手册。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">我们可以很容易的看出，有些事情程序员们极不愿意去做。 你可以简单的回顾一下所有的开源项目。人们百折不挠的对这些项目的一个索求是什么：文档。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-我敢打保票的说，不管在哪里，至少会有一半的程序员当要求写文档时会说：“不能让其他人去写吗？“。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">5.
- 程序 — 缺少文档</span></span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">我可从来没说过我们程序员是说一套做一套的人。 程序员们经常会在他们的项目里用到第三方的类库和应用。于是，我们需要文档。 很不幸呀，就像我在第6条里说的那样，程序员们痛恨写文档。这戏剧性的事情发生在我们自己身上。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">当你需要使用一个第三方类库时发现，至少有一半的API无从知道是干什么好用的，没有任何事情比这个更打击人的了。 函数poorlyNamedFunctionA() 和函数 poorlyButSimilarlyNamedF<wbr>unctionB()有什么区别？
- 在我使用 PropertyX 属性前是否需要测试一下它是不是 null&#20540;？我估计只有通过自己的测试和报错才能弄清楚!。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">4.
- 硬件</span></span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">任何一个曾经被叫去调试一个数据库服务器上奇怪的宕机现象，或是被叫去解决RAID驱动器不能正确的工作的问题的程序员，当发现是硬件问题时，都会痛苦不已。 人们有一种普遍的误解，认为程序员就是搞电脑的，他们肯定知道如何修理电脑。不可否认，有些程序员确实是个全才，但我估计，绝大部分程序员都不知道，或者根本不关心当程序被编译成机器码后如何工作的。我们只关心做出来的东西是否符合需求文档，这样我们才能集中精力去解决这上层的任务。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">3.
- 含糊不清</span></span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">“网站宕机了”. “XX功能工作不正常”。 处理含糊不清的任务是种痛苦。每次当非程序员被要求重现他们所遇到的问题时表现出的愤怒都让我吃惊不已。他们&#20284;乎不太明白，仅仅一句”它宕机了，修复它！”是无法让我们开始工作的，我们需要更多的信息。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">软件的运行是(大部分情况下)有迹可寻的。我们也乐见与此。请迁就我们，帮我们指出是在哪个阶段，什么情况下出的问题，而不是简单的说一句”修复它“。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">2.
- 其他程序员</span></span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">程序员经常和其他程序员合不来。诧异吗，但这是真的。这方面的事情我可以轻松的列出十大条，讲细点甚至可以单独写篇博客，所以这里我只列出几个常见的、让其他同事感到懊恼的程序员的特征：</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">◆脾气暴躁以至态度极不友好。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">◆不能明白什么时候该去讨论系统的架构，什么时候是应该去动手去做。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">◆无法进行有效的沟通，使用易于误解的专业术语。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">◆自己的事情处理不好。</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">◆对要做的程序和项目缺乏兴趣。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">那么，这最后的，但不是最糟糕的，序号为1的让程序员们烦恼的…</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><span style="word-wrap:break-word; font-weight:700; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">1.
- 自己写的代码 — 6个月以后的</span></span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">Don’t sneeze, I think I see a bug.</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">回顾一下自己以前写的代码，是否也会愁眉苦脸？当时怎么会这么愚蠢！怎么能编写成这样的东西！烧掉!丢到火里！</span></p>
-<p align="left" style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<span style="color:#333333; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">现实是，软件技术界是一个不断变化的世界。 今天被看成是最好的方式，明天也许就会过时。我们不可能写出完美的代码，因为判断我们的程序好坏的标准日新月异。这令人很不爽，你的作品，今天看来是那么的完美，但也许不久之后就会变成被人嘲笑的对象了。真是让人沮丧，因为不论我们如何努力的学习最新最棒的开发工具，设计，框架，以及开发方法，我们总是比最新的技术发展趋势慢了一拍。对于我来说，这是做一个程序员最苦恼的事情了。我们不断的升级技术，是为了让软件更好，但却禁不住感到，我就像一个做沙毯（sand-painting）的和尚。</span></p>
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<br style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p style="word-wrap:break-word; padding-bottom:15px; padding-top:15px; padding-left:0px; margin:0px; padding-right:0px">
-原文链接：<a target="_blank" href="http://www.itjhwd.com/cxyfn/" target="_blank">http://www.itjhwd.com/cxyfn/</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -1451,51 +522,7 @@ r = 0.5 * ( r &#43; (n/r));&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<div id="sina_keyword_ad_area2" class="articalContent   newfont_family">
-<table cellspacing="0" cellpadding="0">
-<tbody style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<tr style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<td style="word-wrap:break-word; font-size:14px; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">1、有人曾说，做程序员的人，都是疯子，做长了往往入戏太深，成天与代码打交道，话都很少说，所以评论程序员们都是以后连妞都泡不到的人，我听后，我可以这样说，泡妞好比一个方法，他人是学习方法，而程序员呢，是能制造方法。</span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">2、做程序员的女朋友幸福不？这个问题记得以前有人问过我女朋友，我当时当场回答那人，我说：“做程序员的女朋友，不一定幸福，而做我的女朋友呢？绝对幸福”所以说呢，事在人为。</span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">3、程序员的生活单调不单调？对于生活，我无法用单调这个词来形容，因为每个人都有自己喜欢的生活，可能我呢，喜欢看书，研究程序，听歌，爬山，但其他人不一定。到底什么样的生活不单调呢？我们说不清楚，今天平淡，明天激情，后天浪漫，这个我相信很容易做到，但一年365天，有那么多花样供我们娱乐吗？所以呢，人还是坚持在一块领域比较好！</span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px"><img title="20140516_201109_220.jpg" name="aimg_197685" alt="20140516_201109_220.jpg" src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" width="299" style="word-wrap:break-word; border-top:0px; border-right:0px; border-bottom:0px; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; border-left:0px; padding-right:0px"></span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">
-&nbsp;<wbr></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">4、程序员都不帅？做程序员呢，长期与电脑打交道，天天饱受辐射的摧残，很多人就这么认为，怪了，难道上帝创造人类的时候，总给懂得用脑的人一个丑陋的外表？我想不是吧，每个人的魅力都因不同角色而得到不同的结论。俗话说得好：萝卜白菜各有所爱！</span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">5、做程序员累不累？累，真的很累，没办法，我们老爸不是李嘉诚，所以呢，无论我们选择了哪一行累是必须的！</span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">6、做程序员好玩不？好玩，真的！如果你的兴趣放在这个领域，绝对好玩，你足以能感受到每一行代码给你带来的满足感与兴奋度！所以说呢，好玩不好玩，不是看行业，而是看自己的兴趣！</span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">7、做程序员要学习些什么？这个就比较难回答了，我想也没谁能一一说清楚到底要学哪些吧，问这个问题的一般都是新人，而且他的心我能理解，他自己想程序员，而又有一点顾虑，顾虑自己学不好，而世间往往只有自信才能做到自立，万事开头难，跨出第一步后，我们就知道怎么做了，所以不要浮躁，做就对了！</span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">8、做程序员是不是收入很高？如果你出于这一点来做程序员，我相信这个职位满足不了你，你还不如回家砸锅卖铁，之后背着所有财产去澳门压一把大小来的实际，来的迅速！</span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">9、做程序员是不是吃青春饭？每样事，只要我们认为是真的，它就一定是真的，反之亦然，如果你愿意，你在这个行业做到60岁，也没人反对，只要你努力，什么都能成真！</span></p>
-<p style="word-wrap:break-word; padding-bottom:0px; text-align:left; padding-top:0px; padding-left:0px; margin:0px; line-height:24px; padding-right:0px">
-<span style="color:#272a30; word-wrap:break-word; padding-bottom:0px; padding-top:0px; padding-left:0px; margin:0px; padding-right:0px">10、每一个好的程序背后都曾有无数个BUG，有BUG是好事，不要害怕，而我们找不到BUG，那才是害怕的！</span></p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -1547,9 +574,9 @@ r = 0.5 * ( r &#43; (n/r));&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word
         
         
         <span>
-  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
   <span class="division">|</span>
-  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
 </span>
         
       </li>
@@ -1561,7 +588,7 @@ r = 0.5 * ( r &#43; (n/r));&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word
       <li>
         <!-- cnzz统计 -->
         
-        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278938767&amp;web_id=1278938767'></script>
         
       </li>
     </ul>
@@ -1605,15 +632,15 @@ r = 0.5 * ( r &#43; (n/r));&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+      <a class="nav-item-link" href="/links">友情链接</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
+      <a class="nav-item-link" href="/projects">项目</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" href="/about">关于我</a>
     </li>
     
   </ul>
@@ -1622,7 +649,7 @@ r = 0.5 * ( r &#43; (n/r));&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word
   <ul class="nav">
     <li class="nav-item">
       
-      <a class="nav-item-link nav-item-search"  title="Search">
+      <a class="nav-item-link nav-item-search"  title="搜索">
         <i class="ri-search-line"></i>
       </a>
       
@@ -1656,13 +683,13 @@ r = 0.5 * ( r &#43; (n/r));&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word
   <div class="reward-box">
     
     <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <img class="reward-img" src="/images/alipay.jpg">
       <span class="reward-type">支付宝</span>
     </div>
     
     
     <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <img class="reward-img" src="/images/wechat.jpg">
       <span class="reward-type">微信</span>
     </div>
     
@@ -1673,23 +700,6 @@ r = 0.5 * ( r &#43; (n/r));&nbsp;<wbr>&nbsp;<wbr><br style="word-wrap:break-word
 
 
 <script src="/js/lazyload.min.js"></script>
-
-<!-- Subtitle -->
-
-<script>
-  try {
-    var typed = new Typed("#subtitle", {
-      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
-      startDelay: 0,
-      typeSpeed: 200,
-      loop: true,
-      backSpeed: 100,
-      showCursor: true
-    });
-  } catch (err) {
-    console.log(err)
-  }
-</script>
 
 <!-- Tocbot -->
 

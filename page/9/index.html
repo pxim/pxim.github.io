@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html lang="default">
 
 
 <head>
@@ -47,7 +47,7 @@
 <section class="cover">
     
       
-      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
+      <a class="forkMe" href="https://github.com/pxim"
         target="_blank"><img width="149" height="149" src="/images/forkme.png"
           class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
     
@@ -76,6 +76,24 @@
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 
+
+<!-- Subtitle -->
+
+  <script>
+    try {
+      var typed = new Typed("#subtitle", {
+        strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+        startDelay: 0,
+        typeSpeed: 200,
+        loop: true,
+        backSpeed: 100,
+        showCursor: true
+      });
+    } catch (err) {
+      console.log(err)
+    }
+  </script>
+  
 <div id="main">
   <section class="outer">
   <article class="articles">
@@ -111,32 +129,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p>在微信群，好友消息，朋友圈，填写下面链接，点击链接会跳转到相应的功能</p>
-<p>&nbsp;</p>
-<p>weixin://dl/profile 个人信息</p>
-<p>weixin://dl/scan 扫一扫<br>
-weixin://dl/feedback 反馈<br>
-weixin://dl/moments 朋友圈<br>
-weixin://dl/settings 设置<br>
-weixin://dl/notifications 消息通知设置<br>
-weixin://dl/chat 聊天设置<br>
-weixin://dl/general 通用设置<br>
-weixin://dl/officialaccounts 公众号<br>
-weixin://dl/games 游戏<br>
-weixin://dl/help 帮助<br>
-weixin://dl/feedback 反馈<br>
-weixin://dl/features 功能插件</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -179,49 +172,7 @@ weixin://dl/features 功能插件</p>
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<div style="top:0px">&#65279;&#65279;</div>
-<div>感觉dom大神的解惑</div>
-<div><br>
-</div>
-<div>关于引用计数法，注意引用的方向性就行。&nbsp;&nbsp;A.addEventListner(B.func),&nbsp;那么是增加了A对B的引用。如果A是不可回收的对象，比如全局的Stage，或者单例。那不移除就一定会导致B无法回收。如果A是可以回收的对象，那无所谓，这个引用无效。<br>
-A.addEventListner(B.func)&nbsp;，对A本身没有影响。是A引用别人了，不是别人引用A。还是那句话，注意方向性。</div>
-<div><br>
-</div>
-<div>A.addChild(B)也是同理。<br>
-倒霉的都是B<br>
-<br>
-</div>
-<div>引用计数实际回收中其着重的情况很小，大部分是根节点遍历法起作用。主要就是看引用的方向性，一个对象反向追溯对它的所有引用，无法到达一个根节点就判定这个对象可以回收。根节点通常有stage，或者其他单例。也指一切确定无法回收的对象。</div>
-<div><br>
-</div>
-<div>
-<div>就是一个对象从任何方式你都再也无法访问到它，它就能被回收。<br>
-说的不是标记清除啊。v8的回收机制跟这个根节点遍历法是一个原理。拷贝整块内存到新的地方。<br>
-访问不到的全都扔掉了。</div>
-</div>
-<div><br>
-</div>
-<div>就是从几个根节点开始遍历。被根引用的全都无法回收，进入新内存区。旧区域整个删除。根本不考虑循环引用还是什么情况，只要从根无法到达就扔掉。</div>
-<p><br>
-</p>
-<div>大部分语言的垃圾回收器都实现了这两种机制：引用计数和根节点遍历，实际项目里的对象循环引用非常多，所以引用计数这种设计实际上一直都没怎么派上用场。大部分是根节点遍历法。V8更激进点，按照它的官方文档描述的话，就只有根节点遍历法。</div>
-<div><br>
-</div>
-<div>这篇文章也是介绍内存管理的：<a target="_blank" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Memory_Management</a></div>
-<div><br>
-</div>
-<div style="top:17px">&#65279;&#65279;</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -264,38 +215,7 @@ A.addEventListner(B.func)&nbsp;，对A本身没有影响。是A引用别人了�
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p>流程：</p>
-<p>1.先开启本机IIS服务器</p>
-<p>具体开启流程如下：<a target="_blank" href="http://www.jb51.net/article/29787.htm" target="_blank">http://www.jb51.net/article/29787.htm</a></p>
-<p><br>
-</p>
-<p>2.添加服务器MIME类型，</p>
-<p>按照以下两个教程把所有的MIME类型都添加一遍，</p>
-<p>需要添加的MIME：<a target="_blank" href="http://blog.csdn.net/arvin0/article/details/50857810" target="_blank">http://blog.csdn.net/arvin0/article/details/50857810</a></p>
-<p>添加MIME的方法：<a target="_blank" href="http://jingyan.baidu.com/article/fa4125acb4838728ac7092bf.html" target="_blank">http://jingyan.baidu.com/article/fa4125acb4838728ac7092bf.html</a></p>
-<p><br>
-</p>
-<p>3.移动端链接本机发出的wifi，然后登录对应的网址进行测试</p>
-<p><br>
-</p>
-<p>ps：要是想让别人通过数据流量也能访问，放在本机上的H5页面，就必须把本机IIS服务器再进行一些设置，</p>
-<p>教程：<a target="_blank" href="http://jingyan.baidu.com/article/4e5b3e1973d4b191901e2434.html">http://jingyan.baidu.com/article/4e5b3e1973d4b191901e2434.html</a></p>
-<p><br>
-</p>
-<div style="top:0px">&#65279;&#65279;</div>
-<div style="top:0px">&#65279;&#65279;</div>
-<div style="top:0px">&#65279;&#65279;</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -340,134 +260,7 @@ A.addEventListner(B.func)&nbsp;，对A本身没有影响。是A引用别人了�
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>目的：动画设计师用Adobe Animate CC做好动画素材，发布好之后，交给程序员写交互代码；在WebStorm之类的ide里操纵 Animate 里面的变量，class等。</p>
-
-<p> </p>
-
-<p>前提环境：</p>
-
-<p>①安装好Adobe Animate CC</p>
-
-<p>②安装好WebStorm，或者Sublime Text 2，Visual Studio Code之类的编程ide</p>
-
-<p>③有个HTML5 动画（canvas 项目）</p>
-
-<p><strong>视频教程：</strong></p>
-
-<p>链接：<a href="https://pan.baidu.com/s/13nqBcH9HAa3RSFOiH-QzYg%C2%A0" target="_blank" rel="noopener">https://pan.baidu.com/s/13nqBcH9HAa3RSFOiH-QzYg </a><br />
-提取码：45wl </p>
-
-<p> </p>
-
-<p><strong>图文教程：</strong></p>
-
-<p>流程：</p>
-
-<p>1、把动画文件从 Adobe Animate里发布出来，后有一堆文件</p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20160726152710695?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p> </p>
-
-<p>2、然后把发布后的文件拷贝到你在WebStorm新建的web项目文件夹里，就可以了，没有像以前flash cs和flash builder搭配的复杂，不需要在Adobe Animate里填写类路径。</p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20160726152714820?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p> </p>
-
-<p>主要有以下点要点：</p>
-
-<p>一、如何让库中的MC动画，在html中加载，显示出来</p>
-
-<p>1、新建一个view类，然后在这个类里面建一个变量 back = animate 库中的 page，然后把 back加载到view类里，代码如下图</p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20160726151706847?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p> </p>
-
-<p>2、把view类加载到舞台上，代码如下图</p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20160726151709556?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p> </p>
-
-<p>二、如何在js中控制，新建，获取MC里的变量等等</p>
-
-<p>1、如下图</p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20160726150605853?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p> </p>
-
-<p>三、animate里发出事件，WebStorm里如何接收</p>
-
-<p>1、首先是 animate 里发出事件，如图</p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20160726150417528?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p>2、然后是 WebStorm 里接收 事件并处理，如图</p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20160726150846373?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20160726150421022?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p> </p>
-
-<p>四、自适应</p>
-
-<p>1、animate cc 提供了自适应和舞台居中的功能，具体设置如下图红框：</p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20161011134823534?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p>当然自适应，居中，缩放填充的功能，根据你自己项目需求选择。</p>
-
-<p> </p>
-
-<p>五、预加载设置</p>
-
-<p>动画较大，初始打开的时候会白屏很久，这时候选择预加载器，可以有个加载loading，当做过渡，具体如下图红框：</p>
-
-<p><img alt="" class="has" src="https://img-blog.csdn.net/20161011135132553?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" /></p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p>六、本例DEMO的完整代码</p>
-
-<p>下载链接：链接：<a href="http://pan.baidu.com/s/1boXnAlL" target="_blank" rel="noopener">http://pan.baidu.com/s/1boXnAlL</a> 密码：2cbj</p>
-
-<p> </p>
-
-<p>PS：目前用 adobe animate发布的文件中，mcTest.html这个文件暂时就没有作用了，现在用我新建的index.html 这个文件来代替，</p>
-
-<p>等我以后再摸索看看，是否可以直接用mcTest.html。</p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p>﻿﻿</p>
-
-<p>﻿﻿</p>
-
-<p>﻿﻿</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -512,36 +305,7 @@ A.addEventListner(B.func)&nbsp;，对A本身没有影响。是A引用别人了�
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<div style="top:0px">&#65279;&#65279;</div>
-<p>前段时间，领导说客户要一个平板版本的视频播放器，把我们做的一些视频资源放进去，要是本地的；我们部门又没有app开发程序员，正好又前段我在实验egret的app打包功能，就说用egret做(ps：本来想要air做的，后来想用新技术做)，接下来了，然后真正做的时候，发现egret的native版本video功能还没有开发完成，我又不能半啦啦放弃吧，那多丢人，后来晨哥，帮我联系了张宇大神，负责这块的，临时修了点BUG，最后加上设计上的一些规避，算是弄出来一个 native版本的视频播放器，不过是android端的，ios端的native，官方还没支持，还好客户指定三星平板；<br>
-<br>
-注意点：①，H5的video标签，打包navite后是没有用的，我才开始写了一版用video标签实现的（因为自带现成的播放控件），后来只好改成用egret的video了；<br>
-&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;②，目前native版本的egret的video是没有内置播放控件的，只好写一个；关键在于在移动端上，视频是置于最顶层的，控件没有办法在视频上层，做不了浮动控件的效果，只好设计上规避，最后还好交差了。<br>
-&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;③，目前只支持canvas模式<br>
-<br>
-现在我把项目中 关于native视频播放器的代码摘出来，以及apk，希望给那些像我一样，需要做native版本视频播放器，或者想做h5，native两个版本通用的，等等情况，给个参考；毕竟直接用官方目前edn提供的案例，坑比较多；<br>
-<br>
-PS：希望egret的大神们，早点把video（H5，native两个版本能通用）搞定，并且能做浮动播放控件。<br>
-<br>
-<span style="font-size:24px"><span style="color:red">Egret源码&#43;android工程&#43;apk：</span></span><br>
-<span style="font-size:12px"><span style="color:black">拿过去能直接运行的</span></span></p>
-<p><span style="font-size:12px"><br>
-</span></p>
-<p class="showhide">Egret引擎版本：3.1.4<br>
-链接：<a target="_blank" href="http://pan.baidu.com/s/1jIwbrM2" target="_blank">http://pan.baidu.com/s/1jIwbrM2</a> 密码：v7g1<br>
-<br>
-附送wing3的打包APP功能注意点：<a target="_blank" href="http://bbs.egret.com/thread-19862-1-1.html" target="_blank"><span style="color:#0066cc">http://bbs.egret.com/thread-19862-1-1.html</span></a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -586,46 +350,7 @@ PS：希望egret的大神们，早点把video（H5，native两个版本能通用
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<pre code_snippet_id="1759716" snippet_file_name="blog_20160713_1_1788861"  code_snippet_id="1759716" snippet_file_name="blog_20160713_1_1788861" class="javascript" name="code">private var a:Loader = new Loader();
-        private function test():void
-        {
-            a.load(new URLRequest(&quot;assets/冷却液管.png&quot;));
-            a.contentLoaderInfo.addEventListener(Event.COMPLETE, an);
-        }
-        private function an(evt:Event):void 
-        {   
-            var hh:BitmapData = new BitmapData(a.content.width,a.content.height,false,0xcccccc);
-            var kk:Bitmap = new Bitmap(hh);
-            addChild(kk);
-            kk.x = 200;
-
-            var tu2:Bitmap=Bitmap(a.content as Bitmap);
-//            addChild(tu2);
-            var yan:uint;
-            for (var i:uint = 0; i&lt;tu2.width; i++) 
-            {
-                for (var j:uint = 0; j&lt;tu2.height; j++) 
-                {
-                    yan = (a.content as Bitmap).bitmapData. getPixel32 (i, j);
-                    if (yan&lt;=0)  // 要抠取的颜色 
-                    {
-//                        tu2.bitmapData. setPixel32 (i,j,0xffff0000);
-                        hh. setPixel (i,j,0xff0000);
-                    }
-                }
-            }   
-        }</pre><br>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -670,22 +395,7 @@ PS：希望egret的大神们，早点把video（H5，native两个版本能通用
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<div style="top:0px">
-<pre>&#65279;&#65279;</pre>
-</div>
-<pre>一、赛车类算法：</pre>
-<pre><a target="_blank" target="_blank" href="http://codeincomplete.com/posts/2012/6/23/javascript_racer_v1_straight/">http://codeincomplete.com/posts/2012/6/23/javascript_racer_v1_straight/</a></pre>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -728,66 +438,7 @@ PS：希望egret的大神们，早点把video（H5，native两个版本能通用
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<pre><span style="font-family:Microsoft YaHei; color:#2e2e2e"><strong>egret里使用Html5的Video标签</strong></span></pre>
-<pre><span style="font-family:Microsoft YaHei; color:#2e2e2e">egret里使用Html5的Video标签的demo:</span></pre>
-<div style="top:0px">
-<pre>链接：<a target="_blank" target="_blank" href="http://pan.baidu.com/s/1nuNyqRR">http://pan.baidu.com/s/1nuNyqRR</a> 密码：x58i&#65279;&#65279;</pre>
-</div>
-<div style="top:0px">
-<pre>&#65279;&#65279;
-
-<p></pre></p>
-</div>
-<pre></pre>
-<pre>//——————————————————————————————————————————————//
-其他video实现方式参考资料
-</pre>
-<pre>H5中video属性（w3school api）</pre>
-<pre><a target="_blank" target="_blank" href="http://www.w3school.com.cn/tags/tag_video.asp">http://www.w3school.com.cn/tags/tag_video.asp</a>
-
-<p></pre></p>
-<pre></pre>
-<pre>H5视频解决方案：</pre>
-<pre><a target="_blank" target="_blank" href="http://www.cnblogs.com/wellsoho/p/3498852.html">http://www.cnblogs.com/wellsoho/p/3498852.html</a>
-
-</pre>
-<pre></pre>
-<pre>html5 对视频&#26684;式的支持，可以参考这个
-<a target="_blank" target="_blank" href="http://www.w3school.com.cn/html5/html_5_video.asp">http://www.w3school.com.cn/html5/html_5_video.asp</a>
-
-</pre>
-<pre></pre>
-<pre>移动端，使用video代替序列帧<span style="font-family:Microsoft YaHei; color:#2e2e2e">动画的设想以及参考</span></pre>
-<pre><span style="font-family:Microsoft YaHei; color:#2e2e2e"><a target="_blank" target="_blank" href="http://web.jobbole.com/83540/">http://web.jobbole.com/83540/</a></span></pre>
-<pre><span style="font-family:Microsoft YaHei; color:#2e2e2e">
-</span></pre>
-<pre><span style="font-family:Microsoft YaHei; color:#2e2e2e">在canvas里添加video</span></pre>
-<pre><span style="font-family:Microsoft YaHei; color:#2e2e2e"><a target="_blank" target="_blank" href="http://www.cnblogs.com/iamzhanglei/archive/2011/11/21/2256671.html">http://www.cnblogs.com/iamzhanglei/archive/2011/11/21/2256671.html</a></span></pre>
-<pre><span style="font-family:Microsoft YaHei; color:#2e2e2e">
-</span></pre>
-<div style="top:0px">
-<pre></pre>
-</div>
-<div style="top:14px">
-<pre>&#65279;&#65279;</pre>
-</div>
-<div style="top:51px">
-<pre>&#65279;&#65279;</pre>
-</div>
-<div style="top:0px">
-<pre>&#65279;&#65279;</pre>
-</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -830,97 +481,7 @@ PS：希望egret的大神们，早点把video（H5，native两个版本能通用
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p>流程：1.安装好wing 3，然后 插件——Egret项目工具——发布移动APP——Build android native project</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="https://img-blog.csdn.net/20160620103736595?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.配置发布环境：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Android</p>
-<ul>
-<li>1.egret engine <a target="_blank" href="http://www.egret.com/products/engine.html" target="_blank">
-点击下载</a> </li><li>2.android sdk <a target="_blank" href="http://pan.baidu.com/s/1dD8WUL7" target="_blank">
-mac版下载</a> <a target="_blank" href="http://pan.baidu.com/s/1gdsDRn9" target="_blank">
-windows版下载</a></li><li>3.java sdk <a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">
-mac版下载</a> <a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">
-windows版下载</a></li><li>4.ant <a target="_blank" href="http://ant.apache.org/bindownload.cgi" target="_blank">
-点击下载</a></li><li>5.egret-android-support <a target="_blank" href="http://www.egret.com/products/products-others.html#egret-support" target="_blank">
-点击下载</a></li><li></li></ul>
-<p>配置图：<img src="https://img-blog.csdn.net/20160630114235440?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""></p>
-<p><br>
-</p>
-<p><span style="color:#ff0000">可能会遇到的问题：</span></p>
-<p><span style="color:#990000">1.问题：提示资源名字错误‘</span></p>
-<p>&nbsp;解决方法：所resource目录下的所有资源，包括：图片，音乐，视频，xml等不能有中文，特殊符号，空&#26684;等，必须英文命名：</p>
-<p><br>
-</p>
-<p><span style="color:#990000">2.问题：雪碧图的png图片不规范</span></p>
-<p>&nbsp; 解决方法：重新导出雪碧图，直到图片&#26684;式正确为止；</p>
-<p><span style="color:#990000"><br>
-</span></p>
-<p><span style="color:#990000">3.问题：ERROR：SWT folder &quot;&quot; does not exist.</span></p>
-<p>Please set ANDROID_SWT to point to the folder containing swt.jar for your platform</p>
-<p>&nbsp;如下图错误，原因是没有正确配置JAVA的环境变量</p>
-<div class="audio-wp audio-wp-1" style="display:inline-block"><span class="audio-inner"><span class="audio-icon"></span><span class="audio-icon-2"></span></span></div>
-<p><img width="300" alt="" src="http://bbs.egret.com/forum.php?mod=image&amp;aid=11746&amp;size=300x300&amp;key=c7ccd989ef5273f2&amp;nocache=yes&amp;type=fixnone&amp;ramdom=rN1Gm" border="0"></p>
-<p>&nbsp;解决方法：按照这个教程的流程走一遍就OK了,<a target="_blank" href="http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html" target="_blank">http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html</a></p>
-<p><br>
-</p>
-<p><span style="color:#990000">4.问题：d:EgretProjects/apptest/MaintainPlan2_android/MaintainPlan2/proj.android is not a valid project(AndroidManifest.xml not found)</span></p>
-<p>出现 如下图所示，提示缺少AndroidManifest.xml这个文件</p>
-<p><img width="300" alt="" src="http://bbs.egret.com/forum.php?mod=image&amp;aid=11748&amp;size=300x300&amp;key=0295ae3346f6f17b&amp;nocache=yes&amp;type=fixnone&amp;ramdom=YJ1GI" border="0"></p>
-<p>解决方法：新建一个Game项目，然后用这个项目发布一次app，成功后，再发布原理的项目，基本就会成功了。</p>
-<p><br>
-</p>
-<p><span style="color:#990000">5.问题：本地有视频文件的，发布APP不成功，错误，如下图所示：</span></p>
-<p><img alt="" src="https://img-blog.csdn.net/20160620101852572?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></p>
-<p>解决方法：</p>
-<p>①.项目名字不能带特殊字符，不能是数字开头，如“120-media-video”，这样子不行。</p>
-<p>②.要用最新版本的Egret Engine和Egret Android Support</p>
-<p>③.egret engine 3.1.2版本的egret.video不支持webGL模式，要改成canvas模式</p>
-<p><br>
-</p>
-<div style="top:0px"><span style="color:#990000">6.问题：apk界面，固定横屏问题，</span></div>
-<div style="top:0px">&nbsp;解决方法：在wing里修改屏幕横竖模式没有作用，要在发布的时候生成的android项目里改，找到AndroidManifest.xml文件，打开，修改<br>
-</div>
-<div style="top:0px"><span class="pln">android</span><span class="pun">:</span><span class="pln">screenOrientation</span><span class="pun">=</span><span class="str">&quot;landscape&quot;，然后用eclipse打开这个<span class="pln">android项目，编译生成apk</span></span>&#65279;&#65279;<br>
-</div>
-<div style="top:259px">具体参考文章：<a target="_blank" href="http://edn.egret.com/cn/docs/page/820" target="_blank">http://edn.egret.com/cn/docs/page/820</a></div>
-<div style="top:259px"><br>
-</div>
-<div style="top:259px"><span style="color:#990000">7.问题：apk图标替换</span></div>
-<div style="top:259px">&nbsp;解决方法：将项目中的res下和drawable有关的图片换掉就可以了</div>
-<div style="top:259px"><br>
-</div>
-<div style="top:259px"><span style="color:#990000">8.问题：apk名字更换</span></div>
-<div style="top:259px">解决方法：首先找到对应安卓项目下的AndroidManifest.xml文件，首先确定这个xml的编码&#26684;式是 utf-8，不是的话修改成 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;，不然app命名中文会出问</div>
-<div style="top:259px">&nbsp;方法①，在AndroidManifest.xml里按照下图所示方法更改，改好之后，然后再用eclipse编译，打包apk就行了。&#65279;&#65279;</div>
-<div style="top:0px"><img alt="" src="https://img-blog.csdn.net/20160624144552130?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></div>
-<div style="top:0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
-<div style="top:0px">方法 ②点击 &nbsp;插件——Egret项目工具——发布移动APP——Settings，修改里面的名字，如下图，不过wing3.1.1，这个功能好像有BUG，暂时修改这个没有用，方法一管用。</div>
-<div style="top:0px">&#65279;&#65279;</div>
-<div style="top:880px"><img alt="" src="https://img-blog.csdn.net/20160624145002532?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></div>
-<div style="top:880px"><br>
-</div>
-<div style="top:880px"><span style="color:#990000">9.问题：手动删除了对应的安卓项目，导致IDE在按照已有记录的路径去查找项目时失败。</span></div>
-<div style="top:880px">&nbsp;&nbsp; 解决方法：打开wing的项目，打开 egretProperties.json 文件，然后按下图操作</div>
-<div style="top:880px"><img alt="" src="https://img-blog.csdn.net/20160624150845327?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></div>
-<p><br>
-</p>
-<div style="top:880px">&#65279;&#65279;</div>
-<div style="top:930px">&#65279;&#65279;</div>
-<div style="top:985px">&#65279;&#65279;</div>
-<div style="top:1064px">&#65279;&#65279;</div>
-<div style="top:1139px">&#65279;&#65279;</div>
-<div style="top:2184px">&#65279;&#65279;</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -965,85 +526,7 @@ windows版下载</a></li><li>4.ant <a target="_blank" href="http://ant.apache.or
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<div style="top:0px">
-<h3><strong>&#65279;&#65279;一 、webstorm软件下载，破解</strong></h3>
-<strong>1、WebStorm 10</strong></div>
-<p>下载地址：<a target="_blank" target="_blank" href="http://download.jetbrains.8686c.com/webstorm/WebStorm-10.0.5.exe">http://download.jetbrains.8686c.com/webstorm/WebStorm-10.0.5.exe</a></p>
-<p>破解方式：</p>
-<p>User or company Name:</p>
-<p><strong>EMBRACE</strong></p>
-<p>===== LICENSE KEY=====</p>
-<p><strong>24718-12042010</strong></p>
-<p><strong>00001h6wzKLpfo3gmjJ8xoTPw5mQvY</strong></p>
-<p><strong>YA8vwka9tH!vibaUKS4FIDIkUfy!!f</strong></p>
-<p><strong>3C&quot;rQCIRbShpSlDcFT1xmJi5h0yQS6</strong></p>
-<p>===== LICENSE END =====</p>
-<p><br>
-</p>
-<p><img alt="" src="https://img-blog.csdn.net/20160815180157711?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"></p>
-<p><br>
-</p>
-<p></p>
-<p><strong>2、WebStorm 11</strong></p>
-<p>下载地址：<a target="_blank" target="_blank" href="https://www.jetbrains.com/webstorm/">https://www.jetbrains.com/webstorm/</a></p>
-<p>破解方式：</p>
-<ul>
-<li>2016.2.2 版本的破解方式： <br>
-安装以后，打开软件会弹出一个对话框；选择“license server” 输入：http://114.215.133.70:41017 </li><li>2016.2.3 版本的破解方式： <br>
-目前最新的就是2.3版本，在打开的License Activation窗口中选择“activation code”，在输入框输入下面的注册码</li></ul>
-<pre code_snippet_id="1868998" snippet_file_name="blog_20160906_1_454080"  code_snippet_id="1868998" snippet_file_name="blog_20160906_1_454080" name="code" class="plain">43B4A73YYJ-eyJsaWNlbnNlSWQiOiI0M0I0QTczWVlKIiwibGljZW5zZWVOYW1lIjoibGFuIHl1IiwiYXNzaWduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IkZvciBlZHVjYXRpb25hbCB1c2Ugb25seSIsImNoZWNrQ29uY3VycmVudFVzZSI6ZmFsc2UsInByb2R1Y3RzIjpbeyJjb2RlIjoiSUkiLCJwYWlkVXBUbyI6IjIwMTctMDItMjUifSx7ImNvZGUiOiJBQyIsInBhaWRVcFRvIjoiMjAxNy0wMi0yNSJ9LHsiY29kZSI6IkRQTiIsInBhaWRVcFRvIjoiMjAxNy0wMi0yNSJ9LHsiY29kZSI6IlBTIiwicGFpZFVwVG8iOiIyMDE3LTAyLTI1In0seyJjb2RlIjoiRE0iLCJwYWlkVXBUbyI6IjIwMTctMDItMjUifSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjAxNy0wMi0yNSJ9LHsiY29kZSI6IlJTMCIsInBhaWRVcFRvIjoiMjAxNy0wMi0yNSJ9LHsiY29kZSI6IlJDIiwicGFpZFVwVG8iOiIyMDE3LTAyLTI1In0seyJjb2RlIjoiUEMiLCJwYWlkVXBUbyI6IjIwMTctMDItMjUifSx7ImNvZGUiOiJSTSIsInBhaWRVcFRvIjoiMjAxNy0wMi0yNSJ9LHsiY29kZSI6IldTIiwicGFpZFVwVG8iOiIyMDE3LTAyLTI1In0seyJjb2RlIjoiREIiLCJwYWlkVXBUbyI6IjIwMTctMDItMjUifSx7ImNvZGUiOiJEQyIsInBhaWRVcFRvIjoiMjAxNy0wMi0yNSJ9XSwiaGFzaCI6IjMzOTgyOTkvMCIsImdyYWNlUGVyaW9kRGF5cyI6MCwiYXV0b1Byb2xvbmdhdGVkIjpmYWxzZSwiaXNBdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlfQ==-keaxIkRgXPKE4BR/ZTs7s7UkP92LBxRe57HvWamu1EHVXTcV1B4f/KNQIrpOpN6dgpjig5eMVMPmo7yMPl+bmwQ8pTZaCGFuLqCHD1ngo6ywHKIQy0nR249sAUVaCl2wGJwaO4JeOh1opUx8chzSBVRZBMz0/MGyygi7duYAff9JQqfH3p/BhDTNM8eKl6z5tnneZ8ZG5bG1XvqFTqWk4FhGsEWdK7B+He44hPjBxKQl2gmZAodb6g9YxfTHhVRKQY5hQ7KPXNvh3ikerHkoaL5apgsVBZJOTDE2KdYTnGLmqxghFx6L0ofqKI6hMr48ergMyflDk6wLNGWJvYHLWw==-MIIEPjCCAiagAwIBAgIBBTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE1MTEwMjA4MjE0OFoXDTE4MTEwMTA4MjE0OFowETEPMA0GA1UEAwwGcHJvZDN5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQC9WZuYgQedSuOc5TOUSrRigMw4/+wuC5EtZBfvdl4HT/8vzMW/oUlIP4YCvA0XKyBaCJ2iX+ZCDKoPfiYXiaSiH+HxAPV6J79vvouxKrWg2XV6ShFtPLP+0gPdGq3x9R3+kJbmAm8w+FOdlWqAfJrLvpzMGNeDU14YGXiZ9bVzmIQbwrBA+c/F4tlK/DV07dsNExihqFoibnqDiVNTGombaU2dDup2gwKdL81ua8EIcGNExHe82kjF4zwfadHk3bQVvbfdAwxcDy4xBjs3L4raPLU3yenSzr/OEur1+jfOxnQSmEcMXKXgrAQ9U55gwjcOFKrgOxEdek/Sk1VfOjvS+nuM4eyEruFMfaZHzoQiuw4IqgGc45ohFH0UUyjYcuFxxDSU9lMCv8qdHKm+wnPRb0l9l5vXsCBDuhAGYD6ss+Ga+aDY6f/qXZuUCEUOH3QUNbbCUlviSz6+GiRnt1kA9N2Qachl+2yBfaqUqr8h7Z2gsx5LcIf5kYNsqJ0GavXTVyWh7PYiKX4bs354ZQLUwwa/cG++2+wNWP+HtBhVxMRNTdVhSm38AknZlD+PTAsWGu9GyLmhti2EnVwGybSD2Dxmhxk3IPCkhKAK+pl0eWYGZWG3tJ9mZ7SowcXLWDFAk0lRJnKGFMTggrWjV8GYpw5bq23VmIqqDLgkNzuoog==</pre><br>
-<br>
-<p></p>
-<p><br>
-<strong>3<strong>、</strong>WebStorm 汉化教程</strong><a target="_blank" target="_blank" href="https://www.jetbrains.com/webstorm/"><br>
-</a></p>
-<p>汉化包下载地址：<a target="_blank" target="_blank" href="http://www.cr173.com/soft/67894.html">http://www.cr173.com/soft/67894.html</a></p>
-汉化包安装教程：<a target="_blank" target="_blank" href="http://jingyan.baidu.com/article/ad310e80c93aea1849f49e08.html">http://jingyan.baidu.com/article/ad310e80c93aea1849f49e08.html</a><br>
-<p><br>
-</p>
-<h3><strong>二 、配置webStorm可以进行debug</strong></h3>
-<p><strong>1、调试工具：jetbrains ide support <br>
-</strong></p>
-<p>下载地址：链接：http://pan.baidu.com/s/1boEsZ1d 密码：2cwq</p>
-<p>安装使用教程：<a target="_blank" target="_blank" href="http://www.qttc.net/201603471.html">http://www.qttc.net/201603471.html</a><br>
-</p>
-<p><br>
-</p>
-<p><strong>2、如果根据教程走完之后，发现出现这个问题：</strong><br>
-</p>
-<p>①<span style="">Built-in HTTP server on custom port 63342 disabled:Cannot start built-in HTTP server on custom port 63342.Please ensure that port is free（or check your firewall settings）and restart WebStom</span><br>
-</p>
-<p><img src="https://img-blog.csdn.net/20160905170849787?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""><br>
-</p>
-<p><br>
-</p>
-<p>解决方法，依次试用：</p>
-<p>①关闭防火墙</p>
-<p>②换一个端口，chrome JB，WebStorm里的63342都改成别的端口号试试</p>
-<p><br>
-</p>
-<p>三、实现实时预览（live edit）<br>
-</p>
-<p>如下图所示，进行设置就行了</p>
-<p><img src="https://img-blog.csdn.net/20160907094033773" alt=""><br>
-</p>
-<p><br>
-</p>
-<div style="top:0px">&#65279;&#65279;</div>
-<div style="top:0px">&#65279;&#65279;</div>
-<div style="top:0px">&#65279;&#65279;</div>
-<div style="top:0px">&#65279;&#65279;</div>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -1097,9 +580,9 @@ windows版下载</a></li><li>4.ant <a target="_blank" href="http://ant.apache.or
         
         
         <span>
-  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
   <span class="division">|</span>
-  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
 </span>
         
       </li>
@@ -1111,7 +594,7 @@ windows版下载</a></li><li>4.ant <a target="_blank" href="http://ant.apache.or
       <li>
         <!-- cnzz统计 -->
         
-        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278938767&amp;web_id=1278938767'></script>
         
       </li>
     </ul>
@@ -1155,15 +638,15 @@ windows版下载</a></li><li>4.ant <a target="_blank" href="http://ant.apache.or
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+      <a class="nav-item-link" href="/links">友情链接</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
+      <a class="nav-item-link" href="/projects">项目</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" href="/about">关于我</a>
     </li>
     
   </ul>
@@ -1172,7 +655,7 @@ windows版下载</a></li><li>4.ant <a target="_blank" href="http://ant.apache.or
   <ul class="nav">
     <li class="nav-item">
       
-      <a class="nav-item-link nav-item-search"  title="Search">
+      <a class="nav-item-link nav-item-search"  title="搜索">
         <i class="ri-search-line"></i>
       </a>
       
@@ -1206,13 +689,13 @@ windows版下载</a></li><li>4.ant <a target="_blank" href="http://ant.apache.or
   <div class="reward-box">
     
     <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <img class="reward-img" src="/images/alipay.jpg">
       <span class="reward-type">支付宝</span>
     </div>
     
     
     <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <img class="reward-img" src="/images/wechat.jpg">
       <span class="reward-type">微信</span>
     </div>
     
@@ -1223,23 +706,6 @@ windows版下载</a></li><li>4.ant <a target="_blank" href="http://ant.apache.or
 
 
 <script src="/js/lazyload.min.js"></script>
-
-<!-- Subtitle -->
-
-<script>
-  try {
-    var typed = new Typed("#subtitle", {
-      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
-      startDelay: 0,
-      typeSpeed: 200,
-      loop: true,
-      backSpeed: 100,
-      showCursor: true
-    });
-  } catch (err) {
-    console.log(err)
-  }
-</script>
 
 <!-- Tocbot -->
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html lang="default">
 
 
 <head>
@@ -47,7 +47,7 @@
 <section class="cover">
     
       
-      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
+      <a class="forkMe" href="https://github.com/pxim"
         target="_blank"><img width="149" height="149" src="/images/forkme.png"
           class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
     
@@ -76,6 +76,24 @@
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 
+
+<!-- Subtitle -->
+
+  <script>
+    try {
+      var typed = new Typed("#subtitle", {
+        strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+        startDelay: 0,
+        typeSpeed: 200,
+        loop: true,
+        backSpeed: 100,
+        showCursor: true
+      });
+    } catch (err) {
+      console.log(err)
+    }
+  </script>
+  
 <div id="main">
   <section class="outer">
   <article class="articles">
@@ -111,23 +129,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p><strong>一、去除程序外边框</strong><br>1.在 xx-app.xml文件里，找到 <code>&lt;!-- &lt;systemChrome&gt;&lt;/systemChrome&gt; --&gt;</code> 这句话，然后删掉注释，改成 <code>&lt;systemChrome&gt;none&lt;/systemChrome&gt;</code>就可以了。<br>2..然后在主程序 xx.mxml里的<code>&lt;s:WindowedApplication/&gt;</code>标签里添加属性<code>showStatusBar=&quot;false&quot;</code>就行了。</p>
-<p><strong>二、让程序底背景可以透明，并且设置透明度</strong><br>1.在 xx-app.xml文件里，找到 <code>&lt;!-- &lt;transparent&gt;&lt;/transparent&gt; --&gt;</code> 这句话，然后删掉注释，改成 <code>&lt;transparent&gt;true&lt;/transparent&gt;</code></p>
-<p>2.然后在主程序 xx.mxml里的<code>&lt;s:WindowedApplication/&gt;</code>标签里添加属性<code>backgroundAlpha=&quot;0.6&quot;</code>，改变alpha值就行了。</p>
-<p><strong>三、flex导出发行版exe，改变exe的图标icon</strong><br>1.在 xx-app.xml文件里，找到 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- &lt;icon&gt;</span><br><span class="line">		&lt;image16x16&gt;&lt;&#x2F;image16x16&gt;</span><br><span class="line">		&lt;image32x32&gt;&lt;&#x2F;image32x32&gt;</span><br><span class="line">		&lt;image36x36&gt;&lt;&#x2F;image36x36&gt;</span><br><span class="line">		&lt;image48x48&gt;&lt;&#x2F;image48x48&gt;</span><br><span class="line">		&lt;image57x57&gt;&lt;&#x2F;image57x57&gt;</span><br><span class="line">		&lt;image72x72&gt;&lt;&#x2F;image72x72&gt;</span><br><span class="line">		&lt;image114x114&gt;&lt;&#x2F;image114x114&gt;</span><br><span class="line">		&lt;image128x128&gt;&lt;&#x2F;image128x128&gt;</span><br><span class="line">	&lt;&#x2F;icon&gt; --&gt;</span><br></pre></td></tr></table></figure>
-
-<p>如图：<br><img src="http://img.blog.csdn.net/20170221183815684?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>删掉注册，<br>2.填写icon图片路径，此路径是默认src下面的<br><img src="http://img.blog.csdn.net/20170221183934166?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>PS：用后缀.con的格式，有时候会报错，用.png格式没问题<br>3.成功如图<br><img src="http://img.blog.csdn.net/20170221184114229?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -172,21 +174,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>github上预览Demo网页最简单的方法：<br>1.打开你github上demo网页index.html，效果如图<br><img src="http://img.blog.csdn.net/20161031110217059" alt="这里写图片描述"></p>
-<hr>
-<p>2.复制上面的页面地址，然后在该地址前加上 htmlpreview.github.com/? 然后就可以访问预览了，效果如图：<br><img src="http://img.blog.csdn.net/20161031110456326" alt="这里写图片描述"></p>
-<hr>
-<p>PS：参考教程：<a href="https://segmentfault.com/a/1190000005153433" target="_blank" rel="noopener">如何在github上做一个demo演示</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -231,20 +219,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>目前工作遇到个问题：<br>.net做的exe和electron做的exe，之间进行数据通信<br>目前找到两个相对方便的方法：<br>1.命名管道<br>①.net命名管道资料：<br><a href="http://www.cnblogs.com/BoyXiao/archive/2011/01/02/1924188.html" target="_blank" rel="noopener">进程间通信 - 命名管道实现</a></p>
-<p>②electron 之 nodejs 命名管道资料：<br>使用nodejs，用法跟tcp一样，不过就是监听的时候，tcp是端口号，而命名管道是”\\.\pipe\“ + PIPE_NAME;这种形式；<br>客户端连接也是用管道名称去连接，而不是tcp的那种端口号；<br>在windows平台下，命名管道和tcp方法一模一样的，所以很多人忽视了net模块其实可以做命名管道的</p>
-<p>2.TCP<br>①.net方面的资料：</p>
-<p>②electron方面的资料：</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -289,18 +264,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>淘宝 造物节<br>技术分析：<a href="https://aotu.io/notes/2016/08/24/2016-8-24-css-3d-panorama/" target="_blank" rel="noopener">https://aotu.io/notes/2016/08/24/2016-8-24-css-3d-panorama/</a><br>所用3D引擎：<a href="https://github.com/shrekshrek/css3d-engine" target="_blank" rel="noopener">https://github.com/shrekshrek/css3d-engine</a></p>
-<p>淘宝 双11宇宙<br>技术分析：<a href="http://www.digitaling.com/articles/31448.html" target="_blank" rel="noopener">http://www.digitaling.com/articles/31448.html</a><br>所用3D引擎：three.js</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -343,22 +307,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>1.自定义electron框架外壳（shell）的菜单（Menu）</p>
-<p>electron的main.js里代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const Menu &#x3D; require(&#39;electron&#39;).Menu;</span><br><span class="line">var template &#x3D; [</span><br><span class="line">  &#123;</span><br><span class="line">    label: &#39;关闭&#39;,</span><br><span class="line">    click: function () &#123; win.close();console.log(&quot;关闭&quot;)&#125;,</span><br><span class="line">    &#x2F;&#x2F; submenu: [</span><br><span class="line">    &#x2F;&#x2F;   &#123;</span><br><span class="line">    &#x2F;&#x2F;     label: &#39;Undo&#39;,</span><br><span class="line">    &#x2F;&#x2F;     accelerator: &#39;CmdOrCtrl+Z&#39;,</span><br><span class="line">    &#x2F;&#x2F;     role: &#39;undo&#39;</span><br><span class="line">    &#x2F;&#x2F;   &#125;</span><br><span class="line">    &#x2F;&#x2F; ]</span><br><span class="line">  &#125;]</span><br><span class="line">var menu &#x3D; Menu.buildFromTemplate(template)</span><br><span class="line">Menu.setApplicationMenu(menu);</span><br></pre></td></tr></table></figure>
-<p>效果如图：<br><img src="http://img.blog.csdn.net/20161027115145809" alt="这里写图片描述"></p>
-<p>2.更多菜单样式，鼠标事件关联，请参考<a href="https://github.com/electron/electron/blob/master/docs-translations/zh-CN/api/menu.md" target="_blank" rel="noopener">Electron Menu API 简体中文版</a></p>
-<p>3.<a href="http://blog.csdn.net/ch15196637370/article/details/51147980" target="_blank" rel="noopener">在webview的html添加electron shell 的菜单的教程</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -401,20 +350,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>1.打开本地文件或者网页链接</p>
-<p>// 打开系统本地文件<br>   const {shell} = require(‘electron’);<br>   // Open a local file in the default app<br>   var path1 = “d:\ProjectsSpace\ElectronProjects\ElectronTest2\app\html\config\record.txt”;<br>   shell.openItem(path1);</p>
-<p>   //打开网页链接<br>  // Open a URL in the default way<br>  shell.openExternal(‘<a href="https://github.com&#39;" target="_blank" rel="noopener">https://github.com&#39;</a>);</p>
-<p>2.electron+web view（html+js）<br>   html，js里获取electron的api，使用webview上的div元素，监听点击事件等，操作electron api<br>   PS:下面示例的api可能与现在electron 新版本有区别，最好查一下api，不过方法是这样子的；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;title&gt;test&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;utf-8&quot; &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body &gt;</span><br><span class="line">&lt;button id&#x3D;&quot;btn_fullScreen&quot;&gt;全屏&lt;&#x2F;button&gt;</span><br><span class="line">&lt;button id&#x3D;&quot;btn_exitFullScreen&quot;&gt;退出全屏&lt;&#x2F;button&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        var gui &#x3D; require(&#39;nw.gui&#39;);</span><br><span class="line">        var win &#x3D; gui.Window.get();</span><br><span class="line">        var btn_fullScreen &#x3D; document.querySelector(&#39;#btn_fullScreen&#39;);</span><br><span class="line">        btn_fullScreen.addEventListener(&quot;click&quot;, function (evt) &#123;</span><br><span class="line">            win.enterFullscreen();</span><br><span class="line">        &#125;, false);</span><br><span class="line">        var btn_exitFullScreen &#x3D; document.querySelector(&#39;#btn_exitFullScreen&#39;);</span><br><span class="line">        btn_exitFullScreen.addEventListener(&quot;click&quot;, function (evt) &#123;</span><br><span class="line">            win.leaveFullscreen();</span><br><span class="line">        &#125;, false);</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -459,21 +395,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-
-<p>经常有人问这两款软件的区别，每次都要打字好烦，特此总结发帖如下：</p>
-<p>一、首先各自软件介绍<br>①adobe edge animate<br>是adobe公司早期推出的一款网页互动工具。通过HTML+CSS+JavaScript，制作网页动画和交互，支持PC端和移动端（iOS+Android等）。<br>其实edge animate是adobe的一个试水作品，他的宗旨在强化HTML动画制作规范。<br>2015年的时候，adobe发布公告停止此款软件的更新，通俗意义上来讲，就是停产了。</p>
-<p>②adobe animate cc<br>此款软件的前身是adobe flash cc，adobe公司在此款软件里，添加了 HTML5动画制作以及交互设计功能，强化HTML5动画制作规范，技术手段为（Canvas+CreateJS），因此此软件分为两个主要动画模式（Flash动画+H5动画）；<br>adobe公司为了软件的命名，更符合软件的实际用途，并且为了规避各种非专业人员对于flash软件的众口铄金，积毁销骨，因此在2015年年底的时候，把软件更名为animate，并且目前持续更新。</p>
-<p>二、区别<br>上面讲的比较清楚了<br>adobe edge animate这个软件，目前adobe公司本身放弃继续开发了，并且技术手段是原生dom，只是添加了多平台兼容，并不是H5（canvas）技术。<br>adobe animate cc这个软件，目前是adobe公司在H5动画软件方面主要推的工具，在持续更新，并且技术手段是H5（canvas） 的技术；</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -518,17 +440,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p><a href="http://www.itpub.net/thread-1373652-1-1.html###" target="_blank" rel="noopener">认识HTML5的WebSocket</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -573,21 +485,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p>Electron简介：<br>Electron提供了丰富的本地（操作系统）的API，使你能够使用纯JavaScript来创建桌面应用程序，并且跨平台（win，mac，linux等各种PC端平台）。与其它各种的Node.js运行时不同的是Electron专注于桌面应用程序而不是Web服务器。</p>
-<p>有时候面对需求，开发出的web page既要能Online又要Offline（Offline是针对一些特殊网络环境或者page资源很大的情况下，企业或者其他机构要求的）<br>web page offline的时候，甚至有时候还会有操作PC端本地文件系统的需求，这时候出于游览器的安全限制，web page要么部分资源格式读取不了（json等），要么不能操作本地文件；<br>你不熟练C#，php，java等能PC文件系统的技术时，可以用Electron开发，这个相对js程序员来说上手容易很多，甚至是js全栈上的一步；</p>
-<p>我这段时间就面对这种情况，然后在摸索Electron，下面把我找到的资料和自己的经验归纳到下面，希望对有所需求的同学有所帮助：</p>
-<p>1、<a href="http://blog.csdn.net/arvin0/article/details/52576427" target="_blank" rel="noopener">Electron开发入门（一）：开发环境搭建</a><br>2、<a href="http://blog.csdn.net/arvin0/article/details/52679555" target="_blank" rel="noopener">Electron开发入门（二）：创建项目Hello Word</a><br>3、<a href="http://blog.csdn.net/arvin0/article/details/52681827" target="_blank" rel="noopener">Electron开发入门（三）：main process和web page 通信</a><br>4、<a href="http://blog.csdn.net/arvin0/article/details/52689799" target="_blank" rel="noopener">Electron开发入门（四）：操作PC端文件系统</a><br>5、<a href="http://blog.csdn.net/arvin0/article/details/52690023" target="_blank" rel="noopener">Electron开发入门（五）：项目打包</a><br>6、<a href="http://blog.csdn.net/arvin0/article/details/56486757" target="_blank" rel="noopener">Electron开发入门（六）：项目生成setup安装程序</a><br>7、<a href="http://blog.csdn.net/arvin0/article/details/52912644" target="_blank" rel="noopener">Electron开发入门（七）：打开本地文件或者网页链接 and webview里操纵electron api</a><br>8、<a href="http://blog.csdn.net/arvin0/article/details/52944573" target="_blank" rel="noopener">Electron开发入门（八）：自定义electron框架外壳（shell）的菜单（Menu）</a></p>
-<p>PS：<br>1.官方API：<a href="http://electron.atom.io/docs/api/" target="_blank" rel="noopener">http://electron.atom.io/docs/api/</a><br>2.社区翻译简体中文版文档：<a href="https://github.com/electron/electron/tree/master/docs-translations/zh-CN" target="_blank" rel="noopener">https://github.com/electron/electron/tree/master/docs-translations/zh-CN</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -632,36 +530,7 @@
   </div>
    
     </div>
-      
-    <div class="article-entry" itemprop="articleBody">
        
-  <a id="more"></a>
-
-<p><strong>一、安装 <code>electron-packager</code></strong></p>
-<p>PS：安装之前，先复制一份package.json文件到./app目录下，然后改下./app目录下package.json里 “main”: “app/main.js”的路径（去掉app/），不这样子的话，下面打包的时候会报错，有的版本识别不了应用路径。</p>
-<p>1、使用命令 <code>npm install --save-dev electron-packager</code><br>将electron-package包安装到在项目下面，<br><img src="http://img.blog.csdn.net/20160928151915084" alt="这里写图片描述"><br>安装完成之后，项目根目录下面的package.json文件里，会多出一条electron-package的版本号配置信息<br><img src="http://img.blog.csdn.net/20160928152109710" alt="这里写图片描述"></p>
-<p><strong>二、正式打包</strong><br>有两种方法：<br>1、直接使用命令打包，electron-packager的打包基本命令是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">electron-packager &lt;location of project&gt; &lt;name of project&gt; &lt;platform&gt; &lt;architecture&gt; &lt;electron version&gt; &lt;optional options&gt;</span><br></pre></td></tr></table></figure>
-<p>命令说明：</p>
-<ul>
-<li>location of project：项目所在路径</li>
-<li>name of project：打包的项目名字</li>
-<li>platform：确定了你要构建哪个平台的应用（Windows、Mac 还是 Linux）</li>
-<li>architecture：决定了使用 x86 还是 x64 还是两个架构都用</li>
-<li>electron version：electron 的版本</li>
-<li>optional options：可选选项</li>
-</ul>
-<p>命令比较长，每次要是都用这个命令来打包会很烦，可以使用第二种方法；</p>
-<p>2、首先在项目根目录下面的 package.json 里添加代码，<br><code>&quot;packager&quot;: &quot;electron-packager ./app HelloWorld --all --out ./OutApp --version 1.4.0 --overwrite --icon=./app/img/icon/icon.ico&quot;</code></p>
-<p>PS：这里要注意，字段里的 项目名字，version，icon路径要改成自己的；<br>具体添加位置如图，<br><img src="http://img.blog.csdn.net/20160928153139651" alt="这里写图片描述"></p>
-<p>然后，在使用命令 <code>npm run-script packager</code><br><img src="http://img.blog.csdn.net/20160928153412147" alt="这里写图片描述"></p>
-<p>最后，打包完成之后如图<br><img src="http://img.blog.csdn.net/20160928153535555" alt="这里写图片描述"><br>运行对应包下的.exe文件，就可以看到我们的应用了。</p>
-<p>注：如需修改electron.exe可执行程序的详细信息：<br><img src="http://img.blog.csdn.net/20171204133258982?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>可以使用resource-hacker方法：<br>教程：<a href="https://newsn.net/say/resource-hacker.html" target="_blank" rel="noopener">https://newsn.net/say/resource-hacker.html</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
 
     <!-- copyright -->
     
@@ -715,9 +584,9 @@
         
         
         <span>
-  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
   <span class="division">|</span>
-  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
 </span>
         
       </li>
@@ -729,7 +598,7 @@
       <li>
         <!-- cnzz统计 -->
         
-        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278938767&amp;web_id=1278938767'></script>
         
       </li>
     </ul>
@@ -773,15 +642,15 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+      <a class="nav-item-link" href="/links">友情链接</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
+      <a class="nav-item-link" href="/projects">项目</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" href="/about">关于我</a>
     </li>
     
   </ul>
@@ -790,7 +659,7 @@
   <ul class="nav">
     <li class="nav-item">
       
-      <a class="nav-item-link nav-item-search"  title="Search">
+      <a class="nav-item-link nav-item-search"  title="搜索">
         <i class="ri-search-line"></i>
       </a>
       
@@ -824,13 +693,13 @@
   <div class="reward-box">
     
     <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <img class="reward-img" src="/images/alipay.jpg">
       <span class="reward-type">支付宝</span>
     </div>
     
     
     <div class="reward-item">
-      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <img class="reward-img" src="/images/wechat.jpg">
       <span class="reward-type">微信</span>
     </div>
     
@@ -841,23 +710,6 @@
 
 
 <script src="/js/lazyload.min.js"></script>
-
-<!-- Subtitle -->
-
-<script>
-  try {
-    var typed = new Typed("#subtitle", {
-      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
-      startDelay: 0,
-      typeSpeed: 200,
-      loop: true,
-      backSpeed: 100,
-      showCursor: true
-    });
-  } catch (err) {
-    console.log(err)
-  }
-</script>
 
 <!-- Tocbot -->
 
