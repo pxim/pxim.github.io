@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+     PxSite
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="PxSite" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      
+<section class="cover">
+    
+      
+      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
+        target="_blank"><img width="149" height="149" src="/images/forkme.png"
+          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="/images/cover1.jpg" alt="image frame" />
+    </div>
+    <div class="cover-inner text-center text-white">
+      <h1><a href="/">PxSite</a></h1>
+      <div id="subtitle-box">
+        
+        <span id="subtitle"></span>
+        
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+<div id="main">
+  <section class="outer">
+  <article class="articles">
+    
+    
+    
+    
+    <article
+  id="post-old/【Electron】Electron开发入门（四）：操作PC端文件系统"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/09/28/old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E6%93%8D%E4%BD%9CPC%E7%AB%AF%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/"
+    >【Electron】Electron开发入门（四）：操作PC端文件系统</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/09/28/old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E6%93%8D%E4%BD%9CPC%E7%AB%AF%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" class="article-date">
+  <time datetime="2016-09-28T06:03:23.000Z" itemprop="datePublished">2016-09-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Electron/">Electron</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+<p><strong>一、调用PC端默认方式打开本地文件</strong><br>在main.js里</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 打开系统本地文件或者网页链接</span><br><span class="line"> const &#123;shell&#125; &#x3D; require(&#39;electron&#39;);</span><br><span class="line"> &#x2F;&#x2F; Open a local file in the default app</span><br><span class="line"> var path1 &#x3D; &quot;d:\\ProjectsSpace\\ElectronProjects\\ElectronTest2\\app\\html\\config\\record.txt&quot;;</span><br><span class="line"> shell.openItem(path1);</span><br><span class="line"></span><br><span class="line"> &#x2F;&#x2F; Open a URL in the default way</span><br><span class="line"> shell.openExternal(&#39;https:&#x2F;&#x2F;github.com&#39;);</span><br></pre></td></tr></table></figure>
+<p>这个使用的是electron里shell模块的方法，只能打开和删除，不能通过代码更改文件内容，具体请看shell的api <a href="http://electron.atom.io/docs/api/shell/" target="_blank" rel="noopener">http://electron.atom.io/docs/api/shell/</a></p>
+<p><strong>二、通过代码读取、写入、更名、删除、遍历目录、链接等 POSIX 文件系统操作</strong><br>这个使用的是node.js里的fs 模块，在electron中使用，案例代码如下：<br>在main.js里</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;本地文件写入</span><br><span class="line">  var path &#x3D; require(&#39;path&#39;);</span><br><span class="line">  var _path &#x3D; path.join(__dirname, &#39;..&#39;, &#39;\\app\\html\\config\\record.txt&#39;);</span><br><span class="line">  var path1 &#x3D; &quot;d:\\ProjectsSpace\\ElectronProjects\\ElectronTest2\\app\\html\\config\\record.txt&quot;;</span><br><span class="line">  console.log(_path, path1);&#x2F;&#x2F;测试路径对不对的</span><br><span class="line">  var fs &#x3D; require(&#39;fs&#39;);</span><br><span class="line">  fs.readFile(_path, &#39;utf8&#39;, function (err, data) &#123;</span><br><span class="line">    if (err) return console.log(err);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  fs.writeFile(_path, &quot;electron + Javascript&quot;, function (err) &#123;</span><br><span class="line">    if (!err)</span><br><span class="line">      console.log(&quot;写入成功！&quot;)</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+<p>关于fs更详细的使用方法，请看相关api，或者下图</p>
+<p><img src="http://img.blog.csdn.net/20160928140213519" alt="这里写图片描述"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/electron-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F-pc/" rel="tag">electron 文件系统 pc</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/【Electron】Electron开发入门（三）：main process和web page 通信"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/09/27/old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9Amain%20process%E5%92%8Cweb%20page%20%E9%80%9A%E4%BF%A1/"
+    >【Electron】Electron开发入门（三）：main process和web page 通信</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/09/27/old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9Amain%20process%E5%92%8Cweb%20page%20%E9%80%9A%E4%BF%A1/" class="article-date">
+  <time datetime="2016-09-27T08:24:49.000Z" itemprop="datePublished">2016-09-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Electron/">Electron</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<p><strong>一、main process 和 web page 通信</strong><br>electron框架主进程（Main Process）与嵌入的网页（web page，也就是renderer process）之间的通信</p>
+<p>Main.js里添加代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;通信模块，mian process与renderer process（web page）</span><br><span class="line">const &#123;ipcMain&#125; &#x3D; require(&#39;electron&#39;)</span><br><span class="line">&#x2F;&#x2F;监听web page里发出的message</span><br><span class="line">ipcMain.on(&#39;asynchronous-message&#39;, (event, arg) &#x3D;&gt; &#123;</span><br><span class="line">  console.log(&quot;mian1&quot; + arg)  &#x2F;&#x2F; prints &quot;ping&quot;</span><br><span class="line">  event.sender.send(&#39;asynchronous-reply&#39;, &#39;pong&#39;)&#x2F;&#x2F;在main process里向web page发出message</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">ipcMain.on(&#39;synchronous-message&#39;, (event, arg) &#x3D;&gt; &#123;</span><br><span class="line">  console.log(&quot;mian2&quot; + arg)  &#x2F;&#x2F; prints &quot;ping&quot;</span><br><span class="line">  event.returnValue &#x3D; &#39;pong&#39;</span><br></pre></td></tr></table></figure>
+<p>web page里添加代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const &#123;ipcRenderer&#125; &#x3D; require(&#39;electron&#39;)</span><br><span class="line">&#x2F;&#x2F;监听mian process里发出的message</span><br><span class="line">ipcRenderer.on(&#39;asynchronous-reply&#39;, (event, arg) &#x3D;&gt; &#123;</span><br><span class="line">    &#x2F;&#x2F; alert(&quot;web2&quot; + arg);&#x2F;&#x2F; prints &quot;pong&quot;  在electron中web page里的console方法不起作用，因此使用alert作为测试方法</span><br><span class="line">  &#125;)</span><br><span class="line"> </span><br><span class="line"> &#x2F;&#x2F;在web page里向main process发出message</span><br><span class="line">  ipcRenderer.send(&#39;asynchronous-message&#39;, &#39;ping&#39;) &#x2F;&#x2F; prints &quot;pong&quot;   </span><br><span class="line">  &#x2F;&#x2F; ipcRenderer.sendSync(&#39;synchronous-message&#39;, &#39;ping&#39;) &#x2F;&#x2F; prints &quot;pong&quot;   </span><br><span class="line">  &#x2F;&#x2F; alert(&quot;web1&quot; + &#39;ping&#39;);</span><br></pre></td></tr></table></figure>
+<p><strong>二、具体项目中代码，如下图：</strong><br>1、mian process 里 mian.js<br><img src="http://img.blog.csdn.net/20160928132340755" alt="这里写图片描述"></p>
+<p>2、web page 里<br>①、 html文件<br><img src="http://img.blog.csdn.net/20160928132432459" alt="这里写图片描述"></p>
+<p>②、js文件<br><img src="http://img.blog.csdn.net/20160928132641384" alt="这里写图片描述"></p>
+<p>3、最后成功界面<br><img src="http://img.blog.csdn.net/20160928133927837" alt="这里写图片描述"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web-electron-%E9%80%9A%E4%BF%A1-js-%E6%A1%86%E6%9E%B6/" rel="tag">web electron 通信 js 框架</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/【Electron】Electron开发入门（二）：创建项目Hello Word"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/09/27/old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AEHello%20Word/"
+    >【Electron】Electron开发入门（二）：创建项目Hello Word</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/09/27/old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AEHello%20Word/" class="article-date">
+  <time datetime="2016-09-27T03:59:25.000Z" itemprop="datePublished">2016-09-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Electron/">Electron</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+<p><strong>创建简单的Electron程序</strong><br>1、首先，切换到你的项目空间，我的在 D:\ProjectsSpace\ElectronProjects\ElectronTest，ElectronTest是案例项目文件夹<br>①、打开cmd，切换到自己的项目文件目录<br><img src="http://img.blog.csdn.net/20160918163454864" alt="这里写图片描述"><br>然后输入命令  <code>npm init</code>创建 package.json文件，<br><img src="http://img.blog.csdn.net/20160918164210329" alt="这里写图片描述"><br>然后按照步骤一步一步来，一直到最后<br><img src="http://img.blog.csdn.net/20160918164707364" alt="这里写图片描述"><br>最后成功的图：<br><img src="http://img.blog.csdn.net/20160927160750854" alt="这里写图片描述"><br>内容为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;package.json&quot;,</span><br><span class="line">  &quot;version&quot;: &quot;1.0.0&quot;,</span><br><span class="line">  &quot;description&quot;: &quot;hello word&quot;,</span><br><span class="line">  &quot;main&quot;: &quot;app&#x2F;main.js&quot;,</span><br><span class="line">  &quot;dependencies&quot;: &#123;</span><br><span class="line">    &quot;electron-prebuilt&quot;: &quot;^1.4.0&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;devDependencies&quot;: &#123;</span><br><span class="line">    &quot;electron-prebuilt&quot;: &quot;^1.4.0&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;test&quot;: &quot;start&quot;,</span><br><span class="line">    &quot;start&quot;: &quot;electron .&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;author&quot;: &quot;pengxiang&quot;,</span><br><span class="line">  &quot;license&quot;: &quot;ISC&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>②、然后执行一次 <code>npm install --save-dev electron-prebuilt</code></p>
+<p>③、在根目录下创建app文件夹，在app/下创建main.js,内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">const electron &#x3D; require(&#39;electron&#39;);</span><br><span class="line">&#x2F;&#x2F; 控制应用生命周期的模块</span><br><span class="line">const &#123;app&#125; &#x3D; electron;</span><br><span class="line">&#x2F;&#x2F; 创建本地浏览器窗口的模块</span><br><span class="line">const &#123;BrowserWindow&#125; &#x3D; electron;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 指向窗口对象的一个全局引用，如果没有这个引用，那么当该javascript对象被垃圾回收的</span><br><span class="line">&#x2F;&#x2F; 时候该窗口将会自动关闭</span><br><span class="line">let win;</span><br><span class="line"></span><br><span class="line">function createWindow() &#123;</span><br><span class="line">  &#x2F;&#x2F; 创建一个新的浏览器窗口</span><br><span class="line">  win &#x3D; new BrowserWindow(&#123;width: 1104, height: 620&#125;);&#x2F;&#x2F;570+50</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F; 并且装载应用的index.html页面</span><br><span class="line">  win.loadURL(&#96;file:&#x2F;&#x2F;$&#123;__dirname&#125;&#x2F;html&#x2F;index.html&#96;);</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F; 打开开发工具页面</span><br><span class="line">&#x2F;&#x2F;   win.webContents.openDevTools();</span><br><span class="line"></span><br><span class="line">  &#x2F;&#x2F; 当窗口关闭时调用的方法</span><br><span class="line">  win.on(&#39;closed&#39;, () &#x3D;&gt; &#123;</span><br><span class="line">    &#x2F;&#x2F; 解除窗口对象的引用，通常而言如果应用支持多个窗口的话，你会在一个数组里</span><br><span class="line">    &#x2F;&#x2F; 存放窗口对象，在窗口关闭的时候应当删除相应的元素。</span><br><span class="line">    win &#x3D; null;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 当Electron完成初始化并且已经创建了浏览器窗口，则该方法将会被调用。</span><br><span class="line">&#x2F;&#x2F; 有些API只能在该事件发生后才能被使用。</span><br><span class="line">app.on(&#39;ready&#39;, createWindow);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 当所有的窗口被关闭后退出应用</span><br><span class="line">app.on(&#39;window-all-closed&#39;, () &#x3D;&gt; &#123;</span><br><span class="line">  &#x2F;&#x2F; 对于OS X系统，应用和相应的菜单栏会一直激活直到用户通过Cmd + Q显式退出</span><br><span class="line">  if (process.platform !&#x3D;&#x3D; &#39;darwin&#39;) &#123;</span><br><span class="line">    app.quit();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">app.on(&#39;activate&#39;, () &#x3D;&gt; &#123;</span><br><span class="line">  &#x2F;&#x2F; 对于OS X系统，当dock图标被点击后会重新创建一个app窗口，并且不会有其他</span><br><span class="line">  &#x2F;&#x2F; 窗口打开</span><br><span class="line">  if (win &#x3D;&#x3D;&#x3D; null) &#123;</span><br><span class="line">    createWindow();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 在这个文件后面你可以直接包含你应用特定的由主进程运行的代码。</span><br><span class="line">&#x2F;&#x2F; 也可以把这些代码放在另一个文件中然后在这里导入。</span><br></pre></td></tr></table></figure>
+<p>④、然后在app/html下创建index.html文件，内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;utf-8&quot; &#x2F;&gt; </span><br><span class="line">    &lt;title&gt;我的世界&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;p&gt;Hello World&lt;&#x2F;p&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+<p>⑤、配置VS Code启动环境<br>先装全局： <code>glup：npm install gulp -g</code><br><img src="http://img.blog.csdn.net/20160927154611356" alt="这里写图片描述"></p>
+<p>再装本地： <code>npm install --save-dev gulp</code><br><img src="http://img.blog.csdn.net/20160927154625075" alt="这里写图片描述"></p>
+<p>然后根目录下创建gulpfile.js配置文件,内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 获取依赖</span><br><span class="line">var gulp &#x3D; require(&#39;gulp&#39;),</span><br><span class="line">    childProcess &#x3D; require(&#39;child_process&#39;),</span><br><span class="line">    electron &#x3D; require(&#39;electron-prebuilt&#39;);</span><br><span class="line">    </span><br><span class="line">&#x2F;&#x2F; 创建 gulp 任务</span><br><span class="line">gulp.task(&#39;run&#39;, function () &#123;</span><br><span class="line">    childProcess.spawn(electron, [&#39;--debug&#x3D;5858&#39;,&#39;.&#39;], &#123;stdio:&#39;inherit&#39;&#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>⑥启动项目<br>两种方法：<br>1、使用cmd命令启动<br>运行gulp任务：gulp run<br><img src="http://img.blog.csdn.net/20160927155313031" alt="这里写图片描述"></p>
+<p>2、使用VS Code编辑器启动项目<br>首先，用VSC打开项目文件夹，<br><img src="http://img.blog.csdn.net/20160927155457157" alt="这里写图片描述"><br>然后，按下快捷键ctrl+shift+b,第一次启动的时候会提示你配置生成任务，点击<img src="http://img.blog.csdn.net/20160927155826330" alt="这里写图片描述"><br>接着，选择如图，<br><img src="http://img.blog.csdn.net/20160927155913872" alt="这里写图片描述"><br>会自动配置task.json文件，修改此文件内容为；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F; See https:&#x2F;&#x2F;go.microsoft.com&#x2F;fwlink&#x2F;?LinkId&#x3D;733558</span><br><span class="line">    &#x2F;&#x2F; for the documentation about the tasks.json format</span><br><span class="line">    &quot;version&quot;: &quot;0.1.0&quot;,</span><br><span class="line">    &quot;command&quot;: &quot;gulp&quot;,</span><br><span class="line">    &quot;isShellCommand&quot;: true,</span><br><span class="line">    &quot;args&quot;: [</span><br><span class="line">        &quot;--no-color&quot;</span><br><span class="line">    ],</span><br><span class="line">    &quot;tasks&quot;: [ &#123; </span><br><span class="line">      &quot;taskName&quot;: &quot;run&quot;, </span><br><span class="line">      &quot;args&quot;: [], </span><br><span class="line">      &quot;isBuildCommand&quot;: true </span><br><span class="line">    &#125;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>保存，再使用ctrl+shift+b运行程序，基本就OK了，如图<br><img src="http://img.blog.csdn.net/20160927161137305" alt="这里写图片描述"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript-cmd-electron/" rel="tag">javascript cmd electron</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/【Electron】Electron开发入门（一）：开发环境搭建"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/09/18/old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"
+    >【Electron】Electron开发入门（一）：开发环境搭建</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/09/18/old/%E3%80%90Electron%E3%80%91Electron%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="article-date">
+  <time datetime="2016-09-18T09:41:16.000Z" itemprop="datePublished">2016-09-18</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Electron/">Electron</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+<p>刚接触Electron+js开发PC端桌面应用程序的时候，简直一头雾水，搜了网上很多教程，有的要么讲的零零碎碎，要么就是版本太低，很多API语法都不能用了；现在我把一些有用的教程归纳一下，并把目前最新Electron版本1.4.0的使用语法贴出来，目的是为了有个能正常运行的DEMO教程；</p>
+<p><strong>一、配置安装</strong><br>1、安装node<br>①、node.js下载链接<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a><br>选择适合自己电脑系统的安装包，比如win7 64位系统，那么选择下图红框中的<br><img src="http://img.blog.csdn.net/20160918152835118" alt="这里写图片描述"></p>
+<p>②、安装完成以后在cmd里运行 node -v检测安装是否成功。<br><img src="http://img.blog.csdn.net/20160918153039157" alt="这里写图片描述"><br>如图，安装成功之后应该如图所示，其中v4.4.3，是你安装的node.js的版本号</p>
+<p>2、安装Electron<br>①、打开cmd，在里面输入<br> <code>npm install --g electron-prebuilt</code><br> 如图<br> <img src="http://img.blog.csdn.net/20160918154306022" alt="这里写图片描述"></p>
+<p>②、安装完成后运行 electron -v 检查是否安装成功<br><img src="http://img.blog.csdn.net/20160918154519663" alt="这里写图片描述"><br>如图，安装成功之后应该如图所示，其中v1.4.0，是你安装的electron的版本号<br>PS：如果你要安装特定版本的electron，这样子写： <code>npm install --g electron-prebuilt@1.2.1</code></p>
+<p>3、安装开发工具编辑器，vscode<br><a href="https://code.visualstudio.com/?utm_expid=101350005-28.R1T8FshdTBWEfZjY0s7XKQ.0&utm_referrer=https://www.baidu.com/link?url=qyJE7O2zFItkgBiz6Ar5QYqxkqhoevA8pXrGDPoljbiXViEFCyJ_a45K7WGrqt4-&wd=&eqid=b18fa204000241ea0000000457edc38d" target="_blank" rel="noopener">vscode下载</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript-pc-node-js-electron-vscode/" rel="tag">javascript pc node.js electron vscode</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/HTML5 WebSocket和后端C#通信"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/09/08/old/HTML5%20WebSocket%E5%92%8C%E5%90%8E%E7%AB%AFC#%E9%80%9A%E4%BF%A1/"
+    >HTML5 WebSocket和后端C#通信</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/09/08/old/HTML5%20WebSocket%E5%92%8C%E5%90%8E%E7%AB%AFC#%E9%80%9A%E4%BF%A1/" class="article-date">
+  <time datetime="2016-09-08T08:41:31.000Z" itemprop="datePublished">2016-09-08</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS-JavaScript/">HTML CSS JavaScript</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+<p>1、使用 HTML5 开发离线应用<br><a href="http://www.ibm.com/developerworks/cn/web/1011_guozb_html5off/" target="_blank" rel="noopener">http://www.ibm.com/developerworks/cn/web/1011_guozb_html5off/</a></p>
+<p>2、利用html 5 websocket做个山寨版web聊天室(手写C#服务器)<br><a href="http://www.cnblogs.com/dolphinX/p/3462898.html" target="_blank" rel="noopener">http://www.cnblogs.com/dolphinX/p/3462898.html</a></p>
+<p>3、使用 HTML5 WebSocket 构建实时 Web 应用<br><a href="http://www.ibm.com/developerworks/cn/web/1112_huangxa_websocket/" target="_blank" rel="noopener">http://www.ibm.com/developerworks/cn/web/1112_huangxa_websocket/</a></p>
+<p>4、H5 websocket C# server<br><a href="http://blog.csdn.net/for_cxc/article/details/51500185" target="_blank" rel="noopener">http://blog.csdn.net/for_cxc/article/details/51500185</a></p>
+<p>5、C# signalR实现即时通信<br><a href="http://www.it165.net/pro/html/201503/37259.html" target="_blank" rel="noopener">http://www.it165.net/pro/html/201503/37259.html</a></p>
+<p>6、基于C# Winform的简易聊天程序<br><a href="http://www.cnblogs.com/longwu/archive/2011/08/25/2153636.html" target="_blank" rel="noopener">http://www.cnblogs.com/longwu/archive/2011/08/25/2153636.html</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html5-websocket-%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="tag">html5 websocket 服务器</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/C#调用webbrowser，阻止弹出新HTML页面"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/09/08/old/C#%E8%B0%83%E7%94%A8webbrowser%EF%BC%8C%E9%98%BB%E6%AD%A2%E5%BC%B9%E5%87%BA%E6%96%B0HTML%E9%A1%B5%E9%9D%A2/"
+    >C#调用webbrowser，阻止弹出新HTML页面</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/09/08/old/C#%E8%B0%83%E7%94%A8webbrowser%EF%BC%8C%E9%98%BB%E6%AD%A2%E5%BC%B9%E5%87%BA%E6%96%B0HTML%E9%A1%B5%E9%9D%A2/" class="article-date">
+  <time datetime="2016-09-08T08:29:04.000Z" itemprop="datePublished">2016-09-08</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Other-Code/">Other Code</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+<p>参考资料：<br>1、C#调用webbrowser，阻止弹出新IE窗口<br><a href="http://www.cnblogs.com/blindman/p/3819649.html" target="_blank" rel="noopener">http://www.cnblogs.com/blindman/p/3819649.html</a></p>
+<p>2、【WPF】监听WPF的WebBrowser控件弹出新窗口的事件（这个教程满全的，还有案例代码提供下载）<br><a href="http://www.cnblogs.com/RMay/archive/2010/05/27/1745388.html" target="_blank" rel="noopener">http://www.cnblogs.com/RMay/archive/2010/05/27/1745388.html</a></p>
+<p>3、WbBrowser的英文介绍<br><a href="http://www.codeproject.com/Articles/13598/Extended-NET-WebBrowser-Control" target="_blank" rel="noopener">http://www.codeproject.com/Articles/13598/Extended-NET-WebBrowser-Control</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C-webbrowser/" rel="tag">C# webbrowser</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/Visual Studio Code 使用Chrome Debug 代码"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/09/06/old/Visual%20Studio%20Code%20%E4%BD%BF%E7%94%A8Chrome%20Debug%20%E4%BB%A3%E7%A0%81/"
+    >Visual Studio Code 使用Chrome Debug 代码</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/09/06/old/Visual%20Studio%20Code%20%E4%BD%BF%E7%94%A8Chrome%20Debug%20%E4%BB%A3%E7%A0%81/" class="article-date">
+  <time datetime="2016-09-06T04:01:21.000Z" itemprop="datePublished">2016-09-06</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Software/">Software</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<p>一、添加插件 Debugger for Chrome，点击安装，安装完成之后，启动<br><img src="http://img.blog.csdn.net/20160906114521815" alt="Debugger for Chrome"></p>
+<p>二、配置启动参数<br>1.按 F5，出现界面如图，选择 Chrome<br><img src="http://img.blog.csdn.net/20160906114909943" alt="这里写图片描述"></p>
+<p>2.然后会打开配置文件 launch.json<br><img src="http://img.blog.csdn.net/20160906115039117" alt="这里写图片描述"></p>
+<p>3.第三步需要配置本地HTTP服务器（IIS）<br>①<a href="http://jingyan.baidu.com/article/5553fa8215f7ef65a2393413.html" target="_blank" rel="noopener">HTTP服务器配置教程</a><br>②配置完成之后，把服务器相关配置改成如下图：<br><img src="http://img.blog.csdn.net/20160906115909305" alt="这里写图片描述"></p>
+<p>4.再按F5启动，就可以启动Chrome，并且在VSC里Debug调试代码了</p>
+<p>5.如果并没有显示正确的页面，那么就重启一下服务器，清理一下Chrome的缓存，再或者多刷几次页面，就应该可以了</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/chrome-visual-studio-VSCode/" rel="tag">chrome visual studio VSCode</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/【Egret】在WebStorm里使用Egret Engine 的注意点"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/09/06/old/%E3%80%90Egret%E3%80%91%E5%9C%A8WebStorm%E9%87%8C%E4%BD%BF%E7%94%A8Egret%20Engine%20%E7%9A%84%E6%B3%A8%E6%84%8F%E7%82%B9/"
+    >【Egret】在WebStorm里使用Egret Engine 的注意点</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/09/06/old/%E3%80%90Egret%E3%80%91%E5%9C%A8WebStorm%E9%87%8C%E4%BD%BF%E7%94%A8Egret%20Engine%20%E7%9A%84%E6%B3%A8%E6%84%8F%E7%82%B9/" class="article-date">
+  <time datetime="2016-09-06T01:23:37.000Z" itemprop="datePublished">2016-09-06</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Egret/">Egret</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+<p>1.开启代码提示<br><img src="http://img.blog.csdn.net/20160906092626628" alt="开启代码提示配置"></p>
+<p>2.修改egret code后，自动编译新egret code<br>按照下图进行设置：<br>①打开“File—settings”<br>②<br><img src="http://img.blog.csdn.net/20170222150638106?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>③<br><img src="http://img.blog.csdn.net/20170222150646872?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>（PS：webstorm打开目录为当前项目目录）</p>
+<p>3.设置启动/运行<br>①打开“File—settings”<br><img src="http://img.blog.csdn.net/20170222172118749?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20170222172531115?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>②打开“Run—Edit Configurations”<br><img src="http://img.blog.csdn.net/20170222163830191?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>③<br><img src="http://img.blog.csdn.net/20170222163838738?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYXJ2aW4w/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>（PS：webstorm打开目录为当前项目目录）</p>
+<p>4.启用EXML皮肤文件语法提示<br><a href="http://bbs.egret.com/forum.php?mod=viewthread&amp;tid=155&amp;extra=page%3D1" target="_blank" rel="noopener">http://bbs.egret.com/forum.php?mod=viewthread&amp;tid=155&amp;extra=page%3D1</a></p>
+<p>5.Egret 命令行手册：<a href="http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/cmdManual/index.html" target="_blank" rel="noopener">http://developer.egret.com/cn/github/egret-docs/Engine2D/projectConfig/cmdManual/index.html</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebStorm-Egret/" rel="tag">WebStorm Egret</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/【Egret】 WebSocket 的使用说明"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/09/02/old/%E3%80%90Egret%E3%80%91%20WebSocket%20%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"
+    >【Egret】 WebSocket 的使用说明</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/09/02/old/%E3%80%90Egret%E3%80%91%20WebSocket%20%E7%9A%84%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" class="article-date">
+  <time datetime="2016-09-02T08:13:37.000Z" itemprop="datePublished">2016-09-02</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Egret/">Egret</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<pre>
+在Egret里可以使用WebSocket ，也可以使用socket.io</pre>
+<pre></pre>
+<pre>首先先深入了解一下 WebSocket 在Egret里的机制，看这篇文章：
+
+</pre>
+<pre><strong>主要讲解Egret里使用WebSocket和protoBuf</strong>
+</pre>
+<pre><a target="_blank" target="_blank" href="http://www.cnblogs.com/yangxiao/p/4686729.html">http://www.cnblogs.com/yangxiao/p/4686729.html</a>
+</pre>
+<pre></pre>
+<p><br>
+</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Egret-Html5-websocket/" rel="tag">Egret Html5 websocket</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/P2物理引擎中文文档"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/08/19/old/P2%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/"
+    >P2物理引擎中文文档</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/08/19/old/P2%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/" class="article-date">
+  <time datetime="2016-08-19T08:38:41.000Z" itemprop="datePublished">2016-08-19</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS-JavaScript/">HTML CSS JavaScript</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div style="top:0px">&#65279;&#65279;</div>
+P2物理引擎中文文档地址：<a target="_blank" href="https://github.com/schteppe/p2.js/wiki/Chinese-wiki-%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA">https://github.com/schteppe/p2.js/wiki/Chinese-wiki-%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA</a>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/P2%E7%89%A9%E7%90%86%E5%BC%95%E6%93%8E/" rel="tag">P2物理引擎</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+  </article>
+  
+
+  
+  <nav class="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/7/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/9/">下一页</a>
+  </nav>
+  
+</section>
+</div>
+
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2020
+        <i class="ri-heart-fill heart_icon"></i> Peng Xiang
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="PxSite"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Subtitle -->
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 100,
+      showCursor: true
+    });
+  } catch (err) {
+    console.log(err)
+  }
+</script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>

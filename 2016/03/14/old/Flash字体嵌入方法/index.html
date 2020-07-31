@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    Flash字体嵌入方法 |  PxSite
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="PxSite" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-old/Flash字体嵌入方法"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Flash字体嵌入方法
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/Flash%E5%AD%97%E4%BD%93%E5%B5%8C%E5%85%A5%E6%96%B9%E6%B3%95/" class="article-date">
+  <time datetime="2016-03-14T08:12:00.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">1.1k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">5 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div class="articalContent   newfont_family" id="sina_keyword_ad_area2">
+<p>原文链接：<a target="_blank" target="_blank" href="http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html">http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html</a></p>
+一、如果使用flash cs5.5<br>
+<br>
+1.先新建一个字体fla文件，然后是文本-字体嵌入，如图<br>
+<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/name.PNG" alt="" width="308" height="220" border="0" style="width:308.25px; height:220.81px"><br>
+<br>
+<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/as.PNG" alt="" width="308" height="236" border="0" style="width:308.1px; height:236.92px"><br>
+<br>
+<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/lib.PNG" alt="" width="249" height="37" border="0"><br>
+<br>
+然后发布swf<br>
+2.导入swf，并使用字体<br>
+<br>
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_1_2781429"  name="code" class="javascript">var __fontClass:Class = _loader.contentLoaderInfo.applicationDomain.getDefinition(&quot;FontX&quot;) as Class;
+Font.registerFont(__fontClass);
+var __format:TextFormat = new TextFormat();
+var __tf:TextField = new TextField();
+//var __fontArr:Array= Font.enumerateFonts(false);
+var myFont:Font = new MyFont() as Font;
+__format.font = myFont.fontName;
+__tf.defaultTextFormat = __format;
+__tf.embedFonts = true;
+__tf.text = 'ABCDefg123456,.';</pre><br>
+二、如果使用as项目<br>
+<br>
+1.首先还是建立font.swf<br>
+<br>
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_2_1255476"  name="code" class="javascript">package
+{
+import flash.display.Sprite;
+import flash.text.Font;
+import flash.text.TextField;
+import flash.text.TextFormat;
+public class fonts extends Sprite
+{
+    [Embed(source=&quot;font1.ttf&quot;,fontName=&quot;name1&quot;,embedAsCFF=&quot;false&quot;,unicodeRange=&quot;U+0020,U+0041-005A,U+0020,U+0061-007A,U+0030-0039,U+002E,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E,U+0020-002F,U+0030-0039,U+003A-0040,U+0041-005A,U+005B-0060,U+0061-007A,U+007B-007E&quot;)]
+    public var FontClass1:Class;
+    [Embed(source=&quot;font2.ttf&quot;,fontFamily=&quot;Franklin Gothic Book&quot;,embedAsCFF=&quot;false&quot;,unicodeRange=&quot;U+0020,U+0041-005A,U+0020,U+0061-007A,U+0030-0039,U+002E,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E,U+0020-002F,U+0030-0039,U+003A-0040,U+0041-005A,U+005B-0060,U+0061-007A,U+007B-007E&quot;)]
+    public var FontClass2:Class;
+
+<pre><code>public function fonts()
+{
+    var __fontArr:Array= Font.enumerateFonts(false);
+    //Font.registerFont(myFont);
+    for each(var __font:Font in __fontArr)
+        trace(__font.fontName, __font.fontType);
+}</code></pre><p>}<br>}</pre><br><br>&nbsp;&nbsp;&nbsp; source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 指定要嵌入的字体文件路径。还可以用 systemFont指定一个系统中安装的字体。这样的话就可以不需要 source参数了。<br><br>&nbsp;&nbsp;&nbsp; fontName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这个实际上就是 fontFamily 的别名。<br><br>&nbsp;&nbsp;&nbsp; embedAsCFF&nbsp;&nbsp;&nbsp; 如果不提供这个参数，默认就是true。所以，如果系统你嵌入的字体用于TextField，一定要将其设置为false。<br><br>&nbsp;&nbsp;&nbsp; unicodeRange&nbsp; 要嵌入的文本的范围。见下表：<br><br><br><br>&nbsp;<br><br><br><br>嵌入字体范围：<br><br><br><br>&nbsp;&nbsp;&nbsp; 大写字符&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020,U&#43;0041-U&#43;005A<br><br>&nbsp;&nbsp;&nbsp; 小写字符&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020,U&#43;0061-U&#43;007A<br><br>&nbsp;&nbsp;&nbsp; 数字&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0030-U&#43;0039,U&#43;002E<br><br>&nbsp;&nbsp;&nbsp; 标点符号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020-U&#43;002F,U&#43;003A-U&#43;0040,U&#43;005B-U&#43;0060,U&#43;007B-U&#43;007E<br><br>&nbsp;&nbsp;&nbsp; 基本拉丁字符&nbsp;&nbsp;&nbsp; U&#43;0020-U&#43;002F, U&#43;0030-U&#43;0039, U&#43;003A-U&#43;0040, U&#43;0041-U&#43;005A, U&#43;005B-U&#43;0060, U&#43;0061-U&#43;007A, U&#43;007B-U&#43;007E<br><br><br><br>当然，还有中文范围等等，详细的可以找到你本机的 FlexSDK/frameworks/flash-unicode-table.xml<br><br><br><br>2.导入swf，使用字体<br><br><br><br>&nbsp;<br></p>
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_3_5508617"  name="code" class="javascript">package
+{
+import flash.display.Sprite;
+import flash.display.Loader;
+import flash.events.Event;
+import flash.events.IOErrorEvent;
+import flash.events.SecurityErrorEvent;
+import flash.system.LoaderContext;
+import flash.system.ApplicationDomain;
+import flash.system.SecurityDomain;
+import flash.net.URLRequest;
+import flash.text.Font;
+import flash.text.TextFormat;
+import flash.text.TextField;
+import flash.utils.setTimeout;
+
+public class LoadEmbedFont extends Sprite
+{
+    public function LoadEmbedFont()
+    {
+        _loader = new Loader();
+        _loader.contentLoaderInfo.addEventListener(Event.COMPLETE, handler_comp);
+        _loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, handler_error);
+        _loader.contentLoaderInfo.addEventListener(SecurityErrorEvent.SECURITY_ERROR, handler_error);
+
+        var __loaderContext:LoaderContext = new LoaderContext(true ,new ApplicationDomain(null));
+        //如果自己又被父SWF载入了一次，那么应用程序域就必须设置成当前域或者是子域才行
+        //var __loaderContext:LoaderContext = new LoaderContext(true, ApplicationDomain.currentDomain);
+        //如果载入的字体swf与发起载入的swf不在一个网域，就需要将安全域设定为当前安全域
+        //var __loaderContext:LoaderContext = new LoaderContext(true, ApplicationDomain.currentDomain, SecurityDomain.currentDomain);
+        _loader.load(new URLRequest('myfont.swf'),  __loaderContext);
+        //_loader.load(new URLRequest('http://10.0.0.5:5300/swf/assets/ui/fonts_local.swf'),  __loaderContext);
+    }
+
+    private var _loader:Loader;
+    private var __fontObj:Font
+    private function handler_comp($evt:Event):void
+    {
+        trace('载入字体成功');
+        var __font:* = _loader.content;
+
+        Font.registerFont(__font.FontClass1);
+        Font.registerFont(__font.FontClass2);
+
+        //也可以使用这种方式获取嵌入的字体类，类的名称是“源文件类名_嵌入目标变量名称”
+        //var __fontClass:Class = _loader.contentLoaderInfo.applicationDomain.getDefinition(&quot;fonts_FontClass1&quot;) as Class;
+//        trace('class:',__fontClass);
+//        __fontObj = new __fontClass();
+//        Font.registerFont(___fontClass);
+        showTF();
+
+    }
+
+    private function handler_error($evt:Event):void
+    {
+        trace($evt.toString());
+    }
+
+    private function showTF():void
+    {
+        var __fontArr:Array= Font.enumerateFonts(false);
+        trace('AppDomain font list:', __fontArr.length);
+        for each(var __font:Font in __fontArr)
+        {
+            trace(__font.fontName, __font.fontType, __font.fontStyle);
+            var __tf:TextField = new TextField();
+            __tf.name = 'tf_'+__font.fontName;
+
+            __tf.width = 200;
+            var __format:TextFormat = new TextFormat();
+            //__format.font = __fontObj.fontName
+            __format.font = __font.fontName;
+            __tf.defaultTextFormat = __format;
+            __tf.embedFonts = true;
+            __tf.text = 'ABCDefg123456,.';
+            __tf.x = Math.random()*this.stage.stageWidth;
+            __tf.y = Math.random()*this.stage.stageHeight;
+            addChild(__tf);
+            trace('__tf:', __tf.name, __tf.text, __tf.x, __tf.y);
+        }
+    }
+}
+}</pre><br>
+<br>
+&nbsp;3.查看字体<br>
+<br>
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_4_4570526"  name="code" class="javascript">import flash.text.Font;
+var allFonts:Array = Font.enumerateFonts(true);
+allFonts.sortOn(&quot;fontName&quot;, Array.CASEINSENSITIVE);
+
+<p>for(var i:uint=0;i&lt;allFonts.length;i++){<br>        trace(&quot;字体名称:&quot;+allFonts[i].fontName+&quot;字体样式:&quot;+allFonts[i].fontStyle+&quot;字体类型:&quot;+allFonts[i].fontType)<br>}</pre></div></p>
+ 
+      <!-- reward -->
+      
+      <div id="reward-btn">
+        Donate
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pxi.gitee.io/2016/03/14/old/Flash%E5%AD%97%E4%BD%93%E5%B5%8C%E5%85%A5%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ActionScript3/" rel="tag">ActionScript3</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2016/03/14/old/as3%E4%B8%AD%E5%8E%BB%E6%8E%89%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E8%BE%B9%E7%9A%84%E7%A9%BA%E6%A0%BC%EF%BC%8C%E6%8D%A2%E8%A1%8C%E7%AC%A6/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            as3中去掉字符串两边的空格，换行符
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2016/03/14/old/FLEX%E4%B8%ADSharedObject%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%BA%94%E7%94%A8/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">FLEX中SharedObject介绍及应用</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2020
+        <i class="ri-heart-fill heart_icon"></i> Peng Xiang
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="PxSite"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Subtitle -->
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 100,
+      showCursor: true
+    });
+  } catch (err) {
+    console.log(err)
+  }
+</script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>

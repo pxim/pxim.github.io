@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8" />
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+     PxSite
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="PxSite" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      
+<section class="cover">
+    
+      
+      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
+        target="_blank"><img width="149" height="149" src="/images/forkme.png"
+          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="/images/cover1.jpg" alt="image frame" />
+    </div>
+    <div class="cover-inner text-center text-white">
+      <h1><a href="/">PxSite</a></h1>
+      <div id="subtitle-box">
+        
+        <span id="subtitle"></span>
+        
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+<div id="main">
+  <section class="outer">
+  <article class="articles">
+    
+    
+    
+    
+    <article
+  id="post-old/as3中强制垃圾回收"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/as3%E4%B8%AD%E5%BC%BA%E5%88%B6%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/"
+    >as3中强制垃圾回收</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/as3%E4%B8%AD%E5%BC%BA%E5%88%B6%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" class="article-date">
+  <time datetime="2016-03-14T08:12:08.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div class="articalContent   newfont_family" id="sina_keyword_ad_area2">&nbsp;<wbr>
+<div style="border:1px solid rgb(227,227,227); width:100%">
+<div style="width:100%; color:rgb(0,0,0); font-family:'Consolas','Courier new'; font-size:12px; margin-top:5px; border-bottom-color:rgb(227,227,227); border-bottom-width:1px; border-bottom-style:solid">
+&nbsp;<wbr>ActionScript Code&nbsp;<wbr></div>
+<table cellspacing="0" cellpadding="0" border="0" style="width:100%; line-height:15px; font-family:'Consolas','Courier new'; font-size:12px; vertical-align:text-top">
+<tbody>
+<tr>
+<td style="color:rgb(0,130,132); vertical-align:text-top; background-color:rgb(227,227,227)">
+<div style="margin:7px; text-align:right; white-space:nowrap"><nobr>1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+7<br>
+8<br>
+9<br>
+10<br>
+</nobr></div>
+</td>
+<td style="padding:1px; background-color:rgb(0,130,132)">
+<div style="border:1px solid rgb(0,130,132)"></div>
+</td>
+<td style="width:100%; color:rgb(0,0,0); vertical-align:text-top; background-color:rgb(239,239,239)">
+<div style="margin:7px">&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr><span style="color:#0000ff">private</span><span style="color:#000000">&nbsp;<wbr></span><span style="color:#0000ff">function</span><span style="color:#000000">&nbsp;<wbr>doClearance():</span><span style="color:#8000ff">void</span><span style="color:#000000">&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>{&nbsp;<wbr>&nbsp;<wbr><br>
+</span><span style="color:#008000">//&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>trace(&quot;clear&quot;);&nbsp;<wbr>&nbsp;<wbr><br>
+</span><span style="color:#000000">&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">try</span><span style="color:#000000">{&nbsp;<wbr>&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">new</span><span style="color:#000000">&nbsp;<wbr></span><span style="color:#0000ff">LocalConnection</span><span style="color:#000000">().</span><span style="color:#0000ff">connect</span><span style="color:#000000">(</span><span style="color:#800000">&quot;foo&quot;</span><span style="color:#000000">);&nbsp;<wbr>&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">new</span><span style="color:#000000">&nbsp;<wbr></span><span style="color:#0000ff">LocalConnection</span><span style="color:#000000">().</span><span style="color:#0000ff">connect</span><span style="color:#000000">(</span><span style="color:#800000">&quot;foo&quot;</span><span style="color:#000000">);&nbsp;<wbr>&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>}</span><span style="color:#0000ff">catch</span><span style="color:#000000">(error&nbsp;<wbr>:&nbsp;<wbr></span><span style="color:#8000ff">Error</span><span style="color:#000000">){&nbsp;<wbr>&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>}&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>}&nbsp;<wbr></span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ActionScript3/" rel="tag">ActionScript3</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/as3中textField输入字符时，一次性过长后自动换行"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/as3%E4%B8%ADtextField%E8%BE%93%E5%85%A5%E5%AD%97%E7%AC%A6%E6%97%B6%EF%BC%8C%E4%B8%80%E6%AC%A1%E6%80%A7%E8%BF%87%E9%95%BF%E5%90%8E%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C/"
+    >as3中textField输入字符时，一次性过长后自动换行</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/as3%E4%B8%ADtextField%E8%BE%93%E5%85%A5%E5%AD%97%E7%AC%A6%E6%97%B6%EF%BC%8C%E4%B8%80%E6%AC%A1%E6%80%A7%E8%BF%87%E9%95%BF%E5%90%8E%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C/" class="article-date">
+  <time datetime="2016-03-14T08:12:06.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div class="articalContent   newfont_family" id="sina_keyword_ad_area2">
+<p></p>
+<div style="border:1px solid rgb(227,227,227); width:100%">
+<div style="width:100%; color:rgb(0,0,0); font-family:'Consolas','Courier new'; font-size:12px; margin-top:5px; border-bottom-color:rgb(227,227,227); border-bottom-width:1px; border-bottom-style:solid">
+&nbsp;<wbr>ActionScript Code&nbsp;<wbr></div>
+<table cellspacing="0" cellpadding="0" border="0" style="width:100%; line-height:15px; font-family:'Consolas','Courier new'; font-size:12px; vertical-align:text-top">
+<tbody>
+<tr>
+<td style="color:rgb(0,130,132); vertical-align:text-top; background-color:rgb(227,227,227)">
+<div style="margin:7px; text-align:right; white-space:nowrap"><nobr>1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+7<br>
+8<br>
+9<br>
+10<br>
+11<br>
+12<br>
+13<br>
+14<br>
+15<br>
+16<br>
+17<br>
+18<br>
+</nobr></div>
+</td>
+<td style="padding:1px; background-color:rgb(0,130,132)">
+<div style="border:1px solid rgb(0,130,132)"></div>
+</td>
+<td style="width:100%; color:rgb(0,0,0); vertical-align:text-top; background-color:rgb(239,239,239)">
+<div style="margin:7px"><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>txt_show.<span style="color:#0000ff">text</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr>showStr;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">var</span><span style="color:#000000">&nbsp;<wbr>str:</span><span style="color:#8000ff">String</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr>txt_show.</span><span style="color:#0000ff">text</span><span style="color:#000000">;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">var</span><span style="color:#000000">&nbsp;<wbr>strlen:</span><span style="color:#8000ff">int</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr>str.</span><span style="color:#0000ff">length</span><span style="color:#000000">;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">var</span><span style="color:#000000">&nbsp;<wbr>len:</span><span style="color:#8000ff">int</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr></span><span style="color:#ff0000">0</span><span style="color:#000000">;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">for</span><span style="color:#000000">&nbsp;<wbr>(</span><span style="color:#0000ff">var</span><span style="color:#000000">&nbsp;<wbr>i:</span><span style="color:#8000ff">int</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr></span><span style="color:#ff0000">0</span><span style="color:#000000">;&nbsp;<wbr>i&nbsp;<wbr>&lt;&nbsp;<wbr>strlen;&nbsp;<wbr>i&#43;&#43;)&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>{<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>len&nbsp;<wbr>&#43;=&nbsp;<wbr>txt_show.textField.getCharBoundaries(i).</span><span style="color:#0000ff">width</span><span style="color:#000000">;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">if</span><span style="color:#000000">(len&nbsp;<wbr>&gt;&nbsp;<wbr>txt_show.textField.</span><span style="color:#0000ff">width</span><span style="color:#000000">&nbsp;<wbr>-&nbsp;<wbr></span><span style="color:#ff0000">5</span><span style="color:#000000">)<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>{<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">var</span><span style="color:#000000">&nbsp;<wbr>temp:</span><span style="color:#8000ff">String</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr>str.</span><span style="color:#0000ff">charAt</span><span style="color:#000000">(i&nbsp;<wbr>-&nbsp;<wbr></span><span style="color:#ff0000">1</span><span style="color:#000000">)&nbsp;<wbr>&#43;&nbsp;<wbr></span><span style="color:#800000">&quot;\n&quot;</span><span style="color:#000000">;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>txt_show.textField.</span><span style="color:#0000ff">replaceText</span><span style="color:#000000">(i&nbsp;<wbr>-&nbsp;<wbr></span><span style="color:#ff0000">1</span><span style="color:#000000">,&nbsp;<wbr>i,&nbsp;<wbr>temp);<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>len&nbsp;<wbr>=&nbsp;<wbr></span><span style="color:#ff0000">0</span><span style="color:#000000">;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>}<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>}<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr><br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>txt_show.textField.</span><span style="color:#0000ff">width</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr></span><span style="color:#ff0000">210</span><span style="color:#000000">;</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/as3/" rel="tag">as3</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/as3中去掉字符串两边的空格，换行符"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/as3%E4%B8%AD%E5%8E%BB%E6%8E%89%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E8%BE%B9%E7%9A%84%E7%A9%BA%E6%A0%BC%EF%BC%8C%E6%8D%A2%E8%A1%8C%E7%AC%A6/"
+    >as3中去掉字符串两边的空格，换行符</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/as3%E4%B8%AD%E5%8E%BB%E6%8E%89%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E8%BE%B9%E7%9A%84%E7%A9%BA%E6%A0%BC%EF%BC%8C%E6%8D%A2%E8%A1%8C%E7%AC%A6/" class="article-date">
+  <time datetime="2016-03-14T08:12:02.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div class="articalContent   newfont_family" id="sina_keyword_ad_area2">&nbsp;<wbr>as3 去掉字符串两边的空&#26684;，换行符，方法一
+<div style="border:1px solid rgb(227,227,227); width:100%">
+<div style="width:100%; color:rgb(0,0,0); font-family:'Consolas','Courier new'; font-size:12px; margin-top:5px; border-bottom-color:rgb(227,227,227); border-bottom-width:1px; border-bottom-style:solid">
+&nbsp;<wbr>ActionScript Code&nbsp;<wbr></div>
+<table cellspacing="0" cellpadding="0" border="0" style="width:100%; line-height:15px; font-family:'Consolas','Courier new'; font-size:12px; vertical-align:text-top">
+<tbody>
+<tr>
+<td style="color:rgb(0,130,132); vertical-align:text-top; background-color:rgb(227,227,227)">
+<div style="margin:7px; text-align:right; white-space:nowrap"><nobr>1<br>
+2<br>
+3<br>
+4<br>
+5<br>
+6<br>
+7<br>
+8<br>
+9<br>
+10<br>
+11<br>
+12<br>
+13<br>
+14<br>
+15<br>
+16<br>
+17<br>
+18<br>
+19<br>
+20<br>
+</nobr></div>
+</td>
+<td style="padding:1px; background-color:rgb(0,130,132)">
+<div style="border:1px solid rgb(0,130,132)"></div>
+</td>
+<td style="width:100%; color:rgb(0,0,0); vertical-align:text-top; background-color:rgb(239,239,239)">
+<div style="margin:7px"><span style="color:#0000ff">public</span><span style="color:#000000">&nbsp;<wbr></span><span style="color:#0000ff">function</span><span style="color:#000000">&nbsp;<wbr>trim(char:</span><span style="color:#8000ff">String</span><span style="color:#000000">):</span><span style="color:#8000ff">String</span><span style="color:#000000">{<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">if</span><span style="color:#000000">(char&nbsp;<wbr>==&nbsp;<wbr>null){<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">return</span><span style="color:#000000">&nbsp;<wbr>null;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>}<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">return</span><span style="color:#000000">&nbsp;<wbr>rtrim(ltrim(char));<br>
+&nbsp;<wbr>&nbsp;<wbr>}<br>
+&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">private</span><span style="color:#000000">&nbsp;<wbr></span><span style="color:#0000ff">function</span><span style="color:#000000">&nbsp;<wbr>ltrim(char:</span><span style="color:#8000ff">String</span><span style="color:#000000">):</span><span style="color:#8000ff">String</span><span style="color:#000000">{<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">if</span><span style="color:#000000">(char&nbsp;<wbr>==&nbsp;<wbr>null){<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">return</span><span style="color:#000000">&nbsp;<wbr>null;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>}<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">var</span><span style="color:#000000">&nbsp;<wbr>pattern:</span><span style="color:#8000ff">RegExp</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr>/^\s*/;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">return</span><span style="color:#000000">&nbsp;<wbr>char.replace(pattern,</span><span style="color:#800000">&quot;&quot;</span><span style="color:#000000">);<br>
+&nbsp;<wbr>&nbsp;<wbr>}<br>
+&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">private</span><span style="color:#000000">&nbsp;<wbr></span><span style="color:#0000ff">function</span><span style="color:#000000">&nbsp;<wbr>rtrim(char:</span><span style="color:#8000ff">String</span><span style="color:#000000">):</span><span style="color:#8000ff">String</span><span style="color:#000000">{<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">if</span><span style="color:#000000">(char&nbsp;<wbr>==&nbsp;<wbr>null){<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">return</span><span style="color:#000000">&nbsp;<wbr>null;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr>}<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">var</span><span style="color:#000000">&nbsp;<wbr>pattern:</span><span style="color:#8000ff">RegExp</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr>/\s*$/;<br>
+&nbsp;<wbr>&nbsp;<wbr>&nbsp;<wbr></span><span style="color:#0000ff">return</span><span style="color:#000000">&nbsp;<wbr>char.replace(pattern,</span><span style="color:#800000">&quot;&quot;</span><span style="color:#000000">);<br>
+&nbsp;<wbr>&nbsp;<wbr>}</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;<wbr></p>
+<p>去除掉空&#26684;，方法二</p>
+<p></p>
+<div style="border:1px solid rgb(227,227,227); width:100%">
+<div style="width:100%; color:rgb(0,0,0); font-family:'Consolas','Courier new'; font-size:12px; margin-top:5px; border-bottom-color:rgb(227,227,227); border-bottom-width:1px; border-bottom-style:solid">
+&nbsp;<wbr>ActionScript Code&nbsp;<wbr></div>
+<table cellspacing="0" cellpadding="0" border="0" style="width:100%; line-height:15px; font-family:'Consolas','Courier new'; font-size:12px; vertical-align:text-top">
+<tbody>
+<tr>
+<td style="color:rgb(0,130,132); vertical-align:text-top; background-color:rgb(227,227,227)">
+<div style="margin:7px; text-align:right; white-space:nowrap"><nobr>1<br>
+</nobr></div>
+</td>
+<td style="padding:1px; background-color:rgb(0,130,132)">
+<div style="border:1px solid rgb(0,130,132)"></div>
+</td>
+<td style="width:100%; color:rgb(0,0,0); vertical-align:text-top; background-color:rgb(239,239,239)">
+<div style="margin:7px"><span style="color:#0000ff">var</span><span style="color:#000000">&nbsp;<wbr>str:</span><span style="color:#8000ff">String</span><span style="color:#000000">&nbsp;<wbr>=&nbsp;<wbr>txt_show.</span><span style="color:#0000ff">text</span><span style="color:#000000">.replace(/([&nbsp;<wbr>&nbsp;<wbr>]{</span><span style="color:#ff0000">1</span><span style="color:#000000">})/g,</span><span style="color:#800000">&quot;&quot;</span><span style="color:#000000">);</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;<wbr></p>
+</div>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ActionScript3/" rel="tag">ActionScript3</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/Flash字体嵌入方法"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/Flash%E5%AD%97%E4%BD%93%E5%B5%8C%E5%85%A5%E6%96%B9%E6%B3%95/"
+    >Flash字体嵌入方法</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/Flash%E5%AD%97%E4%BD%93%E5%B5%8C%E5%85%A5%E6%96%B9%E6%B3%95/" class="article-date">
+  <time datetime="2016-03-14T08:12:00.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div class="articalContent   newfont_family" id="sina_keyword_ad_area2">
+<p>原文链接：<a target="_blank" target="_blank" href="http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html">http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html</a></p>
+一、如果使用flash cs5.5<br>
+<br>
+1.先新建一个字体fla文件，然后是文本-字体嵌入，如图<br>
+<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/name.PNG" alt="" width="308" height="220" border="0" style="width:308.25px; height:220.81px"><br>
+<br>
+<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/as.PNG" alt="" width="308" height="236" border="0" style="width:308.1px; height:236.92px"><br>
+<br>
+<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/lib.PNG" alt="" width="249" height="37" border="0"><br>
+<br>
+然后发布swf<br>
+2.导入swf，并使用字体<br>
+<br>
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_1_2781429"  name="code" class="javascript">var __fontClass:Class = _loader.contentLoaderInfo.applicationDomain.getDefinition(&quot;FontX&quot;) as Class;
+Font.registerFont(__fontClass);
+var __format:TextFormat = new TextFormat();
+var __tf:TextField = new TextField();
+//var __fontArr:Array= Font.enumerateFonts(false);
+var myFont:Font = new MyFont() as Font;
+__format.font = myFont.fontName;
+__tf.defaultTextFormat = __format;
+__tf.embedFonts = true;
+__tf.text = 'ABCDefg123456,.';</pre><br>
+二、如果使用as项目<br>
+<br>
+1.首先还是建立font.swf<br>
+<br>
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_2_1255476"  name="code" class="javascript">package
+{
+import flash.display.Sprite;
+import flash.text.Font;
+import flash.text.TextField;
+import flash.text.TextFormat;
+public class fonts extends Sprite
+{
+    [Embed(source=&quot;font1.ttf&quot;,fontName=&quot;name1&quot;,embedAsCFF=&quot;false&quot;,unicodeRange=&quot;U+0020,U+0041-005A,U+0020,U+0061-007A,U+0030-0039,U+002E,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E,U+0020-002F,U+0030-0039,U+003A-0040,U+0041-005A,U+005B-0060,U+0061-007A,U+007B-007E&quot;)]
+    public var FontClass1:Class;
+    [Embed(source=&quot;font2.ttf&quot;,fontFamily=&quot;Franklin Gothic Book&quot;,embedAsCFF=&quot;false&quot;,unicodeRange=&quot;U+0020,U+0041-005A,U+0020,U+0061-007A,U+0030-0039,U+002E,U+0020-002F,U+003A-0040,U+005B-0060,U+007B-007E,U+0020-002F,U+0030-0039,U+003A-0040,U+0041-005A,U+005B-0060,U+0061-007A,U+007B-007E&quot;)]
+    public var FontClass2:Class;
+
+<pre><code>public function fonts()
+{
+    var __fontArr:Array= Font.enumerateFonts(false);
+    //Font.registerFont(myFont);
+    for each(var __font:Font in __fontArr)
+        trace(__font.fontName, __font.fontType);
+}</code></pre><p>}<br>}</pre><br><br>&nbsp;&nbsp;&nbsp; source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 指定要嵌入的字体文件路径。还可以用 systemFont指定一个系统中安装的字体。这样的话就可以不需要 source参数了。<br><br>&nbsp;&nbsp;&nbsp; fontName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这个实际上就是 fontFamily 的别名。<br><br>&nbsp;&nbsp;&nbsp; embedAsCFF&nbsp;&nbsp;&nbsp; 如果不提供这个参数，默认就是true。所以，如果系统你嵌入的字体用于TextField，一定要将其设置为false。<br><br>&nbsp;&nbsp;&nbsp; unicodeRange&nbsp; 要嵌入的文本的范围。见下表：<br><br><br><br>&nbsp;<br><br><br><br>嵌入字体范围：<br><br><br><br>&nbsp;&nbsp;&nbsp; 大写字符&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020,U&#43;0041-U&#43;005A<br><br>&nbsp;&nbsp;&nbsp; 小写字符&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020,U&#43;0061-U&#43;007A<br><br>&nbsp;&nbsp;&nbsp; 数字&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0030-U&#43;0039,U&#43;002E<br><br>&nbsp;&nbsp;&nbsp; 标点符号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020-U&#43;002F,U&#43;003A-U&#43;0040,U&#43;005B-U&#43;0060,U&#43;007B-U&#43;007E<br><br>&nbsp;&nbsp;&nbsp; 基本拉丁字符&nbsp;&nbsp;&nbsp; U&#43;0020-U&#43;002F, U&#43;0030-U&#43;0039, U&#43;003A-U&#43;0040, U&#43;0041-U&#43;005A, U&#43;005B-U&#43;0060, U&#43;0061-U&#43;007A, U&#43;007B-U&#43;007E<br><br><br><br>当然，还有中文范围等等，详细的可以找到你本机的 FlexSDK/frameworks/flash-unicode-table.xml<br><br><br><br>2.导入swf，使用字体<br><br><br><br>&nbsp;<br></p>
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_3_5508617"  name="code" class="javascript">package
+{
+import flash.display.Sprite;
+import flash.display.Loader;
+import flash.events.Event;
+import flash.events.IOErrorEvent;
+import flash.events.SecurityErrorEvent;
+import flash.system.LoaderContext;
+import flash.system.ApplicationDomain;
+import flash.system.SecurityDomain;
+import flash.net.URLRequest;
+import flash.text.Font;
+import flash.text.TextFormat;
+import flash.text.TextField;
+import flash.utils.setTimeout;
+
+public class LoadEmbedFont extends Sprite
+{
+    public function LoadEmbedFont()
+    {
+        _loader = new Loader();
+        _loader.contentLoaderInfo.addEventListener(Event.COMPLETE, handler_comp);
+        _loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, handler_error);
+        _loader.contentLoaderInfo.addEventListener(SecurityErrorEvent.SECURITY_ERROR, handler_error);
+
+        var __loaderContext:LoaderContext = new LoaderContext(true ,new ApplicationDomain(null));
+        //如果自己又被父SWF载入了一次，那么应用程序域就必须设置成当前域或者是子域才行
+        //var __loaderContext:LoaderContext = new LoaderContext(true, ApplicationDomain.currentDomain);
+        //如果载入的字体swf与发起载入的swf不在一个网域，就需要将安全域设定为当前安全域
+        //var __loaderContext:LoaderContext = new LoaderContext(true, ApplicationDomain.currentDomain, SecurityDomain.currentDomain);
+        _loader.load(new URLRequest('myfont.swf'),  __loaderContext);
+        //_loader.load(new URLRequest('http://10.0.0.5:5300/swf/assets/ui/fonts_local.swf'),  __loaderContext);
+    }
+
+    private var _loader:Loader;
+    private var __fontObj:Font
+    private function handler_comp($evt:Event):void
+    {
+        trace('载入字体成功');
+        var __font:* = _loader.content;
+
+        Font.registerFont(__font.FontClass1);
+        Font.registerFont(__font.FontClass2);
+
+        //也可以使用这种方式获取嵌入的字体类，类的名称是“源文件类名_嵌入目标变量名称”
+        //var __fontClass:Class = _loader.contentLoaderInfo.applicationDomain.getDefinition(&quot;fonts_FontClass1&quot;) as Class;
+//        trace('class:',__fontClass);
+//        __fontObj = new __fontClass();
+//        Font.registerFont(___fontClass);
+        showTF();
+
+    }
+
+    private function handler_error($evt:Event):void
+    {
+        trace($evt.toString());
+    }
+
+    private function showTF():void
+    {
+        var __fontArr:Array= Font.enumerateFonts(false);
+        trace('AppDomain font list:', __fontArr.length);
+        for each(var __font:Font in __fontArr)
+        {
+            trace(__font.fontName, __font.fontType, __font.fontStyle);
+            var __tf:TextField = new TextField();
+            __tf.name = 'tf_'+__font.fontName;
+
+            __tf.width = 200;
+            var __format:TextFormat = new TextFormat();
+            //__format.font = __fontObj.fontName
+            __format.font = __font.fontName;
+            __tf.defaultTextFormat = __format;
+            __tf.embedFonts = true;
+            __tf.text = 'ABCDefg123456,.';
+            __tf.x = Math.random()*this.stage.stageWidth;
+            __tf.y = Math.random()*this.stage.stageHeight;
+            addChild(__tf);
+            trace('__tf:', __tf.name, __tf.text, __tf.x, __tf.y);
+        }
+    }
+}
+}</pre><br>
+<br>
+&nbsp;3.查看字体<br>
+<br>
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_4_4570526"  name="code" class="javascript">import flash.text.Font;
+var allFonts:Array = Font.enumerateFonts(true);
+allFonts.sortOn(&quot;fontName&quot;, Array.CASEINSENSITIVE);
+
+<p>for(var i:uint=0;i&lt;allFonts.length;i++){<br>        trace(&quot;字体名称:&quot;+allFonts[i].fontName+&quot;字体样式:&quot;+allFonts[i].fontStyle+&quot;字体类型:&quot;+allFonts[i].fontType)<br>}</pre></div></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ActionScript3/" rel="tag">ActionScript3</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/FLEX中SharedObject介绍及应用"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/FLEX%E4%B8%ADSharedObject%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%BA%94%E7%94%A8/"
+    >FLEX中SharedObject介绍及应用</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/FLEX%E4%B8%ADSharedObject%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%BA%94%E7%94%A8/" class="article-date">
+  <time datetime="2016-03-14T08:11:48.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<p><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px"><span style="line-height:25.200000762939453px">ShareObject介绍：</span><br>
+</span></p>
+<p><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">1 ShareObject,</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">顾名思义共享对象</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">,</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">而通常意义上的共享，从</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">B/S</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">结构上来讲</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">,</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">无非是客户端（浏览器端）的共享和服务器端的共享了</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">,</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">不错</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">,ShareObject</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">刚好份演了这两种角色。而且</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">ShareObject</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">也是按此进行了两种分类</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">,</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">一类是</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">LSO</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">——</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">Local
+ Share Object</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">（本地共享对象）其实类&#20284;于</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">cookie</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">，而另一种</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">RSO</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">——</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">Remote
+ Share Object(</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">远程共享对象</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">)&nbsp;</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">我感觉比较类&#20284;于</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">JSP</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">中的</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">Application</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">对象，但好象比</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">Application</span><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">更强大。</span></p>
+<p><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px"><span style="line-height:25.200000762939453px">2.存储位置&nbsp;</span><br style="font-size:14px; line-height:25.2px">
+<span style="line-height:25.200000762939453px">以 Windows为例，目录为&nbsp;</span><br style="font-size:14px; line-height:25.2px">
+<span style="line-height:25.200000762939453px">C:\Documents and Settings\[ username ] \\Application Data\\Macromedia\\Flash&nbsp;</span><br style="font-size:14px; line-height:25.2px">
+<span style="line-height:25.200000762939453px">Player\\#SharedObjects\\ [ random character directory name ] ， 在Mac OS X 上， 目录为&nbsp;</span><br style="font-size:14px; line-height:25.2px">
+<span style="line-height:25.200000762939453px">/Users/[ username ] /Library/Preferences/Macromedia/Flash Player/#SharedObject/ [ random&nbsp;</span><br style="font-size:14px; line-height:25.2px">
+<span style="line-height:25.200000762939453px">character directory name ]。随机字符目录命名是为了安全考虑&nbsp;</span><br>
+</span></p>
+<p><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px"><span style="line-height:25.200000762939453px">下面我分别用实例代码来说两者的用法和用途：</span><br>
+</span></p>
+<p><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px"><span style="line-height:25.200000762939453px"></span></span></p>
+<p><span style="font-family:SimSun; font-size:14px">一：LSO（本地共享对象）</span></p>
+<p><span style="font-family:SimSun; font-size:14px">LSO的用法比较简单，和我们平常操作Cookie大同小异：</span></p>
+<p><span style="font-family:SimSun; font-size:14px">1．得到一个共享对象：</span></p>
+<p><span style="font-family:SimSun; font-size:14px">var so:SharedObject=SharedObject.getLocal(&quot;mydata&quot;,&quot;/&quot;);</span></p>
+<p><span style="font-family:SimSun; font-size:14px">2．往共享对象里存入&#20540;：</span></p>
+<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_1_3530946"  code_snippet_id="2234716" snippet_file_name="blog_20170301_1_3530946" name="code" class="javascript">var user:Object=new Object();
+
+<pre><code>user.userName=userName.text;
+
+user.passWord=passWord.text;
+
+user.isSaveLogin=(remember.selected==true?1:0);
+
+so.data.user=user;&lt;/pre&gt;&lt;br&gt;</code></pre><p><span style="font-family:SimSun; font-size:14px">3．清除共享对象里的&#20540;：&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_2_990454"  code_snippet_id="2234716" snippet_file_name="blog_20170301_2_990454" name="code" class="javascript">var so:SharedObject=SharedObject.getLocal(&quot;mydata&quot;,&quot;/&quot;);
+
+<pre><code>if(so.data.user!=null){
+
+       so.data.user=null;
+
+}&lt;/pre&gt;&lt;br&gt;</code></pre><p><span style="font-family:SimSun; font-size:14px">4．读取共享对象里的&#20540;：&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_3_6672055"  code_snippet_id="2234716" snippet_file_name="blog_20170301_3_6672055" name="code" class="javascript"> var so:SharedObject=SharedObject.getLocal(&quot;mydata&quot;,&quot;/&quot;);
+
+<pre><code>if(so.data.user!=null){
+
+       userName.text=so.data.user.userName;
+
+       passWord.text=so.data.user.passWord;
+
+       if(so.data.user.isSaveLogin.toString()==&amp;quot;1&amp;quot;){
+
+              remember.selected=true;
+
+       }&lt;/pre&gt;&lt;br&gt;</code></pre><p><span style="font-family:SimSun; font-size:14px">二：RSO（远程共享对象）：</span></p>
+<p><span style="font-family:SimSun; font-size:14px">&nbsp;RSO是服务器端的共享对象，服务器端的数据共享可以实现多个客户端数据共享，在这里服务器我采用Flash Media Server3，FMS的使用非常简便，你只要在安装目录下找到Applications目录，并在其下新建一个子目录就可以成为你的工程或项目了。关于FMS的使用大家可以参考相关文章，本文不做介绍：利用FMS和RSO我们可以实现非常多的功能，诸如，聊天室，联机游戏，视频会议，在线视频录制和视频聊天。。。。。。</span></p>
+<p><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">在这里我用一个简单的聊天室实例为例稍做讲解：</span><span style="font-family:SimSun; font-size:14px"><br>
+</span></p>
+<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_4_5593043"  code_snippet_id="2234716" snippet_file_name="blog_20170301_4_5593043" name="code" class="javascript">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;  
+&lt;mx:Application xmlns:mx=&quot;http://www.adobe.com/2006/mxml&quot; layout=&quot;absolute&quot; creationComplete=&quot;TextSO ();&quot;&gt;  
+    &lt;mx:Script&gt;  
+        &lt;![CDATA[  
+        import flash.events.SyncEvent;  
+        import flash.events.NetStatusEvent;  
+        import flash.events.MouseEvent;  
+        import flash.net.SharedObject;  
+        import flash.net.NetConnection;  
+
+<pre><code>    private var text_so:SharedObject;  
+    private var nc:NetConnection;  
+    private var rtmpGo:String;  
+    private var good:Boolean;  
+
+    public function TextSO ():void  
+    {   
+         button.label=&amp;quot;Send&amp;quot;;  
+         button.addEventListener (MouseEvent.CLICK,sendMsg);//为发送按钮添加发送事件  
+         rtmpGo = &amp;quot;rtmp://localhost/basicSO&amp;quot;;//这里设置FMS服务器的连接地址,basicSO即为,  
+         //FMS安装目录下Applications下自己手动新建的一个文件夹名称,也是FMS的工程名,就是这么简洁,不可意议  
+         nc = new NetConnection( );//产生一个连接对象  
+         nc.connect (rtmpGo);//连接到上面的地址  
+         nc.addEventListener (NetStatusEvent.NET_STATUS,doSO);//加入连接的监听事件,以便根据连接返回的状态做相应处理  
+    }  
+
+    private function doSO (e:NetStatusEvent):void  
+    {     
+         good=e.info.code == &amp;quot;NetConnection.Connect.Success&amp;quot;;//判断是否为连接成功状态  
+         //连接返回的状态有好几种,大家可以参看FMS的文档,很详尽  
+         if (good)//如果连接成轼,执行如下操作  
+         {  
+               text_so=SharedObject.getRemote(&amp;quot;test&amp;quot;,nc.uri,false);//得到远程共享对象,false属性是设置共享的数据为非持久化的,  
+                //即重启服务器后,先前的数据不会保存  
+               text_so.connect (nc);  
+               text_so.addEventListener (SyncEvent.SYNC,checkSO);  
+               //为共享对象添加异步事件,这也是服务器同步处理多客户端最关键的地方,  
+               //一个客户端进行了什么操作,其它客户端也会有相应的变化,就是通过此事件来完成的  
+         }  
+    }  
+
+    private function checkSO (e:SyncEvent):void  
+    {  
+         for (var chng:uint; chng&amp;lt;e.changeList.length; chng++)  
+         {  
+               switch (e.changeList[chng].code)  
+               {  
+                    case &amp;quot;clear&amp;quot; :  
+                         break;  
+
+                    case &amp;quot;success&amp;quot; :  
+                         trace (text_so.data.msg);  
+                         break;  
+
+                    case &amp;quot;change&amp;quot; ://一个客户端改变数据会更新所有客户端  
+                         textArea.htmlText+=text_so.data.msg + &amp;quot;\n&amp;quot;;  
+                         break;  
+               }  
+         }  
+    }  
+
+    private function sendMsg (e:MouseEvent):void  
+    {  
+         text_so.setProperty (&amp;quot;msg&amp;quot;,textInput.text);//将新的信息存入共享对象  
+         textArea.htmlText+=text_so.data.msg + &amp;quot;\n&amp;quot;;//更新客户端的信息列表  
+    }  
+
+
+    ]]&amp;gt;  
+&amp;lt;/mx:Script&amp;gt;  
+&amp;lt;mx:VBox&amp;gt;  
+    &amp;lt;mx:TextArea id=&amp;quot;textArea&amp;quot; width=&amp;quot;200&amp;quot; height=&amp;quot;200&amp;quot;/&amp;gt;//信息列表框  
+    &amp;lt;mx:TextInput id=&amp;quot;textInput&amp;quot;/&amp;gt;//消息输入框  
+    &amp;lt;mx:Button id=&amp;quot;button&amp;quot; /&amp;gt;//发送按钮  
+&amp;lt;/mx:VBox&amp;gt;  </code></pre><p>&lt;/mx:Application&gt; </pre><br><br><span style="font-family:SimSun; font-size:14px"><br><br></span></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ActionScript3-Flex-Flash-%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE/" rel="tag">ActionScript3 Flex Flash 本地存储数据</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/关于swf安全沙箱冲突：不能被本地访问"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/%E5%85%B3%E4%BA%8Eswf%E5%AE%89%E5%85%A8%E6%B2%99%E7%AE%B1%E5%86%B2%E7%AA%81%EF%BC%9A%E4%B8%8D%E8%83%BD%E8%A2%AB%E6%9C%AC%E5%9C%B0%E8%AE%BF%E9%97%AE/"
+    >关于swf安全沙箱冲突：不能被本地访问</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/%E5%85%B3%E4%BA%8Eswf%E5%AE%89%E5%85%A8%E6%B2%99%E7%AE%B1%E5%86%B2%E7%AA%81%EF%BC%9A%E4%B8%8D%E8%83%BD%E8%A2%AB%E6%9C%AC%E5%9C%B0%E8%AE%BF%E9%97%AE/" class="article-date">
+  <time datetime="2016-03-14T08:11:38.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div class="articalContent   newfont_family" id="sina_keyword_ad_area2">
+<p style=""><span style="font-family:Verdana"><span style="font-size:15px"><strong>错误提示</strong>：SWF 文件不能被本地访问 不能访问本地只有仅限于文件系统的 SWF 文件和可信的本地 SWF 文件可以访问本地资源</span><br>
+<span style="font-size:15px"><strong>错误信息</strong>：SecurityError:Error #2148: SWF 文件 D:\demo\demo.swf 不能访问本地资源D:\demo\demo\bin-debug\textLayout_4.0.0.10485.swf。只有仅限于文件系统的 SWF文件和可信的本地 SWF 文件可以访问本地资源。</span><br>
+<br>
+<span style="font-size:15px"><strong>解决方法 ：</strong></span><br>
+<span style="font-size:15px"><strong>第一种办法：</strong></span><br>
+<span style="font-size:15px">在Flash插件上右键-&gt;全局设置-&gt;高级-&gt;开发人员工具-&gt;受信任的位置设置-&gt;添加，然后添加你的文件或者文件夹即可。</span></span></p>
+<p style=""><span style="font-size:15px"><span style="font-family:Verdana">说明：在本地测试期间，FlashPlayer 可以显示阻止应用程序正常运行的安全警告。您可以使用“受信任位置设置”面板将您自己的 SWF 或 FLV内容指定为可信内容，从而解决这一问题。您可以将个别文件的路径指定为可信路径，或者指定文件夹为可信文件夹。可信文件夹中的所有文件及其任何子文件夹也会受信任。使用此选项卡可指定您计算机上包含您信任的SWF 或 FLV 内容的位置。可信内容不遵循阻止内容访问
+ Internet和本地计算机文件系统的安全规则。</span></span></p>
+<p style=""><span style="font-family:Verdana"><span style="font-size:15px"><strong>第二种方法:</strong></span><br>
+<span style="font-size:15px">在C:\WINDOWS\system32\Macromed\Flash\FlashPlayerTrust目录下添加一个文件，比如：1.txt（文件名可任意起），文件内容为项目的路径，当然也可以设置为“D:\”</span><br>
+<span style="font-size:15px">说明：</span><br>
+<span style="font-size:15px">为了让你的Flash在用户硬盘中拥有同时访问网络和本地的能力，你必须在用户计算机的FlashPlayerTrust目录中为你的Flash添加权限.</span><br>
+<span style="font-size:15px">FlashPlayerTrust 配置文件。这些是列出受信任路径的简单文本文件。这些文件由可执行的安装程序创建。当安装程序将 SWF 安装到用户的计算机时,它能够安装信任的配置文件并指定 SWF 是受信任的。</span></span></p>
+<p style=""><span style="font-family:Verdana"><span style="font-size:15px"><strong>第三种方法：</strong></span><br>
+<span style="font-size:15px">flex项目上点右键–&gt;属性–&gt;Flex编译器–&gt;附加的编译器参数</span><br>
+<span style="font-size:15px">加上 “ -use-network=false ”<span>&nbsp;<wbr></span></span><br>
+<span style="font-size:15px">说明：这样虽然也能解决问题。但是swf就无法访问网络资源了。所以不建议使用。</span></span></p>
+</div>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/山寨游戏的求生之路"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/%E5%B1%B1%E5%AF%A8%E6%B8%B8%E6%88%8F%E7%9A%84%E6%B1%82%E7%94%9F%E4%B9%8B%E8%B7%AF/"
+    >山寨游戏的求生之路</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/%E5%B1%B1%E5%AF%A8%E6%B8%B8%E6%88%8F%E7%9A%84%E6%B1%82%E7%94%9F%E4%B9%8B%E8%B7%AF/" class="article-date">
+  <time datetime="2016-03-14T08:11:22.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/News/">News</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div class="articalContent   newfont_family" id="sina_keyword_ad_area2">
+<p><span style="color:#000000">&nbsp;<wbr></span></p>
+<p><span style="color:#000000">&nbsp;<wbr></span></p>
+<p><a target="_blank" href="http://photo.blog.sina.com.cn/showpic.html#blogid=686581100102v7lm&amp;url=http://album.sina.com.cn/pic/001Ux2E0gy6O5pg5l947e" target="_blank"><span style="color:#000000"></span></a><br>
+</p>
+<div style="">
+<blockquote style=""><span style="color:#000000">导读：本文主要分析了国人对国产山寨游戏偏激看法的原因，明确了一个相对清晰的山寨游戏的定义，并简单地归纳了做山寨游戏，尤其是做好山寨游戏的方法。</span></blockquote>
+</div>
+<br style="">
+<br style="">
+<span style="background-color:rgb(252,248,232)"><span style="color:#000000"><span style="background-color:rgb(255,255,255)">　正文：<span style="">一说到山寨游戏，人们的第一反应是国产游戏。这是因为很多国产游戏盲目抄袭并且制作简陋因而倍受国内玩家们的诟病，最后形成了一种国产游戏就是垃圾山寨游戏的风气。事实上，国外的山寨游戏也不少，粗制滥造的更多，但很少有国内玩家去痛批国外的那些山寨游戏。笔者分析，造成这种现象的原因主要有两点</span><img title="山寨游戏的求生之路" alt="" src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" border="0" style=""><span style="">。</span></span></span></span><span style=""><br style="">
+</span><span style=""><br style="">
+</span><span style="color:#000000"><span style="">　　<span style="">第一是文化传播的问题</span>。国内玩家能接受的一般是中文游戏。外国游戏想要进入中国玩家的&#30524;球，就必须要做到汉化，而汉化的条件，要么是游戏公司实力雄厚能够自主汉化，要么游戏本身可玩性很强，国内有汉化组愿意提供汉化。无论哪种情况，玩家玩到的游戏的质量是有一定保障的。而国外的垃圾山寨游戏，根本就没有机会接触到国内玩家。失去了横向比较，国内玩家就不断把国外优秀作品与国内垃圾作品比较，如同田忌赛马一样以下等马对上等马，这比赛怎么能不输？</span><br style="">
+<br style="">
+<span style="">　　<span style="">第二便是部分国人的劣根性问题，那就是“别人的都是好的”</span>。我们常常会遇到这样一些人，他们更喜欢关注别人的成就。我们常听到他们的说“别人的工资更高”“别人的孩子成绩更好”“别人的游戏做得更好”等</span><img title="山寨游戏的求生之路" alt="" src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" border="0" style=""><span style="">。当然，这也是一种&#30524;界的开阔，至少他们知道还有更好的东西。但是很多人都不愿意在辛辛苦苦干出一番成就后，突然有人对你说“某某某比你做的更好，完爆你”，这是很打击人的激情的。而在你被打击的同时，对方便获得了一种虚假的成就感。为什么是虚假的呢，因为他靠的是别人的东西“击败”了你。这是一种病态扭曲的心理，里面有一个鄙视链条在起作用。比如某个人特别鄙视那些开比亚迪的人，这是因为他可以谈论兰博基&#23612;了，但是这个人其实根本连一辆自行车都买不起。</span><br style="">
+<br style="">
+<span style="">　　就笔者而言，在上大学之前，根本就瞧不起川大，因为笔者知道了有清华北大。这种人虽然讨人厌，但同时也是可悲的，因为他们的&#30524;界被扩展得相对较宽，但自身实力并没有跟上&#30524;界。所以在他们在依托别人的东西打击其他人之前，早已被打击多次了。放到游戏界，就形成了“这个游戏是垃圾，那谁谁谁才是好游戏”，“你们玩的都是些脑残游戏，要玩就玩某高档游戏”的诸多语调。这些人是十分可恨又可悲的，</span><img title="山寨游戏的求生之路" alt="" src="http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif" border="0" style=""><span style="">别回头，说的就是你。</span><br style="">
+<br style="">
+<span style="">　　回到山寨游戏的话题，我们首先要弄明白一个问题：什么叫“山寨游戏”？网上搜索“山寨”会找到很多解释。笔者这里归纳一下，“山寨游戏”，用通俗的文字来讲，就是“<span style="">抄别人的游戏</span>”。</span><br style="">
+<br style="">
+<span style="">　　抄别人的游戏，这是一个很&#31548;统的概念。站在玩家的角度讲，玩家第一次接触这款游戏，就马上想到了另外一款游戏，从而预知了这款游戏的主要游戏内容甚至核心玩法等，这就是典型的山寨游戏。游戏厂商们的目的是想通过抄，让自己开发的游戏更成功。首先，并不是所有游戏都会被抄，被抄的游戏肯定是一款已经拥有了一定的市场和用户基础的优秀产品。但具体要抄哪些内容，以及怎样去抄这些东西，不同的游戏厂商的理解和出发点不同，抄的方法也就不同。最后有的游戏抄成功了，甚至变得比被抄的游戏更成功了，人们便会给予各种美誉，甚至称之为“创意”。而有的游戏抄失败了，就成为了玩家们口中的“垃圾山寨货”。所以，山寨游戏不仅仅是简单的一个字，抄。游戏厂商们更应该注意对山寨游戏的深层理解和把握。</span><br style="">
+<br style="">
+<span style="">　　那么，怎样把一款山寨游戏做的比较成功呢？笔者认为主要有三招：</span><br style="">
+<br style="">
+<span style="">　　<span style="">第一招，出其不意，攻其不备。</span>这是最直接的招数，核心套路是越过对方阵地，快速起手攻向其他市场。这招的重点是一个“<span style="">快</span>”字。比如，某款游戏在一个区域火了，出招者可以趁该产品尚未进入另一个区域时，迅速仿制一款同类产品抢占该区域的市场。为了提高出招速度，出招者常常连游戏名字都不改，或者只改个名字，游戏的美术风&#26684;、界面风&#26684;、游戏系统、剧情等几乎不变。这种招数能够成功的前提是对方没有重视其他区域游戏市场的扩展，或者干脆功力不够无法扩展。所以，这一招式能成功的必要条件是对方规模较小、实力不够强，或者决策层举棋不定、犹豫不决。但是一旦对方反应过来要进军该区域的市场时，出招者被告侵权是不可避免的。所以这一招只能作为对付小角色的招数，出招的风险是根据对手的实力和目标区域的法律来计算的，跨度很大。优点则是开发流程简单，资金回收压力小，很少考虑市场风险。但是采用这一招式，对出招速度要求很高，很多游戏甚至会牺牲部分游戏质量来达到更快地上市发行的目的，因此催生了大量粗制滥造的游戏，外人看来就像猴子偷桃一样很不雅观，总的来说只能算作下等招数。</span><br style="">
+<br style="">
+<span style="">　　<span style="">第二招，以彼之道，还施彼身</span>。这一招强调“<span style="">稳</span>”，更多的是双方内力的比拼。出招者有着雄厚的内力，在对方已经占据了部分游戏市场的情况下，利用更优秀的运营和渠道来强行抢夺对方的游戏市场。这种方法不会过分追求速度，为了脱掉“山寨”的帽子，游戏的部分内容也不一样。但是，游戏的核心玩法以及大部分游戏系统肯定是相同的。出招者的通常做法是在这个核心玩法的基础上，改变一下游戏题材或者美术风&#26684;，或者增加一些不影响核心玩法的游戏系统等。因为使用这一招的，一般是内力雄厚的游戏厂商，所以最终游戏会卖的不错，但玩家对游戏的评价却常常两极分化。当然对于卖方而言，商品的价&#20540;已经产生了，剩下的就是坐下来数钱了。所以这一招是一些有着董事会以及投资者压力的上市公司最喜欢用的。从投资的角度讲这个招式的风险是最低的，但是不利于游戏市场的良性发展，所以算一招可进可退可攻可守的中等招数。</span><br style="">
+<br style="">
+<span style="">　　<span style="">第三招，海纳百川，剑走偏锋</span>。出招者往往不走寻常路，突出一个“<span style="">变</span>”字。这一招是由第二招改进而来。在第二招中，出招者出招时往往只关注内力输出，招式内容是一样的，最多换个出招起手式。而第三招，则只需要截取招式中的部分内容，其他的都可以改变。比如，出招者可以保留内力运行方式，改变或者拓展一下招式攻击方向，通过改变游戏题材和内容把目标从成年人转到青少年、从宅男增加到腐女等；也可以保留招式，而改变内力运行方式，比如《</span><span style="">Minecraft</span><span style="">》就</span><span style="">把《</span><span style="">Infiniminer</span><span style="">》的游戏主题从战斗转变为生存创造，就获得了巨大的成功；还可以改变战斗场景，比如棋牌类游戏比起PC端，更容易在移动端获得胜利，等等。这一招可谓叫人防不胜防，常常在出招后，既能获得良好的效果，又能获得很好的评价。此乃山寨的最高境界，为上等招数，做得好的甚至可以开宗立派。这一招玩得溜的高手，很少会被人戴上“山寨”的帽子，反而会被人称赞“有创意”。但这一招的风险也是不定的，因为武功者，牵一发而动全身，所以此招需要出招者有着扎实的基础和对招式的深刻理解，否则也容易陷入走火入魔。</span><br style="">
+<br style="">
+<span style="">　　这山寨三招中，第三招为上，第二招次之。第一招最为粗劣，给人的印象就像放暗箭、使阴招、猴子偷桃的小人，嬉笑着说“我就抄你了咋地”，随时都可能被收拾。第二招则是肌肉的硬撼，也就是人们常说的“刚正面”，但是赢得不光彩。第三招则最为巧妙，打出这一招式，连旁观者也会心服口服，但是对出招者对招式的理解有较高要求。选择什么样的招式，最后实现的效果，最重要的还是出招者的目的，以及出招者自身的功力。</span><br style="">
+</span>
+<p style=""><span style="color:#000000">原文链接：</span><a target="_blank" href="http://www.gameres.com/306895.html" target="_blank"><span style="color:#000000">http://www.gameres.com/306895.html</span></a></p>
+</div>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/ActionScript，Flash，Flash!Flex Builder，FlashPlayer，AIR，swf，swc，swz之间的区别"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/ActionScript%EF%BC%8CFlash%EF%BC%8CFlash!Flex%20Builder%EF%BC%8CFlashPlayer%EF%BC%8CAIR%EF%BC%8Cswf%EF%BC%8Cswc%EF%BC%8Cswz%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB/"
+    >ActionScript，Flash，Flash/Flex Builder，FlashPlayer，AIR，swf，swc，swz之间的区别</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/ActionScript%EF%BC%8CFlash%EF%BC%8CFlash!Flex%20Builder%EF%BC%8CFlashPlayer%EF%BC%8CAIR%EF%BC%8Cswf%EF%BC%8Cswc%EF%BC%8Cswz%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB/" class="article-date">
+  <time datetime="2016-03-14T08:11:12.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Flash-Flex-ActionScript/">Flash Flex ActionScript</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div class="articalContent   newfont_family" id="sina_keyword_ad_area2">
+<p style="">&nbsp;<wbr></p>
+<p style="">原文链接：<a target="_blank" target="_blank" href="http://zengrong.net/post/1295.htm">http://zengrong.net/post/1295.htm</a></p>
+<h3 style="">ActionScript</h3>
+<p style="">ActionScript通常简称为AS，它是Flash平台的语言。AS编写的程序，最终可以编译成SWF、SWC。SWF就是我们常说的Flash动画。但是现在SWF已经不仅仅是动画，而是<a target="_blank" target="_blank" title="什么是RIA" href="http://zh.wikipedia.org/zh/%E4%B8%B0%E5%AF%8C%E4%BA%92%E8%81%94%E7%BD%91%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F">RIA</a>的载体。</p>
+<p style="">ActionScript有3个版本，分别是1.0版（AS1），2.0版（AS2）和3.0版（AS3）。只有Flash Player9及以上播放器才支持AS3编译的SWF。这三个版本的差别非常大，现在最流行的版本是AS3。<span style="font-family:inherit; margin:0px; padding:0px; outline:0px; border:0px currentColor; font-size:16px; vertical-align:baseline"></span></p>
+<h3 style="">Flex与MXML</h3>
+<p style="">因为在开发RIA的时候，需要很多常用的功能，例如控件（Button,ComboBox,List……）、布局（VGroup、VBox……）等等……Adobe就开发了一套官方的框架集来实现这些功能，这套框架集就叫做Flex。</p>
+<p style="">为了方便程序员快速编写RIA程序界面，Adobe又实现了一种基于XML语法的语言<strong style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-weight:700; vertical-align:baseline">MXML</strong>，这套语言很像HTML，可以与AS混用，MXML最终也是编译成SWF或SWC。Flex框架就是使用AS3与MXML两种语言写成的。但说白了，MXML
+ 外加实现了MXML语法，如果你有兴趣，也可以自己实现这些。Flash和Flex，都是用AS编写，使用swf体现。</p>
+<h3 style="">Flash</h3>
+<p style="">现在Adobe已经将Flash其定义为一个平台（Flash Plantform），包括了Flash IDE、FlashBuilder、AIR、FlashPlayer以及更多。但我们一般讲Flash，有两个意思，一个是指Flash动画（也就是网页上扩展名为swf的动画），另一个就是FlashIDE。</p>
+<p style="">Flash（IDE）从4.0开始进入中国，前期一直在网页动画方面告诉发展，多被用来做网页小广告（让你CPU100%的罪魁祸首之一）和MV（showgood三国系列、小小系列、大学自习室……曾经风靡一时啊）。那时的“闪客”，主要是做动画，即使涉及到编程，也大多是用当时的AS1.0（后来FlashMX2004升级为AS2.0）写一点stop、gotoAndPlay之类的东东了。Flash（IDE）发展到8.0版本以后，才开始大量用于编程，当时比较流行的就是“Flash留言本”等等。相关历史我做了一张图来表示，括号里的数字是年份。</p>
+<p style=""><img src="http://zengrong.net/wp-content/uploads/2011/04/flash_history.png" alt="FlashIDE发展史" title="FlashIDE发展史" class="aligncenter size-full wp-image-1310" width="685" height="514"><br>
+</p>
+<p style=""></p>
+<h3 style="">Flash Builder/Flex Builder</h3>
+<p style="">AS发展到3.0之后，由于其语法和JAVA比较像，再加上增强的性能与强类型，可以完全脱离FLA文件，使用纯文本编码，受到了许多其他程序员（尤其是JAVA程序员）的青睐。由此得以高速发展，用AS开发程序的人也越来越多。AS在视频网站、游戏行业发展迅速。但是，FlashIDE虽然是一个很好的动画制作工具，却不是一个好的开发工具。于是，Adobe又发布了FlexBuilder，一个基于Eclipse的IDE，并发布了Flex SDK，后来又开源了。</p>
+<p style="">有了免费的编译器，Flex得以快速发展。用FlexBuilder也可以开发纯AS项目（即所有的文件都是as文件，不包含MXML，也不包含FLA）。一个真正的程序猿，应该更愿意使用这种方式吧？FlexBuilder从4.0开始，被Adobe改名为Flash Builder。</p>
+<p style="">Flash Builder和Flash IDE不应该放在一起比较，它们不是一类软件。如果一定要比较一下的话，那么就是FlashIDE比较偏重于设计一点，用它做动画比较方便，当然也可以用它编写AS3程序。用FlashIDE编写的程序，会有一个FLA源文件，可能还包含多个as文件。FlashBuilder偏重于程序，用它可以开发MXML（也就是Flex）项目。也可以用它编写纯AS项目。用FlashBuilder编写的项目，都是纯文本文件（.as或者.mxml）。 对于程序流，当然偏爱FlashBuilder，而设计流比较偏爱Flash
+ IDE。</p>
+<p style="">当然，IDE并非只有Adobe官方的东西，<a target="_blank" target="_blank" href="http://www.flashdevelop.org/">FlashDevelop</a>就是个免费的IDE。如果你愿意，用记事本做编辑器也没什么不好（比如说zrong就正在尝试<a target="_blank" target="_blank" href="http://www.vim.org/">VIM</a>），因为SDK和编译器都是免费的。</p>
+<h3 style="">Flash Player</h3>
+<p style="">swf动画需要在网页上显示出来，就需要安装Flash Player。Flash Player的不同版本，其实与FlashIDE也有一定的对应关系（从上图也能看出来）。但到了AS3时代后，这个对应关系就不那么明显了。Flash Player9是能支持AS3 的最低版本（其实前面还有一个Flash Player 8.5，只是没普及就升级到9了），后面的FlashPlayer 都能支持AS3了。关于Flash Player，我写过一篇<a target="_blank" target="_blank" href="http://zengrong.net/post/1188.htm">有史以来关于FlashPlayer的最详细说明</a>，看这个就很清楚了。</p>
+<h3 style="">AIR</h3>
+<p style="">Flash Player再强大，也是运行在浏览器中，受浏览器约束。为了摆脱浏览器，Adobe又出奇招，发布了AIR。AIR其实就是一个Runtime，你可以把它理解成<a target="_blank" target="_blank" href="http://en.wikipedia.org/wiki/Java_Virtual_Machine">JVM</a>。有了AIR，就可以用AS3开发桌面软件，而且开发出的软件可跨平台运行（这和JAVA的<strong style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-weight:700; vertical-align:baseline">一次编译，随处运行</strong>不是如出一辙么！)。目前国内的AIR应用主要集中在网站的客户端方面，例如<a target="_blank" target="_blank" href="http://sinatair.sinaapp.com/">新浪微博AIR客户端</a>等。</p>
+<h3 style="">SWF SWC SWZ</h3>
+<p style=""><strong style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-weight:700; vertical-align:baseline">SWF</strong><br>
+swf是我们见到的最多的Flash平台文件了。是的，它就是Flash平台的最终表现形式。前面说到了，无论是Flex、Flash还是纯AS3，最终编译出来的文件都是swf&#26684;式，浏览器中的FlashPlayer插件和独立的FlashPlayer，也只能“打开”swf文件进行播放。前面说到的AIR，它的本质也就是运行时&#43;swf而已。</p>
+<p style="">其实并非所有的swf都能直接播放的。swf有3种：</p>
+<ol style="">
+<li style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; vertical-align:baseline">
+<strong style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-weight:700; vertical-align:baseline">程序SWF(application swf)</strong>：可以直接在flash player中运行的swf；</li><li style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; vertical-align:baseline">
+<strong style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-weight:700; vertical-align:baseline">库SWF（library swf）</strong>：swc文件中的library.swf；</li><li style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; vertical-align:baseline">
+<strong style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-weight:700; vertical-align:baseline">模块SWF（module swf）</strong>：Flex Module产生的swf文件。</li></ol>
+<p style="">最终用户碰到的绝大多数都是“程序SWF”，而程序猿们碰到后面两种SWF的可能性就比较大。</p>
+<p style=""><strong style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-weight:700; vertical-align:baseline">SWC</strong></p>
+<p style="">SWC是一种库文件，通常用来发布非开源的类。程序猿们将源码编译成SWC文件，并发布API文档，我们就可以使用这些SWC提供的类库进行自己的开发。SWC并不是运行时共享的，而是在编译的时候直接加入了程序SWF中。最终的程序SWF可以脱离SWC运行。</p>
+<p style="">SWC本质就是一个zip文档，其中包含一个library.swf文件和一个用于描述的xml文件，你可以用zip管理器打开它查看。</p>
+<p style=""><strong style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-weight:700; vertical-align:baseline">SWZ</strong></p>
+<p style="">你可能会发现，从<a target="_blank" target="_blank" href="http://zengrong.net/post/tag/tlf">TLF</a>出现以来，Flex SDK中多了一个<a target="_blank" target="_blank" href="http://help.adobe.com/zh_CN/FlashPlatform/reference/actionscript/3/flashx/textLayout/elements/package-detail.html">flashx</a>包，这个包中的功能，就是用SWZ实现的。SWZ是在运行时共享的库，你可以将其看作一个<strong style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-weight:700; vertical-align:baseline">可以放在外部的SWC</strong>。而且SWZ的共享是平台级别的（MoudleSWF的共享是浏览器级别），存在于操作系统缓存中（ModuleSWF的存在浏览器缓存），只要下载过一次SWZ，你的操作系统中所有用到这些SWZ中的地方（无论是IE、FF、Chrome还是AIR）都不用重新下载。</p>
+<p style="">对于程序猿，这里的关于SWC和SWZ的信息肯定是不够的，所以建议看一下smithfox的<a target="_blank" target="_blank" href="http://www.smithfox.com/?e=135">swf swc swzRSLs ant</a>，本文的这个部分也是参照它写成的。</p>
+<p style=""><em style="margin:0px; padding:0px; outline:0px; border:0px currentColor; font-family:inherit; font-size:16px; font-style:italic; vertical-align:baseline">全文完</em></p>
+</div>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ActionScript3-flex-as3/" rel="tag">ActionScript3 flex as3</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/男怕入错行 完美池宇峰畅谈创业点滴"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/%E7%94%B7%E6%80%95%E5%85%A5%E9%94%99%E8%A1%8C%20%E5%AE%8C%E7%BE%8E%E6%B1%A0%E5%AE%87%E5%B3%B0%E7%95%85%E8%B0%88%E5%88%9B%E4%B8%9A%E7%82%B9%E6%BB%B4/"
+    >男怕入错行 完美池宇峰畅谈创业点滴</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/%E7%94%B7%E6%80%95%E5%85%A5%E9%94%99%E8%A1%8C%20%E5%AE%8C%E7%BE%8E%E6%B1%A0%E5%AE%87%E5%B3%B0%E7%95%85%E8%B0%88%E5%88%9B%E4%B8%9A%E7%82%B9%E6%BB%B4/" class="article-date">
+  <time datetime="2016-03-14T08:10:58.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/News/">News</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div id="sina_keyword_ad_area2" class="articalContent   newfont_family"><span>在创立完美时空之前，池宇峰卖过硬件、做过软件，但没有一个比得上后来的网游赚钱。他认为，“行业决定一切”，创业者就怕入错行。当然，如何摆平股东和团队也很重要。</span><br>
+<br>
+<span>我有很多自己亲身的经历，因为我在学校的时候也创业过几次，但是幸运的是每次都挣点儿小钱，那个时候主要是为了锻炼自己。毕业之后主要有几个经历，我最先是在深圳卖电脑，当时是在电子市场。我发现这个行业在那个年代有一些特点：你想价&#26684;便宜而且具有竞争力就只能卖假货，但是卖假货质量又得不到保证。其实那个时候走私货很多，计算机配件重新打磨的非常多。当时赚钱心里非常矛盾，你到底是要良心还是要钱？有的时候你经常在两者中徘徊。当时我的原则就是客户来的时候我先说你要质量还是要低价&#26684;，如果你要质量我告诉你这是真货，如果你真不信，你就想要便宜的，我卖你便宜的。</span><br>
+<br>
+<strong>男怕入错行<span><span style="font-family:Tahoma">&nbsp;<wbr></span></span></strong><br>
+<br>
+<span>当时确实挣了第一桶金，但是这个行业是无法发展成国际性、世界性企业的。当时就我们几个同学一起创业，后来我就跑回到北京，我说得换一换，否则的话在那儿坚持会有问题。但是其实也不一定，那个时候联想1&#43;1电脑还没开始呢，那是1994年。过了一两年，联想1&#43;1的电脑才开始，也许当时我们做品牌电脑，说不定会发展得更大，所以到底是要坚持还是要放弃，有时候是一件很矛盾的事情。</span><br>
+<br>
+<span>从1996年开始我们就做洪恩软件，那个时候软件是朝阳产业。因为卖电脑时了解很多电脑用户方面的需求，所以我们做的第一款软件叫《开天辟地》，是一款学电脑的软件，现在年轻一代不太知道，那个时候这个软件销量很大，当然主要是盗版，99%都是盗版，那些卖兼容机的电脑经销商基本都随手会带一个盗版的《开天辟地》，因为用户看了光盘之后，可以减少很多骚扰销售商的麻烦。</span><br>
+<br>
+<span>后来我们又做了英语教育软件，包括儿童教育，像什么GOGO学英语、HelloTeddy，现在还在中央电视台播。而且我们当时做的很多教材，到现在都是全中国幼儿园体系里英语正版教材销量最大的。我们觉得还是挺荣幸，比人教社的销量大。因为幼儿园喜欢活泼，所以我们的教材是有书、有光盘、有软件，还有玩具，然后还有网络，其实幼儿园体系特别喜欢这种多媒体教材。</span><br>
+<br>
+<span>到了1997年，公司的一些技术人员觉得做教育软件可能技术含量低，他们想做点高技术含量的，不然他们就离开公司了。当时是为了留住人才，我说你们想干什么？他们说做游戏吧！搞计算机的都喜欢游戏，我说“行，那就做游戏”，所以从1997年开始做游戏，他们上来就做3D。那时候中国的电脑还跑不起来，但是他们有一种愿望想追求很高的技术。</span><br>
+<br>
+<span>所以在1998年我们就推出了全中国第一款自主研发的3D游戏，那是一个即时战略游戏，之后又推出了四五款，出口还不错，当时出口到韩国、美国，一般在国外基本上还是正版率很高，盗版很少，但在中国大陆就很难挣钱，所以这个工作室一直是维持着，挣不到什么钱。</span><br>
+<br>
+<span>从1997年干到2004年，他们干了7年都一直在做单机游戏。到了2004年，这个时候网络游戏已经很火爆了，游戏这个工作组是独立出去做，我就没怎么参与。直到2004年，他们说没钱了，钱花光了，可能要解散了。我说：“别解散，我认为你们是全中国做游戏最厉害的一支团队。”那个时候国内做3D游戏的还很少。我说现在网络游戏不是很火吗？你们为什么不去看看？他们说网络游戏是什么我们不太了解。你知道有时候技术人员对市场的敏感性是不够的。</span><br>
+<br>
+<span>然后在2004年，我说咱们开始做网游，我后来研究了一段时间，就是自己去玩，我发现网游还是可以挣钱的，因为它基本上没有盗版。我经常对他们这么说：只要中国原创的游戏研发组织还有一个能活下来，我觉得应该就是你们，所以不要怕，那个时候其实网易已经挣了很多钱了。</span><br>
+<br>
+<span>就这样这个组等于从做单机游戏转到了做网游，一下子就成为了中国的原创力量，可以说是最强的一支，直到一两年前，可能这个队伍几乎是国内惟一做3D网游的，而且能够做成比较大的队伍，到现在为止应该也是全中国做3D网游第一大的企业，也是全中国出口最大的企业。规模其实发展挺大的，2009年10亿利润，去年招了很多人。但你要是做单机游戏的话，可能一年连100万利润都没有。所以有的时候我们稍微转一下行，同样的人、同样的文化、同样的技术、同样的程度，行业就大不同了，就可能一个天上、一个地下。</span><br>
+<br>
+<span>这个反过来就说明什么呢？这个组其实是原来洪恩软件的一个研发小组，出去独立做游戏的。洪恩软件发展很好，因为那个时候是纯软件，所以也就无法发展到特别大，每年销售额坦率地讲也一直没过亿。但是他们受到游戏的启发，现在一转行就做得很好。然后洪恩软件那个小组也做了一个决定向硬件发展，做没法盗版的东西。就这样他们把内容做了硬件，现在大家可能在市面上看到很多流行的小孩学习用的，拿笔一点书就发声的东西。洪恩算是做得比较好了，销售额一下子就起来了，今年应该有2个多亿吧。</span><br>
+<br>
+<span>所以这个又一次证明了，行业决定一切，当时我的感觉是，只要有本事赚到几百万，你就有本事赚几个亿，只是因为行业不同导致你可能比马云差，可能比马化腾差。</span><br>
+<br>
+<span>其实你要在适当的行业你会发现自己成长得会非常快，所以这一点是我今天特别想跟大家说的“行业决定一切”。但是这里并不是说我想让大家在行业中换来换去。你看我们最初做电脑生意，我做了一年算是抛开它，实际上一直坚持做四五年也还是能赚钱。从1996年做到现在15年了，我们一直在坚持。那么游戏这块发展是比较快的，2004年开始，2007年就上市了，所以我们的经历也是有很多这种坚持和放弃的一些结合。所以说大家还是要具体问题具体分析，不要轻易地放弃。</span><br>
+<br>
+<span>也就是到这个时候我知道了什么叫“男怕入错行”，我原来说了很多年，不知道这句话真正的意思是什么，但是现在我觉得这句话太重要了，当然女企业家也一样——“女怕嫁错郎”也很重要。</span><br>
+<br>
+<strong>相信规律，有目的地成功</strong><br>
+<br>
+<span>要相信规律，有目的地成功，这里规律是什么呢？我觉得咱们所有人都有一个习惯，或者是有一种规律是什么？就是当我们做了一些错事儿，我们去坚持直到最后撞墙了，然后我们才学到了一个经验，下次不再犯这个毛病了。但是我们的人生有多少时间容许我们不断犯错呢？我们不可能把所有的事情都经历一遍，然后所有的事情都撞南墙才能学会。</span><br>
+<br>
+<span>所以说我觉得看到书上的东西，或者听到别人讲的东西，要努力去相信那个东西是真的，不要一定等到自己亲身经历之后才感受这个东西是真的。我这么多年读过好多书，尤其我记得在大学三年级的时候，我真是读了几百本书，拿同学的图书证去图书馆借书看。然后我努力把很多前人的经验尽量转化为自己的知识体系，因为我知道咱们不可能有足够的时间去撞那么多次墙，所以后来我谨记很多规律，然后用这些规律去分析问题，虽然后来我几乎做的每件商业上的事情都可能有好的和偏不好的，但是肯定不会出现特糟的事情。</span><br>
+<br>
+<span>创业者可能经常写PPT融资，比如说我们的门槛是什么，这个行业的门槛高不高？然后我们的竞争优势是什么？那么我们的劣势呢？我们哪些事儿适合做，哪些事儿不适合做？这个行业现在是一个成熟的行业还是一个新兴的行业？其实这个跟投资很像，其实看人、看队伍最重要，在投一个行业前也肯定要看这个行业的发展速度。还有这个行业在未来是一个非常广阔的领域，还是一个非常有天花板的领域？包括有没有已经成熟的团队？壁垒高不高？是所有人都会干的事儿，还是只有少数人才能干的事儿？大家把所有这些书上曾经看到的很多经验随时来问自己，把它转化为自己的知识。</span><br>
+<br>
+<span>千万别干这种事儿：书上说门槛不高的事儿还是尽量少做，但是我觉得我能成，我一定能把这事儿做得很大，我觉得我是与众不同的……有这种想法恐怕就很糟糕了，当然有可能你真是与众不同，但是一个很大的几率是你最后还是得撞墙，用时间来检验你这个想法是错误的。不要过分地相信自己，有的时候过分地相信自己，其实最后的代价就是要花很长很长的时间来检验这个社会规律是正确的还是你个人是正确的。</span><br>
+<br>
+<span>所以你一定要有目的地成功。再举个例子，在网游行业里，2004年我们创立完美时空的时候，还有一个创业者是巨人的史玉柱，你看史玉柱，他原来做汉卡、做脑白金，他有很多成功的产品，所以说他进入网游行业之前是有成功经验的。那么我们其实做网游行业之前，也算是有成功经验，但是没有他们的大，我们原来做洪恩软件，在国内还是响当当的，那个时候在互联网初期或者说互联网没起来之前，大家如果还记得有什么联邦软件排行榜的话，每周都会有各个软件的排行，我们的洪恩软件永远都是排在各列中，我们肯定不是第一就是第二的位置。</span><br>
+<br>
+<span>那么像我们跟巨人当时做游戏，都是属于新加入者，而且以前都有过成功经验，而且以前都是做产品出身的人。所以说注定了他们跟我们做这个事儿一定会成功，这是一个成功率极高的事情，而且我们的技术力量比较强，原来开发过很多PC游戏，那么这个概念就叫“有目的地成功”。</span><br>
+<br>
+<span>可能在最早期那一些网游公司呢，他们并不是有目的地成功，他们是一种偶然的机遇，然后有那么几个起来了，当然也不能说完全是随机的。</span><br>
+<br>
+<span>我想强调的是，当我们充分地运用这个社会的很多规律，然后按照规律去办事儿的话，你的成功率会非常非常高。所以说大家不要等到撞墙之后才学会，一定要把书本上的东西认认真真地去思考。</span><br>
+<br>
+<strong>从“头”磨炼</strong><br>
+<br>
+<span>在最开始的时候可能几个创业者水平都差不多，比如说都是中学毕业，然后入世也就那么一两年、两三年，这个时候你要比的话，可能大家个儿差了一厘米，但是可能就是因为你是那个头儿，你是那个CEO，所有最后的决策都需要你来做，别人可能开始也参与参与，跟你共同探讨出主意，但最后一想这个事儿反正有他顶着呢，他去做决定，你最后做决定吧，别人就去睡觉了，然后你自己就在那儿对吧？苦思冥想的，然后翻来覆去地睡不着觉，想来想去，这个其实是无形当中你获得的锻炼、磨炼是别人的很多倍。最后就变成什么呢？你越来越强壮，你越来越粗大，越来越高。然后导致你和其他的合作伙伴的距离拉开了，可能后来大家到最后差距是一米高、两米高、三米高。这个是在座的诸位无形获得的一种竞争优势。</span><br>
+<br>
+<span>然后由此会引发什么事呢？引发你跟下面副总之间见识的不同、阅历的不同、经验的不同，然后导致判断的不同，甚至品位的不同、性&#26684;的不同，就开始产生打架、分家、吵闹。这是一种必然的过程，那么之后呢？对于很多创业企业来说，你必须要面对着你有一点越来越孤独的那种感觉，然后你可能也经常有一种感觉：这么简单的事情他们怎么看不到呢？这其实也不能怪他们，因为所有的磨炼都被你经历了，当然他们失去了成长的机会，所以导致他们会掉队，这个非常重要。</span><br>
+<br>
+<span>还有一个股权释放的度，这个其实也是没有对错的，但是你看所有现在上市的企业，他们的股权概念基本有两种情况：第一种情况是上市之后大股东还是控股50%以上。网游产业中就有很多，包括互联网产业，有很多早期上市的，他们股权非常非常大；第二种情况是股权比较分散，最后上市的时候CEO可能占百分之二十几、百分之十几，然后会越来越少。比如说最近可能有一个申请IPO的公司，大家会看到可能CEO占了百分之二十几，然后有三个副总分别占百分之十几，这是属于一种均匀式的股权分离方式。两种股权形式分别都会带来未来经营方式的一个极端，我认为是会走向两个极端，所以大家怎么选择呢？还是要慎重。</span><br>
+<br>
+<span>如果是独占形式的，就是你上市之后还会占50%以上，这种情况一定会导致你比较倾向于独断的。为什么呢？因为你的经验越来越丰富，你的观点比别人强，后来你本来还想民主一下，但是最后没法民主，因为他们的观点跟你是不一样的，最后你不得不说服自己，这事儿还是我拍板吧，最后你就离大家越来越远，这是独占式的。这时候你要享受孤独，互联网企业跟这种状态比较像的如丁磊、陈天桥。</span><br>
+<br>
+<span>对于股权非独占式的也有很多，包括张朝阳，他是属于股权比较少的。分散式股权也会产生弊端，弊端是什么？如果CEO、领导人最后上市只占了百分之十几，可能会产生马上把股票卖了，走了算了，因为做来做去的，就好像自己诱惑力不是那么大，也许会想到卖了之后再去创一摊，都会有这样的想法。所以这样的企业有可能走不了特别遥远，这个我只能是猜测。因为咱们中国现在还没有太多这样的案例。</span><br>
+<br>
+<span>这一点我并不想说对错，我只是想说这两种情况很重要，大家要去思考。从我们完美时空自身的案例来说，骨干人员还是有很多股权分配的。最后上市的时候我是按百分之二十几，我觉得还是不错的。因为我们上市之前还是有VC进来，当时还在讨价还价、大家互相占什么比例的时候，我觉得有一件事对我的影响还是蛮深的。我开始觉得他们占的比例太多了，我无法忍受。然后就僵持着，对方也不让步。</span><br>
+<br>
+<span>这时候我找另外一个前辈咨询，我说：“哎呀……他们占的股份太多了，我觉得占百分之二十几就行了，他怎么占了30%多。”那个朋友就这么说：“他说宇峰，有的时候速度挺重要的，你就这么想，等你上市之后，你努力做企业，公司的利润增长了百分之十几、二十几，你失去的那些就都回来了。与其在这儿折腾多少多少的股权，不如你未来把企业利润做到增长个10%、20%，你也就回来了。”当时一想，我说没问题，我有本事让这个企业利润一定要持续增长，所以现在这点儿股权该释放就释放吧。</span><br>
+<br>
+<span>这句话其实是救了我，我们当时就是因为我说OK那就签吧。然后我们赶上了当时2006年9月8号的一个文，凡是9月8号之后设立的海外结构，必须得经过某一个审批才能上市，9月8号之前重组的，可以直接就走了，而我们是9月6号碰巧签的字，然后9月8号出那个文了。我当时一想，看来有的时候不要太计较也是有好回报的。</span><br>
+<p>原文链接：<a target="_blank" href="http://www.gamelook.com.cn/2012/10/97931" target="_blank">http://www.gamelook.com.cn/2012/10/97931</a></p>
+</div>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-old/我想创业，但不懂技术怎么办"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2016/03/14/old/%E6%88%91%E6%83%B3%E5%88%9B%E4%B8%9A%EF%BC%8C%E4%BD%86%E4%B8%8D%E6%87%82%E6%8A%80%E6%9C%AF%E6%80%8E%E4%B9%88%E5%8A%9E/"
+    >我想创业，但不懂技术怎么办</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2016/03/14/old/%E6%88%91%E6%83%B3%E5%88%9B%E4%B8%9A%EF%BC%8C%E4%BD%86%E4%B8%8D%E6%87%82%E6%8A%80%E6%9C%AF%E6%80%8E%E4%B9%88%E5%8A%9E/" class="article-date">
+  <time datetime="2016-03-14T08:10:46.000Z" itemprop="datePublished">2016-03-14</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/News/">News</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div id="sina_keyword_ad_area2" class="articalContent   newfont_family">
+<p><span style="">之前看过一个创业者写的文章，文章里主要是在吐槽找到合适的技术合伙人是如何的困难。这事情确实困难，一旦当事人失去对人或事的基本判断能力，随便什么事情都会变的比较困难。而随着互联网对传统行业的冲击，这类不懂技术的创业者应该也会越来越多，这样一来探讨下不懂技术的创业者如何解决技术问题就会比较有现实意义。</span><br style="">
+<br style="">
+<strong style="">解决技术问题的人员模式</strong><br style="">
+<br style="">
+<span style="">找能和自己配合的程序员有两种基本模式：</span><br style="">
+<br style="">
+<span style="">第一种模式就是大多数人总想用，但进展艰难的。很多人都想找一个或多个很牛的人来搞定自己的所有问题。这能找到合适的当然比较好，但出问题概率其实很高，可执行性并不好。这方法性价比更可能是非常差，而不是非常好。首先你不一定找得到，其次你找到了不一定负担的起，负担得起了又不一定合得来，合得来他还不一定做的很爽，因为这工作他做过，很大程度是在重复自己。总而言之，这条道路虽然看着美好，但只要用心一想，满&#30524;全是坑。</span><br style="">
+<br style="">
+<span style="">这里容易出问题的原因在于，如果创业者失去了基本的判断能力，那彼此间就必须非常了解和信任，而不懂技术的创业者往往不在这个圈子里，找到这样合适的人其实挺难。</span><br style="">
+<br style="">
+<span style="">在陌生人之间培养信任这事历来很难，尤其这两个人背景又不一样。在陌生人之间确定利益分配就更难，多少是多呢？所以除非有种特别的缘故，发小、同学、多年同事等，否则这条路出奇的艰难，算是看上去很美，其实不太好用的方法。</span><br style="">
+<br style="">
+<span style="">但我们得承认虽然实现艰难但这个方法本身没什么限制，真能找到合适的人，确实什么都能搞定。关键就是你找不到合适的人。</span><br style="">
+<br style="">
+<span style="">第二种模式是找到基础好、潜力好（尤其是学习能力）与自己搭的人。当前他可能不完全满足需求，但他有很好的成长性，这样正好在事业的成长中实现自己的价&#20540;，同时报价也不会太高。简单来讲这和第一种模式的区别就是找成名前的张小龙还是找成名后的张小龙。成名后的张小龙只有一个，但其实具有张小龙潜质的人还是很多的。在我的感觉中，这类技术人员在大学里还是很多的，只要你用心去找。</span><br style="">
+<br style="">
+<span style="">这个方法对产品类型有点额外的要求，它更适合非技术密集型的产品。这和特定技术的学习曲线有关，如果你非要做个科大讯飞那类语音项目，那学习曲线就太陡了，即使个人成长性比较好，但这类产品技术人员必须要花很多的时间才能搞定，并且挫折太多，容易激发各种矛盾。</span><br style="">
+<br style="">
+<span style="">反过来如果是非技术密集型的创意，那么只要这个人是愿意学习的，那就可以基于现有开源产品迅速完成原型（36kr那种），接下来迅速开始迭代，在用户增长这类压力下，这个人也会迅速成长，这种成长本身也可以成为对个人的一种激励。</span><br style="">
+<br style="">
+<span style="">国外有个很有名的技术网站叫：</span><a target="_blank" href="http://highscalability.com/" target="_blank">http://highscalability.com/</a><span style=""><span><span style="font-family:Tahoma">&nbsp;<wbr></span></span>，上面列举了很多有名网站的技术架构，就我观察很多情形下是产品成就了技术人员的威名，而不是现有很牛的技术人员再去打造一个很牛的产品。这网站上的文章往往会很详细的记录某个产品的技术变化，记录这些变化实际上也等价于记录了当事人自己的成长过程。</span><br style="">
+<br style="">
+<strong style="">这个模式之所以能成立，也和编程这项工作的技术特征有关，这里就说两点：</strong><br style="">
+<br style="">
+<span style="">第一，编程这事入门起点不高，同时由于开源的发展，大多时候可参照的东西很多，能帮助人的社区也比较多。所以持续学习与成长性比经验重要。</span><br style="">
+<br style="">
+<span style="">第二，开发产品这事大多数人都能做，难的部分往往是渐进的。阿里双十一问题是不好解决，可也不是创业公司上来就有机会有那么大流量的。</span><br style="">
+<br style="">
+<span style="">这里的关键是要找到潜力好、能自我提升的，这样一来对程序员个人会有比较好的成长机会，做产品的同时他可能会成长为以一顶十的超级程序员；对于创业者而言，在技术人员的成长过程中也可以收获逐步改进的产品。</span><br style="">
+<br style="">
+<span style="">把握基本原则，避开显然的陷阱</span><br style="">
+<br style="">
+<span style="">如果能完全彼此相信，那所有技术决策都叫技术人员下就可以了，但如果还达不到那种程度，那创业者自己就需要把握一点基本的原则，来避开显然的陷阱，而这些陷阱往往纯技术人员是不会去识别的。这里所谓的避开陷阱主要是为了避免掉到大坑里彻底无法翻盘那类陷阱。</span><br style="">
+<br style="">
+<span style="">第一是在最开始阶段避免技术创新，尽可能随大流，用极为成熟的方案。原因很简单，在产品和个人的双重成长期不适合太折腾，要尽可能把变数控制在某一个方面上。而所谓随大流有两个具体要求：用有活跃社区的开源技术，用有类&#20284;的产品用过的技术。说到这里岔开一句找人的时候英语好是一个硬性条件，因为英文不好，可能就不愿意读英文资料，而以分享的深度来看现在英文世界仍然有非常明显的优势，比如highscalability，stackoverflow等。不读这类网站上的内容，&#30524;界就窄，随大流可能都随不好。</span><br style="">
+<br style="">
+<span style="">第二是用开源技术。这又可以分两个层次，一个层次是选开源技术栈比如Linux， Apache，MySQL，PHP；一个是直接选开源项目的代码做开发基础。只要你的产品不是过于另类，在Github这种地方总是可以找到合适的项目作为代码基础，这与国内很多网站是基于WordPress的是一个道理。从开局的角度看，显然后一个更实惠些，前提是能找到合适的备选方案，比如Github上很多星星，又有很多人在维护的。</span><br style="">
+<br style="">
+<span style="">第三是要认识到到有钱后，要还技术债务。这时候要预测技术上可能出现的限制并及早进行解决。技术上的事情总是容易在开局时最重视，越往后重视程度越差。除非发生什么灾难性的事情，否则不懂技术的创业者容易认为都能用不就行了么，可这是不合适的。软件产品这东西，除了可见部分比如实现了某些功能之外，还有很大一块东西是没法直接看到的，比如代码的质量，架构的质量等，而匆忙推出的产品总是容易在这些不可见的地方欠下巨额债务。在产品发展过程中总是可以找到些时间来还之前欠的债，开发环境上的、结构上的、代码上的等等。这事属于重要不紧急的事情，如果不找空挡处理掉，很可能在未来成为瓶颈。</span><br style="">
+<br style="">
+<strong style="">结束语</strong><br style="">
+<br style="">
+<span style="">上面说的方法，是让人有个成本低廉、大致不差的开局，但并不是说可以一直这样；当你想做的事情越来越独特，这类方案一定会产生某种限制，这类限制也许暂时能对付，但是如果有长远&#30524;光，则要在有钱后系统做点分析，看看能不能找到这种瓶颈，及早应对。江湖传说中京东是吃了点没有及早处理技术债务的亏的。</span><br style="">
+<br style="">
+<span style="">另外，对之前在《畅言》上发的文章其实我是比较自信的，事实上也没怎么看到过有力的批评，发癫的倒是有几个。可这次我是有点不自信的，很希望听到更多实践者的声音，来完善自己的认知。</span></p>
+<p>&nbsp;<wbr></p>
+<p><span style="">原文：<a target="_blank" href="http://bbs.9ria.com/thread-406581-1-1.html">http://bbs.9ria.com/thread-406581-1-1.html</a></span></p>
+</div>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+  </article>
+  
+
+  
+  <nav class="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/10/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/12/">下一页</a>
+  </nav>
+  
+</section>
+</div>
+
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2020
+        <i class="ri-heart-fill heart_icon"></i> Peng Xiang
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="PxSite"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="http://shenyu-vip.lofter.com" target="_blank" rel="noopener">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/2019/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Subtitle -->
+
+<script>
+  try {
+    var typed = new Typed("#subtitle", {
+      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+      startDelay: 0,
+      typeSpeed: 200,
+      loop: true,
+      backSpeed: 100,
+      showCursor: true
+    });
+  } catch (err) {
+    console.log(err)
+  }
+</script>
+
+<!-- Tocbot -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>
