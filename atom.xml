@@ -104,10 +104,10 @@
   
   <entry>
     <title>【Threejs】开发经验集</title>
-    <link href="https://pxim.github.io/2020/06/03/threejs/%E3%80%90Three%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/"/>
-    <id>https://pxim.github.io/2020/06/03/threejs/%E3%80%90Three%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/</id>
+    <link href="https://pxim.github.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/"/>
+    <id>https://pxim.github.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/</id>
     <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2020-06-23T09:47:32.000Z</updated>
+    <updated>2020-07-31T08:09:28.000Z</updated>
     
     <summary type="html">
     
@@ -133,10 +133,10 @@
   
   <entry>
     <title>【Threejs】开发经验集</title>
-    <link href="https://pxim.github.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/"/>
-    <id>https://pxim.github.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/</id>
+    <link href="https://pxim.github.io/2020/06/03/threejs/%E3%80%90Three%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/"/>
+    <id>https://pxim.github.io/2020/06/03/threejs/%E3%80%90Three%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/</id>
     <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2020-07-31T08:09:28.000Z</updated>
+    <updated>2020-06-23T09:47:32.000Z</updated>
     
     <summary type="html">
     
@@ -274,6 +274,38 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】01 课件开发集成包</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:18.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】02 Flash模板</title>
     <link href="https://pxim.github.io/2020/05/25/DResDevKit/02-course-An-Flash/"/>
     <id>https://pxim.github.io/2020/05/25/DResDevKit/02-course-An-Flash/</id>
@@ -299,38 +331,6 @@
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】01 课件开发集成包</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:18.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
         
       
     
@@ -384,36 +384,6 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:10:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【DResDevKit】06 故障诊断WebGL模板</title>
     <link href="https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
     <id>https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
@@ -429,6 +399,36 @@
           &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
         
       
@@ -558,11 +558,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】全景展厅WebGL</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/pano/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/pano/</id>
+    <title>【DResDevKit】12 config配置表v3.x版本说明</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:22.000Z</updated>
+    <updated>2020-05-26T07:09:38.000Z</updated>
     
     <summary type="html">
     
@@ -570,8 +570,8 @@
       
         
         
-          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
-&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
+          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
         
       
     
