@@ -384,36 +384,6 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:10:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【DResDevKit】04 部件拆装H5模板</title>
     <link href="https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
     <id>https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
@@ -476,9 +446,9 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】08 网络课件包</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/08-course-projects/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/08-course-projects/</id>
+    <title>【DResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:10:00.000Z</updated>
     
@@ -488,7 +458,10 @@
       
         
         
-          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
         
       
     
@@ -516,6 +489,33 @@
         
         
           &lt;p&gt;斯柯达0.3.0版本课件集成包&lt;br&gt;&lt;a href=&quot;https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】08 网络课件包</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/08-course-projects/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/08-course-projects/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
         
       
     
