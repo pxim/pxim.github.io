@@ -274,6 +274,38 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】01 课件开发集成包</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:18.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】02 Flash模板</title>
     <link href="https://pxim.github.io/2020/05/25/DResDevKit/02-course-An-Flash/"/>
     <id>https://pxim.github.io/2020/05/25/DResDevKit/02-course-An-Flash/</id>
@@ -299,38 +331,6 @@
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】01 课件开发集成包</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:18.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
         
       
     
@@ -559,11 +559,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】全景展厅WebGL</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/pano/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/pano/</id>
+    <title>【DResDevKit】13 准备删除的模板</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:22.000Z</updated>
+    <updated>2020-05-26T07:09:36.000Z</updated>
     
     <summary type="html">
     
@@ -571,8 +571,7 @@
       
         
         
-          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
-&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;动画：&lt;br&gt;h5T_Menu2&lt;br&gt;h5T_016&lt;br&gt;h5T_017&lt;br&gt;h5T_018&lt;br&gt;h5T_008&lt;br&gt;h5T_008_2 
         
       
     
@@ -587,11 +586,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】13 准备删除的模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/</id>
+    <title>【DResDevKit】全景展厅WebGL</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/pano/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/pano/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:36.000Z</updated>
+    <updated>2020-05-26T07:09:22.000Z</updated>
     
     <summary type="html">
     
@@ -599,7 +598,8 @@
       
         
         
-          &lt;p&gt;动画：&lt;br&gt;h5T_Menu2&lt;br&gt;h5T_016&lt;br&gt;h5T_017&lt;br&gt;h5T_018&lt;br&gt;h5T_008&lt;br&gt;h5T_008_2 
+          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
+&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
         
       
     
