@@ -104,35 +104,6 @@
   
   <entry>
     <title>【Threejs】开发经验集</title>
-    <link href="https://pxim.github.io/2020/06/03/threejs/%E3%80%90Three%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/"/>
-    <id>https://pxim.github.io/2020/06/03/threejs/%E3%80%90Three%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/</id>
-    <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2020-06-23T09:47:32.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;一个物体b add()加载到 父物体a 里，如果这个 父物体a 带有旋转等属性，那么这个物体b就出现位置旋转错位等现象，这时候，就需要使用 attach()方法把 物体b 加载到 父物体a中；&lt;/p&gt;
-&lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【Threejs】开发经验集</title>
     <link href="https://pxim.github.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/"/>
     <id>https://pxim.github.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/</id>
     <published>2020-06-03T11:30:38.000Z</published>
@@ -345,6 +316,45 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】03 H5模板</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/03-course-An-H5/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/03-course-An-H5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】04 部件拆装H5模板</title>
     <link href="https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
     <id>https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
@@ -375,9 +385,9 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】03 H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/03-course-An-H5/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/03-course-An-H5/</id>
+    <title>【DResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:10:00.000Z</updated>
     
@@ -387,19 +397,37 @@
       
         
         
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】09 svn</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/09-course-svn/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/09-course-svn/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:48.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;斯柯达0.3.0版本课件集成包&lt;br&gt;&lt;a href=&quot;https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02&quot; target=&quot;_blank&quot;
         
       
     
@@ -446,36 +474,6 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:10:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【DResDevKit】10 课件测试地址</title>
     <link href="https://pxim.github.io/2020/05/25/DResDevKit/10-course-test-address/"/>
     <id>https://pxim.github.io/2020/05/25/DResDevKit/10-course-test-address/</id>
@@ -490,33 +488,6 @@
         
           &lt;blockquote&gt;
 &lt;p&gt;广本&lt;br&gt;&lt;a href=&quot;http://bmw.jingge.com/guangqi-honda/course-test&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】09 svn</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/09-course-svn/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/09-course-svn/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:48.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;斯柯达0.3.0版本课件集成包&lt;br&gt;&lt;a href=&quot;https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02&quot; target=&quot;_blank&quot;
         
       
     
@@ -600,6 +571,33 @@
         
           &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
 &lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【DResDevKit】08 网络课件包</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/projects-link/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/projects-link/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-08-25T06:43:58.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
         
       
     
