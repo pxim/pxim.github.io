@@ -10,9 +10,9 @@ https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/
 https://pxim.github.io/2020/05/25/DResDevKit/02-course-An-Flash/
 https://pxim.github.io/2020/05/25/DResDevKit/03-course-An-H5/
 https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/
-https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/
-https://pxim.github.io/2020/05/25/DResDevKit/09-course-svn/
 https://pxim.github.io/2020/05/25/DResDevKit/05-course-ZD-H5/
+https://pxim.github.io/2020/05/25/DResDevKit/09-course-svn/
+https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/
 https://pxim.github.io/2020/05/25/DResDevKit/10-course-test-address/
 https://pxim.github.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/
 https://pxim.github.io/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/

@@ -385,9 +385,9 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
+    <title>【DResDevKit】05 故障诊断H5模板</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/05-course-ZD-H5/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/05-course-ZD-H5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:10:00.000Z</updated>
     
@@ -397,9 +397,11 @@
       
         
         
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;a
         
       
@@ -442,9 +444,9 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】05 故障诊断H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/05-course-ZD-H5/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/05-course-ZD-H5/</id>
+    <title>【DResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
+    <id>https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:10:00.000Z</updated>
     
@@ -454,11 +456,9 @@
       
         
         
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
         
       
