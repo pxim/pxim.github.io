@@ -75,7 +75,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">291</span>
+            <span class="post-count">513</span>
         </span>
     </span>
 
@@ -113,6 +113,13 @@
 <p>解决方案：给这些mesh不同的material；或者在mesh赋值的时候clone一下，例如</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mesh.material &#x3D; nMaterial.clone();</span><br></pre></td></tr></table></figure>
 
+<ol start="3">
+<li><p>问题：模型人员给的fbx，加载到程序里面后，给fbx里的mesh添加BoxHelper，发现大小对不上！</p>
+<p>原因：模型人员给的fbx，比较大，程序这边缩小了fbx（fbx是group），然后给fbx里的mesh添加BoxHelper，还是按照mesh的真实大小，创建的；但是fbx缩小了，里面的元素也跟着缩小了；所以看起来fbx，mesh都变小了；但是直接获取mesh的话，还是获取的mesh的真实大小，顶点等数据；</p>
+<p>如果给fbx添加 BoxHelper，那显示是正常的，但是如果要实现碰撞功能，必须要mesh类型才行，这样的话，不能用fbx，只能用里面的mesh，这时候大小，顶点等数据，就产生偏差了。</p>
+<p>解决方案：不要直接加载fbx到场景里，而是加载里面的mesh到场景中，再缩小大小。</p>
+</li>
+</ol>
 </li>
 </ol>
  
