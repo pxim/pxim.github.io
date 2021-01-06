@@ -18,8 +18,8 @@
   
   <entry>
     <title>【DResDevKit】course-mobile</title>
-    <link href="https://pxim.github.io/2020/11/09/DResDevKit/course-mobile/"/>
-    <id>https://pxim.github.io/2020/11/09/DResDevKit/course-mobile/</id>
+    <link href="https://pxim.github.io/2020/11/09/resdevkit/07-course-kit-mobile/"/>
+    <id>https://pxim.github.io/2020/11/09/resdevkit/07-course-kit-mobile/</id>
     <published>2020-11-09T05:55:58.000Z</published>
     <updated>2020-11-09T06:15:04.000Z</updated>
     
@@ -45,8 +45,8 @@
   
   <entry>
     <title>【DResDevKit】WebGL模板</title>
-    <link href="https://pxim.github.io/2020/08/07/DResDevKit/template-webgl/"/>
-    <id>https://pxim.github.io/2020/08/07/DResDevKit/template-webgl/</id>
+    <link href="https://pxim.github.io/2020/08/07/resdevkit/page-webgl/"/>
+    <id>https://pxim.github.io/2020/08/07/resdevkit/page-webgl/</id>
     <published>2020-08-07T05:55:58.000Z</published>
     <updated>2020-08-07T09:07:34.000Z</updated>
     
@@ -75,7 +75,7 @@
     <link href="https://pxim.github.io/2020/06/21/npm/%E3%80%90npm%E3%80%91%E5%88%9B%E5%BB%BAnpm%E5%92%8C%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/"/>
     <id>https://pxim.github.io/2020/06/21/npm/%E3%80%90npm%E3%80%91%E5%88%9B%E5%BB%BAnpm%E5%92%8C%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/</id>
     <published>2020-06-21T05:12:57.000Z</published>
-    <updated>2020-11-06T07:11:54.000Z</updated>
+    <updated>2020-12-17T08:59:18.000Z</updated>
     
     <summary type="html">
     
@@ -272,9 +272,48 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】02 Flash模板</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】01 课件开发集成包</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/01-course-dev-kit/</id>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:09:18.000Z</updated>
     
@@ -304,87 +343,9 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】02 Flash模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/02-course-An-Flash/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/02-course-An-Flash/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:10:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】03 H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/03-course-An-H5/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/03-course-An-H5/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:10:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【DResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/04-course-CZ-H5/</id>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:10:00.000Z</updated>
     
@@ -412,9 +373,39 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/06-course-zd-webgl/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/06-course-zd-webgl/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】05 故障诊断H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/05-course-ZD-H5/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/05-course-ZD-H5/</id>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:10:00.000Z</updated>
     
@@ -444,9 +435,9 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/06-course-ZD-WebGL/</id>
+    <title>【DResDevKit】03 H5模板</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/03-course-an-h5/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/03-course-an-h5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:10:00.000Z</updated>
     
@@ -456,37 +447,19 @@
       
         
         
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】09 svn</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/09-course-svn/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/09-course-svn/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:48.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;斯柯达0.3.0版本课件集成包&lt;br&gt;&lt;a href=&quot;https://192.168.50.195/svn/其它类项目/企业事业部建设类项目/企业技术开发/Custom课件集成工具/02&quot; target=&quot;_blank&quot;
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
         
       
     
@@ -502,8 +475,8 @@
   
   <entry>
     <title>【DResDevKit】12 config配置表v3.x版本说明</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/12-course-config.xml-v3.0.0/</id>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:09:38.000Z</updated>
     
@@ -529,9 +502,36 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】08 网络课件包</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/projects-link/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/projects-link/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-08-31T08:32:22.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】全景展厅WebGL</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/pano/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/pano/</id>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/pano-webgl/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/pano-webgl/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2020-05-26T07:09:22.000Z</updated>
     
@@ -557,11 +557,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】13 准备删除的模板</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/13-%E5%87%86%E5%A4%87%E5%88%A0%E9%99%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E6%9D%BF/</id>
+    <title>【DResDevKit】H5开发常见问题</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/08-course-faq-h5/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/08-course-faq-h5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:36.000Z</updated>
+    <updated>2020-12-02T06:59:14.000Z</updated>
     
     <summary type="html">
     
@@ -569,7 +569,8 @@
       
         
         
-          &lt;p&gt;动画：&lt;br&gt;h5T_Menu2&lt;br&gt;h5T_016&lt;br&gt;h5T_017&lt;br&gt;h5T_018&lt;br&gt;h5T_008&lt;br&gt;h5T_008_2 
+          &lt;h2 id=&quot;注意点&quot;&gt;&lt;a href=&quot;#注意点&quot; class=&quot;headerlink&quot; title=&quot;注意点&quot;&gt;&lt;/a&gt;注意点&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;An HTML5 Canvas项目里，不要使用 滤镜，发光效果；如需这种效果，则在外部做好导成图片，导进An里；
         
       
     
@@ -584,11 +585,11 @@
   </entry>
   
   <entry>
-    <title>【DResDevKit】08 网络课件包</title>
-    <link href="https://pxim.github.io/2020/05/25/DResDevKit/projects-link/"/>
-    <id>https://pxim.github.io/2020/05/25/DResDevKit/projects-link/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-08-25T06:43:58.000Z</updated>
+    <title>Hello World</title>
+    <link href="https://pxim.github.io/2020/05/25/hello-world/"/>
+    <id>https://pxim.github.io/2020/05/25/hello-world/</id>
+    <published>2020-05-25T08:14:42.470Z</published>
+    <updated>2020-05-25T08:14:44.000Z</updated>
     
     <summary type="html">
     
@@ -596,17 +597,13 @@
       
         
         
-          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
         
       
     
     </summary>
     
     
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
     
   </entry>
   
