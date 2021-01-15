@@ -272,6 +272,38 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】01 课件开发集成包</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:09:18.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】02 Flash模板</title>
     <link href="https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/"/>
     <id>https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/</id>
@@ -297,38 +329,6 @@
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】01 课件开发集成包</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:09:18.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
         
       
     
@@ -382,6 +382,36 @@
   </entry>
   
   <entry>
+    <title>【DResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2020-05-26T07:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
+    
+    
+      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【DResDevKit】05 故障诊断H5模板</title>
     <link href="https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/"/>
     <id>https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/</id>
@@ -399,36 +429,6 @@
 &lt;!-- code_chunk_output --&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/categories/DResDevKit/"/>
-    
-    
-      <category term="DResDevKit" scheme="https://pxim.github.io/tags/DResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【DResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2020-05-26T07:10:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
         
       
