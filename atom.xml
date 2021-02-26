@@ -311,38 +311,6 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】01 课件开发集成包</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-25T02:01:02.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】03 H5模板</title>
     <link href="https://pxim.github.io/2020/05/25/resdevkit/03-course-an-h5/"/>
     <id>https://pxim.github.io/2020/05/25/resdevkit/03-course-an-h5/</id>
@@ -397,6 +365,38 @@
           &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】01 课件开发集成包</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-02-25T02:01:02.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;a
         
       
