@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxim.github.io/"/>
-  <updated>2021-02-04T07:22:40.000Z</updated>
+  <updated>2021-03-12T05:13:52.000Z</updated>
   <id>https://pxim.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>【ResDevKit】course-mobile</title>
+    <title>【ResDevKit】course-kit-mobile</title>
     <link href="https://pxim.github.io/2020/11/09/resdevkit/07-course-kit-mobile/"/>
     <id>https://pxim.github.io/2020/11/09/resdevkit/07-course-kit-mobile/</id>
     <published>2020-11-09T05:55:58.000Z</published>
-    <updated>2021-02-04T07:22:40.000Z</updated>
+    <updated>2021-03-12T05:13:52.000Z</updated>
     
     <summary type="html">
     
@@ -159,6 +159,34 @@
   </entry>
   
   <entry>
+    <title>【Software】开发辅助工具</title>
+    <link href="https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/"/>
+    <id>https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/</id>
+    <published>2020-05-25T11:12:57.000Z</published>
+    <updated>2020-05-26T08:56:06.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;内网穿外网工具&quot;&gt;&lt;a href=&quot;#内网穿外网工具&quot; class=&quot;headerlink&quot; title=&quot;内网穿外网工具&quot;&gt;&lt;/a&gt;内网穿外网工具&lt;/h4&gt;&lt;p&gt;下载地址：百度网盘&lt;/p&gt;
+&lt;p&gt;链接：&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Software" scheme="https://pxim.github.io/categories/Software/"/>
+    
+    
+      <category term="Software" scheme="https://pxim.github.io/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【Software】webStorm使用帮助</title>
     <link href="https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/"/>
     <id>https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/</id>
@@ -185,34 +213,6 @@
       <category term="Software" scheme="https://pxim.github.io/tags/Software/"/>
     
       <category term="webStorm" scheme="https://pxim.github.io/tags/webStorm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【Software】开发辅助工具</title>
-    <link href="https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/"/>
-    <id>https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/</id>
-    <published>2020-05-25T11:12:57.000Z</published>
-    <updated>2020-05-26T08:56:06.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;内网穿外网工具&quot;&gt;&lt;a href=&quot;#内网穿外网工具&quot; class=&quot;headerlink&quot; title=&quot;内网穿外网工具&quot;&gt;&lt;/a&gt;内网穿外网工具&lt;/h4&gt;&lt;p&gt;下载地址：百度网盘&lt;/p&gt;
-&lt;p&gt;链接：&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Software" scheme="https://pxim.github.io/categories/Software/"/>
-    
-    
-      <category term="Software" scheme="https://pxim.github.io/tags/Software/"/>
     
   </entry>
   
@@ -272,6 +272,38 @@
   </entry>
   
   <entry>
+    <title>【ResDevKit】01 课件开发集成包</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-02-25T02:01:02.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【ResDevKit】02 Flash模板</title>
     <link href="https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/"/>
     <id>https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/</id>
@@ -311,11 +343,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】01 课件开发集成包</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
+    <title>【ResDevKit】05 故障诊断H5模板</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-25T02:01:02.000Z</updated>
+    <updated>2021-02-04T07:22:10.000Z</updated>
     
     <summary type="html">
     
@@ -412,66 +444,6 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】12 config配置表v3.x版本说明</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:23:10.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【ResDevKit】05 故障诊断H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:22:10.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】06 故障诊断WebGL模板</title>
     <link href="https://pxim.github.io/2020/05/25/resdevkit/06-course-zd-webgl/"/>
     <id>https://pxim.github.io/2020/05/25/resdevkit/06-course-zd-webgl/</id>
@@ -488,6 +460,34 @@
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】12 config配置表v3.x版本说明</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-02-04T07:23:10.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
         
       
     
