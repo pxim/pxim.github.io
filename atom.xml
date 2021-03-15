@@ -272,38 +272,6 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】01 课件开发集成包</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-25T02:01:02.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】02 Flash模板</title>
     <link href="https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/"/>
     <id>https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/</id>
@@ -329,6 +297,36 @@
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-02-04T07:21:36.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
         
       
     
@@ -382,11 +380,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】05 故障诊断H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/</id>
+    <title>【ResDevKit】01 课件开发集成包</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:22:10.000Z</updated>
+    <updated>2021-02-25T02:01:02.000Z</updated>
     
     <summary type="html">
     
@@ -414,11 +412,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/</id>
+    <title>【ResDevKit】05 故障诊断H5模板</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:21:36.000Z</updated>
+    <updated>2021-02-04T07:22:10.000Z</updated>
     
     <summary type="html">
     
@@ -426,9 +424,11 @@
       
         
         
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+
+&lt;!-- code_chunk_output --&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;a
         
       
@@ -474,34 +474,6 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】全景展厅WebGL</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/pano-webgl/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/pano-webgl/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:23:46.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
-&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】12 config配置表v3.x版本说明</title>
     <link href="https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/"/>
     <id>https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/</id>
@@ -516,6 +488,34 @@
         
           &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】全景展厅WebGL</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/pano-webgl/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/pano-webgl/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-02-04T07:23:46.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
+&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
         
       
     
@@ -561,7 +561,7 @@
     <link href="https://pxim.github.io/2020/05/25/resdevkit/08-adobe-animate-h5-faq/"/>
     <id>https://pxim.github.io/2020/05/25/resdevkit/08-adobe-animate-h5-faq/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-03-15T01:40:14.000Z</updated>
+    <updated>2021-03-15T03:11:46.000Z</updated>
     
     <summary type="html">
     
