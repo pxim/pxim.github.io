@@ -7,13 +7,13 @@ https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91%E5%BC%80%E
 https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/
 https://pxim.github.io/2020/05/25/webpack/%E3%80%90Webpack%E3%80%91%E6%80%8E%E4%B9%88%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/
 https://pxim.github.io/2020/05/25/markdown/%E3%80%90Markdown%E3%80%91markdown%20%E5%86%99%E4%BD%9C%E5%B8%AE%E5%8A%A9/
+https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/
 https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/
 https://pxim.github.io/2020/05/25/resdevkit/03-course-an-h5/
 https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/
-https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/
+https://pxim.github.io/2020/05/25/resdevkit/06-course-zd-webgl/
 https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/
 https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/
-https://pxim.github.io/2020/05/25/resdevkit/06-course-zd-webgl/
 https://pxim.github.io/2020/05/25/resdevkit/projects-link/
 https://pxim.github.io/2020/05/25/resdevkit/pano-webgl/
 https://pxim.github.io/2020/05/25/resdevkit/08-adobe-animate-h5-faq/
