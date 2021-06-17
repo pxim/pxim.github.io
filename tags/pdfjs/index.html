@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    【Threejs】开发经验集 |  PxSite
+    Tag: pdfjs |  PxSite
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -44,232 +44,54 @@
       
     <main class="content on">
       <section class="outer">
-  <article
-  id="post-threejs/【Threejs】开发经验集"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
+  <article class="articles">
     
-    <header class="article-header">
+    
+    <h1 class="page-type-title">#&nbsppdfjs</h1>
+    
+    
+  
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2020" class="archive-year">2020</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2020/06/03/pdfjs/pdfjs/" class="archive-article-date">
+  <time datetime="2020-06-03T11:30:38.000Z" itemprop="datePublished">06/03</time>
+</a>
        
-<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  【Threejs】开发经验集
-</h1>
+<h2 itemprop="name">
+  <a class="archive-article-title" href="/2020/06/03/pdfjs/pdfjs/"
+    >pdfjs 使用和获取内部事件</a> 
+</h2>
  
 
     </header>
-     
-    <div class="article-meta">
-      <a href="/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/" class="article-date">
-  <time datetime="2020-06-03T11:30:38.000Z" itemprop="datePublished">2020-06-03</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Threejs/">Threejs</a>
+    
+    
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pdfjs/" rel="tag">pdfjs</a></li></ul>
+
+    
   </div>
-  
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">513</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
-        </span>
-    </span>
-</div>
- 
-    </div>
-      
-
-
-
-  
-    <div class="article-entry" itemprop="articleBody">
-       
-  <ol>
-<li><p>一个物体b add()加载到 父物体a 里，如果这个 父物体a 带有旋转等属性，那么这个物体b就出现位置旋转错位等现象，这时候，就需要使用 attach()方法把 物体b 加载到 父物体a中；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.add ( object : Object3D, ... ) : null</span><br><span class="line">添加对象到这个对象的子级，可以添加任意数量的对象。 当前传入的对象中的父级将在这里被移除，因为一个对象仅能有一个父级。</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.attach ( object : Object3D ) : this</span><br><span class="line">将object作为子级来添加到该对象中，同时保持该object的世界变换。</span><br></pre></td></tr></table></figure>
-
-<p>api: <a href="https://threejs.org/docs/index.html#api/zh/core/Object3D" target="_blank" rel="noopener">https://threejs.org/docs/index.html#api/zh/core/Object3D</a></p>
-<p>此问题依据：<a href="https://github.com/mrdoob/three.js/issues/6426" target="_blank" rel="noopener">https://github.com/mrdoob/three.js/issues/6426</a></p>
-</li>
-<li><p>问题：有时候改变一个mesh的material.color的值，其他mesh的color也跟着改变了。</p>
-<p>原因：这些mesh用着同一个material</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">threejs中的网格物体对材质的是引用传递，不是值传递，如果material1 被 mesh1和mesh2用到了，改变 mesh1.material.color，则mesh2的材质颜色也改了</span><br></pre></td></tr></table></figure>
-
-<p>解决方案：给这些mesh不同的material；或者在mesh赋值的时候clone一下，例如</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mesh.material &#x3D; nMaterial.clone();</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><p>问题：模型人员给的fbx，加载到程序里面后，给fbx里的mesh添加BoxHelper，发现大小对不上！</p>
-<p>原因：模型人员给的fbx，比较大，程序这边缩小了fbx（fbx是group），然后给fbx里的mesh添加BoxHelper，还是按照mesh的真实大小，创建的；但是fbx缩小了，里面的元素也跟着缩小了；所以看起来fbx，mesh都变小了；但是直接获取mesh的话，还是获取的mesh的真实大小，顶点等数据；</p>
-<p>如果给fbx添加 BoxHelper，那显示是正常的，但是如果要实现碰撞功能，必须要mesh类型才行，这样的话，不能用fbx，只能用里面的mesh，这时候大小，顶点等数据，就产生偏差了。</p>
-<p>解决方案：不要直接加载fbx到场景里，而是加载里面的mesh到场景中，再缩小大小。</p>
-</li>
-</ol>
-</li>
-</ol>
- 
-      <!-- reward -->
-      
-      <div id="reward-btn">
-        Donate
-      </div>
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <div class="declare">
-      <ul class="post-copyright">
-        <li>
-          <i class="ri-copyright-line"></i>
-          <strong>版权声明： </strong>
-          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
-        </li>
-      </ul>
-    </div>
-    
-    <footer class="article-footer">
-       
-<div class="share-btn">
-      <span class="share-sns share-outer">
-        <i class="ri-share-forward-line"></i>
-        分享
-      </span>
-      <div class="share-wrap">
-        <i class="arrow"></i>
-        <div class="share-icons">
-          
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="ri-weibo-fill"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="ri-wechat-fill"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="ri-qq-fill"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="ri-douban-line"></i>
-          </a>
-          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a> -->
-          
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="ri-facebook-circle-fill"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="ri-twitter-fill"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="ri-google-fill"></i>
-          </a>
-        </div>
-      </div>
-</div>
-
-<div class="wx-share-modal">
-    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pxim.github.io/2020/06/03/threejs/%E3%80%90Threejs%E3%80%91%E5%BC%80%E5%8F%91%E7%BB%8F%E9%AA%8C%E9%9B%86/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Threejs/" rel="tag">Threejs</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-  <nav class="article-nav">
-    
-      <a href="/2020/06/16/egg/%E3%80%90Egg%E3%80%91webstorm%E9%87%8C%E5%A6%82%E4%BD%95%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95egg%E4%BB%A3%E7%A0%81/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            【Egg】webstorm里如何断点调试egg代码
-          
-        </div>
-      </a>
-    
-    
-      <a href="/2020/05/25/software/%E3%80%90Software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">【Software】开发辅助工具</div>
-      </a>
-    
-  </nav>
-
-   
-<!-- valine评论 -->
-<div id="vcomments-box">
-  <div id="vcomments"></div>
-</div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
-<script>
-  new Valine({
-    el: "#vcomments",
-    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
-    app_key: "uylRd03zlzcKJi0j0RRhIwax",
-    path: window.location.pathname,
-    avatar: "robohash",
-    placeholder: "给我的文章加点评论吧~",
-    recordIP: true,
-  });
-  const infoEle = document.querySelector("#vcomments .info");
-  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-    infoEle.childNodes.forEach(function (item) {
-      item.parentNode.removeChild(item);
-    });
-  }
-</script>
-<style>
-  #vcomments-box {
-    padding: 5px 30px;
-  }
-
-  @media screen and (max-width: 800px) {
-    #vcomments-box {
-      padding: 5px 0px;
-    }
-  }
-
-  #vcomments-box #vcomments {
-    background-color: #fff;
-  }
-
-  .v .vlist .vcard .vh {
-    padding-right: 20px;
-  }
-
-  .v .vlist .vcard {
-    padding-left: 10px;
-  }
-</style>
-
- 
-     
 </article>
+      
+      
+    </div>
+  </div>
+  
+  
 
+  
 </section>
       <footer class="footer">
   <div class="outer">
@@ -424,23 +246,6 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
-
-
-<script src="/js/tocbot.min.js"></script>
-
-<script>
-  tocbot.init({
-    tocSelector: '.tocbot',
-    contentSelector: '.article-entry',
-    headingSelector: 'h1, h2, h3, h4, h5, h6',
-    hasInnerContainers: true,
-    scrollSmooth: true,
-    scrollContainer: 'main',
-    positionFixedSelector: '.tocbot',
-    positionFixedClass: 'is-position-fixed',
-    fixedSidebarOffset: 'auto'
-  });
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
