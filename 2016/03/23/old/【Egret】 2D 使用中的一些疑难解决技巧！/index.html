@@ -6,7 +6,11 @@
 
 <head>
   <meta charset="utf-8" />
-    
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
     【Egret】 2D 使用中的一些疑难解决技巧！ |  PxSite
@@ -101,7 +105,7 @@
 
 
 <p><strong>1.问题：声音在ios上无法播放</strong><br><br>&nbsp;&nbsp; 解决方法：①首先需要预加载一个声音<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ②然后目前只有点击之后才能播放声音，不能默认播放<br><br><br><br><strong>2.问题：滚动条问题</strong><br><br>&nbsp; 解决方法：①js原生方法：overflow:auto<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ②egret的scroller组件，但是这个组件有问题；用代码new的话，就会一松手就<br><br>会弹回初始位置；必须在eui编辑器手动添加，才不会有这个BUG；<br><br><br><br><strong>3.问题：获取egret的canvas标签</strong><br><br>解决方法：<br></p>
-<pre code_snippet_id="2235030" snippet_file_name="blog_20170301_1_5966529"  code_snippet_id="2235030" snippet_file_name="blog_20170301_1_5966529" name="code" class="javascript">let containerList = document.querySelectorAll(&quot;.egret-player&quot;);
+<pre code_snippet_id="2235030" snippet_file_name="blog_20170301_1_5966529" name="code" class="javascript">let containerList = document.querySelectorAll(&quot;.egret-player&quot;);
         let length = containerList.length;
         for (let i = 0; i &lt; length; i++) {
             let container = containerList[i];

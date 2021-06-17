@@ -6,7 +6,11 @@
 
 <head>
   <meta charset="utf-8" />
-    
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
     nodejs 构建本地web测试服务器 以及 解决访问静态资源的问题！有完整源码！ |  PxSite
@@ -131,7 +135,7 @@
 </span><span style="color:#008080">24</span> });</pre>
 </div>
 <p>文件结构如下：</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201707/934812-20170713170440197-645897.png" alt=""></p>
+<p><img src="http://images2015.cnblogs.com/blog/934812/201707/934812-20170713170440197-645897.png" alt></p>
 <p>运行的话只要执行：<code>node server.js</code> 就可以了</p>
 <p>然后在浏览器输入 <code><span style="color:#6a8759">http://127.0.0.1:1336/ </span></code>来访问项目文件夹内的文件了</p>
 <p><strong>2、使用connect模块</strong></p>
@@ -140,8 +144,8 @@
 <pre> <span style="color:#0000ff">var</span> connect = require(&quot;connect&quot;<span style="color:#000000">);
  </span><span style="color:#0000ff">var</span> serveStatic = require(&quot;serve-static&quot;<span style="color:#000000">);
 
-<p> </span><span style="color:#0000ff">var</span> app =<span style="color:#000000"> connect();<br> </span><span style="color:#008000">//</span><span style="color:#008000"> app.use(serveStatic(&quot;C:\xxx\xxx\xxx\项目文件夹&quot;));</span><br> app.use(serveStatic(&quot;public&quot;<span style="color:#000000">));</p>
-<p> app.listen(</span>1337<span style="color:#000000">);<br> console.log(</span>‘Server running at <a href="http://127.0.0.1:1337/&#39;" target="_blank" rel="noopener">http://127.0.0.1:1337/&#39;</a>);</pre></p>
+<p> </p></span><span style="color:#0000ff">var</span> app =<span style="color:#000000"> connect();<br> </span><span style="color:#008000">//</span><span style="color:#008000"> app.use(serveStatic(&quot;C:\xxx\xxx\xxx\项目文件夹&quot;));</span><br> app.use(serveStatic(&quot;public&quot;<span style="color:#000000">));<p></p>
+<p> app.listen(</p></span>1337<span style="color:#000000">);<br> console.log(</span>‘Server running at <a href="http://127.0.0.1:1337/&#39;" target="_blank" rel="noopener">http://127.0.0.1:1337/&#39;</a>);</pre><p></p>
 </div>
 <p>运行的话只要执行：<code>node server2.js</code> 就可以了，</p>
 <p>然后在浏览器输入 <code><span style="color:#6a8759">http://127.0.0.1:1337/</span> </code>
@@ -168,17 +172,17 @@
 <p>运行的话只要执行：<code>node server3.js</code> 就可以了，</p>
 <p>然后在浏览器输入 <code><span style="color:#6a8759">http://127.0.0.1:1338/ </span></code>来访问项目文件夹内的文件了。</p>
 <p>注：总的文件目录如下：</p>
-<p><img src="http://images2015.cnblogs.com/blog/934812/201707/934812-20170713172354400-1245708414.png" alt=""></p>
-<p>源码下载地址：<a target="_blank" title="https://github.com/arvin0/nodejs-example/tree/master/web-static-server" href="https://github.com/arvin0/nodejs-example/tree/master/web-static-server" target="_blank">https://github.com/seanpx/nodejs-example/tree/master/web-static-server</a><br>
+<p><img src="http://images2015.cnblogs.com/blog/934812/201707/934812-20170713172354400-1245708414.png" alt></p>
+<p>源码下载地址：<a target="_blank" title="https://github.com/arvin0/nodejs-example/tree/master/web-static-server" href="https://github.com/arvin0/nodejs-example/tree/master/web-static-server">https://github.com/seanpx/nodejs-example/tree/master/web-static-server</a><br>
 </p>
 <p><strong><span style="font-size:18px">二、解决访问静态资源</span></strong></p>
 <p>主要使用两个模块</p>
 <p>1.通用的&nbsp;<span class="cnblogs_code">serve-static</span>&nbsp;模块</p>
-<p>详细文档：<a target="_blank" href="https://github.com/expressjs/serve-static" target="_blank">https://github.com/expressjs/serve-static
+<p>详细文档：<a target="_blank" href="https://github.com/expressjs/serve-static">https://github.com/expressjs/serve-static
 </a><br>
 </p>
 <p>2.express专属的 &nbsp;<span class="cnblogs_code">app.use(express.static(require('path').join(__dirname, 'public')));</span>&nbsp; 方法</p>
-<p>详细文档：<a target="_blank" href="http://expressjs.com/en/4x/api.html" target="_blank">http://expressjs.com/en/4x/api.html</a> ，然后ctrl&#43;F搜索
+<p>详细文档：<a target="_blank" href="http://expressjs.com/en/4x/api.html">http://expressjs.com/en/4x/api.html</a> ，然后ctrl&#43;F搜索
 <span class="cnblogs_code">express.static</span> ，就能找到对应的说明了。</p>
 <p>&nbsp;</p>
  

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxim.github.io/"/>
-  <updated>2021-03-12T05:13:52.000Z</updated>
+  <updated>2021-06-17T07:11:40.000Z</updated>
   <id>https://pxim.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pdfjs 使用和获取内部事件</title>
+    <link href="https://pxim.github.io/2021/06/17/pdfjs/pdfjs/"/>
+    <id>https://pxim.github.io/2021/06/17/pdfjs/pdfjs/</id>
+    <published>2021-06-17T07:11:00.000Z</published>
+    <updated>2021-06-17T07:11:40.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;当前项目需求用到pdf插件，在github逛了一圈，发现功能最强大的还是mozilla的&lt;a href=&quot;https://github.com/mozilla/pdf.js&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="pdfjs" scheme="https://pxim.github.io/categories/pdfjs/"/>
+    
+    
+      <category term="pdfjs" scheme="https://pxim.github.io/tags/pdfjs/"/>
+    
+  </entry>
   
   <entry>
     <title>【ResDevKit】course-kit-mobile</title>
@@ -130,29 +157,21 @@
   </entry>
   
   <entry>
-    <title>pdfjs 使用和获取内部事件</title>
-    <link href="https://pxim.github.io/2020/06/03/pdfjs/pdfjs/"/>
-    <id>https://pxim.github.io/2020/06/03/pdfjs/pdfjs/</id>
+    <title>【Threejs】详解add和attach后的区别</title>
+    <link href="https://pxim.github.io/2020/06/03/threejs/threejs-add-attach/"/>
+    <id>https://pxim.github.io/2020/06/03/threejs/threejs-add-attach/</id>
     <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-17T06:30:00.000Z</updated>
+    <updated>2021-06-15T05:40:30.000Z</updated>
     
     <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;当前项目需求用到pdf插件，在github逛了一圈，发现功能最强大的还是mozilla的&lt;a href=&quot;https://github.com/mozilla/pdf.js&quot; target=&quot;_blank&quot;
-        
-      
     
     </summary>
     
     
-      <category term="pdfjs" scheme="https://pxim.github.io/categories/pdfjs/"/>
+      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
     
     
-      <category term="pdfjs" scheme="https://pxim.github.io/tags/pdfjs/"/>
+      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
     
   </entry>
   
@@ -203,25 +222,6 @@
 &lt;span class=&quot;comment&quot;&gt;// var box =
         
       
-    
-    </summary>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【Threejs】详解add和attach后的区别</title>
-    <link href="https://pxim.github.io/2020/06/03/threejs/threejs-add-attach/"/>
-    <id>https://pxim.github.io/2020/06/03/threejs/threejs-add-attach/</id>
-    <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-15T05:40:30.000Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
@@ -379,45 +379,6 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】02 Flash模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:21:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】03 H5模板</title>
     <link href="https://pxim.github.io/2020/05/25/resdevkit/03-course-an-h5/"/>
     <id>https://pxim.github.io/2020/05/25/resdevkit/03-course-an-h5/</id>
@@ -473,6 +434,45 @@
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】02 Flash模板</title>
+    <link href="https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/"/>
+    <id>https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-02-04T07:21:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
         
       
     

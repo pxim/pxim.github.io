@@ -6,7 +6,11 @@
 
 <head>
   <meta charset="utf-8" />
-    
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
     HTML5 本地存储五种方案 |  PxSite
@@ -106,7 +110,7 @@ LocalStorage就是Key-Value的简单键&#20540;对存储结构，Web Storage除�
 有针对本次回话的sessionStorage方式，一般情况下localStorage较为常用，示例代码如下：<br>
 Chrome中 的存储方式是以sqlite的数据库文件形式存储。存在C:\Users\Username\AppData\Local<br>
 \Google\Chrome\User Data\Default\Local Storage 中<br>
-<pre code_snippet_id="2235012" snippet_file_name="blog_20170301_1_1597638"  name="code" class="javascript">function save(dataModel){
+<pre code_snippet_id="2235012" snippet_file_name="blog_20170301_1_1597638" name="code" class="javascript">function save(dataModel){
 
 <p>var value = dataModel.serialize();</p>
 <p>window.localStorage[‘DataModel’] = value;</p>
@@ -129,8 +133,8 @@ Chrome中 的存储方式是以sqlite的数据库文件形式存储。存在C:\U
 <p>delete window.localStorage[‘DataModel’];</p>
 <p>delete window.localStorage[‘DataCount’];</p>
 <p>}</p>
-<p>}<br></pre><strong><br><br>2、Cookie</strong><br><br>这种存储方式存储内容很有限，只适合做简单信息存储，存取接口设计得极其反人类，举例如下：<br></p>
-<pre code_snippet_id="2235012" snippet_file_name="blog_20170301_2_5632629"  name="code" class="javascript">function getCookieValue(name) {
+<p>}<br></p></pre><strong><br><br>2、Cookie</strong><br><br>这种存储方式存储内容很有限，只适合做简单信息存储，存取接口设计得极其反人类，举例如下：<br><p></p>
+<pre code_snippet_id="2235012" snippet_file_name="blog_20170301_2_5632629" name="code" class="javascript">function getCookieValue(name) {
 
 if (document.cookie.length &gt; 0) {
 
@@ -172,7 +176,7 @@ return value;
 
 }</pre><br>
 <p><strong>3、Indexed Database API</strong><br><br><br><br>IndexedDB可以存储结构对象，可构建key和index的索引方式查找，目前各浏览器的已经逐渐支持<br><br>IndexedDB的存储方式，其使用代码如下，需注意IndexedDB的很多操作接口类&#20284;NodeJS的异步回调方式，<br><br>特别是查询时连cursor的continue都是异步再次回调onsuccess函数的操作方式，因此和NodeJS一样使用上不如同步的代码容易。</p>
-<p><pre code_snippet_id="2235012" snippet_file_name="blog_20170301_3_1902875"  name="code" class="javascript">function save(dataModel){
+<p><pre code_snippet_id="2235012" snippet_file_name="blog_20170301_3_1902875" name="code" class="javascript">function save(dataModel){
 
 <p>var tx = db.transaction(&quot;meters&quot;, &quot;readwrite&quot;);</p>
 <p>var store = tx.objectStore(&quot;meters&quot;);</p>
@@ -192,15 +196,15 @@ return value;
 <p>console.log(dataModel.size() + ‘ datas are saved’);</p>
 <p>};</p>
 <p>return dataModel.serialize();</p>
-<p>}</pre><br></p>
-</p>
+<p>}</p></pre><br></p>
+<p></p>
 <strong>4、FileSystem API</strong><br>
 <br>
 FileSystem API相当于操作本地文件的存储方式，目前支持浏览器不多，其接口标准也在发展制定变化中<br>
 ，因此也可以动态生成图片到本地文件，然后通过 filesystem:http:*** 的URL方式直接赋&#20540;给img的<br>
 html元素的src访问。<br>
 <br>
-<pre code_snippet_id="2235012" snippet_file_name="blog_20170301_4_1030040"  name="code" class="javascript">function save(dataModel) {
+<pre code_snippet_id="2235012" snippet_file_name="blog_20170301_4_1030040" name="code" class="javascript">function save(dataModel) {
 
 <p>var value = dataModel.serialize();</p>
 <p>fs.root.getFile(‘meters.txt’, {create: true}, function (fileEntry) {</p>
@@ -214,8 +218,8 @@ html元素的src访问。<br>
 <p>});</p>
 <p>});</p>
 <p>return value;</p>
-<p>}<br></pre><br><br><strong>5、Application Cache</strong><br><br><br><br>window.applicationCache 对象是对浏览器的应用缓存的编程访问方式。其 status 属性可用于查看缓存的当前状态：<br></p>
-<pre code_snippet_id="2235012" snippet_file_name="blog_20170301_5_7856693"  name="code" class="javascript">var appCache = window.applicationCache;
+<p>}<br></p></pre><br><br><strong>5、Application Cache</strong><br><br><br><br>window.applicationCache 对象是对浏览器的应用缓存的编程访问方式。其 status 属性可用于查看缓存的当前状态：<br><p></p>
+<pre code_snippet_id="2235012" snippet_file_name="blog_20170301_5_7856693" name="code" class="javascript">var appCache = window.applicationCache;
 
 switch (appCache.status) {
 

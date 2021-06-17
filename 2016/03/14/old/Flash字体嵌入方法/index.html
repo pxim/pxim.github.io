@@ -6,7 +6,11 @@
 
 <head>
   <meta charset="utf-8" />
-    
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
     Flash字体嵌入方法 |  PxSite
@@ -101,20 +105,20 @@
 
 
 <div class="articalContent   newfont_family" id="sina_keyword_ad_area2">
-<p>原文链接：<a target="_blank" target="_blank" href="http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html">http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html</a></p>
+<p>原文链接：<a target="_blank" href="http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html">http://www.cnblogs.com/ddw1997/archive/2011/11/13/2247546.html</a></p>
 一、如果使用flash cs5.5<br>
 <br>
 1.先新建一个字体fla文件，然后是文本-字体嵌入，如图<br>
-<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/name.PNG" alt="" width="308" height="220" border="0" style="width:308.25px; height:220.81px"><br>
+<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/name.PNG" alt width="308" height="220" border="0" style="width:308.25px; height:220.81px"><br>
 <br>
-<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/as.PNG" alt="" width="308" height="236" border="0" style="width:308.1px; height:236.92px"><br>
+<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/as.PNG" alt width="308" height="236" border="0" style="width:308.1px; height:236.92px"><br>
 <br>
-<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/lib.PNG" alt="" width="249" height="37" border="0"><br>
+<img src="http://images.cnblogs.com/cnblogs_com/ddw1997/img/lib.PNG" alt width="249" height="37" border="0"><br>
 <br>
 然后发布swf<br>
 2.导入swf，并使用字体<br>
 <br>
-<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_1_2781429"  name="code" class="javascript">var __fontClass:Class = _loader.contentLoaderInfo.applicationDomain.getDefinition(&quot;FontX&quot;) as Class;
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_1_2781429" name="code" class="javascript">var __fontClass:Class = _loader.contentLoaderInfo.applicationDomain.getDefinition(&quot;FontX&quot;) as Class;
 Font.registerFont(__fontClass);
 var __format:TextFormat = new TextFormat();
 var __tf:TextField = new TextField();
@@ -128,7 +132,7 @@ __tf.text = 'ABCDefg123456,.';</pre><br>
 <br>
 1.首先还是建立font.swf<br>
 <br>
-<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_2_1255476"  name="code" class="javascript">package
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_2_1255476" name="code" class="javascript">package
 {
 import flash.display.Sprite;
 import flash.text.Font;
@@ -147,8 +151,8 @@ public class fonts extends Sprite
     //Font.registerFont(myFont);
     for each(var __font:Font in __fontArr)
         trace(__font.fontName, __font.fontType);
-}</code></pre><p>}<br>}</pre><br><br>&nbsp;&nbsp;&nbsp; source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 指定要嵌入的字体文件路径。还可以用 systemFont指定一个系统中安装的字体。这样的话就可以不需要 source参数了。<br><br>&nbsp;&nbsp;&nbsp; fontName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这个实际上就是 fontFamily 的别名。<br><br>&nbsp;&nbsp;&nbsp; embedAsCFF&nbsp;&nbsp;&nbsp; 如果不提供这个参数，默认就是true。所以，如果系统你嵌入的字体用于TextField，一定要将其设置为false。<br><br>&nbsp;&nbsp;&nbsp; unicodeRange&nbsp; 要嵌入的文本的范围。见下表：<br><br><br><br>&nbsp;<br><br><br><br>嵌入字体范围：<br><br><br><br>&nbsp;&nbsp;&nbsp; 大写字符&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020,U&#43;0041-U&#43;005A<br><br>&nbsp;&nbsp;&nbsp; 小写字符&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020,U&#43;0061-U&#43;007A<br><br>&nbsp;&nbsp;&nbsp; 数字&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0030-U&#43;0039,U&#43;002E<br><br>&nbsp;&nbsp;&nbsp; 标点符号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020-U&#43;002F,U&#43;003A-U&#43;0040,U&#43;005B-U&#43;0060,U&#43;007B-U&#43;007E<br><br>&nbsp;&nbsp;&nbsp; 基本拉丁字符&nbsp;&nbsp;&nbsp; U&#43;0020-U&#43;002F, U&#43;0030-U&#43;0039, U&#43;003A-U&#43;0040, U&#43;0041-U&#43;005A, U&#43;005B-U&#43;0060, U&#43;0061-U&#43;007A, U&#43;007B-U&#43;007E<br><br><br><br>当然，还有中文范围等等，详细的可以找到你本机的 FlexSDK/frameworks/flash-unicode-table.xml<br><br><br><br>2.导入swf，使用字体<br><br><br><br>&nbsp;<br></p>
-<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_3_5508617"  name="code" class="javascript">package
+}</code></pre><p>}<br>}</p></pre><br><br>&nbsp;&nbsp;&nbsp; source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 指定要嵌入的字体文件路径。还可以用 systemFont指定一个系统中安装的字体。这样的话就可以不需要 source参数了。<br><br>&nbsp;&nbsp;&nbsp; fontName&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这个实际上就是 fontFamily 的别名。<br><br>&nbsp;&nbsp;&nbsp; embedAsCFF&nbsp;&nbsp;&nbsp; 如果不提供这个参数，默认就是true。所以，如果系统你嵌入的字体用于TextField，一定要将其设置为false。<br><br>&nbsp;&nbsp;&nbsp; unicodeRange&nbsp; 要嵌入的文本的范围。见下表：<br><br><br><br>&nbsp;<br><br><br><br>嵌入字体范围：<br><br><br><br>&nbsp;&nbsp;&nbsp; 大写字符&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020,U&#43;0041-U&#43;005A<br><br>&nbsp;&nbsp;&nbsp; 小写字符&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020,U&#43;0061-U&#43;007A<br><br>&nbsp;&nbsp;&nbsp; 数字&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0030-U&#43;0039,U&#43;002E<br><br>&nbsp;&nbsp;&nbsp; 标点符号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U&#43;0020-U&#43;002F,U&#43;003A-U&#43;0040,U&#43;005B-U&#43;0060,U&#43;007B-U&#43;007E<br><br>&nbsp;&nbsp;&nbsp; 基本拉丁字符&nbsp;&nbsp;&nbsp; U&#43;0020-U&#43;002F, U&#43;0030-U&#43;0039, U&#43;003A-U&#43;0040, U&#43;0041-U&#43;005A, U&#43;005B-U&#43;0060, U&#43;0061-U&#43;007A, U&#43;007B-U&#43;007E<br><br><br><br>当然，还有中文范围等等，详细的可以找到你本机的 FlexSDK/frameworks/flash-unicode-table.xml<br><br><br><br>2.导入swf，使用字体<br><br><br><br>&nbsp;<br><p></p>
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_3_5508617" name="code" class="javascript">package
 {
 import flash.display.Sprite;
 import flash.display.Loader;
@@ -234,11 +238,11 @@ public class LoadEmbedFont extends Sprite
 <br>
 &nbsp;3.查看字体<br>
 <br>
-<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_4_4570526"  name="code" class="javascript">import flash.text.Font;
+<pre code_snippet_id="2234685" snippet_file_name="blog_20170301_4_4570526" name="code" class="javascript">import flash.text.Font;
 var allFonts:Array = Font.enumerateFonts(true);
 allFonts.sortOn(&quot;fontName&quot;, Array.CASEINSENSITIVE);
 
-<p>for(var i:uint=0;i&lt;allFonts.length;i++){<br>        trace(&quot;字体名称:&quot;+allFonts[i].fontName+&quot;字体样式:&quot;+allFonts[i].fontStyle+&quot;字体类型:&quot;+allFonts[i].fontType)<br>}</pre></div></p>
+<p>for(var i:uint=0;i&lt;allFonts.length;i++){<br>        trace(&quot;字体名称:&quot;+allFonts[i].fontName+&quot;字体样式:&quot;+allFonts[i].fontStyle+&quot;字体类型:&quot;+allFonts[i].fontType)<br>}</p></pre></div><p></p>
  
       <!-- reward -->
       

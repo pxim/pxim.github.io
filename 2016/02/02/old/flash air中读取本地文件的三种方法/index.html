@@ -6,7 +6,11 @@
 
 <head>
   <meta charset="utf-8" />
-    
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
     flash air中读取本地文件的三种方法 |  PxSite
@@ -104,7 +108,7 @@
 <p>1.使用File和FileStream两个类，FileStream负责读取数据的所以操作：（同步操作）</p>
 <div class="cnblogs_Highlighter sh-gutter">
 <div class="syntaxhighlighter  as3 ie" id="highlighter_371142">
-<div class="toolbar"><pre code_snippet_id="1572830" snippet_file_name="blog_20160202_1_3449655"  code_snippet_id="1572830" snippet_file_name="blog_20160202_1_3449655" name="code" class="javascript">var stream:FileStream = new FileStream();
+<div class="toolbar"><pre code_snippet_id="1572830" snippet_file_name="blog_20160202_1_3449655" name="code" class="javascript">var stream:FileStream = new FileStream();
 var file:File = new File('E:/test.txt');//绑定一个文件
 stream.open(file,FileMode.READ);//读取文件
 trace(stream.readMultiByte(stream.bytesAvailable,'utf-8'));
@@ -113,7 +117,7 @@ stream.close();</pre><br>
 </div>
 </div>
 <p>2.仅File类（异步操作）</p>
-<div class="cnblogs_Highlighter sh-gutter"><pre code_snippet_id="1572830" snippet_file_name="blog_20160202_2_5543989"  code_snippet_id="1572830" snippet_file_name="blog_20160202_2_5543989" name="code" class="javascript">private var file:File;
+<div class="cnblogs_Highlighter sh-gutter"><pre code_snippet_id="1572830" snippet_file_name="blog_20160202_2_5543989" name="code" class="javascript">private var file:File;
 public function Tracer()
 {
     file =new File('E:/daili.txt');//绑定一个文件
@@ -121,19 +125,19 @@ public function Tracer()
     file.load();//执行读取操作
 }
 
-<p>private function onComplete(event:Event):void<br>{<br>    vardata:ByteArray = file.data;<br>    trace(data.readMultiByte(data.bytesAvailable,’utf-8’));<br>}</pre><br><br>3.使用File和FileStream（异步操作）</div></p>
+<p>private function onComplete(event:Event):void<br>{<br>    vardata:ByteArray = file.data;<br>    trace(data.readMultiByte(data.bytesAvailable,’utf-8’));<br>}</p></pre><br><br>3.使用File和FileStream（异步操作）</div><p></p>
 <div class="cnblogs_Highlighter sh-gutter">
 <div class="syntaxhighlighter  as3 ie" id="highlighter_408044">
-<div class="toolbar"><pre code_snippet_id="1572830" snippet_file_name="blog_20160202_3_9273743"  code_snippet_id="1572830" snippet_file_name="blog_20160202_3_9273743" name="code" class="javascript">var sourceFile:File = File.documentsDirectory.resolvePath(&quot;Apollo Test/test.txt&quot;);
+<div class="toolbar"><pre code_snippet_id="1572830" snippet_file_name="blog_20160202_3_9273743" name="code" class="javascript">var sourceFile:File = File.documentsDirectory.resolvePath(&quot;Apollo Test/test.txt&quot;);
 var stream:FileStream = new FileStream();
 stream.addEventListener(Event.COMPLETE, readBytes);
 stream.openAsync(sourceFile, FileMode.READ);
 
-<p>function readBytes(e:Event):void {<br>    varbytes:ByteArray = newByteArray();<br>    trace(&quot;position 0:&quot;, stream.position);// 0<br>    bytes[0] = stream.readByte();<br>    trace(&quot;position 1:&quot;, stream.position);// 1<br>    fileStream.readBytes(bytes, stream.position,4);<br>    trace(&quot;position 2:&quot;, stream.position);// 5<br>    stream.close();<br>}</pre></div></p>
+<p>function readBytes(e:Event):void {<br>    varbytes:ByteArray = newByteArray();<br>    trace(&quot;position 0:&quot;, stream.position);// 0<br>    bytes[0] = stream.readByte();<br>    trace(&quot;position 1:&quot;, stream.position);// 1<br>    fileStream.readBytes(bytes, stream.position,4);<br>    trace(&quot;position 2:&quot;, stream.position);// 5<br>    stream.close();<br>}</p></pre></div><p></p>
 </div>
 <div class="syntaxhighlighter  as3 ie" id="highlighter_408044"><br>
 </div>
-<div class="syntaxhighlighter  as3 ie" id="highlighter_408044">原文：<a target="_blank" target="_blank" href="http://www.cnblogs.com/crkay/archive/2011/10/25/2223726.html">http://www.cnblogs.com/crkay/archive/2011/10/25/2223726.html</a></div>
+<div class="syntaxhighlighter  as3 ie" id="highlighter_408044">原文：<a target="_blank" href="http://www.cnblogs.com/crkay/archive/2011/10/25/2223726.html">http://www.cnblogs.com/crkay/archive/2011/10/25/2223726.html</a></div>
 </div>
  
       <!-- reward -->

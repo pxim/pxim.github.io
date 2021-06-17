@@ -6,7 +6,11 @@
 
 <head>
   <meta charset="utf-8" />
-    
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
     判断是否是IE（包含IE11） |  PxSite
@@ -97,12 +101,12 @@
 
 
 <p></p>
-<pre code_snippet_id="1604893" snippet_file_name="blog_20160310_1_2695172"  class="javascript" name="code" snippet_file_name="blog_20160310_1_2695172" code_snippet_id="1604893">﻿ 判断是否是IE（包含IE11）
+<pre code_snippet_id="1604893" snippet_file_name="blog_20160310_1_2695172" class="javascript" name="code">﻿ 判断是否是IE（包含IE11）
 
 <p> if(!!window[&quot;ActiveXObject&quot;] || &quot;ActiveXObject&quot; in window)<br>  {<br>       alert(&quot;ie&quot;);<br>   }else<br>   {<br>      alert(&quot;不是ie&quot;);<br>   }</p>
 <p>//——————————————————————————————————————————————————————————————————————————//<br>$(function(){<br>    varSys={};<br>   var ua= navigator.userAgent.toLowerCase();<br>    var s;<br>   (s= ua.match(/rv:([\d.]+)) like gecko/))?Sys.ie= s[1]:<br>    (s= ua.match(/msie ([\d.]+)/))?Sys.ie= s[1]:<br>   (s= ua.match(/firefox/([\d.]+)/))?Sys.firefox= s[1]:<br>    (s= ua.match(/chrome/([\d.]+)/))?Sys.chrome= s[1]:<br>   (s= ua.match(/opera.([\d.]+)/))?Sys.opera= s[1]:<br>    (s= ua.match(/version/([\d.]+).*safari/))?Sys.safari= s[1]:0;</p>
 <pre><code>if(Sys.ie) $(&amp;#39;span&amp;#39;).text(&amp;#39;IE: &amp;#39; +Sys.ie);</code></pre><p>   if(Sys.firefox) $(&#39;span&#39;).text(&#39;Firefox: &#39; +Sys.firefox);<br>    if(Sys.chrome) $(&#39;span&#39;).text(&#39;Chrome: &#39; +Sys.chrome);<br>   if(Sys.opera) $(&#39;span&#39;).text(&#39;Opera: &#39; +Sys.opera);<br>    if(Sys.safari) $(&#39;span&#39;).text(&#39;Safari: &#39; +Sys.safari);<br>});</p>
-<p>﻿﻿</pre><br></p>
+<p>﻿﻿</p></pre><br><p></p>
 <p></p>
  
       <!-- reward -->

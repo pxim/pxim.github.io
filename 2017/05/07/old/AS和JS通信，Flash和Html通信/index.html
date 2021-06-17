@@ -6,7 +6,11 @@
 
 <head>
   <meta charset="utf-8" />
-    
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
     AS和JS通信，Flash和Html通信 |  PxSite
@@ -99,7 +103,7 @@
        
   <a id="more"></a>
 
-<p>一、使用 ExternalInterface api</p></p>
+<p>一、使用 ExternalInterface api</p><p></p>
 <p>1.as调用js，as给js发送参数数据</p>
 <p>as代码：</p>
 <div class="cnblogs_code">
@@ -125,7 +129,7 @@
 <span style="color: #000000">    flash.onJsToAs("js传参给as");
 }
 
-<p></span><span style="color: #008000">//</span><span style="color: #008000">获取此页面加载FLASH对象名称</span><br><span style="color: #0000ff">function</span><span style="color: #000000"> getMovieName(movieName)<br> {<br>   </span><span style="color: #0000ff">if</span><span style="color: #000000"> (window.document[movieName])<br>   {<br>     </span><span style="color: #0000ff">return</span><span style="color: #000000"> window.document[movieName];<br>   }</span><span style="color: #0000ff">else</span> <span style="color: #0000ff">if</span> (navigator.appName.indexOf(“Microsoft”)==-1<span style="color: #000000">)<br>     {<br>      </span><span style="color: #0000ff">if</span> (document.embeds &amp;&amp;<span style="color: #000000"> document.embeds[movieName])<br>          </span><span style="color: #0000ff">return</span><span style="color: #000000"> document.embeds[movieName];<br>      }</span><span style="color: #0000ff">else</span><span style="color: #000000">{<br>          </span><span style="color: #0000ff">return</span><span style="color: #000000"> document.getElementById(movieName);<br>   }<br> };</span></pre></p>
+<p></p></span><span style="color: #008000">//</span><span style="color: #008000">获取此页面加载FLASH对象名称</span><br><span style="color: #0000ff">function</span><span style="color: #000000"> getMovieName(movieName)<br> {<br>   </span><span style="color: #0000ff">if</span><span style="color: #000000"> (window.document[movieName])<br>   {<br>     </span><span style="color: #0000ff">return</span><span style="color: #000000"> window.document[movieName];<br>   }</span><span style="color: #0000ff">else</span> <span style="color: #0000ff">if</span> (navigator.appName.indexOf(“Microsoft”)==-1<span style="color: #000000">)<br>     {<br>      </span><span style="color: #0000ff">if</span> (document.embeds &amp;&amp;<span style="color: #000000"> document.embeds[movieName])<br>          </span><span style="color: #0000ff">return</span><span style="color: #000000"> document.embeds[movieName];<br>      }</span><span style="color: #0000ff">else</span><span style="color: #000000">{<br>          </span><span style="color: #0000ff">return</span><span style="color: #000000"> document.getElementById(movieName);<br>   }<br> };</span></pre><p></p>
 </div>
 <p>as代码：</p>
 <div class="cnblogs_code">

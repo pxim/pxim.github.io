@@ -6,7 +6,11 @@
 
 <head>
   <meta charset="utf-8" />
-    
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
     使用jQuery播放/暂停 HTML5视频 |  PxSite
@@ -99,7 +103,7 @@
        
   <a id="more"></a>
 
-<p>我尝试用jQuery控制HTML5视频，两个视频分别在两个tab中，我希望点中tab后，该tab里的视频可以立即播放，而另外tab里的视频能够停止。<br />
+<p>我尝试用jQuery控制HTML5视频，两个视频分别在两个tab中，我希望点中tab后，该tab里的视频可以立即播放，而另外tab里的视频能够停止。<br>
 我的代码是这样的：</p>
 
 <pre class="has">
@@ -112,7 +116,7 @@ $('#movie1').play();
 <pre class="has">
 <code class="language-javascript">document.getElementById('movie1').play();</code></pre>
 
-<p><span style="color:#f33b45;"><strong>解决方法：</strong></span><br />
+<p><span style="color:#f33b45;"><strong>解决方法：</strong></span><br>
 play并不是jQuery的函数，而是DOM元素的函数，所以我们需要通过DOM来调用play，代码如下：</p>
 
 <pre class="has">
@@ -217,7 +221,7 @@ HTML5 Video is required for this example.
 &lt;button id="fastFwd" onclick="skip(10)"&gt;&amp;gt;&amp;gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
 
-<p><br /><span style="color:#f33b45;"><strong>下面是一个比较完整的例子：</strong></span></p>
+<p><br><span style="color:#f33b45;"><strong>下面是一个比较完整的例子：</strong></span></p>
 
 <pre class="has">
 <code class="language-javascript">&lt;html &gt;

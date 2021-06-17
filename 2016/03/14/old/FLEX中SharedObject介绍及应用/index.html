@@ -6,7 +6,11 @@
 
 <head>
   <meta charset="utf-8" />
-    
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
     FLEX中SharedObject介绍及应用 |  PxSite
@@ -120,7 +124,7 @@
 <p><span style="font-family:SimSun; font-size:14px">1．得到一个共享对象：</span></p>
 <p><span style="font-family:SimSun; font-size:14px">var so:SharedObject=SharedObject.getLocal(&quot;mydata&quot;,&quot;/&quot;);</span></p>
 <p><span style="font-family:SimSun; font-size:14px">2．往共享对象里存入&#20540;：</span></p>
-<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_1_3530946"  code_snippet_id="2234716" snippet_file_name="blog_20170301_1_3530946" name="code" class="javascript">var user:Object=new Object();
+<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_1_3530946" name="code" class="javascript">var user:Object=new Object();
 
 <pre><code>user.userName=userName.text;
 
@@ -129,14 +133,14 @@ user.passWord=passWord.text;
 user.isSaveLogin=(remember.selected==true?1:0);
 
 so.data.user=user;&lt;/pre&gt;&lt;br&gt;</code></pre><p><span style="font-family:SimSun; font-size:14px">3．清除共享对象里的&#20540;：&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
-<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_2_990454"  code_snippet_id="2234716" snippet_file_name="blog_20170301_2_990454" name="code" class="javascript">var so:SharedObject=SharedObject.getLocal(&quot;mydata&quot;,&quot;/&quot;);
+<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_2_990454" name="code" class="javascript">var so:SharedObject=SharedObject.getLocal(&quot;mydata&quot;,&quot;/&quot;);
 
 <pre><code>if(so.data.user!=null){
 
        so.data.user=null;
 
 }&lt;/pre&gt;&lt;br&gt;</code></pre><p><span style="font-family:SimSun; font-size:14px">4．读取共享对象里的&#20540;：&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
-<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_3_6672055"  code_snippet_id="2234716" snippet_file_name="blog_20170301_3_6672055" name="code" class="javascript"> var so:SharedObject=SharedObject.getLocal(&quot;mydata&quot;,&quot;/&quot;);
+<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_3_6672055" name="code" class="javascript"> var so:SharedObject=SharedObject.getLocal(&quot;mydata&quot;,&quot;/&quot;);
 
 <pre><code>if(so.data.user!=null){
 
@@ -152,7 +156,7 @@ so.data.user=user;&lt;/pre&gt;&lt;br&gt;</code></pre><p><span style="font-family
 <p><span style="font-family:SimSun; font-size:14px">&nbsp;RSO是服务器端的共享对象，服务器端的数据共享可以实现多个客户端数据共享，在这里服务器我采用Flash Media Server3，FMS的使用非常简便，你只要在安装目录下找到Applications目录，并在其下新建一个子目录就可以成为你的工程或项目了。关于FMS的使用大家可以参考相关文章，本文不做介绍：利用FMS和RSO我们可以实现非常多的功能，诸如，聊天室，联机游戏，视频会议，在线视频录制和视频聊天。。。。。。</span></p>
 <p><span style="font-family:SimSun; font-size:14px; line-height:25.200000762939453px">在这里我用一个简单的聊天室实例为例稍做讲解：</span><span style="font-family:SimSun; font-size:14px"><br>
 </span></p>
-<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_4_5593043"  code_snippet_id="2234716" snippet_file_name="blog_20170301_4_5593043" name="code" class="javascript">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;  
+<pre code_snippet_id="2234716" snippet_file_name="blog_20170301_4_5593043" name="code" class="javascript">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;  
 &lt;mx:Application xmlns:mx=&quot;http://www.adobe.com/2006/mxml&quot; layout=&quot;absolute&quot; creationComplete=&quot;TextSO ();&quot;&gt;  
     &lt;mx:Script&gt;  
         &lt;![CDATA[  
@@ -226,8 +230,8 @@ so.data.user=user;&lt;/pre&gt;&lt;br&gt;</code></pre><p><span style="font-family
     &amp;lt;mx:TextArea id=&amp;quot;textArea&amp;quot; width=&amp;quot;200&amp;quot; height=&amp;quot;200&amp;quot;/&amp;gt;//信息列表框  
     &amp;lt;mx:TextInput id=&amp;quot;textInput&amp;quot;/&amp;gt;//消息输入框  
     &amp;lt;mx:Button id=&amp;quot;button&amp;quot; /&amp;gt;//发送按钮  
-&amp;lt;/mx:VBox&amp;gt;  </code></pre><p>&lt;/mx:Application&gt; </pre><br><br><span style="font-family:SimSun; font-size:14px"><br><br></span></p>
- 
+&amp;lt;/mx:VBox&amp;gt;  </code></pre><p>&lt;/mx:Application&gt; </p></pre><br><br><span style="font-family:SimSun; font-size:14px"><br><br></span><p></p>
+</pre></pre></pre> 
       <!-- reward -->
       
       <div id="reward-btn">
