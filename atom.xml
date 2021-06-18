@@ -157,13 +157,23 @@
   </entry>
   
   <entry>
-    <title>【Threejs】详解add和attach后的区别</title>
-    <link href="https://pxim.github.io/posts/3ecb95/"/>
-    <id>https://pxim.github.io/posts/3ecb95/</id>
+    <title>ThreeJS 开发经验和注意点</title>
+    <link href="https://pxim.github.io/posts/65bab51/"/>
+    <id>https://pxim.github.io/posts/65bab51/</id>
     <published>2020-06-03T11:30:38.000Z</published>
     <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;一个物体b add()加载到 父物体a 里，如果这个 父物体a 带有旋转等属性，那么这个物体b就出现位置旋转错位等现象，这时候，就需要使用 attach()方法把 物体b 加载到 父物体a中；&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
     
     </summary>
     
@@ -205,23 +215,13 @@
   </entry>
   
   <entry>
-    <title>ThreeJS 开发经验和注意点</title>
-    <link href="https://pxim.github.io/posts/65bab51/"/>
-    <id>https://pxim.github.io/posts/65bab51/</id>
+    <title>【Threejs】详解add和attach后的区别</title>
+    <link href="https://pxim.github.io/posts/3ecb95/"/>
+    <id>https://pxim.github.io/posts/3ecb95/</id>
     <published>2020-06-03T11:30:38.000Z</published>
     <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;一个物体b add()加载到 父物体a 里，如果这个 父物体a 带有旋转等属性，那么这个物体b就出现位置旋转错位等现象，这时候，就需要使用 attach()方法把 物体b 加载到 父物体a中；&lt;/p&gt;
-&lt;figure class=&quot;highlight
-        
-      
     
     </summary>
     
@@ -347,38 +347,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】course-Kit</title>
-    <link href="https://pxim.github.io/posts/4d8e0adf/"/>
-    <id>https://pxim.github.io/posts/4d8e0adf/</id>
+    <title>【ResDevKit】03 H5模板</title>
+    <link href="https://pxim.github.io/posts/4b9d951d/"/>
+    <id>https://pxim.github.io/posts/4b9d951d/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:42.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;PC端课件包&quot;&gt;&lt;a href=&quot;#PC端课件包&quot; class=&quot;headerlink&quot; title=&quot;PC端课件包&quot;&gt;&lt;/a&gt;PC端课件包&lt;/h1&gt;&lt;h3 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【ResDevKit】02 Flash模板</title>
-    <link href="https://pxim.github.io/posts/48491b4b/"/>
-    <id>https://pxim.github.io/posts/48491b4b/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:42.000Z</updated>
+    <updated>2021-06-18T08:35:12.000Z</updated>
     
     <summary type="html">
     
@@ -413,11 +386,38 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】03 H5模板</title>
-    <link href="https://pxim.github.io/posts/4b9d951d/"/>
-    <id>https://pxim.github.io/posts/4b9d951d/</id>
+    <title>【ResDevKit】course-Kit</title>
+    <link href="https://pxim.github.io/posts/4d8e0adf/"/>
+    <id>https://pxim.github.io/posts/4d8e0adf/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
+    <updated>2021-06-18T06:07:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PC端课件包&quot;&gt;&lt;a href=&quot;#PC端课件包&quot; class=&quot;headerlink&quot; title=&quot;PC端课件包&quot;&gt;&lt;/a&gt;PC端课件包&lt;/h1&gt;&lt;h3 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】02 Flash模板</title>
+    <link href="https://pxim.github.io/posts/48491b4b/"/>
+    <id>https://pxim.github.io/posts/48491b4b/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:42.000Z</updated>
     
     <summary type="html">
     
@@ -544,9 +544,9 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】12 config配置表v3.x版本说明</title>
-    <link href="https://pxim.github.io/posts/5892dac8/"/>
-    <id>https://pxim.github.io/posts/5892dac8/</id>
+    <title>【ResDevKit】全景展厅WebGL</title>
+    <link href="https://pxim.github.io/posts/3f64a95b/"/>
+    <id>https://pxim.github.io/posts/3f64a95b/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2021-06-18T06:07:44.000Z</updated>
     
@@ -556,8 +556,8 @@
       
         
         
-          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
+          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
+&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
         
       
     
