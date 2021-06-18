@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxim.github.io/"/>
-  <updated>2021-06-18T07:06:08.000Z</updated>
+  <updated>2021-06-18T07:28:26.000Z</updated>
   <id>https://pxim.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://pxim.github.io/posts/25b500d2/"/>
     <id>https://pxim.github.io/posts/25b500d2/</id>
     <published>2021-06-17T07:11:00.000Z</published>
-    <updated>2021-06-18T07:06:08.000Z</updated>
+    <updated>2021-06-18T07:28:26.000Z</updated>
     
     <summary type="html">
     
@@ -176,35 +176,6 @@
   </entry>
   
   <entry>
-    <title>ThreeJS 开发经验和注意点</title>
-    <link href="https://pxim.github.io/posts/65bab51/"/>
-    <id>https://pxim.github.io/posts/65bab51/</id>
-    <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;一个物体b add()加载到 父物体a 里，如果这个 父物体a 带有旋转等属性，那么这个物体b就出现位置旋转错位等现象，这时候，就需要使用 attach()方法把 物体b 加载到 父物体a中；&lt;/p&gt;
-&lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【Threejs】详解模型居中的各种实现方法</title>
     <link href="https://pxim.github.io/posts/15ab5b95/"/>
     <id>https://pxim.github.io/posts/15ab5b95/</id>
@@ -220,6 +191,35 @@
           &lt;ol&gt;
 &lt;li&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// const p0 = obj.position.clone();&lt;/span&gt;
 &lt;span class=&quot;comment&quot;&gt;// var box =
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
+    
+    
+      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ThreeJS 开发经验和注意点</title>
+    <link href="https://pxim.github.io/posts/65bab51/"/>
+    <id>https://pxim.github.io/posts/65bab51/</id>
+    <published>2020-06-03T11:30:38.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;一个物体b add()加载到 父物体a 里，如果这个 父物体a 带有旋转等属性，那么这个物体b就出现位置旋转错位等现象，这时候，就需要使用 attach()方法把 物体b 加载到 父物体a中；&lt;/p&gt;
+&lt;figure class=&quot;highlight
         
       
     
@@ -347,33 +347,6 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】course-Kit</title>
-    <link href="https://pxim.github.io/posts/4d8e0adf/"/>
-    <id>https://pxim.github.io/posts/4d8e0adf/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:42.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;PC端课件包&quot;&gt;&lt;a href=&quot;#PC端课件包&quot; class=&quot;headerlink&quot; title=&quot;PC端课件包&quot;&gt;&lt;/a&gt;PC端课件包&lt;/h1&gt;&lt;h3 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】03 H5模板</title>
     <link href="https://pxim.github.io/posts/4b9d951d/"/>
     <id>https://pxim.github.io/posts/4b9d951d/</id>
@@ -399,6 +372,33 @@
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】course-Kit</title>
+    <link href="https://pxim.github.io/posts/4d8e0adf/"/>
+    <id>https://pxim.github.io/posts/4d8e0adf/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;PC端课件包&quot;&gt;&lt;a href=&quot;#PC端课件包&quot; class=&quot;headerlink&quot; title=&quot;PC端课件包&quot;&gt;&lt;/a&gt;PC端课件包&lt;/h1&gt;&lt;h3 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
         
       
     
@@ -512,34 +512,6 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】12 config配置表v3.x版本说明</title>
-    <link href="https://pxim.github.io/posts/5892dac8/"/>
-    <id>https://pxim.github.io/posts/5892dac8/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】05 故障诊断H5模板</title>
     <link href="https://pxim.github.io/posts/9319cbd2/"/>
     <id>https://pxim.github.io/posts/9319cbd2/</id>
@@ -558,6 +530,34 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】12 config配置表v3.x版本说明</title>
+    <link href="https://pxim.github.io/posts/5892dac8/"/>
+    <id>https://pxim.github.io/posts/5892dac8/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
         
       
     
