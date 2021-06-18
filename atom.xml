@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxim.github.io/"/>
-  <updated>2021-06-17T07:11:40.000Z</updated>
+  <updated>2021-06-18T07:06:08.000Z</updated>
   <id>https://pxim.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>pdfjs 使用和获取内部事件</title>
-    <link href="https://pxim.github.io/2021/06/17/pdfjs/pdfjs/"/>
-    <id>https://pxim.github.io/2021/06/17/pdfjs/pdfjs/</id>
+    <title>Pdfjs 使用和获取内部事件</title>
+    <link href="https://pxim.github.io/posts/25b500d2/"/>
+    <id>https://pxim.github.io/posts/25b500d2/</id>
     <published>2021-06-17T07:11:00.000Z</published>
-    <updated>2021-06-17T07:11:40.000Z</updated>
+    <updated>2021-06-18T07:06:08.000Z</updated>
     
     <summary type="html">
     
@@ -44,11 +44,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】course-kit-mobile</title>
-    <link href="https://pxim.github.io/2020/11/09/resdevkit/07-course-kit-mobile/"/>
-    <id>https://pxim.github.io/2020/11/09/resdevkit/07-course-kit-mobile/</id>
+    <title>【ResDevKit】course-Kit-Mobile</title>
+    <link href="https://pxim.github.io/posts/250fdbb8/"/>
+    <id>https://pxim.github.io/posts/250fdbb8/</id>
     <published>2020-11-09T05:55:58.000Z</published>
-    <updated>2021-03-12T05:13:52.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -72,10 +72,10 @@
   
   <entry>
     <title>【ResDevKit】WebGL模板</title>
-    <link href="https://pxim.github.io/2020/08/07/resdevkit/page-webgl/"/>
-    <id>https://pxim.github.io/2020/08/07/resdevkit/page-webgl/</id>
+    <link href="https://pxim.github.io/posts/d6cc4c7c/"/>
+    <id>https://pxim.github.io/posts/d6cc4c7c/</id>
     <published>2020-08-07T05:55:58.000Z</published>
-    <updated>2021-02-04T07:23:22.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -99,10 +99,10 @@
   
   <entry>
     <title>【NPM】创建npm和发布流程</title>
-    <link href="https://pxim.github.io/2020/06/21/npm/%E3%80%90npm%E3%80%91%E5%88%9B%E5%BB%BAnpm%E5%92%8C%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/"/>
-    <id>https://pxim.github.io/2020/06/21/npm/%E3%80%90npm%E3%80%91%E5%88%9B%E5%BB%BAnpm%E5%92%8C%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/</id>
+    <link href="https://pxim.github.io/posts/c805afe2/"/>
+    <id>https://pxim.github.io/posts/c805afe2/</id>
     <published>2020-06-21T05:12:57.000Z</published>
-    <updated>2020-12-17T08:59:18.000Z</updated>
+    <updated>2021-06-18T06:07:42.000Z</updated>
     
     <summary type="html">
     
@@ -128,10 +128,10 @@
   
   <entry>
     <title>【Egg】webstorm里如何断点调试egg代码</title>
-    <link href="https://pxim.github.io/2020/06/16/egg/%E3%80%90Egg%E3%80%91webstorm%E9%87%8C%E5%A6%82%E4%BD%95%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95egg%E4%BB%A3%E7%A0%81/"/>
-    <id>https://pxim.github.io/2020/06/16/egg/%E3%80%90Egg%E3%80%91webstorm%E9%87%8C%E5%A6%82%E4%BD%95%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95egg%E4%BB%A3%E7%A0%81/</id>
+    <link href="https://pxim.github.io/posts/905b0c9f/"/>
+    <id>https://pxim.github.io/posts/905b0c9f/</id>
     <published>2020-06-16T11:12:00.000Z</published>
-    <updated>2020-07-31T08:09:28.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -158,10 +158,10 @@
   
   <entry>
     <title>【Threejs】详解add和attach后的区别</title>
-    <link href="https://pxim.github.io/2020/06/03/threejs/threejs-add-attach/"/>
-    <id>https://pxim.github.io/2020/06/03/threejs/threejs-add-attach/</id>
+    <link href="https://pxim.github.io/posts/3ecb95/"/>
+    <id>https://pxim.github.io/posts/3ecb95/</id>
     <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-15T05:40:30.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -177,10 +177,10 @@
   
   <entry>
     <title>ThreeJS 开发经验和注意点</title>
-    <link href="https://pxim.github.io/2020/06/03/threejs/threejs-dev-notes/"/>
-    <id>https://pxim.github.io/2020/06/03/threejs/threejs-dev-notes/</id>
+    <link href="https://pxim.github.io/posts/65bab51/"/>
+    <id>https://pxim.github.io/posts/65bab51/</id>
     <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-16T01:32:40.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -206,10 +206,10 @@
   
   <entry>
     <title>【Threejs】详解模型居中的各种实现方法</title>
-    <link href="https://pxim.github.io/2020/06/03/threejs/threejs-model-center/"/>
-    <id>https://pxim.github.io/2020/06/03/threejs/threejs-model-center/</id>
+    <link href="https://pxim.github.io/posts/15ab5b95/"/>
+    <id>https://pxim.github.io/posts/15ab5b95/</id>
     <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-16T07:33:42.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -235,10 +235,10 @@
   
   <entry>
     <title>【Software】开发辅助工具</title>
-    <link href="https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/"/>
-    <id>https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7/</id>
+    <link href="https://pxim.github.io/posts/b8662bd2/"/>
+    <id>https://pxim.github.io/posts/b8662bd2/</id>
     <published>2020-05-25T11:12:57.000Z</published>
-    <updated>2020-05-26T08:56:06.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -263,10 +263,10 @@
   
   <entry>
     <title>【Software】webStorm使用帮助</title>
-    <link href="https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/"/>
-    <id>https://pxim.github.io/2020/05/25/software/%E3%80%90Software%E3%80%91webStorm%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9/</id>
+    <link href="https://pxim.github.io/posts/935a1168/"/>
+    <id>https://pxim.github.io/posts/935a1168/</id>
     <published>2020-05-25T11:12:57.000Z</published>
-    <updated>2020-07-20T02:40:28.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -293,10 +293,10 @@
   
   <entry>
     <title>【Webpack】怎么断点调试webpack配置文件</title>
-    <link href="https://pxim.github.io/2020/05/25/webpack/%E3%80%90Webpack%E3%80%91%E6%80%8E%E4%B9%88%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
-    <id>https://pxim.github.io/2020/05/25/webpack/%E3%80%90Webpack%E3%80%91%E6%80%8E%E4%B9%88%E6%96%AD%E7%82%B9%E8%B0%83%E8%AF%95webpack%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</id>
+    <link href="https://pxim.github.io/posts/fcd93503/"/>
+    <id>https://pxim.github.io/posts/fcd93503/</id>
     <published>2020-05-25T11:12:57.000Z</published>
-    <updated>2020-06-29T03:28:36.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -320,10 +320,10 @@
   
   <entry>
     <title>【Markdown】Markdown写作帮助</title>
-    <link href="https://pxim.github.io/2020/05/25/markdown/%E3%80%90Markdown%E3%80%91markdown%20%E5%86%99%E4%BD%9C%E5%B8%AE%E5%8A%A9/"/>
-    <id>https://pxim.github.io/2020/05/25/markdown/%E3%80%90Markdown%E3%80%91markdown%20%E5%86%99%E4%BD%9C%E5%B8%AE%E5%8A%A9/</id>
+    <link href="https://pxim.github.io/posts/366f05f7/"/>
+    <id>https://pxim.github.io/posts/366f05f7/</id>
     <published>2020-05-25T11:12:00.000Z</published>
-    <updated>2020-08-26T02:21:36.000Z</updated>
+    <updated>2021-06-18T06:07:42.000Z</updated>
     
     <summary type="html">
     
@@ -347,11 +347,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】01 课件开发集成包</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/01-course-kit/</id>
+    <title>【ResDevKit】course-Kit</title>
+    <link href="https://pxim.github.io/posts/4d8e0adf/"/>
+    <id>https://pxim.github.io/posts/4d8e0adf/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-25T02:01:02.000Z</updated>
+    <updated>2021-06-18T06:07:42.000Z</updated>
     
     <summary type="html">
     
@@ -359,12 +359,7 @@
       
         
         
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
+          &lt;h1 id=&quot;PC端课件包&quot;&gt;&lt;a href=&quot;#PC端课件包&quot; class=&quot;headerlink&quot; title=&quot;PC端课件包&quot;&gt;&lt;/a&gt;PC端课件包&lt;/h1&gt;&lt;h3 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
         
       
     
@@ -380,10 +375,49 @@
   
   <entry>
     <title>【ResDevKit】03 H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/03-course-an-h5/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/03-course-an-h5/</id>
+    <link href="https://pxim.github.io/posts/4b9d951d/"/>
+    <id>https://pxim.github.io/posts/4b9d951d/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:21:18.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】02 Flash模板</title>
+    <link href="https://pxim.github.io/posts/48491b4b/"/>
+    <id>https://pxim.github.io/posts/48491b4b/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:42.000Z</updated>
     
     <summary type="html">
     
@@ -419,10 +453,10 @@
   
   <entry>
     <title>【ResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/04-course-cz-h5/</id>
+    <link href="https://pxim.github.io/posts/c42de924/"/>
+    <id>https://pxim.github.io/posts/c42de924/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:21:36.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -448,11 +482,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】02 Flash模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/02-course-an-flash/</id>
+    <title>【ResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxim.github.io/posts/64b9ded7/"/>
+    <id>https://pxim.github.io/posts/64b9ded7/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:21:00.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -460,19 +494,38 @@
       
         
         
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】12 config配置表v3.x版本说明</title>
+    <link href="https://pxim.github.io/posts/5892dac8/"/>
+    <id>https://pxim.github.io/posts/5892dac8/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
         
       
     
@@ -488,10 +541,10 @@
   
   <entry>
     <title>【ResDevKit】05 故障诊断H5模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/05-course-zd-h5/</id>
+    <link href="https://pxim.github.io/posts/9319cbd2/"/>
+    <id>https://pxim.github.io/posts/9319cbd2/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:22:10.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -519,69 +572,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/06-course-zd-webgl/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/06-course-zd-webgl/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:22:28.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【ResDevKit】12 config配置表v3.x版本说明</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/10-course-config.xml-v3/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:23:10.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】全景展厅WebGL</title>
-    <link href="https://pxim.github.io/2020/05/25/resdevkit/pano-webgl/"/>
-    <id>https://pxim.github.io/2020/05/25/resdevkit/pano-webgl/</id>
+    <link href="https://pxim.github.io/posts/3f64a95b/"/>
+    <id>https://pxim.github.io/posts/3f64a95b/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-02-04T07:23:46.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     

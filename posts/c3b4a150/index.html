@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+
+<html lang="default">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    我的二次创业——Egret Html5游戏引擎 |  PxSite
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="PxSite" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-old/我的二次创业——Egret Html5游戏引擎"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  我的二次创业——Egret Html5游戏引擎
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/posts/c3b4a150/" class="article-date">
+  <time datetime="2016-03-10T09:06:34.000Z" itemprop="datePublished">2016-03-10</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/News/">News</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">2.4k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">8 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <a id="more"></a>
+
+
+<div style="top:0px">&#65279;&#65279;</div>
+<div class="blogzz_abstract borderc" style="border-style:dotted none none; margin:20px 0px; padding-top:15px; border-top-color:rgb(204,204,204); border-top-width:1px">
+<div class="blogzz_ainfo" style="margin-bottom:12px"><span style="margin-right:25px"><strong>原文地址：</strong><a target="_blank" title="我的二次创业——Egret&nbsp;&lt;wbr&gt;Html5游戏引擎" href="http://blog.sina.com.cn/s/blog_4e1b06260101le71.html">我的二次创业——Egret&nbsp;<wbr>Html5游戏引擎</a></span><span><strong>作者：</strong><a target="_blank" title="陈书艺" href="http://blog.sina.com.cn/u/1310393894">陈书艺</a></span></div>
+<div class="blogzz_acon">
+<p name="fff2">今年春天因为种种原因，我下决心开始自己人生中的第二次创业。很多关心我的朋友来跟我聊，绝大多数都在给我泼冷水，因为他们很不理解我的创业方向——Html5游戏引擎。</p>
+<p>朋友都劝我，以我多年的积累，无论是选择一个移动互联网新项目还是继续做游戏开发，完全可以取得非常可观的成就。而我偏偏选择了一个挑战极大，又注定艰难的方向。无论是技术还是商业化，游戏引擎的门槛都非常高，市面上已有Unity3d、UDK、Cocos2d这样已经发展了多年非常成熟的引擎，更何况Html5存在那么多性能、表现力、适配等方面的问题，已经有无数的巨头重兵投入却铩羽而归。此外免费开源的技术到底怎么赚钱，会不会是个费力不讨好的事。</p>
+<p>每个创业者，创业的源动力都是内在的诉求，我也冷静想过我的目标和理想到底是什么？从小就热爱技术热爱游戏，之前这段六年的创业经历，我一直致力于做出原创的精品游戏，曾经一度我以为我的理想就是做出几个经典的游戏，将来不给自己留下遗憾。现在突然转型去做游戏引擎，其实是想帮助更多有梦想的团队解决他们的困难，帮他们把最脏最累最难的活给干了，降低他们制作游戏的成本，让他们没有后顾之忧，专注发挥自己的创造力，做出更多更好的优质游戏。我自己做了这么多年游戏，很了解游戏开发团队的痛苦，我做的引擎如果能更加高效，更加易用，提供更好的服务，我想这不仅没脱离我原始的理想，而是让我的理想变得更加丰满了。</p>
+<p>回到现实，每个创业者选择创业都有非常充分的理由和客观条件，这样才能做到随心、顺势，而不是没想清楚就埋头苦干，付出多大的代价也做不出成绩，那我现在抓住了什么？</p>
+<p>第一，优秀的团队。创业最核心的就是人，如果没有一个强劲的团队就没有基础。今年很偶然的机会我得知Flash核心团队的马鉴(7yue)刚刚离开Adobe，他在Adobe干了十几年，见证了Flash这个技术发明到普及，从视频到游戏的整个发展过程，他的经验积累和人脉影响力，在Web技术领域是顶尖的，当时几个Flash领域的引擎框架及工具的佼佼者，包括Starling的参与者、DragonBones的参与者、Flexlite的创始人，他们聚集在一起，想为移动游戏开发者做点什么，却苦于缺乏公司商业运作和资本运作的经验能力。而我原先团队中多年来一直在内部从事开发框架的构建和优化的同事，以及做游戏开发的同事，跟他们完全可以融合，并且能力互补。这样一支队伍，我相信打造出来的H5引擎一定是业内最优秀的。同时，我也幸运的联系到做社区的、做商务的、做市场的几位志同道合的牛人。我想这样一个团队，是我过去十年都梦寐以求的梦之队，也许是我该下决心带他们做点事情的时候了。</p>
+<p>第二，合适的时机。在合适的Timing用合适的技术去适合的载体呈现合适的内容。这需要很多积累，所有人都向往珠穆朗玛，但最后登顶的只有少数，这不是仅仅光靠雄心和&#30524;光可以搞定的。从乔布斯开始，Html5不是一个新概念了，但是为什么前几年都没有做起来，这个技术真的不行吗？这真的是一个伪诉求吗？问题在哪？解决方案在哪？前几年H5太早被炒到不应有的高度，让所有人的预期都高过了现实，最后无比失望，草率封棺定论。一个产业链的成熟是需要方方面面的充分条件的。Google、微软、Mozilla三大浏览器巨头去年底推出了ES6标准，并声称2014年底将正式支持这个新的标准；近两年的智能手机的CPU计算能力、内存容量、GPU图形硬件等支持已经能胜任在Web上运行良好体验的游戏；2014年下半年移动4G网络的普及和资费下调至低价范围；在Apple和Google等巨头驱动下，越来越完善的基于移动设备的Web开发调试工具；在APP
+ Store等传统应用分发渠道以外有多样化的新兴渠道作为支持；</p>
+<p>种种迹象表明，Html5的成熟不会太遥远，而整个产业链中唯一缺少的催化剂，就是一个能把这些条件串联起来的，更加高效和易用的移动Web游戏开发工具。</p>
+<p>感兴趣的同学还可以看看这篇文章：http://youxiputao.com/articles/1464</p>
+<p>第三， 多年的积累。任何行业的衍变都不能违背科学的自然发展规律。PC游戏十几年，被PC Web游戏用5年复制，再到移动端原生游戏仅用3年，都是建立在从简单到复杂，再从复杂到专业细分，但都是基于之前的技术和知识体系的积累。我们在移动和Web应用的核心渲染技术和工具开发，有超过10年的实践和优化经验，在游戏开发上有超过7年的实践，非常了解开发者的痛点，这些积累集中在未来两三年内爆发出来，我们有信心让更多人受益。</p>
+<p>第四，开放的生态。这几年原生移动游戏的火爆，也受益于更加开放的生态，多样的应用分发渠道，Cocos2d等免费开源的游戏开发引擎，开源的Android操作系统和诸多第三方ROM，支付渠道，开发商交换流量的积分墙，全球一体化的游戏开放市场，促生了许多一夜爆发的发行商和开发商角色。但供过于求的应用挤爆了窄小的榜单，有没有更好的分发和营销方式，更快捷的传播途径，甚至可以打破应用商店封闭式的发布路径，基于开放的操作系统、内嵌浏览器Web View支持的各种应用，只要有流量的地方，通过媒体的宣传、朋友的分享，点击一个链接、扫一个二维码，一两秒钟即可进入游戏，一边体验一边加载更多内容，绝对是游戏发行和开发商全新的机会。</p>
+<p>能够联网的智能手机、电视、便携设备，甚至广义到只要支持Html5运行的所有屏幕，都将成为移动游戏新的分发渠道。我们可以帮助开发者去开发这些潜在的市场。</p>
+<p>另外&#20540;得一提的是，我的创业刚一开始，就获得了来自微软、Google、Adobe、还有百度腾讯等大公司的大力支持。</p>
+<p>第五，不仅是引擎。仅仅是提供几万行开源的代码，解决图形渲染和游戏开发的基本需求并提供一个社区是远远不够的。开发工程管理，易用的工具，提高表现力，优化性能，解决兼容性和适配问题，甚至能智能的解决诸多渠道的SDK接入、支付、广告等等，包括便捷的在线图形和音乐素材以及自由的开发组件下载集成。我们要做的是解放手游生产力，包括引擎、框架、工具、服务的一站式的移动游戏开发工作流。基于开放的互联网思维，我们做的不是软件，而是服务</p>
+<p>第六，存在的挑战。把引擎完善的越来越强大精炼，工具做的越来越丰富易用，提供的服务越来越周到贴心，不断推动和协助产业链上下游形成统一的标准，包括芯片等硬件、操作系统、浏览器、用户关系、支付体验、流量的闭环，让他们迭代自身的技术标准并提升用户体验，是一个庞大的工程，需要莫大的毅力和超强的执行，同时也需要一个强大的国际化团队和雄厚的资金支持。</p>
+<p name="fff2">创业不仅仅需要一股激情和伟大的理想，还需要坚定的信念和冷静的思考，多年来，一直总想为自己热爱的这个行业做点什么，回想过去无数&#26172;夜的努力和积累，看到&#30524;前大势所趋，机遇与挑战并行，我们已经做好了面对困难长期奋斗的充分准备，我辈同仁，何惜一战！</p>
+</div>
+</div>
+ 
+      <!-- reward -->
+      
+      <div id="reward-btn">
+        Donate
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pxim.github.io/posts/c3b4a150/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/posts/81b90a10/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            【Egret】 3d 服务器配置
+          
+        </div>
+      </a>
+    
+    
+      <a href="/posts/ad92b292/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">判断是否是IE（包含IE11）</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2021
+        <i class="ri-heart-fill heart_icon"></i> Peng Xiang
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278938767&amp;web_id=1278938767'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="PxSite"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/links">友情链接</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/projects">项目</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>
