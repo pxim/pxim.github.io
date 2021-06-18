@@ -347,45 +347,6 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】03 H5模板</title>
-    <link href="https://pxim.github.io/posts/4b9d951d/"/>
-    <id>https://pxim.github.io/posts/4b9d951d/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】course-Kit</title>
     <link href="https://pxim.github.io/posts/4d8e0adf/"/>
     <id>https://pxim.github.io/posts/4d8e0adf/</id>
@@ -452,6 +413,45 @@
   </entry>
   
   <entry>
+    <title>【ResDevKit】03 H5模板</title>
+    <link href="https://pxim.github.io/posts/4b9d951d/"/>
+    <id>https://pxim.github.io/posts/4b9d951d/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【ResDevKit】04 部件拆装H5模板</title>
     <link href="https://pxim.github.io/posts/c42de924/"/>
     <id>https://pxim.github.io/posts/c42de924/</id>
@@ -467,36 +467,6 @@
           &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【ResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxim.github.io/posts/64b9ded7/"/>
-    <id>https://pxim.github.io/posts/64b9ded7/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
         
       
@@ -544,6 +514,36 @@
   </entry>
   
   <entry>
+    <title>【ResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxim.github.io/posts/64b9ded7/"/>
+    <id>https://pxim.github.io/posts/64b9ded7/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【ResDevKit】12 config配置表v3.x版本说明</title>
     <link href="https://pxim.github.io/posts/5892dac8/"/>
     <id>https://pxim.github.io/posts/5892dac8/</id>
@@ -572,9 +572,9 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】全景展厅WebGL</title>
-    <link href="https://pxim.github.io/posts/3f64a95b/"/>
-    <id>https://pxim.github.io/posts/3f64a95b/</id>
+    <title>【ResDevKit】08 网络课件包</title>
+    <link href="https://pxim.github.io/posts/cdb6ea10/"/>
+    <id>https://pxim.github.io/posts/cdb6ea10/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2021-06-18T06:07:44.000Z</updated>
     
@@ -584,8 +584,7 @@
       
         
         
-          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
-&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
+          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
         
       
     
