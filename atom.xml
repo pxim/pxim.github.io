@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxim.github.io/"/>
-  <updated>2021-06-18T07:28:26.000Z</updated>
+  <updated>2021-06-24T10:22:28.000Z</updated>
   <id>https://pxim.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【ResDevKit】Web3d 模板</title>
+    <link href="https://pxim.github.io/posts/393f5938/"/>
+    <id>https://pxim.github.io/posts/393f5938/</id>
+    <published>2021-06-24T05:55:58.000Z</published>
+    <updated>2021-06-24T10:22:28.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Web3D-模板&quot;&gt;&lt;a href=&quot;#Web3D-模板&quot; class=&quot;headerlink&quot; title=&quot;Web3D 模板&quot;&gt;&lt;/a&gt;Web3D 模板&lt;/h1&gt;&lt;h2 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
   
   <entry>
     <title>Pdfjs 使用和获取内部事件</title>
@@ -157,11 +184,30 @@
   </entry>
   
   <entry>
+    <title>【Threejs】详解add和attach后的区别</title>
+    <link href="https://pxim.github.io/posts/3ecb95/"/>
+    <id>https://pxim.github.io/posts/3ecb95/</id>
+    <published>2020-06-03T11:30:38.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
+    
+    
+      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ThreeJS 开发经验和注意点</title>
     <link href="https://pxim.github.io/posts/65bab51/"/>
     <id>https://pxim.github.io/posts/65bab51/</id>
     <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
+    <updated>2021-06-22T03:18:36.000Z</updated>
     
     <summary type="html">
     
@@ -203,25 +249,6 @@
 &lt;span class=&quot;comment&quot;&gt;// var box =
         
       
-    
-    </summary>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【Threejs】详解add和attach后的区别</title>
-    <link href="https://pxim.github.io/posts/3ecb95/"/>
-    <id>https://pxim.github.io/posts/3ecb95/</id>
-    <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
@@ -347,11 +374,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】03 H5模板</title>
-    <link href="https://pxim.github.io/posts/4b9d951d/"/>
-    <id>https://pxim.github.io/posts/4b9d951d/</id>
+    <title>【ResDevKit】02 Flash模板</title>
+    <link href="https://pxim.github.io/posts/48491b4b/"/>
+    <id>https://pxim.github.io/posts/48491b4b/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T08:35:12.000Z</updated>
+    <updated>2021-06-18T06:07:42.000Z</updated>
     
     <summary type="html">
     
@@ -399,75 +426,6 @@
         
         
           &lt;h1 id=&quot;PC端课件包&quot;&gt;&lt;a href=&quot;#PC端课件包&quot; class=&quot;headerlink&quot; title=&quot;PC端课件包&quot;&gt;&lt;/a&gt;PC端课件包&lt;/h1&gt;&lt;h3 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【ResDevKit】02 Flash模板</title>
-    <link href="https://pxim.github.io/posts/48491b4b/"/>
-    <id>https://pxim.github.io/posts/48491b4b/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:42.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【ResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxim.github.io/posts/c42de924/"/>
-    <id>https://pxim.github.io/posts/c42de924/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
         
       
     
@@ -544,11 +502,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】全景展厅WebGL</title>
-    <link href="https://pxim.github.io/posts/3f64a95b/"/>
-    <id>https://pxim.github.io/posts/3f64a95b/</id>
+    <title>【ResDevKit】03 H5模板</title>
+    <link href="https://pxim.github.io/posts/4b9d951d/"/>
+    <id>https://pxim.github.io/posts/4b9d951d/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
+    <updated>2021-06-18T08:35:12.000Z</updated>
     
     <summary type="html">
     
@@ -556,8 +514,19 @@
       
         
         
-          &lt;h2 id=&quot;配置表说明&quot;&gt;&lt;a href=&quot;#配置表说明&quot; class=&quot;headerlink&quot; title=&quot;配置表说明&quot;&gt;&lt;/a&gt;配置表说明&lt;/h2&gt;&lt;hr&gt;
-&lt;h2 id=&quot;版本更新日志&quot;&gt;&lt;a href=&quot;#版本更新日志&quot; class=&quot;headerlink&quot;
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
         
       
     
@@ -572,9 +541,9 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】08 网络课件包</title>
-    <link href="https://pxim.github.io/posts/cdb6ea10/"/>
-    <id>https://pxim.github.io/posts/cdb6ea10/</id>
+    <title>【ResDevKit】12 config配置表v3.x版本说明</title>
+    <link href="https://pxim.github.io/posts/5892dac8/"/>
+    <id>https://pxim.github.io/posts/5892dac8/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2021-06-18T06:07:44.000Z</updated>
     
@@ -584,7 +553,38 @@
       
         
         
-          &lt;h4 id=&quot;一汽千分尺-H5-Mobile-Page&quot;&gt;&lt;a href=&quot;#一汽千分尺-H5-Mobile-Page&quot; class=&quot;headerlink&quot; title=&quot;一汽千分尺 H5 - Mobile Page&quot;&gt;&lt;/a&gt;一汽千分尺 H5 - Mobile
+          &lt;h3 id=&quot;config-xml&quot;&gt;&lt;a href=&quot;#config-xml&quot; class=&quot;headerlink&quot; title=&quot;config.xml&quot;&gt;&lt;/a&gt;config.xml&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;课件信息配置表&lt;br&gt;root → lesson
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxim.github.io/posts/c42de924/"/>
+    <id>https://pxim.github.io/posts/c42de924/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
         
       
     
