@@ -104,25 +104,29 @@
     <div class="article-entry" itemprop="articleBody">
        
   <h1 id="Web3D-模板"><a href="#Web3D-模板" class="headerlink" title="Web3D 模板"></a>Web3D 模板</h1><h2 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h2><blockquote>
-<p>PC：Chrome或者Chromium内核 40版本以上，不支持ie</p>
+<p>PC：Chrome或者Chromium内核 40版本以上，暂不支持ie</p>
 <p>Mobile：微信，企业微信，QQ，Chrome或者Chromium内核浏览器</p>
 </blockquote>
 <h2 id="模型要求"><a href="#模型要求" class="headerlink" title="模型要求"></a>模型要求</h2><ol>
-<li><p>统一坐标系：右手坐标系，Y轴向上；</p>
+<li><p>统一坐标系：右手坐标系，<code>Y轴向上</code>；</p>
 <p>3dsmax：导出模型时，需要在原坐标系的基础上，调整Y轴向上，调整方法：<a href="https://blog.csdn.net/wlj613613/article/details/17797795" target="_blank" rel="noopener">https://blog.csdn.net/wlj613613/article/details/17797795</a></p>
 </li>
-<li><p>统一基本长度单位：导出模型时，设置基本长度单位为 cm</p>
+<li><p>统一基本长度单位：导出模型时，设置基本长度单位为 <code>cm</code></p>
 </li>
-<li><p>注意原点位置：如无特殊要求，一般以模型中心点为原点；如有特殊需求，按照对接需求来；</p>
+<li><p>统一导出的模型格式：<code>fbx</code></p>
 </li>
-<li><p>模型尽量小点；</p>
+<li><p>注意原点位置：如无特殊要求，一般以模型中心点为原点；</p>
 </li>
-<li><p>结构展示的部件名称 带mPart_前缀；</p>
+<li><p>模型尽量小点，最好<code>10M</code>以内；</p>
+</li>
+<li><p>结构展示的部件名称 带<code>mPart_</code>前缀；</p>
 </li>
 </ol>
 <p><strong>备注：</strong> 如有特殊情况，都按特殊情况的需求来设定。</p>
 <h2 id="Web3D-模板-1"><a href="#Web3D-模板-1" class="headerlink" title="Web3D 模板"></a>Web3D 模板</h2><h3 id="结构展示-模板"><a href="#结构展示-模板" class="headerlink" title="结构展示 模板"></a>结构展示 模板</h3><p>web3d-jgzs-001</p>
 <p>效果外链：<a href="http://bmw.jingge.com/presale/jgzs3d/" target="_blank" rel="noopener">http://bmw.jingge.com/presale/jgzs3d/</a></p>
+<img src="/posts/393f5938/image-20210625084504906.png" alt="image-20210625084504906" style="position: relative; display: inline; left: 0px; zoom: 67%;">
+
 <h4 id="config-json-配置表"><a href="#config-json-配置表" class="headerlink" title="config.json 配置表"></a><strong>config.json 配置表</strong></h4><h5 id="root"><a href="#root" class="headerlink" title="root"></a>root</h5><img src="/posts/393f5938/image-20210624153840099.png" alt="image-20210624153840099" style="position:relative;display:inline;left:0;">
 
 <table>
@@ -222,7 +226,7 @@
 </tr>
 <tr>
 <td>model</td>
-<td>场景里的结构展示的模型<br><code>path</code> 模型的文件夹路径<br><code>url</code> 模型的路径<br><code>position</code> 模型的坐标，目前保留字段，忽视它 <br><code>rotation</code> 模型的旋转度，目前保留字段，忽视它<br><code>scale</code> 模型的缩放度，可以使用<br><code>map</code> 模型的贴图<br>         <code>path</code> 贴图的文件夹路径<br>         <code>maps</code> 模型用到的所有贴图<br>                    <code>map</code> 颜色贴图<br>                    <code>aoMap</code> 该纹理的红色通道用作环境遮挡贴图<br>                    <code>normalMap</code> 用于创建法线贴图的纹理<br>                    <code>roughnessMap</code> 该纹理的绿色通道用于改变材质的粗糙度  <br>                    <code>metalnessMap</code>  该纹理的蓝色通道用于改变材质的金属度 <br>                    <code>emissiveMap</code> 贴图  <br>                    <code>alphaMap</code> 透明度贴图</td>
+<td>场景里的结构展示的模型<br><code>path</code> 模型的文件夹路径<br><code>url</code> 模型的路径<br><code>position</code> 模型的坐标，目前保留字段，忽视它 <br><code>rotation</code> 模型的旋转度，目前保留字段，忽视它<br><code>scale</code> 模型的缩放度，可以使用<br><code>map</code> 模型的贴图<br>         <code>path</code> 贴图的文件夹路径<br>         <code>maps</code> 模型用到的所有贴图<br>                    <code>map</code> 颜色贴图<br>                    <code>aoMap</code> 该纹理的红色通道用作环境遮挡贴图<br>                    <code>normalMap</code> 用于创建法线贴图的纹理<br>                    <code>roughnessMap</code> 该纹理的绿色通道用于改变材质的粗糙度  <br>                    <code>metalnessMap</code>  该纹理的蓝色通道用于改变材质的金属度 <br>                    <code>emissiveMap</code> 放射（发光）贴图  <br>                    <code>alphaMap</code> 透明度贴图</td>
 <td>object</td>
 <td></td>
 <td></td>
@@ -329,7 +333,7 @@
 </tr>
 <tr>
 <td>model</td>
-<td>3d标注模型<br><code>path</code> 模型的文件夹路径<br><code>url</code> 模型的路径<br><code>position</code> 模型的坐标，目前保留字段，忽视它 <br><code>rotation</code> 模型的旋转度，目前保留字段，忽视它<br><code>scale</code> 模型的缩放度，目前标注模型的缩放是跟随 结构模型的部件的，先忽视它<br><code>map</code> 模型的贴图<br>         <code>path</code> 贴图的文件夹路径<br>         <code>maps</code> 模型用到的所有贴图<br>                    <code>map</code> 颜色贴图<br>                    <code>aoMap</code> 该纹理的红色通道用作环境遮挡贴图<br>                    <code>normalMap</code> 用于创建法线贴图的纹理<br>                    <code>roughnessMap</code> 该纹理的绿色通道用于改变材质的粗糙度  <br>                    <code>metalnessMap</code>  该纹理的蓝色通道用于改变材质的金属度 <br>                    <code>emissiveMap</code> 贴图  <br>                    <code>alphaMap</code> 透明度贴图</td>
+<td>3d标注模型<br><code>path</code> 模型的文件夹路径<br><code>url</code> 模型的路径<br><code>position</code> 模型的坐标，目前保留字段，忽视它 <br><code>rotation</code> 模型的旋转度，目前保留字段，忽视它<br><code>scale</code> 模型的缩放度，目前标注模型的缩放是跟随 结构模型的部件的，先忽视它<br><code>map</code> 模型的贴图<br>         <code>path</code> 贴图的文件夹路径<br>         <code>maps</code> 模型用到的所有贴图<br>                    <code>map</code> 颜色贴图<br>                    <code>aoMap</code> 该纹理的红色通道用作环境遮挡贴图<br>                    <code>normalMap</code> 用于创建法线贴图的纹理<br>                    <code>roughnessMap</code> 该纹理的绿色通道用于改变材质的粗糙度  <br>                    <code>metalnessMap</code>  该纹理的蓝色通道用于改变材质的金属度 <br>                    <code>emissiveMap</code> 放射（发光）贴图  <br>                    <code>alphaMap</code> 透明度贴图</td>
 <td>object</td>
 <td></td>
 <td></td>
@@ -455,6 +459,15 @@
 
    
   <nav class="article-nav">
+    
+      <a href="/posts/189fd9d4/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Unity2020里GLTF插件的安装和使用
+          
+        </div>
+      </a>
     
     
       <a href="/posts/25b500d2/" class="article-nav-link">

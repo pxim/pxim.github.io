@@ -79,7 +79,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">796</span>
+            <span class="post-count">963</span>
         </span>
     </span>
 
@@ -141,6 +141,13 @@
 <p>   ​      </p>
 </li>
 </ol>
+<p>一. material -基础属性</p>
+<p>opacity和transparent是一起使用的,transparent为true时，opacity才起作用<br>overdraw 渲染物体有缝隙时，将其设为true<br>side 决定了绘制那个面，还是两个面都进行绘制<br>材质的属性值更新时，需要将needsUpdate为TRUE<br>二. material -融合属性</p>
+<ul>
+<li>blending 决定了物体的材质如何和背景融合</li>
+<li>blendsrc blenddst 融合公式</li>
+</ul>
+<p>三 material -高级属性<br>depthTest depthWrite :绘制不透明物体时，深度测试开启是能保证正确的遮挡关系，绘制透明物体时，关掉深度测试能保证正确的blend．<br>alphaTest 0 ~1 如果某个像素小于这个值，则不会显示。</p>
  
       <!-- reward -->
       
@@ -220,11 +227,11 @@
    
   <nav class="article-nav">
     
-      <a href="/posts/3ecb95/" class="article-nav-link">
+      <a href="/posts/905b0c9f/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            【Threejs】详解add和attach后的区别
+            【Egg】webstorm里如何断点调试egg代码
           
         </div>
       </a>
