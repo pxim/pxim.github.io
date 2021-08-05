@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxim.github.io/"/>
-  <updated>2021-07-31T07:32:02.000Z</updated>
+  <updated>2021-08-05T08:42:58.000Z</updated>
   <id>https://pxim.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://pxim.github.io/posts/c28c4b19/"/>
     <id>https://pxim.github.io/posts/c28c4b19/</id>
     <published>2021-07-31T13:30:00.000Z</published>
-    <updated>2021-07-31T07:32:02.000Z</updated>
+    <updated>2021-08-05T08:42:58.000Z</updated>
     
     <summary type="html">
     
@@ -54,7 +54,7 @@
     <link href="https://pxim.github.io/posts/189fd9d4/"/>
     <id>https://pxim.github.io/posts/189fd9d4/</id>
     <published>2021-07-31T12:30:00.000Z</published>
-    <updated>2021-07-31T06:33:46.000Z</updated>
+    <updated>2021-08-05T08:43:12.000Z</updated>
     
     <summary type="html">
     
@@ -248,6 +248,25 @@
   </entry>
   
   <entry>
+    <title>【Threejs】详解add和attach后的区别</title>
+    <link href="https://pxim.github.io/posts/3ecb95/"/>
+    <id>https://pxim.github.io/posts/3ecb95/</id>
+    <published>2020-06-03T11:30:38.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
+    
+    
+      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ThreeJS 开发经验和注意点</title>
     <link href="https://pxim.github.io/posts/65bab51/"/>
     <id>https://pxim.github.io/posts/65bab51/</id>
@@ -294,25 +313,6 @@
 &lt;span class=&quot;comment&quot;&gt;// var box =
         
       
-    
-    </summary>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【Threejs】详解add和attach后的区别</title>
-    <link href="https://pxim.github.io/posts/3ecb95/"/>
-    <id>https://pxim.github.io/posts/3ecb95/</id>
-    <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
@@ -465,11 +465,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】02 Flash模板</title>
-    <link href="https://pxim.github.io/posts/48491b4b/"/>
-    <id>https://pxim.github.io/posts/48491b4b/</id>
+    <title>【ResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxim.github.io/posts/c42de924/"/>
+    <id>https://pxim.github.io/posts/c42de924/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:42.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -477,19 +477,10 @@
       
         
         
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
         
       
     
@@ -543,9 +534,9 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxim.github.io/posts/c42de924/"/>
-    <id>https://pxim.github.io/posts/c42de924/</id>
+    <title>【ResDevKit】06 故障诊断WebGL模板</title>
+    <link href="https://pxim.github.io/posts/64b9ded7/"/>
+    <id>https://pxim.github.io/posts/64b9ded7/</id>
     <published>2020-05-25T09:50:58.000Z</published>
     <updated>2021-06-18T06:07:44.000Z</updated>
     
@@ -557,7 +548,7 @@
         
           &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
         
       
@@ -573,11 +564,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】05 故障诊断H5模板</title>
-    <link href="https://pxim.github.io/posts/9319cbd2/"/>
-    <id>https://pxim.github.io/posts/9319cbd2/</id>
+    <title>【ResDevKit】02 Flash模板</title>
+    <link href="https://pxim.github.io/posts/48491b4b/"/>
+    <id>https://pxim.github.io/posts/48491b4b/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
+    <updated>2021-06-18T06:07:42.000Z</updated>
     
     <summary type="html">
     
@@ -585,12 +576,19 @@
       
         
         
-          &lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
-
-&lt;!-- code_chunk_output --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
         
       
     
