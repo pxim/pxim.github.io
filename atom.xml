@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxim.github.io/"/>
-  <updated>2021-08-05T08:42:58.000Z</updated>
+  <updated>2021-08-16T05:04:30.000Z</updated>
   <id>https://pxim.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【ResDevKit】Web3d 模板</title>
+    <link href="https://pxim.github.io/posts/393f5938/"/>
+    <id>https://pxim.github.io/posts/393f5938/</id>
+    <published>2021-08-16T05:55:58.000Z</published>
+    <updated>2021-08-16T05:04:30.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Web3D&quot;&gt;&lt;a href=&quot;#Web3D&quot; class=&quot;headerlink&quot; title=&quot;Web3D&quot;&gt;&lt;/a&gt;Web3D&lt;/h1&gt;&lt;h2 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
   
   <entry>
     <title>3dsMax里GLTF插件的安装和使用</title>
@@ -39,13 +66,13 @@
       <category term="software" scheme="https://pxim.github.io/categories/software/"/>
     
     
-      <category term="gltf" scheme="https://pxim.github.io/tags/gltf/"/>
-    
-      <category term="webgl" scheme="https://pxim.github.io/tags/webgl/"/>
-    
       <category term="3dsmax" scheme="https://pxim.github.io/tags/3dsmax/"/>
     
       <category term="max" scheme="https://pxim.github.io/tags/max/"/>
+    
+      <category term="gltf" scheme="https://pxim.github.io/tags/gltf/"/>
+    
+      <category term="webgl" scheme="https://pxim.github.io/tags/webgl/"/>
     
   </entry>
   
@@ -72,38 +99,11 @@
       <category term="software" scheme="https://pxim.github.io/categories/software/"/>
     
     
-      <category term="unity" scheme="https://pxim.github.io/tags/unity/"/>
-    
       <category term="gltf" scheme="https://pxim.github.io/tags/gltf/"/>
     
       <category term="webgl" scheme="https://pxim.github.io/tags/webgl/"/>
     
-  </entry>
-  
-  <entry>
-    <title>【ResDevKit】Web3d 模板</title>
-    <link href="https://pxim.github.io/posts/393f5938/"/>
-    <id>https://pxim.github.io/posts/393f5938/</id>
-    <published>2021-06-24T05:55:58.000Z</published>
-    <updated>2021-08-16T03:52:40.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Web3D&quot;&gt;&lt;a href=&quot;#Web3D&quot; class=&quot;headerlink&quot; title=&quot;Web3D&quot;&gt;&lt;/a&gt;Web3D&lt;/h1&gt;&lt;h2 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+      <category term="unity" scheme="https://pxim.github.io/tags/unity/"/>
     
   </entry>
   
@@ -465,6 +465,45 @@
   </entry>
   
   <entry>
+    <title>【ResDevKit】02 Flash模板</title>
+    <link href="https://pxim.github.io/posts/48491b4b/"/>
+    <id>https://pxim.github.io/posts/48491b4b/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;序号&lt;/th&gt;
+&lt;th&gt;版本&lt;/th&gt;
+&lt;th&gt;动画类型&lt;/th&gt;
+&lt;th&gt;功能说明&lt;/th&gt;
+&lt;th&gt;动画编号&lt;/th&gt;
+&lt;th&gt;HTML发布模板&lt;/th&gt;
+&lt;th&gt;备注&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【ResDevKit】03 H5模板</title>
     <link href="https://pxim.github.io/posts/4b9d951d/"/>
     <id>https://pxim.github.io/posts/4b9d951d/</id>
@@ -517,45 +556,6 @@
         
         
           &lt;h1 id=&quot;PC端课件包&quot;&gt;&lt;a href=&quot;#PC端课件包&quot; class=&quot;headerlink&quot; title=&quot;PC端课件包&quot;&gt;&lt;/a&gt;PC端课件包&lt;/h1&gt;&lt;h3 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【ResDevKit】02 Flash模板</title>
-    <link href="https://pxim.github.io/posts/48491b4b/"/>
-    <id>https://pxim.github.io/posts/48491b4b/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:42.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
         
       
     
