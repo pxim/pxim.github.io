@@ -39,13 +39,13 @@
       <category term="software" scheme="https://pxim.github.io/categories/software/"/>
     
     
-      <category term="3dsmax" scheme="https://pxim.github.io/tags/3dsmax/"/>
-    
-      <category term="max" scheme="https://pxim.github.io/tags/max/"/>
-    
       <category term="gltf" scheme="https://pxim.github.io/tags/gltf/"/>
     
       <category term="webgl" scheme="https://pxim.github.io/tags/webgl/"/>
+    
+      <category term="3dsmax" scheme="https://pxim.github.io/tags/3dsmax/"/>
+    
+      <category term="max" scheme="https://pxim.github.io/tags/max/"/>
     
   </entry>
   
@@ -72,11 +72,38 @@
       <category term="software" scheme="https://pxim.github.io/categories/software/"/>
     
     
+      <category term="unity" scheme="https://pxim.github.io/tags/unity/"/>
+    
       <category term="gltf" scheme="https://pxim.github.io/tags/gltf/"/>
     
       <category term="webgl" scheme="https://pxim.github.io/tags/webgl/"/>
     
-      <category term="unity" scheme="https://pxim.github.io/tags/unity/"/>
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】Web3d 模板</title>
+    <link href="https://pxim.github.io/posts/393f5938/"/>
+    <id>https://pxim.github.io/posts/393f5938/</id>
+    <published>2021-06-24T05:55:58.000Z</published>
+    <updated>2021-08-16T03:52:40.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Web3D&quot;&gt;&lt;a href=&quot;#Web3D&quot; class=&quot;headerlink&quot; title=&quot;Web3D&quot;&gt;&lt;/a&gt;Web3D&lt;/h1&gt;&lt;h2 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
     
   </entry>
   
@@ -438,63 +465,6 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】course-Kit</title>
-    <link href="https://pxim.github.io/posts/4d8e0adf/"/>
-    <id>https://pxim.github.io/posts/4d8e0adf/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:42.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;PC端课件包&quot;&gt;&lt;a href=&quot;#PC端课件包&quot; class=&quot;headerlink&quot; title=&quot;PC端课件包&quot;&gt;&lt;/a&gt;PC端课件包&lt;/h1&gt;&lt;h3 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【ResDevKit】04 部件拆装H5模板</title>
-    <link href="https://pxim.github.io/posts/c42de924/"/>
-    <id>https://pxim.github.io/posts/c42de924/</id>
-    <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
-    
-    
-      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【ResDevKit】03 H5模板</title>
     <link href="https://pxim.github.io/posts/4b9d951d/"/>
     <id>https://pxim.github.io/posts/4b9d951d/</id>
@@ -534,11 +504,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】06 故障诊断WebGL模板</title>
-    <link href="https://pxim.github.io/posts/64b9ded7/"/>
-    <id>https://pxim.github.io/posts/64b9ded7/</id>
+    <title>【ResDevKit】course-Kit</title>
+    <link href="https://pxim.github.io/posts/4d8e0adf/"/>
+    <id>https://pxim.github.io/posts/4d8e0adf/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
+    <updated>2021-06-18T06:07:42.000Z</updated>
     
     <summary type="html">
     
@@ -546,10 +516,7 @@
       
         
         
-          &lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#user-content-scenexml&quot;&gt;scene.xml&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a
+          &lt;h1 id=&quot;PC端课件包&quot;&gt;&lt;a href=&quot;#PC端课件包&quot; class=&quot;headerlink&quot; title=&quot;PC端课件包&quot;&gt;&lt;/a&gt;PC端课件包&lt;/h1&gt;&lt;h3 id=&quot;浏览器支持&quot;&gt;&lt;a href=&quot;#浏览器支持&quot; class=&quot;headerlink&quot;
         
       
     
@@ -589,6 +556,36 @@
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/categories/ResDevKit/"/>
+    
+    
+      <category term="ResDevKit" scheme="https://pxim.github.io/tags/ResDevKit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【ResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxim.github.io/posts/c42de924/"/>
+    <id>https://pxim.github.io/posts/c42de924/</id>
+    <published>2020-05-25T09:50:58.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
         
       
     
