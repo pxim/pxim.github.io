@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    【ResDevKit】12 config配置表v3.x版本说明 |  PxSite
+    【ResDevKit】Web3d Template |  PxSite
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -49,7 +49,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-resdevkit/10-course-config.xml-v3"
+  id="post-resdevkit/web3d-template"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -60,15 +60,15 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  【ResDevKit】12 config配置表v3.x版本说明
+  【ResDevKit】Web3d Template
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/posts/5892dac8/" class="article-date">
-  <time datetime="2020-05-25T09:50:58.000Z" itemprop="datePublished">2020-05-25</time>
+      <a href="/posts/8ac21d58/" class="article-date">
+  <time datetime="2021-08-16T05:55:58.000Z" itemprop="datePublished">2021-08-16</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/ResDevKit/">ResDevKit</a>
@@ -79,7 +79,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">748</span>
+            <span class="post-count">1.1k</span>
         </span>
     </span>
 
@@ -88,7 +88,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2 分钟</span>
+            <span class="post-count">4 分钟</span>
         </span>
     </span>
 </div>
@@ -103,191 +103,331 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h3 id="config-xml"><a href="#config-xml" class="headerlink" title="config.xml"></a>config.xml</h3><blockquote>
-<p>课件信息配置表<br>root → lesson 节点的属性</p>
+  <h1 id="Web3D"><a href="#Web3D" class="headerlink" title="Web3D"></a>Web3D</h1><h2 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h2><blockquote>
+<p>PC：Chrome或者Chromium内核 40版本以上，暂不支持ie</p>
+<p>Mobile：微信，企业微信，QQ，Chrome或者Chromium内核浏览器</p>
 </blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">id</td>
-<td align="left">课程id，每个课程的id都不能相同；命名规则 YJ_完整课程名称拼音首字母_年月日时分秒 例如：一汽-大众 EA211发动机 正时齿形皮带拆装 应该为：YJ_DZEA211FDJZSCXPDCZ_20180420152501</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="left">课程的完整名字</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">platformType</td>
-<td align="left">数据储存对接平台 0： 普通网页无缓存；1: 普通网页游览器缓存； 2： 广本SCORM1.2标准的课件，和LMS平台对接；3：表示和斯柯达PC客户端对接 4:表示和领克平台对接</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isOrder</td>
-<td align="left">是否强制按照线性顺序学习 true：强制学习， false：不强制学习</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isPlayIntro</td>
-<td align="left">是否播放片头；值：true false</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isLocation</td>
-<td align="left">打开课件初始化的时候，是否定位上次学习的课件节点</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">locType</td>
-<td align="left">定位的类型；1 播放完片头才开始定位课件（PC，Mobile都适用）；2 进入课件就立即定位课件，无需播放片头（只适用PC端部分游览器）；</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isMenuState</td>
-<td align="left">是否开启目录上显示课件学习状态功能；值：true false</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isControlBar</td>
-<td align="left">课件初始化的时候，是否显示 播放器控制栏；值：true false</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">totalPageNum</td>
-<td align="left">课件总页数，总的item节点数量，默认值 0</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">nowPageNum</td>
-<td align="left">当前课件页码, 默认 -1</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">lessonProgress</td>
-<td align="left">课件总体进度，填表的时候保存默认值 0</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">passScore</td>
-<td align="left">课件通过分数</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">testScore</td>
-<td align="left">课件测试分数，默认 0</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<hr>
-<blockquote>
-<p>root → item 节点的属性</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="left">备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">menuItemId</td>
-<td align="left">菜单按钮的实例名</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">menuStatus</td>
-<td align="left">课程章节学习状态</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">slideId</td>
-<td align="left">课件id</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">name</td>
-<td align="left">菜单名称</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">type</td>
-<td align="left">课件类型：0 mp4视频-显示控制栏（功能齐全）； 1普通序列帧动画-显示控制栏（功能齐全） ； 2 交互动画-显示控制栏（禁用播放，暂停，声音功能）； 3 交互动画-显示控制栏（禁用播放，暂停，声音功能；下一页按钮 变成 开始整体测试按钮）； 4 交互动画-显示控制栏（禁用播放，暂停，声音功能；下一页按钮 变成 返回菜单按钮）； 5 交互动画-隐藏控制栏； PS：播放类交互动画 可以 算作 类型2；</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">slideStatus</td>
-<td align="left">课程状态：notAttempted 未学习 inProgress 正在学习 completed 已经学完</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">isYellow</td>
-<td align="left">当前页面完成后，是否跳黄：false 不跳黄； true 跳黄；</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">slideProgress</td>
-<td align="left">当前课件的进度</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">score</td>
-<td align="left">当前课件所占分数</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">skdProgress</td>
-<td align="left">斯柯达类型课件的课件进度</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">displayText</td>
-<td align="left">配音文本</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">bTitle</td>
-<td align="left">课件章节的大标题</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">lTitle</td>
-<td align="left">课件章节的小标题</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">x</td>
-<td align="left">当前资源在集成页面中的x坐标</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">y</td>
-<td align="left">当前资源在集成页面中的y坐标</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">width</td>
-<td align="left">当前资源在集成页面中的width值</td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">height</td>
-<td align="left">当前资源在集成页面中的height值</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<hr>
-<h3 id="注：如果要单独配置整体测试模块；则："><a href="#注：如果要单独配置整体测试模块；则：" class="headerlink" title="注：如果要单独配置整体测试模块；则："></a>注：如果要单独配置整体测试模块；则：</h3><ol>
-<li>删除enter，menu节点  </li>
-<li>lesson节点中 isPlayIntro值设为false；isLocation值设为false；isMenuStatus值设为false；isControlBar值设为false；  </li>
+<h2 id="模型要求"><a href="#模型要求" class="headerlink" title="模型要求"></a>模型要求</h2><ol>
+<li><p>统一坐标系：使用3dsmax或者unity默认的坐标系；</p>
+</li>
+<li><p>统一基本长度单位：基本长度单位设置为 <code>cm</code>；</p>
+</li>
+<li><p>模型最外层的容器，在scene的坐标要0,0,0 ；</p>
+</li>
+<li><p>需要展示的部件名称 带<code>mPart_</code>前缀，并且命名不要有中文和特殊字符；（不需要展示的部件不用遵守此规则）；</p>
+</li>
+<li><p>模型导出格式为<code>glb</code> （此格式可以携带几何体，材质贴图，动画一起输出）</p>
+<p>3dsmax导出glb 使用文档：<a href="https://pxim.github.io/posts/c28c4b19/">https://pxim.github.io/posts/c28c4b19/</a></p>
+<p>unity导出glb 使用文档：<a href="https://pxim.github.io/posts/189fd9d4/">https://pxim.github.io/posts/189fd9d4/</a></p>
+</li>
+<li><p>最后导出的glb，最大别超过20m，尽量小点；</p>
+</li>
 </ol>
+<h2 id="Web3D模板"><a href="#Web3D模板" class="headerlink" title="Web3D模板"></a>Web3D模板</h2><h3 id="结构展示-模板"><a href="#结构展示-模板" class="headerlink" title="结构展示 模板"></a>结构展示 模板</h3><p>jgzs3d-wrj</p>
+<p>效果外链：<a href="http://bmw.jingge.com/presale/jgzs3d/" target="_blank" rel="noopener">http://bmw.jingge.com/presale/jgzs3d/</a></p>
+<img src="/posts/8ac21d58/image-20210625084504906.png" alt="image-20210625084504906" style="position: relative; display: inline; left: 0px; zoom: 67%;">
+
+<p>jgzs3d-byde5yctbddj</p>
+<p>效果外链：<a href="http://bmw.jingge.com/presale/jgzs3d-byde5yctbddj/" target="_blank" rel="noopener">http://bmw.jingge.com/presale/jgzs3d-byde5yctbddj/</a></p>
+<img src="/posts/8ac21d58/image-20210816091911277.png" alt="image-20210816091911277" style="zoom:80%; position: relative; display: inline; left: 0px;">
+
+
+
+<h4 id="config-json-配置表"><a href="#config-json-配置表" class="headerlink" title="config.json 配置表"></a><strong>config.json 配置表</strong></h4><h5 id="root"><a href="#root" class="headerlink" title="root"></a>root</h5><img src="/posts/8ac21d58/image-20210816103832952.png" alt="image-20210816103832952" style="position: relative; display: inline; left: 0px;">
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>aidsystem</td>
+<td>是否开启辅助系统；enabled的值 <code>true</code> 开启  <code>false</code> 关闭；默认关闭；</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>stats</td>
+<td>是否开启性能统计；enabled的值 <code>true</code> 开启  <code>false</code> 关闭；默认关闭；</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>标题栏 相关配置</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>menu</td>
+<td>右侧菜单窗口 相关配置；<strong>保留字段，目前暂不配置；</strong></td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>desc</td>
+<td>左侧详细说明窗口 相关配置；<strong>保留字段，目前暂不配置；</strong></td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>label</td>
+<td>模型标注 相关配置</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>scene</td>
+<td>3d场景 相关配置</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>tree</td>
+<td>菜单树 相关配置</td>
+<td>array</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="title"><a href="#title" class="headerlink" title="title"></a>title</h5><img src="/posts/8ac21d58/image-20210816094234701.png" alt="image-20210816094234701" style="position: relative; display: inline; left: 0px;">
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>enabled</td>
+<td>是否显示标题； <code>true</code> 显示<code>false</code> 隐藏；默认显示；</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>标题内容</td>
+<td>string</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="menu-保留字段，忽视它"><a href="#menu-保留字段，忽视它" class="headerlink" title="menu  保留字段，忽视它"></a>menu  <code>保留字段，忽视它</code></h5><img src="/posts/8ac21d58/image-20210816095024205.png" alt="image-20210816095024205" style="position: relative; display: inline; left: 0px;">
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="desc-保留字段，忽视它"><a href="#desc-保留字段，忽视它" class="headerlink" title="desc  保留字段，忽视它"></a>desc  <code>保留字段，忽视它</code></h5><img src="/posts/8ac21d58/image-20210816095414185.png" alt="image-20210816095414185" style="position: relative; display: inline; left: 0px;">
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="label"><a href="#label" class="headerlink" title="label"></a>label</h5><img src="/posts/8ac21d58/image-20210816095854883.png" alt="image-20210816095854883" style="position: relative; display: inline; left: 0px;">
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>enabled</td>
+<td>是否显示标注； <code>true</code> 显示<code>false</code> 隐藏；默认显示；</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>font</td>
+<td>文本字体 属性<br><code>family</code> 字体类型 <br><code>color</code> 字体颜色<br><code>size</code> 字体大小</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>backgroundColor</td>
+<td>标注 3d文本的背景色</td>
+<td>array</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>background</td>
+<td>标注 2d文本的背景色</td>
+<td>string</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>model</td>
+<td>3d标注模型<br><code>url</code> 模型的路径<br><code>position</code> 模型的坐标，<strong>目前保留字段，忽视它</strong> <br><code>rotation</code> 模型的旋转度，<strong>目前保留字段，忽视它</strong><br><code>scale</code> 模型的缩放度</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="scene"><a href="#scene" class="headerlink" title="scene"></a>scene</h5><img src="/posts/8ac21d58/image-20210816100555984.png" alt="image-20210816100555984" style="position: relative; display: inline; left: 0px;">
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>angleLimit</td>
+<td>场景缩放远近等角度限制，分别是 <code>水平旋转上限，水平旋转下限，垂直旋转上限，垂直旋转下限，最大向外移动焦距，最大向内移动焦距</code>；<br><strong>一般保持默认，最多修改最后2个的值；</strong></td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>background</td>
+<td>3d场景的背景，目前只能是图片<br>预加载页的背景图和这里保持一致</td>
+<td>string</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>camera</td>
+<td><strong>目前保留字段，忽视它</strong><br>场景初始化时，相机的初始角度；<br><code>默认是模型居中，相机对着模型的正视图视角</code>；<br>如果想定制角度，就在制作模型时就添加一个相机，设置好position和target；然后这边程序会获取这个相机的参数，进行设置；<br><code>name</code> 这个相机的名字<br><code>targetName</code>相机的target的名字</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>meshSelectedColor</td>
+<td>模型部件被选中后的颜色；</td>
+<td>array</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>model</td>
+<td>场景里的结构展示的模型<br><code>url</code> 模型的路径<br><code>position</code> 模型的坐标，目前保留字段，忽视它 <br><code>rotation</code> 模型的旋转度，目前保留字段，忽视它<br><code>scale</code> 模型的缩放度</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h5 id="tree"><a href="#tree" class="headerlink" title="tree"></a>tree</h5><img src="/posts/8ac21d58/image-20210816103342218.png" alt="image-20210816103342218" style="position: relative; display: inline; left: 0px;">
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>key</td>
+<td>这里根节点统一是<code>mRoot</code>，保持默认；<br>唯一id，和 scene里的结构模型里 部件的name一样，要保持唯一，不能重复<br><img src="/posts/8ac21d58/image-20210624181725804.png" alt="image-20210624181725804"></td>
+<td>string</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td>右侧菜单列表项的名称</td>
+<td>string</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>部件说明的文本内容</td>
+<td>string</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>label</td>
+<td>每个部件object对应的标注的一些属性<br><code>position</code> 当前部件object里标注的坐标偏移量 ；默认标注在部件object的正上方；<strong>多数情况保持默认0,0,0，就行；</strong><br><code>lineScale</code> 标注线的缩放；y 为0时，不显示标注线，只显示文本；y为1时，标注线是1倍长度缩放；<strong>目前都默认设置0</strong>；</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>object3d</td>
+<td><code>scale</code> 独显居中模式下，选中部件自适应缩放后，可调整的缩放倍数；</td>
+<td>object</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>link</td>
+<td>外链资源的路径；</td>
+<td>string</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>children</td>
+<td>当前部件子对象列表；如果当前部件有子部件，就添加；没有就不添加；</td>
+<td>array</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
  
       <!-- reward -->
       
@@ -354,7 +494,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pxim.github.io/posts/5892dac8/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pxim.github.io/posts/8ac21d58/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -367,19 +507,10 @@
    
   <nav class="article-nav">
     
-      <a href="/posts/64b9ded7/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            【ResDevKit】06 故障诊断WebGL模板
-          
-        </div>
-      </a>
     
-    
-      <a href="/posts/3f64a95b/" class="article-nav-link">
+      <a href="/posts/c28c4b19/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">【ResDevKit】全景展厅WebGL</div>
+        <div class="article-nav-title">3dsMax里GLTF插件的安装和使用</div>
       </a>
     
   </nav>
