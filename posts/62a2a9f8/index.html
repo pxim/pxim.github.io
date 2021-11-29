@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+
+<html lang="default">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="PxSite，js，javascript，react，h5，createjs，webgl，threejs，nodejs，eggjs " />
+   
+  <meta name="description" content="PxSite" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    【Threejs】轮廓线、边框线、选中效果实现的N种方法以及性能评估 |  PxSite
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+
+<link rel="alternate" href="/atom.xml" title="PxSite" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-threejs/threejs-outline-edges"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  【Threejs】轮廓线、边框线、选中效果实现的N种方法以及性能评估
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/posts/62a2a9f8/" class="article-date">
+  <time datetime="2021-11-29T11:30:38.000Z" itemprop="datePublished">2021-11-29</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Threejs/">Threejs</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.3k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">5 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="【Threejs】轮廓线、边框线、选中效果实现的N种方法以及性能评估"><a href="#【Threejs】轮廓线、边框线、选中效果实现的N种方法以及性能评估" class="headerlink" title="【Threejs】轮廓线、边框线、选中效果实现的N种方法以及性能评估"></a>【Threejs】轮廓线、边框线、选中效果实现的N种方法以及性能评估</h1><p>对于模型较小，面数较少，机器性能很好的情况下，用哪种方法都可以。</p>
+<p>但是对于压缩后glb还有100m、200m，几百万面，机器配置又一般的情况下，对于效果和性能，就需要作出选择了。</p>
+<p>备注：① example里<a href="https://jsfiddle.net开头的链接，需要VPN，能访问国外网络，才能打开；" target="_blank" rel="noopener">https://jsfiddle.net开头的链接，需要VPN，能访问国外网络，才能打开；</a></p>
+<p>​            ②所有的性能评估，我是以 机器配置：CPU i5-4460 3.20GHz 、内存  8.00 GB、显卡  NVIDIA GeForce GTX 745 (4096MB) 上 运行压缩后100M 面数150w面左右的glb，在chrome上运行测试的。</p>
+<h2 id="OutlinePass"><a href="#OutlinePass" class="headerlink" title="OutlinePass"></a>OutlinePass</h2><img src="/posts/62a2a9f8/image-20211129142212244.png" alt="image-20211129142212244" style="zoom: 67%; display: inline; left: 0px;">
+
+<p><strong>example</strong> <a href="https://threejs.org/examples/?q=outline#webgl_postprocessing_outline" target="_blank" rel="noopener">https://threejs.org/examples/?q=outline#webgl_postprocessing_outline</a></p>
+<p><strong>优点</strong>：效果非常赞，可设置 边线大小，光晕，边缘浓度，呼吸闪烁等等效果</p>
+<p><strong>缺点</strong>：性能消耗double</p>
+<p><strong>主要代码片段</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入</span></span><br><span class="line"><span class="keyword">import</span> &#123;EffectComposer&#125; <span class="keyword">from</span> <span class="string">'three/examples/jsm/postprocessing/EffectComposer.js'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;RenderPass&#125; <span class="keyword">from</span> <span class="string">'three/examples/jsm/postprocessing/RenderPass.js'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;ShaderPass&#125; <span class="keyword">from</span> <span class="string">'three/examples/jsm/postprocessing/ShaderPass.js'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;OutlinePass&#125; <span class="keyword">from</span> <span class="string">'three/examples/jsm/postprocessing/OutlinePass.js'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;FXAAShader&#125; <span class="keyword">from</span> <span class="string">'three/examples/jsm/shaders/FXAAShader.js'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化</span></span><br><span class="line"><span class="comment">// postprocessing</span></span><br><span class="line"><span class="keyword">const</span> size = renderer.getSize(<span class="keyword">new</span> THREE.Vector2());</span><br><span class="line"><span class="keyword">const</span> _pixelRatio = renderer.getPixelRatio();</span><br><span class="line"><span class="keyword">const</span> _width = size.width;</span><br><span class="line"><span class="keyword">const</span> _height = size.height;</span><br><span class="line"><span class="keyword">const</span> renderTarget = <span class="keyword">new</span> THREE.WebGLRenderTarget(</span><br><span class="line">    _width * _pixelRatio,</span><br><span class="line">    _height * _pixelRatio,</span><br><span class="line">    &#123;</span><br><span class="line">        minFilter: THREE.LinearFilter,</span><br><span class="line">        magFilter: THREE.LinearFilter,</span><br><span class="line">        format: THREE.RGBAFormat,</span><br><span class="line">        encoding: THREE.sRGBEncoding</span><br><span class="line">    &#125;</span><br><span class="line">);</span><br><span class="line">renderTarget.texture.name = <span class="string">"EffectComposer.rt1"</span>;</span><br><span class="line">composer = <span class="keyword">new</span> EffectComposer(renderer, renderTarget);</span><br><span class="line"><span class="comment">// composer = new EffectComposer(renderer);</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> renderPass = <span class="keyword">new</span> RenderPass(scene, camera);</span><br><span class="line">composer.addPass(renderPass);</span><br><span class="line"></span><br><span class="line">outlinePass = <span class="keyword">new</span> OutlinePass(<span class="keyword">new</span> THREE.Vector2(<span class="built_in">window</span>.innerWidth, <span class="built_in">window</span>.innerHeight), scene, camera);</span><br><span class="line">composer.addPass(outlinePass);</span><br><span class="line"></span><br><span class="line"><span class="comment">// const textureLoader = new THREE.TextureLoader();</span></span><br><span class="line"><span class="comment">// textureLoader.load('assets/tri_pattern.jpg', function (texture) &#123;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//     outlinePass.patternTexture = texture;</span></span><br><span class="line"><span class="comment">//     texture.wrapS = THREE.RepeatWrapping;</span></span><br><span class="line"><span class="comment">//     texture.wrapT = THREE.RepeatWrapping;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// &#125;);</span></span><br><span class="line"></span><br><span class="line">effectFXAA = <span class="keyword">new</span> ShaderPass(FXAAShader);</span><br><span class="line">effectFXAA.uniforms[<span class="string">'resolution'</span>].value.set(<span class="number">1</span> / <span class="built_in">window</span>.innerWidth, <span class="number">1</span> / <span class="built_in">window</span>.innerHeight);</span><br><span class="line">composer.addPass(effectFXAA);</span><br><span class="line"></span><br><span class="line">outlinePass.visibleEdgeColor.set(outlineColor[<span class="number">0</span>]); <span class="comment">// 边缘可见部分发颜色 sColor[0].color</span></span><br><span class="line">outlinePass.hiddenEdgeColor.set(outlineColor[<span class="number">1</span>]); <span class="comment">// 边缘遮挡部分发光颜色 sColor[1].color</span></span><br><span class="line">outlinePass.edgeStrength = <span class="built_in">Number</span>(<span class="number">10.0</span>); <span class="comment">//边框的亮度</span></span><br><span class="line">outlinePass.edgeGlow = <span class="built_in">Number</span>(<span class="number">1</span>); <span class="comment">//光晕[0,1]</span></span><br><span class="line">outlinePass.edgeThickness = <span class="built_in">Number</span>(<span class="number">1.0</span>); <span class="comment">//边缘浓度</span></span><br><span class="line">outlinePass.pulsePeriod = <span class="built_in">Number</span>(<span class="number">1.8</span>); <span class="comment">//呼吸闪烁的速度 闪烁频率 ，默认0 ，值越大频率越低</span></span><br><span class="line">outlinePass.usePatternTexture = <span class="literal">false</span>; <span class="comment">//是否使用父级的材质</span></span><br><span class="line">outlinePass.downSampleRatio = <span class="number">2</span>; <span class="comment">// 边框弯曲度</span></span><br><span class="line">outlinePass.clear = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// animate render里</span></span><br><span class="line">renderer.render(scene, camera);</span><br><span class="line">composer.render();</span><br></pre></td></tr></table></figure>
+
+<h2 id="EdgesGeometry"><a href="#EdgesGeometry" class="headerlink" title="EdgesGeometry"></a>EdgesGeometry</h2><img src="/posts/62a2a9f8/image-20211129143940032.png" alt="image-20211129143940032" style="display: inline; left: 0px;">
+
+<p><strong>example</strong> <a href="https://jsfiddle.net/tgcf1u84/3/" target="_blank" rel="noopener">https://jsfiddle.net/tgcf1u84/3/</a></p>
+<p>​                  <a href="https://threejs.org/examples/?q=help#webgl_helpers" target="_blank" rel="noopener">https://threejs.org/examples/?q=help#webgl_helpers</a></p>
+<p><strong>优点</strong>：效果还行；性能比OutlinePass，要好一点，但是差距不是很大，大概5-10fps的样子；代码实现简单；</p>
+<p><strong>缺点</strong>：性能消耗较大，效果一般，线框的宽度不能大于1（官方是这样解释的：由于<a href="https://www.khronos.org/registry/OpenGL/specs/gl/glspec46.core.pdf" target="_blank" rel="noopener">OpenGL Core Profile</a>与 大多数平台上WebGL渲染器的限制，无论如何设置该值，线宽始终为1。）</p>
+<p><strong>主要代码片段</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//添加</span></span><br><span class="line"><span class="keyword">var</span> edgeMaterial = <span class="keyword">new</span> THREE.LineBasicMaterial( &#123; <span class="attr">color</span>: <span class="number">0xff0000</span>, <span class="attr">linewidth</span>: <span class="number">5</span>,&#125; );</span><br><span class="line">object.traverse( <span class="function"><span class="keyword">function</span>(<span class="params"> child </span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> ( child.isMesh ) &#123;</span><br><span class="line">			<span class="keyword">var</span> edges = <span class="keyword">new</span> THREE.EdgesGeometry( child.geometry, <span class="number">45</span> );</span><br><span class="line">			<span class="keyword">var</span> line = <span class="keyword">new</span> THREE.LineSegments( edges, edgeMaterial );</span><br><span class="line">			child.add( line );</span><br><span class="line">		&#125;</span><br><span class="line">&#125; );</span><br></pre></td></tr></table></figure>
+
+<h2 id="EdgesGeometry-LineSegments2"><a href="#EdgesGeometry-LineSegments2" class="headerlink" title="EdgesGeometry + LineSegments2"></a>EdgesGeometry + LineSegments2</h2><img src="/posts/62a2a9f8/image-20211129145651190.png" alt="image-20211129145651190" style="display: inline; left: 0px;">
+
+<p><strong>example</strong> <a href="https://jsfiddle.net/5qv4Lmog/1/" target="_blank" rel="noopener">https://jsfiddle.net/5qv4Lmog/1/</a></p>
+<p><strong>优点</strong>：效果还行；线框宽度可大于1；性能比EdgesGeometry，要差一点，但是差距不是很大；</p>
+<p><strong>缺点</strong>：性能消耗较大，效果一般，不能在traverse时，直接add，否则会导致无尽的递归行为；</p>
+<p><strong>主要代码片段</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//添加</span></span><br><span class="line">edgeMaterial = <span class="keyword">new</span> LineMaterial( &#123; <span class="attr">color</span>: <span class="number">0xff0000</span>, <span class="attr">linewidth</span>: <span class="number">5</span> &#125; );</span><br><span class="line"><span class="keyword">const</span> meshes = [];</span><br><span class="line">object.traverse( <span class="function"><span class="keyword">function</span>(<span class="params"> child </span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> ( child.isMesh ) meshes.push( child );</span><br><span class="line">&#125; );</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> ( <span class="keyword">let</span> mesh <span class="keyword">of</span> meshes ) &#123;</span><br><span class="line">	<span class="keyword">var</span> edges = <span class="keyword">new</span> THREE.EdgesGeometry( mesh.geometry, <span class="number">45</span> );</span><br><span class="line">	<span class="keyword">var</span> wideEdges = <span class="keyword">new</span> LineSegmentsGeometry().fromEdgesGeometry( edges );</span><br><span class="line">  	<span class="keyword">var</span> line = <span class="keyword">new</span> LineSegments2( wideEdges, edgeMaterial );</span><br><span class="line">    mesh.add( line );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="OutlineEffect"><a href="#OutlineEffect" class="headerlink" title="OutlineEffect"></a>OutlineEffect</h2><img src="/posts/62a2a9f8/image-20211129153423662.png" alt="image-20211129153423662" style="zoom:50%;display: inline; left: 0px;">
+
+<p><strong>example</strong> <a href="https://threejs.org/examples/?q=toon#webgl_materials_variations_toon" target="_blank" rel="noopener">https://threejs.org/examples/?q=toon#webgl_materials_variations_toon</a> （官方案例，单个scene）</p>
+<p>​                 <a href="https://jsfiddle.net/cwayd9v5/6/（多个scene，模拟实现特定对象出现边框线的效果）" target="_blank" rel="noopener">https://jsfiddle.net/cwayd9v5/6/（多个scene，模拟实现特定对象出现边框线的效果）</a></p>
+<p><strong>优点</strong>：效果还行；性能也OK，代码实现很简单；</p>
+<p><strong>缺点</strong>：对于结构复杂的模型，不能实现特定对象出现边框线的功能效果（<a href="https://stackoverflow.com/questions/59997603/outline-effect-to-target-object/59998722#59998722" target="_blank" rel="noopener">https://stackoverflow.com/questions/59997603/outline-effect-to-target-object/59998722#59998722</a> 这个帖子上思路，能实现我提供的第二个效果，但是对于结构复杂模型，业务功能稍微复杂一些的，就不适用了）；</p>
+<p><strong>主要代码片段</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引入</span></span><br><span class="line"><span class="keyword">import</span> &#123; OutlineEffect &#125; <span class="keyword">from</span> <span class="string">'./jsm/effects/OutlineEffect.js'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化</span></span><br><span class="line"><span class="keyword">let</span> effect;</span><br><span class="line"><span class="comment">//renderer是webgl renderer</span></span><br><span class="line">effect = <span class="keyword">new</span> THREE.OutlineEffect(renderer,&#123;</span><br><span class="line">        defaultThickness: <span class="number">0.015</span>, <span class="comment">//线条粗细</span></span><br><span class="line">        defaultColor: [<span class="number">0.2</span>,<span class="number">0.2</span>,<span class="number">1</span>], <span class="comment">//线条颜色</span></span><br><span class="line">        efaultAlpha: <span class="number">0.9</span>,</span><br><span class="line">        <span class="comment">// defaultKeepAlive: true // keeps outline material in cache even if material is removed from scene</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//animate render里</span></span><br><span class="line">effect.render( scene, camera ); <span class="comment">//替换 renderer.render( scene, camera );</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="绘制一个对象两次；一次轮廓颜色对象，一次正常对象"><a href="#绘制一个对象两次；一次轮廓颜色对象，一次正常对象" class="headerlink" title="绘制一个对象两次；一次轮廓颜色对象，一次正常对象"></a>绘制一个对象两次；一次轮廓颜色对象，一次正常对象</h2><img src="/posts/62a2a9f8/image-20211129160902045.png" alt="image-20211129160902045" style="display: inline; left: 0px;">
+
+<p><strong>example</strong> <a href="https://jsfiddle.net/a4x0fwo7/47/" target="_blank" rel="noopener">https://jsfiddle.net/a4x0fwo7/47/</a></p>
+<p><strong>优点</strong>：效果还行；性能一般；</p>
+<p><strong>缺点</strong>：对于结构复杂的模型，会消耗较大的内存和性能；</p>
+<p><strong>主要代码片段</strong></p>
+<p><a href="https://jsfiddle.net/a4x0fwo7/47/" target="_blank" rel="noopener">https://jsfiddle.net/a4x0fwo7/47/</a> 看这个链接里的源码</p>
+<p><strong>参考文章</strong>：<a href="https://blog.mozvr.com/cartoon-outline-effect/" target="_blank" rel="noopener">https://blog.mozvr.com/cartoon-outline-effect/</a></p>
+<h2 id="法线延伸"><a href="#法线延伸" class="headerlink" title="法线延伸"></a>法线延伸</h2><img src="/posts/62a2a9f8/image-20211129161651781.png" alt="image-20211129161651781" style="display: inline; left: 0px;">
+
+<p><strong>example</strong> <a href="https://omarshehata.github.io/csb-l01dp/" target="_blank" rel="noopener">https://omarshehata.github.io/csb-l01dp/</a></p>
+<p><strong>优点</strong>：效果还行；</p>
+<p><strong>缺点</strong>：</p>
+<p><strong>主要代码片段</strong></p>
+<p><a href="https://github.com/OmarShehata/webgl-outlines" target="_blank" rel="noopener">https://github.com/OmarShehata/webgl-outlines</a> 看这个链接里的源码</p>
+<p><strong>参考文章</strong>：<a href="https://omar-shehata.medium.com/how-to-render-outlines-in-webgl-8253c14724f9" target="_blank" rel="noopener">https://omar-shehata.medium.com/how-to-render-outlines-in-webgl-8253c14724f9</a></p>
+<p>​                   <a href="https://github.com/OmarShehata/webgl-outlines" target="_blank" rel="noopener">https://github.com/OmarShehata/webgl-outlines</a></p>
+<h2 id="BoxHelper"><a href="#BoxHelper" class="headerlink" title="BoxHelper"></a>BoxHelper</h2><img src="/posts/62a2a9f8/image-20211129161901827.png" alt="image-20211129161901827" style="display: inline; left: 0px;">
+
+<p><strong>example</strong> <a href="https://jsfiddle.net/maco6fqt/12/" target="_blank" rel="noopener">https://jsfiddle.net/maco6fqt/12/</a> </p>
+<p>​                 <a href="https://threejs.org/examples/?q=box#webgl_helpers" target="_blank" rel="noopener">https://threejs.org/examples/?q=box#webgl_helpers</a> （官方案例）</p>
+<p><strong>优点</strong>：性能最好</p>
+<p><strong>缺点</strong>：效果比较差（这种效果只能算上选中效果，和边框线，轮廓线没关系）</p>
+<p><strong>主要代码片段</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> box:any = <span class="keyword">new</span> THREE.BoxHelper( object, <span class="string">'#00ffff'</span>);  <span class="comment">//object 模型</span></span><br><span class="line">object.attach(box);</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+      <div id="reward-btn">
+        Donate
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://pxim.github.io/posts/62a2a9f8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Threejs/" rel="tag">Threejs</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/posts/8ac21d58/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">【ResDevKit】Web3d Template</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "5grT6dHgG99dDy8Ac6XW7lCR-gzGzoHsz",
+    app_key: "uylRd03zlzcKJi0j0RRhIwax",
+    path: window.location.pathname,
+    avatar: "robohash",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2021
+        <i class="ri-heart-fill heart_icon"></i> Peng Xiang
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278938767&amp;web_id=1278938767'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="PxSite"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/links">友情链接</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/projects">项目</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>
