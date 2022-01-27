@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://pxim.github.io/"/>
-  <updated>2021-11-29T08:35:20.000Z</updated>
+  <updated>2021-11-30T03:07:48.000Z</updated>
   <id>https://pxim.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://pxim.github.io/posts/62a2a9f8/"/>
     <id>https://pxim.github.io/posts/62a2a9f8/</id>
     <published>2021-11-29T11:30:38.000Z</published>
-    <updated>2021-11-29T08:35:20.000Z</updated>
+    <updated>2021-11-30T03:07:48.000Z</updated>
     
     <summary type="html">
     
@@ -93,13 +93,13 @@
       <category term="software" scheme="https://pxim.github.io/categories/software/"/>
     
     
-      <category term="gltf" scheme="https://pxim.github.io/tags/gltf/"/>
-    
-      <category term="webgl" scheme="https://pxim.github.io/tags/webgl/"/>
-    
       <category term="3dsmax" scheme="https://pxim.github.io/tags/3dsmax/"/>
     
       <category term="max" scheme="https://pxim.github.io/tags/max/"/>
+    
+      <category term="gltf" scheme="https://pxim.github.io/tags/gltf/"/>
+    
+      <category term="webgl" scheme="https://pxim.github.io/tags/webgl/"/>
     
   </entry>
   
@@ -126,11 +126,11 @@
       <category term="software" scheme="https://pxim.github.io/categories/software/"/>
     
     
-      <category term="unity" scheme="https://pxim.github.io/tags/unity/"/>
-    
       <category term="gltf" scheme="https://pxim.github.io/tags/gltf/"/>
     
       <category term="webgl" scheme="https://pxim.github.io/tags/webgl/"/>
+    
+      <category term="unity" scheme="https://pxim.github.io/tags/unity/"/>
     
   </entry>
   
@@ -302,25 +302,6 @@
   </entry>
   
   <entry>
-    <title>【Threejs】详解add和attach后的区别</title>
-    <link href="https://pxim.github.io/posts/3ecb95/"/>
-    <id>https://pxim.github.io/posts/3ecb95/</id>
-    <published>2020-06-03T11:30:38.000Z</published>
-    <updated>2021-06-18T06:07:44.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
-    
-    
-      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ThreeJS 开发经验和注意点</title>
     <link href="https://pxim.github.io/posts/65bab51/"/>
     <id>https://pxim.github.io/posts/65bab51/</id>
@@ -338,6 +319,25 @@
 &lt;figure class=&quot;highlight
         
       
+    
+    </summary>
+    
+    
+      <category term="Threejs" scheme="https://pxim.github.io/categories/Threejs/"/>
+    
+    
+      <category term="Threejs" scheme="https://pxim.github.io/tags/Threejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Threejs】详解add和attach后的区别</title>
+    <link href="https://pxim.github.io/posts/3ecb95/"/>
+    <id>https://pxim.github.io/posts/3ecb95/</id>
+    <published>2020-06-03T11:30:38.000Z</published>
+    <updated>2021-06-18T06:07:44.000Z</updated>
+    
+    <summary type="html">
     
     </summary>
     
@@ -558,11 +558,11 @@
   </entry>
   
   <entry>
-    <title>【ResDevKit】03 H5模板</title>
-    <link href="https://pxim.github.io/posts/4b9d951d/"/>
-    <id>https://pxim.github.io/posts/4b9d951d/</id>
+    <title>【ResDevKit】04 部件拆装H5模板</title>
+    <link href="https://pxim.github.io/posts/c42de924/"/>
+    <id>https://pxim.github.io/posts/c42de924/</id>
     <published>2020-05-25T09:50:58.000Z</published>
-    <updated>2021-06-18T08:35:12.000Z</updated>
+    <updated>2021-06-18T06:07:44.000Z</updated>
     
     <summary type="html">
     
@@ -570,19 +570,10 @@
       
         
         
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;序号&lt;/th&gt;
-&lt;th&gt;版本&lt;/th&gt;
-&lt;th&gt;动画类型&lt;/th&gt;
-&lt;th&gt;功能说明&lt;/th&gt;
-&lt;th&gt;动画编号&lt;/th&gt;
-&lt;th&gt;HTML发布模板&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;
+          &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-配置表说明&quot;&gt;配置表说明&lt;/a&gt; &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#user-content-menuinfoxml&quot;&gt;menuInfo.xml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
         
       
     
